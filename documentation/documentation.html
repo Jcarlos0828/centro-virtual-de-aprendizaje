@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Espire - Bootstrap 4 Admin Template Documentaion</title>
+    <meta name="keywords" content="HTML5 Theme" />
+    <meta name="description" content="Espire - Bootstrap 4 Admin Template">
+    <meta name="author" content="Theme_Nate">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/ei-icon.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    
+    <!-- Theme Color CSS -->
+    <link rel="stylesheet" href="assets/css/colors/blue.css" />
+	<link rel="stylesheet" type="text/css" href="assets/js/syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="assets/js/syntax-highlighter/styles/shThemeDefault.css" media="all">
+	
+	<style>
+		.syntaxhighlighter {
+			overflow-x: auto !important;
+			overflow-y: hidden !important;
+		}
+		
+		.fixed-top {
+			position: fixed;
+			top: 30px;
+			background-color: #fff;
+			margin-bottom: 30px;
+			-webkit-box-shadow: 1px 3px 15px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 1px 3px 15px 0px rgba(0, 0, 0, 0.1);
+			box-shadow: 1px 3px 15px 0px rgba(0, 0, 0, 0.1);
+			padding: 15px 30px;
+			z-index: 1;
+		}
+	
+		.loader-wrapper {
+			display: none;
+		}
+		
+		.header {
+			width: 100%;
+			height: 70px;
+			position: relative;
+		}
+
+		.header .title {
+			line-height: 65px;
+			font-size: 20px;
+		}
+
+		.toc ul li > a {
+			color: #888da8;
+			font-weight: 500;
+    		font-size: 15px;
+    		padding: 10px 0px;
+    		display: block;
+		}
+
+		.toc ul li > a:hover,
+		.toc ul li > a:focus,
+		.toc ul li > a.active {
+			text-decoration: none;
+    		color: #515365;
+		}	
+
+		.tab-content {
+			padding: 0px 25px;
+			border-left: 1px solid #e6ecf5;
+			min-height: 400px;
+		}
+
+		ul {
+		    list-style: none;
+		    margin-bottom: auto;
+		    padding-left: 0;
+		}
+
+		.font-weight-light {
+			font-weight: 300;
+		}
+
+		pre {
+		    display: block;
+		    padding: 20px;
+		    margin: 0 0 10px;
+		    font-size: 13px;
+		    word-wrap: break-word;
+		    color: #b1c8d4;
+		    background-color: #313644;
+		    border: 1px solid #313644;
+		    border-radius: 4px;
+			white-space:normal;
+      		word-wrap: break-word;
+		}
+
+		code {
+			color: #cd4945;
+		}
+
+		td.active {
+			background-color: #fafcff;
+		}
+
+	</style>
+</head>
+
+<body>
+    <div class="header">
+		<div class="container header-container">
+			<ul class="nav-left">
+				<li>
+					<img class="img-fluid" src="assets/images/logo/logo.png" alt=""> 
+				</li>
+				
+			</ul>
+			<ul class="nav-right">
+				<li class="title text-dark">
+					<b>Docs v1.2.0</b>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container mrg-top-50">
+		<div class="card">
+			<div class="card-block">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="toc">
+							<p>TABLE OF CONTENTS</p>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+							    	<a href="" class="active" data-target="#index-1" data-toggle="tab" role="tab">Introduction</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-2" data-toggle="tab" role="tab">Getting Started</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-3" data-toggle="tab" role="tab">Installation</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-4" data-toggle="tab" role="tab">Command</a>
+								</li>
+								<li class="nav-item">
+							        <a href="" data-target="#index-5" data-toggle="tab" role="tab">Angular 7 Components</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-6" data-toggle="tab" role="tab">Theming & Colors</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-7" data-toggle="tab" role="tab">Helper Class</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-8" data-toggle="tab" role="tab">Credits</a>
+							    </li>
+							    <li class="nav-item">
+							        <a href="" data-target="#index-9" data-toggle="tab" role="tab">Changelog</a>
+							    </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-10">
+						<div class="tab-content">
+						    <div class="tab-pane fade show active" id="index-1" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Introduction
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>Espire is a unique WebApp template for admin and user dashboards with pixel perfect stylish design and tons of useful features. The package contains AngularJs and HTML5/jQuery version, which able to choose the best dashboard solution to fit your project needs. It is easy to customize and coded in developer friendly.</p>
+									<p>Thanks you for purchasing this template, If you have any question about this template, please feel free to contact us. We will provide our best assist.</p>
+									<div class="mrg-top-30">
+										<p><b class="text-dark">Author by: </b> <a href="http://themeforest.net/author_dashboard" target="blank">Theme_Nate</a></p>
+										<p><b class="text-dark">Support via Email:</b> <a href="mailto:jiasheng_93@hotmail.com" target="blank">jiasheng_93@hotmail.com</a>
+										</p>
+									</div>
+								</div>
+						    </div>
+						    <div class="tab-pane fade" id="index-2" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Getting Started
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>Once you have unzip the compressed file, you’ll see something like below</p>
+									<pre> 
+										<code class="display-block">Espire/</code>
+										<code class="display-block">├── angular/</code> 
+										<code class="display-block">├── angular 6/</code>
+										<code class="display-block">└── html/</code>
+									</pre>
+									<p>Each directory contains <b class="text-dark">demo</b> & <b class="text-dark">starter</b> folder.</p>
+									<div class="mrg-btm-20">
+										<h4>Starter</h4>
+										<p>This is a starter pack for developer, it initialize the basic of the template. You can create pages and write your own code here, we highly recommend you copy this folder to your workspace for development.</p>
+									</div>
+									<div class="mrg-btm-20">
+										<h4>Demo</h4>
+										<p>This folder contains all demo source code of Espire, you may possible to import code to your project from code samples provided in this folder.</p>
+									</div>
+									<p>You can see the following structure in each folders:</p>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="card">
+												<div class="card-heading border bottom">
+													<h4 class="card-title">Html</h4>
+												</div>
+												<div class="card-body">
+													<ul>
+														<li>
+															<i class="ei ei-folder text-info"></i>
+															<b class="pdd-left-10 text-dark">html</b>
+															<ul class="mrg-top-10 mrg-left-15">
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">starter</b>
+																	<ul class="mrg-top-10 mrg-left-15">
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">app</b>
+																			<ul class="mrg-top-10 mrg-left-15">
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">assets</b>
+																					<ul class="mrg-top-10 mrg-left-15">
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">css</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">fonts</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">images</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">js</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">scss</b>
+																						</li>
+																					</ul>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-html text-info"></i>
+																					<b class="pdd-left-10 text-dark">index</b>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">bower_components</b>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">bower</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">Gruntfile</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">package</b>
+																			</li>
+																		</li>
+																	</ul>
+																</li>
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">demo</b>
+																</li>
+															</ul>
+														</li>
+													</ul>						
+												</div>	
+											</div>
+											<div class="card">
+												<div class="card-heading border bottom">
+													<h4 class="card-title">Angular 6</h4>
+												</div>
+												<div class="card-body">
+													<ul>
+														<li>
+															<i class="ei ei-folder text-info"></i>
+															<b class="pdd-left-10 text-dark">angular 6</b>
+															<ul class="mrg-top-10 mrg-left-15">
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">starter</b>
+																	<ul class="mrg-top-10 mrg-left-15">
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">e2e</b>
+																			<ul class="mrg-top-10 mrg-left-15">
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">app.e2e-spec</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">app.po</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">tsconfig.e2e</b>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">src</b>
+																			<ul class="mrg-top-10 mrg-left-15">
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">app</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">assets</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">environments</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-html text-info"></i>
+																					<b class="pdd-left-10 text-dark">index</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">main</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">polyfills</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-css text-info"></i>
+																					<b class="pdd-left-10 text-dark">styles</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">test</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">tsconfig.app</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">tsconfig.spec</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-code text-info"></i>
+																					<b class="pdd-left-10 text-dark">typings.d</b>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">.angular-cli</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10 text-opacity">
+																				<i class="ei ei-file-blank text-info"></i>
+																				<b class="pdd-left-10 text-dark">.editorconfig</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">karma.conf</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">package</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">protractor.conf</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10 text-opacity">
+																				<i class="ei ei-file-blank text-info"></i>
+																				<b class="pdd-left-10 text-dark">README.md</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">tsconfig</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">tslint</b>
+																			</li>
+																		</li>
+																	</ul>
+																</li>
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">demo</b>
+																</li>
+															</ul>
+														</li>
+													</ul>						
+												</div>	
+											</div>
+											<div class="card">
+												<div class="card-heading border bottom">
+													<h4 class="card-title">Angular 1</h4>
+												</div>
+												<div class="card-body">
+													<ul>
+														<li>
+															<i class="ei ei-folder text-info"></i>
+															<b class="pdd-left-10 text-dark">angular</b>
+															<ul class="mrg-top-10 mrg-left-15">
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">starter</b>
+																	<ul class="mrg-top-10 mrg-left-15">
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">app</b>
+																			<ul class="mrg-top-10 mrg-left-15">
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">assets</b>
+																					<ul class="mrg-top-10 mrg-left-15">
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">css</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">fonts</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">images</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">js</b>
+																						</li>
+																						<li class="mrg-btm-10">
+																							<i class="ei ei-folder text-info"></i>
+																							<b class="pdd-left-10 text-dark">scss</b>
+																						</li>
+																					</ul>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">scripts</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-folder text-info"></i>
+																					<b class="pdd-left-10 text-dark">views</b>
+																				</li>
+																				<li class="mrg-btm-10">
+																					<i class="ei ei-file-html text-info"></i>
+																					<b class="pdd-left-10 text-dark">index</b>
+																				</li>
+																			</ul>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<i class="ei ei-folder text-info"></i>
+																			<b class="pdd-left-10 text-dark">bower_components</b>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">bower</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">Gruntfile</b>
+																			</li>
+																		</li>
+																		<li class="mrg-btm-10">
+																			<li class="mrg-btm-10">
+																				<i class="ei ei-file-code text-info"></i>
+																				<b class="pdd-left-10 text-dark">package</b>
+																			</li>
+																		</li>
+																	</ul>
+																</li>
+																<li class="mrg-btm-10">
+																	<i class="ei ei-folder text-info"></i>
+																	<b class="pdd-left-10 text-dark">demo</b>
+																</li>
+															</ul>
+														</li>
+													</ul>						
+												</div>	
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						    <div class="tab-pane fade" id="index-3" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Installation
+									</h3>
+								</div>
+								<div class="mrg-btm-30">
+									<div class="mrg-top-20">
+										<p>Espire is built on top of Grunt and Bower tools. You may need to install the following things to get started. If your PC have installed <a href="https://nodejs.org/en/" target="_blank">nodeJS</a>,<a href="https://git-scm.com/" target="_blank">Git</a>, <a href="https://gruntjs.com/" target="_blank">Grunt</a> and <a href="https://bower.io/" target="_blank">Bower</a>, you may skip this part </p>
+									</div>	
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install Node.js</h2>
+										<p>Before installing Grunt, you must have NodeJs installed, Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+										<a href="https://nodejs.org/en/download/" target="_blank">Download Node.js </a>
+									</div>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install Git</h2>
+										<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+										<a href="https://git-scm.com/download/win" target="_blank">Download Git </a>
+									</div>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install Grunt</h2>
+										<p>In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.</p>
+										<p>Run the command below at your cmd as Administrator to install Grunt</p>
+										<pre> npm install -g grunt-cli</pre>
+									</div>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install Bower</h2>
+										<p>Bower can manage components that contain HTML, CSS, JavaScript, fonts or even image files. Bower doesn’t concatenate or minify code or do anything else - it just installs the right versions of the packages you need and their dependencies.</p>
+										<p>Run the command below at your cmd as Administrator to install bower</p>
+										<pre>npm install -g bower</pre>
+									</div>
+
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install Angular Cli (For Angular 6)</h2>
+										<p>A command line interface for Angular</p>
+										<p>Run the command below at your cmd as Administrator to install Angular Cli</p>
+										<pre>npm install -g @angular/cli</pre>
+									</div>
+								</div>
+						    </div>
+						    <div class="tab-pane fade" id="index-4" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Command
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>Once you have completed the installation above, now you are ready to install the Espire.</p>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Install node_modules & bower_ components</h2>
+										<p>Navigate into the work folder which contain <code>Gruntfile.js</code>, run the following command and wait for it to finish:</p>
+										<pre>npm install</pre>
+										<p>You will found a <code>node_modules</code> folder were installed in your work folder</p>
+										<p>Run the following command as well at the same directory (Angular 6 users may skip this part)</p>
+										<pre>bower install</pre>
+										<p>a <code>bower_components</code> folder will be install in your work folder, which contains all the vendor files</p>
+										<p>If you encounter version choosing, please pick the latest version.</p>
+									</div>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Task Command</h2>
+										<p>After you successfully completed the 2 steps above, you will be able to run the following commands in your cmd from your work folder.</p>
+										<b class="text-dark">For Angular4 Version:</b>
+										<table class="table table-bordered mrg-top-15 mrg-btm-30">
+											<thead>
+												<tr>
+													<th width="200"><b>COMMAND</b></th>
+													<th><b>DESCRIPTION</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<code>ng serve</code>
+													</td>
+													<td>
+														<code>ng serve</code> launches a localhost preview of your app, Navigate to <code>http://localhost:4200/</code> to view result.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>ng build</code>
+													</td>
+													<td>
+														<code>ng build</code> will compile all files into a folder called <code>dist</code>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<b class="text-dark">For Angular Version:</b>
+										<table class="table table-bordered mrg-top-15 mrg-btm-30">
+											<thead>
+												<tr>
+													<th width="200"><b>COMMAND</b></th>
+													<th><b>DESCRIPTION</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<code>grunt live</code>
+													</td>
+													<td>
+														<code>grunt live</code> launches a localhost preview of your app (with Livereload) and will reflect all the changes you makes.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>grunt sass</code>
+													</td>
+													<td>
+														<code>grunt sass</code> will compile the pages sass files to css on excute once.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>grunt build</code>
+													</td>
+													<td>
+														<code>grunt build</code> wil minify your js & css into a folder called <code>dist</code>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<b class="text-dark">For HTML Version:</b>
+										<table class="table table-bordered mrg-top-15">
+											<thead>
+												<tr>
+													<th width="200"><b>COMMAND</b></th>
+													<th><b>DESCRIPTION</b></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<code>grunt watch</code>
+													</td>
+													<td>
+														<code>grunt watch</code> his will automaically compile the sass files on save.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>grunt sass</code>
+													</td>
+													<td>
+														<code>grunt sass</code> will compile the pages sass files to css on excute once.
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<code>grunt build</code>
+													</td>
+													<td>
+														<code>grunt build</code> wil minify your js & css into a folder called <code>dist</code>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>		
+								</div>
+							</div>
+							<div class="tab-pane fade" id="index-5" role="tabpanel">
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">Angular datatables</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>DataTablesModule</code> from <code>angular-datatables</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { DataTablesModule } from 'angular-datatables';
+											
+											@NgModule({
+												imports: [
+													DataTablesModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+											@Component ({
+												templateUrl: 'data-table.html'
+											})
+											
+											export class DataTableComponent implements OnInit {
+												dtOptions: DataTables.Settings = {};
+												
+												ngOnInit(): void {
+													this.dtOptions = {
+														pagingType: 'full_numbers'
+													};
+												}
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<table class="table table-lg table-hover" datatable [dtOptions]="dtOptions"></table>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://l-lin.github.io/angular-datatables/" target="_blank">https://l-lin.github.io/angular-datatables/</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Include css file in <code>.angular-cli.json</code> inside <code>styles":[ ]</code></p>
+										<pre class="brush: javascript">
+											"../node_modules/datatables.net-dt/css/jquery.dataTables.css"
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://datatables.net/" target="_blank">https://datatables.net/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ngx-masonry</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>NgxMasonryModule</code> from <code>ngx-masonry</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { NgxMasonryModule } from 'ngx-masonry';
+
+											@NgModule({
+												imports: [
+												NgxMasonryModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											import { Component} from '@angular/core';
+											
+											export class MyComponent {
+												masonryItems = [
+													{ title: 'item 1' },
+													{ title: 'item 2' },
+													{ title: 'item 3' },
+													{ title: 'item 4' },
+													{ title: 'item 5' },
+													{ title: 'item 6' }
+												];	
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<ngxMasonryItem class="col-md-3 masonry-brick masonry-item mrg-btm-30" *ngFor="let item of masonryItems">
+												{{item.title}}
+											</ngxMasonryItem>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/gethinoakes/ngx-masonry" target="_blank">https://github.com/gethinoakes/ngx-masonry/</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">angular2-moment</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>MomentModule</code> from <code>angular2-moment</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { MomentModule } from 'angular2-moment';
+
+											@NgModule({
+												imports: [
+													MomentModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											{{myDate | amTimeAgo:true}}
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://datatables.net/" target="_blank">https://datatables.net/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">angular2-wizard</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>FormWizardModule</code> from <code>angular2-wizard</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { ArchwizardModule } from 'angular-archwizard';
+
+											@NgModule({
+												imports: [
+													ArchwizardModule
+												],
+											})
+											export class Module { }
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<aw-wizard>
+												<aw-wizard-step stepTitle="Title of step 1">
+													Content of Step 1
+													<button type="button" awNextStep>Next Step</button>
+													<button type="button" [awGoToStep]="{stepIndex: 2}">Go directly to third Step</button>
+												</aw-wizard-step>
+												<aw-wizard-step stepTitle="Title of step 2" awOptionalStep>
+													Content of Step 2
+													<button type="button" awPreviousStep>Go to previous step</button>
+													<button type="button" awNextStep>Go to next step</button>
+												</aw-wizard-step>
+												<aw-wizard-step stepTitle="Title of step 3">
+													Content of Step 3
+													<button type="button" awPreviousStep>Previous Step</button>
+													<button type="button" (click)="finishFunction()">Finish</button>
+												</aw-wizard-step>
+											</aw-wizard>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/madoar/angular-archwizard" target="_blank">https://github.com/madoar/angular-archwizard</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ap-ng2-fullcalendar</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>DataTablesModule</code> from <code>angular-datatables</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import {CalendarModule} from "ap-angular-fullcalendar";
+
+											@NgModule({
+												imports: [
+												CalendarModule
+												],
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											@Component({
+												templateUrl: 'my-component.html'
+											})
+											export class MyComponent {
+												calendarOptions:Object = {
+													height: 'parent',
+													fixedWeekCount : false,
+													defaultDate: '2016-09-12',
+													editable: true,
+													eventLimit: true, // allow "more" link when too many events
+													events: [
+														{
+															title: 'All Day Event',
+															start: '2016-09-01'
+														},
+														{
+															title: 'Long Event',
+															start: '2016-09-07',
+															end: '2016-09-10'
+														},
+														{
+															id: 999,
+															title: 'Repeating Event',
+															start: '2016-09-09T16:00:00'
+														},
+														{
+															id: 999,
+															title: 'Repeating Event',
+															start: '2016-09-16T16:00:00'
+														},
+														{
+															title: 'Conference',
+															start: '2016-09-11',
+															end: '2016-09-13'
+														},
+														{
+															title: 'Meeting',
+															start: '2016-09-12T10:30:00',
+															end: '2016-09-12T12:30:00'
+														}
+													]
+												};
+												
+												onCalendarInit(initialized: boolean) {
+													console.log('Calendar initialized');
+												}
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<angular2-fullcalendar [options]="calendarOptions" (initialized)="onCalendarInit($event)"></angular2-fullcalendar>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/lbertenasco/ap-ng2-fullcalendar" target="_blank">https://github.com/lbertenasco/ap-ng2-fullcalendar</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Include css file in <code>.angular-cli.json</code> inside <code>styles":[ ]</code></p>
+										<pre class="brush: javascript">
+											"../node_modules/fullcalendar/dist/fullcalendar.min.css";
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng-selectize</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>NgSelectizeModule</code> from <code>ng-selectize</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import {NgSelectizeModule} from 'ng-selectize'
+											
+											@NgModule({
+												imports: [
+													NgSelectizeModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											selectizeOptions: any = [
+												{
+													label: 'Angular',
+													value: 'angular',
+													code: 'NG'
+												}, {
+													label: 'ReactJS',
+													value: 'reactjs',
+													code: 'RJS'
+												}, {
+													label: 'Ember JS',
+													value: 'emberjs',
+													code: 'emjs'
+												}, {
+													label: 'Ruby on Rails',
+													value: 'ruby_on_rails',
+													code: 'ROR'
+												}
+											];
+										
+											selectizeConfig: any = {
+												labelField: 'label',
+												valueField: 'value',
+												searchField: ['label']
+											};
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<ng-selectize [config]="selectizeConfig" [options] = "selectizeOptions"></ng-selectize>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/NicholasAzar/ng-selectize" target="_blank">https://github.com/NicholasAzar/ng-selectize</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Include css file in <code>.angular-cli.json</code> inside <code>styles":[ ]</code></p>
+										<pre class="brush: javascript">
+											"../node_modules/selectize/dist/css/selectize.css"
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://selectize.github.io/selectize.js/" target="_blank">https://selectize.github.io/selectize.js/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-charts</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>ChartsModule</code> from <code>ng2-charts/ng2-charts</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { ChartsModule } from 'ng2-charts/ng2-charts';
+
+											imports: [
+												ChartsModule
+											]
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											public pieChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+											public pieChartData:number[] = [300, 300, 500];
+											public pieChartType:string = 'pie';
+											public pieChartLegend:boolean = false;
+											public pieChartColors: any = [{ 
+												backgroundColor: [this.themeColors.info, this.themeColors.primary, this.themeColors.success],
+												pointBackgroundColor : [this.themeColors.info, this.themeColors.primary, this.themeColors.success]
+											}];
+										
+											selectizeConfig: any = {
+												labelField: 'label',
+												valueField: 'value',
+												searchField: ['label']
+											};
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+												<canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [legend]="pieChartLegend" [colors]="pieChartColors"></canvas>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/valor-software/ng2-charts" target="_blank">https://github.com/valor-software/ng2-charts</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Embedding <code>Chart.js</code> in application is mandatory!</p>
+										<pre class="brush: html">
+											<script src="node_modules/chart.js/src/chart.js"></script>
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="http://www.chartjs.org/" target="_blank">http://www.chartjs.org/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-nouislider</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>NouisliderModule</code> from <code>ng2-nouislider</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { NouisliderModule } from 'ng2-nouislider';
+											
+											@NgModule({
+												imports: [
+													NouisliderModule
+												]
+											})
+										</pre>
+										<pre class="brush: jfx">
+											@import "~nouislider/distribute/nouislider.min.css";
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											import { Component } from '@angular/core';
+
+											@Component ({
+												templateUrl: 'slider.html'
+											})
+											
+											export class sliderComponent {
+												public horizonSlider1: any = {
+													start: 30,
+													connect: 'lower',
+													step: 1,
+													range: {
+														min: 0,
+														max: 100
+													}
+												};
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<nouislider [config]="horizonSlider1" [(ngModel)]="sliderModel1"></nouislider>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/tb/ng2-nouislider" target="_blank">https://github.com/tb/ng2-nouislider</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://refreshless.com/nouislider/" target="_blank">https://refreshless.com/nouislider/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-nvd3</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>NvD3Module</code> from <code>ng2-nvd3</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { NvD3Module } from 'ng2-nvd3';
+
+											// d3 and nvd3 should be included somewhere
+											import 'd3';
+											import 'nvd3';
+											
+											@NgModule({
+												imports: [
+													NvD3Module
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											@Component({
+												templateUrl: 'nvd3.html'
+											})
+											
+											export class AppComponent implements OnInit {
+												options;
+												data;
+												ngOnInit() {
+													this.options = {
+														chart: {
+															type: 'discreteBarChart',
+															height: 450,
+															margin : {
+																top: 20,
+																right: 20,
+																bottom: 50,
+																left: 55
+															},
+															x: function(d){return d.label;},
+															y: function(d){return d.value;},
+															showValues: true,
+															valueFormat: function(d){
+																return d3.format(',.4f')(d);
+															},
+															duration: 500,
+															xAxis: {
+																axisLabel: 'X Axis'
+															},
+															yAxis: {
+																axisLabel: 'Y Axis',
+																axisLabelDistance: -10
+															}
+														}
+													}
+													this.data = [
+														{
+														key: "Cumulative Return",
+														values: [
+															{
+																"label" : "A" ,
+																"value" : -29.765957771107
+															} ,
+															{
+																"label" : "B" ,
+																"value" : 0
+															} ,
+															{
+																"label" : "C" ,
+																"value" : 32.807804682612
+															} ,
+															{
+																"label" : "D" ,
+																"value" : 196.45946739256
+															} ,
+															{
+																"label" : "E" ,
+																"value" : 0.19434030906893
+															}
+														]
+														}
+													];
+												}
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<div>
+												<nvd3 [options]="options" [data]="data"></nvd3>
+											</div>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/krispo/ng2-nvd3" target="_blank">https://github.com/krispo/ng2-nvd3</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Include css file in <code>.angular-cli.json</code> inside <code>styles":[ ]</code></p>
+										<pre class="brush: javascript">
+											"../node_modules/nvd3/build/nv.d3.css"
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://d3js.org/" target="_blank">https://d3js.org/</a><br>
+										<a href="http://nvd3.org/" target="_blank">http://nvd3.org/</a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-scroll-to</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>ScrollToModule</code> from <code>ng2-scroll-to</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { ScrollToModule } from 'ng2-scroll-to';
+
+											@NgModule({
+												imports: [
+													ScrollToModule.forRoot()
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<a scrollTo href="#main-section">Scroll to main section</a>
+											<button scrollTo scrollTargetSelector="#test-section">Scroll to test section</a>
+											<button scrollTo scrollableElementSelector="#container" scrollYTarget="0">Go top</a>
+											<!-- Further content here -->
+											<div id="container">
+												<section id="main-section">Bla bla bla</section>
+												<section id="test-section">Bla bla bla</section>
+											<div>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/drusso85/ng2-scroll-to" target="_blank">https://github.com/drusso85/ng2-scroll-to</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-sticky</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>NgxMasonryModule</code> from <code>ngx-masonry</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { StickyModule } from 'ng2-sticky-kit';
+
+											@NgModule({
+												imports: [
+													StickyModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<sticky>Sticky element</sticky>
+											<div sticky>Sticky div</div>
+										</pre>
+										<pre class="brush: html">
+											<sticky sticky-zIndex="999">Sticky element</sticky>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/makseo/ng2-sticky" target="_blank">https://github.com/makseo/ng2-sticky</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-toasty</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>ToastyModule</code> from <code>ng2-toasty</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { ToastyModule } from 'ng2-toasty';
+											
+											@NgModule({
+												imports: [
+													ToastyModule.forRoot()
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<span>toasty.service.ts</span>
+										<pre class="brush: jfx">
+											import {Component} from '@angular/core';
+											import {ToastyService, ToastyConfig, ToastOptions, ToastData} from 'ng2-toasty';
+											
+											@Component({
+												selector: 'app',
+												template: `
+													<div>Hello world</div>
+													<button (click)="addToast()">Add Toast</button>
+													<ng2-toasty></ng2-toasty>
+												`
+											})
+											export class AppComponent {
+												
+												constructor(private toastyService:ToastyService, private toastyConfig: ToastyConfig) { 
+													// Assign the selected theme name to the `theme` property of the instance of ToastyConfig. 
+													// Possible values: default, bootstrap, material
+													this.toastyConfig.theme = 'material';
+												}
+												
+												addToast() {
+													// Just add default Toast with title only
+													this.toastyService.default('Hi there');
+													// Or create the instance of ToastOptions
+													var toastOptions:ToastOptions = {
+														title: "My title",
+														msg: "The message",
+														showClose: true,
+														timeout: 5000,
+														theme: 'default',
+														onAdd: (toast:ToastData) => {
+															console.log('Toast ' + toast.id + ' has been added!');
+														},
+														onRemove: function(toast:ToastData) {
+															console.log('Toast ' + toast.id + ' has been removed!');
+														}
+													};
+													// Add see all possible types in one shot
+													this.toastyService.info(toastOptions);
+													this.toastyService.success(toastOptions);
+													this.toastyService.wait(toastOptions);
+													this.toastyService.error(toastOptions);
+													this.toastyService.warning(toastOptions);
+												}
+											}
+										</pre>
+										<span>toasty.component.ts</span>
+										<pre class="brush: jfx">
+											import {Component} from '@angular/core';
+											import {ToastyService, ToastyConfig, ToastyComponent, ToastOptions, ToastData} from 'ng2-toasty';
+											import {Subject, Observable, Subscription} from 'rxjs/Rx';
+											
+											@Component({
+												selector: 'app',
+												templateUrl: `toasty.html`
+											})
+											export class AppComponent {
+												
+												getTitle(num: number): string {
+													return 'Countdown: ' + num;
+												}
+											
+												getMessage(num: number): string {
+													return 'Seconds left: ' + num;
+												}
+												
+												constructor(private toastyService:ToastyService) { }
+												
+												addToast() {
+													let interval = 1000;
+													let timeout = 5000;
+													let seconds = timeout / 1000;
+													let subscription: Subscription;
+													
+													let toastOptions: ToastOptions = {
+														title: this.getTitle(seconds),
+														msg: this.getMessage(seconds),
+														showClose: true,
+														timeout: timeout,
+														onAdd: (toast: ToastData) => {
+															console.log('Toast ' + toast.id + ' has been added!');
+															// Run the timer with 1 second iterval
+															let observable = Observable.interval(interval).take(seconds);
+															// Start listen seconds beat
+															subscription = observable.subscribe((count: number) => {
+																// Update title of toast
+																toast.title = this.getTitle(seconds - count - 1);
+																// Update message of toast
+																toast.msg = this.getMessage(seconds - count - 1);
+															});
+											
+														},
+														onRemove: function(toast: ToastData) {
+															console.log('Toast ' + toast.id + ' has been removed!');
+															// Stop listenning
+															subscription.unsubscribe();
+														}
+													};
+											
+													switch (this.options.type) {
+														case 'default': this.toastyService.default(toastOptions); break;
+														case 'info': this.toastyService.info(toastOptions); break;
+														case 'success': this.toastyService.success(toastOptions); break;
+														case 'wait': this.toastyService.wait(toastOptions); break;
+														case 'error': this.toastyService.error(toastOptions); break;
+														case 'warning': this.toastyService.warning(toastOptions); break;
+													}
+												}
+											}
+										</pre>
+										<span>app.component.ts</span>
+										<pre class="brush: jfx">
+											import {Component} from '@angular/core';
+											import {ToastyService, ToastyConfig, ToastyComponent, ToastOptions, ToastData} from 'ng2-toasty';
+											import {Subject, Observable, Subscription} from 'rxjs/Rx';
+											
+											@Component({
+												selector: 'app',
+												template: `
+													<div>Hello world</div>
+													<button (click)="addToast()">Add Toast</button>
+													<ng2-toasty></ng2-toasty>
+												`
+											})
+											export class AppComponent {
+												
+												getTitle(num: number): string {
+													return 'Countdown: ' + num;
+												}
+											
+												getMessage(num: number): string {
+													return 'Seconds left: ' + num;
+												}
+												
+												constructor(private toastyService:ToastyService) { }
+												
+												addToast() {
+													let interval = 1000;
+													let timeout = 5000;
+													let seconds = timeout / 1000;
+													let subscription: Subscription;
+													
+													let toastOptions: ToastOptions = {
+														title: this.getTitle(seconds),
+														msg: this.getMessage(seconds),
+														showClose: true,
+														timeout: timeout,
+														onAdd: (toast: ToastData) => {
+															console.log('Toast ' + toast.id + ' has been added!');
+															// Run the timer with 1 second iterval
+															let observable = Observable.interval(interval).take(seconds);
+															// Start listen seconds beat
+															subscription = observable.subscribe((count: number) => {
+																// Update title of toast
+																toast.title = this.getTitle(seconds - count - 1);
+																// Update message of toast
+																toast.msg = this.getMessage(seconds - count - 1);
+															});
+											
+														},
+														onRemove: function(toast: ToastData) {
+															console.log('Toast ' + toast.id + ' has been removed!');
+															// Stop listenning
+															subscription.unsubscribe();
+														}
+													};
+											
+													switch (this.options.type) {
+														case 'default': this.toastyService.default(toastOptions); break;
+														case 'info': this.toastyService.info(toastOptions); break;
+														case 'success': this.toastyService.success(toastOptions); break;
+														case 'wait': this.toastyService.wait(toastOptions); break;
+														case 'error': this.toastyService.error(toastOptions); break;
+														case 'warning': this.toastyService.warning(toastOptions); break;
+													}
+												}
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<div>Hello world</div>
+											<button (click)="addToast()">Add Toast</button>
+											<ng2-toasty></ng2-toasty>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/akserg/ng2-toasty" target="_blank">https://github.com/akserg/ng2-toasty</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ng2-validation</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>CustomFormsModule</code> from <code>ng2-validation</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { CustomFormsModule } from 'ng2-validation'
+											import { FormsModule } from '@angular/forms';
+
+											@NgModule({
+												imports: [
+													FormsModule,
+													CustomFormsModule
+												]
+											})
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Usage</b></p>
+										<pre class="brush: jfx">
+											import { Component} from '@angular/core';
+											
+											export class MyComponent {
+												this.form = new FormGroup({
+													field: new FormControl('', CustomValidators.range([5, 9]))
+												});
+											}
+										</pre>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<input type="text" formControlName="field"/>
+											<p *ngIf="demoForm.from.controls.field.errors?.rangeLength">error message</p>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/yuyang041060120/ng2-validation" target="_blank">https://github.com/yuyang041060120/ng2-validation</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-heading border bottom bg-gray">
+										<h4 class="card-title">ngx-perfect-scrollbar</h4>
+									</div>
+									<div class="card-block">
+										<p class="text-dark"><b>Import</b></p>
+										<p>Import the <code>DataTablesModule</code> from <code>angular-datatables</code> to your app module as below.</p>
+										<pre class="brush: jfx"> 
+											import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+											import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+											import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+											
+											const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+												suppressScrollX: true
+											};
+											
+											@NgModule({
+												...
+												imports: [
+												...
+												PerfectScrollbarModule
+												],
+												providers: [
+												{
+													provide: PERFECT_SCROLLBAR_CONFIG,
+													useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+												}
+												]
+											})
+										</pre>
+										<hr>
+										<hr>
+										<p class="text-dark"><b>Markup</b></p>
+										<pre class="brush: html">
+											<perfect-scrollbar style="max-width: 600px; max-height: 400px;" [config]="config">
+												<div>Scrollable content</div>
+											</perfect-scrollbar>
+										</pre>
+										<table class="table table-bordered mrg-top-30">
+											<tbody>
+												<tr>
+													<td><b class="text-dark">Source Page</b></td>
+													<td><a href="https://github.com/zefoy/ngx-perfect-scrollbar" target="_blank">https://github.com/zefoy/ngx-perfect-scrollbar</a></td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="text-dark"><b>Includes</b></p>
+										<p>Include css file in <code>.angular-cli.json</code> inside <code>styles":[ ]</code></p>
+										<pre class="brush: javascript">
+											"../node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
+										</pre>
+										<p class="text-dark no-mrg-btm"><b>Dependencies</b></p>
+										<a href="https://utatti.github.io/perfect-scrollbar/" target="_blank">https://utatti.github.io/perfect-scrollbar/</a>
+									</div>
+								</div>
+							</div>
+						    <div class="tab-pane fade" id="index-6" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Theming & Colors
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>Bootstrap has some contextual classes that can be used to provide "meaning through colors". Convey meaning through color with a handful of emphasis utility classes. </p>
+									<div class="mr-auto ml-auto">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="card">
+													<div class="padding-20 bg-dark">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">dark</p>
+													</div>
+												</div>
+												<div class="card">
+													<div class="padding-20 bg-success">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">success</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="card">
+													<div class="padding-20 bg-gray">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">gray</p>
+													</div>
+												</div>
+												<div class="card">
+													<div class="padding-20 bg-info">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">info</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="card">
+													<div class="padding-20 bg-white border bottom">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">white</p>
+													</div>
+												</div>
+												<div class="card">
+													<div class="padding-20 bg-warning">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">warning</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="card">
+													<div class="padding-20 bg-primary">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">primary</p>
+													</div>
+												</div>
+												<div class="card">
+													<div class="padding-20 bg-danger">
+													</div>
+													<div class="padding-10">
+														<p class="no-mrg-btm">danger</p>
+													</div>
+												</div>
+											</div>
+										</div> 
+									</div>
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Header Themes</h2>
+										<p>We have already included 6 pre-made themes for header, Add the following css classes to <code>body</code> tag or <code>&lt;div class="app"&gt;</code> tag to customize your header.</p>
+										<ul class="list dash">
+											<li><code>.header-primary</code></li>
+											<li><code>.header-success</code></li>
+											<li><code>.header-info</code></li>
+											<li><code>.header-danger</code></li>
+											<li><code>.header-dark</code></li>
+										</ul>
+									</div>	
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">Side Header</h2>
+										<p>Switch your side header to dark by adding <code>.side-nav-dark</code> class to <code>body</code> tag or <code>&lt;div class="app"&gt;</code> tag.</p>
+									</div>	
+									<div class="mrg-top-40">
+										<h2 class="font-weight-light">RTL</h2>
+										<p>Add <code>.rtl</code> class to <code>body</code> tag or <code>&lt;div class="app"&gt;</code> tag to active right to left layout.</p>
+									</div>	
+								</div>	
+						    </div>
+						    <div class="tab-pane fade" id="index-7" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Helper Class
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>Espire comes with many helpful CSS classes that will enable you to style your elements and build your pages any way you want.</p>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-30">Margin</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.no-mrg</code></td>
+												<td>margin: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-top</code></td>
+												<td>margin-top: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-btm</code></td>
+												<td>margin-bottom: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-left</code></td>
+												<td>margin-left: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-right</code></td>
+												<td>margin-right: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-vertical</code></td>
+												<td>margin-top: 0px; margin-bottom: 0px;</td>
+											</tr>
+											<tr>
+												<td><code>.no-mrg-horizon</code></td>
+												<td>margin-left: 0px; margin-right: 0px;</td>
+											</tr>
+											<tr>
+												<td class="active" colspan="2">
+													Margin
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-5</code></td>
+												<td>margin: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-10</code></td>
+												<td>margin: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-15</code></td>
+												<td>margin: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-20</code></td>
+												<td>margin: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-25</code></td>
+												<td>margin: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-30</code></td>
+												<td>margin: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-150</code></td>
+												<td>margin: 150px</td>
+											</tr>
+											<tr>
+												<td class="active" colspan="2">
+													Margin Top 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-5</code></td>
+												<td>margin-top: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-10</code></td>
+												<td>margin-top: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-15</code></td>
+												<td>margin-top: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-20</code></td>
+												<td>margin-top: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-25</code></td>
+												<td>margin-top: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-30</code></td>
+												<td>margin-top: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-top-150</code></td>
+												<td>margin-top: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Margin Bottom 
+												</td>
+											</tr>
+
+											<tr>
+												<td><code>.mrg-btm-5</code></td>
+												<td>margin-bottom: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-10</code></td>
+												<td>margin-bottom: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-15</code></td>
+												<td>margin-bottom: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-20</code></td>
+												<td>margin-bottom: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-25</code></td>
+												<td>margin-bottom: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-30</code></td>
+												<td>margin-bottom: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-btm-150</code></td>
+												<td>margin-bottom: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Margin Right 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-auto</code></td>
+												<td>margin-right: auto</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-5</code></td>
+												<td>margin-right: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-10</code></td>
+												<td>margin-right: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-15</code></td>
+												<td>margin-right: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-20</code></td>
+												<td>margin-right: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-25</code></td>
+												<td>margin-right: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-30</code></td>
+												<td>margin-right: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-right-150</code></td>
+												<td>margin-right: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Margin Left 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-auto</code></td>
+												<td>margin-left: auto</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-5</code></td>
+												<td>margin-left: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-10</code></td>
+												<td>margin-left: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-15</code></td>
+												<td>margin-left: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-20</code></td>
+												<td>margin-left: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-25</code></td>
+												<td>margin-left: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-30</code></td>
+												<td>margin-left: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-left-150</code></td>
+												<td>margin-left: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Margin Vertical 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-5</code></td>
+												<td>margin-top: 5px; margin-bottom: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-10</code></td>
+												<td>margin-top: 10px; margin-bottom: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-15</code></td>
+												<td>margin-top: 15px; margin-bottom: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-20</code></td>
+												<td>margin-top: 20px; margin-bottom: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-25</code></td>
+												<td>margin-top: 25px margin-bottom: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-30</code></td>
+												<td>margin-top: 30px margin-bottom: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-150</code></td>
+												<td>margin-top: 150px; margin-bottom: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Margin Horizon 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-auto</code></td>
+												<td>margin-left: auto; margin-right: auto</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-5</code></td>
+												<td>margin-left: 5px; margin-right: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-10</code></td>
+												<td>margin-left: 10px; margin-right: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-15</code></td>
+												<td>margin-left: 15px; margin-right: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-20</code></td>
+												<td>margin-left: 20px; margin-right: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-25</code></td>
+												<td>margin-left: 25px margin-right: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-horizon-30</code></td>
+												<td>margin-left: 30px margin-right: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.mrg-vertical-150</code></td>
+												<td>margin-top: 150px; margin-bottom: 150px</td>
+											</tr>
+										</tbody>
+									</table>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Padding</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.no-pdd</code></td>
+												<td>padding: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-top</code></td>
+												<td>padding-top: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-btm</code></td>
+												<td>padding-bottom: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-left</code></td>
+												<td>padding-left: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-right</code></td>
+												<td>padding-right: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-vertical</code></td>
+												<td>padding-top: 0px; padding-bottom: 0px;</td>
+											</tr>
+											<tr>
+												<td><code>.no-pdd-horizon</code></td>
+												<td>padding-left: 0px; padding-right: 0px;</td>
+											</tr>
+											<tr>
+												<td class="active" colspan="2">
+													Padding
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-5</code></td>
+												<td>padding: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-10</code></td>
+												<td>padding: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-15</code></td>
+												<td>padding: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-20</code></td>
+												<td>padding: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-25</code></td>
+												<td>padding: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-30</code></td>
+												<td>padding: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-150</code></td>
+												<td>padding: 150px</td>
+											</tr>
+											<tr>
+												<td class="active" colspan="2">
+													Padding Top 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-5</code></td>
+												<td>padding-top: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-10</code></td>
+												<td>padding-top: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-15</code></td>
+												<td>padding-top: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-20</code></td>
+												<td>padding-top: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-25</code></td>
+												<td>padding-top: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-30</code></td>
+												<td>padding-top: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-top-150</code></td>
+												<td>padding-top: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Padding Bottom 
+												</td>
+											</tr>
+
+											<tr>
+												<td><code>.pdd-btm-5</code></td>
+												<td>padding-bottom: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-10</code></td>
+												<td>padding-bottom: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-15</code></td>
+												<td>padding-bottom: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-20</code></td>
+												<td>padding-bottom: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-25</code></td>
+												<td>padding-bottom: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-30</code></td>
+												<td>padding-bottom: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-btm-150</code></td>
+												<td>padding-bottom: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Padding Right 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-5</code></td>
+												<td>padding-right: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-10</code></td>
+												<td>padding-right: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-15</code></td>
+												<td>padding-right: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-20</code></td>
+												<td>padding-right: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-25</code></td>
+												<td>padding-right: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-30</code></td>
+												<td>padding-right: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-right-150</code></td>
+												<td>padding-right: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Padding Left 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-5</code></td>
+												<td>padding-left: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-10</code></td>
+												<td>padding-left: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-15</code></td>
+												<td>padding-left: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-20</code></td>
+												<td>padding-left: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-25</code></td>
+												<td>padding-left: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-30</code></td>
+												<td>padding-left: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-left-150</code></td>
+												<td>padding-left: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Padding Vertical 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-5</code></td>
+												<td>padding-top: 5px; padding-bottom: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-10</code></td>
+												<td>padding-top: 10px; padding-bottom: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-15</code></td>
+												<td>padding-top: 15px; padding-bottom: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-20</code></td>
+												<td>padding-top: 20px; padding-bottom: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-25</code></td>
+												<td>padding-top: 25px padding-bottom: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-30</code></td>
+												<td>padding-top: 30px padding-bottom: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-150</code></td>
+												<td>padding-top: 150px; padding-bottom: 150px</td>
+											</tr>
+
+											<tr>
+												<td class="active" colspan="2">
+													Padding Horizon 
+												</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-5</code></td>
+												<td>padding-left: 5px; padding-right: 5px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-10</code></td>
+												<td>padding-left: 10px; padding-right: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-15</code></td>
+												<td>padding-left: 15px; padding-right: 15px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-20</code></td>
+												<td>padding-left: 20px; padding-right: 20px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-25</code></td>
+												<td>padding-left: 25px padding-right: 25px</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-horizon-30</code></td>
+												<td>padding-left: 30px padding-right: 30px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.pdd-vertical-150</code></td>
+												<td>padding-top: 150px; padding-bottom: 150px</td>
+											</tr>
+										</tbody>
+									</table>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Width</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.width-0</code></td>
+												<td>width: 0px</td>
+											</tr>
+											<tr>
+												<td><code>.width-10</code></td>
+												<td>width: 10%</td>
+											</tr>
+											<tr>
+												<td><code>.width-15</code></td>
+												<td>width: 15%</td>
+											</tr>
+											<tr>
+												<td><code>.width-20</code></td>
+												<td>width: 20%</td>
+											</tr>
+											<tr>
+												<td><code>.width-25</code></td>
+												<td>width: 25%</td>
+											</tr>
+											<tr>
+												<td><code>.width-30</code></td>
+												<td>width: 30%</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit</td>
+											</tr>
+											<tr>
+												<td><code>.width-100</code></td>
+												<td>width: 100%</td>
+											</tr>
+										</tbody>
+									</table>	
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Font Size</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.font-size-8</code></td>
+												<td>font-size: 8px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-9</code></td>
+												<td>font-size: 9px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-10</code></td>
+												<td>font-size: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-11</code></td>
+												<td>font-size: 11px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-12</code></td>
+												<td>font-size: 12px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-13</code></td>
+												<td>font-size: 13px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-14</code></td>
+												<td>font-size: 14px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-15</code></td>
+												<td>font-size: 15px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>1 interval per unit until 30</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-30</code></td>
+												<td>font-size: 30px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-35</code></td>
+												<td>font-size: 35px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-40</code></td>
+												<td>font-size: 40px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-45</code></td>
+												<td>font-size: 45px</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-50</code></td>
+												<td>font-size: 50px</td>
+											</tr>
+											<tr>
+												<td>...</td>
+												<td>5 interval per unit until 200</td>
+											</tr>
+											<tr>
+												<td><code>.font-size-200</code></td>
+												<td>font-size: 200px</td>
+											</tr>
+										</tbody>
+									</table>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Position</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.relative</code></td>
+												<td>position: relative</td>
+											</tr>
+											<tr>
+												<td><code>.absolute</code></td>
+												<td>position: absolute</td>
+											</tr>
+											<tr>
+												<td><code>.fixed</code></td>
+												<td>position: fixed</td>
+											</tr>
+											<tr>
+												<td><code>.static</code></td>
+												<td>position: static</td>
+											</tr>
+										</tbody>
+									</table>	
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Overflow</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.overflow-hidden</code></td>
+												<td> overflow: hidden</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-y-hidden</code></td>
+												<td>overflow-y: hidden</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-x-hidden</code></td>
+												<td>overflow-x: hidden</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-auto</code></td>
+												<td> overflow: auto</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-y-auto</code></td>
+												<td>overflow-y: auto</td>
+											</tr>
+											<tr>
+												<td><code>.overflow-x-auto</code></td>
+												<td>overflow-x: auto</td>
+											</tr>
+										</tbody>
+									</table>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Border</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.border</code></td>
+												<td> border: 1px solid $border-color;</td>
+											</tr>
+											<tr>
+												<td><code>.border.top</code></td>
+												<td>border top</td>
+											</tr>
+											<tr>
+												<td><code>.border.right</code></td>
+												<td>border right</td>
+											</tr>
+											<tr>
+												<td><code>.border.bottom</code></td>
+												<td>border bottom</td>
+											</tr>
+											<tr>
+												<td><code>.border.left</code></td>
+												<td>border left</td>
+											</tr>
+											<tr>
+												<td><code>.no-border</code></td>
+												<td>no border</td>
+											</tr>
+										</tbody>
+									</table>
+									<h2 class="font-weight-light mrg-btm-15 mrg-top-50">Border Radius</h2>
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th width="200">Class</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>.border-radius-4</code></td>
+												<td> border-radius: 4px</td>
+											</tr>
+											<tr>
+												<td><code>.border-radius-6</code></td>
+												<td> border-radius: 6px</td>
+											</tr>
+											<tr>
+												<td><code>.border-radius-8</code></td>
+												<td> border-radius: 4px</td>
+											</tr>
+											<tr>
+												<td><code>.border-radius-8</code></td>
+												<td> border-radius: 8px</td>
+											</tr>
+											<tr>
+												<td><code>.border-radius-10</code></td>
+												<td> border-radius: 10px</td>
+											</tr>
+											<tr>
+												<td><code>.border-radius-round</code></td>
+												<td> border-radius: 50px</td>
+											</tr>
+										</tbody>
+									</table>		
+								</div>	
+						    </div>
+						    <div class="tab-pane fade" id="index-8" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Credits
+									</h3>
+								</div>
+								<div class="mrg-top-20">
+									<p>We've used the following images, icons, plugins or other files as listed.</p>
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Jquery
+										</h4>
+										<ul class="list dash">
+											<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+											<li><a href="http://jquery.com/">Jquery</a></li>
+											<li><a href="https://datatables.net/">datatables</a></li>
+											<li><a href="https://popper.js.org/">popper.js</a></li>
+											<li><a href="http://noraesae.github.io/perfect-scrollbar/">perfect-scrollbar</a></li>
+											<li><a href="http://github.hubspot.com/pace/docs/welcome/">PACE</a></li>
+											<li><a href="https://refreshless.com/nouislider/">nouislider</a></li>
+											<li><a href="https://ned.im/noty/#/">noty</a></li>
+											<li><a href="https://omnipotent.net/jquery.sparkline/#s-about">jquery.sparkline</a></li>
+											<li><a href="https://github.com/VinceG/twitter-bootstrap-wizard.git#master">twitter-bootstrap-wizard</a></li>
+											<li><a href="http://code.shutterstock.com/rickshaw/">rickshaw</a></li>
+											<li><a href="https://momentjs.com/">moment</a></li>
+											<li><a href="https://imagesloaded.desandro.com/">imagesloaded</a></li>
+											<li><a href="https://masonry.desandro.com/">masonry</a></li>
+											<li><a href="http://photoswipe.com/">photoswipe</a></li>
+											<li><a href="http://jvectormap.com/">jvectormap</a></li>
+											<li><a href="https://jqueryvalidation.org/">jquery-validation</a></li>
+											<li><a href="http://bootstrap-datepicker.readthedocs.io/en/latest/">bootstrap-datepicker</a></li>
+											<li><a href="http://www.daterangepicker.com/">bootstrap-daterangepicker</a></li>
+											<li><a href="https://jdewit.github.io/bootstrap-timepicker/">bootstrap-timepicker</a></li>
+											<li><a href="http://summernote.org/">summernote</a></li>
+											<li><a href="https://fullcalendar.io/">fullcalendar</a></li>
+											<li><a href="https://sweetalert.js.org/">sweetalert</a></li>
+											<li><a href="https://selectize.github.io/selectize.js/">selectize</a></li>
+											<li><a href="https://d3js.org/">d3</a></li>
+											<li><a href="http://nvd3.org/">nvd3</a></li>
+											<li><a href="http://www.chartjs.org/">chart.js</a></li>
+											<li><a href="http://stickyjs.com/">sticky</a></li>
+										</ul>
+									</div>
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Angular
+										</h4>
+										<ul class="list dash">
+											<li><a href="https://angular.io/">angular</a></li>
+											<li><a href="https://ui-router.github.io/ng1/">angular-ui-router</a></li>
+											<li><a href="https://oclazyload.readme.io/">oclazyload</a></li>
+											<li><a href="https://angular-ui.github.io/bootstrap/">angular-bootstrap</a></li>
+											<li><a href="https://github.com/puxos/angular-ui-jq">ui-jq</a></li>
+											<li><a href="http://l-lin.github.io/angular-datatables/archives/#!/welcome">angular-datatables</a></li>
+											<li><a href="https://github.com/vasyabigi/angular-slick">angular-slick-carousel</a></li>
+											<li><a href="http://ngyewch.github.io/angular-rickshaw/">angular-rickshaw</a></li>
+											<li><a href="https://github.com/passy/angular-masonry">angular-masonry</a></li>
+											<li><a href="https://github.com/m00s/angular-photoswipe.git">angular-photoswipe</a></li>
+											<li><a href="https://github.com/angular-ui/ui-event">angular-ui-event</a></li>
+											<li><a href="https://github.com/angular-ui/ui-map">angular-ui-map</a></li>
+											<li><a href="http://angular-ui.github.io/ui-calendar/">angular-ui-calendar</a></li>
+											<li><a href="https://github.com/summernote/angular-summernote">angular-summernote</a></li>
+											<li><a href="https://github.com/Yankovsky/nouislider-angular">nouislider-angular</a></li>
+											<li><a href="https://github.com/oitozero/ngSweetAlert.git">ngSweetAlert</a></li>
+											<li><a href="https://github.com/machineboy2045/angular-selectize.git">angular-selectize</a></li>
+											<li><a href="https://github.com/angular-ui/ui-mask">angular-ui-mask</a></li>
+											<li><a href="https://github.com/treasure-data/angular-treasure-overlay-spinner">angular-treasure-overlay-spinner</a></li>
+											<li><a href="https://www.npmjs.com/package/angular-animate">angular-animate</a></li>
+											<li><a href="https://github.com/oblador/angular-scroll">angular-scroll</a></li>
+											<li><a href="https://github.com/d-oliveros/ngSticky">ngSticky</a></li>
+											<li><a href="https://github.com/myplanet/angular-deep-blur.git">angular-deep-blur</a></li>
+											<li><a href="http://krispo.github.io/angular-nvd3/#/">angular-nvd3</a></li>
+											<li><a href="https://github.com/jtblin/angular-chart.js.git">angular-chart</a></li>
+										</ul>
+									</div>
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Angular 6
+										</h4>
+										<ul class="list dash">
+											<li><a href="https://angular.io/">angular 6</a></li>
+											<li><a href="https://github.com/amcharts/ammap3">ammap</a></li>
+											<li><a href="https://l-lin.github.io/angular-datatables/">angular-datatables</a></li>
+											<li><a href="https://github.com/gethinoakes/ngx-masonry">ngx-masonry</a></li>
+											<li><a href="https://github.com/urish/angular2-moment">angular2-moment</a></li>
+											<li><a href="https://github.com/madoar/angular-archwizard">angular-archwizard</a></li>
+											<li><a href="https://github.com/lbertenasco/ap-ng2-fullcalendar">ap-angular2-fullcalendar</a></li>
+											<li><a href="https://github.com/NicholasAzar/ng-selectize">ng-selectize</a></li>
+											<li><a href="https://github.com/valor-software/ng2-charts">ng2-charts</a></li>
+											<li><a href="https://github.com/tb/ng2-nouislider">ng2-nouislider</a></li>
+											<li><a href="https://github.com/krispo/ng2-nvd3">ng2-nvd3</a></li>
+											<li><a href="https://github.com/drusso85/ng2-scroll-to">ng2-scroll-to</a></li>
+											<li><a href="https://github.com/makseo/ng2-sticky">ng2-sticky-kit</a></li>
+											<li><a href="https://github.com/akserg/ng2-toasty">ng2-toasty</a></li>
+											<li><a href="https://github.com/yuyang041060120/ng2-validation">ng2-validation</a></li>
+											<li><a href="https://github.com/zefoy/ngx-perfect-scrollbar">ngx-perfect-scrollbar</a></li>
+										</ul>
+									</div>	
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Images
+										</h4>
+										<ul class="list dash">
+											<li><a href="https://unsplash.com/">unsplash</a></li>
+										</ul>
+									</div>	
+
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Icon
+										</h4>
+										<ul class="list dash">
+											<li><a href="http://fontawesome.io/">Font Awesome</a></li>
+											<li><a href="https://themify.me/themify-icons">Themify Icon</a></li>
+										</ul>
+									</div>		
+									<div class="mrg-top-20">
+										<h4 class="card-title">
+											<i class=""></i>
+											Font Used (Google Fonts)
+										</h4>
+										<ul class="list dash">
+											<li><a href="https://fonts.google.com/">Roboto</a></li>
+										</ul>
+									</div>		
+								</div>	
+						    </div>
+						    <div class="tab-pane fade" id="index-9" role="tabpanel">
+						    	<div class="card-heading border bottom no-pdd-left">
+									<h3 class="card-title">
+										<i class=""></i>
+										Changelog
+									</h3>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.2.0 <small class="font-size-14">(2/12/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Upgrade] Angular 6 to Angular 7</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.1.4 <small class="font-size-14">(4/11/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Minor bugs</li>
+										<li>[Add] Task page for angular 6 & html</li>
+										<li>[Remove] Bower Component from html version instead of 'vendors' folder</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.1.3 <small class="font-size-14">(7/7/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Upgrade] Angular 5 to Angular 6</li>
+										<li>[Remove] angular-2-wizard dependency</li>
+										<li>[Add] Angular archwizard</li>
+										<li>[Fix] ng build --prod fail issue</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.1.2 <small class="font-size-14">(26/5/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] ng build fail issue</li>
+										<li>[Add] Angular 5 3rd party dependencies usage to documentaion</li>
+										<li>[Fix] Minor type issue for angular 5 modules</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.1.1 <small class="font-size-14">(19/5/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Failed build for angular 5</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.1.0 <small class="font-size-14">(6/5/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] UI issue of datepicker for Angular 5</li>
+										<li>[Add] 3rd party dependencies to package.json.</li>
+										<li>[Note] Bower will be remain due to some dependencies version compatible issue, users possible to choose dependency between npm & bower.</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.10 <small class="font-size-14">(4/3/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Advanced search function for Angular 5</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.9 <small class="font-size-14">(21/1/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Sign-In & Sign-up pages display issue on mobile</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.8 <small class="font-size-14">(6/1/2018)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Dependencies version error for Angular 5</li>
+										<li>[Fix] Selectize UI error for Angular 5</li>
+										<li>[Fix] Customize datepicker style for Angular 5</li>
+										<li>[Fix] Centered card portlet icon</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.7 <small class="font-size-14">(27/12/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Missing dependency for Angular 5</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.6 <small class="font-size-14">(23/12/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Upgrade] Angular 4 to Angular 5</li>
+										<li>[New] Added Starter pack for each version</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.5 <small class="font-size-14">(19/11/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Bower install error</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.4 <small class="font-size-14">(18/11/2017)</small></h2>
+									<ul class="list dash">
+										<li>[New] Angular 4 version release</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.3 <small class="font-size-14">(13/10/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Add] Notification Counter</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.2 <small class="font-size-14">(7/10/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] Card portlet dropdown issue</li>
+										<li>[Fix] Table responsive issue</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.1 <small class="font-size-14">(29/9/2017)</small></h2>
+									<ul class="list dash">
+										<li>[Fix] RTL responsive issue</li>
+									</ul>
+								</div>
+								<div class="mrg-top-30">
+									<h2 class="font-weight-light">v1.0.0 <small class="font-size-14">(24/9/2017)</small></h2>
+									<ul class="list dash">
+										<li>Release</li>
+									</ul>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/syntax-highlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="assets/js/syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="assets/js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/syntax-highlighter/scripts/shBrushJavaFX.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			SyntaxHighlighter.all();
+		});
+		
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+			if (scroll >= 600) {
+				$(".widget-link").addClass("fixed-top");
+			} else {
+				$(".widget-link").removeClass("fixed-top");
+			}
+		});	
+	
+	</script>
+</body>
+
+</html>
