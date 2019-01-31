@@ -1,0 +1,405 @@
+<html>
+<head>
+<title>Tema 1: Los art&iacute;culos: eslabones peque&ntilde;os pero importantes.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../../estilos.css" type="text/css">
+<script language="JavaScript">
+<!--
+<!--
+	var width = "400";
+	var border = "1";
+	var offsetx = -200;
+	var offsety = -95;	
+	var linea = "#000066";
+
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+var respuestas = new Array(10);
+var vacia = true;
+var correctas = 0;
+var numpreg = 0;
+
+function valida(){
+vacia = false;
+	//pregunta 1
+	if(document.forma.preg1.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 1");
+		vacia= true;
+		document.location.href="#1";
+	}else{
+		if(document.forma.preg1.value==1){
+			respuestas[0] = true;
+		}else{
+			respuestas[0] = false;
+		}
+	}
+	//pregunta 2
+	if(document.forma.preg2.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 2");
+		vacia= true;
+		document.location.href="#2";
+	}else{
+		if(document.forma.preg2.value==5){
+			respuestas[1] = true;
+		}else{
+			respuestas[1] = false;
+		}
+	}
+	//pregunta 3
+	if(document.forma.preg3.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 3");
+		vacia= true;
+		document.location.href="#3";
+	}else{
+		if(document.forma.preg3.value==1){
+			respuestas[2] = true;
+		}else{
+			respuestas[2] = false;
+		}
+	}
+	//pregunta 4
+	if(document.forma.preg4.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 4");
+		vacia= true;
+		document.location.href="#4";
+	}else{
+		if(document.forma.preg4.value==2){
+			respuestas[3] = true;
+		}else{
+			respuestas[3] = false;
+		}
+	}
+	//pregunta 5
+	if(document.forma.preg5.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 5");
+		vacia= true;
+		document.location.href="#5";
+	}else{
+		if(document.forma.preg5.value==4){
+			respuestas[4] = true;
+		}else{
+			respuestas[4] = false;
+		}
+	}
+	//pregunta 6
+	if(document.forma.preg6.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 6");
+		vacia= true;
+		document.location.href="#6";
+	}else{
+		if(document.forma.preg6.value==5){
+			respuestas[5] = true;
+		}else{
+			respuestas[5] = false;
+		}
+	}
+	//pregunta 7
+	if(document.forma.preg7.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 7");
+		vacia= true;
+		document.location.href="#7";
+	}else{
+		if(document.forma.preg7.value==2){
+			respuestas[6] = true;
+		}else{
+			respuestas[6] = false;
+		}
+	}
+	//pregunta 8
+	if(document.forma.preg8.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 8");
+		vacia= true;
+		document.location.href="#8";
+	}else{
+		if(document.forma.preg8.value==1){
+			respuestas[7] = true;
+		}else{
+			respuestas[7] = false;
+		}
+	}
+	//pregunta 9
+	if(document.forma.preg9.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 9");
+		vacia= true;
+		document.location.href="#9";
+	}else{
+		if(document.forma.preg9.value==2){
+			respuestas[8] = true;
+		}else{
+			respuestas[8] = false;
+		}
+	}
+	//pregunta 10
+	if(document.forma.preg10.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 10");
+		vacia= true;
+		document.location.href="#10";
+	}else{
+		if(document.forma.preg10.value==4){
+			respuestas[9] = true;
+		}else{
+			respuestas[9] = false;
+		}
+	}
+	if(!vacia){
+		evaluar();
+		document.forma.submit();
+	}
+}
+function evaluar(){
+	correctas = 0;
+	numpreg = 0;
+	for(i=0;i<=(respuestas.length)-1;i++){
+		if(respuestas[i]){
+			correctas++;
+		}
+		numpreg++;
+	}
+	document.forma.correctas.value = correctas;
+	document.forma.totpreguntas.value = numpreg;
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="95%" border="0" cellspacing="1" cellpadding="4" align="center">
+  <tr> 
+    <td class="bk_blanco"><img width="455" height="18" src="../../../imagenes/titulos/act2.jpg"></td>
+  </tr>
+  <tr> 
+    <td class="bk_blanco" height="200" valign="top"> 
+      <h2>Descripci&oacute;n:</h2>
+      <p class="txtjust12px20sp">Con base en tu previa observaci&oacute;n y reflexi&oacute;n: 
+        determina el <b>g&eacute;nero</b> y <b>n&uacute;mero</b> de los siguientes 
+        <b>sustantivos</b> y <b>as&iacute;gnales el art&iacute;culo</b> que le 
+        corresponde.</p>
+      <h2>Instrucciones: </h2>
+      <ol>
+        <li class="txtjust12px20sp"><span class="txtjust12px20sp"> Observa con 
+          atenci&oacute;n cada una de las im&aacute;genes.</span></li>
+        <li class="txtjust12px20sp"><span class="txtjust12px20sp"> Haz clic en 
+          la punta de la flecha para seleccionar una opci&oacute;n.</span></li>
+        <li class="txtjust12px20sp"><span class="txtjust12px20sp"> Elige la respuesta 
+          que consideres correcta.</span></li>
+        <li class="txtjust12px20sp"><span class="txtjust12px20sp"> Al finalizar 
+          el ejercicio conoce las respuestas correctas dando clic en el bot&oacute;n 
+          <b>Revisar</b>.</span></li>
+      </ol>
+      <form name="forma" method="get" action="act2_ans.htm">
+        <input type="hidden" name="correctas">
+        <input type="hidden" name="totpreguntas">
+        <table width="500" border="0" cellspacing="0" cellpadding="3" align="center">
+          <tr> 
+            <td bgcolor="#FF9900"> 
+              <table width="90%" border="0" cellspacing="1" cellpadding="5" align="center">
+                <tr valign="middle" align="center"> 
+                  <td rowspan="2" class="bk_blanco"><b><a name="1"></a>1.</b> 
+                  </td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/El_maestro01.jpg" width="115" height="72"></td>
+                  <td rowspan="2" class="bk_blanco"><b><a name="2"></a>2.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/Las_mujeres02.jpg" width="115" height="143"></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg1">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>maestro.</b></td>
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg2">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>mujeres.</b></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td rowspan="2" class="bk_blanco"><b><a name="3"></a>3.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/El_sacapuntas03.jpg" width="115" height="103"></td>
+                  <td rowspan="2" class="bk_blanco"><b><a name="4"></a>4.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/La_violinista04.jpg" width="115" height="183"></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td width="45%" class="bk_blanco"><b> 
+                    <select name="preg3">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp; sacapuntas </b></td>
+                  <td width="45%" class="bk_blanco"><b> 
+                    <select name="preg4">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;violinista</b></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td rowspan="2" class="bk_blanco"><b><a name="5"></a>5.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/Los_zapatos05.jpg" width="115" height="105"></td>
+                  <td rowspan="2" class="bk_blanco"><b><a name="6"></a>6.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/Las_fresas06.jpg" width="115" height="131"></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg5">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>zapatos </b></td>
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg6">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>fresas </b></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td rowspan="2" class="bk_blanco"><b><a name="7"></a>7.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/La_bandera07.jpg" width="115" height="87"></td>
+                  <td rowspan="2" class="bk_blanco"><b><a name="8"></a>8.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/EL_pizarron08.jpg" width="115" height="98"></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg7">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>bandera</b> </td>
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg8">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    <b>pizarr&oacute;n</b></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td rowspan="2" class="bk_blanco"><b><a name="9"></a>9.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/La_mariposa09.jpg" width="115" height="96"></td>
+                  <td rowspan="2" class="bk_blanco"><b><a name="10"></a>10.</b></td>
+                  <td width="45%" class="bk_blanco"><img src="../../../imagenes/tema1/Act2/Los_hombres10.jpg" width="115" height="153"></td>
+                </tr>
+                <tr valign="middle" align="center"> 
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg9">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b>mariposa </b></td>
+                  <td width="45%" class="bk_blanco"> 
+                    <select name="preg10">
+                      <option value="0" selected>Selecciona</option>
+                      <option value="1">El</option>
+                      <option value="2">La</option>
+                      <option value="3">Lo</option>
+                      <option value="4">Los</option>
+                      <option value="5">Las</option>
+                    </select>
+                    &nbsp;<b> hombres </b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <div align="center"> 
+          <input type="button" name="Button" value="Revisar" onClick="valida();">
+          <br>
+        </div>
+      </form>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> </td>
+  </tr>
+</table>
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

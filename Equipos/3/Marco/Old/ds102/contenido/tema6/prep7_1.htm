@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../estilos.css" type="text/css">
+<script language="JavaScript">
+<!--
+	var width = "250";
+	var border = "1";
+	var offsetx = -50;
+	var offsety = 10;	
+	var linea = "#000066";
+// -->
+</script>
+<script language="JavaScript">
+<!--
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f2.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="dek" style="position:absolute; width:200px; height:115px; z-index:1; visibility: hidden"></div>
+<script type="text/javascript">
+<!--
+	Xoffset=offsetx;    // modify these values to ...
+	Yoffset=offsety;    // change the popup position.
+
+	var old,skn,iex=(document.all),yyy=-1000;
+	
+	var ns4=document.layers
+	var ns6=document.getElementById&&!document.all
+	var ie4=document.all
+	
+	if (ns4)
+	skn=document.dek
+	else if (ns6)
+	skn=document.getElementById("dek").style
+	else if (ie4)
+	skn=document.all.dek.style
+	if(ns4)document.captureEvents(Event.MOUSEMOVE);
+	else{
+	skn.visibility="visible"
+	skn.display="none"
+	}
+	document.onmousemove=get_mouse;
+
+function popup(msg,bak){
+	
+	var content="<TABLE  WIDTH=" + width + " BORDER=" + border + " BORDERCOLOR=" + linea + " CELLPADDING=5 CELLSPACING=0 "+
+	" BGCOLOR="+bak+"><TD>"+msg+"</TD></TABLE>";
+	yyy=Yoffset;
+	 if(ns4){skn.document.write(content);skn.document.close();skn.visibility="visible"}
+	 if(ns6){document.getElementById("dek").innerHTML=content;skn.display=''}
+	 if(ie4){document.all("dek").innerHTML=content;skn.display=''}
+	}
+	
+function get_mouse(e){
+	var x=(ns4||ns6)?e.pageX:event.x+document.body.scrollLeft;
+	//skn.left=x+Xoffset;
+	skn.left=335;
+	var y=(ns4||ns6)?e.pageY:event.y+document.body.scrollTop;
+	//skn.top=y+yyy;
+	skn.top=40;
+	}
+	
+function kill(){
+	yyy=-1000;
+	if(ns4){skn.visibility="hidden";}
+	else if (ns6||ie4)
+	skn.display="none"
+	}
+     //-->
+</script>
+<table width="600" border="0" cellspacing="1" cellpadding="4">
+  <tr> 
+    <td height="200" valign="top"> 
+      <p><b class="textocolor1">LA PREPOSICI&Oacute;N &quot;PARA&quot; SIGNIFICA:</b></p>
+      <ul>
+        <li><a href="javascript:;" OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Lo dejaremos <b>para</b> ma&ntilde;ana.</li> <li>Me caso <b>para</b> el 10 de febrero.</li> </ul>','#fff8e6');" onMouseOut="kill();">Tiempo 
+          o plazo</a></li>
+        <li><a href="javascript:;" OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Est&aacute; <b>para</b> titularse.</li> <li> Est&aacute; <b>para</b> llover.</li> </ul>','#fff8e6');" onMouseOut="kill();">Proximidad 
+          de alg&uacute;n suceso</a></li>
+        <li><a href="javascript:;" OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Un regalo <b>para</b> Javier.</li> <li> Este es propio <b>para</b> adolescentes.</li> <li> Compr&eacute; un cuaderno <b>para</b> iluminar.</li> <li> Estudio <b>para</b> saber.</li> </ul>','#fff8e6');" onMouseOut="kill();">Direcci&oacute;n, 
+          destino o fin de una acci&oacute;n o un objeto</a></li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos 
+        para ver sus ejemplos)</i></p>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td class="txtjust12px20sp" align="center"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="33%" height="24">&nbsp;</td>
+          <td width="33%" height="24"> 
+            <table width="250" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr valign="middle" align="center"> 
+                <td width="173"> 
+                  <table border="0" cellpadding="0" cellspacing="0" width="59">
+                    <!-- fwtable fwsrc="btn_ante.png" fwbase="btn_ante.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+                    <tr> 
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="55" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="3" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3"><img name="btn_ante_r1_c1" src="../../imagenes/botones/btn_ante/btn_ante_r1_c1.gif" width="59" height="2" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="2" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td rowspan="2"><img name="btn_ante_r2_c1" src="../../imagenes/botones/btn_ante/btn_ante_r2_c1.gif" width="1" height="20" border="0"></td>
+                      <td><a href="1.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)" ><img name="btn_ante_r2_c2" src="../../imagenes/botones/btn_ante/btn_ante_r2_c2.gif" width="55" height="19" border="0"></a></td>
+                      <td rowspan="2"><img name="btn_ante_r2_c3" src="../../imagenes/botones/btn_ante/btn_ante_r2_c3.gif" width="3" height="20" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="19" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_ante_r3_c2" src="../../imagenes/botones/btn_ante/btn_ante_r3_c2.gif" width="55" height="1" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="50">&nbsp;</td>
+                <td width="167"> 
+                  <table border="0" cellpadding="0" cellspacing="0" width="59">
+                    <!-- fwtable fwsrc="btn_sig.png" fwbase="btn_sig.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+                    <tr> 
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="59" height="1" border="0" name="undefined_3"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_sig_r1_c1" src="../../imagenes/botones/btn_sig/btn_sig_r1_c1.gif" width="59" height="2" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="2" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="prep7_2.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','btn_sig_r2_c1','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f2.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','btn_sig_r2_c1','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif',1)" ><img name="btn_sig_r2_c1" src="../../imagenes/botones/btn_sig/btn_sig_r2_c1.gif" width="59" height="19" border="0"></a></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="19" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_sig_r3_c1" src="../../imagenes/botones/btn_sig/btn_sig_r3_c1.gif" width="59" height="1" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="33%" height="24"> 
+            <p class="cuenta_pagina" align="right">P&aacute;g. 1 de 2</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
