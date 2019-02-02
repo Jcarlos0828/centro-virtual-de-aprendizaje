@@ -1,0 +1,28 @@
+{
+    "name": "espire",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-chmod": "^1.1.1",
+        "grunt-concurrent": "^1.0.0",
+        "grunt-contrib-clean": "^1.0.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-connect": "^0.8.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-cssmin": "^1.0.0",
+        "grunt-contrib-htmlmin": "^0.3.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-uglify": "^2.2.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-filerev": "^2.0.0",
+        "grunt-sass": "^2.0.0",
+        "grunt-usemin": "^2.4.0",
+        "grunt-wiredep": "^2.0.0",
+        "jshint-stylish": "^1.0.0",
+        "load-grunt-tasks": "^3.5.2",
+        "time-grunt": "^1.2.1"
+    },
+    "dependencies": {
+        "node-sass": "^4.9.0"
+    }
+}
