@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../estilos.css" type="text/css">
+<script language="JavaScript">
+<!--
+	var width = "500";
+	var border = "0";
+	var offsetx = -50;
+	var offsety = 10;	
+	var linea = "#cccccc";
+// -->
+</script>
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/ejemplo/ejemplo_r2_c2_f3.gif','../../imagenes/botones/ejemplo/ejemplo_r2_c2_f2.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="dek" style="position:absolute; width:200px; height:115px; z-index:1; visibility: hidden"></div>
+<script type="text/javascript">
+<!--
+	Xoffset=offsetx;    // modify these values to ...
+	Yoffset=offsety;    // change the popup position.
+
+	var old,skn,iex=(document.all),yyy=-1000;
+	
+	var ns4=document.layers
+	var ns6=document.getElementById&&!document.all
+	var ie4=document.all
+	
+	if (ns4)
+	skn=document.dek
+	else if (ns6)
+	skn=document.getElementById("dek").style
+	else if (ie4)
+	skn=document.all.dek.style
+	if(ns4)document.captureEvents(Event.MOUSEMOVE);
+	else{
+	skn.visibility="visible"
+	skn.display="none"
+	}
+	document.onmousemove=get_mouse;
+
+function popup(msg,bak){
+	
+	var content="<TABLE  WIDTH=" + width + " BORDER=" + border + " BORDERCOLOR=" + linea + " CELLPADDING=3 CELLSPACING=0 "+
+	" BGCOLOR="+bak+"><tr><TD class=fondo7>"+msg+"</TD></tr><tr><td class=fondo8 height=2></td></tr><tr><td align=center class=fondo7><b> [ <a href=javascript:kill();> Cerrar</a> ]</b></td></tr></TABLE>";
+	yyy=Yoffset;
+	 if(ns4){skn.document.write(content);skn.document.close();skn.visibility="visible"}
+	 if(ns6){document.getElementById("dek").innerHTML=content;skn.display=''}
+	 if(ie4){document.all("dek").innerHTML=content;skn.display=''}
+	}
+	
+function get_mouse(e){
+	var x=(ns4||ns6)?e.pageX:event.x+document.body.scrollLeft;
+	skn.left=x+Xoffset;
+	skn.left=40;
+	var y=(ns4||ns6)?e.pageY:event.y+document.body.scrollTop;
+	//skn.top=y+yyy;
+	skn.top=40;
+	}
+	
+function kill(){
+	yyy=-1000;
+	if(ns4){skn.visibility="hidden";}
+	else if (ns6||ie4)
+	skn.display="none"
+	}
+     //-->
+</script>
+<table width="600" border="0" cellspacing="1" cellpadding="4">
+  <tr> 
+    <td class="txtjust12px20sp" height="180" valign="top"> 
+      <table width="95%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td class="fondo3">
+            <table width="100%" border="0" cellspacing="1" cellpadding="3">
+              <tr> 
+                <td class="fondo8" width="15%" align="center" valign="middle" height="50"> 
+                  <p class="textoblanco_bold">Lugar</p>
+                </td>
+                <td class="fondo1" width="85%" height="50"> 
+                  <p>Cerca, lejos, aqu&iacute;, all&iacute;, arriba, abajo, fuera, 
+                    alrededor, all&aacute;, ah&iacute;, junto, ...</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <table border="0" cellpadding="0" cellspacing="0" width="85">
+        <!-- fwtable fwsrc="btn_act.png" fwbase="ejemplo.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="9" height="1" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="73" height="1" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="3" height="1" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="1" height="1" border="0" alt=""></td>
+        </tr>
+        <tr> 
+          <td colspan="3"><img name="ejemplo_r1_c1" src="../../imagenes/botones/ejemplo/ejemplo_r1_c1.gif" width="85" height="4" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="1" height="4" border="0" alt=""></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><img name="ejemplo_r2_c1" src="../../imagenes/botones/ejemplo/ejemplo_r2_c1.gif" width="9" height="16" border="0" alt=""></td>
+          <td><a href="javascript:;" onMouseOut="MM_nbGroup('out');" onMouseOver="MM_nbGroup('over','ejemplo_r2_c2','../../imagenes/botones/ejemplo/ejemplo_r2_c2_f2.gif','../../imagenes/botones/ejemplo/ejemplo_r2_c2_f3.gif',1);" onClick="popup('<table width=500 border=0 cellspacing=0 cellpadding=0> <tr> <td class=fondo5> <table width=100% border=0 cellspacing=1 cellpadding=2> <tr valign=middle> <td class=bk_blanco > <p><b>Ejemplos</b></p> </td> <td class=fondo2 valign=top > <p>El equipo qued&oacute; <b>afuera</b><br> <br> El equipo qued&oacute; <b>afuera</b> triste<br> <br> El equipo qued&oacute; entonces <b>afuera</b> triste.</p> </td> <td class=fondo2 valign=top > <p>Afuera modifica al verbo <b>quedar</b><br> <br> Afuera modifica al adjetivo <b>triste</b><br> <br> Afuera modifica al adverbio <b>entonces</b></p> </td> </tr> </table> </td> </tr> </table>','#fff8e6');"><img name="ejemplo_r2_c2" src="../../imagenes/botones/ejemplo/ejemplo_r2_c2.gif" width="73" height="14" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="ejemplo_r2_c3" src="../../imagenes/botones/ejemplo/ejemplo_r2_c3.gif" width="3" height="16" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="1" height="14" border="0" alt=""></td>
+        </tr>
+        <tr> 
+          <td><img name="ejemplo_r3_c2" src="../../imagenes/botones/ejemplo/ejemplo_r3_c2.gif" width="73" height="2" border="0" alt=""></td>
+          <td><img src="../../imagenes/botones/ejemplo/spacer.gif" width="1" height="2" border="0" alt=""></td>
+        </tr>
+      </table>
+      <p><i class="pie_imagen"><!-- #BeginLibraryItem "/Library/ejemplo_cerrar.lbi" --><i class="pie_imagen">(<b>Haz clic</b> en &quot;Ejemplo&quot; para ampliar 
+        la informaci&oacute;n, <b>haga clic en &quot;Cerrar&quot;</b> para ocultarla)</i><!-- #EndLibraryItem --></i></p>
+		<!-- #BeginLibraryItem "/Library/anterior.lbi" -->
+<p class="textocolor1" align="right"><i class="pie_imagen">Para continuar presiona 
+  el bot&oacute;n &quot;<b>Anterior</b>&quot;.</i></p>
+<!-- #EndLibraryItem --></td>
+  </tr>
+  <tr> 
+    <td class="txtjust12px20sp" align="center"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="33%" height="24">&nbsp;</td>
+          <td width="33%" height="24"> 
+            <table width="250" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr valign="middle" align="center"> 
+                <td width="173"> 
+                  <table border="0" cellpadding="0" cellspacing="0" width="59">
+                    <!-- fwtable fwsrc="btn_ante.png" fwbase="btn_ante.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+                    <tr> 
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="55" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="3" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3"><img name="btn_ante_r1_c1" src="../../imagenes/botones/btn_ante/btn_ante_r1_c1.gif" width="59" height="2" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="2" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td rowspan="2"><img name="btn_ante_r2_c1" src="../../imagenes/botones/btn_ante/btn_ante_r2_c1.gif" width="1" height="20" border="0"></td>
+                      <td><a href="1.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)" ><img name="btn_ante_r2_c2" src="../../imagenes/botones/btn_ante/btn_ante_r2_c2.gif" width="55" height="19" border="0"></a></td>
+                      <td rowspan="2"><img name="btn_ante_r2_c3" src="../../imagenes/botones/btn_ante/btn_ante_r2_c3.gif" width="3" height="20" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="19" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_ante_r3_c2" src="../../imagenes/botones/btn_ante/btn_ante_r3_c2.gif" width="55" height="1" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="50">&nbsp;</td>
+                <td width="167">&nbsp; </td>
+              </tr>
+            </table>
+          </td>
+          <td width="33%" height="24"> 
+            <p class="cuenta_pagina" align="right">P&aacute;g. 1 de 1 </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

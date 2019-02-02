@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../estilos.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+
+var vacia = true;
+
+function valida(){
+vacia = false;
+	//pregunta 1
+	if(document.forma.preg1.value =="" && !vacia){
+		alert("Conteste la primer pregunta");
+		vacia= true;
+	}	
+	//pregunta 2
+	if(document.forma.preg2.value ==0 && !vacia){
+		alert("Conteste la segunda pregunta");
+		vacia= true;
+	}
+	//una vez pasada la validación...
+	if(!vacia){
+		document.forma.submit();
+	}
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f2.gif')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="600" border="0" cellspacing="1" cellpadding="4">
+  <tr> 
+    <td class="txtjust12px20sp" height="200" valign="top"> Para determinar el 
+      siguiente elemento gramatical te invitamos a que leas el siguiente ejemplo:<br>
+      <table width="500" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr> 
+          <td class="fondo5"> 
+            <table width="100%" border="0" cellspacing="1" cellpadding="5">
+              <tr> 
+                <td class="fondo7" align="center"> 
+                  <p class="letra_16px"><b>Mar&iacute;a </b>practica varios deportes.<b><br>
+                    Ella </b>es una gran deportista. </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p><br>
+        Ahora, responde las siguientes preguntas, haz clic en el recuadro para escribir 
+      y presiona la liga <i>&quot;Reflexiona...&quot;</i> para verificar tus respuestas.</p>
+      <table width="600" border="0" cellspacing="1" cellpadding="2">
+        <tr>
+          <td width="163">&nbsp;</td>
+          <td width="426" class="pie_imagen" align="right"> Recuerda escribir 
+            tu respuesta tal como aparece en la oraci&oacute;n, respeta signos 
+            de puntuaci&oacute;n. </td>
+        </tr>
+      </table>      
+      <form name="forma" method="get" action="1_1.htm">
+        <table width="500" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr> 
+            <td class="fondo6"> 
+              <table width="500" border="0" cellspacing="1" cellpadding="3">
+                <tr> 
+                  <td width="50%" class="bk_blanco"><b>&nbsp;&nbsp;&iquest;Qui&eacute;n 
+                    practica varios deportes?</b> </td>
+                  <td width="20%" class="bk_blanco" align="center" valign="middle"> 
+                    <input type="text" name="preg1" size="10" maxlength="10">
+                  </td>
+                  <td rowspan="2" width="30%" class="bk_blanco"> 
+                    <div align="center"><a href="javascript:valida();"><b><i>Reflexiona... 
+                      </i></b></a></div>
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="50%" class="bk_blanco"><b>&nbsp;&nbsp;&iquest;Qui&eacute;n 
+                    es una gran deportista?</b></td>
+                  <td width="20%" class="bk_blanco" align="center" valign="middle"> 
+                    <input type="text" name="preg2" size="10" maxlength="10">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+  <tr> 
+    <td class="txtjust12px20sp" align="center"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="33%" height="24">&nbsp;</td>
+          <td width="33%" height="24"> 
+            <table width="250" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr valign="middle" align="center"> 
+                <td width="173"> 
+                  <table border="0" cellpadding="0" cellspacing="0" width="59">
+                    <!-- fwtable fwsrc="btn_ante.png" fwbase="btn_ante.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+                    <tr> 
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="55" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="3" height="1" border="0" name="undefined_2"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="3"><img name="btn_ante_r1_c1" src="../../imagenes/botones/btn_ante/btn_ante_r1_c1.gif" width="59" height="2" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="2" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td rowspan="2"><img name="btn_ante_r2_c1" src="../../imagenes/botones/btn_ante/btn_ante_r2_c1.gif" width="1" height="20" border="0"></td>
+                      <td><a href="2.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f2.gif','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','btn_ante_r2_c2','../../imagenes/botones/btn_ante/btn_ante_r2_c2_f3.gif',1)" ><img name="btn_ante_r2_c2" src="../../imagenes/botones/btn_ante/btn_ante_r2_c2.gif" width="55" height="19" border="0"></a></td>
+                      <td rowspan="2"><img name="btn_ante_r2_c3" src="../../imagenes/botones/btn_ante/btn_ante_r2_c3.gif" width="3" height="20" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="19" border="0" name="undefined_2"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_ante_r3_c2" src="../../imagenes/botones/btn_ante/btn_ante_r3_c2.gif" width="55" height="1" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_ante/spacer.gif" width="1" height="1" border="0" name="undefined_2"></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="50">&nbsp;</td>
+                <td width="167"> 
+                  <table border="0" cellpadding="0" cellspacing="0" width="59">
+                    <!-- fwtable fwsrc="btn_sig.png" fwbase="btn_sig.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+                    <tr> 
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="59" height="1" border="0" name="undefined_3"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_sig_r1_c1" src="../../imagenes/botones/btn_sig/btn_sig_r1_c1.gif" width="59" height="2" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="2" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="2.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','btn_sig_r2_c1','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f2.gif','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','btn_sig_r2_c1','../../imagenes/botones/btn_sig/btn_sig_r2_c1_f3.gif',1)" ><img name="btn_sig_r2_c1" src="../../imagenes/botones/btn_sig/btn_sig_r2_c1.gif" width="59" height="19" border="0"></a></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="19" border="0" name="undefined_3"></td>
+                    </tr>
+                    <tr> 
+                      <td><img name="btn_sig_r3_c1" src="../../imagenes/botones/btn_sig/btn_sig_r3_c1.gif" width="59" height="1" border="0"></td>
+                      <td><img src="../../imagenes/botones/btn_sig/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="33%" height="24"> 
+            <p class="cuenta_pagina" align="right">P&aacute;g. 1 de 2</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
