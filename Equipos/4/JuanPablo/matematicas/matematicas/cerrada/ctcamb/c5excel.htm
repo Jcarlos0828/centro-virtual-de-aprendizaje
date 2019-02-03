@@ -1,0 +1,79 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<base target="_self">
+<title>Crecimiento Poblacional Compuesto con tasa cambiante</title>
+</head>
+
+<body background="../images/indtextb.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font color="#800040" size="4" face="Arial">Encontrar
+    la tasa de crecimiento para cada año <br>
+    cuando se conoce las poblaciones correspondientes</font></p>
+    <p align="center"><font color="#800040" size="4" face="Arial">Caso 5</font><br>
+    <b><font size="3" color="#004080" face="Arial">Dado el número de laumnos de una
+    universidad en diferentes años, encontrar la tasa de crecimiento para cada año y el
+    porcentaje de cambio en ellas.</font><font size="3" color="#004080"
+    face="Arial Rounded MT Bold"><br>
+    </font><font size="3" face="Times New Roman" color="#000000">Solución utilizando Excel</font></p>
+    </b><p><strong><font size="5">E</font><font size="3">n una universidad se tiene el
+    siguiente registro sobre el número de alumnos por año.</font></strong></p>
+    <p><strong><font size="3">En 1993 -- 65,000 alumnos<br>
+    En 1994 -- 69,095 alumnos<br>
+    En 1995 -- 73,622 alumnos<br>
+    En 1996 -- 78,639 alumnos<br>
+    En 1997 -- 84,212 alumnos<br>
+    En 1998 -- 90,418 alumnos</font></strong></p>
+    <p><font size="3">En la solución anterior se puede observar que resolver este problema
+    por fórmula es un procedimiento muy largo y tedioso.En este caso, Excel agiliza &nbsp;
+    mucho el proceso de solución.<br>
+    Para generar la siguiente tabla se utilizan las fórmulas </font><b>r<sub>t</sub> = (P<sub>t+1</sub>
+    / P<sub>t</sub>) &#150; 1</b><font size="3">&nbsp; y&nbsp; </font><br>
+    <b>b = ( R<sub>t</sub> / R<sub>t-1 </sub>) &#150; 1. </b></p>
+    <p align="center"><font size="3">&nbsp;<font color="#004080"><strong>TABLA EN EXCEL</strong></font></font></p>
+    <p align="center"><img src="images/e5.htm4.jpg" width="370" height="217"
+    alt="e5.htm4.jpg (20502 bytes)"></p>
+    <font FACE="f" SIZE="2"><p></font><font FACE="f" size="3">Las acciones usadas para generar
+    la tabla anterior son:<br>
+    En la celda&nbsp;&nbsp; A2&nbsp;&nbsp; teclear <b>&nbsp; 1993</b><br>
+    En la celda&nbsp;&nbsp; A3&nbsp;&nbsp; teclear <b>&nbsp; =A2 + 1</b>&nbsp;&nbsp; y llenar
+    hacia abajo (Fill Down) <br>
+    En la columna B&nbsp;&nbsp; en las celdas de B2 a B7 vaciar los datos del problema. <br>
+    En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear <b>&nbsp; =((B3/B2) &#150; 1 )*100</b>
+    &nbsp;&nbsp; y llenar hacia abajo (Fill Down) <br>
+    En la celda&nbsp;&nbsp; D3&nbsp;&nbsp; teclear <b>&nbsp; =((C3/C2) &#150; 1)*100 </b>&nbsp;
+    y llenar hacia abajo (Fill Down)<b> </b></p>
+    </font><p>&nbsp;</p>
+    <p align="center"><font FACE="f" size="3" color="#004080"><strong>GRÁFICAS EN EXCEL</strong></font></p>
+    <p align="left"><font face="Times New Roman" size="3" color="#800040">Para hacer gráficas
+    en Excel se puede consultar la siguiente referencia</font><font face="Times New Roman"
+    size="3" color="#004080"> </font><font face="Times New Roman" size="3" color="#800040">del
+    libro de texto que se utilizó en el curso Herramientas Computacionales</font><font
+    face="Times New Roman" size="3" color="#004080">: Microsoft. <u>Paso a Paso, Microsoft
+    Excel 97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></p>
+    <div align="center"><center><table border="1" width="59%" bgcolor="#008000"
+    bordercolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#008000">
+      <tr>
+        <td width="100%"><img src="images/c5exce10.jpg" width="615" height="275"
+        alt="c5exce10.jpg (19190 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p align="center">&nbsp;</p>
+    <div align="center"><center><table border="1" width="87%" bordercolor="#008000"
+    bgcolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#008000">
+      <tr>
+        <td width="100%"><img src="images/c5exce11.jpg" width="619" height="272"
+        alt="c5exce11.jpg (21290 bytes)"></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

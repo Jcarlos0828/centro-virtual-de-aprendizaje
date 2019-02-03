@@ -1,0 +1,94 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto con tasa cambiante</title>
+</head>
+
+<body background="../images/dollargreen2.jpg">
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Crédito
+    Hipotecario de Interés Social<br>
+    Caso 3</big></font><br>
+    <strong><br>
+    <font face="Arial" color="#004080">Análisis de un crédito hipotecario de interés
+    social.</font></strong><br>
+    <b>Solución utilizando Microsoft Excel </b></p>
+    <p align="left"><strong><br>
+    <big><big>L</big></big>a familia González está pagando un crédito de interés social de
+    $1,307.30 pesos cada mes, de los cuales solo $61.31 se pagaron a capital este mes, el cual
+    es de $101,298.33. Ellos quieren saber como son calculados cada parte de su recibo y como
+    le afecta a su crédito si la tasa de interés sigue bajando durante este año si no se
+    espera que haya aumento al salario mínimo.</strong></p>
+    <p ALIGN="JUSTIFY">En el recibo del mes de abril se tiene la siguiente información:</p>
+    <font SIZE="1"><p ALIGN="JUSTIFY"></font><font size="2">-------------------------------------------------------------</p>
+    <p ALIGN="JUSTIFY">CAPITAL INSOLUTO:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ 101,298.33</p>
+    <p ALIGN="JUSTIFY">EROGACION NETA:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $ 1,738.81</p>
+    <p ALIGN="JUSTIFY">AMORTIZACIÓN:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    $ 61.31</p>
+    <p ALIGN="JUSTIFY">INTERESES:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    $ 1,677.50</p>
+    <p ALIGN="JUSTIFY">SEGUROS:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    $ 57.26</p>
+    <p ALIGN="JUSTIFY">A.D.E.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    $ (488.77) </p>
+    <p ALIGN="JUSTIFY">PAGO TOTAL:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    $ 1,307.30</p>
+    <p ALIGN="JUSTIFY">TASA DE INTERÉS ANUAL:&nbsp; 19.87%</p>
+    <p ALIGN="JUSTIFY">-------------------------------------------------------------</font></p>
+    <p ALIGN="JUSTIFY">La erogación neta se mantiene fija mientras no haya cambio en el
+    salario mínimo, por ejemplo en enero se incrementó en un 14% debido al aumento del
+    salario mínimo en diciembre del 13%. </p>
+    <p ALIGN="JUSTIFY">Para analizar como afecta la tasa de interés se va a utilizar Excel.
+    En la primera tabla se va a ver como baja el capital si la tasa de interés se mantiene
+    igual durante el año:</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tabla6.jpg" width="660" height="203"
+    alt="tabla6.jpg (58412 bytes)"></p>
+    <p ALIGN="JUSTIFY">Las acciones que se realizaron para generar esta tabla son:<br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>$101,298.33<br>
+    </strong>En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>1738.81</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar
+    hacia abajo (Fill Down) <br>
+    En la celda&nbsp;&nbsp; D2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>19.87%</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar
+    hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; E2&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B2 * D2 / 12</strong>
+    &nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; F2&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= C2 - E2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo
+    (Fill Down)<br>
+    En la celda&nbsp;&nbsp; I2&nbsp;&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= C2 + G2 +
+    H2</strong>&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B2 - F2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo
+    (Fill Down)</p>
+    <p ALIGN="JUSTIFY">En este caso si se mantiene la tasa de interés igual durante el año,
+    la cantidad que se amortiza a capital se mantiene muy parecida entre $60.00 y $70.00 por
+    lo que el capital terminaría en $100,846.</p>
+    <p ALIGN="JUSTIFY">En la siguiente tabla se va a analizar que sucede si la tasa de
+    interés baja durante lo que resta del año:</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tabla7.jpg" width="661" height="200"
+    alt="tabla7.jpg (46301 bytes)"></p>
+    <p><strong>Si la tasa de interés sigue bajando durante el año, el pago de intereses es
+    menor y como la erogación neta se mantiene igual, entonces la cantidad que se amortiza es
+    mayor, en este caso el capital al final del año quedaría de $99,722.31. Así que el
+    crédito se amortizaría más pronto, en caso de que suceda lo contrario y la tasa de
+    interés suba, la cantidad que se amortiza es menor.</strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

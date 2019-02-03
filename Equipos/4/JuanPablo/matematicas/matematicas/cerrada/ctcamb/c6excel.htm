@@ -1,0 +1,172 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Crecimiento Poblacional Compuesto con tasa cambiante</title>
+<base target="_self">
+</head>
+
+<body background="../images/indtextb.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><big><font color="#800040" face="Arial">La tasa
+    de crecimiento anual aumenta <br>
+    o disminuye en diferente porcentaje cada año</font></big></p>
+    <p align="center"><font color="#800040" face="Arial"><big>Caso 6</big></font><br>
+    <font size="3"><strong><font color="#004080" face="Arial">Conociendo el número de
+    habitantes diagnosticados con SIDA, encontrar la tasa de crecimiento para cada año y el
+    porcentaje de cambio entre ellas.</font></strong><b><br>
+    <strong>Solución utilizando Excel</strong></font></p>
+    </b><p align="left"><strong><font size="4">E</font><font size="3">n una ciudad de los
+    Estados Unidos, el número de habitantes diagnosticados con SIDA del año 1988 al 1997 es
+    el siguiente:</font></strong></p>
+    <table border="0" width="100%">
+      <tr>
+        <td width="100%" align="center"><table border="1" width="37%">
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#8080FF"><p ALIGN="CENTER"><strong><font
+            size="3">año</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#8080FF"><p ALIGN="CENTER"><strong><font
+            size="3">enfermos de SIDA</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1988</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">200</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1989</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80" align="center"><p
+            ALIGN="CENTER"><strong><font size="3">290</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1990</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">335</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1991</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">370</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1992</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">530</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1993</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">570</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1994</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">500</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1995</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">440</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1996</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">395</font></strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="28%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">1997</font></strong></td>
+            <td WIDTH="72%" VALIGN="top" HEIGHT="17" bgcolor="#FFFF80"><p ALIGN="CENTER"><strong><font
+            size="3">190</font></strong></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    <p align="left"><font size="3"><strong>Encontrar la tasa de crecimiento para cada año y
+    el porcentaje de cambio en las tasas</strong>.</font></p>
+    <p align="left"><font size="3">Con Excel este problema se resuelve de forma muy rápida y
+    sencilla.<br>
+    Utilizando la fórmula&nbsp; <strong>r<sub>t</sub> = (P<sub>t</sub> / P<sub>t-1</sub>)
+    &#150; 1&nbsp; </strong>para&nbsp; la tasa de crecimiento y el condicional <strong>IF</strong>
+    con las fórmulas&nbsp; </font><br>
+    <b>b = ( R<sub>t</sub> / R<sub>t-1 </sub>) &#150; 1</b>&nbsp; o <b>b = 1 &#150; ( R<sub>t</sub>
+    / R<sub>t-1 </sub>)&nbsp; </b>para el porcentaje de cambio en las tasas, se genera la
+    siguiente tabla:</p>
+    <p align="center"><font color="#004080" size="3"><strong>TABLA&nbsp; EN EXCEL</strong></font></p>
+    <p align="center"><img src="images/e6.htm7.jpg" width="418" height="268"
+    alt="e6.htm7.jpg (29563 bytes)"></p>
+    <font SIZE="2"><p></font><font size="3">Para generar la tabla anterior se usaron la
+    siguientes acciones:<br>
+    En la celda&nbsp;&nbsp; A2&nbsp;&nbsp; teclear <b>&nbsp; 1988</b><br>
+    En la celda&nbsp;&nbsp; A3&nbsp;&nbsp; teclear <b>&nbsp; =A2 + 1 </b><font FACE="f">y
+    llenar hacia abajo (Fill Down)</font> <br>
+    En la columna B&nbsp;&nbsp; en las celdas de B2 a B11 vaciar la información de los datos
+    del problema.<br>
+    En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear <b>&nbsp; =((B3 / B2) &#150; 1) * 100</b> <font
+    FACE="f">y llenar hacia abajo (Fill Down)</font> <br>
+    En la celda&nbsp;&nbsp; D3&nbsp;&nbsp; usar el condicional IF. En <b>Insert</b> se busca <b>Function</b>
+    y se selecciona la opción <b>IF</b>.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    En Logical test teclear <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C2 &lt; 0</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    En Value if true teclear <b>&nbsp;&nbsp;&nbsp;&nbsp; (1 &#150; (C3 / C2)) * 100</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y en Value if false teclear <b>&nbsp; ((C3 / C2) &#150; 1) * 100</b></p>
+    </font><div align="center"><center><table border="0" height="47">
+      <tr>
+        <td width="7%" height="49"><img src="../images/ojo.jpg" width="32" height="32"
+        alt="ojo.jpg (1257 bytes)"></td>
+        <td width="93%" rowspan="2" valign="bottom" height="43">&nbsp;<p>Como no se sabe si la tasa
+        anterior es positiva o negativa hay que utilizar el condicional <strong>IF</strong> en la
+        celda de <strong>D3</strong>. De esta forma si la tasa anterior es positiva usa la
+        fórmula <font size="3"><strong>b = (R<sub>t</sub> / R<sub>t-1</sub>) &#150; 1 </strong>y
+        si es negativa utiliza la fórmula <strong>b = 1 &#150; (R<sub>t</sub> / R<sub>t-1</sub>) </strong></font></td>
+      </tr>
+      <tr>
+        <td width="7%" height="1"></td>
+      </tr>
+    </table>
+    </center></div><p>&nbsp;</p>
+    <p align="center"><font color="#004080" size="3"><strong>GRÁFICAS EN EXCEL</strong></font></p>
+    <p align="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" width="81%" bgcolor="#008000"
+    bordercolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#008000">
+      <tr>
+        <td width="100%"><img src="images/c6exce12.jpg" width="601" height="269"
+        alt="c6exce12.jpg (17994 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p align="center">&nbsp;</p>
+    <div align="center"><center><table border="1" width="80%" bgcolor="#008000"
+    bordercolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#008000">
+      <tr>
+        <td width="100%"><img src="images/c6exce13.jpg" width="605" height="265"
+        alt="c6exce13.jpg (15607 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p>&nbsp;</p>
+    <p align="center"><a style="text-decoration: underline" href="pract7c6.htm"><strong>Práctica
+    de autovaluación 8</strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

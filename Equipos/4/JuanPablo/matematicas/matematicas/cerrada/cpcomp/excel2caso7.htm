@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Crecimiento Poblacional Compuesto</title>
+<base target="_self">
+</head>
+
+<body background="../images/indtextb.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><font FACE="Garamond" COLOR="#000000"><p align="center"></font><big><font
+    face="Arial" color="#800040">Combinación de aumento y disminución de&nbsp; población</font></big></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 4</big></font><br>
+    <b><font color="#004080" face="Arial">Número de habitantes de un poblado en donde se
+    conoce<br>
+    la tasa de natalidad y de mortalidad</font><font COLOR="#000080"
+    face="Arial Rounded MT Bold"><br>
+    </font><font face="Times New Roman" color="#000000">Solución utilizando el modelo en
+    Excel <br>
+    </b>(número de nacimientos y muertes por año)</font><font color="#000000"></p>
+    </font><font COLOR="#000080"><b><p ALIGN="left"></b></font><font face="Times New Roman"
+    color="#000000"><strong><big><big>E</big></big>n un poblado hay en el año de 1998, un
+    total de 580,000 habitantes. La tasa anual de natalidad del poblado es de 2.3% y la de
+    mortalidad es de 0.45%. Suponiendo que no hay migración, encuentre el número de
+    habitantes en el año 2015.</strong></font><b><font COLOR="#000080"></p>
+    <p ALIGN="left"></font></b>El modelo matemático para este caso sería:<br>
+    El número de habitantes del poblado en cualquier año t ( P<sub>t </sub>), es igual al
+    número de habitantes en el año anterior ( P<sub>t-1 </sub>) mas el número de
+    nacimientos del año (a<sub>t </sub>) y menos el número de muertes del año (d<sub>t </sub>).<br>
+    <strong>P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> &#150; d<sub>t</sub></strong><br>
+    El número de nacimientos en el año t (<sub> </sub>a<sub>t</sub> ), es igual a la
+    población del año anterior ( P<sub>t-1 </sub>) multiplicada por la tasa de natalidad
+    expresada en decimales ( 0.023 ).<br>
+    <strong>a<sub>t</sub> = P<sub>t-1</sub> x 0.023</strong><br>
+    El número de muertes en el año t (d<sub>t</sub> ), es el producto de multiplicar la
+    población del año anterior<br>
+    ( P<sub>t-1</sub> ) por la tasa de mortalidad en decimales (0.0045).<br>
+    <strong>d<sub>t</sub> = P<sub>t-1</sub> x 0.0045.</strong><font COLOR="#000080"><b></p>
+    <p ALIGN="left"></b></font><font color="#000000">Utilizando las ecuaciones anteriores para
+    obtener el número de habitantes, el de nacimientos y el de muertes para cada año, se
+    genera la siguiente tabla:</font><font COLOR="#000080"><b></p>
+    <p ALIGN="CENTER"><font face="Times New Roman">TABLA EN EXCEL</font></p>
+    <p ALIGN="CENTER"><font face="Times New Roman"><img SRC="../images/image11.gif"
+    WIDTH="461" HEIGHT="384"></font></b></font><font color="#000000"></p>
+    <font SIZE="2"><p></font></font><font size="3" face="Times New Roman" color="#000000">Las
+    acciones usadas para generar la tabla anterior son:<br>
+    En la celda&nbsp;&nbsp; A2&nbsp;&nbsp; teclear <b>&nbsp; 1998</b><br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear <b>&nbsp; 580000</b><br>
+    En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear <b>&nbsp; =B2*(0.023)</b>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D2&nbsp;&nbsp; teclear <b>&nbsp; =B2* (0.0045)&nbsp;&nbsp; </b>y
+    llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; A3&nbsp;&nbsp; teclear&nbsp;&nbsp; <b>=A2+1</b>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia
+    abajo (Fill Down) <br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear <b>&nbsp; =B2 + C2 - D2&nbsp; </b>y llenar
+    hacia abajo (Fill Down) </font></p>
+    <p><font size="3" face="Times New Roman" color="#000000">Esta tabla nos brinda una amplia
+    información sobre el caso, ya que se obtiene además del número de habitantes, el
+    número de nacimientos y el de muertes por año. Se pueden hacer gráficas en Excel con
+    cualquiera de las tres columnas. Por ejermplo, la gráfica del número de nacimientos por
+    año sería:</font><font COLOR="#000080"><b></p>
+    <p ALIGN="CENTER"><font face="Times New Roman">GRÁFICA EN EXCEL</font></p>
+    <p ALIGN="left"></b></font><font face="Times New Roman"><font color="#800040">Para hacer
+    gráficas en Excel se puede consultar la siguiente referencia</font><font color="#004080">
+    </font><font color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font><font
+    COLOR="#000080"><b></p>
+    <div align="center"><center><table border="1" bgcolor="#0000FF" bordercolor="#0000FF"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="100%"><font face="Times New Roman"><img src="../images/image12.jpg" width="587"
+        height="277" alt="wpe3.jpg (19405 bytes)"></font></td>
+      </tr>
+    </table>
+    </center></div><p ALIGN="CENTER">&nbsp;</p>
+    </b></font><font SIZE="2"><p></font><font size="3" face="Times New Roman">Suponiendo que
+    en el Caso 4 en lugar de pedir la población en el año 2015, se pidiera el número de
+    nacimientos en el año 2011. Para resolver este problema por fórmula, se tendría que
+    encontrar primero la población en el año 2011 (P<sub>2011</sub> = 580,000 (1.018 )<sup>13</sup>
+    ) y el resultado multiplicarlo por 0.023, que es la tasa anual de nacimiento. Con Excel el
+    resolver este problema se convierte en una simple observación de la tabla. El resultado
+    es 16,930.</font></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><a href="solrepexcelc4.htm" style="text-decoration: underline"><strong><font
+    size="3">Solución utilizando la representación algebraica del modelo en Excel</font></strong></a></p>
+    <p align="center"><strong><a href="introcaso7.htm">Solución utilizando la fórmula</a></strong></p>
+    <p align="center"><strong><a href="excelcaso7.htm">Solución utilizando la fórmula en
+    Excel</a></strong></p>
+    <font color="#000000"><p align="center"></font><a href="pract6c7.htm"><strong>Práctica de
+    autoevaluación 6</strong></a></td>
+  </tr>
+</table>
+</div><font COLOR="#000080"><b>
+
+<p ALIGN="center">&nbsp;</p>
+</b></font>
+</body>
+</html>

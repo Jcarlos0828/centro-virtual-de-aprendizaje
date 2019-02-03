@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Estimación de
+    ventas con crecimiento compuesto.</big></font></p>
+    <p align="center"><font face="Arial"><font color="#800040"><big>Caso 2</big></font><b><br>
+    <font color="#004080"><strong>Ventas de una empresa de servicios de internet</strong></font></font><br>
+    <strong><font face="Times New Roman" size="3">Solución utilizando el modelo en Excel</font></strong></b></p>
+    <p><strong><big><big>S</big></big>e conoce que el número de usuarios de Conectix, una
+    empresa proveedora de servicios de internet, se incrementa en un 35% mensual.<small> </small>La
+    renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999
+    se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en
+    diciembre de 1999?</strong></p>
+    <p>Utilizando en Excel la representación algebraica del modelo de Crecimiento Compuesto <b>U<sub>t</sub>
+    = U<sub>t-1</sub>(1 + r)</b>, y el hecho de que para encontrar las ventas del mes se
+    multiplica el número de usuarios del mes por la renta mensual por usuario, se puede
+    generar la siguiente tabla:</p>
+    <b><p ALIGN="CENTER"><font color="#004080">TABLA EN EXCEL</font></b></p>
+    <p align="center"><img src="c2mode2.jpg" width="388" height="328"
+    alt="wpe7.jpg (26841 bytes)"></p>
+    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En los renglones 1 al 4 vaciar la información de los datos del problema.<br>
+    En la celda A6&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =B4</b><br>
+    En la celda A7&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =A6+1
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>y llenar hacia abajo (Fill Down)<br>
+    En la celda B6&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =B1</b><br>
+    En la celda B7&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; = B6*(1+$B$3)</b>&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda C6&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =ROUND(B6,0)*$B$2</b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)</p>
+    <p>Es importante observar que al tener el signo % en una celda, Excel la cambia en forma
+    automática a decimales para hacer operaciones.<br>
+    Las celdas B3 y B2 son registradas como celdas absolutas.<br>
+    Se usa la función ROUND para que el número de usuarios sea un entero. Esta función
+    puede ser tecleada o bien :<br>
+    Seleccionar en&nbsp; <strong>Insert</strong>,&nbsp; <strong>Function</strong> y escoger la
+    categoría <strong>Math&amp;Trig</strong>. Seleccionar <strong>ROUND</strong> y aparece un
+    recuadro,<br>
+    teclear en&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number&#133;&#133;&#133;&#133;<b>B6</b><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Num-digits&#133;&#133;...
+    <b>0</b></p>
+    <p align="center"><font color="#004080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p align="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" bgcolor="#FF0000" bordercolor="#FF0000"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="100%"><p align="center"><img src="c2mode1.jpg" alt="c2mode1.jpg (16926 bytes)"
+        WIDTH="584" HEIGHT="265"></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+  <tr>
+    <td width="100%">&nbsp;<p align="center"><a href="c2elem.htm" style="text-decoration: underline"><font
+    size="3"><strong>Elementos o variables que intervienen en el manejo de ventas con
+    crecimiento compuesto</strong></font></a></p>
+    <p align="center"><a href="c2modelem.htm" style="text-decoration: underline"><font
+    size="3"><strong>Solución utilizando el modelo con los elementos</strong></font></a></p>
+    <p align="center"><a href="c2repalgeb.htm" style="text-decoration: underline"><strong>Representación
+    algebraica del modelo compuesto de ventas</strong></a></p>
+    <p align="center"><a href="C2dedfor.htm" style="text-decoration: underline"><font size="3"><strong>Deducción
+    de la fórmula para ventas con crecimiento compuesto</strong></font></a></p>
+    <p align="center"><a href="c2for.htm" style="text-decoration: underline"><font size="3"><strong>Fórmula
+    para ventas con crecimiento compuesto</strong></font></a></p>
+    <p align="center"><a href="c2solfor.htm" style="text-decoration: underline"><font size="3"><strong>Solución
+    utilizando fórmula para obtener ventas con crecimiento compuesto</strong></font></a></p>
+    <p align="center"><a href="c2solforex.htm" style="text-decoration: underline"><font
+    size="3"><strong>Solución utilizando fórmula en Excel</strong></font></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

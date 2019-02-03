@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Punto de equilibrio</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Punto de
+    equilibrio evaluado en el tiempo.</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 4</big><br>
+    </font><font face="Arial" color="#004080"><strong>Punto de equilibrio para una compañía
+    farmacéutica<br>
+    </strong></font><b>Solución utilizando la fórmula en Excel.</b></p>
+    <p><strong><big><big>L</big></big>aboratorios Berck, una compañía farmacéutica, tiene
+    la fórmula exclusiva de un nuevo medicamento antiviral que acaba de introducir al
+    mercado.&nbsp; A continuación se muestran los costos fijos, costo variable unitario y el
+    precio, así como sus tasas de incremento trimestrales correspondientes:</strong></p>
+    <div align="center"><center><table border="1" width="65%">
+      <tr>
+        <td width="36%" align="center" bgcolor="#FFFFC6"><p align="center"><font face="Arial"
+        color="#FFFFC6"><small><strong>--</strong></small></font></td>
+        <td width="54%" align="center" bgcolor="#FFFFC6"><p align="center"><font face="Arial"
+        color="#800040"><small><strong>Valor en el trimestre 1</strong></small></font></td>
+        <td width="60%" align="center" bgcolor="#FFFFC6"><p align="center"><font face="Arial"
+        color="#800040"><small><strong>tasa de incremento trim.</strong></small></font></td>
+      </tr>
+      <tr>
+        <td width="36%" align="center"><p align="center">Costos fijos</td>
+        <td width="54%" align="center"><p align="center"><strong>300,000</strong></td>
+        <td width="60%" align="center"><p align="center"><strong>5.1%</strong></td>
+      </tr>
+      <tr>
+        <td width="36%" align="center"><p align="center">Costo var. unit.</td>
+        <td width="54%" align="center"><p align="center"><strong>$56</strong></td>
+        <td width="60%" align="center"><p align="center"><strong>4.3%</strong></td>
+      </tr>
+      <tr>
+        <td width="36%" align="center"><p align="center">Precio</td>
+        <td width="54%" align="center"><p align="center"><strong>$295</strong></td>
+        <td width="60%" align="center"><p align="center"><strong>6.0%</strong></td>
+      </tr>
+    </table>
+    </center></div><p><strong>Encuentre los puntos de equilibrio en unidades y pesos para los
+    primeros cuatro trimestres del año.</strong></p>
+    <p>Utilizando la fórmula<strong> </strong>se genera la siguiente tabla en Excel:</p>
+    <p align="center"><img src="c4mode1.jpg" alt="c4mode1.jpg (42484 bytes)" WIDTH="542"
+    HEIGHT="312"></p>
+    <p>Las acciones que se tomaron para generar esta tabla son:<br>
+    En los renglones del 1 al 4 vaciar las información de los datos del caso.<br>
+    En la celda&nbsp;&nbsp;&nbsp; A7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <b>=1</b><br>
+    En la celda&nbsp;&nbsp;&nbsp; A8&nbsp; &nbsp; teclear <b>&nbsp;&nbsp;&nbsp; =A1+1</b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y
+    llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; B7 &nbsp;&nbsp; teclear<b> &nbsp;&nbsp;&nbsp; =B2
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; B8 &nbsp;&nbsp; teclear<b>&nbsp;&nbsp;&nbsp;&nbsp;
+    =B7*(1+$C$2)</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; C7&nbsp; &nbsp;&nbsp;teclear <b>&nbsp;&nbsp;&nbsp; =B3
+    &nbsp; </b>&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; C8&nbsp; &nbsp;&nbsp;teclear <b>&nbsp;
+    &nbsp;&nbsp;=C7*(1+$C$3)</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y llenar hacia abajo (Fill
+    Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; D7 &nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp; =B4
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </b>&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; D8&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp;
+    =D7*(1+$C$4)</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; E7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font
+    color="#0000FF"><strong>=C7/(B7-D7)</strong></font><font color="#0000A0"> </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; F7 &nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp;
+    &nbsp;=B7*E7-(C7+D7*E7)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; G7 &nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp; =B7*E7
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)</p>
+    <p>Se puede fácilmente cambiar los datos del problema y obtener el resultado en forma
+    automática.</p>
+    <p align="center"><a href="pract4c4.htm"><strong><font size="3">Práctica de
+    autoevaluación 4</font></strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

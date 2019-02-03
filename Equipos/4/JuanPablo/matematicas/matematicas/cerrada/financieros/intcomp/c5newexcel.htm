@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto</title>
+</head>
+
+<body background="../images/dollarblue2.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p ALIGN="center"><font face="Arial" color="#800040"><big>Inversión
+    Anual</big></font></p>
+    <p ALIGN="center"><font face="Arial" color="#800040"><big>Caso 5<br>
+    </big></font><font face="Arial" color="#004080"><strong>Mejor inversión con tasa interés
+    simple ó interés compuesto.</strong></font><br>
+    <b>Solución utilizando el modelo matemático en Excel</b></p>
+    <p><strong><big><big>L</big></big>a Sra. Ramos fué al banco para ver como puede invertir
+    $110,000.00 que tiene ahorrados. En&nbsp; el banco le ofrecieron dos opciones, una es a
+    interés simple con una tasa del 20% y la segunda opción es a interés compuesto con una
+    tasa del 19.3% capitalizable cada mes. </strong></p>
+    <p><strong>¿Cuál inversión es la que le daría mayor rendimiento a 4 meses? ¿Cuál
+    inversión es la mejor para 12 meses?</strong></p>
+    <p ALIGN="JUSTIFY">En este caso se necesita utilizar el modelo de interés simple y
+    también el modelo de interés compuesto. </p>
+    <p ALIGN="JUSTIFY"><strong>Interés Simple.</strong><br>
+    En el modelo de interés simple para encontrar el saldo en cualquier período, se suma la
+    deuda del período anterior con el interés del período. El interés es el mismo para
+    cada período, que en este caso sería igual para cada mes. La tasa de interés mensual es
+    igual a la tasa de interés anual (20%) dividida entre 12, <br>
+    tasa de interés mensual = 20 / 12 = 1.6667%.<br>
+    Los intereses para cada mes se obtienen multiplicando el saldo inicial (110,000.00) por la
+    tasa de interés mensual en su forma decimal (0.016667),<br>
+    intereses para cada mes = 110,000.00 * 0.016667<br>
+    intereses para cada mes = 1,833.33 pesos.</p>
+    <p ALIGN="JUSTIFY"><strong>Interés Compuesto.<br>
+    </strong>En el modelo de interés compuesto, el saldo para cada período va a ser igual al
+    saldo del período anterior más los intereses del período. Los intereses del período se
+    obtienen multiplicando el saldo del período anterior por la tasa de interés en su forma
+    decimal.<br>
+    La tasa de interés mensual es igual a la tasa de interés anual (19.3%) dividida entre
+    12, <br>
+    tasa de interés mensual =19.3 / 12 = 1.6083%.</p>
+    <p ALIGN="JUSTIFY">Utilizando los datos obtenidos para cada modelo se genera la siguiente
+    tabla en Excel:</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA DE EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tabla13c5.jpg" width="635" height="369"
+    alt="tabla13c5.jpg (118007 bytes)"></p>
+    <p ALIGN="center">&nbsp;</p>
+    <p ALIGN="JUSTIFY">Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En los renglones 1 y 5 vaciar l ainformación de los datos del problema.<br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B2 / 12<br>
+    </strong>En la celda&nbsp;&nbsp; D3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= D2 / 12<br>
+    </strong>En la celda&nbsp;&nbsp; B6&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= $C$5 * $B$3
+    &nbsp;&nbsp;</strong>y llenar hacia abajo para los 12 períodos (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C6&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=C5 + B6
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo para
+    los 12 períodos (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D6&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= E5 * $D$3
+    &nbsp;&nbsp;</strong>&nbsp;&nbsp; y llenar hacia abajo para los 12 períodos (Fill Down)<br>
+    En la celda&nbsp;&nbsp; E6&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= E5 + D6
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp; y llenar hacia abajo para los 12
+    períodos (Fill Down)<br>
+    En la celda&nbsp;&nbsp; B18 teclear&nbsp;&nbsp; <strong>=Sum (B6:B17)<br>
+    </strong>Otra forma de obtener la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM.</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number1&#133;.......<strong>B6:B17</strong><br>
+    <strong><br>
+    </strong>En la celda&nbsp;&nbsp; D18 teclear&nbsp;&nbsp; <strong>=Sum (D6:D17)<br>
+    </strong>Otra forma de obtener la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM.</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number1&#133;.......<strong>D6:D17</strong></p>
+    <p ALIGN="JUSTIFY"><strong>Si la inversión se realiza a 4 meses es más conveniente a
+    interés simple ya que es el que da mayor rendimiento teniendo un saldo final de
+    $117,333.33. En el caso de que la inversión se realizara a 12 meses lo más conveniente
+    es&nbsp; a interés compuesto dando un saldo final $133,212.39 pesos.</strong></p>
+    <p ALIGN="JUSTIFY">A continuación se presenta la gráfica del saldo de la inversión con
+    interés simple y compuesto:</p>
+    <p ALIGN="center"><font color="#004080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p ALIGN="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" bordercolor="#0000FF"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" bgcolor="#0000FF">
+      <tr>
+        <td width="100%"><p align="center"><img src="c5newe1.jpg" width="596" height="239"
+        alt="wpe1.jpg (20654 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p ALIGN="center">&nbsp;</p>
+    <p ALIGN="JUSTIFY"><strong>Se puede analizar en la gráfica como al ir aumentando el plazo
+    el saldo a interés compuesto va siendo mayor.</strong></p>
+    <p ALIGN="center"><a href="c5newfor.htm" style="text-decoration: underline"><strong><font
+    size="3">Solución utilizando las fórmulas de Interés Simple y Compuesto</font></strong></a></p>
+    <p ALIGN="center"><a href="prac5c5new.htm" style="text-decoration: underline"><font
+    size="3"><strong>Práctica de autoevaluación 5</strong></font></a></td>
+  </tr>
+</table>
+</div>
+
+<p><b>&nbsp;</p>
+
+<p ALIGN="JUSTIFY"></b>&nbsp;</p>
+</body>
+</html>

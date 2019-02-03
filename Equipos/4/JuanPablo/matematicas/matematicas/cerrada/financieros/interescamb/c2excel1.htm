@@ -1,0 +1,77 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto con tasa cambiante</title>
+</head>
+
+<body background="../images/dollargreen2.jpg">
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Préstamo Anual<br>
+    Caso 2<br>
+    </big></font><strong><br>
+    <font face="Arial" color="#004080">Pagos de un préstamo a 1 año con interés compuesto
+    con tasa cambiante cada mes y pagos mensuales.<br>
+    </font></strong><b>Solución en Excel con tasa fija utilizando el modelo matemático y el
+    instrumento Goal Seek</b><strong><br>
+    </strong></p>
+    <p><strong><big><big>R</big></big>icardo necesita pedir un préstamo de $100,000.00 para
+    su negocio, en el banco le dijeron que sólo se los pueden prestar con tasa variable y a
+    un plazo de 12 meses. La tasa de interés actual es de 26% anual.</strong></p>
+    <p><strong>¿Cuánto tendría que pagar mensualmente, considerando que la tasa de interés
+    pudiera aumentar algunos meses durante el año?</strong></p>
+    <p ALIGN="JUSTIFY">En un préstamo cuando se efectuan pagos cada período, una parte de
+    ese pago van a ser los intereses y el resto se va a pagar a capital. Lo que se paga a
+    capital se llama amortización.</p>
+    <p ALIGN="JUSTIFY">Primero se van a calcular los pagos si la tasa de interés es fija, se
+    va a resolver el caso utilizando el modelo matemático en Excel y el instrumento Goal Seek,
+    quedando la tabla de la siguiente forma:</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tabla2.jpg" width="532" height="284"
+    alt="tabla2.jpg (62102 bytes)"></p>
+    <b><p ALIGN="JUSTIFY"></b>Las acciones que se tomaron para generar esta tabla son las
+    siguientes:<br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>100000<br>
+    </strong>En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>26% </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B2 * C2 / 12</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo ( Fill Down)<br>
+    En la celda&nbsp;&nbsp; E2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= F2 - D2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar
+    hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B2 - E2</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y llenar
+    hacia abajo hasta B14 (Fill Down)<br>
+    En la celda&nbsp;&nbsp; F3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= F2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D14 teclear&nbsp;&nbsp; <strong>= SUM (D2:D13)<br>
+    </strong>Otra forma para calcular la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM</strong>.<br>
+    Teclear en&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number1&#133;&#133;.. <strong>D2:D13<br>
+    <br>
+    </strong>En la celda&nbsp;&nbsp; D14 teclear&nbsp;&nbsp; <strong>= SUM (F2:F13)<br>
+    </strong>Otra forma para calcular la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM</strong>.<br>
+    Teclear en&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number1&#133;&#133;.. <strong>F2:F13<br>
+    <br>
+    </strong>En el menú Tools - Goal Seek<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción Set Cell - <strong>B14</strong><br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción To Value - <strong>0</strong><br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción By Changing Cell - <strong>F2</strong></p>
+    <p><strong>En la tabla se puede ver que si la tasa fuera fija los intereses serían de
+    $14,636.17 durante el año y el pago mensual sería de $9,553.01 pesos.</strong></p>
+    <p ALIGN="center"><a href="c2excel2.htm" style="text-decoration: underline"><strong><font
+    size="3">Solución en Excel con tasa cambiante utilizando el modelo matemático y el
+    instrumento Goal Seek </font></strong></a><font size="2"><br>
+    </font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

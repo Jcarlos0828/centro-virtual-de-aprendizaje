@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Costos totales</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><b><p ALIGN="CENTER"></b><big><font face="Arial" color="#800040">Costos
+    Totales</font></big></p>
+    <p ALIGN="CENTER"><font face="Arial" color="#800040"><big>Caso 3</big><b><br>
+    </font><font face="Arial" size="3" color="#004080"><strong>Empresa Manufacturera</strong></font><br>
+    <strong><font face="Times New Roman" size="3">Solución utilizando Excel con instrumento Goal Seek</font></strong></b></p>
+    <p><strong><big><big>L</big></big>a empresa manufacturera MEXSID produce campanas de
+    transmisión para plantas armadoras de automóviles.<br>
+    Los costos de la empresa se dividen en tres tipos: Administrativos, de Producción y de
+    Distribución<br>
+    <font color="#800040">Los costos administrativos </font>mensuales incluyen la nómina de
+    empleados $100,000, electricidad ($30,000 pero el 85% es fijo y el 15% es variable
+    unitario), gas ($15,000 pero el 90% es fijo y el 10% variable unitario), teléfono $7,000,
+    papelería $5,000, agua $8,000 y equipo de oficina $7,000.<br>
+    <font color="#800040">Los costos de producción</font> mensuales incluyen la depreciación
+    de la maquinaria $15,000, Mano de obra ($40,000 pero 85% es fijo y el 15% es variable
+    unitario) y Materia Prima $6,000 (100% variable).<br>
+    <font color="#800040">Los costos de distribución</font> mensuales incluyen los fletes
+    $5,000, bodegas ($2,000 pero el 80% es fijo y el 20% es variable unitario) y los impuestos
+    de exportación es de $1,500.</strong></p>
+    <p><strong>Calcular los costos fijos y variables unitarios mensuales, así como su costo total mensual, si se sabe
+    que la producción es de 1000 en el primer mes y de 1500 en el segundo.
+<br>
+
+
+
+
+    Por otro lado se sabe que al final del año se tiene un Costo total de $30,500,000 si los
+    costos fijos son siempre los mismos y el volúmen de producción para ese último mes del
+    año es de 2,000, ¿cuánto es el costo variable unitario?.</strong></p>
+    <p>Utilizando la fórmula <strong>CT= CF + CV*(Ut) </strong>se genera la siguiente tabla
+    en Excel:</p>
+
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="Image3.jpg" width="522" height="522"
+    alt="Image3.jpg (99452 bytes)"></p>
+    <p>Las acciones que se generaron para realizar esta tabla fueron las siguientes:b<br>
+    De la celda&nbsp;&nbsp; B2 a la B14 se vació la información de los costos fijos<br>
+    De la celda&nbsp;&nbsp; C2 a la C14 se vació la información de los costos variables
+    unitarios correspondientes<br>
+    En la celda&nbsp;&nbsp; B15 teclear&nbsp;&nbsp; <strong>=
+    SUM(B2:B14)</strong><br>
+    En la celda&nbsp;&nbsp; C15 teclear&nbsp;&nbsp; <strong>= SUM(C2:C14)</strong><br>
+    En la celda&nbsp;&nbsp; B16 teclear&nbsp;&nbsp; <strong>=B15+C15*(D2)</strong><br>
+    En la celda&nbsp;&nbsp; B17 teclear&nbsp;&nbsp; <strong>=B15+C15*(D3)<br>
+    </strong><font face="Times New Roman" size="3">En la celda&nbsp;&nbsp; B18 teclear
+    &nbsp;&nbsp;=<strong>B15+B19*(D4)</strong><br>
+    En <strong>Tools </strong>-----<b>Goal Seek </b>&nbsp; teclear<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en Set Cell&nbsp;&nbsp;&nbsp; - <b>B18</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en To value&nbsp;&nbsp; - <b>30,500,000</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y en By changing cell&nbsp;&nbsp; - <b>B19</b></font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto</title>
+</head>
+
+<body background="../images/dollarblue2.jpg">
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><font color="#800040" face="Arial"><big>Inversión
+    anual</big></font></p>
+    <p align="center"><font color="#800040" face="Arial"><big>Caso 4<br>
+    </big></font><strong><font face="Arial" color="#004080">Tasa de interés anual de una
+    inversión a 9 años con una tasa de interés compuesto anualizada, capitalizable cada
+    año.</font></strong><b><br>
+    Solución en Excel utilizando la fórmula de Interés Compuesto y el instrumento Goal Seek</b></p>
+    <p><strong><big><big>A</big></big> un niño de 9 años su Papá le dejó una herencia de
+    $140,000.00 que se depositaron en una inversión con interés compuesto capitalizable cada
+    año. </strong></p>
+    <p><strong>Si al cumplir los 18 años recibe una cantidad de $450,325.12, ¿qué tasa de
+    interés anual ganó la inversión?</strong></p>
+    <p ALIGN="JUSTIFY">Si en este caso se utilizará la fórmula <strong>S<font size="1"><sub>t</sub></font>
+    = S<font size="1"><sub>0</sub></font> (1 + i)<font size="1"><sup>t</sup></font></strong>,
+    la variable que se tiene que encontrar es i, pero para despejarla se tiene que hacer un
+    proceso matemático no muy sencillo. En Excel se puede resolver de una manera muy sencilla
+    utilizando la herramienta Goal Seek del menú de Tools:</p>
+    <p ALIGN="center"><strong><font color="#004080">TABLA EN EXCEL</font></strong></p>
+    <p ALIGN="center"><img src="tabla6.jpg" width="285" height="112"
+    alt="tabla6.jpg (11714 bytes)"></p>
+    <p>Las acciones que se necesitan para generar esta tabla son las siguientes:<br>
+    En la celda&nbsp;&nbsp; B1&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>0</strong><br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>9<br>
+    </strong>En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>140000 <br>
+    </strong>En la celda&nbsp;&nbsp; B4&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= $B$3 * POWER
+    ((1 + $B$1),$B$2)&nbsp;&nbsp; <br>
+    </strong>En el menú Tools - Goal Seek<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción Set Cell - <strong>B4</strong><br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción To Value - <strong>450325.12</strong><br>
+    &nbsp;&nbsp;&nbsp;&nbsp; Teclear en la opción By Changing Cell - <strong>B1</strong></p>
+    <p>El resultado que se obtiene es:</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="tabla7.jpg" width="311" height="103"
+    alt="tabla7.jpg (12816 bytes)"></p>
+    <p>Al utilizar el instrumento Goal Seek el valor que se obtiene de la tasa de interés es
+    exacto.</p>
+    <p><strong>La tasa de interés a la que se invirtió el dinero fué de 13.8617% anual.</strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Utilidades y pérdidas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><big><font face="Arial" color="#800040">Utilidades para
+    el arranque de una empresa.</font></big></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 3</big><br>
+    </font><strong><font face="Arial" color="#004080">Determinar las utilidades para una
+    fábrica de cajas<br>
+    </font><font face="Times New Roman" color="#000000">Solución para 3 meses utilizando el
+    modelo matemático con los elementos</font></strong></p>
+    <div align="center"><center><table border="0" height="725">
+      <tr>
+        <td width="317" height="218" valign="top"><strong><font size="3">&quot;</font><font
+        size="5">T</font><font size="3">odoCabe&quot; es un </font>negocio que se dedica a armar y
+        comercializar cajas de cartón y que recientemente ha iniciado sus operaciones. <br>
+        El primer mes, el dueño rentó un local, contrató servicios, compró muebles y una
+        computadora. El segundo mes, ordenó materiales, contrató personal para las operaciones
+        del negocio, comenzó a hacer publicidad y a construir los diferentes tipos de cajas que
+        ocupa. Fue hasta el tercer mes de operaciones que se logró la primer venta y empezaron a
+        haber ingresos. Se tienen los siguientes datos:</strong></td>
+        <td width="331" height="218"><p align="center"><img src="../imagenes/cajas.jpg"
+        alt="cajas.jpg (28493 bytes)" WIDTH="326" HEIGHT="239"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" height="476" width="652" valign="middle"><div
+        align="center"><center><table BORDER="1" CELLSPACING="1" BORDERCOLOR="#000000"
+        CELLPADDING="7" WIDTH="320">
+          <tr>
+            <td WIDTH="16%" VALIGN="TOP" align="center"><p align="center"><font face="Arial"
+            color="#800040"><small><strong>Mes</strong></small></font></td>
+            <td WIDTH="29%" VALIGN="TOP"><p align="center"><font face="Arial" color="#800040"><small><strong>Ctos.
+            Fijos</strong></small></font></td>
+            <td WIDTH="30%" VALIGN="TOP"><p align="center"><font face="Arial" color="#800040"><small><strong>Producción</strong></small></font></td>
+            <td WIDTH="26%" VALIGN="TOP"><p align="center"><font face="Arial" color="#800040"><small><strong>Ventas</strong></small></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="16%" VALIGN="TOP" align="center"><p align="center"><strong>1</strong></td>
+            <td WIDTH="29%" VALIGN="TOP"><p align="center"><strong>9000</strong></td>
+            <td WIDTH="30%" VALIGN="TOP"><p align="left"><font color="#FFFFFF"><strong>----</strong></font></td>
+            <td WIDTH="26%" VALIGN="middle"><p align="left"><font color="#FFFFFF"><strong>----</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="16%" VALIGN="TOP" align="center"><p align="center"><strong>2</strong></td>
+            <td WIDTH="29%" VALIGN="TOP"><p align="center"><strong>16000</strong></td>
+            <td WIDTH="30%" VALIGN="TOP"><p align="left"><strong>t1 = 1000<br>
+            t2 = 500</strong></td>
+            <td WIDTH="26%" VALIGN="TOP"><p align="left"><font color="#FFFFFF"><strong>----</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="16%" VALIGN="TOP" align="center"><p align="center"><strong>3</strong></td>
+            <td WIDTH="29%" VALIGN="TOP"><p align="center"><strong>16000</strong></td>
+            <td WIDTH="30%" VALIGN="TOP"><p align="left"><strong>t1 = 1200<br>
+            t2 = 700<br>
+            t3 = 150</strong></td>
+            <td WIDTH="26%" VALIGN="TOP"><p align="left"><strong>t1 = 1000<br>
+            t2 = 500</strong></td>
+          </tr>
+          <tr>
+            <td WIDTH="16%" VALIGN="TOP" align="center"><p align="center"><strong>4</strong></td>
+            <td WIDTH="29%" VALIGN="TOP"><p align="center"><strong>16000</strong></td>
+            <td WIDTH="30%" VALIGN="TOP"><p align="left"><strong>t1 = 1440<br>
+            t2 = 980<br>
+            t3 = 255</strong></td>
+            <td WIDTH="26%" VALIGN="TOP"><p align="left"><strong>t1 = 1200<br>
+            t2 = 700<br>
+            t3 = 150</strong></td>
+          </tr>
+        </table>
+        </center></div><p align="left"><strong>Los costos variables, los precios, y los
+        porcentajes de incremento en ventas permanecen constantes y se muestran en la primera
+        tabla.</strong></p>
+        <p align="left"><strong>Los primeros cuatro meses, con los costos fijos correspondientes,
+        la producción y las ventas se muestran en la segunda tabla. Note que la producción del
+        mes 2 es igual a las ventas del mes 3, y la producción del mes 3 es igual a las ventas
+        del mes 4. Esta empresa produce durante un mes lo que planea vender el mes siguiente.</strong></p>
+        <p align="left"><strong>Estime las utilidades para el mes 10, y determine el mes en el que
+        se empieza a ganar dinero.</strong></p>
+        <p align="left">De la descripción del caso podemos observar que se tiene una línea de
+        productos al igual que en el Caso 2, por lo que las utilidades, iguales a las ventas
+        totales menos los costos totales, dependerán de las ventas y los costos de cada producto.
+        Las ventas de cada tipo de tostada se incrementan en un porcentaje mensual, por lo que
+        esto nos indica un crecimiento compuesto. La diferencia de este caso con respecto al Caso
+        2, es que en éste observa el arranque de un negocio, por lo que en los primeros meses no
+        se tienen ingresos por ventas y solamente se tienen costos. Las unidades vendidas no son
+        iguales a las unidades producidas, sino que se producen en un mes y se venden al
+        siguiente.</p>
+        <p align="left"><strong>Mes 1:</strong><br>
+        Para el mes 1, no se tuvieron ventas, simplemente costos fijos, por lo que se puede
+        escribir la ecuación de costos totales para una línea con 3 productos como:<br>
+        CT<sub>1</sub> = CF + (CV1 x U1<sub>1</sub> + CV2 x U2<sub>1</sub> + CV3 x U3<sub>1</sub>)<br>
+        Como en este mes no se produjeron unidades todavía, sólo se tienen costos fijos, por lo
+        que los costos totales son iguales a los costos fijos (9000):<br>
+        CT<sub>1</sub> = CF <br>
+        CT<sub>1</sub> = 9000<br>
+        Las utilidades son iguales a las ventas (0) menos los costos totales (9000):<br>
+        UT<sub>1</sub> = V<sub>1</sub> &#150; CT<sub>1</sub><br>
+        UT<sub>1</sub> = 0 &#150; 9000 <br>
+        UT<sub>1</sub> = &#150;$9,000 pesos<br>
+        <b>Las utilidades para el mes 1 son iguales a &#150;$9,000 pesos, por lo que se tuvieron
+        pérdidas.</b></p>
+        <p align="left"><strong>Mes 2:</strong><br>
+        Para el mes 2, no se tuvieron ventas, pero sí se tuvieron costos fijos y variables porque
+        se produjeron unidades pero no se vendieron. La ecuación de costos totales para una
+        línea con 3 productos es:<br>
+        CT<sub>2</sub> = CF + (CV1 x U1<sub>2</sub> + CV2 x U2<sub>2</sub> + CV3 x U3<sub>2</sub>)<br>
+        Como no se produjeron cajas de tipo 3 entonces la ecuación queda:<br>
+        CT<sub>2</sub> = CF + (CV1 x U1<sub>2</sub> + CV2 x U2<sub>2</sub>)<br>
+        <br>
+        Caja 1:<br>
+        El costo variable para la caja 1 es igual a (5.33) multiplicado por el número de cajas
+        del tipo 1 producidas (1000)<br>
+        CV1= (5.33 x 1000)<br>
+        CV1=5330<br>
+        <br>
+        Caja 2:<br>
+        El costo variable para la caja 2 es igual a (7.42) multiplicado por el número de cajas
+        del tipo 2 producidas (500)<br>
+        CV2= (7.42 x 500)<br>
+        CV2=3710<br>
+        <br>
+        Costos Totales:<br>
+        Es la suma de los costos fijos más la suma de los costos variables de las cajas 1 y 2:<br>
+        CTt= 16000 + 5330 + 3710<br>
+        CTt=25040<br>
+        <br>
+        Las utilidades son iguales a las ventas (0) menos los costos totales (25040):<br>
+        UT<sub>2</sub> = V<sub>1</sub> &#150; CT<sub>1</sub><br>
+        UT<sub>2</sub> = 0 &#150; 25040 <br>
+        UT<sub>2</sub> = &#150;$25,040 pesos<br>
+        <b>Las utilidades para el mes 2 son iguales a &#150;$25,040 pesos, por lo que se tuvieron
+        pérdidas.</b></p>
+        <p align="left"><strong>Mes 3:</strong><br>
+        Para el mes 3, las ventas totales son iguales a la suma de las ventas de cada tipo de
+        caja. <br>
+        VT<sub>3</sub> = V1<sub>3</sub> + V2<sub>3</sub> + V3<sub>3</sub><br>
+        Ya que no se vendieron cajas tipo 3, la ecuación queda como:<br>
+        VT<sub>3</sub> = V1<sub>3</sub> + V2<sub>3</sub><br>
+        <br>
+        Caja 1:<br>
+        Las ventas de cajas tipo 1 son iguales al número de unidades vendidas (1000) multiplicado
+        por el precio ($10.50):<br>
+        V1<sub>3</sub> = U1<sub>3</sub> x P1<br>
+        V1<sub>3</sub> = 1000 x 10.5<br>
+        V1<sub>3</sub> = 10,500 pesos<br>
+        <br>
+        Caja 2:<br>
+        Las ventas de cajas tipo 2 son iguales al número de unidades vendidas (500) multiplicado
+        por el precio ($15.00):<br>
+        V2<sub>3</sub> = U2<sub>3</sub> x P2<br>
+        V2<sub>3</sub> = 500 x 15<br>
+        V2<sub>3</sub> = 7,500 pesos<br>
+        <br>
+        Caja 3:<br>
+        Las ventas totales para el mes 3 son iguales a las ventas de cajas tipo 1 (10500) más las
+        ventas de cajas tipo 2 (7500):<br>
+        VT<sub>3</sub> = V1<sub>3</sub> + V2<sub>3</sub><br>
+        VT<sub>3</sub> = 10500 + 7500<br>
+        VT<sub>3</sub> = 18,000 pesos<br>
+        <b>Las ventas para el mes 3 son iguales a 18,000 pesos.</b></p>
+        <p align="left">Para el mes 3, la ecuación de costos totales para una línea con 3
+        productos es:<br>
+        CT<sub>3</sub> = CF + (CV1 x U1<sub>3</sub> + CV2 x U2<sub>3</sub> + CV3 x U3<sub>3</sub>)<br>
+        En este caso la variable U representa las unidades <b>producidas</b>, <b>no</b> las <b>vendidas</b>.
+        Esto es porque en un mes determinado, se producen las cajas que se espera vender en el mes
+        siguiente. Las unidades producidas tienen un crecimiento compuesto y son iguales al
+        número de unidades producidas el mes anterior multiplicado por uno más el crecimiento
+        esperado en las ventas. <br>
+        <br>
+        Caja 1:<br>
+        Entonces, para las cajas tipo 1, las unidades producidas son iguales al número de
+        unidades producidas el mes anterior (1000) multiplicado por uno mas el porcentaje de
+        incremento en las ventas (20%):<br>
+        U1<sub>3</sub> = U1<sub>2</sub> (1 + r1)<br>
+        U1<sub>3</sub> = 1000 (1 + 0.2)<br>
+        U1<sub>3</sub> = 1000 (1.2) <br>
+        U1<sub>3</sub> = 1200<br>
+        <br>
+        Caja 2:<br>
+        Para las cajas tipo 2, las unidades producidas son iguales al número de unidades
+        producidas el mes anterior (500) multiplicado por uno mas el porcentaje de incremento en
+        las ventas (40%):<br>
+        U2<sub>3</sub> = U2<sub>2</sub> (1 + r2)<br>
+        U2<sub>3</sub> = 500 (1 + 0.4)<br>
+        U2<sub>3</sub> = 500 (1.4) <br>
+        U2<sub>3</sub> = 700<br>
+        <br>
+        Caja 3:<br>
+        Para las cajas tipo 3, las unidades producidas son un dato ya que este es el primer mes
+        que se producen, y son iguales a 150:<br>
+        U3<sub>3</sub> = 150<br>
+        <br>
+        Ya que se tienen las unidades producidas se pueden calcular los costos totales. Los costos
+        totales son iguales a los costos fijos (16000) más el costo variable de la caja de tipo 1
+        (5.33) multiplicado por el número de cajas de tipo 1 producidas (1200) más el costo
+        variable de la caja de tipo 2 (7.42) multiplicado por el número de cajas de tipo 2
+        producidas (700) más el costo variable de la caja de tipo 3 (10.21) multiplicado por el
+        número de cajas de tipo 3 producidas (150):<br>
+        CT<sub>3</sub> = 16000 + (5.33 x 1200) + (7.42 x 700) + (10.21 x 150)<br>
+        CT<sub>3</sub> = 16000 + 6396 + 5194 + 1531.5 <br>
+        CT<sub>3</sub> = 29121.50<br>
+        <b>Los costos totales del mes 3 son iguales a $29,121.50 pesos.</b></p>
+        <p align="left">Las utilidades son iguales a las ventas (18000) menos los costos totales
+        (29121.5):<br>
+        UT<sub>3</sub> = V<sub>3</sub> &#150; CT<sub>3</sub><br>
+        UT<sub>3</sub> = 18000 &#150; 29121.5 <br>
+        UT<sub>3</sub> = &#150;$11121.50 pesos<br>
+        <b>Las utilidades para el mes 3 son iguales a &#150;$11,121.50 pesos, por lo que se
+        tuvieron pérdidas.</b></p>
+        <p align="center"><a style="text-decoration: underline" href="c3modex.htm"><strong><font
+        size="3">Solución utilizando el modelo en Excel</font></strong></a></p>
+        <p align="center"><a href="pract3c3.htm"><strong><font size="3">Práctica de
+        autoevaluación 3</font></strong></a></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

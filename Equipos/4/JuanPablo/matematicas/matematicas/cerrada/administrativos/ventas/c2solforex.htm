@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Estimación de
+    ventas con crecimiento compuesto.</big></font></p>
+    <p align="center"><font face="Arial"><font color="#800040"><big>Caso 2</big></font><b><br>
+    </b></font><strong><font color="#004080" face="Arial">Ventas de una empresa de servicios
+    de internet</font></strong><b><br>
+    </b><strong><font face="Times New Roman">Solución utilizando fórmula en Excel.</font></strong></p>
+    <p align="left"><strong><big><big>S</big></big>e conoce que el número de usuarios de
+    Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35%
+    mensual.<small> </small>La renta mensual que paga cada usuario por el servicio es de $250
+    pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por
+    ventas que se tendrán en diciembre de 1999?</strong></p>
+    <p align="left">Utilizando la fórmula, <strong>V<sub>t</sub> = U<sub>n</sub>(1 + r)<sup>(t-n)</sup>
+    P, </strong>se genera la siguiente tabla:</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="../imagenes/c2solf6.jpg" alt="wpe4.jpg (15620 bytes)" WIDTH="340" HEIGHT="197"></p>
+    <p>Las acciones que se tomaron para generar esta tabla son:<br>
+    En los renglones del 1 al 5 vaciar las información de los datos del Caso.<br>
+    En la celda&nbsp;&nbsp; B7&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp;
+    =ROUND(B1*(1+B3)^(B5-B4),0)*B2<br>
+    </b>Para elevar a una potencia se utilizó el símbolo <strong>^</strong>.<br>
+    Otra manera de elevar a una potencia es:<br>
+    En la celda&nbsp;&nbsp; B7&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =ROUND(B1*POWER((1+B3),(B5-B4)),0)*B2</b><br>
+    También se puede elevar a una potencia al utilizar: <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y <strong>Math&amp;Trig</strong> de la lista seleccionar <strong>POWER</strong>.<br>
+    Teclear en Number&#133;&#133;.. <strong>1+B3</strong><br>
+    y en Power&#133;&#133;&#133;.<strong>B5-B4</strong><br>
+    <br>
+<br>
+    Se usó la función de <strong>ROUND</strong> para evitar tener un número de usuarios
+    fraccional.</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

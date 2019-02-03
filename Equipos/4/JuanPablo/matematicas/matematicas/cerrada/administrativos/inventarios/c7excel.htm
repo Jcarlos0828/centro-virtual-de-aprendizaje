@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Control de inventarios</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="86%">
+  <tr>
+    <td width="100%"><font FACE="Garamond"><b><p align="center"></b><font face="Arial"
+    color="#800040"><big>Lote Económico Óptimo (LEO)</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 7</big></font><b><br>
+    <strong><font face="Arial" color="#004080">Estimar el lote económico óptimo para cierta
+    compañía</font></strong><br>
+    </font><strong><font face="Times New Roman" size="3">Solución utilizando Excel</font></strong><font
+    FACE="Garamond"></p>
+    <p></font></b><strong><font face="Times New Roman"><big><big>C</big></big>ierta compañía
+    pretende consumir 30,000 unidades anuales, el costo por pedido es de $5,500, el costo por
+    tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que
+    trabajan 240 días al año. ¿Cuál será el lote económico óptimo y el tiempo de
+    pedido?</font></strong><b></p>
+    </b><p align="left">Utilizando la fórmula <font face="Times New Roman"> <strong>LEO&nbsp;
+    = ((2*CAU*CPL)/(CPI*TCI))<sup>1/2</sup></strong> se genera la siguiente tabla.<strong> </strong></font></p>
+    <p align="center"><font face="Times New Roman" color="#004080"><b>TABLA EN EXCEL</b></font></p>
+    <p align="center"><img src="c7exce3.jpg" width="369" height="405"
+    alt="wpe2.jpg (34423 bytes)"></p>
+    <p><font face="Times New Roman">Las acciones que se utilizaron para generar la tabla
+    fueron las siguientes:<br>
+    Del renglón 1 al 5 se vació la información de los datos del caso.<br>
+
+
+
+En la celda&nbsp;&nbsp; <strong>A8</strong>&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=1</strong><br>
+En la celda&nbsp;&nbsp; <strong>A9</strong>&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=A8+1</strong>&nbsp;&nbsp;&nbsp;y llenar hacia abajo<br>
+En la celda&nbsp;&nbsp; <strong>B8</strong>&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B1</strong><br>
+En la celda&nbsp;&nbsp; <strong>B9</strong>&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B8*(1+$B$5)</strong>&nbsp;&nbsp;&nbsp;y llenar hacia abajo<br>
+
+En la celda&nbsp;&nbsp; <strong>C8</strong>&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=((2*B8*$B$2) / ($B$3*$B$4))^(1/2)</strong>&nbsp;&nbsp;&nbsp;y llenar hacia abajo<br>
+
+En la celda&nbsp;&nbsp; <strong>D8</strong>&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=C8/(B8/240)</strong>&nbsp;&nbsp;&nbsp;y llenar hacia abajo<br>
+
+
+
+
+
+
+    Y con esto calculamos el volúmen de compra más económico<br>
+    y el tiempo del siguiente pedido</font></p>
+    <p align="center"><a href="pract8.htm"><strong>Práctica de autoevaluación 4</strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

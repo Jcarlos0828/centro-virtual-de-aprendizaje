@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Crecimiento Poblacional Compuesto con tasa cambiante</title>
+<base target="_self">
+</head>
+
+<body background="../images/indtextb.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><font SIZE="2"><p align="center"></font></b><font color="#800040"
+    face="Arial" size="4">Estimación de población y tasa de crecimiento</font></p>
+    <p align="center"><font color="#800040" face="Arial" size="4">Caso 1</font><br>
+    <font face="Arial" color="#004080" size="4">Población de un estado en donde la tasa de
+    crecimiento <br>
+    disminuye un cierto porcentaje por año</font><b><font color="#004080" size="3"><br>
+    </font><font size="3" color="#000000">Solución utilizando el modelo matemático en Excel</font></b></p>
+    <p><strong><font size="5">E</font><font size="3">n un estado de la República Mexicana se
+    tenía en 1998 una población de 3,250,000 habitantes. Se inicia un &quot;Programa de
+    paternidad responsable&quot; que propone reducir la tasa de crecimiento anual, en un 3%
+    por cada año, durante los siguientes 15 años. La tasa anual de crecimiento del estado en
+    1998 era de 4.2%. Si se cumple el pronóstico de reducción de la tasa de crecimiento,
+    determine la población del estado al término de los 15 años.</font></strong></p>
+    <p>Al decir que la tasa de crecimiento disminuye en un 3% anual, se esta hablando de un
+    cambio en la tasa de &#150; 3% anual.<br>
+    Tomando el porcentaje de cambio en la tasa como negativo ( &#150; 3% ) y utilizando la
+    representación algebraica del modelo matemático <b>P<sub>t</sub>=P<sub>t-1</sub>( 1 + r<sub>t-1</sub>
+    ),</b> se genera la siguiente tabla para resolver el caso.</p>
+    <b><p ALIGN="CENTER"><font color="#004080">TABLA EN EXCEL</font></p>
+    <p ALIGN="CENTER"></b><img src="images/image89.jpg" width="408" height="578"
+    alt="wpeB.jpg (54608 bytes)"></p>
+    <p>Las acciones que se usaron para generar la tabla anterior son:<br>
+    Vaciar la información sobre los datos del problema en los renglones del 1 al 4.<br>
+    En la celda&nbsp;&nbsp;&nbsp; B8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; =<b>B1</b><br>
+    En la celda&nbsp;&nbsp;&nbsp; B9&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; = B8+1</b> y
+    llenar hacia abajo ( Fill Down ).<br>
+    En la celda&nbsp;&nbsp;&nbsp; C8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <b>= B2</b><br>
+    En la celda&nbsp;&nbsp;&nbsp; D8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <b>= B3</b><br>
+    En la celda&nbsp;&nbsp;&nbsp; C9&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; = C8* ( 1 + D8
+    )</b> y llenar hacia abajo ( Fill Down ).<br>
+    En la celda&nbsp;&nbsp;&nbsp; D9&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp; =D8 + D8*$B$4</b></p>
+    <p>Es importante registrar la celda B4 como absoluta y recordar que la hoja de cálculo
+    Excel cambia automáticamente el signo % a decimales al hacer operaciones.</p>
+    <p><font size="3">Se puede observar como después de 15 años, que es el año 2013, la
+    población estimada del estado es de 5,383,666 y la tasa de crecimiento es de 2.659654994.</font></p>
+    <p align="center"><font color="#004080" size="3"><strong>GRÁFICAS EN EXCEL</strong></font></p>
+    <p><font face="Times New Roman"><font color="#800040">Para hacer gráficas en Excel se
+    puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" width="77%" bgcolor="#008000"
+    bordercolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="100%"><img src="images/c1exce1.jpg" width="601" height="271"
+        alt="wpe3.jpg (17838 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p align="center">&nbsp;</p>
+    <div align="center"><center><table border="1" width="81%" bgcolor="#008000"
+    bordercolor="#008000" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="100%"><img src="images/c1exce2.jpg" width="600" height="274"
+        alt="wpe4.jpg (14285 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p><font size="3">En la primera gráfica se puede observar como aumenta la
+    población en el período comprendido entre 1998 y 2013. En la segunda como disminuye la
+    tasa de crecimiento .</font></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><a style="text-decoration: underline" href="pract2c1.htm"><strong>Práctica
+    de autoevaluación 2</strong></a></p>
+    <p align="center"><a href="dedfor.htm" style="text-decoration: underline"><strong><font
+    face="Times New Roman" size="3">Deducción de fórmula para encontrar la tasa de
+    crecimiento en cualquier año t, cuando se trabaja con tasas positivas y éstas cambian en
+    un mismo porcentaje cada año.</font></strong></a></p>
+    <p align="center"><a href="formula.htm" style="text-decoration: underline"><strong><font
+    face="Times New Roman" size="3">Fórmulas para encontrar la tasa de crecimiento en
+    cualquier año t, cuando se trabaja con tasas positivas que cambian en un mismo porcentaje
+    cada año. </font></strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

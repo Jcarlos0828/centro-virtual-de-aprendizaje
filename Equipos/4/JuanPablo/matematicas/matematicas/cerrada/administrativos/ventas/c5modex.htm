@@ -1,0 +1,138 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Estimación de
+    ventas para una línea de productos.</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 5</big><br>
+    </font><font color="#004080" face="Arial"><strong>Ventas totales y el porcentaje de ventas
+    para una compañía de teléfonos<br>
+    </strong></font><b>Solución utilizando el modelo en Excel</b></p>
+    <div align="center"><center><table border="0">
+      <tr>
+        <td width="332"><strong><big>U</big>na compañía distribuidora de teléfonos celulares
+        vende tres tipos de teléfonos: tipo A, B y C. Los teléfonos tipo A sólo funcionan en
+        modo análogos. Los tipos B y C son teléfonos digitales. La tabla a continuación muestra
+        los valores de ventas para tipos de teléfonos el primer trimestre de 1999. También se
+        muestran las tasas de crecimiento en número de unidades vendidas para cada teléfono.
+        Cabe notar que debido a que los teléfonos digitales ofrecen más opciones, los teléfonos
+        análogos están perdiendo popularidad y tienen una tasa de crecimiento negativo</strong>.</td>
+        <td width="314">&nbsp;<div align="center"><center><table BORDER="1" CELLSPACING="1"
+        CELLPADDING="5" width="293">
+          <tr>
+            <td WIDTH="34" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><small><font
+            face="Arial"><small><strong>Tipo de tel.</strong></small></font></small></td>
+            <td WIDTH="74" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><small><font
+            face="Arial"><small><strong>Ventas (unid) Trim. 1</strong></small></font></small></td>
+            <td WIDTH="76" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><small><font
+            face="Arial"><small><strong>tasa&nbsp;de crec. trim. en unid. vend.</strong></small></font></small></td>
+            <td WIDTH="53" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><small><font
+            face="Arial"><small><strong>Precio en pesos</strong></small></font></small></td>
+          </tr>
+          <tr>
+            <td WIDTH="34" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>A</strong></font></td>
+            <td WIDTH="74" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>275</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>-45%</strong></font></td>
+            <td WIDTH="53" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>$2,000</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="34" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>B</strong></font></td>
+            <td WIDTH="74" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>392</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>38%</strong></font></td>
+            <td WIDTH="53" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>$3,350</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="34" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>C</strong></font></td>
+            <td WIDTH="74" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>163</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>25%</strong></font></td>
+            <td WIDTH="53" VALIGN="TOP"><p ALIGN="CENTER"><font color="#0000FF" face="Arial"><strong>$4,500</strong></font></td>
+          </tr>
+        </table>
+        </center></div></td>
+      </tr>
+    </table>
+    </center></div><p><strong>Calcule las ventas totales y el porcentaje de ventas de cada
+    tipo de teléfono para el primer trimestre del 2000, suponiendo que los precios se
+    mantienen constantes.</strong></p>
+    <p>Se puede plantear el modelo en Excel para hacer los cálculos mas rápida y fácilmente</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="c5mode3.jpg" alt="c5mode3.jpg (54886 bytes)" WIDTH="592"
+    HEIGHT="380"></p>
+
+
+    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En los renglones 1 al 4 vaciar la información de los datos del problema.<br>
+    En la celda&nbsp;&nbsp; A7&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=0</strong><br>
+    En la celda&nbsp;&nbsp; A8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=A7+1</strong>
+    &nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; B7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=275</strong><br>
+    En la celda&nbsp;&nbsp; B8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=B7*(1+$B$2) </strong>&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=ROUND(B7,0)*$C$2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=392</strong><br>
+    En la celda&nbsp;&nbsp; D8&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D7*(1+$B$3) </strong>&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; E7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=ROUND(D7,0)*$C$3</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; F7&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=392</strong><br>
+    En la celda&nbsp;&nbsp; G7&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=F7*(1+$B$4)</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; G8&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=ROUND(F7,0)*$C$4&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; H7&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=C7+E7+G7</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)</p>
+
+
+    <p>Las celdas&nbsp;&nbsp;&nbsp; B1 a C3 se registraron como absolutas.
+Así, al
+    cambiar los datos del problema que se encuentran en estas celdas, se genera
+    automáticamente una nueva tabla con la solución.</p>
+    <p align="center"><font color="#004080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p align="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" bgcolor="#FF0000" bordercolor="#FF0000"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="271">
+      <tr>
+        <td width="100%" height="265"><p align="center"><img src="../imagenes/c5mode7.jpg"
+        alt="wpeC.jpg (20531 bytes)" WIDTH="584" HEIGHT="265"></td>
+      </tr>
+    </table>
+    </center></div><div align="center"><center><table border="1" bgcolor="#FF0000"
+    bordercolor="#FF0000" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="271">
+      <tr>
+        <td width="100%" height="265"><p align="center"><img src="c5mode1.jpg"
+        alt="wpe6.jpg (10373 bytes)" WIDTH="291" HEIGHT="263"><img src="c5mode2.jpg"
+        alt="wpe8.jpg (10309 bytes)" WIDTH="289" HEIGHT="262"></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+  <tr>
+    <td>Se puede observar de la gráfica de lineas que las ventas del teléfono tipo A
+    decrecen hasta tomar un valor muy cercano a cero mientras que las ventas de los teléfonos
+    tipo B y C se incrementan.&nbsp; De las gráficas de pastel se observa la distribución de
+    las ventas con respecto al tipo de teléfono, en otras palabras, los porcentajes relativos
+    de ventas de cada tipo de teléfono.&nbsp; Comparando las gráficas de pastel para las
+    ventas iniciales (período 0) y las ventas del período 4 se puede notar como el
+    porcentaje de ventas de teléfono tipo C decreció.&nbsp; El porcentaje de ventas del
+    teléfono tipo A permaneció casi constante, y el porcentaje de ventas del teléfono tipo
+    B se incrementó.<p align="center"><a href="pract5c5.htm"
+    style="text-decoration: underline"><strong>Práctica de autoevaluación 5</strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

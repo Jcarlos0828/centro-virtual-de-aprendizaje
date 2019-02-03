@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<title>Se puede utilizar la representación matemática del modelo de la siguiente manera</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body>
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><br>
+    </font></p>
+    <p><strong><big><big>S</big></big></strong>e puede utilizar la representación matemática
+    del modelo de la siguiente manera:<br>
+    El modelo para este Caso establece que el número de habitantes del poblado en cualquier
+    año t ( P<sub>t </sub>), es igual al número de habitantes en el año anterior ( P<sub>t-1
+    </sub>) más el número de nacimientos del año (a<sub>t </sub>) y menos el número de
+    muertes del año (d<sub>t </sub>).<br>
+    P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> &#150; d<sub>t</sub><br>
+    El número de nacimientos en el año t (<sub> </sub>a<sub>t</sub> ), es igual a la
+    población del año anterior ( P<sub>t-1 </sub>) multiplicada por la tasa de natalidad
+    expresada en decimales ( 0.023 ).<br>
+    a<sub>t</sub> = P<sub>t-1</sub> x 0.023<br>
+    El número de muertes en el año t (d<sub>t</sub> ), es el producto de multiplicar la
+    población del año anterior ( P<sub>t-1 </sub>) por la tasa de mortalidad en decimales
+    (0.0045).<br>
+    d<sub>t</sub> = P<sub>t-1</sub> x 0.0045.<br>
+    Al sustituir el número de nacimientos ( a<sub>t</sub> ) y el número de muertes ( d<sub>t</sub>
+    ) en la primera ecuación ( P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> &#150; d<sub>t</sub>
+    ) se obtiene la siguiente fórmula:<br>
+    P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> &#150; d<sub>t</sub><br>
+    P<sub>t</sub> = P<sub>t-1 </sub>+ P<sub>t-1</sub> x 0.023 &#150; P<sub>t-1</sub> x 0.0045
+    sacando P<sub>t-1</sub> de factor común queda<br>
+    <b>P<sub>t</sub> = P<sub>t-1</sub> ( 1 + 0.023 &#150; 0.0045 ) La población en cualquier
+    año es igual a la población del año anterior multiplicada por uno más la tasa de
+    natalidad y menos la tasa de mortalidad expresadas en decimales.</b></p>
+    <p>Utilizando ésta ecuación en Excel se genera la siguiente tabla:</p>
+    <p align="center">&nbsp;<font color="#004080"><b>TABLA EN EXCEL</b></font></p>
+    <p align="center"><img src="../images/Image82.jpg" width="328" height="454"
+    alt="Image82.jpg (60441 bytes)"></p>
+    <p>Las acciones que se tomaron para generar la tabla anterior son:<br>
+    Vaciar la información de los datos del problema en los renglones 1 al 5.<br>
+    En la celda&nbsp;&nbsp;&nbsp; B6&nbsp;&nbsp;&nbsp;&nbsp; teclear &nbsp;&nbsp;&nbsp;&nbsp; <b>=
+    B1</b><br>
+    En la celda <b>&nbsp;&nbsp; </b>B7&nbsp;&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp;
+    =B6+1</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo ( Fill Down )<br>
+    En la celda <b>&nbsp;&nbsp; </b>C8&nbsp;&nbsp;&nbsp;&nbsp; teclear <b>&nbsp;&nbsp;&nbsp; =
+    B4</b><br>
+    En la celda <b>&nbsp;&nbsp; </b>C9&nbsp;&nbsp;&nbsp;&nbsp; teclear
+    &nbsp;&nbsp;&nbsp;&nbsp; =<b> C8*( 1 + $B$2 &#150; $B$3 ) </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo ( Fill Down )</p>
+    <p>Es importante registrar las celdas B2 y B3 como absolutas para las operaciones. <br>
+    Las tasas pueden quedar expresadas en porcentajes ya que al tener el signo %, Excel lo
+    pasa automáticamente a decimales para hacer operaciones. </p>
+    <p align="center"><font color="#004080"><b>GRÁFICA EN EXCEL</b></font></p>
+    <div align="center"><center><table border="1" bgcolor="#0000FF" bordercolor="#0000FF"
+    bordercolordark="#FFFFFF" bordercolorlight="#FFFFFF">
+      <tr>
+        <td width="100%"><img src="../images/Image83.jpg" width="606" height="274"
+        alt="Image83.jpg (29796 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p align="center">&nbsp;</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

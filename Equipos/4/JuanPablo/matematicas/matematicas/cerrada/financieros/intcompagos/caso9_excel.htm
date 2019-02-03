@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto con pago en cada período</title>
+</head>
+
+<body background="../images/dollarred2.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Préstamo anual</big></font><b></p>
+    <p ALIGN="center"></b><font face="Arial" color="#800040"><big>Caso 3</big></font><br>
+    <b><font face="Arial" color="#004080">Pago de un préstamo de $100,000 a 5 años con tasa de interés
+    compuesto anualizada,<br>
+    capitalizable cada mes y con pagos mensuales. </font><br>
+    Solución utilizando el modelo matemático con Excel</p>
+    </b><p ALIGN="JUSTIFY"><strong><big><big>R</big></big>oberto Fernández adquirió en su
+    trabajo un préstamo de $100,000 para comprar un automóvil a 5 años. La tasa de interés compuesto
+    es del 27% anual, y los intereses se capitalizan cada mes. Roberto va a estar pagando
+    $3,000.00 mensuales.</strong></p>
+    <p ALIGN="JUSTIFY"><strong>¿Cuál va a ser el saldo al final de los 5 años? ¿Cuánto va
+    a pagar en total de intereses?</strong></p>
+    <p ALIGN="JUSTIFY">Para cada período se tiene que calcular el saldo sumando al saldo
+    anterior los intereses y restandole el pago de $3,000.00 mensuales. En este caso el
+    préstamo es por 5 años y como cada año tiene 12 meses nos da un total de 60 períodos
+    por lo que se va a ver la solución utilizando el modelo matemático en Excel.</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tabla12.jpg" width="427" height="1082"
+    alt="tabla12.jpg (278287 bytes)"></p>
+    <p ALIGN="JUSTIFY">Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    <font face="Times New Roman">E</font><font face="Times New Roman" size="3">n la celda
+    &nbsp; C1&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; 27%</strong><br>
+    En la celda&nbsp; C2&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; = C1 / 12</strong><br>
+    En la celda&nbsp; D3&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; 100000</strong><br>
+    En la celda&nbsp; B4&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; = D3 * $C$2</strong>&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    
+En la celda&nbsp; C4&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; 3000</strong>&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp; D4&nbsp;&nbsp; teclear<strong>&nbsp;&nbsp; = D3 + B4 - C4</strong>
+    &nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+
+    En la celda&nbsp; B64&nbsp; teclear<strong>&nbsp; = SUM(B4:B63)</strong><br>
+    </font>Otra forma para calcular la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM</strong>.<br>
+    Teclear en&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number1&#133;&#133;.. <strong>B4:B63<br>
+    </strong><font face="Times New Roman" size="3"><br>
+    En la celda&nbsp; C64&nbsp; teclear<strong>&nbsp; = SUM(C4:C63)</strong> &nbsp;&nbsp; y
+    llenar hacia abajo (Fill Down)</font><br>
+    Otra forma para calcular la suma de varias celdas es en <strong>Insert</strong>
+    seleccionar <strong>Function</strong> y después<br>
+    <strong>SUM</strong>.<br>
+    Teclear en&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number1&#133;&#133;.. <strong>C4:C63</strong></p>
+    <p ALIGN="JUSTIFY"><strong>El saldo después de los 5 años va a ser de $6,662.17. El
+    total de intereses que se van a pagar durante los 5 años son de $86,662.17. </strong></p>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <p ALIGN="JUSTIFY">A continuación se presenta la gráfica del préstamo a 5 años con
+    pagos mensuales:</p>
+    <b><p ALIGN="center"></b><strong><font color="#004080">GRÁFICA EN EXCEL</font></strong><font
+    FACE="Courier" SIZE="2"></p>
+    <p ALIGN="left"></font><font face="Times New Roman"><font color="#800040">Para hacer
+    gráficas en Excel se puede consultar la siguiente referencia</font><font color="#004080">
+    </font><font color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font><font
+    FACE="Courier" SIZE="2"></p>
+    <div align="center"><center><table border="1" bgcolor="#FF8040" bordercolor="#FF8040"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="548"></font><p align="center"><img src="caso9.2.jpg" width="542" height="267"
+        alt="wpe2.jpg (23346 bytes)" align="center" border="2"></td>
+      </tr>
+    </table>
+    </center></div><p ALIGN="center">&nbsp;</p>
+    <p ALIGN="JUSTIFY"><font face="Times New Roman" size="3"><strong>En la gráfica se puede
+    observar como el saldo del préstamo va a ir disminuyendo debido a los pagos que se van a
+    hacer mensualmente.</strong></font></p>
+    <p ALIGN="center"><font face="Times New Roman" size="3"><a href="prac9c9.htm"
+    style="text-decoration: underline"><strong>Práctica de autoevaluación 3</strong></a></font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

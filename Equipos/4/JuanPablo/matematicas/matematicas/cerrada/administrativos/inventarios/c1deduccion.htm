@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Control de inventarios</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><p ALIGN="CENTER"></b><font face="Arial" color="#800040"><big>Costo
+    del pedido</big></font><font face="Arial" color="#004080"><strong><b><br>
+    </b>Deducción de la fórmula para obtener el costo total del pedido</strong></font><b></p>
+    </b><p ALIGN="JUSTIFY"><big><big><strong>P</strong></big></big>ara hacer la deducción de
+    la fórmula se utilizarán las ecuaciones planteadas en la representación algebraica:</p>
+    <p ALIGN="JUSTIFY"><strong>CAP<sub>t</sub> = CPL*(UA<sub>t</sub>/VCE)<br>
+    UA<sub>t</sub> = UA<sub>t-1</sub> + U<sub>t</sub></strong></p>
+    <p ALIGN="JUSTIFY"><strong>Mes&nbsp; 1:</strong><br>
+    El costo acumulado del pedido para el mes 1 es igual al costo por pedido multiplicado por
+    la división del número de unidades pedidas acumuladas entre el volumen de compra:<br>
+    CAP<sub>1</sub> = CPL (UA<sub>1</sub>/VCE)<br>
+    El número de unidades acumuladas en el mes 1 es igual al número de unidades pedidas el
+    mes 1:<br>
+    UA<sub>1</sub> = U<sub>1</sub><br>
+    Sustituyendo el la ecuación del&nbsp; costo acumulado del pedido:<br>
+    CAP<sub>1</sub> = CPL (U<sub>1</sub>/VCE)<br>
+    <strong>El costo acumulado del pedido para el mes 1 esta dado
+    por<br>
+
+CAP<sub>1</sub> = CPL (U<sub>1</sub>/VCE)</strong></p>
+    <p ALIGN="JUSTIFY"><strong>Mes&nbsp; 2:</strong><br>
+    El costo acumulado del pedido para el mes 2 es igual al costo por pedido multiplicado por
+    la división del número de unidades pedidas acumuladas entre el volumen de compra:<br>
+    CAP<sub>2</sub> = CPL (UA<sub>2</sub>/VCE)<br>
+    El número de unidades acumuladas en el mes 2 es igual al número de unidades acumuladas
+    en el mes 1 más las unidades pedidas el mes 2:<br>
+    UA<sub>2</sub> = UA<sub>1</sub>+U<sub>2</sub><br>
+    Sustituyendo la ecuación de las unidades acumuladas en el mes 1 en la anterior:<br>
+    UA<sub>1</sub> = U<sub>1</sub><br>
+    UA<sub>2</sub> = U<sub>1</sub>+U<sub>2</sub><br>
+    Sustituyendo el la ecuación del&nbsp; costo acumulado del pedido:<br>
+    CAP<sub>2</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>)/VCE]<br>
+    <strong>El costo acumulado del pedido para el mes 2 esta dado por<br>
+CAP<sub>2</sub>
+    = CPL [(U<sub>1</sub>+U<sub>2</sub>)/VCE]</strong></p>
+    <p ALIGN="JUSTIFY"><strong>Mes&nbsp; 3:</strong><br>
+    El costo acumulado del pedido para el mes 3 es igual al costo por pedido multiplicado por
+    la división del número de unidades pedidas acumuladas entre el volumen de compra:<br>
+    CAP<sub>3</sub> = CPL (UA<sub>3</sub>/VCE)<br>
+    El número de unidades acumuladas en el mes 3 es igual al número de unidades acumuladas
+    en el mes 2 más las unidades pedidas el mes 3:<br>
+    UA<sub>3</sub> = UA<sub>2</sub>+U<sub>3</sub><br>
+    Sustituyendo la ecuación de las unidades acumuladas en el mes 2 en la anterior:<br>
+    UA<sub>2</sub> = U<sub>1</sub>+U<sub>2</sub><br>
+    UA<sub>3</sub> = U<sub>1</sub>+U<sub>2</sub>+U<sub>3</sub><br>
+    Sustituyendo el la ecuación del&nbsp; costo acumulado del pedido:<br>
+    CAP<sub>3</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>+U<sub>3</sub>)/VCE]<br>
+    <strong>El costo acumulado del pedido para el mes 3 esta dado por.............CAP<sub>3</sub>
+    = CPL [(U<sub>1</sub>+U<sub>2</sub>+U<sub>3</sub>)/VCE]</strong></p>
+    <p ALIGN="JUSTIFY">Se puede observar del comportamiento del costo acumulado del pedido
+    para los primeros tres meses que lo que cambia en la fórmula es el número de términos
+    que representan las unidades pedidas acumuladas. Entonces se puede escribir que para un
+    período t el costo acumulado esta dado como:<br>
+    <strong>El costo acumulado del pedido para el mes t esta dado por<br>
+CAP<sub>t</sub>
+    = CPL [(U<sub>1</sub>+...+U<sub>t</sub>)/VCE]</strong><br>
+    <br>
+    Si se aplica esta fórmula a un <strong>año</strong> entonces se deben sumar el número
+    de unidades pedidas en todo el año, y este número de unidades equivale al consumo anual de unidades
+    (CAU):<br>
+    <strong>CAU = U<sub>1</sub>+U<sub>2</sub>+...+U<sub>11</sub>+U<sub>12</sub></strong><br>
+    Por esta razón se puede escribir el costo anual del pedido como:&nbsp; <br>
+    <strong>El costo ANUAL del pedido esta dado
+    por<br>
+CAP<sub>anual</sub> = CPL [CAU/VCE]<br>
+    <br>
+
+    Entonces podemos deducir que la fórmula para encontrar el costo total del pedido es:</strong></p>
+    <p><strong>CAP <SUB>anual</SUB>= CPL [CAU/VCE]</strong></p>
+    <p><strong>donde,</strong></p>
+
+
+<p><strong>CPL&nbsp;&nbsp;&nbsp;&nbsp; Costo por pedir<br>
+    <strong>CAP <SUB>anual</SUB>&nbsp;&nbsp; Costo anual del pedido<br>
+    CAU&nbsp;&nbsp;&nbsp;&nbsp; Consumo anual de unidades<br>
+    VCE&nbsp;&nbsp;&nbsp;&nbsp; Volumen de compra económico</strong></p>
+    <p align="center">&nbsp;</p>
+    <p ALIGN="center"><font face="Times New Roman" size="3"><a href="c1for.htm"
+    style="text-decoration: underline"><strong>Fórmula para obtener el Costo Total del Pedido</strong></a></font></p>
+    <p ALIGN="center"><a href="c1solfor.htm" style="text-decoration: underline"><font
+    face="Times New Roman" size="3"><strong>Solución utilizando la fórmula para obtener el
+    costo total del pedido</strong></font></a></p>
+    <p ALIGN="center"><a href="c1ex2.htm" style="text-decoration: underline"><strong><font
+    face="Times New Roman" size="3">Solución utilizando Excel</font></strong>
+</a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
