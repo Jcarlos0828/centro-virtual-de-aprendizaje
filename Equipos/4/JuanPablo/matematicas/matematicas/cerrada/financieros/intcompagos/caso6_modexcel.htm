@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto con pago en cada período</title>
+</head>
+
+<body background="../images/dollarred2.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><font face="Arial" color="#800040"><big>Inversión
+    anual</big></font><b></p>
+    <p ALIGN="center"></b><font face="Arial" color="#800040"><big>Caso 1</big><b><br>
+    </b></font><strong><font face="Arial" color="#004080">Tiempo que se necesita para ahorrar
+    cierta cantidad de dinero.</font></strong><b><br>
+    </b><font face="Times New Roman" color="#000000"><strong>Solución utilizando la
+    representación algebraica del modelo en Excel</strong></font><b></p>
+    <p><font face="Times New Roman" color="#000000"><big><big>L</big></big></b><strong>a Sra.
+    Dávila necesita juntar $90,000.00 para cambiar su carro. Tiene ahorrado $30,000.00 y
+    puede ahorrar $5,000.00 mensuales en una inversión que da una tasa de interés del 15%
+    anual capitalizable cada mes.</strong></font><b></p>
+    <p><font face="Times New Roman" color="#000000">¿Cuánto tiempo necesita para reunir la
+    cantidad deseada? </font></p>
+    </b><p ALIGN="JUSTIFY">Para utilizar los elementos matemáticos que se definieron, se
+    tiene que incluir el ahorro mensual que se va a estar haciendo, de manera que a la
+    representación algebraica de interés compuesto <strong>S<font size="1"><sub>t</sub></font>
+    = S<sub><font size="1">t-1</font></sub> + &nbsp; S<sub><font size="1">t-1</font></sub> * i
+    </strong>se tiene que agregar lo que la Sra. Dávila va a ahorrar cada mes, que viene a
+    ser el pago mensual (P) que está haciendo a su inversión, quedando la representación
+    algebraicade la siguiente forma: <br>
+    <strong>S<font size="1"><sub>t</sub></font> = S<sub><font size="1">t-1</font></sub> +
+    &nbsp; S<sub><font size="1">t-1</font></sub> * i</strong> + <b>P</b></p>
+    <p ALIGN="JUSTIFY">Utilizando Excel se puede hacer una tabla utilizando la representación
+    algebraica del modelo para facilmente encontrar el número de períodos que necesita la
+    Sra. Dávila para ahorrar los $90,000.00:</p>
+    <p ALIGN="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p ALIGN="center"><img src="tablac6.jpg" width="473" height="327"
+    alt="tablac6.jpg (57922 bytes)"></p>
+    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En la celda&nbsp;&nbsp; B1&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>15%</strong><br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=B1/12</strong><br>
+    En la celda&nbsp;&nbsp; D4&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>30000</strong><br>
+    En la celda&nbsp;&nbsp; B5&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D4 * $B$2&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C5&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>5000
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D5&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D4 + B5 + C5 </strong>&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)</p>
+    <p ALIGN="JUSTIFY">Para ver cuantos períodos se necesitan para tener los $90,000.00, se
+    va haciendo Fill Down hasta que el saldo sea mayor o igual a dicha cantidad, en este caso
+    se requieren 11 períodos para tener la cantidad que se desea. Una ventaja de utilizar
+    Excel es que si la Sra. Dávila encuentra otro banco donde la tasa sea mejor, solo tiene
+    que modificar la celda con la tasa de interés anual y buscar en la tabla para encontrar
+    el número de períodos que se necesitan para obtener la cantidad deseada.</p>
+    <p ALIGN="JUSTIFY"><strong>El número de meses que la Sra. Dávila necesita para ahorrar
+    $90,000.00 son 11 y su saldo sería de $92,962.41 pesos.</strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

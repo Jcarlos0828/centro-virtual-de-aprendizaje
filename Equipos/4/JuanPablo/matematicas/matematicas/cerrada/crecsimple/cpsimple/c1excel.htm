@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Ejemplo 1 Crecimiento Poblacional Simple</title>
+</head>
+
+<body background="images/redback.gif">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#004080" size="4">Estimación
+    del número de libros que se venderán en cierto año</font><font color="#000000"><br>
+    <font size="3"><strong>Solución utilizando Excel</strong></font></font></p>
+    <p><strong><font size="5">U</font><font size="3">n libro de texto es editado anualmente.
+    En el año 1998 se vendieron 45,000 ejemplares y sabemos que las ventas se incrementan en
+    450 ejemplares por año. ¿Cuántos libros se espera que se vendan en el año 2015?</font></strong></p>
+    <p><font size="3">El problema planteado anteriormente se puede resolver de una manera muy
+    sencilla, ya que es posible determinar una ecuación fácilmente, que permita calcular el
+    valor de la población en un futuro. Hay casos en donde el planteamiento del modelo no
+    genera una ecuación sencilla de resolver, o bien situaciones en donde la complejidad del
+    modelo es tal que ni siquiera permita obtener la ecuación final de un modelo planteado.
+    En estos casos se tiene que recurrir a métodos computacionales para resolver el modelo
+    que se está estudiando. Una herramienta que permite plantear modelos de manera sencilla
+    es la denominada &quot;hoja de cálculo&quot;. Excel es un producto de este tipo.</font></p>
+    <p><font size="3">El planteamiento en Excel del ejemplo anterior es el siguiente:</font></p>
+    <p><font size="3">En una celda, por ejemplo A1, se registra el incremento anual de la
+    población. Se escogen dos culumnas cualesquiera para registrar; en una el año y en otra
+    el valor de la población para ese año.<br>
+    Por ejemplo, en la columna B se puede registrar el año y en la C la población. De esta
+    manera el problema anterior se puede resolver haciendo B2 igual a 1998 y C2 igual a
+    45,000. La celda B3 se hace igual a la celda B2 más uno. La celda C3 se hace igual a la
+    celda C2 más la celda absoluta A1.Es importante registrar A1 como absoluta y para hacerlo
+    se teclea <strong>$A$1</strong>, para que en la siguiente operación las relaciones
+    futuras hagan siempre referencia a ésta. Lo último que resta es propagar las celdas B3 y
+    C3 hacia abajo hasta llegar al año 2015. </font></p>
+    <p><font size="3">Finalmente&nbsp; la tabla generada en Excel queda de la siguiente
+    manera:</font></p>
+    <p align="center"><font color="#004080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p align="center"><font size="3">&nbsp;</font><img SRC="images/Image39.gif" WIDTH="274"
+    HEIGHT="369"><font size="3"> </font></p>
+    <p><font size="3">Específicamente las acciones que se usaron para generar la tabla
+    anterior son las siguientes:<br>
+    En la celda&nbsp;&nbsp; A1&nbsp;&nbsp; teclear <b>&nbsp; 450</b><br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear <b>&nbsp; 1998</b><br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear <b>&nbsp; =B2 +1</b>&nbsp;&nbsp; llenar
+    hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C3&nbsp;&nbsp; teclear <b>&nbsp; = C2 + $A$1</b>
+    &nbsp;&nbsp; llenar hacia abajo (Fill Down)</font></td>
+  </tr>
+</table>
+</div>
+
+<p>&nbsp;</p>
+</body>
+</html>

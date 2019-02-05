@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Control de inventarios</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><big><font face="Arial" color="#800040">Costo del
+    pedido</font></big></p>
+    <p align="center"><font face="Arial"><big><font color="#800040">Caso 2</font></big><strong><br>
+    <font color="#004080">Estimar el costo del pedido para una compañía</font></strong></font><br>
+    <b>Solución utilizando la fórmula</b></p>
+    <p><strong><big><big>U</big></big>na compañía sabe que tiene que consumir 15,000
+    unidades mensuales durante los primeros 6 meses del año. Para el departamento de compras sería
+    conveniente el cubrir los requerimientos de insumos con un solo proveedor, sin embargo,
+    ninguno de los proveedores existentes en el mercado cuenta con la capacidad para
+    satisfacer los pedidos solicitados. Por esta razón, se tiene que recurrir a 6 distintos.
+    Cada proveedor puede surtir diferentes volúmenes de unidades, y a diferentes precios esto
+    representa para la compañía distintos costos de pedido y diferente volúmen de compra.
+    Los cuales se muestran a continuación:</strong></p>
+    <p>&nbsp;</p>
+    <div align="center"><center><table BORDER="1" CELLSPACING="1" CELLPADDING="7">
+      <tr>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="31"><strong>Mes</strong></td>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="72"><strong>Proveedor</strong></td>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="71"><p align="center"><strong>Costo
+        del Pedido</strong></td>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="75"><p align="center"><strong>Volúmen
+        de compra</strong></td>
+      </tr>
+      <tr>
+        <td VALIGN="TOP" width="31">1<p>2</p>
+        <p>3&nbsp;</p>
+        <p>4&nbsp;</p>
+        <p>5</p>
+        <p>6&nbsp;</td>
+        <td VALIGN="TOP" width="72"><p align="center">A</p>
+        <p align="center">B </p>
+        <p align="center">C </p>
+        <p align="center">D </p>
+        <p align="center">E </p>
+        <p align="center">F </td>
+        <td VALIGN="TOP" width="71">$6,500 <p>$7,000</p>
+        <p>$2,500</p>
+        <p>$8,500 </p>
+        <p>$10,000 </p>
+        <p>$5,000</td>
+        <td VALIGN="TOP" width="75">2,000<p>2,500</p>
+        <p>500</p>
+        <p>4,000</p>
+        <p>5,000</p>
+        <p>1,000</td>
+      </tr>
+    </table>
+    </center></div><p>Cómo se explicó anteriormente si el costo y el volúmen es constante
+    mes a mes, con que apliquemos una vez la fórmula es más que suficiente pero como en el
+    caso 2 tenemos diferentes costos y volúmen se tiene que calcular el costo de cada mes y
+    al final sumar estos costos y así obtener el costo de pedido final.</p>
+    <p>Ahora aplicaremos la fórmula de <b>CAP =CPL(CAU/VCE) </b>para cada mes, y luego
+    sumaremos todos los costos para sacar el costo total del pedido de los 6 meses.</p>
+    <p><strong>Datos:</strong></p>
+    <p>CAU=15,000 unidades</p>
+    <div align="center"><center>
+<table BORDER="1" CELLSPACING="1" CELLPADDING="7">
+      <tr>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="33"><p align="center"><strong>Mes</strong></td>
+        <td VALIGN="middle" HEIGHT="24" bgcolor="#C0C0C0" width="71"><p align="center"><strong>Proveedor</strong></td>
+        <td VALIGN="TOP" HEIGHT="24" bgcolor="#C0C0C0" width="122"><p align="center"><strong>Costo
+        del Pedido<br>
+        CPL</strong></td>
+        <td VALIGN="TOP" HEIGHT="24" bgcolor="#C0C0C0" width="131"><p align="center"><strong>volúmen
+        de compra<br>
+        VCE</strong></td>
+      </tr>
+      <tr>
+        <td VALIGN="TOP" width="33">1 <p>2 </p>
+        <p>3 </p>
+        <p>4</p>
+        <p>5</p>
+        <p>6 </td>
+        <td VALIGN="TOP" width="71"><p align="center">A </p>
+        <p align="center">B </p>
+        <p align="center">C </p>
+        <p align="center">D </p>
+        <p align="center">E </p>
+        <p align="center">F&nbsp; </td>
+        <td VALIGN="TOP" width="122">$6,500 <p>$7,000</p>
+        <p>$2,500</p>
+        <p>$8,500 </p>
+        <p>$10,000 </p>
+        <p>$5,000</td>
+        <td VALIGN="TOP" width="131">2,000 <p>2,500</p>
+        <p>500</p>
+        <p>4,000</p>
+        <p>5,000</p>
+        <p>1,000</td>
+      </tr>
+    </table>
+    </center></div><p><b>Mes 1 Poveedor A</b><br>
+    CAP<SUB>1</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>1</SUB>= $6,500(15,000/2,000)<br>
+    CAP<SUB>1</SUB>= $48,750</p>
+    <b><p>Mes 2 Poveedor B</b><br>
+    CAP<SUB>2</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>2</SUB>= $7,000(15,000/2,500)<br>
+    CAP<SUB>2</SUB>= $42,000<br>
+    <b><br>
+    Mes 3 Poveedor C</b><br>
+    CAP<SUB>3</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>3</SUB>= $2,500(15,000/500)<br>
+    CAP<SUB>3</SUB>= $75,000</p>
+    <b><p>Mes 4 Poveedor D</b><br>
+    CAP<SUB>4</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>4</SUB>= $8,500(15,000/4,000)<br>
+    CAP<SUB>4</SUB>= $31,875</p>
+    <b><p>Mes 5 Poveedor E</b><br>
+    CAP<SUB>5</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>5</SUB>= $10,000(15,000/5,000)<br>
+    CAP<SUB>5</SUB>= $30,000</p>
+    <b><p>Mes 6 Poveedor F</b><br>
+    CAP<SUB>6</SUB>=CPL(CAU/VCE)<br>
+    CAP<SUB>6</SUB>= $5,000(15,000/1,000)<br>
+    CAP<SUB>6</SUB>= $75,000</p>
+    <p>Costo total es la suma de todos los costos de cada mes: $48,750 + $42,000 + $75,000 +
+    $31,875+ $30,000 + $75,000= <b>$302,625</b></p>
+    <p align="center"><a href="c2excel.htm" style="text-decoration: underline"><font
+    face="Times New Roman" size="3"><strong>Solución utilizando Excel</strong></font></a></p>
+    <p align="center"><a href="pract2c2.htm" style="text-decoration: underline"><font
+    face="Times New Roman" size="3"><strong>Práctica de autoevaluación 1</strong></font></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

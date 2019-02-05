@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<base target="_self">
+<title>Crecimiento Poblacional Compuesto con tasa cambiante</title>
+</head>
+
+<body background="../images/indtextb.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font color="#800040" face="Arial" size="4">Encontrar
+    la población y la tasa de crecimiento para un año t, cuando la tasa aumenta un cierto
+    porcentaje cada año</font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 2</big></font><br>
+    <font color="#004080" face="Arial" size="4">Encontrar la población y la tasa de
+    crecimiento de<br>
+    General Escobedo, N.L.</font><font size="3" face="Arial Rounded MT Bold" color="#004080"><br>
+    </font><font size="3" face="Times New Roman" color="#000000"><strong>Solución utilizando
+    Excel</strong></font></p>
+    <p align="left"><b><font size="5">D</font><font size="3">esde 1990 se ha presentado un
+    aumento muy marcado en la tasa de crecimiento de los municipios del área metropolitana de
+    Monterrey . El municipio de General Escobedo en 1990 tenía una población de 98,147
+    habitantes, y una tasa anual de crecimiento de 7.3%. Si la tasa aumenta a razón de 17 %
+    al año , encuentre la población estimada y la tasa de crecimiento después de 6 años.</font></b></p>
+    <p>En este caso se ven claramente los beneficios de utilizar la hoja de cálculo . Para
+    resolver el problema en forma manual se tendría que hacer año por año, lo cual es un
+    proceso muy largo. En Excel el caso puede ser resuelto en forma muy sencilla.<br>
+    Para generar la siguiente tabla se utilizan las ecuaciones: <br>
+    Representación algebraica del modelo para encontrar la población: .............&nbsp; <strong>P<sub>t
+    </sub>= P<sub>t-1 </sub>(1+ r<sub>t</sub> )</strong>&nbsp;&nbsp; y <br>
+    Representación algebraica del modelo para encontrar la tasa:&nbsp; .....................
+    &nbsp; <strong>R<sub>t </sub>= R<sub>t-1 </sub>(1+ b )</strong></p>
+    <p align="center"><b><font color="#004080">TABLA EN EXCEL</font></p>
+    <p ALIGN="CENTER"></b><img src="images/image90.jpg" width="408" height="395"
+    alt="wpeC.jpg (34684 bytes)"></p>
+    <p>Las acciones que se usaron para generar la tabla anterior son:<br>
+    Vaciar la información de los datos del problema en los renglones del 1 al 5.<br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; B9&nbsp;&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B1</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; B10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B9+1</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo ( Fill Down )<br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; C9&nbsp;&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B2</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; D9&nbsp;&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=B3</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; C10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=C9*(1+D9)</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (
+    Fill Down ) <br>
+    En la celda&nbsp;&nbsp;&nbsp;&nbsp; D10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp; <strong>=D9
+    + D9*$B$4</strong>&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo ( Fill Down )</p>
+    <p>Nota: Si en la celda D10 se teclea <strong>D9*(1+$B$4)</strong> se tendrá el mismo
+    valor de la tasa, pero expresado en decimales.</p>
+    <p align="center"><font size="3" color="#004080"><strong>GRÁFICAS DE EXCEL</strong></font></p>
+    <p><font face="Times New Roman"><font color="#800040">Para hacer gráficas en Excel se
+    puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" width="47%" bordercolordark="#008000"
+    bordercolor="#008000" bgcolor="#008000" bordercolorlight="#FFFFFF">
+      <tr>
+        <td width="100%"><img src="images/c2exce4.jpg" width="603" height="275"
+        alt="wpe6.jpg (15962 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p>&nbsp;</p>
+    <div align="center"><center><table border="1" width="47%" bordercolor="#008000"
+    bordercolorlight="#FFFFFF" bgcolor="#008000">
+      <tr>
+        <td width="100%"><img src="images/c2exce5.jpg" width="608" height="274"
+        alt="wpe7.jpg (15938 bytes)"></td>
+      </tr>
+    </table>
+    </center></div><p><font size="3">Si la tasa de crecimiento en un año es negativa o cero,
+    ya no se puede utilizar la misma fórmula para obtener la tasa del año siguiente. </font></p>
+    <p align="center"><a href="pract3c2.htm"><u><strong><font color="#0000FF">Práctica de
+    autoevaluación 3</font></strong></u></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

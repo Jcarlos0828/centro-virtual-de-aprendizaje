@@ -1,0 +1,208 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Estimación de
+    ventas para una línea de productos.</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 5</big><br>
+    </font><strong><font color="#004080" face="Arial">Ventas totales y el porcentaje de ventas
+    para una compañía de teléfonos<br>
+    </font><font face="Times New Roman" size="3"><b>Solución para 2 trimestres utilizando el
+    modelo matemático con los elementos de ventas</b></font></strong></p>
+    <div align="center"><center><table border="0">
+      <tr>
+        <td width="332"><strong><big>U</big>na compañía distribuidora de teléfonos celulares
+        vende tres tipos de teléfonos: tipo A, B y C. Los teléfonos tipo A sólo funcionan en
+        modo análogos. Los tipos B y C son teléfonos digitales. La tabla a continuación muestra
+        los valores de ventas para tipos de teléfonos el primer trimestre de 1999. También se
+        muestran las tasas de crecimiento en número de unidades vendidas para cada teléfono.
+        Cabe notar que debido a que los teléfonos digitales ofrecen más opciones, los teléfonos
+        análogos están perdiendo popularidad y tienen una tasa de crecimiento negativo</strong>.</td>
+        <td width="314">&nbsp;<div align="center"><center><table BORDER="1" CELLSPACING="1"
+        CELLPADDING="5">
+          <tr>
+            <td WIDTH="45" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><font face="Arial"><small><small><strong>Tipo
+            de tel.</strong></small></small></font></td>
+            <td WIDTH="76" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><font face="Arial"><small><small><strong>Ventas
+            (unid) Trim. 1</strong></small></small></font></td>
+            <td WIDTH="79" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><font face="Arial"><small><small><strong>tasa
+            de crec. trim. en unid. vend.</strong></small></small></font></td>
+            <td WIDTH="52" VALIGN="middle" bgcolor="#C0C0C0"><p ALIGN="CENTER"><font face="Arial"><small><small><strong>Precio
+            en pesos</strong></small></small></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="45" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>A</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>275</strong></font></td>
+            <td WIDTH="79" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>-45%</strong></font></td>
+            <td WIDTH="52" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>$2,000</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="45" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>B</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>392</strong></font></td>
+            <td WIDTH="79" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>38%</strong></font></td>
+            <td WIDTH="52" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>$3,350</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="45" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>C</strong></font></td>
+            <td WIDTH="76" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>163</strong></font></td>
+            <td WIDTH="79" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>25%</strong></font></td>
+            <td WIDTH="52" VALIGN="TOP"><p ALIGN="CENTER"><font face="Arial" color="#0000FF"><strong>$4,500</strong></font></td>
+          </tr>
+        </table>
+        </center></div></td>
+      </tr>
+    </table>
+    </center></div><p><strong>Calcule las ventas totales y el porcentaje de ventas de cada
+    tipo de teléfono para el primer trimestre del 2000, suponiendo que los precios se
+    mantienen constantes.</strong></p>
+    <p>Al estudiar la situación descrita en el caso podemos ver que el número de unidades
+    vendidas se incrementa en un porcentaje trimestral, lo cual produce un crecimiento
+    compuesto, como el que se vio en el Caso 2. La diferencia de este caso con el anterior es
+    que se tiene una línea de productos, y que la fórmula de crecimiento compuesto se puede
+    utilizar sólo para cada producto de manera independiente. Las ventas totales se calculan
+    como la suma de las ventas de cada tipo de teléfono.</p>
+    <p>Para facilitar el manejo de la información en este problema se tomará el primer
+    trimestre de 1999, que es el dato inicial, como el período 0 (cero). De esta manera, los
+    períodos que sean múltiplos de 4 serán los primeros trimestres para años diferentes.
+    Para cada tipo de teléfono se podrá utilizar la representación algebraica que se dedujo
+    para las ventas con crecimiento compuesto:<br>
+    V<sub>t</sub> = U<sub>t </sub>x P, U<sub>t</sub> = U<sub>t-1</sub>(1 + r)</p>
+    <p><strong>Primer trimestre de 1999 (período 0):</strong><br>
+    En el primer trimestre de 1999 (período 0) se tienen los siguientes datos:<br>
+    Para el teléfono tipo A las ventas son iguales al número de unidades vendidas (275)
+    multiplicado por el precio (2000):<br>
+    V<sub>A0</sub> = U<sub>A0 </sub>x P<sub>A</sub><br>
+    V<sub>A0</sub> = 275<sub> </sub>x 2000 <br>
+    V<sub>A0</sub> = 550,000 pesos<br>
+    <strong>Las ventas para el teléfono tipo A en el período 0 son iguales a $550,000 pesos.</strong><br>
+    Para el teléfono tipo B las ventas son iguales al número de unidades vendidas (392)
+    multiplicado por el precio (3350):<br>
+    V<sub>B0</sub> = U<sub>B0 </sub>x P<sub>B</sub><br>
+    V<sub>B0</sub> = 392<sub> </sub>x 3350 <br>
+    V<sub>B0</sub> = 1,313,200 pesos<br>
+    <strong>Las ventas para el teléfono tipo B en el período 0 son iguales a $1,313,200
+    pesos.</strong><br>
+    Para el teléfono tipo C las ventas son iguales al número de unidades vendidas (163)
+    multiplicado por el precio (4500):<br>
+    V<sub>C0</sub> = U<sub>C0 </sub>x P<sub>C</sub><br>
+    V<sub>C0</sub> = 163<sub> </sub>x 4500 <br>
+    V<sub>C0</sub> = 733,500 pesos<br>
+    <strong>Las ventas para el teléfono tipo C en el período 0 son iguales a $733,500 pesos.</strong><br>
+    Las ventas totales para el período 0 son iguales a la suma de las ventas para cada tipo
+    de teléfono:<br>
+    V<sub>T0</sub> = V<sub>A0</sub> + V<sub>B0</sub> + V<sub>C0</sub><br>
+    V<sub>T0</sub> = 550000 + 1313200 + 733500 <br>
+    V<sub>T0</sub> = 2,596,700 pesos<br>
+    <strong>Las ventas totales en el primer trimestre de 1999 (período 0) son iguales a
+    $2,596,700 pesos.</strong></p>
+    <p><strong>Segundo trimestre de 1999 (período 1):</strong><br>
+    Para el segundo trimestre de 1999 (período 1) se utiliza la fórmula de crecimiento
+    compuesto, <br>
+    <strong>U<sub>t</sub> = U<sub>t-1</sub>(1 + r)</strong>, para cada tipo de teléfono,
+    utilizando los valores iniciales del período 0.<br>
+    Para el teléfono tipo A, el número de unidades vendidas en el período 1 es igual al
+    número de unidades vendidas en el período anterior (275) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (-0.45):<br>
+    U<sub>A1</sub> = U<sub>A0</sub>(1 + r)<br>
+    U<sub>A1</sub> = (275)(1 +(&#150;0.45))<br>
+    U<sub>A1</sub> = (275)(0.55)<br>
+    U<sub>A1</sub> = 151 unidades<br>
+    Las ventas son iguales al número de unidades vendidas (151) multiplicado por el precio
+    (2000):<br>
+    V<sub>A1</sub> = (151)(2000) = 302,000 pesos<br>
+    <strong>Las ventas para el teléfono tipo A en el período 1 son iguales a $302,000 pesos.</strong><br>
+    Para el teléfono tipo B, el número de unidades vendidas en el período 1 es igual al
+    número de unidades vendidas en el período anterior (392) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (0.38):<br>
+    U<sub>B1</sub> = U<sub>B0</sub>(1 + r)<br>
+    U<sub>B1</sub> = (392)(1 + 0.38)<br>
+    U<sub>B1</sub> = (392)(1.38)<br>
+    U<sub>B1</sub> = 541 unidades<br>
+    Las ventas son iguales al número de unidades vendidas (541) multiplicado por el precio
+    (3350):<br>
+    V<sub>B1</sub> = (541)(3350) = 1,812,350 pesos<br>
+    <strong>Las ventas para el teléfono tipo B en el período 1 son iguales a $1,812,350
+    pesos.</strong><br>
+    Para el teléfono tipo C, el número de unidades vendidas en el período 1 es igual al
+    número de unidades vendidas en el período anterior (163) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (0.25):<br>
+    U<sub>C1</sub> = U<sub>C0</sub>(1 + r)<br>
+    U<sub>C1</sub> = (163)(1 + 0.25)<br>
+    U<sub>C1</sub> = (163)(1.25)<br>
+    U<sub>C1</sub> = 204<br>
+    Las ventas son iguales al número de unidades vendidas (204) multiplicado por el precio
+    (4500):<br>
+    V<sub>C1</sub> = (204)(4500) = 918,000 pesos<br>
+    <strong>Las ventas para el teléfono tipo C en el período 1 son iguales a $918,000 pesos</strong>.<br>
+    Las ventas totales para el período 1 son iguales a la suma de las ventas para cada tipo
+    de teléfono:<br>
+    V<sub>T1</sub> = V<sub>A1</sub> + V<sub>B1</sub> + V<sub>C1</sub><br>
+    V<sub>T1</sub> = 302000 + 1812350 + 918000 <br>
+    V<sub>T1</sub> = 3,032,350 pesos<br>
+    <strong>Las ventas totales en el segundo trimestre de 1999 (período 1) son iguales a
+    $3,032,350 pesos.</strong></p>
+    <p><strong>Tercer trimestre de 1999 (período 2):</strong><br>
+    Para el tercer trimestre de 1999 (período 2) se utiliza la fórmula de crecimiento
+    compuesto para cada tipo de teléfono, utilizando los valores iniciales del período 0.<br>
+    Para el teléfono tipo A, el número de unidades vendidas en el período 2 es igual al
+    número de unidades vendidas en el período anterior (151) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (-0.45):<br>
+    U<sub>A2</sub> = U<sub>A1</sub>(1 + r)<br>
+    U<sub>A2</sub> = (151)(1 &#150; 0.45)<br>
+    U<sub>A2</sub> = (151)(0.55)<br>
+    U<sub>A2</sub> = 83<br>
+    Las ventas son iguales al número de unidades vendidas (83) multiplicado por el precio
+    (2000):<br>
+    V<sub>A2</sub> = (83)(2000) = 166,000 pesos<br>
+    <strong>Las ventas para el teléfono tipo A en el período 2 son iguales a $166,000 pesos.</strong><br>
+    Para el teléfono tipo B,el número de unidades vendidas en el período 2 es igual al
+    número de unidades vendidas en el período anterior (541) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (0.38):<br>
+    U<sub>B2</sub> = U<sub>B1</sub>(1 + r)<br>
+    U<sub>B2</sub> = (541)(1 + 0.38)<br>
+    U<sub>B2</sub> = (541)(1.38)<br>
+    U<sub>B2</sub> = 747<br>
+    Las ventas son iguales al número de unidades vendidas (747) multiplicado por el precio
+    (3350):<br>
+    V<sub>B2</sub> = (747)(3350) = 2,502,450 pesos<br>
+    <strong>Las ventas para el teléfono tipo B en el período 2 son iguales a $2,502,450
+    pesos.</strong><br>
+    Para el teléfono tipo C, el número de unidades vendidas en el período 2 es igual al
+    número de unidades vendidas en el período anterior (204) multiplicado por el factor (1+
+    r) donde r es el porcentaje de incremento expresado en decimales (0.25):<br>
+    U<sub>C2</sub> = U<sub>C1</sub>(1 + r)<br>
+    U<sub>C2</sub> = (204)(1 + 0.25)<br>
+    U<sub>C2</sub> = (204)(1.25)<br>
+    U<sub>C2</sub> = 204<br>
+    Las ventas son iguales al número de unidades vendidas (204) multiplicado por el precio
+    (4500):<br>
+    V<sub>C2</sub> = (255)(4500) = 1,147,500pesos<br>
+    <strong>Las ventas para el teléfono tipo C en el período 2 son iguales a $1,147,500
+    pesos.</strong><br>
+    Las ventas totales para el período 2 son iguales a la suma de las ventas para cada tipo
+    de teléfono:<br>
+    V<sub>T2</sub> = V<sub>A2</sub> + V<sub>B2</sub> + V<sub>C2</sub><br>
+    V<sub>T2</sub> = 166000 + 2502450 + 1147500 <br>
+    V<sub>T2</sub> = 3,815,950 pesos<br>
+    <strong>Las ventas totales en el tercer trimestre de 1999 (período 2) son iguales a
+    $3,815,950 pesos.</strong></p>
+    <p align="center"><a href="c5comporc.htm"><b>Comparación de los porcentajes<font
+    face="Times New Roman" size="3"><strong> de distribución de ventas totales por tipo de
+    teléfono</strong></font></b></a></p>
+    <p align="center"><a href="c5modex.htm" style="text-decoration: underline"><strong>Solución
+    utilizando el modelo en Excel</strong></a></p>
+    <p align="center"><a href="pract5c5.htm" style="text-decoration: underline"><strong>Práctica
+    de autoevaluación 5</strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

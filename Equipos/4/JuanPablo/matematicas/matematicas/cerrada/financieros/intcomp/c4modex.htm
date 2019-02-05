@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Interés Compuesto</title>
+</head>
+
+<body background="../images/dollarblue2.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><font face="Arial" color="#800040"><big>Inversión
+    anual</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 3<br>
+    </big></font><font face="Arial" color="#004080"><strong>Valor futuro de una inversión a
+    10 años con una tasa <br>
+    de interés compuesto anualizado, <br>
+    capitalizable cada año, semestre, mes y día.</strong></font><b><br>
+    Solución utilizando Excel con el saldo para cada año</b></p>
+    <p><strong><big><big>E</big></big>l Sr. Pedro Rosas le dejó de herencia a cada uno de sus
+    tres nietos la cantidad de $50,000.00 en 1999. Le pidió a sus hijos que les invirtieran
+    el dinero y se los entregaran dentro de 10 años. La mejor inversión que encontraron es
+    con una tasa del 17% anual. </strong></p>
+    <p><strong>¿Cuál será el valor futuro de la inversión al final de los 10 años si se
+    capitaliza anual, semestral, mensual ó diario?</strong></p>
+    <p ALIGN="JUSTIFY">Utilizando también&nbsp; Excel se puede ver como va cambiando la
+    inversión cada año durante los 10 años para cada tipo de capitalización:</p>
+    <p ALIGN="center"><strong><font color="#004080">TABLA EN EXCEL</font></strong></p>
+    <p ALIGN="center"><img src="tabla5.jpg" width="557" height="393"
+    alt="tabla5.jpg (92049 bytes)"></p>
+    <p ALIGN="JUSTIFY">Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En la celda&nbsp;&nbsp; C2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>17%</strong><br>
+    En la celda&nbsp;&nbsp; C3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=C2/2<br>
+    </strong>En la celda&nbsp;&nbsp; C4&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=C2/12<br>
+    </strong>En la celda&nbsp;&nbsp; C5&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=C2/365<br>
+    </strong>En la celda&nbsp;&nbsp; D2&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>10<br>
+    </strong>En la celda&nbsp;&nbsp; D3&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D2*2<br>
+    </strong>En la celda&nbsp;&nbsp; D4&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D2*12<br>
+    </strong>En la celda&nbsp;&nbsp; D5&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=D2*365<br>
+    </strong>En la celda&nbsp;&nbsp; E2&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>=</strong>
+    <strong>$A$3 * POWER ((1+C2),D2)</strong>&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo
+    (Fill Down)<br>
+    Otra forma de elevar a una potencia es en <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y después<br>
+    <strong>POWER</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number&#133;.......<strong>1 + C2</strong><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Power&#133;&#133;&#133;.<strong>D2<br>
+    </strong>y llenar hacia abajo (Fill Down)</p>
+    <p ALIGN="JUSTIFY">En el renglón 8 teclear el saldo inicial de $50,000.00 en cada
+    columna.</p>
+    <p>Para cada tipo de capitalización:</p>
+    <p ALIGN="JUSTIFY">En la celda&nbsp;&nbsp; B9&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= B8
+    * POWER ((1+$C$2), 1)&nbsp;&nbsp;&nbsp;&nbsp;</strong>y llenar hacia abajo (Fill Down)<br>
+    Otra forma de elevar a una potencia es en <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y después<br>
+    <strong>POWER</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number&#133;.......<strong>1 + $C$2</strong><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Power&#133;&#133;&#133;.<strong>1<br>
+    </strong>y llenar hacia abajo (Fill Down)</p>
+    <p ALIGN="JUSTIFY">En la celda&nbsp;&nbsp; C9&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= C8
+    * POWER ((1+$C$3), 2)</strong> <strong>&nbsp;&nbsp;&nbsp;</strong>y llenar hacia abajo
+    (Fill Down)<br>
+    Otra forma de elevar a una potencia es en <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y después<br>
+    <strong>POWER</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number&#133;.......<strong>1 + $C$3</strong><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Power&#133;&#133;&#133;.<strong>2<br>
+    </strong>y llenar hacia abajo (Fill Down)</p>
+    <p ALIGN="JUSTIFY">En la celda&nbsp;&nbsp; D9&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= D8
+    * POWER ((1+$C$4), 12)</strong> <strong>&nbsp;</strong>y llenar hacia abajo (Fill Down)<br>
+    Otra forma de elevar a una potencia es en <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y después<br>
+    <strong>POWER</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number&#133;.......<strong>1 + $C$4</strong><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Power&#133;&#133;&#133;.<strong>12<br>
+    </strong>y llenar hacia abajo (Fill Down)</p>
+    <p ALIGN="JUSTIFY">En la celda&nbsp;&nbsp; E9&nbsp;&nbsp; teclear&nbsp;&nbsp; <strong>= E8
+    * POWER ((1+$C$5), 365)</strong> y llenar hacia abajo (Fill Down)<br>
+    Otra forma de elevar a una potencia es en <strong>Insert</strong> seleccionar <strong>Function</strong>
+    y después<br>
+    <strong>POWER</strong>.<br>
+    Teclear en &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Number&#133;.......<strong>1 + $C$5</strong><br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Power&#133;&#133;&#133;.<strong>365<br>
+    </strong>y llenar hacia abajo (Fill Down)</p>
+    <p>En los primeros años la diferencia no es muy grande, conforme va pasando el tiempo se
+    llega a tener una diferencia de $33,247.65 de la capitalización anual con la diaria.</p>
+    <p ALIGN="JUSTIFY">A continuación se presenta la gráfica con cada tipo de
+    capitalización: anual, semestral, mensual y diario.</p>
+    <p ALIGN="center"><font color="#004080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p ALIGN="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" bordercolor="#0000FF"
+    bordercolorlight="#FFFFFF" bordercolordark="#0000FF">
+      <tr>
+        <td width="100%"><img src="c4graf1.jpg" width="607" height="284"
+        alt="wpe2.jpg (23964 bytes)" align="center" border="2"></td>
+      </tr>
+    </table>
+    </center></div><p ALIGN="JUSTIFY"><strong>En la gráfica se puede observar que en la
+    capitalización diaria y mensual es muy poca la diferencia, el valor exacto se puede
+    obtener de la tabla anterior, para la capitalización diaria el saldo sería de <font
+    size="3">$ 273,589.0</font>7 y para la mensual de <font size="3">$ 270,451.79</font>,
+    dando solo una diferencia de $3,137.28.</strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

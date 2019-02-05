@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Poblaciones estratificadas con movilidad entre ellas</title>
+<base target="_self">
+</head>
+
+<body background="../images/indtextb.jpg">
+<font FACE="Times,Times New Roman"><div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"></font><font face="Arial" color="#800040"><big>Estimación
+    de población de grupos de un universo, </big><br>
+    <big>cuando los elementos pasan de un grupo a otro.</font><font
+    FACE="Times,Times New Roman" color="#800040"><br>
+    <br>
+    </font></big><font face="Arial" size="4" color="#800040">Caso 1</font><strong><font
+    FACE="Times,Times New Roman"><br>
+    </font><font FACE="Arial"><font color="#004080">Número de alumnos cursando 1°, 2° y 3°
+    año de secundaria</font><br>
+    </font><font face="Times New Roman" color="#000000">Solución utilizando el modelo en
+    Excel.</font></strong><font FACE="Times,Times New Roman"></p>
+    <p><strong><big><big>E</big></big>l número de alumnos de nuevo ingreso a primer año de
+    secundaria es de 56,000 en el año de 1995. Este número está creciendo anualmente en un
+    3.3%.<br>
+    En el mismo año la población de secundaria estaba distribuida de la siguiente manera:<br>
+    Primer año &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 57200<br>
+    Segundo año&nbsp;&nbsp;&nbsp;&nbsp; 55300<br>
+    Tercer año&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53250</strong></p>
+    <p><strong>El 2.5 porciento de los alumnos de primero de secundaria no se inscribe el
+    siguiente año, y el 3.8 porciento de los alumnos reprueba año y se inscribe otra vez en
+    primer año. Los alumnos restantes pasan a segundo año de secundaria.</strong></p>
+    <p><strong>El 2.3 porciento de los alumnos de segundo de secundaria no se inscribe el
+    siguiente año, y el 3.7 porciento de los alumnos reprueba año y se inscribe otra vez en
+    segundo año. Los alumnos restantes pasan a tercer año de secundaria.</strong></p>
+    <p><strong>El 3.2 porciento de los alumnos inscritos en tercer año de secundaria reprueba
+    año y se inscribe otra vez en el mismo año. Los alumnos restantes terminan la
+    secundaria.</strong></p>
+    <p><font face="Times New Roman" size="4">E</font><font face="Times New Roman" size="3"><strong>stimar
+    el número de alumnos que se inscribirán en cada uno de los tres años de secundaria en
+    el año 2007.</strong></font></p>
+    <p>Utilizando el modelo matemático en Excel se puede calcular para cada grado de
+    secundaria, el número de alumnos, el número de reprobados y la deserción.</p>
+    <p align="center"><strong><font color="#004080">TABLA EN EXCEL</font></strong></font><font
+    face="Times New Roman" size="3"><img src="images/C1exce1.jpg" width="671" height="552"
+    alt="wpe7.jpg (98949 bytes)"></font></td>
+  </tr>
+  <tr>
+    <td width="100%"><div align="left"><pre><font face="Times New Roman" size="4">Las acciones que se usaron para generar la tabla son:
+En los renglones del 1 al 8 se registran las características dadas de la población.
+En la celda&nbsp;&nbsp; B11  se teclea<b>    =B10 + 1</b>                      y llenar hacia abajo ( Fill Down )
+En la celda&nbsp;&nbsp; C11  se teclea    <b>=C10 + C10*$C$3</b>      y llenar hacia abajo (Fill Down )
+En la celda&nbsp;&nbsp; D10  se teclea    <b>=C7</b>
+En la celda&nbsp;&nbsp; E10  se teclea  <b>  =D10*$C$5</b>                 y llenar hacia abajo (Fill Down )
+En la celda&nbsp;&nbsp; F10&nbsp;&nbsp;se teclea <b>&nbsp;  =D10*$C$6</b>                 y llenar hacia abajo ( Fill Down )
+En la celda&nbsp;&nbsp; D11&nbsp; se teclea <b>&nbsp; =C11 + F10</b>                  y llenar hacia abajo (Fill Down)
+En la celda&nbsp;&nbsp; G10&nbsp;&nbsp;se teclea&nbsp; <b> =D7</b>
+En la celda&nbsp;&nbsp; H10&nbsp;&nbsp;se teclea&nbsp; <b> =G10*$D$5</b>                 y llenar hacia abajo (Fill Down)
+En la celda&nbsp;&nbsp; I10&nbsp;&nbsp;&nbsp;se teclea   <b>=G10*$D$6</b>                  y llenar hacia abajo (Fill Down)
+En la celda&nbsp;&nbsp; G11&nbsp;&nbsp;se teclea <b>  =D10-E10-F10+I10 </b>     y llenar hacia abajo (<b> </b>Fill Down)
+En la celda&nbsp;&nbsp; J10&nbsp;&nbsp;&nbsp;se teclea <b>  =E7</b>
+En la celda&nbsp;&nbsp; K10&nbsp; se teclea <b>  =J10*$E$6</b>                   y llenar hacia abajo ( Fill Down)
+En la celda&nbsp;&nbsp; J11&nbsp;&nbsp; se teclea <b>&nbsp; =G10-H10-I10+K10</b>     y llenar hacia abajo ( Fill Down)</font></pre>
+    </div><p align="center">&nbsp;</p>
+    <p align="center"><font face="Times New Roman" size="3"><strong><a href="C1repalgmod.htm"
+    style="text-decoration: underline">Representación algebraica del modelo</a></strong></font></p>
+    <p align="center"><font face="Times New Roman" size="3"><a href="C1excel%201.htm"
+    style="text-decoration: underline"><strong>Solución utilizando la representación
+    algebraica del modelo en Excel</strong></a></font></p>
+    <p align="center"><font face="Times New Roman" size="3"><strong><a href="pract1c1.htm"
+    style="text-decoration: underline">Práctica de autoevaluación 1</a></strong></font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<title>EOQCASO 8Solución utilizando la formula</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><font face="Arial" color="#800040"><big>Lote
+    Económico Óptimo (LEO)</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 8</big></font><font
+    face="Arial" color="#004080"><strong><br>
+    Estimar el lote económico óptimo para cierta compañía</strong></font><br>
+    <b>Solución utilizando la fórmula</b></p>
+    <p><strong><big><big>U</big></big>na compañía utiliza 4000 interruptores al año para
+    sus productos electrodomésticos. El precio de los interruptores se muestra a
+    continuación:</strong></p>
+    <div align="center"><center><table BORDER="1" CELLSPACING="1" CELLPADDING="7">
+      <tr>
+        <td VALIGN="middle" HEIGHT="22" width="110" bgcolor="#FFFF80"><p align="center"><strong>Rango</strong></td>
+        <td VALIGN="top" HEIGHT="22" width="138" bgcolor="#FFFF80"><p align="center"><strong>Precio
+        de compra &nbsp;&nbsp;&nbsp;</strong></td>
+        <td VALIGN="top" HEIGHT="22" width="203" bgcolor="#FFFF80"><p align="center"><strong>Precio
+        por tener inventario</strong></td>
+      </tr>
+      <tr>
+        <td VALIGN="TOP" HEIGHT="54" width="110">1-499<p>500-999</p>
+        <p>1000 o más</td>
+        <td VALIGN="TOP" HEIGHT="54" width="138">$.90 &nbsp; <p>$.85</p>
+        <p>$.80 &nbsp;&nbsp;</td>
+        <td VALIGN="TOP" HEIGHT="54" width="203">0.40(.90)=.36<p>0.40(.85)=.34</p>
+        <p>0.40(.80)=.32</td>
+      </tr>
+    </table>
+    </center></div><p>El costo del pedido es de $30 y el costo por tener inventario es el 40%
+    del precio unitario de compra anual.<br>
+    Determinar LEO (lote económico optimo) y el costo total anual.</p>
+    <p>El primer paso es encontrar el LEO para cada precio empezando con el precio menor hasta
+    encontrar un LEO factible</p>
+    <p>LEO<sub>0.80</sub> = (2*CAU*CPE/CUI)<sup>1/2</sup> = (2(4000)30/.32)<sup>1/2</sup> =<b>
+    866 interruptores</b></p>
+    <p>Como el LEO de 866 interruptores es menor al mínimo del rango para un costo unitario
+    de $0.80 continuaremos con el siguiente precio unitario de $0.85</p>
+    <p>LEO<sub>0.85</sub> = (2*CAU*CPE/CUI)<sup>1/2</sup> = (2(4000)30/.34)<sup>1/2</sup> =<b>
+    840 interruptores</p>
+    <p>Este LEO de 840 interruptores es factible ya que cae dentro del rango del precio
+    unitario de $0.85 (500 a 999).</p>
+    <p></b>Ahora se calculará el costo total para 840 interruptores y se comparará con el
+    costo total de la mínima cantidad necesaria para obtener un precio de $0.80 por
+    interruptor.</p>
+    <p>CT = Costo por pedido + Costo por inventario&nbsp; <br>
+    <strong>CT = CPL*(CAU/VCE) + (VCE/2)*CPI</strong><br>
+    CT<sub>840</sub> = (840/2)(.34) + (4000/840)30 + .85(4000) =$3,686<br>
+    CT<sub>840</sub> = (1000/2)(.32) + (4000/1000)30 + .80(4000) =<b>$3,480<br>
+    El costo mínimo se obtiene ordenando 1000 interruptores</b></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

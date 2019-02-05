@@ -1,0 +1,584 @@
+<html>
+
+<head>
+<title>Caso 7Crédito BancarioPréstamo a Corto PlazoAdquisición de un vehículo a
+crédito a corto plazo</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body background="../images/dollarblue2.jpg">
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><b><p align="center"></b><font face="Arial" color="#800040"><big>Préstamo
+    a corto plazo</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 8<br>
+    </big></font><font face="Arial" color="#004080"><strong>Adquisición de un vehículo a
+    crédito a corto plazo</strong></font><b><br>
+    Crédito Bancario</p>
+    <p ALIGN="JUSTIFY"></b><strong><big><big>U</big></big>na pareja desea adquirir un
+    vehículo con un costo de $185,000 de contado (precio de lista $200,000). Tienen tres
+    opciones para comprarlo, a través de un financiamiento con la agencia automotriz, de un
+    crédito bancario o de un arrendamiento.&nbsp; </strong><b><u></p>
+    </u></b><p ALIGN="JUSTIFY">Para el crédito bancario se toma el precio de contado del
+    vehículo, que en este caso es de $185,000.00.</p>
+    <p ALIGN="JUSTIFY">La tasa de interés actual es del 54% anual, el plazo es a 24 meses y
+    piden un 30% de enganche. Se requiere obtener el pago mensual de manera que cada mes se
+    paguen los intereses y se pague una parte a capital para que al final de los 24 meses el
+    saldo sea 0. En Microsoft Excel se puede calcular la mensualidad utilizando la herramienta
+    - Goal Seek del menú de Tools.</p>
+    <p ALIGN="JUSTIFY">Los intereses de cada mes van a ser igual al saldo anterior
+    multiplicado por la tasa de interés para cada periodo. El pago a capital de cada mes es
+    igual al pago mensual menos el pago de intereses de ese mes y el saldo nuevo va a ser el
+    saldo anterior menos el pago a capital. </p>
+    <p ALIGN="JUSTIFY">Si se utiliza la siguiente notación:</p>
+    <p ALIGN="JUSTIFY">S<font SIZE="1">t</font> - Saldo en el periodo t<br>
+    I<font SIZE="1">t</font> - Interés que se paga en el periodo t<br>
+    C<font SIZE="1">t</font> - Pago a capital en el periodo t<br>
+    P - Pago Mensual que es fijo</p>
+    <p ALIGN="JUSTIFY">Se pueden obtener las siguientes formulas:</p>
+    <p ALIGN="JUSTIFY">I<font SIZE="1">t</font> = S<font SIZE="1">t</font>-<font SIZE="1">1</font>
+    * i</p>
+    <p ALIGN="JUSTIFY">C<font SIZE="1">t</font> = P - I<font SIZE="1">t</font></p>
+    <p ALIGN="JUSTIFY">S<font SIZE="1">t</font> = S<font SIZE="1">t</font>-<font SIZE="1">1</font>-
+    C<font SIZE="1">t</font></p>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <p ALIGN="JUSTIFY">Utilizamos los datos anteriores y las formulas en Microsoft Excel de la
+    siguiente manera para poder utilizar la herramienta - Goal Seek:</p>
+    <table BORDER="1" CELLSPACING="1" BORDERCOLOR="#808080" CELLPADDING="2" WIDTH="537">
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0">&nbsp;</td>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">A</font></td>
+        <td WIDTH="30%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">B</font></td>
+        <td WIDTH="15%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">C</font></td>
+        <td WIDTH="31%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">D</font></td>
+        <td WIDTH="15%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">E</font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">1</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Valor del Vehículo</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 185,000.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Tasa anual de interés</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">54%</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">2</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Enganche</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 55,500.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Número de periodos en un año</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">12</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">3</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Saldo Insoluto</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 129,500.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Tasa para cada periodo</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">4.5%</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">4</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Número de Pagos</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">24</b></font></td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">5</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">6</font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Pago Mensual</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Capital</b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Intereses</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 129,500.00 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">7</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">1</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ - </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">8</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">2</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">9</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">3</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">10</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">4</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">11</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">5</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">12</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">6</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">13</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">7</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">14</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">8</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">15</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">9</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">16</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">10</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">17</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">11</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">18</font></p>
+        <p ALIGN="CENTER">&nbsp;</td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">12</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">19</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">13</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">20</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">14</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">21</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">15</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">22</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">16</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">23</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">17</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">24</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">18</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">25</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">19</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">26</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">20</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">27</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">21</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">28</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">22</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">29</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">23</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER">30</font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">24</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;<p>&nbsp;</td>
+      </tr>
+    </table>
+    <p>Las formulas que se utilizan son:</p>
+    <p>C2 = C1 * 0.30<br>
+    C3 = C1 - C2<br>
+    E3 = E1 / E2<br>
+    C7 = $B$7 - D7 (Fill Down hasta tener 24 pagos)<br>
+    D7 = E6 - $E$3 (Fill Down hasta tener 24 pagos)<br>
+    E7 = E6 - C7 (Fill Down hasta tener 24 pagos)</p>
+    <p>Después de que se incluyeron las formulas en la tabla van a salir valores para cada
+    columna pero que todavía no son los que se tienen que obtener ya que el saldo al final de
+    los 24 periodos no es de 0.</p>
+    <p>El siguiente paso es utilizar Goal Seek con la siguiente información:</p>
+    <p>Goal Seek - Tools<br>
+    Set Cell - E30<br>
+    To Value - 0<br>
+    By Changing Cell - B7</p>
+    <p>Para obtener la tabla con los pagos mensuales:</p>
+    <table BORDER="1" CELLSPACING="1" BORDERCOLOR="#808080" CELLPADDING="2" WIDTH="539">
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0">&nbsp;</td>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>A</strong></font></td>
+        <td WIDTH="30%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>B</strong></font></td>
+        <td WIDTH="15%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>C</strong></font></td>
+        <td WIDTH="31%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>D</strong></font></td>
+        <td WIDTH="15%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>E</strong></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>1</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Valor del Vehículo</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 185,000.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Tasa anual de interés</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">54%</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>2</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Enganche</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 55,500.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Número de periodos en un año</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">12</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>3</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Saldo Insoluto</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">$ 129,500.00 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b>Tasa para cada periodo</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">4.5%</b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>4</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b>Número de Pagos</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="RIGHT">24</b></font></td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>5</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="31%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP">&nbsp;</td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>6</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Pago Mensual</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Capital</b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">Intereses</b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 129,500.00 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>7</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">1</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 8,933.82 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,106.32 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,827.50 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 126,393.68 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>8</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">2</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,246.10 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,687.72 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 123,147.57 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>9</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">3</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,392.18 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,541.64 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 119,755.40 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>10</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">4</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,544.83 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,388.99 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 116,210.57 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>11</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">5</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,704.34 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,229.48 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 112,506.22 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>12</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">6</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,871.04 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,062.78 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 108,635.18 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>13</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">7</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,045.24 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,888.58 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 104,589.95 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>14</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">8</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,227.27 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,706.55 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 100,362.67 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>15</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">9</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,417.50 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,516.32 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 95,945.17 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>16</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">10</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,616.29 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,317.53 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 91,328.88 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>17</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">11</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,824.02 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 4,109.80 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 86,504.86 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>18</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">12</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,041.10 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,892.72 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 81,463.76 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>19</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">13</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,267.95 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,665.87 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 76,195.81 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>20</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">14</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,505.01 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,428.81 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 70,690.80 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>21</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">15</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 5,752.73 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 3,181.09 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 64,938.07 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>22</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">16</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 6,011.61 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 2,922.21 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 58,926.46 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>23</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">17</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 6,282.13 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 2,651.69 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 52,644.33 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>24</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">18</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 6,564.83 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 2,368.99 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 46,079.51 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>25</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">19</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 6,860.24 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 2,073.58 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 39,219.26 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>26</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">20</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 7,168.95 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 1,764.87 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 32,050.31 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>27</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">21</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 7,491.56 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 1,442.26 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 24,558.75 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>28</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">22</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 7,828.68 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 1,105.14 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 16,730.08 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>29</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">23</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 8,180.97 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 752.85 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 8,549.11 </b></font></td>
+      </tr>
+      <tr>
+        <td WIDTH="4%" VALIGN="TOP" BGCOLOR="#c0c0c0"><font SIZE="1"><p ALIGN="CENTER"><strong>30</strong></font></td>
+        <td WIDTH="4%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">24</b></font></td>
+        <td WIDTH="30%" VALIGN="TOP">&nbsp;</td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 8,549.11 </b></font></td>
+        <td WIDTH="31%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ 384.71 </b></font></td>
+        <td WIDTH="15%" VALIGN="TOP"><font SIZE="1"><b><p ALIGN="CENTER">$ (0.00)</b></font></td>
+      </tr>
+    </table>
+    <p>&nbsp;Financiamiento con el Banco:</p>
+    <p>Valor del Vehículo: $ 185,000.00<br>
+    Enganche 30%: $ 55,000.00<br>
+    Saldo Insoluto: $ 129,500.00<br>
+    Mensualidades $ 8,933.82</p>
+    <p>Los pagos quedarían de la siguiente forma:</p>
+    <b><p>Pagos a realizar:</b></p>
+    <p>Enganche: $ 55,000.00<br>
+    24 Mensualidades $ 8,933.82 $ 214,411.69<br>
+    Total a Pagar $ 269,411.69<br>
+    Intereses pagados $ 84,911.69</p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><strong><font size="3"><a href="c7arrend.htm"
+    style="text-decoration: underline">Arrendamiento</a></font></strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

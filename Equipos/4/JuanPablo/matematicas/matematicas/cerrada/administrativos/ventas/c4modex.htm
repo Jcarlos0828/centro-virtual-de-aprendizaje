@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Estimación de
+    las ventas con temporalidad</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 4</big><br>
+    </font><font face="Arial" color="#004080"><strong>Ventas totales anuales de una empresa
+    fabricante de chocolate<br>
+    </strong></font><b>Solución utilizando el modelo en Excel</b></p>
+    <p align="left"><strong><big><big>E</big></big>l departamento de ventas de Chocomax,
+    empresa dedicada a la fabricación de chocolates finos, ha medido los niveles de ventas a
+    lo largo de cinco años de la empresa. Utilizando métodos estadísticos se ha encontrado
+    que el número de cajas de chocolates vendidas se incrementa en un 7% anual. Durante el
+    año las ventas tienen variaciones debido a diferentes ocasiones en que aumenta o
+    disminuye la popularidad de los chocolates por las temporadas. Por ejemplo, las ventas en
+    los meses de verano son menores.</strong></p>
+    <div align="center"><center><table border="0" width="654">
+      <tr>
+        <td width="276"><strong>Tomando como base las ventas del primer trimestre, se tienen los
+        siguientes porcentajes relativos de unidades vendidas para el año:</strong></td>
+        <td width="370"><div align="center"><center><table BORDER="1" CELLSPACING="0">
+          <tr>
+            <td WIDTH="59" VALIGN="middle" bgcolor="#808080" height="57"><font face="Arial"
+            color="#000000"><strong><small>Trimestre</small></strong></font></td>
+            <td WIDTH="197" VALIGN="middle" bgcolor="#808080" height="57"><p ALIGN="CENTER"><font
+            face="Arial" color="#000000"><strong><small>% de ventas (unid.) relativo al primer
+            trimestre</small></strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="59" VALIGN="TOP" height="19" align="center"><font color="#004080"><strong>1</strong></font></td>
+            <td WIDTH="197" VALIGN="TOP" height="19"><p ALIGN="CENTER"><font color="#004080"><strong>100%</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="59" VALIGN="TOP" height="19" align="center"><font color="#004080"><strong>2</strong></font></td>
+            <td WIDTH="197" VALIGN="TOP" height="19"><p ALIGN="CENTER"><font color="#004080"><strong>124%</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="59" VALIGN="TOP" height="19" align="center"><font color="#004080"><strong>3</strong></font></td>
+            <td WIDTH="197" VALIGN="TOP" height="19"><p ALIGN="CENTER"><font color="#004080"><strong>87%</strong></font></td>
+          </tr>
+          <tr>
+            <td WIDTH="59" VALIGN="TOP" height="19" align="center"><font color="#004080"><strong>4</strong></font></td>
+            <td WIDTH="197" VALIGN="TOP" height="19"><p ALIGN="CENTER"><font color="#004080"><strong>120%</strong></font></td>
+          </tr>
+        </table>
+        </center></div></td>
+      </tr>
+    </table>
+    </center></div><p><strong>Se conoce que las ventas en el primer trimestre de 1999 fueron
+    de 456 cajas. El precio por caja es de $75 pesos. ¿Cuáles serán las ventas totales
+    anuales para el 2001?</strong></p>
+    <p>Utilizando el modelo se genera la siguiente tabla en Excel:</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="c4mode2.jpg" alt="wpe6.jpg (69045 bytes)" WIDTH="592"
+    HEIGHT="580"></p>
+
+
+
+    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En los renglones 1 al 7 vaciar la información de los datos del problema.<br>
+    En las celdas A10 a A13&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=1999</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; A14&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>=A10+1</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; B10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=1</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; B11&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=B10+1</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo a la celda B13<br>
+    En la celda&nbsp;&nbsp;&nbsp; B14&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=B10</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo<br>
+    En la celda&nbsp;&nbsp;&nbsp; C10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=456</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; C11&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=C10*B5</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo a la celda C13<br>
+    En la celda&nbsp;&nbsp;&nbsp; C14&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=C10*(1+$B$1)</strong>
+    &nbsp;&nbsp; y llenar hacia abajo<br>
+    En la celda&nbsp;&nbsp;&nbsp; D10&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=ROUND(C10,0)*$B$2</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo<br>
+    En la celda&nbsp;&nbsp;&nbsp; E13&nbsp;&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=SUM(D10:D13)</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y copiar la fórmula a las celdas E17, E21 y E25.</p>
+    <p>Las celdas B1 y B2 se registraron como absolutas. Se utilizó la función ROUND de
+    Excel para manejar unidades no fraccionales en la respuesta. </p>
+    <p align="center"><font color="#000080"><strong>GRÁFICA EN EXCEL</strong></font></p>
+    <p align="left"><font face="Times New Roman"><font color="#800040">Para hacer gráficas en
+    Excel se puede consultar la siguiente referencia</font><font color="#004080"> </font><font
+    color="#800040">del libro de texto que se utilizó en el curso Herramientas
+    Computacionales</font><font color="#004080">: Microsoft. <u>Paso a Paso, Microsoft Excel
+    97</u>, Lección 9 &quot;Creación de gráficas para evaluar tendencias y
+    relaciones&quot;. Págs 153 - 165. McGraw Hill. México.1998.</font></font></p>
+    <div align="center"><center><table border="1" bgcolor="#FF0000" bordercolor="#FF0000"
+    bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">
+      <tr>
+        <td width="100%"><p align="center"><img src="../imagenes/c4mode5.jpg"
+        alt="wpeA.jpg (23320 bytes)" WIDTH="584" HEIGHT="265"></td>
+      </tr>
+    </table>
+    </center></div><p align="left">Es importante notar que hay cuatro datos para cada año
+    correspondientes a los cuatro trimestres. El crecimiento compuesto se puede apreciar año
+    con año, es decir, haciendo la comparación entre grupos de cuatro datos.</p>
+    <p align="center"><strong><a href="pract4c4.htm" style="text-decoration: underline">Práctica
+    de autoevaluación 4</a></strong></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

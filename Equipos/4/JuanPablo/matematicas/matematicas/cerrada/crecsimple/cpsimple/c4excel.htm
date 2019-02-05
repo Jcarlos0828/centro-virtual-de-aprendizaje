@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<title>Número de Socios de un clubSolución utilizando Excel</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body background="images/redback.gif">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#004080"><strong>Estimación
+    del número de Socios de un club</strong></font><br>
+    <strong>Solución utilizando Excel</strong><font SIZE="2"></p>
+    <p></font><font size="5"><strong>E</strong></font><font size="3">l problema planteado
+    anteriormente se puede resolver de una manera muy sencilla, ya que es posible determinar
+    una ecuación fácilmente, que permita calcular el valor de la población en un futuro.
+    Hay casos en donde el planteamiento del modelo no genera una ecuación sencilla de
+    resolver, o bien situaciones en donde la complejidad del modelo es tal que ni siquiera
+    permita obtener la ecuación final de un modelo planteado. En estos casos se tiene que
+    recurrir a métodos computacionales para resolver el modelo que se está estudiando. Una
+    herramienta que permite plantear modelos de manera sencilla es las denominadas &quot;hoja
+    de cálculo&quot;. Excel es un producto de este tipo.</font></p>
+    <p><font size="3">El planteamiento en Excel del ejemplo anterior es el siguiente:</font></p>
+    <p><font size="3">En una celda, por ejemplo A2, se registra el incremento annual de
+    población. Se escogen dos columnas cualquiera para registrar en una el año y en la otra
+    el valor de la población para ese año.</font></p>
+    <p><font size="3">Por ejemplo, en la columna B se puede registrar el año y en la C la
+    población. De esta manera el problema anterior se puede resolver haciendo B2 igual a 1998
+    y C2 igual a 45,000. la celda B3 se hace igual a la celda B2 mas uno. La celda C3 se hace
+    igual a la celda C2 más la celda absoluta A2. Es importante registrar A2 como absoluta
+    para que cuando se haga la siguiente operación las relaciones futuras hagan siempre
+    referencia a ésta. Lo último que resta es propagar laas celdas B3 y C3 hacia abajo hasta
+    llegar al año 2015. Haciendo esto la tabla generada en Excel es la siguiente:</font></p>
+    <p align="center"><font size="3" color="#004080"><strong>TABLA EN EXCEL</strong></font><font
+    SIZE="2"></p>
+    <p align="center"><img src="../../images/Image38.jpg" width="302" height="425"
+    alt="Image38.jpg (48514 bytes)"> </p>
+    <p></font><font size="3">Específicamente las acciones que se usaron para generar la tabla
+    anterior son las siguientes:</font></p>
+    <p><font size="3">En la celda&nbsp;&nbsp; A2&nbsp;&nbsp; teclear <b>&nbsp; 450</b><br>
+    En la celda&nbsp;&nbsp; B2&nbsp;&nbsp; teclear <b>&nbsp; 1998</b><br>
+    En la celda&nbsp;&nbsp; B3&nbsp;&nbsp; teclear&nbsp;&nbsp; <b>=B2 +1</b> llenar hacia
+    abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C3&nbsp;&nbsp; teclear&nbsp;&nbsp; <b>= C2 + $A$2</b> llenar hacia
+    abajo (Fill Down)</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

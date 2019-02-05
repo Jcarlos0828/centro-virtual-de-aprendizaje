@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Poblaciones estratificadas con movilidad entre ellas</title>
+<base target="_self">
+</head>
+
+<body background="../images/indtextb.jpg">
+<font FACE="Times,Times New Roman"><div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><p align="center"></font><big><font face="Arial" color="#800040">Estimación
+    de población de grupos de un universo,<br>
+    cuando los elementos pasan de un grupo a otro</font></big></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 1</big></font><br>
+    <strong><font color="#004080" face="Arial">Número de alumnos cursando <small>1°, 2° y
+    3°</small> año de secundaria</font><font FACE="Times,Times New Roman"><font
+    face="Times New Roman" size="3"><br>
+    </font><font color="#000000" size="3" face="Times New Roman">Solución utilizando la
+    representación algebraica del modelo en Excel</font></strong></p>
+    <p><strong><big><big>E</big></big>l número de alumnos de nuevo ingreso a primer año de
+    secundaria es de 56,000 en el año de 1995. Este número está creciendo anualmente en un
+    3.3%.<br>
+    En el mismo año la población de secundaria estaba distribuida de la siguiente manera:<br>
+    Primer año &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 57200<br>
+    Segundo año&nbsp;&nbsp;&nbsp;&nbsp; 55300<br>
+    Tercer año&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53250</strong></p>
+    <p><strong>El 2.5 porciento de los alumnos de primero de secundaria no se inscribe el
+    siguiente año, y el 3.8 porciento de los alumnos reprueba año y se inscribe otra vez en
+    primer año. Los alumnos restantes pasan a segundo año de secundaria.</strong></p>
+    <p><strong>El 2.3 porciento de los alumnos de segundo de secundaria no se inscribe el
+    siguiente año, y el 3.7 porciento de los alumnos reprueba año y se inscribe otra vez en
+    segundo año. Los alumnos restantes pasan a tercer año de secundaria.</strong></p>
+    <p><strong>El 3.2 porciento de los alumnos inscritos en tercer año de secundaria reprueba
+    año y se inscribe otra vez en el mismo año. Los alumnos restantes terminan la
+    secundaria.</strong></p>
+    <p><strong>Estimar el número de alumnos que se inscribirán en cada uno de los 3 años de
+    secundaria hasta el 2007 .</strong></p>
+    <p>Sin embargo, el planteamiento del modelo usando Excel facilita mucho los cálculos y al
+    mismo tiempo permite determinar los efectos de cambios en cualquiera de los porcentajes
+    que intervienen en el modelo.</font></p>
+    <p align="center"><font FACE="Times,Times New Roman" color="#004080"><strong>TABLA EN
+    EXCEL</strong></font></td>
+  </tr>
+</table>
+</div><font FACE="Times,Times New Roman">
+
+<p align="center"><img src="images/Image2.gif" width="622" height="459"
+alt="Image2.gif (16005 bytes)"></p>
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%">Las acciones que se usaron para generar la tabla anterior son las
+    siguientes:<br>
+    En los renglones 2,3,4 y 5 se registran el año de inicio, alumnos de primer ingreso en el
+    año de inicio y porcentaje de crecimiento de alumnos de nuevo ingreso, expresado en
+    decimales.<br>
+    En los renglones 9,10 y 11 se registran los porcentajes de abandono y de reprobados, así
+    como el número de alumnos en el año de inicio, para los tres años de secundaria.<br>
+    </font><font face="Times,Times New Roman" size="3">En la celda&nbsp;&nbsp; B16&nbsp;&nbsp;
+    se teclea <b>&nbsp; =C1</b><br>
+    En la celda&nbsp;&nbsp; B17&nbsp;&nbsp; se teclea <b>&nbsp; =B16 + 1</b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; C16&nbsp;&nbsp; se teclea <b>&nbsp; =C3</b><br>
+    En la celda&nbsp;&nbsp; C17&nbsp;&nbsp; se teclea <b>&nbsp; =C16*(1 + $C$5)</b>
+    &nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; D16&nbsp;&nbsp; se teclea <b>&nbsp; =C11</b><br>
+    En la celda&nbsp;&nbsp; D17&nbsp;&nbsp; se teclea <b>&nbsp; =C17 + D16*($C$10)</b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; E16&nbsp;&nbsp; se teclea <b>&nbsp; =D11</b><br>
+    En la celda&nbsp;&nbsp; E17&nbsp;&nbsp; se teclea <b>&nbsp; =D16*(1 &#150; $C$9 &#150;
+    $C$10) + E16*($D$10)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp; F16&nbsp;&nbsp; se teclea <b>&nbsp; =E11</b><br>
+    En la celda&nbsp;&nbsp; F17&nbsp;&nbsp; se teclea <b>&nbsp; =E16*(1 &#150; $D$9 &#150;
+    $D$10) + F16*($E$10)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill
+    Down)</font><font FACE="Times,Times New Roman"><p>&nbsp;Una vez construida la tabla
+    anterior, se puede obtener una nueva si es que se desea obtener el impacto de un cambio en
+    algunos de los valores. Por ejemplo, si se desea ver en la misma tabla si el alumnado de
+    nuevo ingreso a primer grado incrementa solamente en un 2.4 porciento en vez del 3.3 que
+    se había considerado previamente, lo único que se tiene que hacer es reemplazar el valor
+    de la celda C5 por 0.024. Esto genera la siguiente tabla:</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></font></td>
+  </tr>
+</table>
+</div>
+
+<p align="center"><img src="images/Image3.gif" width="623" height="461"
+alt="Image3.gif (15995 bytes)"></p>
+<div align="right">
+
+<table border="0" width="92%">
+  <tr>
+    <td width="100%"><p align="center"><strong><a href="pract1c1.htm"
+    style="text-decoration: underline">Práctica de autoevaluación 1</a></strong></td>
+  </tr>
+</table>
+</div>
+
+<p align="center">&nbsp;</p>
+</body>
+</html>

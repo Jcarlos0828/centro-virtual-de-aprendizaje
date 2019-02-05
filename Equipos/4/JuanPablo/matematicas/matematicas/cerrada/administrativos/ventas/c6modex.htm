@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Estimación de ventas</title>
+</head>
+
+<body background="../imagenes/admback.jpg">
+<div align="right">
+
+<table border="0" width="87%">
+  <tr>
+    <td width="100%"><p align="center"><font face="Arial" color="#800040"><big>Determinación
+    de precio en base a un nivel de ventas</big></font></p>
+    <p align="center"><font face="Arial" color="#800040"><big>Caso 6</big><br>
+    </font><font color="#004080" face="Arial" size="4">Precios de los productos de una tienda
+    de helados<br>
+    </font><b>Solución utilizando el modelo en Excel con la herramienta Goal Seek.</b></p>
+    <p><strong><big><big>U</big></big>na tienda de helados vende solamente helados de crema en
+    presentación doble. Ya a que las ventas de helados tienen temporalidad debido a que
+    éstos son más populares en los meses de verano, el gerente tiene pensado empezar a
+    vender pastel en rebanadas para tratar de contrarrestar las ventas bajas en invierno. Se
+    conocen los datos de 1998 y se quieren fijar precios para todo el año de 1999. Se
+    vendieron un total de 17424 helados en 1998 a un precio de $13. Se conoce que el número
+    de helados vendidos se incrementa en un 14% anual y se espera vender la mitad de pasteles
+    que de helados. Al incluir los pasteles en 1999 como otro producto se desea que las ventas
+    totales se incrementen en un 97% con respecto a 1998.</strong></p>
+    <p><strong>El precio de un helado y un pastel juntos debe ser de $30. ¿Qué precios deben
+    tener los helados y los pasteles para lograr los objetivos de ventas?</strong></p>
+    <p>Se puede plantear el modelo en Excel para hacer los cálculos mas rápida y
+    fácilmente.</p>
+    <p align="center"><font color="#004080"><strong>TABLA EN EXCEL</strong></font></p>
+    <p align="center"><img src="../imagenes/c6mode8.jpg" width="592" height="216"
+    alt="wpeD.jpg (26770 bytes)"></p>
+    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:<br>
+    En los renglones 1 y 2 vaciar la información de los datos del problema.<br>
+    En la celda&nbsp;&nbsp;&nbsp; A5&nbsp;&nbsp; teclear <strong>=1998</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; A6&nbsp;&nbsp; teclear&nbsp; <strong>=A5+1 </strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; B5&nbsp;&nbsp; teclear&nbsp; <strong>=17424</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; C5&nbsp;&nbsp; teclear&nbsp; <strong>=13</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; D5&nbsp;&nbsp; teclear&nbsp;&nbsp;&nbsp;&nbsp; <strong>=B5*C5</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; G5&nbsp;&nbsp; teclear <strong>&nbsp; =E5*F5</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; H5&nbsp;&nbsp; teclear&nbsp; <strong>=D5+G5</strong>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y llenar hacia abajo (Fill Down)<br>
+    En la celda&nbsp;&nbsp;&nbsp; B6&nbsp;&nbsp; teclear&nbsp; <strong>=B5*(1+$B$1)</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; E6&nbsp;&nbsp; teclear <strong>&nbsp; =B6*(0.5)</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; F6&nbsp;&nbsp; teclear <strong>&nbsp; =30&#150;C6</strong><br>
+    En la celda&nbsp;&nbsp;&nbsp; H7&nbsp; teclear <strong>&nbsp; =H5*(1+$B$2) </strong><br>
+    En <strong>Tools</strong>&nbsp; seleccionar <strong>Goal Seek</strong>,<br>
+    teclear en <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>Set Cell
+    .................<strong> H6</strong><br>
+    en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    To value................. <strong>446229</strong> (valor de celda H7)<br>
+    y en
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    By changing cell......<strong> C6</strong></p>
+    <p align="center"><a href="pract6c6.htm" style="text-decoration: underline"><strong>Práctica
+    de autoevaluación 6</strong></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
