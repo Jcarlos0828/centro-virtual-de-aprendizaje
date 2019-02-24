@@ -1,0 +1,24 @@
+Datos del curso:
+	Clave del curso:	ds058
+	Nombre del curso: 	Cuidemos Nuestra Salud
+	alias: 			salud
+	url: 			http://www.cca.org.mx/dds/cursos/salud/ds058/
+
+directorios
+	ftp: 		/ftp/home/pub/sociales/????
+	www: 		/www/docs/dds/cursos/salud/ds058
+	local: 		G:\Laboral\DDS\Cursos\Educación Continua\ds058
+	
+	
+Fechas
+	inicio: 	?
+	termino: 	?
+	Ultima actualizacion: 25/ago/2007
+	
+Versiones: Unica
+Versiones anteriores:
+respaldos : no
+ubicacion de respaldos: 
+
+Datos especiales: 
+programador:
