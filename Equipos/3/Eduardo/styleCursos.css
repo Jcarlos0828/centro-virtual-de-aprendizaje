@@ -191,3 +191,43 @@ dt {
 dd {
 	margin-bottom: 1rem;
 }
+
+/* Para centrar las imágenes */
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Para poner imágenes en columnas de tres*/
+.container3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+/* Para poner imágenes en columnas de dos */
+.container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+/* Centrar el texto en containers de 3 columnas */
+.container3 p {
+	text-align: center;
+}
+
+/* Centrar el texto en containers de 3 columnas */
+.container2 p {
+	text-align: center;
+}
+
+.container4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+
+.container4 p {
+	text-align: center;
+}
