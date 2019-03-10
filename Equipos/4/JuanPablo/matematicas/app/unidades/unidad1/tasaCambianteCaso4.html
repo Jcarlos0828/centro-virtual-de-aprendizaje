@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Registro anual del número de habitantes de una ciudad.</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 4</h3>
+                                                <h3 class="feed-subtitle">Dado el número de habitantes de una ciudad en diferentes años, encontrar las tasas anuales de crecimiento y su porcentaje anual de aumento o disminución</h3>
+                                                <div class="feed-body">
+                                                    <p>El registro del número de habitantes de una ciudad en los años de 1993 a 1995 es el siguiente:</p>
+                                                    <p>En 1993:  840,230 habitantes.</p>
+                                                    <p>En 1994: 873,000 habitantes</p>
+                                                    <p>En 1995: 904,664 habitantes</p>
+                                                    <p>Encontrar la tasa de crecimiento para los años de 1993 y 1994. Encontrar también el porcentaje de aumento o de disminución de la tasa de crecimiento.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 6: </h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>Note en la tabla interactiva que no todos los datos del problema están alimentados.  Sólo el año inicial (1993) y la población inicial (840230) tienen los valores apropiados. Por tanteo, cambie el valor de la tasa de crecimiento para que la población en 1994 tome un valor de 873,000 como se indica en la descripción del caso.</li>
+                                                        <li>Note que ahora el valor de la población en 1995 no corresponde al de la descripción del problema.  Por tanteo, cambie el valor del porcentaje de cambio en la tasa para que la población en 1995 sea igual a 904,664.</li>
+                                                        <li>Con los datos de tasa inicial y cambio de tasa encontrados en los puntos 1 y 2, encuentre la población y la tasa de crecimeinto para el año 2020. Observe el comportamiento de la gráfica. (Población en 2020 = 1,348,671 y Tasa = 0.54%).</li>
+                                                        <li>Efectúe cambios en los parámetros de porcentaje de cambio en la tasa, tasa inicial y año final y observe los cambios en el comportamiento de la gráfica.</li>
+                                                        <li>Plantee un problema en el que tenga como datos las poblaciones de tres años consecutivos.  Vacíe los datos de año inicial y población inicial a la tabla interactiva, y calcule por tanteo la tasa de crecimiento y el porcentaje de cambio en la tasa.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p>El registro del número de habitantes de una ciudad en los años de 1993 a 1995 es el siguiente:</p>
+                                                    <p>En 1993:  840,230 habitantes.</p>
+                                                    <p>En 1994: 873,000 habitantes</p>
+                                                    <p>En 1995: 904,664 habitantes</p>
+                                                    <p>Encontrar la tasa de crecimiento para los años de 1993 y 1994. Encontrar también el porcentaje de aumento o de disminución de la tasa de crecimiento.</p>
+                                                    <p>En muchos problemas el dato disponible es el número de elementos de una poblacion en diferentes años. Esta información se obtiene utilizando diferentes métodos de conteo, como los censos.</p>
+                                                    <p><b>Tasa de crecimiento en el año 1993</b></p>
+
+                                                    <p>Se conoce que la población de 1994, es la población de 1993 más el aumento de población producido durante el año. El aumento de población del año, es la población de 1</p>
+                                                    <p>P1994= P1993 + a1993      al despejar el aumento a1993 se llega a la siguiente ecuación,</p>
+                                                    <p>a1993 = P1994 - P1993       sustituyendo los valores de P1994 y P1993 se tiene,</p>
+                                                    <p>a1993 = 873,000 - 840,230</p>
+                                                    <p>a1993 = 32,770</p>
+
+
+                                                    <p>Conociendo que el aumento es, la población de 1993 multiplicada por la tasa en decimales, al dividir el aumento entre la población de 1993 se obtendría la tasa del año 1993, expresada en decimales.</p>
+                                                    <p>a1993 = P1993 * r1993 </p>
+                                                    <p>r1993 = a1993/ P1993       sustituyendo los valores de a1993 y P1993 se tiene,</p>
+                                                    <p>r1993 =32,770 / 840,230</p>
+                                                    <p>r1993 = 0.0390012258 </p>
+                                                    <p>Ya que la tasa está expresada en decimales se puede pasar a porcentaje solo multiplicándola por 100.</p>
+                                                    <p>La tasa de 1993 es de 3.90012258%. </p>
+                                                    <p>Redondeando la cantidad, tenemos que la tasa de crecimiento del año 1993 es de 3.9% anual. </p>
+                                                    <p><b>Tasa de crecimiento en el año de 1994</b></p>
+
+                                                    <p>Para obtener el valor de la tasa de crecimiento de 1994, sabemos que la población de 1995, es la población de 1994 más el aumento poblacional producido durante el año.</p>
+                                                    <p>P1995= P1994 + a1994        al despejar  a1994  se llega a la siguiente ecuación,</p>
+                                                    <p>a1994 = P1995 - P1994       sustituyendo P1995 y P1994  por sus respectivos valores queda</p>
+                                                    <p>a1994 = 904,664 - 873,000</p>
+                                                    <p>a1994 = 31,664</p>
+                                                    <p>El aumento de población durante el año 1994 fue de 31,664 habitantes.</p>
+
+                                                    <p>Sabemos además que el aumento del año 1994 es, la población de 1994 multiplicada por la tasa de crecimiento del año.</p>
+                                                    <p>a1994 = P1994 * r1994</p>
+                                                    <p>Al dividir el aumento entre la población de 1994 se obtiene la tasa de crecimiento.</p>
+                                                    <p>r1994 = a1994 / P1994        sustituyendo a1994  y P1994 por sus respectivos valores se tiene</p>
+                                                    <p>r1994 = 31,664 / 873,000</p>
+                                                    <p>r1994 = 0.0362703</p>
+                                                    <p>La tasa 0.0362703 esta expresada en decimales, para dar la respuesta hay que expresarla en porcentaje.</p>
+                                                    <p>La tasa de crecimiento durante el año de 1994 es de 3.627% anual.</p>
+
+                                                    <p>Nota: Para obtener la tasa de 1995 se necesitaría conocer la población en el año 1996</p>
+
+                                                    <p><b>Porcentaje de cambio en la tasa de crecimiento.</b></p>
+
+                                                    <p>La tasa de crecimiento en 1993 es de 3.9% y la de 1994 es de 3.627%. Se desea encontrar el porcentaje de cambio en la tasa de crecimiento.</p>
+                                                    <p>Como se tienen tasas positivas, se usa la fórmula Rt = Rt-1 ( 1 + b ) . En ésta se debe de despejar b para encontrar el porcentaje de cambio en la tasa.</p</p>
+                                                    <p>R1994 = R1993 ( 1 + b ) al pasar R1993 dividiendo al primer miembro de la ecuación se tiene,</p>
+                                                    <p>R1994 / R1993 = 1 + b pasando el 1 restando queda la ecuación</p>
+                                                    <p>(R1994 / R1993) – 1 = b o bien,</p>
+                                                    <p>b = ( R1994 / R1993 ) – 1 sustituyendo los valores de R1994 y de R1993 queda la ecuación</p>
+                                                    <p>b = ( 3.627 / 3.9 ) – 1 </p>
+                                                    <p>b = 0.93 – 1 </p>
+                                                    <p>b = – 0.07</p>
+                                                    <p><b>El cambio en la tasa de crecimiento es de – 7%, o bien, la tasa disminuyó un 7%.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de fórmula para encontrar la tasa de crecimiento para cierto año t, cuando se conoce la población de este año y la del año siguiente</h3>
+                                                <div class="feed-body">
+                                                    <p>Para deducir la fórmula se utiliza la representación algebraica del modelo matemático de Crecimiento Poblacional Compuesto con tasa cambiante Pt = Pt-1( 1 + rt-1 ). En ésta hay que despejar rt-1 que es la tasa de crecimiento para el año t-1.</p>
+                                                    <p>Pt = Pt-1( 1 + rt-1 ) pasando Pt-1 al primer miembro de la igualdad, dividiendo, se tiene,</p>
+                                                    <p>Pt / Pt-1 = 1 + rt-1 el 1 pasa restando y queda la ecuación
+                                                    <p>(Pt / Pt-1) – 1 = rt-1 o bien,</p>
+                                                    <p>rt-1 = (Pt / Pt-1) – 1</p>
+                                                
+                                                    <p>Para tener despejada rt en lugar de rt-1, la ecuación rt-1 = (Pt / Pt-1)– 1 puede ser escrita como rt = (Pt+1 / Pt) – 1, ya que son ecuaciones equivalentes.</p>
+                                                
+                                                    <p>La fórmula para obtener la tasa de crecimiento en cierto año t (rt), cuando se conoce la población de ese año (Pt) y la del año siguiente (Pt+1), es:</p>
+                                                
+                                                    <p>rt = (Pt+1 / Pt) – 1</p>
+                                                
+                                                    <p>en donde,</p>
+                                                
+                                                    <p>rt es la tasa de crecimiento correspondiente al año t
+                                                    <p>Pt es la población en el año t</p>
+                                                    <p>Pt+1 es la población en el año t+1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para encontrar la tasa de crecimiento para cierto año t, cuando se conoce la población de este año y la del año siguiente</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La fórmula para obtener la tasa de crecimiento en cierto año t (rt), cuando se conoce la población de ese año (Pt) y la del año siguiente (Pt+1), es:</b></p>
+                                                    <p><b>rt = (Pt+1 / Pt) – 1</b></p>
+                                                    <p><b>en donde,</b></p>
+                                                    <p><b>rt es la tasa de crecimiento correspondiente al año t</b></p>
+                                                    <p><b>Pt es la población en el año t</b></p>
+                                                    <p>Pt+1 es la población en el año t+1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de fórmulas para encontrar el porcentaje de cambio en la tasa de crecimiento</h3>
+                                                <div class="feed-body">
+
+
+                                                    <p>Para encontrar la tasa de crecimiento en cierto año t ( Rt ) cuando la tasa del año anterior ( Rt-1 ) es positiva se tenía la fórmula Rt = Rt-1 ( 1 + b ). En ésta fórmula se va a despejar b, que es el porcentaje de cambio en la tasa, expresado en decimales.</p>
+                                                    <p>Rt = Rt-1 ( 1 + b ) al pasar Rt-1 dividiendo queda la ecuación,</p>
+                                                    <p>Rt / Rt-1 = 1 + b el 1 pasa restando y se tiene,</p>
+                                                    <p>( Rt / Rt-1 ) – 1 = b o bien,</p>
+                                                    <p><b>b = ( Rt / Rt-1 ) – 1</b></p>
+                                                    
+                                                    <p>Para encontrar la tasa de crecimiento en cierto año t ( Rt ) cuando la tasa del año anterior ( Rt-1 ) es negativa se tenía la fórmula Rt = Rt-1 ( 1 – b ). En ésta fórmula se va a despejar b.</p>
+                                                    <p>Rt = Rt-1 ( 1 – b ) pasando Rt-1 dividiendo queda la </p>ecuación,
+                                                    <p>Rt / Rt-1 = 1 – b el 1 pasa restando para tener</p>
+                                                    <p>( Rt / Rt-1 ) – 1 = – b cambiando los signos para tener b positiva se tiene</p>
+                                                    <p>1 – ( Rt / Rt-1 ) = b o bien,</p>
+                                                    <p><b>b = 1 – ( Rt / Rt-1 )</b></p>
+                                                    <p><b>Podemos concluir entonces que para encontrar el porcentaje de cambio en la tasa de crecimiento anual, se pueden usar las siguientes fórmulas, según el caso:</b></p>
+                                                    <p><b>Si Rt-1 es positiva se usa,</b></p>
+                                                    <p><b>b = ( Rt / Rt-1 ) – 1</b></p>
+                                                    <p><b>Si Rt-1   es negativa se usa,</b></p>
+                                                    <p><b>b = 1 – ( Rt / Rt-1 )</b></p>
+                                                    <p><b>en donde,</b></p>
+                                                    <p><b>Rt es la tasa de crecimiento en el año t, expresada en porcentaje.</b></p>
+                                                    <p><b>Rt-1  es la tasa de crecimiento en el año t – 1 , expresada en porcentaje.</b></p>
+                                                    <p><b>b es el porcentaje de cambio en la tasa, expresado en decimales.</b></p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmulas para encontrar el porcentaje de cambio en la tasa de crecimiento</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Para encontrar el porcentaje de cambio en la tasa de crecimiento anual, se pueden usar las siguientes fórmulas, según el caso:</b></p>
+                                                    <p><b>Si Rt-1 es positiva se usa,</b></p>
+                                                    <p><b>b = ( Rt / Rt-1 ) – 1</b></p>
+                                                    <p><b>Si Rt-1   es negativa se usa,</b></p>
+                                                    <p><b>b = 1 – ( Rt / Rt-1 )</b></p>
+                                                    <p><b>en donde,</b></p>
+                                                    <p><b>Rt es la tasa de crecimiento en el año t, expresada en porcentaje.</b></p>
+                                                    <p><b>Rt-1  es la tasa de crecimiento en el año t – 1 , expresada en porcentaje.</b></p>
+                                                    <p><b>b es el porcentaje de cambio en la tasa, expresado en decimales.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmulas</h3>
+                                                <div class="feed-body">
+                                                    <p><b>El registro del número de habitantes de una ciudad en los años de 1993 a 1995 es el siguiente:</b></p>
+                                                    <p><b>En 1993, 840,230 habitantes.</b></p>
+                                                    <p><b>En 1994, 873,000 habitantes</b></p>
+                                                    <p><b>En 1995, 904,664 habitantes</b></p>
+                                                    <p><b>Encontrar la tasa de crecimiento para los años de 1993 y 1994. Encontrar también el porcentaje de aumento o de disminución de la tasa de crecimiento.</b></p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>P1993 = 840,230</p>
+                                                    <p>P1994 = 873,000</p>
+                                                    <p>P1995 = 904,664</p>
+                                                    <p>r1993 =? tasa de crecimiento en 1993</p>
+                                                    <p>r1994 =? tasa de crecimiento en 1994</p>
+                                                    <p>b =? porcentaje de cambio en la tasa.</p>
+                                                    <p><b>Solución:</b></p>
+
+                                                    <p>Para encontrar la tasa de crecimiento en 1993 usa la fórmula rt = (Pt+1 / Pt) – 1.</p>
+
+                                                    <p><b>rt = (Pt+1 / Pt) – 1</b></p>
+                                                    <p>r1993 = ( P1994 / P1993 ) – 1        sustituyendo P1994 y P1993 por sus respectivos valores se tiene,</p>
+                                                    <p>r1993 = ( 873,000 / 840,230 ) – 1 </p>
+                                                    <p>r1993 = 1.039 – 1 </p>
+                                                    <p><b>r1993 =0.039</b></p>
+                                                    <p><b>La tasa de crecimiento en 1993 es de 3.9%.</b></p>
+                                                    <p><b>rt = (Pt+1 / Pt) – 1</b></p>
+                                                    <p>r1994 = ( P1995 / P1994 ) – 1       sustituyendo P1995 y P1994 por sus respectivos valores queda,</p>
+                                                    <p>r1994 = ( 904,664 / 873,000 ) – 1 </p>
+                                                    <p>r1994 = 1.03627 – 1 </p>
+                                                    <p>r1994 = 0.03627</p>
+                                                    <p><b>La tasa de crecimiento en 1994 es de 3.627%.</b></p>
+
+
+                                                    <p>Para encontrar el porcentaje de cambio en la tasa se tienen los siguientes datos obtenidos en la soluciones anteriores.</p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>R1993 = 3.9%</p>
+                                                    <p>R1994 = 3.627%</p>
+                                                    <p>b =?       el porcentaje de cambio en la tasa de crecimiento.</p>
+
+                                                    <p><b>Solución:</b></p>
+                                                    <p>Para encontrar el porcentaje de cambio en la tasa de crecimiento se usa la fórmula </p>
+                                                    <p><b>b = ( Rt / Rt-1 ) – 1, ya que Rt-1 es positiva.</b></p>
+
+                                                    <p><b>b = ( Rt / Rt-1 ) – 1</b></p>
+                                                    <p>b = ( R1994 / R1993 ) – 1 </p>
+                                                    <p>b = ( 3.627 / 3.9 ) – 1 </p>
+                                                    <p>b = 0.93 – 1 </p>
+                                                    <p><b>b = – 0.07 </b></p>
+                                                    <p><b>La tasa disminuyó un 7% del año 1993 al año 1994.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando las fórmulas en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>El registro del número de habitantes de una ciudad en los años de 1993 a 1995 es el siguiente:</b></p>
+                                                    <p><b>En 1993, 840,230 habitantes.</b></p>
+                                                    <p><b>En 1994, 873,000 habitantes</b></p>
+                                                    <p><b>En 1995, 904,664 habitantes</b></p>
+                                                    <p><b>Encontrar la tasa de crecimiento para los años de 1993 y 1994. Encontrar también el porcentaje de aumento o de disminución de la tasa de crecimiento.</b></p>
+                                                    <p>Para la siguiente tabla se usan la fórmula para encontrar la tasa rt = (Pt+1 / Pt) – 1 y la fórmula para encontrar el porcentaje de cambio en la tasa, cuando se tienen tasas positivas b = ( Rt / Rt-1 ) – 1.</p>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                                <th>D</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>año</td>
+                                                                <td>población</td>
+                                                                <td>tasa</td>
+                                                                <td>% de cambio en la tasa</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>1993</td>
+                                                                <td>840230</td>
+                                                                <td>0.039001226</td>
+                                                                <td>0.070020714</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>1994</td>
+                                                                <td>873000</td>
+                                                                <td>0.036270332</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>1995</td>
+                                                                <td>904664</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p>Las acciones usadas para generar la siguiente tabla son:</p>
+                                                    <p>En las columnas A y B vaciar la información de los datos del problema.</p>
+                                                    <p>En la celda C2 teclear <b>= (B3/B2) – 1</b> y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda D2 teclear <b>= (C3/C2) – 1</b></p>
+                                                    <p>La tasa y el porcentaje de cambio en ellas, está expresado en decimales. Si se desea se pueden cambiar a porcentajes multiplicando el resultado por 100.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

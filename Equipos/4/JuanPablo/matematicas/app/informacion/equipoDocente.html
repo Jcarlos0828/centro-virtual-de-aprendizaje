@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
         <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/app/assets/images/logo/favicon.png">
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
         <!-- plugins css -->
-        <link rel="stylesheet" href="/app/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
         <!-- page plugins css -->
         <!-- core css -->
-        <link href="/app/assets/css/ei-icon.css" rel="stylesheet">
-        <link href="/app/assets/css/themify-icons.css" rel="stylesheet">
-        <link href="/app/assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/app/assets/css/animate.min.css" rel="stylesheet">
-        <link href="/app/assets/css/app.css" rel="stylesheet">
-        <!-- <script src="/app/scripts.js"></script> -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
     </head>
     <body class="header-info side-nav-dark">
           <div class="app">
@@ -40,7 +40,7 @@
                               <ul class="nav-right">
                                   <li>
                                       <a href="#">
-                                          <img src="/app/assets/images/logo/tec-logo.png" height="30">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
                                       </a>
                                   </li>
                               </ul>
@@ -51,13 +51,25 @@
                       <div class="main-content">
                           <div class="container-fluid">
                               <!-- Your content goes here -->
-                              <div class="filosofia">
+                              <div class="equipo-docente">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <div class="card widget-feed">
-                                                <div class="feed-body">
-                                                    <h1>Mapa Conceptual</h1>
+                                            <div class="widget-profile-1 card">
+                                                <div class="profile border bottom">
+                                                    <!--
+                                                    <img class="mrg-top-30" src="#" alt>
+                                                    -->
+                                                    <h1>Ing. María del Carmen Pámanes Fernández, MCC</h1>
+                                                    <p>Profesora Titular del curso</p>
+                                                    <a href="mailto:mpamanes@campus.cegs.itesm.mx">mpamanes@campus.cegs.itesm.mx</a>
                                                 </div>
+                                                <div class="pdd-horizon-30 pdd-vertical-20">
+                                                    <h5 class="text-semibold mrg-btm-5">Info</h5>
+                                                    <p>María del Carmen Pámanes Fernández cursó la Ingeniería en Sistemas Computacionales en el Instituto Tecnológico y de Estudios Superiores de Monterrey, recibiendo Mención Honorífica. Posteriormente realizó la Maestria en Ciencias con la especialidad en Ciencias Computacionales en el mismo instituto.</p>
+                                                    <p>En el ámbito académico fué profesor de la carreras de Ingeniero en Sistemas Computacionales y Licenciado en Sistemas Computacionales Administrativos en el ITESM Campus Monterrey. Además fué profesor en las preparatorias Bicultural, Bilingüe e Internacional en el ITESM Campus Eugenio Garza Sada.</p>
+                                                    <p>En el ámbito profesional trabajó dentro del área de sistemas en varias empresas como Gemini Electrónica, Grupo Alfa Corporativo y Comunicación y Electrónica Vital.</p>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +83,7 @@
                               <div class="copyright">
                                   <span>Copyright © 2019.</span>
                                   <span class="go-right">
-                                      <a href="/app/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
                                   </span>
                               </div>
                           </div>
@@ -83,14 +95,14 @@
         </div>
         <!-- build:js assets/js/vendor.js -->
         <!-- plugins js -->
-        <script src="/app/assets/vendors/jquery/dist/jquery.min.js"></script>
-        <script src="/app/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-        <script src="/app/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="/app/assets/vendors/PACE/pace.min.js"></script>
-        <script src="/app/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <script>
             $(document).ready(function(){
-                $('#sideNav').load("/app/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
                     $('.dropdown').on('click','.dropdown-toggle',function(e){
                         e.preventDefault();
                         $(this).parent().children('.dropdown-menu').toggle();
@@ -100,9 +112,9 @@
             });
         </script>
         <!-- endbuild -->
-        <!-- build:js assets/js/app.min.js -->
+        <!-- build:js assets/js.min.js -->
         <!-- core js -->
-        <script src="/app/assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
     </body>

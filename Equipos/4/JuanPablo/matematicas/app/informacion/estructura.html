@@ -5,22 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
         <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/app/assets/images/logo/favicon.png">
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
         <!-- plugins css -->
-        <link rel="stylesheet" href="/app/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
         <!-- page plugins css -->
         <!-- core css -->
-        <link href="/app/assets/css/ei-icon.css" rel="stylesheet">
-        <link href="/app/assets/css/themify-icons.css" rel="stylesheet">
-        <link href="/app/assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/app/assets/css/animate.min.css" rel="stylesheet">
-        <link href="/app/assets/css/app.css" rel="stylesheet">
-        <!-- <script src="/app/scripts.js"></script> -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
     </head>
     <body class="header-info side-nav-dark">
-          <div class="app">
+          <div class=">
               <div class="layout">
                   <!-- Side Nav START -->
                   <div class="side-nav" id="sideNav"></div>
@@ -40,7 +40,7 @@
                               <ul class="nav-right">
                                   <li>
                                       <a href="#">
-                                          <img src="/app/assets/images/logo/tec-logo.png" height="30">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
                                       </a>
                                   </li>
                               </ul>
@@ -57,23 +57,6 @@
                                             <div class="card widget-feed">
                                                 <h1 class="feed-title">Políticas de Evaluación</h1>
                                                 <div class="feed-body">
-                                                    <p>En el contenido de los temas se encuentran intercaladas prácticas de autoevaluación. Éstas prácticas se pueden enviar para recibir su respuesta ya que no se evaluaran. Es muy importante para el proceso de enseñanza-aprendizaje irlas resolviendo conforme se avanza en el curso.</p>
-                                                    <p> Al final de cada tema se encuentran las actividades de comprobación del tema que serán enviadas al instructor para su evaluación.</p>
-                                                    <p>Las actividades de comprobación deberán ser acreditadas con una calificación mayor o igual a 70, en caso de no ser así, se deberán hacer las correcciones y enviarlas nuevamente a revisión.</p>
-                                                    <p>A mitad del semestre va a haber un examen de medio término el cual podrán contestar en la computadora, el instructor le informará las fechas del examen.</p>
-                                                    <p>Al final del semestre se aplicará la evaluación final presencial. El instructor comunicará a los alumnos los días y horas en que puede presentarse el examen.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="card widget-feed">
-                                                <h1 class="feed-title">Evaluación del curso</h1>
-                                                <div class="feed-body">
-                                                    <p>Actividades de comprobación del tema ........... 20%</p>
-                                                    <p>Examen medio término ................................... 10%</p>
-                                                    <p>Examen final presencial.................................... 70%</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -88,7 +71,7 @@
                               <div class="copyright">
                                   <span>Copyright © 2019.</span>
                                   <span class="go-right">
-                                      <a href="/app/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
                                   </span>
                               </div>
                           </div>
@@ -100,14 +83,14 @@
         </div>
         <!-- build:js assets/js/vendor.js -->
         <!-- plugins js -->
-        <script src="/app/assets/vendors/jquery/dist/jquery.min.js"></script>
-        <script src="/app/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-        <script src="/app/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="/app/assets/vendors/PACE/pace.min.js"></script>
-        <script src="/app/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <script>
             $(document).ready(function(){
-                $('#sideNav').load("/app/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
                     $('.dropdown').on('click','.dropdown-toggle',function(e){
                         e.preventDefault();
                         $(this).parent().children('.dropdown-menu').toggle();
@@ -117,9 +100,9 @@
             });
         </script>
         <!-- endbuild -->
-        <!-- build:js assets/js/app.min.js -->
+        <!-- build:js assets/js.min.js -->
         <!-- core js -->
-        <script src="/app/assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
     </body>

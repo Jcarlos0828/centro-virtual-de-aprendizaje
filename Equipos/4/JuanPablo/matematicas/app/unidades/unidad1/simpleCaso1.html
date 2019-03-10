@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Estimación de Población</h1>
+                                    <h2 class="feed-title">Caso 1</h2>
+                                    <h3 class="feed-subtitle">Estimación del número de libros que se venderán en cierto año</h3>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Introducción al modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p>Un libro de texto es editado anualmente. En el año 1998 se vendieron 45,000 ejemplares y sabemos que las ventas se incrementan en 450 ejemplares por año. ¿Cuántos libros se espera que se vendan en el año 2003?</p>
+                                                    <p>Esta pregunta se puede contestar de una manera muy sencilla, simplemente sumándole a la población del año anterior la cantidad de 450 tal y como se indica en la siguiente tabla:</p>
+                                                    
+                                                    <div class="table-overflow">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td>Año</td>
+                                                                    <td>No. de libros vendidos en el año</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1998</td>
+                                                                    <td>45000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1999</td>
+                                                                    <td>45450</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2000</td>
+                                                                    <td>45900</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2001</td>
+                                                                    <td>46350</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2002</td>
+                                                                    <td>46800</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2003</td>
+                                                                    <td>47250</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p>Como se puede observar cada año la venta aumenta en 450 ejemplares, sin importar la venta del año anterior. Se espera que para el año 2003 se vendan 47, 250 libros.</p>
+                                                    <p>Sin embargo aunque la solución se determinó de una manera muy sencilla, conviene ver el planteamiento de este problema usando el concepto de modelo de crecimiento poblacional simple, así como la representación algbraica del modelo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Elementos que intervienen en un Crecimiento Poblacional Simple.</h3>
+                                                <div class="feed-body">
+                                                    <p>El modelo matemático para un crecimiento poblacional simple establece que la población en cualquier año es igual a la población del año anterior más el incremento.</p>
+                                                    <p>Como podemos observar, los elementos que intervienen en el modelo para un crecimiento poblacional simple son los siguientes:</p>
+                                                    <p><b>P<sub>0</sub></b> población inicial o principal.</p>
+                                                    <p><b>t</b> número de años o períodos, a partir del año o período inicial.</p>
+                                                    <p><b>P<sub>t</sub></b> población después de t añós o períodos.</p>
+                                                    <p><b>a</b> incremento anual o incremento por período.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de la fórmula para encontrar la población total en determinado año,  en un Crecimiento Poblacional Simple, cuando se conoce la población inicial y el aumento anual.</h3>
+                                                <div class="feed-body">
+                                                    <p>Podemos deducir fácilmente una fórmula para estimar la población en cualquier año <b>t</b> (<b>P<sub>t</sub></b>), si se tiene un Crecimiento Poblacional Simple, cuando se conoce la población principal o inicial (<b>P<sub>0</sub></b>) y el aumento anual (<b>a</b>).</p>
+                                                    <p>Siguiendo el modelo matemático se tiene que, la población después de un año es la población del año anterior o población inicial más el aumento.</p>
+                                                    <p>P1 = P0 + a</p><br>
+                                                    <p>La población después de dos años, es la población después de un año más el aumento</p>
+                                                    <p>P2 = P1 + a</p>
+                                                    <p>sustituyendo la expresión encontrada previamente para P1 quedaría</p>
+                                                    <p>P2 = (P0 + a) + a       o bien,</p>
+                                                    <p>P2 = P0 + 2a</p>
+                                                    <p><b>*La población después de dos años es ----------------------------------- P2 = P0 + 2a</b></p><br>
+                                                    <p>Si se observa la relación anterior se puede percibir que el número 2 que interviene, es el número de años después del año de la población inicial.</p><br>
+                                                    <p>La población después de tres años sería la población después de dos años más el aumento.</p>
+                                                    <p>P3 = P2 + a sustituyendo la expresión encontrada para P2 quedaría</p>
+                                                    <p>P3 = (P0 + 2a) + a     o bien,</p>
+                                                    <p>P3 = P0 + 3a</p>
+                                                    <p><b>*La población después de tres años es ----------------------------------- P3 = P0 + 3a</b></p><br>
+                                                    <p>El número 3 que interviene, es el número de años después del año en que se tiene la población inicial. Así, si se quiere obtener la población después de cuatro años, esta sería:</p>
+                                                    <p>P4 = P0 + 4a </p>
+                                                    <p><b>*La población después de cuatro años es ------------------------------ P4 = P0 + 4a</b></p><br>
+                                                    <p>Se puede continuar de esta manera el proceso hasta obtener la población después de t años, que sería:</p>
+                                                    <p>Pt = P0 + ta</p>
+                                                    <p><b>*La población después de t años es ---------------------------------- Pt = P0 + ta</b></p><br>
+                                                    <p><b>Podemos concluir entonces que en un modelo de Crecimiento Poblacional Simple, la población después de t años se obtiene con la siguiente ecuación:</b></p>
+                                                    <p><b>Pt = P0 + t*a</b></p>
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>P<sub>0</sub></b> población inicial o principal.</p>
+                                                    <p><b>t</b> número de años o períodos, a partir del año o período inicial.</p>
+                                                    <p><b>P<sub>t</sub></b> población después de t añós o períodos.</p>
+                                                    <p><b>a</b> incremento anual o incremento por período.</p>
+                                                    <p>El planteamiento anterior permite calcular el valor futuro del número de elementos de una población, cuando se conoce su valor inicial, su aumento anual y el número de años a transcurrir.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para Crecimiento Poblacional Simple</h3>
+                                                <div class="feed-body">
+                                                    <p><b>En  un modelo de Crecimiento Poblacional Simple, la población después de t años se obtiene con la siguiente ecuación:</b></p>
+                                                    <p><b>Pt = P0 + t*a</b></p>
+                                                    <p><b>en donde,</b></p>
+                                                    <p><b>P<sub>0</sub></b> población inicial o principal.</p>
+                                                    <p><b>t</b> número de años o períodos, a partir del año o período inicial.</p>
+                                                    <p><b>P<sub>t</sub></b> población después de t añós o períodos.</p>
+                                                    <p><b>a</b> incremento anual o incremento por período.</p>
+                                                    <p>El planteamiento anterior permite calcular el valor futuro del número de elementos de una población, cuando se conoce su valor inicial, su aumento anual y el número de años a transcurrir.</p>
+                                                    <p>El planteamiento anterior permite calcular el valor futuro del número de elementos de una población, cuando se conoce su valor inicial, su aumento anual y el número de años a transcurrir.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Estimación del número de libros que se venderán en cierto año</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Un libro de texto es editado anualmente. En el año 1998 se vendieron 45,000 ejemplares y sabemos que las ventas se incrementan en 450 ejemplares por año. ¿Cuántos libros se espera que se vendan en el año 2015?</b></p>
+                                                    <p>En este caso se extendió el número de años del 2003 al 2015. Utilizando la fórmula de Crecimiento Poblacional Simple Pt = P0 +  t*a  para resolver este problema, se tiene:</p>
+                                                    <p>Para calcular lo anterior, primero hay que encontrar el número de años que se está prediciendo hacia el futuro, que en este caso es 2015 – 1998 que viene a ser 17 años.</p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>P<sub>0</sub> = 45,000</p>
+                                                    <p>a = 450</p>
+                                                    <p>t = 17 años</p>
+                                                    <p>P<sub>17</sub> = ? se busca el número de libros después de 17 años.</p>
+                                                    <p><b>Solución:</b></p>
+                                                    <p><b>P<sub>t</sub> = P<sub>0</sub> + t*a</b>  aplicando la fórmula para 17 años queda la ecuación,</p>
+                                                    <p>P<sub>17</sub> = P0 + (17* 450)</p>
+                                                    <p>P<sub>17</sub> = 45,000 + 7,650</p>
+                                                    <p><b>P<sub>17</sub> = 52,650</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Un libro de texto es editado anualmente. En el año 1998 se vendieron 45,000 ejemplares y sabemos que las ventas se incrementan en 450 ejemplares por año. ¿Cuántos libros se espera que se vendan en el año 2003?</b></p>
+                                                    <p>El problema planteado anteriormente se puede resolver de una manera muy sencilla, ya que es posible determinar una ecuación fácilmente, que permita calcular el valor de la población en un futuro. Hay casos en donde el planteamiento del modelo no genera una ecuación sencilla de resolver, o bien situaciones en donde la complejidad del modelo es tal que ni siquiera permita obtener la ecuación final de un modelo planteado. En estos casos se tiene que recurrir a métodos computacionales para resolver el modelo que se está estudiando. Una herramienta que permite plantear modelos de manera sencilla es la denominada "hoja de cálculo". Excel es un producto de este tipo.</p>
+                                                    <p>El planteamiento en Excel del ejemplo anterior es el siguiente:</p>
+                                                    <p>En una celda, por ejemplo A2, se registra el incremento annual de población. Se escogen dos columnas cualquiera para registrar en una el año y en la otra el valor de la población para ese año.</p>
+                                                    <p>Por ejemplo, en la columna B se puede registrar el año y en la C la población. De esta manera el problema anterior se puede resolver haciendo B2 igual a 1998 y C2 igual a 45,000. la celda B3 se hace igual a la celda B2 más uno. La celda C3 se hace igual a la celda C2 más la celda absoluta A2. Es importante registrar A2 como absoluta para que cuando se haga la siguiente operación las relaciones futuras hagan siempre referencia a ésta. Lo último que resta es propagar laas celdas B3 y C3 hacia abajo hasta llegar al año 2015. Haciendo esto la tabla generada en Excel es la siguiente:</p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td></td>
+                                                                <th>Año</th>
+                                                                <th>Número de libros</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>450</td>
+                                                                <td>1998</td>
+                                                                <td>45,000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td></td>
+                                                                <td>1999</td>
+                                                                <td>45,450</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td></td>
+                                                                <td>2000</td>
+                                                                <td>45,900</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td></td>
+                                                                <td>2001</td>
+                                                                <td>46,350</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td></td>
+                                                                <td>2002</td>
+                                                                <td>46,800</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td></td>
+                                                                <td>2003</td>
+                                                                <td>47,250</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td></td>
+                                                                <td>2004</td>
+                                                                <td>47,700</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td></td>
+                                                                <td>2005</td>
+                                                                <td>48,150</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td></td>
+                                                                <td>2006</td>
+                                                                <td>48,600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11</td>
+                                                                <td></td>
+                                                                <td>2007</td>
+                                                                <td>49,050</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12</td>
+                                                                <td></td>
+                                                                <td>2008</td>
+                                                                <td>49,500</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13</td>
+                                                                <td></td>
+                                                                <td>2009</td>
+                                                                <td>49,950</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14</td>
+                                                                <td></td>
+                                                                <td>2010</td>
+                                                                <td>50,400</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15</td>
+                                                                <td></td>
+                                                                <td>2011</td>
+                                                                <td>50,850</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16</td>
+                                                                <td></td>
+                                                                <td>2012</td>
+                                                                <td>51,300</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>17</td>
+                                                                <td></td>
+                                                                <td>2013</td>
+                                                                <td>51,750</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>18</td>
+                                                                <td></td>
+                                                                <td>2014</td>
+                                                                <td>52,200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19</td>
+                                                                <td></td>
+                                                                <td>2015</td>
+                                                                <td>52,650</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>Específicamente las acciones que se usaron para generar la tabla anterior son las siguientes:</p>
+                                                    <p>En la celda A2 teclear <b>450</b></p>
+                                                    <p>En la celda B2 teclear <b>1998</b></p>
+                                                    <p>En la celda B3 teclear <b>= B2 + 1</b>             llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda C3 teclear <b>= C2 + $A$2</b>     llenar hacia abajo (Fill Down)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <div class="feed-body">
+                                                    <h3 class="feed-title">Estimación del tiraje de una revista.</h3>
+                                                    <h4 class="feed-subtitle">Práctica de autoevaluación 2</h4>
+                                                    <ol>
+                                                        <li>
+                                                            <p>En el año de 1997 cierta revista tuvo un tiraje de 3,750 ejemplares. Se sabe que el tiraje aumenta a razón de 250 ejemplares por año. ¿Cuántos ejemplares serán editados en el año 2005?</p>
+                                                            <ol type="a">
+                                                                <li>
+                                                                    <p>Construya un modelo matemático para encontrar el tiraje de la revista en los años 1998 y 1999.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Encuentre el tiraje de la revista para el año 2005, utilizando la fórmula de Crecimiento Poblacional Simple.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Utilice Excel para encontrar el tiraje en el año 2015.</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Suponiendo que el aumento anual en el tiraje no es de 250 sino de 300, encuentre el tiraje en el año 2010, utilizando un archivo de Excel.</p>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

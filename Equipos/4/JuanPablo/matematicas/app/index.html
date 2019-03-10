@@ -5,21 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
         <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="/app/assets/images/logo/favicon.png">
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
         <!-- plugins css -->
-        <link rel="stylesheet" href="/app/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
-        <link rel="stylesheet" href="/app/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
         <!-- page plugins css -->
         <!-- core css -->
-        <link href="/app/assets/css/ei-icon.css" rel="stylesheet">
-        <link href="/app/assets/css/themify-icons.css" rel="stylesheet">
-        <link href="/app/assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/app/assets/css/animate.min.css" rel="stylesheet">
-        <link href="/app/assets/css/app.css" rel="stylesheet">
-        <!-- <script src="/app/scripts.js"></script> -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
     </head>
-    <body class="header-info side-nav-dark">
+    <body class="header-primary side-nav-dark">
           <div class="app">
               <div class="layout">
                   <!-- Side Nav START -->
@@ -40,7 +40,7 @@
                               <ul class="nav-right">
                                   <li>
                                       <a href="#">
-                                          <img src="/app/assets/images/logo/tec-logo.png" height="30">
+                                          <img src="/assets/images/logo/tec-logo.png" height="45">
                                       </a>
                                   </li>
                               </ul>
@@ -51,6 +51,36 @@
                       <div class="main-content">
                           <div class="container-fluid">
                               <!-- Your content goes here -->
+
+                              <div class="quiz">
+                                  <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h1 class="feed-title"> Quiz </h1>
+                                                <form>
+                                                    <div class="pregunta_1">
+                                                        <h3> Pregunta 1</h3>
+                                                        <input type="radio" name="p1" value="v1"><label> Verdadero</label>
+                                                        <input type="radio" name="p1" value="f1"><label> Falso</label>
+                                                    </div>
+                                                    <div class="pregunta_2">
+                                                        <h3> Pregunta 2</h3>
+                                                        <input type="checkbox" name="p2"><label> Verdadero</label>
+                                                        <input type="checkbox" name="p2"><label> Verdadero</label>
+                                                        <input type="checkbox" name="p2"><label> Falso</label>
+                                                    </div>
+
+                                                    <div class="pregunta_3">
+                                                        <h3>Pregunta 3</h3>
+                                                        <input type="number" name="p3" value="num"><label> Num</label>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                  </div>
+                              </div>
+
                           </div>
                       </div>
                       <!-- Content Wrapper END -->
@@ -60,7 +90,7 @@
                               <div class="copyright">
                                   <span>Copyright © 2019.</span>
                                   <span class="go-right">
-                                      <a href="/app/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
                                   </span>
                               </div>
                           </div>
@@ -72,14 +102,14 @@
         </div>
         <!-- build:js assets/js/vendor.js -->
         <!-- plugins js -->
-        <script src="/app/assets/vendors/jquery/dist/jquery.min.js"></script>
-        <script src="/app/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-        <script src="/app/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="/app/assets/vendors/PACE/pace.min.js"></script>
-        <script src="/app/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <script>
             $(document).ready(function(){
-                $('#sideNav').load("/app/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
                     $('.dropdown').on('click','.dropdown-toggle',function(e){
                         e.preventDefault();
                         $(this).parent().children('.dropdown-menu').toggle();
@@ -91,7 +121,7 @@
         <!-- endbuild -->
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
-        <script src="/app/assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
     </body>
