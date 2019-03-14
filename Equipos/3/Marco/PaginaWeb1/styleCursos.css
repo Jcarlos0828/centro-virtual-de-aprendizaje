@@ -1,4 +1,14 @@
-h1 {
+/*h1 {
+	text-align: center;
+}
+*/
+
+p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#bienvenidaText {
 	text-align: center;
 }
 
@@ -90,4 +100,60 @@ a.button {
 
 #img1 {
 	
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  /*grid-template-columns: auto auto;*/
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  background-color: rgba(33, 149, 243, 0);
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  /*padding: 20px;
+  font-size: 30px;
+  text-align: center;*/
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color:#bbb;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel-buttons {
+  width: 100%;
+  color:#666;
+  bottom:1px;
+}
+.carousel-buttons > div {
+  padding:10px;
+  border:1px solid #666;
+}
+.carousel-buttons a {
+  color:#666;
+  display:block;
+  line-height:30px;
 }
