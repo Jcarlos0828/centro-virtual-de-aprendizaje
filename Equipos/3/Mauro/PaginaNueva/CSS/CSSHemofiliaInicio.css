@@ -8,10 +8,11 @@ h2{
 	text-align:right;
 }
 
+/*Para centrar la imagen principal*/
 .img_center{
   display: block;
-  max-width: 100%;
-  height: auto;
+  max-width: 750px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
