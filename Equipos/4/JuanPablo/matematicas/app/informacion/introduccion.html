@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                      <div class="main-content">
+                          <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="introduccion">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <div class="feed-body">
+                                                    <p>Estudiar una carrera en un sistema tradicional requiere de la presencia del alumno en el lugar establecido, a la hora indicada, para así poder tomar las clases correspondientes. Además, todos los alumnos tienen que avanzar al mismo ritmo. Esto ha provocado que mucha gente deje de estudiar ya que, por la responsabilidad de un trabajo o por otro tipo de actividades, no pueden contar con la flexibilidad de tiempo y espacio requeridas para cursar una carrera de esa manera.
+                                                    </p>
+                                                    <p>Los avances en la informática y las comunicaciones nos permiten romper con el esquema tradicional y brindar a las personas que terminaron sus estudios de preparatoria, la oportunidad de estudiar una carrera en línea. En este modelo de educación a distancia, el alumno avanza a su ritmo y puede hacerlo desde su casa u oficina.</p>
+                                                    <p>Las carreras se ofrecen en módulos y cada módulo es equivalente a dos cursos.
+                                                    <p>El módulo de Matemáticas Básicas corresponde al primer semestre y es común para todas las carreras.</p></p>
+                                                    <p>La base del desarrollo del módulo es el construir un modelo matemático para cada situación o caso, establecer la representación algebraica del modelo, y utilizar la hoja de cálculo Excel para solucionarlo.</p>
+                                                    <p>Se requiere tener conocimientos básicos de álgebra para poder resolver ecuaciones sencillas. El uso de Excel hace las matemáticas más accesibles para el alumno, ya que este puede resolver los problemas sin necesidad de entrar a la complejidad operativa de los cursos tradicionales.</p>
+                                                    <p>El módulo cuenta con varias tablas interactivas en cada tema. Éstas forman una parte muy importante del proceso de enseñanza-aprendizaje y facilitan mucho la comprensión y el análisis de los diferentes modelos matemáticos.</p>
+                                                    <p>Cada alumno tendrá asignado un instructor que tiene dos funciones: proporcionar el apoyo necesario por medio del tutoreo electrónico, y evaluar las actividades asignadas en el módulo. Es muy importante estar en comunicación con el instructor desde el inicio del mismo.</p>
+                                                    <p>Se estudiarán tres tipos de modelos a través de todo el módulo : Modelos de Crecimiento, Modelos Financieros y Modelos Administrativos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                      </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js/app.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>
