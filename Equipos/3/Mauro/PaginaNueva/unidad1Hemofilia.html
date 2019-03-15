@@ -107,132 +107,138 @@
                       <!-- Content Wrapper START -->
                       <div class="main-content">
                           <div class="container-fluid">
+                            <div class="card">
+                              <div class="card-block">
 
 
                               <!-- Your content goes here -->
-                            <div class="row">
-                              <div class="column">
-                                <h1>Características</h1>
-                                <hr>
+                                <div class="row">
+                                  <div class="column">
+                                    <h1>Características</h1>
+                                    <hr>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="column">
+                                     <button class="button" onclick="myFunction1()">¿Qué es la Hemofilia?</button>
+                                     <script>
+                                      function myFunction1() {
+                                      var x = document.getElementById('Hemofilia');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                     <div id ="Hemofilia" style="display: none">
+                                     	<p>La hemofilia es una enfermedad hereditaria caracterizada por la aparición de hemorragias internas y externas debido a la deficiencia total o parcial de una proteína coagulante denominada globulina antihemofílica (factor de coagulación). Cuando hay carencia o déficit de algún factor de coagulación, la sangre tarda más tiempo en formar el coágulo y, aunque llegue a formarse, no es consistente y no se forma un buen tapón para detener la hemorragia.</p>
+                                     </div>
+                                  </div>
+                                  <div class="column">
+                                  	<img id="Hemofilia" class="img_menu" alt="Foto de primeros auxilios" src="FOTOS HEMOFILIA/shutterstock_1141193291.jpg" style="width:350px;height:auto;">
+                                  </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                   <br>
+                                <div class="row">
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction2()">Hay dos variedades de hemofilia:</button>
+                                    <script>
+                                      function myFunction2() {
+                                      var x = document.getElementById('VariedadesHemofilia');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                     <div id="VariedadesHemofilia" style="display: none">
+                                       <ul>
+                                        <li style="font-size:20px;color:black">Hemofilia A: hay un déficit del factor VIII de coagulación.</li>
+                                        <li style="font-size:20px;color:black">Hemofilia B: hay un déficit del factor IX de coagulación.</li>
+                                      </ul>
+                                     </div>
+                                  </div>
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction3()">¿Cuál es más grave la Hemofilia A o B?</button>
+                                    <script>
+                                      function myFunction3() {
+                                      var x = document.getElementById('MasGrave');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                   <p id="MasGrave" style="display: none">La gravedad no depende del tipo de hemofilia sino del porcentaje de actividad del factor deficiente, ejemplo: se considera leve cuando hay mas de 5% de actividad del factor deficiente, moderada cuando hay 2 y 5 % y severa cuando hay menos del 2%.</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction4()">¿Cómo se hereda esta enfermedad?</button>
+                                    <script>
+                                      function myFunction4() {
+                                      var x = document.getElementById('Herencia');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                   <p id="Herencia" style="display: none">Se hereda ligada al cromosoma X, es decir que se transmite por la madre y la padecen los varones.</p>
+                                  </div>
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction5()">¿Siempre hay antecedentes familiares de esta enfermedad?</button>
+                                    <script>
+                                      function myFunction5() {
+                                      var x = document.getElementById('AntecedentesFamiliares');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                   <p id="AntecedentesFamiliares" style="display: none">Casi siempre pero en un 30% de los casos no los hay y esto se conoce como mutación de novo.</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction6()">¿Desde que edad se recomienda hacer las pruebas para descartar hemofilia cuando nace un varón con antecedentes familiares de hemofilia?</button>
+                                    <script>
+                                      function myFunction6() {
+                                      var x = document.getElementById('Pruebas');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                   <p id="Pruebas" style="display: none">Desde los 2 meses de edad</p>
+                                  </div>
+                                  <div class="column">
+                                   <button class="button" onclick="myFunction7()">¿Cual es la prueba de laboratorio que apoya el diagnóstico de hemofilia?</button>
+                                    <script>
+                                      function myFunction7() {
+                                      var x = document.getElementById('Laboratorio');
+                                      if (x.style.display == 'block') {
+                                        x.style.display = 'none';
+                                      } else {
+                                        x.style.display = 'block';
+                                      }
+                                      }
+                                     </script>
+                                   <p id="Laboratorio" style="display: none">El tiempo de tromboplastina parcial activo (TTPa) pero la confirmación se hace con la medición de factores VIII y IX.</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="column">
-                                 <button class="button" onclick="myFunction1()">¿Qué es la Hemofilia?</button>
-                                 <script>
-                                  function myFunction1() {
-                                  var x = document.getElementById('Hemofilia');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                                 <p id="Hemofilia" style="display: none">La hemofilia es una enfermedad hereditaria caracterizada por la aparición de hemorragias internas y externas debido a la deficiencia total o parcial de una proteína coagulante denominada globulina antihemofílica (factor de coagulación). Cuando hay carencia o déficit de algún factor de coagulación, la sangre tarda más tiempo en formar el coágulo y, aunque llegue a formarse, no es consistente y no se forma un buen tapón para detener la hemorragia.</p>
-                              </div>
-                            </div>
-                               <br>
-                            <div class="row">
-                              <div class="column">
-                               <button class="button" onclick="myFunction2()">Hay dos variedades de hemofilia:</button>
-                                <script>
-                                  function myFunction2() {
-                                  var x = document.getElementById('VariedadesHemofilia');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                                 <div id="VariedadesHemofilia" style="display: none">
-                                   <ul>
-                                    <li style="font-size:20px;color:black">Hemofilia A: hay un déficit del factor VIII de coagulación.</li>
-                                    <li style="font-size:20px;color:black">Hemofilia B: hay un déficit del factor IX de coagulación.</li>
-                                  </ul>
-                                 </div>
-                              </div>
-                              <div class="column">
-                               <button class="button" onclick="myFunction3()">¿Cuál es más grave la Hemofilia A o B?</button>
-                                <script>
-                                  function myFunction3() {
-                                  var x = document.getElementById('MasGrave');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                               <p id="MasGrave" style="display: none">La gravedad no depende del tipo de hemofilia sino del porcentaje de actividad del factor deficiente, ejemplo: se considera leve cuando hay mas de 5% de actividad del factor deficiente, moderada cuando hay 2 y 5 % y severa cuando hay menos del 2%.</p>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="column">
-                               <button class="button" onclick="myFunction4()">¿Cómo se hereda esta enfermedad?</button>
-                                <script>
-                                  function myFunction4() {
-                                  var x = document.getElementById('Herencia');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                               <p id="Herencia" style="display: none">Se hereda ligada al cromosoma X, es decir que se transmite por la madre y la padecen los varones.</p>
-                              </div>
-                              <div class="column">
-                               <button class="button" onclick="myFunction5()">¿Siempre hay antecedentes familiares de esta enfermedad?</button>
-                                <script>
-                                  function myFunction5() {
-                                  var x = document.getElementById('AntecedentesFamiliares');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                               <p id="AntecedentesFamiliares" style="display: none">Casi siempre pero en un 30% de los casos no los hay y esto se conoce como mutación de novo.</p>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="column">
-                               <button class="button" onclick="myFunction6()">¿Desde que edad se recomienda hacer las pruebas para descartar hemofilia cuando nace un varón con antecedentes familiares de hemofilia?</button>
-                                <script>
-                                  function myFunction6() {
-                                  var x = document.getElementById('Pruebas');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                               <p id="Pruebas" style="display: none">Desde los 2 meses de edad</p>
-                              </div>
-                              <div class="column">
-                               <button class="button" onclick="myFunction7()">¿Cual es la prueba de laboratorio que apoya el diagnóstico de hemofilia?</button>
-                                <script>
-                                  function myFunction7() {
-                                  var x = document.getElementById('Laboratorio');
-                                  if (x.style.display == 'block') {
-                                    x.style.display = 'none';
-                                  } else {
-                                    x.style.display = 'block';
-                                  }
-                                  }
-                                 </script>
-                               <p id="Laboratorio" style="display: none">El tiempo de tromboplastina parcial activo (TTPa) pero la confirmación se hace con la medición de factores VIII y IX.</p>
-                              </div>
-                            </div>
-
-
-                               
-
-
 
                           </div>
                       </div>
