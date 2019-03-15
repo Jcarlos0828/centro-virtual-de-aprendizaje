@@ -1,12 +1,15 @@
 html {
-	text-align: center;
-	font-size: 12px;
+	text-align: justify;
+	font-size: 13px;
 }
 
 p {
 	font-size: 1.25rem;
 }
 
+ul {
+	font-size: 1.25rem;
+}
 .column {
   float: left;
   width: 33.33%;
