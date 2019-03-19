@@ -1,0 +1,52 @@
+p{
+  text-align:left;
+  color:black;
+  font-size:18px;
+}
+
+h1{
+  text-align:center;
+  color: dodgerblue;
+  font-size:60px;
+}
+
+h2{
+  text-align:center;
+}
+
+h4{
+  text-align:center
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-img-top{
+  width: 250px;
+  height: 225px;
+  border-radius: 8px;
+}
+
+.card-img-top:hover{
+  box-shadow: 0 0 10px 1px rgba(0, 140, 186, 0.5);
+}
+
+.img_center{
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
