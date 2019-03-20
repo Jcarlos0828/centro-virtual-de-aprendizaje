@@ -3616,3 +3616,27 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 .list-label > li { height: 2px; width: 40px; background: #fafafa; border-radius: 50px; display: inline-block; margin-right: 5px; }
 
 .draggable-item { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+.txtNormal { font-family: "Century Gothic"; font-size: 14px; color: #333333 }
+.txtNegrita { color: #006090; font-weight: bold}
+.txtNormal2 { font-family: "Century Gothic"; font-size: 14px; color: ##006090 }
+
+.txtTitulo { font-family: "Century Gothic"; font-size: 18px; color: #006090; font-weight: bold; line-height: normal; word-spacing: normal}
+
+.txtNegrita2 { color: #FFCC00; font-weight: bold ; background-color: #006090}
+.txtSubtitulo { color: #FF9900; font-weight: bold }
+.txtBoton { color: #FFCC00; font-weight: bold ; background-color: #006090 ; font-family: "Century Gothic"; font-size: 16px}

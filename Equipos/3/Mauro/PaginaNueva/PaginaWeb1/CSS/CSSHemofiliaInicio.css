@@ -1,0 +1,59 @@
+h1{
+  text-align:center;
+  color:dodgerblue;
+  font-size:60px;
+}
+
+h2{
+	text-align:right;
+}
+
+/*Para centrar la imagen principal*/
+.img_center{
+  display: block;
+  max-width: 750px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.button {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  border-color: #91C4FE;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #91C4FE;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  display: table;
+  margin: 0 auto
+}
+.button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: #3498db;
+}
