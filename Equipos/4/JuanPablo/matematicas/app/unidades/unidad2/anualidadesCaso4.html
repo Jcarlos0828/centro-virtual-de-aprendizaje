@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Anualidades</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 4</h3>
+                                                <h3 class="feed-subtitle">Valor futuro de una anualidad ordinaria trimestral durante 7 años con una tasa de interés compuesto anualizada capitalizable cada trimestre.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Encontrar el valor futuro de una anualidad ordinaria de $6,500.00 trimestrales por 7 años con una tasa de interés anual del 10% capitalizable cada trimestre.</b></p>
+                                                    <p><b>¿Cuál es el valor futuro de la inversión? ¿Cuánto se invirtió? ¿Cuántos intereses se ganaron?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático en  Excel </h3>
+                                                <div class="feed-body">
+                                                    <p><b>Encontrar el valor futuro de una anualidad ordinaria de $6,500.00 trimestrales por 7 años con una tasa de interés anual del 10% capitalizable cada trimestre.</b></p>
+                                                    <p><b>¿Cuál es el valor futuro de la inversión? ¿Cuánto se invirtió? ¿Cuántos intereses se ganaron?</b></p>
+                                                    <p>Si la anualidad es durante 7 años y trimestralmente, el número de períodos es de 7 años por 4 trimestres que tiene cada año, dando un total de 28, además la tasa de interés para cada trimestre se obtiene dividiendo 10% entre 4 dando una tasa para cada período del 2.5%.</p>
+                                                    <p>En este caso se tienen 27 períodos por lo que se tendría que utilizar la fórmula 27 veces ó utilizar el modelo con Excel como en los casos anteriores:</p>
+
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+
+
+                                                    <p>En la celda	B1	teclear	2.5%</p>
+                                                    <p>En la celda	D3	teclear	6500   y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda	C3	teclear	= B3 * $B$1    y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda	E3 	teclear	= B3 + C3 + D3  y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda	B4	teclear	= E3        y llenar hacia abajo (Fill Down)</p>
+                                                    <p><b>El valor futuro de la anualidad es de $259,088.70. Utilizando también la tabla se puede obtener el total de intereses que es de $77,088.70 y el total de la inversión que es de $182,000.00.</b></p>
+
+                                                    <p>En seguida se muestra la gráfica de la anualidad a 28 días:</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula FV de Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Encontrar el valor futuro de una anualidad ordinaria de $6,500.00 trimestrales por 7 años con una tasa de interés anual del 10% capitalizable cada trimestre.</b></p>
+                                                    <p>En algunas ocasiones solo se desea saber cual es el valor futuro de la anualidad ó el valor presente para lo cual se pueden utilizar formulas que tiene Excel de una manera directa.</p>
+
+                                                    <p>Para calcular el valor futuro se puede utilizar la siguiente función en Excel:</p>
+
+                                                    <p>FV (rate, nper, pmt, pv, type)</p>
+                                                    <p>Rate ->    tasa de interés para cada período</p>
+                                                    <p>Nper ->   número de períodos</p>
+                                                    <p>Pmt ->     pago de la anualidad para cada período</p>
+                                                    <p>Pv ->       valor presente de la anualidad (se puede omitir)</p>
+                                                    <p>Type ->   es 0 si el pago de la anualidad es al final del período y 1, si es al principio del período</p>
+
+                                                    <p>Para este ejemplo los valores que se necesitan son:</p>
+                                                    <p>=FV (0.025, 28, 6500, ,0)    </p>
+                                                    <p>y la respuesta es $259,088.70, que es la misma que se obtuvo al utilizar la tabla.</p>
+
+                                                    <p>Otra forma para calcular el valor futuro es en Insert seleccionar Function , después Financial y seleccionar FV.</p>
+                                                    <p>Teclear en         Rate…….. 0.025</p>
+                                                    <p>Nper......... 28</p>
+                                                    <p>Pmt .......... 6500</p>
+                                                    <p>Pv.............                                no teclear nada</p>
+                                                    <p>Type......... 0</p>
+
+                                                    <p><b>El valor futuro de la inversión de $259,088.70 pesos.</b></p>
+
+                                                    <p><b>Al utilizar la fórmula sólo se obtiene el valor futuro de la anualidad pero no los intereses o la cantidad que se invirtió durante todos los períodos, así que dependiendo de la información que se necesita obtener se utiliza cualquiera de los dos métodos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 4</h3>
+                                                <div class="feed-body">
+                                                    <p>Sergio y Laura se acaban de casar y piensan ahorrar para comprar un terreno dentro 5 años con una anualidad de $20,000.00 al final de cada semestre. La tasa de interés de la inversión es de 16% capitalizable cada semestre.</p>
+                                                    <ol>
+                                                        <li>¿Cuál es el valor futuro de la anualidad? ¿Cuánto van a recibir de intereses?. Resolver el problema utilizando el modelo con Excel.</li>
+                                                        <li>¿Cuál es el valor presente de la anualidad?</li>
+                                                        <li>¿Cuánto tienen que ahorrar para tener $400,000.00 pesos dentro de 5 años?. Resolverlo por tanteo utilizando la tabla del paso 1.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

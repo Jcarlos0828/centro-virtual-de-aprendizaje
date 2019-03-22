@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Estimación de ventas</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 1</h3>
+                                                <h3 class="feed-subtitle">Ventas de una empresa fabricante de equipo de cómputo.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 1</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>En la parte superior izquierda de la Tabla Interactiva, fueron vaciados los datos del Caso 1: unidades iniciales (500), año inicial (1), año final (5), crecimiento anual (150) y precio (1000). Mueva los valores de estos parámetros y observe los cambios que se generan en el valor de las ventas ( tabla situada en la parte superior a la derecha) y en la gráfica.</li>
+                                                        <li>Suponiendo que se modifica el contrato con la institución educativa y que el incremento anual es ahora de 350 unidades, alimente este nuevo valor en la tabla interactiva y observe el cambio en las ventas. Note especialmente los valores de ventas en el lado izquierdo de la gráfica. (Ventas en el año 5 = 1,900,000).</li>
+                                                        <li>Si el valor del crecimiento anual disminuyera a 50 unidades anuales, cambie este dato en la tabla interactiva y observe el cambio en las ventas. (Ventas en el año 5  = 700,000).</li>
+                                                        <li>Oprima el botón de valores iniciales.  Ahora suponga que el precio cambia y toma un valor igual a 500 dólares.  Alimente este valor y observe la gráfica. (Ventas en el año 5  = 450000).</li>
+                                                        <li>Oprima el botón de valores iniciales.  Cambie el año final a 15 y observe el comportamiento de los datos. (Ventas en el año 15 = 1,900,000). Note que al incluir más puntos en la gráfica se puede observar con mayor detalle el comportamiento de las ventas.</li>
+                                                        <li>Efectúe cambios en el crecimiento anual, año final e incluso en el valor de las unidades iniciales y observe los efectos que dichos cambios tienen en las ventas tanto en la tabla como en la gráfica.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución para 3 años utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                    <p>Para calcular las ventas en un cierto año, se multiplica el número de unidades vendidas por el precio de la unidad (1,000 dólares).</p>
+                                                    <p>El número de unidades vendidas en cierto año, es igual al número de unidades vendidas el año anterior más 100. Como se puede observar el número de unidades vendidas guarda el comportamiento de un Crecimiento Poblacional Simple, ya que aumenta el mismo número (100) cada año.</p>
+                                                    <p><b>Primer año.</b></p>
+                                                    <p>Las ventas del primer año se calculan multiplicando el número de unidades vendidas (500) por el precio por unidad (1,000 dólares).</p>
+                                                    <p>Ventas del primer año = 500 x 1,000</p>
+                                                    <p>Ventas del primer año = 500,000</p>
+                                                    <p><b>Las ventas del primer año son de 500,000 dólares.</b></p>
+
+                                                    <p><b>Segundo año.</b></p>
+                                                    <p>Para encontrar las ventas del segundo año, primero hay que calcular el número de unidades vendidas en este año.</p>
+                                                    <p>El número de unidades vendidas en el segundo año, es el número de unidades vendidas en el primer año (500) más 100.</p>
+                                                    <p>Número de unidades vendidas en el segundo año = 500 + 100</p>
+                                                    <p><b>Número de unidades vendidas en el segundo año = 600</b></p>
+                                                    <p>Para calcular las ventas del segundo año se multiplica el número de unidades vendidas en el año (600) por el precio de la unidad (1,000 dólares).</p>
+                                                    <p>Ventas del segundo año = 600 x 1,000</p>
+                                                    <p><p></p>Ventas del segundo año = 600,<p>000</p>
+                                                    <p><b>Las ventas del segundo año son de 600,000 dólares.</b></p>
+
+                                                    <p><b>Tercer año.</b></p>
+                                                    <p>Para calcular las ventas del tercer año se necesita encontrar primero el número de unidades vendidas en el año.</p>
+                                                    <p>El número de unidades vendidas en el tercer año es igual al número de unidades vendidas en el año anterior (600), más 100.</p>
+                                                    <p>Número de unidades vendidas en el tercer año = 600 + 100</p>
+                                                    <p><b>Número de unidades vendidas en el tercer año = 700</b></p>
+                                                    <p>Las ventas del tercer año se calculan multiplicando el número de unidades vendidas en el año (700) por el precio por unidad (1,000 dólares).</p>
+                                                    <p>Ventas del tercer año = 700 x 1,000</p>
+                                                    <p>Ventas del tercer año = 700,000</p>
+                                                    <p><b>Las ventas del tercer año son de 700,000 dólares.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                    <p>Al plantear el modelo en Excel se genera la siguiente tabla:</p>
+
+                                                    <p>Las acciones que se tomaron para generar la tabla son las siguientes:</p>
+                                                    <p>En los renglones 1 al 3 vaciar la información de los datos del problema.</p>
+                                                    <p>En la celda    A6    teclear     =1</p>
+                                                    <p>En la celda    A7    teclear     =A6+1            y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda    B6    teclear     =B1</p>
+                                                    <p>En la celda    B7    teclear     =B6+$B$2      y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda    C6    teclear     =B6*$B$3     y llenar hacia abajo (FillDown)</p>
+                                                    <p>Las celdas B2 y B3, se registraron como absolutas. Así al cambiar los datos del problema que se encuentran en estas celdas, se genera automáticamente una nueva tabla con la solución.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Elementos o variables que intervienen en el manejo de un modelo simple de ventas</h3>
+                                                <div class="feed-body">
+                                                    <p>El modelo matemático para este caso establece que para calcular las ventas en cualquier año, se multiplica el número de unidades vendidas en el año por el precio por unidad.</p>
+                                                    <p>El número de unidades vendidas es igual al número de unidades que se vendieron el año anterior más el aumento anual fijo.</p>
+
+                                                    <p>Se puede observar los siguientes elementos en la descripción del modelo matemático:</p>
+
+                                                    <p>n        período inicial</p>
+                                                    <p>Un      unidades vendidas en el período n</p>
+                                                    <p>t         período final</p>
+                                                    <p>Ut      unidades vendidas en el período t</p>
+                                                    <p>i          incremento anual del número de unidades vendidas</p>
+                                                    <p>P        precio por unidad</p>
+                                                    <p>Vt      ingreso por ventas en el período t</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo con los elementos</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                    <p>El modelo matemático para este caso establece que para calcular las ventas en cualquier año t (Vt), se multiplica el número de unidades vendidas en el año ( Ut) por el precio por unidad (P).</p>
+                                                    <p>Vt = Ut x P</p>
+                                                    <p>El número de unidades vendidas en el año t ( Ut) es igual al número de unidades que se vendieron el año anterior ( Ut-1) más el aumento anual en este número ( i ).</p>
+                                                    <p>Ut = Ut-1 + i</p>
+
+                                                    <p>Las ecuaciones Vt = Ut x P y Ut = Ut-1 + i , determinan la representación algebraica del modelo matemático del segundo año en adelante.</p>
+
+                                                    <p><b>Primer año.</b></p>
+                                                    <p>Las ventas del primer año son el producto de multiplicar el número de unidades vendidas en el año (500) por el precio de la unidad (1,000 dólares).</p>
+                                                    <p>V1 = U1 x P</p>
+                                                    <p>V1 = 500 x 1,000</p>
+                                                    <p>V1 =500,000</p>
+                                                    <p><b>Las ventas del primer año son de 500,000 dólares.</b></p>
+
+                                                    <p><b>Segundo año.</b></p>
+                                                    <p>Para obtener las ventas del segundo año hay que calcular primero el número de unidades vendidas en el año (U2). Este número es igual a las unidades vendidas el año anterior (U1= 500) más el aumento (i=100). U2 = U1 + i al sustituir los valores de U1 y de i, se tiene</p>
+                                                    <p>U2 = 500 + 100</p>
+                                                    <p>U2 = 600</p>
+                                                    <p><b>El número de unidades vendidas en el segundo año es de 600.</b></p>
+
+                                                    <p>Las ventas del segundo año se obtienen multiplicando el número de unidades vendidas en el año (U2 = 600) por el precio de la unidad (P = 1000).</p>
+                                                    <p>V2 = U2 x P sustituyendo los valores de U2 y de P se lega a la ecuación,</p>
+                                                    <p>V2 = 600 x 1,000</p>
+                                                    <p>V2 = 600,000</p>
+                                                    <p><b>Las ventas del segundo año son de 600,000 dólares.</b></p>
+
+                                                    <p><b>Tercer año.</b></p>
+                                                    <p>El número de unidades vendidas en el tercer año (U3) es igual a las vendidas el año anterior (U2= 600) más el aumento anual ( i =100)</p>
+                                                    <p>U3 = U2 + i , sustituyendo los valores de U2 e i se tiene la ecuación,</p>
+                                                    <p>U3 = 600 + 100</p>
+                                                    <p>U3 = 700</p>
+                                                    <p><b>El número de unidades vendidas en el tercer año es de 700.</b></p>
+
+                                                    <p>Las ventas del tercer año( V3), son el producto de multiplicar el número de unidades vendidas en el año (U3 = 700) por el precio de la unidad (P = 1,000).</p>
+                                                    <p>V3 = U3 x P sustituyendo los valores de U3 y de P se llega a la ecuación,</p>
+                                                    <p>V3 = 700 x 1,000</p>
+                                                    <p>V3 = 700,000</p>
+                                                    <p><b>Las ventas del tercer año so de 700,000 dólares.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Representación algebraica del modelo simple de ventas</h3>
+                                                <div class="feed-body">
+                                                    <p>El modelo matemático para este caso establece que para calcular las ventas en cualquier año t (Vt), se multiplica el número de unidades vendidas en el año ( Ut) por el precio por unidad (P).</p>
+                                                    <p>Vt = Ut x P            para t = 1,2,3,…….</p>
+                                                    <p>El número de unidades vendidas en el año t ( Ut) es igual al número de unidades que se vendieron el año anterior ( Ut-1) más el aumento anual en este número ( i ).</p>
+                                                    <p>Ut = Ut-1 + i           para t = 2,3,4,……….</p>
+
+                                                    <p>Las ecuaciones Vt = Ut x P y Ut = Ut-1 + i , determinan la representación algebraica del modelo matemático.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de fórmula para ventas con crecimiento simple</h3>
+                                                <div class="feed-body">
+                                                    <p>En la deducción de la fórmula se utilizarán las ecuaciones de la representación algebraica del modelo simple para ventas.</p> 
+                                                    <p>Vt = Ut x P y Ut = Ut-1 + i</p>
+
+                                                    <p><b>Primer año.</b></p>
+                                                    <p>Aplicando la ecuación de ventas Vt = Ut x P de la representación algebraica del modelo, para t = 1, se llega a la expresión:</p>
+                                                    <p>V1 = U1 x P</p>
+                                                    <p><b>Las ventas del primer año son ………………………………. V1 = U1 x P</b></p>
+
+                                                    <p><b>Segundo año.</b></p>
+                                                    <p>Para calcular las ventas del segundo año (V2), primero se obtiene el número de unidades vendidas en el año(U2).</p>
+                                                    <p>De acuerdo a la ecuación Ut = Ut-1 + i, de la representación algebraica, aplicada para t = 2 se tiene:</p>
+                                                    <p>U2 = U1 + i esta ecuación representa el número de unidades vendidas en el segundo año.</p>
+                                                    <p>Las ventas del segundo año de acuerdo a la ecuación Vt = Ut x P serían:</p>
+                                                    <p>V2 = U2 x P sustituyendo U2 por el valor encontrado en la ecuación anterior, se tiene</p>
+                                                    <p>V2 = (U1 + i )P</p>
+                                                    <p><b>Las ventas del segundo año son…………………………… V2 = (U1 + i )P</b></p>
+
+                                                    <p><b>Tercer año.</b></p>
+                                                    <p>El número de unidades vendidas en el tercer año, de acuerdo a la ecuación Ut = Ut-1 + i, aplicada para t =3 son:</p>
+                                                    <p>U3 = U2 + i se tiene del segundo año que U2 = U1 + i , sustituyendo se llega a </p>
+                                                    <p>U3 = U1 + i + i</p>
+                                                    <p>U3 = U1 + 2 i</p>
+                                                    <p>Las ventas del tercer año se calculan con la ecuación Vt = Ut x P de la representación algebraica del modelo, aplicándola para t = 3.</p>
+                                                    <p>V3 = U3 x P sustituyendo U3 por el valor obtenido en la ecuación anterior se tiene,</p>
+                                                    <p>V3 = (U1 + 2 i)P</p>
+                                                    <p><b>Las ventas en el tercer año son …………………………... V3 = (U1 + 2 i)P</b></p>
+
+                                                    <p>Observando en la deducción la relación que existe entre el coeficiente de i y el año de las ventas, se puede concluir que las ventas en cualquier año t son:</p>
+                                                    <p>Vt = [U1 + (t – 1 ) i] P</p>
+                                                    <p>Las ventas en el año t son ………………………………… Vt = [U1 + (t – 1 ) i] P</p>
+
+                                                    <p>El 1 en la fórmula representa el año en que empiezan las ventas. Con mucha frecuencia se trabaja en ventas con períodos de tiempo diferentes al anual, como mensual, bimestral, diario, etc. En estos casos si las ventas empiezan, por ejemplo, en el mes de marzo (mes 3), por comodidad operacional para los reportes anuales, no se empieza en el período 1 sino en el 3 que corresponde al tercer mes del año. Sustituyendo el 1 por el 3 en la fórmula queda la ecuación Vt = [U3 + (t – 3 ) i] P . Esta fórmula nos da las ventas en cualquier período t cuando el período inicial es 3.</p>
+
+                                                    <p>Podemos generalizar la fórmula para cualquier período de tiempo y se tendría:</p>
+                                                    <p>Las ventas en cualquier período t están dadas por la fórmula Vt = [Un + (t – n ) i] P</p>
+                                                    <p>en donde n es el período inicial. Es muy importante observar que t es mayor que n, puesto que n marca el período de inicio de las ventas.</p>
+
+                                                    <p>Entonces, cuando se tiene un crecimiento simple en ventas, las ventas en cualquier período t  (Vt), están dadas por la fórmula:</p>
+
+                                                    <p><b>Vt = [Un + (t-n)i] P</b></p>
+
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>n es el período inicial.</b></p>
+                                                    <p><b>Un es el número de unidades vendidas en el período n.</b></p>
+                                                    <p><b>t es el período final.</b></p>
+                                                    <p><b>i es el incremento anual de ventas en unidades.</b></p>
+                                                    <p><b>P es el precio por unidad.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para ventas con crecimiento simple</h3>
+                                                <div class="feed-body">
+                                                    <p>Cuando se tiene un crecimiento simple en   ventas, las ventas en cualquier período t  (Vt), están dadas por la fórmula:</p>
+                                                    <p><b>Vt = [Un + (t-n)i] P</b></p>
+
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>n es el período inicial.</b></p>
+                                                    <p><b>Un es el número de unidades vendidas en el período n.</b></p>
+                                                    <p><b>t es el período final.</b></p>
+                                                    <p><b>i es el incremento anual de ventas en unidades.</b></p>
+                                                    <p><b>P es el precio por unidad.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmula para obtener ventas con crecimiento simple</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                    <p><b>Solución para encontrar las ventas del 5to. año</b></p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>U1 = 500 unidades</p>
+                                                    <p>i = 100 unidades</p>
+                                                    <p>t = 5 años</p>
+                                                    <p>n = 1</p>
+                                                    <p>P = $1000 dólares por unidad</p>
+                                                    <p>V5 = ¿? se desean conocer las ventas en dólares para el año 5</p>
+
+                                                    <p><b>Solución:</b></p>
+                                                    <p>De acuerdo a la fórmula Vt = [Un + (t-n)i] P aplicada para 5 años con período inicial 1, se tiene la ecuación:</p>
+                                                    <p>V5 = [U1 + (5-1)i] P</p>
+                                                    <p>V5 = [500 + (4)100] 1000</p>
+                                                    <p>V5 = [500 + 400] 1000</p>
+                                                    <p>V5 = [900] 1000</p>
+                                                    <p>V5 = 900,000</p>
+                                                    <p><b>Las ventas del 5to. año ascienden a  $900,000 dólares.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmula en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Compuquick dedicada a la fabricación y venta de equipo de cómputo firmó un contrato de venta a cinco años con una institución educativa. En el contrato, Compuquick se compromete a vender 500 computadoras el primer año y a incrementar este número en 100 unidades anualmente. El precio de venta pactado es de $1000 dólares por computadora. Calcule las ventas anuales para los siguientes 5 años.</b></p>
+                                                    <p>Utilizando la fórmula Vt = [Un + (t-n)i] P, se genera la siguiente tabla:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son:</p>
+                                                    <p>En los renglones del 1 al 5 vaciar las información de los datos del caso.</p>
+                                                    <p>En la celda    B6    teclear    =(B1+(B4-B5)*B2)*B3</p>
+                                                    <p>Se puede fácilmente cambiar los datos del problema y obtener el saldo en forma automática.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

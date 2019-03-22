@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Interés Compuesto con tasa cambiante</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 2</h3>
+                                                <h3 class="feed-subtitle">Pagos de un préstamo a 1 año con interés compuesto con tasa cambiante cada mes y pagos mensuales.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Ricardo necesita pedir un préstamo de $100,000.00 para su negocio, en el banco le dijeron que sólo se los pueden prestar con tasa variable y a un plazo de 12 meses. La tasa de interés actual es de 26% anual.</b></p>
+                                                    <p><b>¿Cuánto tendría que pagar mensualmente, considerando que la tasa de interés pudiera aumentar algunos meses durante el año?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución en Excel con tasa fija utilizando el modelo matemático y el instrumento  Goal Seek</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Ricardo necesita pedir un préstamo de $100,000.00 para su negocio, en el banco le dijeron que sólo se los pueden prestar con tasa variable y a un plazo de 12 meses. La tasa de interés actual es de 26% anual.</b></p>
+                                                    <p><b>¿Cuánto tendría que pagar mensualmente, considerando que la tasa de interés pudiera aumentar algunos meses durante el año?</b></p>
+                                                    <p>En un préstamo cuando se efectuan pagos cada período, una parte de ese pago van a ser los intereses y el resto se va a pagar a capital. Lo que se paga a capital se llama amortización.</p>
+                                                    <p>Primero se van a calcular los pagos si la tasa de interés es fija, se va a resolver el caso utilizando el modelo matemático en Excel y el instrumento Goal Seek, quedando la tabla de la siguiente forma:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En la celda   B2   teclear   100000</p>
+                                                    <p>En la celda   C2   teclear   26%                     y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   D2   teclear   = B2 * C2 / 12      y llenar hacia abajo ( Fill Down)</p>
+                                                    <p>En la celda   E2   teclear   = F2 - D2               y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   B3   teclear   = B2 - E2          y llenar hacia abajo hasta B14 (Fill Down)</p>
+                                                    <p>En la celda   F3   teclear   = F2                       y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   D14 teclear   = SUM (D2:D13)</p>
+                                                    <p>Otra forma para calcular la suma de varias celdas es en Insert seleccionar Function y después</p>
+                                                    <p>SUM.</p>
+                                                    <p>Teclear en         Number1…….. D2:D13</p>
+
+                                                    <p>En la celda   D14 teclear   = SUM (F2:F13)</p>
+                                                    <p>Otra forma para calcular la suma de varias celdas es en Insert seleccionar Function y después</p>
+                                                    <p>SUM.</p>
+                                                    <p>Teclear en         Number1…….. F2:F13</p>
+
+                                                    <p>En el menú Tools - Goal Seek</p>
+                                                    <p>Teclear en la opción Set Cell - B14</p>
+                                                    <p>Teclear en la opción To Value - 0</p>
+                                                    <p>Teclear en la opción By Changing Cell - F2</p>
+
+                                                    <p><b>En la tabla se puede ver que si la tasa fuera fija los intereses serían de $14,636.17 durante el año y el pago mensual sería de $9,553.01 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución en Excel con tasa cambiante utilizando el modelo matemático y el instrumento Goal Seek </h3>
+                                                <div class="feed-body">
+                                                    <p><b>Ricardo necesita pedir un préstamo de $100,000.00 para su negocio, en el banco le dijeron que sólo se los pueden prestar con tasa variable y a un plazo de 12 meses. La tasa de interés actual es de 26% anual.</b></p>
+                                                    <p><b>¿Cuánto tendría que pagar mensualmente, considerando que la tasa de interés pudiera aumentar algunos meses durante el año?</b></p>
+                                                    <p>Utilizando la tabla anterior se va a analizar que pasa si la tasa de interés se va incrementando durante los períodos del préstamo. La tasa puede aumentar cada mes, lo cuál se va a incluir en la columna de la tasa de interés para cada celda. Después se va a utilizar de nuevo el instrumento Goal Seek para obtener los pagos que se tienen que hacer cada mes.</p>
+                                                    <p>Para el primer mes la tasa es la que se proporcionó en el banco del 26% por lo tanto, el pago mensual será de $9,553.01:</p>
+                                                    <p>En el segundo pago se puede suponer que la tasa va a aumentar al 27.5% así que se recalculan los 11 pagos restantes para el capital de $92,613.65 para ver cuanto corresponde pagar el siguiente mes:</p>
+                                                    <p>Por lo tanto el segundo pago sería de $9,620.77 y el capital insoluto es de $85,115.29.</p>
+                                                    <p>Para ir calculando lo que corresponde a cada mes, se toma la última tasa para todos los períodos restantes y se utiliza el Goal Seek para recalcular los pagos de manera que al final del préstamo el saldo sea 0.</p>
+                                                    <p>Así se puede ir recalculando el pago dependiendo de la tasa de interés, pudiendo quedar los pagos de la siguiente manera:</p>
+                                                    <p>En la tabla se puede observar que si la tasa de interés aumenta hasta el 35%, el pago mensual aumentaría de $9553.01 hasta $9,809.17 pagando un total de intereses de $16,583.22. Obviamente que si la tasa de interés llegará a bajar, el pago mensual sería mas bajo al igual que los interese que se tengan que pagar.</p>
+                                                    <p>Siempre que se invierta o se pida un préstamo a tasa variable se está corriendo un riesgo ya que se desconoce como se va a comportar la tasa de interés durante el período de la transacción, se pueden tomar en cuenta factores como las tasas en los periodos anteriores, la estabilidad del país ó también si va a haber elecciones de presidente, ya que en los últimos sexenios después de un cambio de presidente han ocurrido devaluaciones del peso y aumento en las tasas de interés.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

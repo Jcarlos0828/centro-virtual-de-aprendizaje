@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Estimación de ventas</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 2</h3>
+                                                <h3 class="feed-subtitle">Ventas de una empresa de servicios de internet.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Se conoce que el número de usuarios de Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>En la parte superior izquierda de la Tabla Interactiva, fueron vaciados los datos del Caso 2: unidades iniciales (1346), mes inicial (6), mes final (12), tasa de crecimiento (35%) y precio (250). Mueva los valores de estos parámetros y observe los cambios que se generan en el valor de las ventas ( tabla situada en la parte superior a la derecha) y en la gráfica.</li>
+                                                        <li>Suponiendo que se hace una campaña de mercadotecnia que tiene éxito y que por ello la tasa de crecimiento es ahora de 50%, alimente este nuevo valor en la tabla interactiva y observe el cambio en las ventas. Note especialmente los valores de ventas en el lado izquierdo de la gráfica. (Ventas en el mes 12 = 3,832,945).</li>
+                                                        <li>Si el valor de la tasa de crecimiento disminuyera a 10%, cambie este dato en la tabla interactiva y observe el cambio en las ventas. (Ventas en el mes 12  = 596,130).</li>
+                                                        <li>Oprima el botón de valores iniciales.  Ahora suponga que el precio cambia y toma un valor igual a 300 dólares.  Alimente este valor y observe la gráfica. (Ventas en el mes 12  = 2,444,381).</li>
+                                                        <li>Oprima el botón de valores iniciales.  Cambie el mes final a 20 y observe el comportamiento de los datos. (Ventas en el mes 20 = 22,472,833). Note que al incluir más puntos en la gráfica se puede observar con mayor detalle el comportamiento de las ventas.</li>
+                                                        <li>Efectúe cambios en la tasa de crecimiento, año final e incluso en el valor de las unidades iniciales y observe los efectos que dichos cambios tienen en las ventas tanto en la tabla como en la gráfica.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución para 4 meses utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Se conoce que el número de usuarios de Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                    <p>El modelo matemático para este caso establece que las ventas en cualquier mes se pueden obtener multiplicando el número de usuarios por el pago mensual por usuario (250 pesos).</p>
+                                                    <p>El número de usuarios en cualquier año t (Ut) es igual al número de usuarios del mes anterior (Ut-1) mas el incremento de usuarios en el mes. El incremento en el número de usuarios es el producto de multiplicar el número de usuarios del mes anterior(Ut-1) por la tasa de crecimiento expresada en decimales(r = 0.35).</p>
+
+                                                    <p>Como se puede observar el incremento en el número de usuarios, guarda el comportamiento de un Crecimiento Compuesto. La representación algebraica de un modelo de Crecimiento Poblacional Compuesto es Pt = Pt-1+ Pt-1* r o bien, sacando Pt-1 de factor común Pt = Pt-1(1 + r).</p>
+
+                                                    <p>La representación algebraica del modelo de Crecimiento Compuesto para encontrar el número de usuarios en cualquier período t puede ser escrita de la siguiente manera. </p>
+                                                    <p>Ut = Ut-1+ Ut-1* r o bien,</p>
+                                                    <p>Ut = Ut-1(1 + r).</p>
+
+                                                    <p><b>Mes de junio.</b></p>
+                                                    <p>Para encontrar las ventas del mes de junio se multiplica el número de usuarios del mes (1346) por la renta mensual que paga cada usuario (250 pesos).</p>
+                                                    <p>Ventas de junio = 1,346 x 250</p>
+                                                    <p>Ventas de junio = 336,500 pesos</p>
+                                                    <p><b>Las ventas del mes de junio son de 336,500 pesos</b></p>
+
+                                                    <p><b>Mes de julio.</b></p>
+                                                    <p>Para calcular las ventas del mes de julio primero se tiene que encontrar el número de usuarios del mes. Para hacerlo se puede utilizar la representación algebraica del modelo de Crecimiento Compuesto </p>
+                                                    <p>Ut = Ut-1+ Ut-1* r o bien, Ut = Ut-1(1 + r), que aplicada al mes de julio queda:</p>
+                                                    <p>Ujulio = Ujunio(1 + r)             Ujunio = 1346 y r = 0.35  sustituyendo estos valores se</p> tiene que,</p>
+                                                    <p>Ujulio = 1346( 1 + 0.35)</p>
+                                                    <p>Ujulio = 1346(1.35)</p>
+                                                    <p>Ujulio =1817</p>
+                                                    <p>En el mes de julio hay 1,817 usuarios.</p>
+                                                    <p>Las ventas del mes son el producto de multiplicar el número de usuarios del mes (1,817)por el pago mensual por usuario (250 pesos).</p>
+                                                    <p>Ventas de julio = 1,817 x 250</p>
+                                                    <p>Ventas de julio = 454,250 </p>
+                                                    <p><b>Las ventas del mes de julio son de 454,250 pesos.</b></p>
+
+                                                    <p><b>Mes de agosto.</b></p>
+                                                    <p>Para encontrar el número de usuarios del mes se utiliza la representación algebraica de un Crecimiento Compuesto Ut = Ut-1(1 + r), aplicada al mes de agosto.</p>
+                                                    <p>Uagosto = Ujulio(1 + r)              Ujulio= 1,817 y r = 0.35 sustituyendo estos valores queda la ecuación</p>
+                                                    <p>Uagosto = 1,817 ( 1 + 0.35 )</p>
+                                                    <p>Uagosto =1,817 (1.35)</p>
+                                                    <p>Uagosto = 2,453</p>
+                                                    <p><b>El número de usuarios en el mes de agosto es de 2,453.</b></p>
+                                                    <p>Para encontrar las ventas del mes se multiplica el número de usuarios del mes (2,4539por la renta mensual por usuario (250).</p>
+                                                    <p>Ventas de agosto = 2,453 x 250</p>
+                                                    <p>Ventas de agosto = 613, 250 </p>
+                                                    <p><b>Las ventas del mes de agosto son de 613,250 pesos.</b></p>
+
+                                                    <p><b>Mes de septiembre.</b></p>
+                                                    <p>El número de usuarios del mes de septiembre se obtiene utilizando la representación algebraica de Crecimiento Compuesto Ut = Ut-1(1 + r), aplicada al mes de septiembre.</p>
+                                                    <p>Usep. = Uagosto(1 + r)                  Uagosto = 2,453 y r 0 0.35 sustituyendo estos valores se tiene,</p>
+                                                    <p>Usep. = 2,453 ( 1 + 0.35 )</p>
+                                                    <p>Usep. = 2,453 ( 1.35 )</p>
+                                                    <p>Usep. = 3,312</p>
+                                                    <p>El número de usuarios del servicio en el mes de septiembre es de 3,312.</p>
+                                                    <p>Las ventas del mes son el producto de multiplicar el número de usuarios del mes(3,312) por el precio del servicio por usuario (250 pesos).</p>
+                                                    <p>Ventas de septiembre = 3,312 x 250</p>
+                                                    <p>Ventas de septiembre = 828,000 </p>
+                                                    <p><b>Las ventas del mes de septiembre son de 828,000 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Se conoce que el número de usuarios de Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                    <p>Utilizando en Excel la representación algebraica del modelo de Crecimiento Compuesto Ut = Ut-1(1 + r), y el hecho de que para encontrar las ventas del mes se multiplica el número de usuarios del mes por la renta mensual por usuario, se puede generar la siguiente tabla:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En los renglones 1 al 4 vaciar la información de los datos del problema.</p>
+                                                    <p>En la celda A6    teclear    =B4</p>
+                                                    <p>En la celda A7    teclear    =A6+1       y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda B6    teclear    =B1</p>
+                                                    <p>En la celda B7    teclear    = B6*(1+$B$3)     y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda C6    teclear    =ROUND(B6,0)*$B$2        y llenar hacia abajo (Fill Down)</p>
+
+                                                    <p>Es importante observar que al tener el signo % en una celda, Excel la cambia en forma automática a decimales para hacer operaciones.</p>
+                                                    <p>Las celdas B3 y B2 son registradas como celdas absolutas.</p>
+                                                    <p>Se usa la función ROUND para que el número de usuarios sea un entero. Esta función puede ser tecleada o bien :</p>
+                                                    <p>Seleccionar en  Insert,  Function y escoger la categoría Math&Trig. Seleccionar ROUND y aparece un recuadro,</p>
+                                                    <p>teclear en         Number…………B6</p>
+                                                    <p>y en                 Num-digits……... 0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Elementos o variables que intervienen en el manejo de ventas con crecimiento compuesto</h3>
+                                                <div class="feed-body">
+                                                    <p>El modelo de crecimiento compuesto en las ventas establece que el número de unidades vendidas, o en este caso el de usuarios de un servicio, es igual al número de usuarios del período anterior más el incremento del mes. El incremento se calcula multiplicando el número de usuarios del mes anterior por un porcentaje de incremento en decimales. Finalmente las ventas se calculan multiplicando el número de usuarios por el precio de la renta por usuario.</p>
+
+                                                    <p>Se pueden observar los siguientes elementos en la descripción del modelo matemático:</p>
+                                                    <p>n       período inicial</p>
+                                                    <p>Un     número de usuarios en el período inicial n</p>
+                                                    <p>r        tasa de crecimiento en el número de usuarios por período (en decimales)</p>
+                                                    <p>t        período t</p>
+                                                    <p>it       incremento de usuarios en el período t</p>
+                                                    <p>Ut     número de usuarios en el período t</p>
+                                                    <p>Ut-1   número de usuarios en el período t-1</p>
+                                                    <p>P       precio de renta por usuario (o por unidad)</p>
+                                                    <p>Vt     ventas en el período t</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo con los elementos</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La empresa Conectix, que es proveedora de servicios de internet, conoce que el número de usuarios que contratan sus servicios se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                    <p>De acuerdo al modelo matemático, las ventas en cierto período t (Vt), son el producto de multiplicar el número de usuarios del período (Ut) por el precio de la renta por usuario(P). El incremento en el número de usuarios guarda el comportamiento de un Crecimiento Compuesto, por lo tanto, para encontrar el número de usuarios en cierto período t (Ut), se utiliza la representación algebraica del modelo de Crecimiento Compuesto Ut = Ut-1+ Ut-1* r o bien, Ut = Ut-1(1 + r).</p>
+
+                                                    <p><b>Mes de junio.</b></p>
+                                                    <p>Las ventas en el mes de junio (V6) son el producto de multiplicar el número de usuarios del mes (U6 = 1,346), multiplicado por el precio de la renta por usuario (P = 250 pesos).</p>
+                                                    <p>V6 = U6 x P                 sustituyendo los valores de U6 y de P se llega a la ecuación,</p>
+                                                    <p>V6 = 1,346 x 250</p>
+                                                    <p>V6 = 336,500</p>
+                                                    <p><b>Las ventas del mes de junio ascienden a 336,500 pesos.</b></p>
+
+                                                    <p><b>Mes de julio.</b></p>
+                                                    <p>Para obtener las ventas del mes de julio primero hay que encontrar el número de usuarios del mes (Ut). Para hacerlo se utiliza la ecuación:</p>
+                                                    <p>Ut = Ut-1(1 + r)         aplicando la ecuación al mes 7 se tiene</p>
+                                                    <p>U7 = U6(1 + r)          al sustituir los valores de U6 = 1,346 y de r = 0.35 se llega a </p>
+                                                    <p>U7 = 1,346(1+0.35)</p>
+                                                    <p>U7 = 1,346(1.35)</p>
+                                                    <p>U7 = 1,817</p>
+                                                    <p>En el mes de julio hay 1,817 usuarios del servicio.</p>
+                                                    <p>Para obtener las ventas del mes de julio (V7) se multiplica el número de usuarios del mes (U7 = 1,817) por la renta mensual por usuario(P = 250 pesos).</p>
+                                                    <p>V7 = U7 x P                    sustituyendo los valores de U7 y de P se llega a la ecuación,</p>
+                                                    <p>V7 = 1,817 x 250</p>
+                                                    <p>V7 = 454,250</p>
+                                                    <p><b>Las ventas del mes de julio ascienden a 454,250 pesos.</b></p>
+
+                                                    <p><b>Mes de agosto.</b></p>
+                                                    <p>El número de usuarios para agosto se obtiene con la ecuación Ut = Ut-1(1 + r) aplicada para el octavo período.</p>
+                                                    <p>U8 = U7(1 + r)             U7 = 1,817 y r = 0.35 al sustituir estos valores queda la ecuación,</p>
+                                                    <p>U8 = 1,817 ( 1+ 0.35 )</p>
+                                                    <p>U8 = 1,817(1.35)</p>
+                                                    <p>U8 = 2,453</p>
+                                                    <p>El número de usuarios en el mes de agosto es de 2,453.</p>
+                                                    <p>Las ventas del mes son el producto de multiplicar el número de usuarios del mes (U8 = 2,453) por la renta mensual del servicio por usuario (P = 250 pesos).</p>
+                                                    <p>V8 = U8 x P             sustituyendo U8 y P por sus respectivos valores se llega a la ecuación,</p>
+                                                    <p>V8 = 2,453 x 250</p>
+                                                    <p>V8 =613,250</p>
+                                                    <p><b>Las ventas del mes de agosto ascienden a 613,250 pesos.</b></p>
+
+                                                    <p><b>Mes de septiembre.</b></p>
+                                                    <p>El número de usuarios del mes de septiembre se calcula con la ecuación:</p>
+                                                    <p>U9 = U8(1 + r)         sustituyendo los valores de U8 = 2,453 y r =0.35 queda,</p>
+                                                    <p>U9 = 2,453 ( 1 + 0.35)</p>
+                                                    <p>U9 = 2,453(1.35)</p>
+                                                    <p>U9 = 3,312</p>
+                                                    <p>El número de usuarios en el mes de septiembre es de 3,312.</p>
+                                                    <p>Las ventas del mes se calculan multiplicando los usuarios del mes (U9 = 3,312) por la renta mensual por usuario (P = 250 pesos).</p>
+                                                    <p>V9 = U9 x P</p>
+                                                    <p>V9 = 3,312 x 250</p>
+                                                    <p>V9 = 828,000</p>
+                                                    <p><b>Las ventas correspondientes al mes de septiembre ascienden a 828,000 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Representación algebraica del modelo compuesto de ventas</h3>
+                                                <div class="feed-body">
+                                                    <p>De acuerdo al modelo las ventas en cualquier período t (Vt) se calculan multiplicando el número de usuarios del período (Ut) por la renta mensual por usuario(P).</p>
+                                                    <p>Vt = Ut x P</p>
+
+                                                    <p>El número de usuarios por período, esta dado como un Crecimiento Compuesto y su representación algebraica es Ut = Ut-1(1 + r).</p>
+
+                                                    <p><b>El sistema de ecuaciones </b></p>
+                                                    <p><b>Vt = Ut x P t =1,2,3……</b></p>
+                                                    <p><b>Ut = Ut-1(1 + r) t = 2,3,4,…….</b></p>
+                                                    <p><b>determinan la representación algebraica del modelo compuesto de ventas.</b></p>
+
+                                                    <p>Si el período inicial es n, los valores de t serían de n en adelante.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de fórmula para las ventas con crecimiento compuesto</h3>
+                                                <div class="feed-body">
+                                                    <p>Las ventas en cualquier período t (Vt) se calculan multiplicando el número de usuarios del período(Ut) por la renta que cada usuario paga en el período (P). </p>
+                                                    <p>Vt = Ut x P t =1,2,3……</p>
+                                                    <p><b>Las ventas en cualquier período t están dadas por……………………Vt = Ut x P</b></p>
+
+                                                    <p>Para encontrar el número de usuarios en cualquier período t (Ut) se puede utilizar la fórmula</p>
+                                                    <p>Pt = P0( 1 + r )t, ya que el incremento en usuarios sigue el comportamiento de un Crecimiento Compuesto.</p>
+                                                    <p>La fórmula hay que adaptarla al caso de usuarios (unidades), al sustituir la P por U queda la ecuación </p>
+                                                    <p>Ut = U0( 1 + r )t. El período inicial en el número de usuarios no es 0 sino 1 o n. Si el período es 1 la fórmula quedaría:</p>
+                                                    <p>Ut = U1( 1 + r )t-1 , Si el período inicial es tomado como n , se sustituye la n en el lugar del 1 y queda la fórmula Ut = Un( 1 + r )t-n.</p>
+                                                    <p>La fórmula Ut = Un( 1 + r )t-n es la más general ya que se puede aplicar para cualquier período inicial de 1 en adelante.</p>
+                                                    <p><b>El número de usuarios en cualquier período t esta dado por …… Ut = Un( 1 + r )t-n</b></p>
+
+                                                    <p>Se tiene que las ventas en cualquier período t se obtienen con la fórmula Vt = Ut x P en donde</p>
+                                                    <p>Ut = Un( 1 + r )t-n, sustituyendo el valor de Ut de la segunda ecuación en la primera se llega a la expresión:</p>
+                                                    <p>Vt = Un( 1 + r )t-n x P</p>
+
+                                                    <p><b>Se puede concluir entonces que la fórmula para encontrar las ventas en cualquier período t cuando se tiene un Crecimiento Compuesto es:</b></p>
+
+                                                    <p><b>Vt = Un( 1 + r )t-n x P<b></p>
+
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>n      es el período inicial.</b></p>
+                                                    <p><b>Un    es el número de unidades (usuarios) vendidas en el período inicial n.</b></p>
+                                                    <p><b>t       es el período del que se desean saber las ventas (t > n).</b></p>
+                                                    <p><b>r       tasa de crecimiento del número de unidades (usarios) vendidas.</b></p>
+                                                    <p><b>P      precio por unidad(usuario).</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para las ventas con crecimiento compuesto</h3>
+                                                <div class="feed-body">
+                                                    <p>La fórmula para encontrar las ventas en cualquier período t cuando se tiene un Crecimiento Compuesto es:</p>
+                                                    <p><b>Vt = Un( 1 + r )t-n x P<b></p>
+
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>n      es el período inicial.</b></p>
+                                                    <p><b>Un    es el número de unidades (usuarios) vendidas en el período inicial n.</b></p>
+                                                    <p><b>t       es el período del que se desean saber las ventas (t > n).</b></p>
+                                                    <p><b>r       tasa de crecimiento del número de unidades (usarios) vendidas.</b></p>
+                                                    <p><b>P      precio por unidad(usuario).</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmula para obtener las ventas con crecimiento compuesto</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Se conoce que el número de usuarios de Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>U6 = 1346 usuarios</p>
+                                                    <p>r =    0.35 incremento mensual de usuarios</p>
+                                                    <p>P = $250 pesos mensuales por usuario</p>
+                                                    <p>n = 6</p>
+                                                    <p>t = 12</p>
+                                                    <p>V12 = ¿? se desean conocer las ventas en pesos para diciembre</p>
+
+                                                    <p><b>Solución:</b></p>
+                                                    <p>De acuerdo a la fórmula Vt = Un(1 + r)(t-n) P aplicada para t =12 se tiene:</p>
+                                                    <p>V12 = U6 (1 + r)(12 - 6) P</p>
+                                                    <p>V12 = 1346(1 + 0.35)(6) (250)</p>
+                                                    <p>V12 = 1346 (1.35)6 (250)</p>
+                                                    <p>V12 = 1346 (6.05)(250)</p>
+                                                    <p>V12 = (8148)(250)</p>
+                                                    <p>V12 = 2,037,000</p>
+                                                    <p><b>Las ventas para diciembre son de $2,037,000 dólares.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmula en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Se conoce que el número de usuarios de Conectix, una empresa proveedora de servicios de internet, se incrementa en un 35% mensual. La renta mensual que paga cada usuario por el servicio es de $250 pesos. Si en junio de 1999 se tenían 1346 usuarios, ¿cuáles serán los ingresos por ventas que se tendrán en diciembre de 1999?</b></p>
+                                                    <p>Utilizando la fórmula, Vt = Un(1 + r)(t-n) P, se genera la siguiente tabla:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son:</p>
+                                                    <p>En los renglones del 1 al 5 vaciar las información de los datos del Caso.</p>
+                                                    <p>En la celda   B7    teclear    =ROUND(B1*(1+B3)^(B5-B4),0)*B2</p>
+                                                    <p>Para elevar a una potencia se utilizó el símbolo ^.</p>
+                                                    <p>Otra manera de elevar a una potencia es:</p>
+                                                    <p>En la celda   B7    teclear    =ROUND(B1*POWER((1+B3),(B5-B4)),0)*B2</p>
+                                                    <p>También se puede elevar a una potencia al utilizar: Insert seleccionar Function y Math&Trig de la lista seleccionar POWER.</p>
+                                                    <p>Teclear en Number…….. 1+B3</p>
+                                                    <p>y en Power……….B5-B4</p>
+                                                    <p>Se usó la función de ROUND para evitar tener un número de usuarios fraccional.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

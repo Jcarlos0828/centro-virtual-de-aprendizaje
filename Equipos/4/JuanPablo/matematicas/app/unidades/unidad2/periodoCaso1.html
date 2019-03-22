@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Interés compuesto con pago en cada período</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 1</h3>
+                                                <h3 class="feed-subtitle">Tiempo que se necesita para ahorrar cierta cantidad de dinero.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Dávila necesita juntar $90,000.00 para cambiar su carro. Tiene ahorrado $30,000.00 y puede ahorrar $5,000.00 mensuales en una inversión que da una tasa de interés del 15% anual capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto tiempo necesita para reunir la cantidad deseada?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 1</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>En la parte superior izquierda de la Tabla Interactiva se tienen los datos del Caso 1: saldo inicial (30,000), período inicial (0), período final (5), tasa mensual (1.25) y pago fijo (5,000). Cambie el período final hasta que el saldo sea mayor o igual a $90,000.00. ¿Cuántos meses se necesitan para reunir los $90,000.00?. (El número de período es 11. Se necesitan 11 meses para reunir la cantidad deseada)</li>
+                                                        <li>Si la Sra. Dávila puede ahorrar $6,000.00 mensuales, ¿cuántos meses necesitaría para ahorrar los $90,000.00?. (En 9 meses tendría $90,329.00 pesos)</li>
+                                                        <li>Seleccione el botón de Valores Iniciales. (Se vuelven a tener los valores iniciales del caso)</li>
+                                                        <li>Cambie la tasa de interés a 22% anual, dando una tasa del 1.8333% mensual, ¿cuántos meses se necesitarían para ahorrar los $90,000.00?. (En 10 meses tendría $90,309.94 pesos)</li>
+                                                        <li>Cambie la tasa de interés a 18% anual, dando una tasa del 1.5% mensual y cambie el pago fijo a $5,500.00 pesos, ¿cuántos meses se necesitarían para ahorrar los $90,000.00?. (En 9 meses tendría $90,701.76 pesos)</li>
+                                                        <li>Seleccione el botón de Valores Iniciales. (Se vuelven a tener los valores iniciales del caso)</li>
+                                                        <li>Si la Sra. Dávila decide comprar otro carro y necesita tener $130,000.00, ¿cuántos meses necesitaría para ahorrarlos?. (En 17 meses tendría $131,109.41 pesos.)</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Dávila necesita juntar $90,000.00 para cambiar su carro. Tiene ahorrado $30,000.00 y puede ahorrar $5,000.00 mensuales en una inversión que da una tasa de interés del 15% anual capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto tiempo necesita para reunir la cantidad deseada?</b></p>
+                                                    <p>En esta unidad se utiliza el modelo de interés compuesto, la única diferencia es que cada período se va a efectuar un pago que se tiene que agregar al saldo. El saldo para cada período va a ser igual al saldo del período anterior más los intereses del período más el pago que se efectua en dicho período. Se va a ir calculando el saldo para cada mes hasta que el saldo sea mayor o igual a $90,000.00 pesos.</p>
+
+                                                    <p><b>Primer mes.</b></p>
+                                                    <p>El saldo para el primer mes va a ser igual al saldo anterior $30,000.00 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 30,000.00 * 0.0125</p>
+                                                    <p>interés del mes = 375.00 pesos</p>
+                                                    <p>El total para el siguiente mes es de $30,000.00 más $375.00 de interés más los $5,000.00 que va a ahorrar la Sra.</p>
+                                                    <p>saldo para el primer mes = 30,000.00 + 375.00 + 5,000.00</p>
+                                                    <p>saldo para el primer mes = 35,375.00</p>
+                                                    <p><b>El saldo después de un mes va a ser de $35,375.00 pesos.</b></p>
+
+                                                    <p><b>Segundo mes.</b></p>
+                                                    <p>El saldo para el segundo mes va a ser igual al saldo anterior $35,375.00 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 35,375.00 * 0.0125</p>
+                                                    <p>interés del mes = 442.19.00 pesos</p>
+                                                    <p>El total para el siguiente mes es de $35,375.00 más $442.19 de interés más los $5,000.00 que va a ahorrar la Sra.</p>
+                                                    <p>saldo para el segundo mes = 35,375.00 + 442.19 + 5,000.00</p>
+                                                    <p>saldo para el segundo mes = 40,817.19</p>
+                                                    <p><b>El saldo después de dos meses va a ser de $40,817.19 pesos.</b></p>
+
+                                                    <p><b>Tercer mes.</b></p>
+                                                    <p>El saldo para el tercer mes va a ser igual al saldo anterior $40,817.19 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 40,817.19 * 0.0125 = 510.21</p>
+                                                    <p>saldo tercer mes = 40,817.19 + 510.21 + 5,000.00</p>
+                                                    <p>saldo tercer mes = 46,327.40</p>
+                                                    <p><b>El saldo después de tres meses va a ser de $46,327.40 pesos.</b></p>
+
+                                                    <p><b>Cuarto mes.</b></p>
+                                                    <p>El saldo para el cuarto mes va a ser igual al saldo anterior $46,327.40 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 46,327.40 * 0.0125 = 579.09</p>
+                                                    <p>saldo cuarto mes = 46,327.40 + 579.09 + 5,000.00</p>
+                                                    <p>saldo cuarto mes = 51,906.49</p>
+                                                    <p><b>El saldo después de cuatro meses va a ser de $51,906.49 pesos.</b></p>
+
+                                                    <p><b>Quinto mes.</b></p>
+                                                    <p>El saldo para el quinto mes va a ser igual al saldo anterior $51,906.49 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 51,906.49 * 0.0125 = 648.83</p>
+                                                    <p>saldo quinto mes = 51,906.49 + 648.83 + 5,000.00</p>
+                                                    <p>saldo quinto mes = 57,555.32</p>
+                                                    <p><b>El saldo después de cinco meses va a ser de $57,555.32 pesos.</b></p>
+
+                                                    <p><b>Sexto mes.</b></p>
+                                                    <p>El saldo para el sexto mes va a ser igual al saldo anterior $57,555.32 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 57,555.32 * 0.0125 = 719.44</p>
+                                                    <p>saldo sexto mes = 57,555.32 + 719.44 + 5,000.00</p>
+                                                    <p>saldo sexto mes = 63,274.76</p>
+                                                    <p><b>El saldo después de seis meses va a ser de $63,274.76 pesos.</b></p>
+
+                                                    <p><b>Séptimo mes.</b></p>
+                                                    <p>El saldo para el séptimo mes va a ser igual al saldo anterior $63,274.76 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 63,274.76 * 0.0125 = 790.93</p>
+                                                    <p>saldo séptimo mes = 63,274.76 + 790.93 + 5,000.00</p>
+                                                    <p>saldo séptimo mes = 69,065.69</p>
+                                                    <p><b>El saldo después de siete meses va a ser de $69,065.69 pesos.</b></p>
+
+                                                    <p><b>Octavo mes.</b></p>
+                                                    <p>El saldo para el octavo mes va a ser igual al saldo anterior $69,065.69 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 69,065.69 * 0.0125 = 863.32</p>
+                                                    <p>saldo octavo mes = 69,065.69 + 863.32 + 5,000.00</p>
+                                                    <p>saldo octavo mes = 74,929.01</p>
+                                                    <p><b>El saldo después de ocho meses va a ser de $74,929.01 pesos.</b></p>
+
+                                                    <p><b>Noveno mes.</b></p>
+                                                    <p>El saldo para el noveno mes va a ser igual al saldo anterior $74,929.01 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 74,929.01 * 0.0125 = 936.61</p>
+                                                    <p>saldo noveno mes = 74,929.01 + 939.61 + 5,000.00</p>
+                                                    <p>saldo noveno mes = 80,865.62</p>
+                                                    <p><b>El saldo después de nueve meses va a ser de $80,865.62 pesos.</b></p>
+
+                                                    <p><b>Décimo mes.</b></p>
+                                                    <p>El saldo para el décimo mes va a ser igual al saldo anterior $80,865.62 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 80,865.62 * 0.0125 = 1,010.82</p>
+                                                    <p>saldo décimo mes = 80,865.62 + 1,010.82 + 5,000.00</p>
+                                                    <p>saldo décimo mes = 86,876.44</p>
+                                                    <p><b>El saldo después de diez meses va a ser de $86,876.44 pesos.</b></p>
+
+                                                    <p><b>Onceavo mes.</b></p>
+                                                    <p>El saldo para el onceavo mes va a ser igual al saldo anterior $86,876.44 más los intereses del mes más el pago que se efectua cada período. </p>
+                                                    <p>interés del mes = 86,876.44 * 0.0125 = 1,085.96</p>
+                                                    <p>saldo onceavo mes = 86,876.44 + 1,085.96 + 5,000.00</p>
+                                                    <p>saldo onceavo mes = 92,962.40</p>
+                                                    <p><b>El saldo después de once meses va a ser de $92,962.44 pesos.</b></p>
+
+                                                    <p><b>La Sra. Dávila necesita seguir ahorrando durante 11 meses para tener $92,962.40 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la representación algebraica del modelo en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Dávila necesita juntar $90,000.00 para cambiar su carro. Tiene ahorrado $30,000.00 y puede ahorrar $5,000.00 mensuales en una inversión que da una tasa de interés del 15% anual capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto tiempo necesita para reunir la cantidad deseada?</b></p>
+                                                    <p>Para utilizar los elementos matemáticos que se definieron, se tiene que incluir el ahorro mensual que se va a estar haciendo, de manera que a la representación algebraica de interés compuesto St = St-1 +   St-1 * i se tiene que agregar lo que la Sra. Dávila va a ahorrar cada mes, que viene a ser el pago mensual (P) que está haciendo a su inversión, quedando la representación algebraicade la siguiente forma:</p>
+                                                    <p><b>St = St-1 +   St-1 * i + P</b></p>
+                                                    <p>Utilizando Excel se puede hacer una tabla utilizando la representación algebraica del modelo para facilmente encontrar el número de períodos que necesita la Sra. Dávila para ahorrar los $90,000.00:</p>
+
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En la celda   B1   teclear   15%</p>
+                                                    <p>En la celda   B2   teclear   =B1/12</p>
+                                                    <p>En la celda   D4   teclear   30000</p>
+                                                    <p>En la celda   B5   teclear   =D4 * $B$2         y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   C5   teclear   5000                      y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   D5   teclear   =D4 + B5 + C5    y llenar hacia abajo (Fill Down)</p>
+
+                                                    <p>Para ver cuantos períodos se necesitan para tener los $90,000.00, se va haciendo Fill Down hasta que el saldo sea mayor o igual a dicha cantidad, en este caso se requieren 11 períodos para tener la cantidad que se desea. Una ventaja de utilizar Excel es que si la Sra. Dávila encuentra otro banco donde la tasa sea mejor, solo tiene que modificar la celda con la tasa de interés anual y buscar en la tabla para encontrar el número de períodos que se necesitan para obtener la cantidad deseada.</p>
+
+                                                    <p><b>El número de meses que la Sra. Dávila necesita para ahorrar $90,000.00 son 11 y su saldo sería de $92,962.41 pesos.</b></p>
+                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>
