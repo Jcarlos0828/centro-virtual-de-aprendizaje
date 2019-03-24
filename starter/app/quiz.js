@@ -3,6 +3,7 @@ $('input[name="pregunta_1"][type="button"]').on('click', function(event){
     if (respuesta === "incorrect"){
         alert('Respuesta incorrecta');
     }
+    event.preventDefault();
 });
 
 $('input[name="pregunta_2"][type="button"]').on('click', function(event){
@@ -14,6 +15,7 @@ $('input[name="pregunta_2"][type="button"]').on('click', function(event){
     }else if(res_cor !== correctas && res_cor > 0){
         alert('Existen más opciones');
     }
+    event.preventDefault();
 });
 
 $('input[name="pregunta_3"][type="button"]').on('click', function(event){
@@ -24,4 +26,5 @@ $('input[name="pregunta_3"][type="button"]').on('click', function(event){
     if (respuesta.toFixed(precision) !== respuestaCorrecta.toFixed(precision) && !isNaN(respuesta)){
         alert('Respuesta incorrecta');
     }
+    event.preventDefault();
 });
