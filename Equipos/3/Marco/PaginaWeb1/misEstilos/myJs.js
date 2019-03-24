@@ -11,3 +11,9 @@ $('#myCarousel').on('slide.bs.carousel', function (e) {
   $('.progress-bar').text("Step " + step);
   
 })
+
+// When the user clicks on div, open the popup
+function myPopOverFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

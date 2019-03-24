@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Control de inventarios</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 7</h3>
+                                                <h3 class="feed-subtitle">Estimar el lote económico óptimo para cierta compañía</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Cierta compañía pretende consumir 30,000 unidades anuales y cada año tiene un aumento en su consumo anual del 15%, el costo por pedido es de $5,500, el costo por tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que trabajan 240 días al año. ¿Cuál será el lote económico óptimo y el tiempo de pedido para los siguientes tres años?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Cierta compañía pretende consumir 30,000 unidades anuales y cada año tiene un aumento en su consumo anual del 15%, el costo por pedido es de $5,500, el costo por tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que trabajan 240 días al año. ¿Cuál será el lote económico óptimo y el tiempo de pedido para los siguientes tres años?</b></p>
+                                                    <p>LEO es el lote económico optimo que se tiene que pedir, es el tamaño de la orden que hace que se minimicen el costo total del pedido más el costo total por llevar inventario, a medida que se disminuye el tamaño del lote se disminuirá los costos de inventario y habrá un aumento en los costos del pedido de compra.</p>
+                                                    <p>Para encontrar este lote económico tenemos que multiplicar al consumo anual por dos y por el costo del pedido y dividirlo entre el costo por tener inventario, y sacarle raíz, como se ha mencionada este costo por tener inventario también lo podemos manejar algunas veces con una tasa de interés. Por otro lado también nos piden el tiempo de pedido, para resolver esto primero tenemos que calcular la cantidad optima a pedir después de esto hay que convertir el consumo anual a diario si es que queremos saberlo por día.</p>
+                                                    <p><b>Año 1:</b></p>
+                                                    <p>La compañía tiene un consumo anual (CAU) de 30,000 undiades, los cuales las multiplicamos por 2 y por el costo del pedido ($5,500) y lo dividimos entre el costo por tener inventario ($450) que tiene su tasa de interés (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico optimo para el primer año es:1663.51 y lo redondeamos a 1664 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido primero convertimos las 30,000 unidades anuales en días que sería 30,000/240 días y quedaría 125 diarias y ahora dividimos el lote ecónomico optimo entre las 125 unidades diarias, 1664/125=13.31 días, osea que aproximadamente cada 13 días es necesario hacer el pedido</p>
+
+                                                    <p><b>Año 2:</b></p>
+                                                    <p>La compañía tiene para el segundo año un aumento en su consumo anual del 15% por lo tanto el consumo para el segundo año (CAU) es 30,000*(1.15)=34,500 unidades los cuales las multiplicamos por 2 y por el costo del pedido ($5,500) y lo dividimos entre el costo por tener inventario ($450) que tiene su tasa de interés (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico optimo para el segundo año es:1783.92 y lo redondeamos a 1784 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido primero convertimos las 34,500 unidades anuales en días que sería 34,500/240 días y quedaría 143.75=144 diarias y ahora dividimos el lote ecónomico optimo entre las 144 unidades diarias, 1664/144=11.55 días, osea que aproximadamente cada 12 días es necesario hacer el pedido</p>
+
+                                                    <p><b>Año 3:</b></p>
+                                                    <p>La compañía tiene para el tercer año un aumento en su consumo anual del 15% por lo tanto el consumo para el tercer año (CAU) es 34,500*(1.15)=39,675 unidades los cuales las multiplicamos por 2 y por el costo del pedido ($5,500) y lo dividimos entre el costo por tener inventario ($450) que tiene su tasa de interés (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico optimo para el tercer año es:1913.04 y lo redondeamos a 1913 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido primero convertimos las 39,675 unidades anuales en días que sería 39,675/240 días y quedaría 165.31=166 diarias y ahora dividimos el lote ecónomico optimo entre las 166 unidades diarias, 1664/166=10.02 días, osea que aproximadamente cada 10 días es necesario hacer el pedido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Elementos o variables que intervienen en el lote económico óptimo</h3>
+                                                <div class="feed-body">
+                                                    <p>Para calcular el Lote económico óptimo debemos de conocer el costo del pedido, el consumo anual, el costo por inventario y en algunos casos su tasa.</p>
+
+                                                    <p>CPL    Costo del pedido</p>
+                                                    <p>CAU   Consumo anual de unidades</p>
+                                                    <p>CPI    Costo por tener inventario</p>
+                                                    <p>TCI    Tasa de interés por tener inventario </p>
+                                                    <p>TP      Tiempo del siguiente pedido</p>
+                                                    <p>LEO   Lote económico óptimo</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo con los elementos</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Cierta compañía pretende consumir 30,000 unidades anuales, el costo por pedido es de $5,500, el costo por tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que trabajan 240 días al año. ¿Cuál será el lote económico optimo y el tiempo de pedido?</b></p>
+                                                    <p><b>Año 1:</b></p>
+                                                    <p>La compañía tiene un consumo anual (CAU) de 30,000 unidades, los cuales las multiplicamos por 2 y por el costo del pedido CPL ($5,500) y lo dividimos entre el costo por tener inventario CPI ($450) que tiene su tasa de interés TCI (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico óptimo (LEO) para el primer año es:1663.51 y lo redondeamos a 1664 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido (TP) primero convertimos las 30,000 unidades anuales en días que sería 30,000/240 días y quedaría 125 diarias y ahora dividimos el lote ecónomico óptimo entre las 125 unidades diarias, 1664/125=13.31 días, osea que aproximadamente cada 13 días es necesario hacer el pedido</p>
+
+                                                    <p><b>Año 2:</b></p>
+                                                    <p>La compañía tiene para el segundo año un aumento en su consumo anual del 15% por lo tanto el consumo para el segundo año (CAU) es 30,000*(1.15)=34,500 unidades los cuales las multiplicamos por 2 y por el costo del pedido CPL ($5,500) y lo dividimos entre el costo por tener inventario CPI ($450) que tiene su tasa de interés TCI (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico óptimo (LEO) para el segundo año es:1783.92 y lo redondeamos a 1784 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido (TP) primero convertimos las 34,500 unidades anuales en días que sería 34,500/240 días y quedaría 143.75=144 diarias y ahora dividimos el lote ecónomico óptimo entre las 144 unidades diarias, 1664/144=11.55 días, osea que aproximadamente cada 12 días es necesario hacer el pedido</p>
+
+                                                    <p><b>Año 3:</b></p>
+                                                    <p>La compañía tiene para el tercer año un aumento en su consumo anual del 15% por lo tanto el consumo para el tercer año (CAU) es 34,500*(1.15)=39,675 unidades los cuales las multiplicamos por 2 y por el costo del pedido CPL ($5,500) y lo dividimos entre el costo por tener inventario CPI ($450) que tiene su tasa de interés TCI (26.5%) y le sacamos la raíz cuadrada.</p>
+                                                    <p><b>El lote ecónomico óptimo (LEO) para el tercer año es:1913.04 y lo redondeamos a 1913 unidades por pedir.</b></p>
+                                                    <p>Para calcular el tiempo del pedido (TP) primero convertimos las 39,675 unidades anuales en días que sería 39,675/240 días y quedaría 165.31=166 diarias y ahora dividimos el lote ecónomico óptimo entre las 166 unidades diarias, 1664/166=10.02 días, osea que aproximadamente cada 10 días es necesario hacer el pedido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Representación algebraica para el lote económico óptimo</h3>
+                                                <div class="feed-body">
+                                                    <p>De acuerdo al modelo matemático, el lote económico óptimo es la multiplicación del consumo anual por el costo por pedir por dos, entre la división del costo por tener inventario y a todo eso se le saca la raíz cuadrada.</p>
+
+                                                    <p>Esta ecuación viene siendo un despeje de la suma del costo por pedir más el costo por tener inventario osea del costo total.</p>
+                                                    <p>Al encontrar el lote económico óptimo encontrarmos el minimo número de pedidos que tienen que hacer a un menor costo.</p>
+
+                                                    <p><b>LEO= ((2*CAU*CPL)/(CPI*TCI))1/2</b></p>
+
+                                                    <p>Con el TP tiempo del siguiente pedido que es la división del Consumo anual (expresado en días) entre el lote económico óptimo.</p>
+
+                                                    <p><b>TP=CAU/LEO</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Deducción de la fórmula para encontrar el lote económico óptimo</h3>
+                                                <div class="feed-body">
+                                                    <p>Para hacer la deducción de la fórmula se utilizará la representación algebraica del lote económico óptimo:</p>
+                                                    <p>Se sabe que para sacar el costo total es la suma del costo por pedir más el costo por tener inventario.</p>
+
+                                                    <p><b>CT= CPL*(CAU/VCE) + (VCE/2)*CPI*(TPI)</b></p>
+                                                    <p>El mejor de los casos sería que el costo total fuera minimizado. Como el costo por pedir disminuye cuando el volumen de compra aumenta y ya que el costo por tener inventario aumenta si el volúmen de compra aumenta, entonces ambos costos se intersectan a un volúmen de compra óptimo. Para encontrar este volúmen es necesario igualar los dos costos. </p>
+
+                                                    <p><b>CPL*(CAU/VCE) = (VCE/2)*CPI*(TPI)</b></p>
+                                                    <p>De aqui despejamos el volumen de compra óptimo que por consiguiente sería el lote óptimo o volumen optimo a pedir puesto que los costos totales se intersectan. </p>
+
+                                                    <p>Multiplicamos todo por VCE y queda:</p>
+                                                    <p>VCE*[CPL*(CAU/VCE) = (VCE/2)*CPI*(TPI)]</p>
+                                                    <p>CPL*CAU = (VCE^2*CPI*TPI)/2</p>
+                                                    <p>Despejamos VCE</p>
+                                                    <p>VCE^2=2*[CPL*CAU]/CPI*TPI</p>
+                                                    <p>Le sacamos raíz para quitar el cuadrado y nos queda al final la expresión como:</p>
+
+                                                    <p>VCE=(2*[CPL*CAU]/(CPI*TPI))^(1/2)</p>
+                                                    <p>Pero por ser el lote económico óptimo y para diferenciarlo del volumen de compra lo llamaremos LEO (lote económico óptimo)</p>
+
+                                                    <p><b>LEO=(2*[CPL*CAU]/(CPI*TPI))^(1/2)</b></p>
+
+                                                    <p><b>Nota: En algunos casos lleva el TPI que anteriormente se explico que es una tasa del inventario pero no siempre se maneja.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para obtener el lote económico óptimo</h3>
+                                                <div class="feed-body">
+                                                    <p><b>LEO= ((2*CAU*CPL)/CUI)1/2</b></p>
+                                                    <p><b>donde,</b></p>
+                                                    <p><b>CPL     Costo del pedido</b></p>
+                                                    <p><b>CAU    Consumo anual de unidades</b></p>
+                                                    <p><b>CPI     Costo por tener inventario</b></p>
+                                                    <p><b>TCI     Tasa de interés por tener inventario</b></p>
+                                                    <p><b>LEO    Lote económico óptimo </b></p>
+                                                    <p><b>LEO= ((2*CAU*CPL)/(CPI*TCI))1/2</b></p>
+                                                    <p>Por otra parte tenemos el TP: tiempo del siguiente pedido</p>
+                                                    <p><b>Y su fórmula es: CAU/LEO</b></p>
+                                                    <p>Donde CAU, debe de estar expresado en días.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando fórmula para obtener el lote económico óptimo</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Cierta compañía pretende consumir 30,000 unidades anuales, el costo por pedido es de $5,500, el costo por tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que trabajan 240 días al año. ¿Cuál será el lote económico óptimo y el tiempo de pedido?</b></p>
+                                                    <p><b>Datos</b></p>
+                                                    <p>CAU:   30,000  anuales y aumenta un 15% anual</p>
+                                                    <p>CPL:    $5,500</p>
+                                                    <p>CPI:    $450</p>
+                                                    <p>TCI:     26.5%</p>
+
+                                                    <p>Aplicando la forma de LEO queda:</p>
+
+                                                    <p><b>Año 1:</b></p>
+                                                    <p>LEO  = ((2*CAU*CPL)/(CPI*TCI))1/2</p>
+                                                    <p>LEO  =((2*30,000*$5,500)/$450*(.265)= 1663.51 y redondeando 1664 es la cantidad óptima a pedir.</p>
+                                                    <p>TP     =1664/(30,000/240)= 13.31 días </p>
+
+                                                    <p><b>Año 2:</b></p>
+                                                    <p>LEO  = ((2*CAU*CPL)/(CPI*TCI))1/2</p>
+                                                    <p>LEO  =((2*34,500*$5,500)/$450*(.265)= 1783.91 y redondeando 1784 es la cantidad óptima a pedir.</p>
+                                                    <p>TP     =1664/(34,500/240)= 11.57 días </p>
+
+                                                    <p><b>Año 3:</b></p>
+                                                    <p>LEO  = ((2*CAU*CPL)/(CPI*TCI))1/2</p>
+                                                    <p>LEO  =((2*39,675*$5,500)/$450*(.265)= 1913.04 y redondeando 1913 es la cantidad óptima a pedir.</p>
+                                                    <p>TP     =1664/(39,675/240)= 10.02 días </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Cierta compañía pretende consumir 30,000 unidades anuales, el costo por pedido es de $5,500, el costo por tener inventario es de $450 y la tasa por llevar inventario es del 26.5%, se sabe que trabajan 240 días al año. ¿Cuál será el lote económico óptimo y el tiempo de pedido?</b></p>
+                                                    <p>Utilizando la fórmula LEO  = ((2*CAU*CPL)/(CPI*TCI))1/2 se genera la siguiente tabla.</p>
+                                                    <p>Las acciones que se utilizaron para generar la tabla fueron las siguientes:</p>
+                                                    <p>Del renglón 1 al 5 se vació la información de los datos del caso.</p>
+                                                    <p>En la celda   A8  teclear    =1</p>
+                                                    <p>En la celda   A9   teclear    =A8+1   y llenar hacia abajo</p>
+                                                    <p>En la celda   B8  teclear    =B1</p>
+                                                    <p>En la celda   B9  teclear    =B8*(1+$B$5)   y llenar hacia abajo</p>
+                                                    <p>En la celda   C8  teclear    =((2*B8*$B$2) / ($B$3*$B$4))^(1/2)   y llenar hacia abajo</p>
+                                                    <p>En la celda   D8  teclear    =C8/(B8/240)   y llenar hacia abajo</p>
+                                                    <p>Y con esto calculamos el volúmen de compra más económico</p>
+                                                    <p>y el tiempo del siguiente pedido</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 4</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>
+                                                            <p>Una empresa maneja 2 productos de los cuales consume anualmente 66,000 unidades, cada unjo tiene 2 diferentes proveedores, con los datos que se dan a continuación determine el LEO.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Cierta compañía tiene un volumen de compra de 6,700 unidades mensuales, si sabe que su consumo anual es de 80,400 unidades y su costo por pedir es de $350 y su inventario es el 15% de su consumo anula . Con un costo de $15 mensuales, encuentre el LEO y su tiempo de pedido, se sabe que trabajan 240 días al año?</p>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

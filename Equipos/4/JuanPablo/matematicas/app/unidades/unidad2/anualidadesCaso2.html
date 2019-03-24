@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Anualidades</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 2</h3>
+                                                <h3 class="feed-subtitle">Valor futuro de una anualidad anticipada a 4 años con una tasa de interés compuesto anualizada capitalizable cada año.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>¿Cuál es el valor futuro de una anualidad anticipada de $15,000.00 por año, durante 4 años con una tasa de interés compuesto de 8% capitalizable cada año?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>¿Cuál es el valor futuro de una anualidad anticipada de $15,000.00 por año, durante 4 años con una tasa de interés compuesto de 8% capitalizable cada año?</b></p>
+
+                                                    <p>En este caso la anualidad es anticipada, la diferencia es que el   pago se va a hacer al principio de cada período en lugar del final, por lo tanto el primer año se van a tener intereses del  primer pago que se realize.</p>
+
+                                                    <p>Los intereses para cada período van a ser del saldo anterior más el pago que se efectúa a principios del período.</p> 
+
+                                                    <p><b>Primer año.</b></p>
+                                                    <p>En el primer año el saldo anterior es de 0, pero el pago de $15,000.00 se realiza a principios del período.</p>
+                                                    <p>saldo inicial =  0.00</p>
+                                                    <p>pago del año = 15,000.00</p>
+                                                    <p>intereses del primer año = (saldo anterior + pago del año) * i</p>
+                                                    <p>intereses del primer año = (0 + 15,000.00) * 0.08 </p>
+                                                    <p>intereses del primer año = 1,200.00</p>
+                                                    <p>El saldo para el primer año va a ser igual al saldo anterior más el pago del año más los intereses del primer año:</p>
+                                                    <p>saldo primer año = saldo anterior + pago del año + intereses</p>
+                                                    <p>saldo primer año = 0.00 + 15,000.00 + 1,200.00</p>
+                                                    <p>saldo primer año = 16,200.00 </p>
+                                                    <p><b>El saldo del primer año va a ser de $16,200.00 pesos.</b></p>
+
+                                                    <p><b>Segundo año.</b></p>
+                                                    <p>El saldo para el segundo año va a ser el saldo anterior más el pago del año más los intereses del segundo año.</p>
+                                                    <p>saldo inicial =  16,200.00</p>
+                                                    <p>pago del año = 15,000.00</p>
+                                                    <p>intereses del segundo año = (saldo anterior + pago del año) * i</p>
+                                                    <p>intereses del segundo año = (16,200.00 + 15,000.00) * 0.08 </p>
+                                                    <p>intereses del segundo año = 31,200.00 * 0.08 =  2,496.00</p>
+                                                    <p>saldo segundo año = saldo anterior + pago del año + intereses</p>
+                                                    <p>saldo segundo año = 16,200.00 + 15,000.00 + 2,496.00</p>
+                                                    <p>saldo segundo año = 33,696.00 </p>
+                                                    <p><b>El saldo del segundo año va a ser de $33,696.00 pesos.</b></p>
+
+                                                    <p><b>Tercer año.</b></p>
+                                                    <p>El saldo para el tercer año va a ser el saldo anterior más el pago del año más los intereses del tercer año.</p>
+                                                    <p>saldo inicial =  33,696.00</p>
+                                                    <p>pago del año = 15,000.00</p>
+                                                    <p>intereses del tercer año = (saldo anterior + pago del año) * i</p>
+                                                    <p>intereses del tercer año = (33,696.00 + 15,000.00) * 0.08 </p>
+                                                    <p>intereses del tercer año = 48,696.00 * 0.08 =  3,895.68</p>
+                                                    <p>saldo tercer año = saldo anterior + pago del año + intereses</p>
+                                                    <p>saldo tercer año = 33,696.00 + 15,000.00 + 3,895.68</p>
+                                                    <p>saldo tercer año = 52,591.68 </p>
+                                                    <p><b>El saldo del tercer año va a ser de $52,591.68 pesos.</b></p>
+
+                                                    <p><b>Cuarto año.</b></p>
+                                                    <p>Para el cuarto año el saldo va a ser el saldo anterior más el pago del año más los intereses del cuarto año.</p>
+                                                    <p>saldo inicial =  52,591.68</p>
+                                                    <p>pago del año = 15,000.00</p>
+                                                    <p>intereses del cuarto año = (saldo anterior + pago del año) * i</p>
+                                                    <p>intereses del cuarto año = (52,591.68 + 15,000.00) * 0.08 </p>
+                                                    <p>intereses del cuarto año = 67,591.68 * 0.08 =  5,407.3344</p>
+                                                    <p>saldo cuarto año = saldo anterior + pago del año + intereses</p>
+                                                    <p>saldo cuarto año = 52,591.68 + 15,000.00 + 5,407.3344</p>
+                                                    <p>saldo cuarto año = 72,999.0144 </p>
+                                                    <p><b>El saldo del cuarto año va a ser de $72,999.01 pesos, redondeando a 2 decimales.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático en Excel </h3>
+                                                <div class="feed-body">
+                                                    <p><b>¿Cuál es el valor futuro de una anualidad anticipada de $15,000.00 por año, durante 4 años con una tasa de interés compuesto de 8% capitalizable cada año?</b></p>
+                                                    <p>A continuación se muestra como es la tabla en Excel del caso de anualidad anticipada, la diferencia con el caso 1 es que el pago se realiza a principios de año por lo que los intereses de cada año va a ser del saldo anterior y del pago del período:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En la celda   B1   teclear   8%</p>
+                                                    <p>En la celda   C3   teclear   15000           y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   D3   = (B3 + C3)* $B$1   y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   E3   = B3 + C3 + D3        y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   B4   = E3                          y llenar hacia abajo (Fill Down)</p>
+
+                                                    <p><b>El valor futuro de la inversión es de $72,999.01. Dado que en este caso el pago se va a hacer al principio del año, el valor futuro de la inversión es mayor que en el caso 1 en donde los pagos se hacen al final del año.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
+                                                <div class="feed-body">
+                                                    <p>El Sr. Garza piensa ahorrar para su retiro dentro de 5 años. ¿Cuál es el valor futuro de una anualidad ordinaria de $25,000.00 por año, durante 5 años a un interés compuesto de 17% capitalizable cada año?</p>
+                                                    <ol>
+                                                        <li>Resolver el problema utilizando el modelo matemático.</li>
+                                                        <li>Resolver el problema utilizando el modelo con Excel.</li>
+                                                        <li>Si el Sr. Garza desea hacer los pagos al principio de cada año (anualidad anticipada), ¿cuál sería el valor futuro de la anualidad? Resolverlo utilizando el modelo con Excel. ¿cuánto sería la diferencia con la anualidad ordinaria?</li>
+                                                        <li>Hacer una gráfica para comparar la anualidad ordinaria y la anualidad anticipada (Pasos 2 y 3). ¿Qué es lo que se observa en la gráfica?</li>
+                                                        <li>Si el Sr. Garza decide pagar $30,000.00 en lugar de $25,000.00 cada año, ¿cuál es el valor futuro en los dos tipos de anualidades?</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

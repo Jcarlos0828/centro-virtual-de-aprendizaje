@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Costos Totales</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 1</h3>
+                                                <h3 class="feed-subtitle">Empresa Comercial</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Una tienda de discos, sabe que tiene $20,000 de costos fijos anuales y $65 de costos variables por unidad producidas. La tienda sabe que para enero va a tener una venta de discos de 3,000 unidades y que cada mes hay un aumento en la venta de los discos de 250 mensuales. Calcule los costos totales para el siguiente año.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución para 3 meses utilizando el modelo matemático</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Una tienda de discos, sabe que tiene $20,000 de costos fijos anuales y $65 de costos variables por unidad producidas. La tienda sabe que para enero va a tener una venta de discos de 3,000 unidades y que cada mes hay un aumento en la venta de los discos de 250 mensuales. Calcule los costos totales para el siguiente año.</b></p>
+                                                    <p>Para calcular el costo total se deben de sumar los costos fijos más los costos variables. Los costos variables son iguales a los costos variables unitarios multiplicados por la producción. En este caso tiene un crecimiento simple ya que aumenta en 250 unidades mensuales.</p>
+                                                    <p>Para el aumento en la producción, podemos utilizar la representación algebraica de un crecimiento poblacional simple, donde nos dice que el número de unidades producidas del siguiente mes es igual a las unidades producidas ese mes más el aumento de la producción.</p>
+                                                    <p>Ut=Ut-1 + i</p>
+                                                    <p><b>Primer mes:</b></p>
+                                                    <p>Costo totales es igual a la suma de los costos fijos más los variables unitarios por la producción:</p>
+                                                    <p>Costo total=$20,000 + $65*(3,000)</p>
+                                                    <p><b>Costo total=$215,000</b></p>
+
+                                                    <p><b>Segundo mes:</b></p>
+                                                    <p>Para este segundo mes utilizamos la representación algebraica del crecimiento poblacional simple para sacar el número de unidades producidas</p>
+                                                    <p>Costo total = Costos fijos + Costos variables*(Ut)</p>
+                                                    <p>Ut=Ut-1 + i</p>
+                                                    <p>Ut=3,000 + 250</p>
+                                                    <p>Ut=3,250</p>
+                                                    <p>Costo total=$20,000 + $65*(3,250)</p>
+                                                    <p><b>Costo total=$231,250</b></p>
+
+                                                    <p><b>Tercer mes:</b></p>
+                                                    <p>Para el tercer mes se calcula de la misma manera:</p>
+                                                    <p>Costo total = Costos fijos + Costos variables*(Ut)</p>
+                                                    <p>Ut=Ut-1 + i</p>
+                                                    <p>Ut=3,250 + 250</p>
+                                                    <p>Ut=3,500</p>
+                                                    <p>Costo total=$20,000 + $65*(3,500)</p>
+                                                    <p><b>Costo total=$247,500</b></p>
+
+                                                    <p>Para calcular el costo total del año se suman todos los costos de cada mes.</p>
+                                                    <p>Costo total= Costo total mes 1 + Costo total mes 2 + Costo total mes 3</p>
+                                                    <p>Costo total para los primeros 3 meses = $215,000 + $231,250 + $247,500</p>
+                                                    <p><b>Costo total para los primeros 3 meses = $693,750</b></p>
+
+                                                    <p>Nota :Aunque el costo variable unitario tiene un valor fijo se le llama variable puesto que se multiplica por la producción para dar los costos variables (que dependen de la producción). Los costos fijos son aquellos que no son afectados por la producción.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Variables que intervienen en los costos</h3>
+                                                <div class="feed-body">
+                                                    <p>Lo que debemos saber es cuáles son los costos administrativos, cuáles son los de distribución, cuáles son los fijos y los variables unitarios, después debemos de calcular el costo total que es la suma de los costos fijos más los costos variables unitarios, los cuales pueden ser administrativos o de distribución.</p>
+
+                                                    <p>CF     Costos Fijos</p>
+                                                    <p>CV    Costos Variables Unitarios</p>
+                                                    <p>CT     Costos Totales</p>
+                                                    <p>Ut      Número de unidades producidas</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Representación algebraica para los costos totales</h3>
+                                                <div class="feed-body">
+                                                    <p>De acuerdo al modelo matemático, el costo total para un mes  (CTt ) es igual a la suma de los costos fijos (CF) más la multiplicación de los costos variables unitarios (CV) por las unidades producidas en el mes </p>
+                                                    <p>(Ut ).</p>
+                                                    <p><b>CTt=CF +CV*(Ut)</b></p>
+                                                    <p>El número de unidades producidas en el mes 1 (Ut ) es igual al número de unidades producidas en el mes el anterior (Ut -1 ) más el incremento anual del número de unidades producidas ( i ).</p>
+                                                    <p><b>Ut = Ut-1 + i</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Fórmula para obtener el costo total</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La fórmula para encontrar directamente los costos totales para un período es:</b></p>
+
+                                                    <p><b>CTt = CF +CV* [Un + (t-n)i]</b></p>
+
+                                                    <p><b>en donde,</b></p>
+
+                                                    <p><b>t      número del período deseado</b></p>
+                                                    <p><b>CTt      costo total del período t</b></p>
+                                                    <p><b>CF      costos fijos</b></p>
+                                                    <p><b>CV      costos variable unitarios</b></p>
+                                                    <p><b>n      número del período inicial</b></p>
+                                                    <p><b>Un      número de unidades en cada período inicial</b></p>
+                                                    <p><b>i      incremento en cada período</b></p>
+
+                                                    <p><b>y la fórmula para obtener el costo total período por período es: CTt=CF+CV*Ut</b></p>
+
+                                                    <p><b>en donde;</b></p>
+
+                                                    <p><b>CF      Costos Fijos</b></p>
+                                                    <p><b>CV      Costos Variables Unitarios</b></p>
+                                                    <p><b>CT      Costos Totales</b></p>
+                                                    <p><b>Ut      Número de unidades producidas</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula para obtener el costo total</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Una tienda de discos, sabe que tiene $20,000 de costos fijos mensuales y $65 de costos variables por unidad producidas. La tienda sabe que para enero va a tener una venta de discos de 3,000 unidades y que cada mes hay un aumento en la venta de los discos de 250 mensuales. Calcule los costos totales para el siguiente año.</b></p>
+                                                    <p>Para nuestro hay que calcular el costo total y para calcularlo hay que utilizar la fórmula de CT, primero sabemos que los CF=$20,000 y los CV=$65*(Ut) ahora bien la fórmula es CT= CF + CV*(Ut) sustituyendo tenemos que:</p>
+
+                                                    <p><b>Para el primer mes:</b></p>
+                                                    <p>CT= CF + CV*(Ut)</p>
+                                                    <p>CT= $20,000 + $65*(3,000)=$215,000</p>
+
+                                                    <p><b>Para el segundo mes:</b></p>
+                                                    <p>CT= CF + CV*(Ut)</p>
+                                                    <p>Ut=Ut-1 + i</p>
+                                                    <p>Ut=3,000 + 250</p>
+                                                    <p>Ut=3,250</p>
+                                                    <p>CT= $20,000 + $65*(3,250)=$231,250</p>
+
+                                                    <p><b>Para el tercer mes:</b></p>
+                                                    <p>CT= CF + CV*(Ut)</p>
+                                                    <p>Ut=Ut-1 + i</p>
+                                                    <p>Ut=3,250 + 250</p>
+                                                    <p>Ut=3,500</p>
+                                                    <p>CT= $20,000 + $65*(3,500)=$247,500</p>
+
+                                                    <p><b>Y el costo total es la suma de los tres meses:</b></p>
+                                                    <p>CTt=$215,000 + $231,250 + $247,500</p>
+                                                    <p><b>El costo total para los tres meses es de $ 693,750</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Una tienda de discos, sabe que tiene $20,000 de costos fijos mensuales y $65 de costos variables por unidad producidas. La tienda sabe que para enero va a tener una venta de discos de 3,000 unidades y que cada mes hay un aumento en la venta de los discos de 250 mensuales. Calcule los costos totales para el siguiente año.</b></p>
+                                                    <p>Utilizando las fórmulas CT= CF + CV*(Ut)  y   Ut=Ut-1 + i se genera la siguiente tabla en Excel:</p>
+                                                    <p>Las acciones que se realizaron para genera la tabla fueron:</p>
+                                                    <p>Se vaciaron los datos de costo fijo y de costo variable</p>
+                                                    <p>En la celda    B6    teclear    = 3,000 </p>
+                                                    <p>En la celda    B7    teclear    = B6 + 250           y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda    C6    teclear    = $B$1 + $B$2*B6   y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda    B15  teclear    = SUM(C6:C17)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

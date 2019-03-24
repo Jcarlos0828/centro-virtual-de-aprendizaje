@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Interés Compuesto con tasa cambiante</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 1</h3>
+                                                <h3 class="feed-subtitle">Valor de una inversión a 1 año con interés compuesto con tasa cambiante cada mes.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Las tasas de interés del año pasado fueron las siguientes:</b></p>
+                                                    <p><b>Lourdes invirtió $50,000.00 a un año con tasa de interés cambiante capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto recibió Lourdes por su inversión al final del año?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 1</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>En la parte superior izquierda de la Tabla Interactiva se tienen los datos del Caso 1: saldo inicial (50,000), período inicial (0), período final (1), tasa mensual (0.8725) y pago fijo (0).</li>
+                                                        <li>
+                                                            <p>En seguida se presenta una tabla con las tasas de interés mensuales:</p>
+                                                            <p>Para poder calcular el saldo al final del año, se va a tener que cambiar la tasa de interés para cada mes y ver cuál es el saldo en el período 1. Con los datos iniciales del caso, el saldo del período 1 corresponde al saldo del primer mes. ¿Cuál es el saldo después de 1 mes?. (El saldo del primer mes sería de $50,426.00 pesos)</p>
+                                                        </li>
+                                                        <li>Cambie la tasa al valor del segundo período (0.9675) y el saldo inicial al valor con el saldo del primer mes (50,436). Obtenga el saldo del segundo mes en el período 1. (El saldo del segundo mes sería de $50,924.00 pesos)</li>
+                                                        <li>Cambie la tasa al valor del tercer mes (1.0592) y el saldo inicial al valor del saldo del segundo mes. Obtenga el saldo del tercer mes en el período 1.(El saldo del tercer mes sería de $51,463.00 pesos)</li>
+                                                        <li>Cambie la tasa al valor del cuarto mes (0.9508) y el saldo inicial al valor del saldo del tercer mes. Obtenga el saldo del cuarto mes en el período 1.(El saldo del cuarto mes sería de $51,952.00 pesos)</li>
+                                                        <li>De la misma manera obtenga el saldo para los meses 5, 6, 7, 8, 9, 10, 11 y 12. (Los saldos para los meses restantes serían $52,436.00, $52,965.00, $53,528.00, $54,256.00, $55,637.00, $56,958.00, $58,175.00 y $59,518.00)</li>
+                                                        <li>¿Cuál es el valor de la inversión al finalizar el año? ( $59,518.00.)</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando el modelo matemático para 3 meses</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Las tasas de interés del año pasado fueron las siguientes:</b></p>
+                                                    <p><b>Lourdes invirtió $50,000.00 a un año con tasa de interés cambiante capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto recibió Lourdes por su inversión al final del año?</b></p>
+                                                    <p>Para calcular el saldo final de la inversión, para cada mes se tiene que calcular el saldo, el cual va a ser igual al saldo anterior más los intereses con la tasa correspondiente al mes. Las tasa de interés de la tabla son anuales por lo que hay que dividir la tasa de cada período entre 12 para tener la tasa correspondiente a cada mes, así que las tasas quedarían con los siguientes valores:</p>
+                                                    <p><b>Primer mes.</b></p>
+                                                    <p>El saldo al término del primer mes es la suma de la inversión original (50,000.00) más los intereses del mes. Los intereses para el primer mes son el capital inicial (50,000.00) por la tasa de interés del primer mes en su forma decimal (0.008725).</p>
+                                                    <p>intereses del primer mes = 50,000.00 * 0.008725</p>
+                                                    <p>intereses del primer mes = 436.25</p>
+                                                    <p>saldo después de un mes = 50,000.00 + 436.25</p>
+                                                    <p>saldo después de un mes = 50,436.25  </p>
+                                                    <p><b>El saldo después de un mes va a ser de $50,436.25 pesos.</b></p>
+
+                                                    <p><b>Segundo mes.</b></p>
+                                                    <p>El saldo al término del segundo mes es la suma del saldo anterior (50,436.25) más los intereses del mes. Los intereses para el segundo mes son el capital inicial (50,436.25 ) por la tasa de interés del segundo mes en su forma decimal (0.009675).</p>
+                                                    <p>intereses del segundo mes = 50,436.25 * 0.009675</p>
+                                                    <p>intereses del segundo mes = 487.97</p>
+                                                    <p>saldo después de dos meses = 50,436.25 + 487.97</p>
+                                                    <p>saldo después de dos meses = 50,924.22  </p>
+                                                    <p><b>El saldo después de dos meses va a ser de $50,924.22 pesos.</b></p>
+
+                                                    <p><b>Tercer mes.</b></p>
+                                                    <p>El saldo al término del tercer mes es la suma del saldo anterior (50,924.22) más los intereses del mes. Los intereses para el tercer mes son el capital inicial (50,924.22) por la tasa de interés del tercer mes en su forma decimal (0.010592).</p>
+                                                    <p>intereses del tercer mes = 50,924.22 * 0.010592</p>
+                                                    <p>intereses del tercer mes = 487.97</p>
+                                                    <p>saldo después de tres meses = 50,924.22 + 539.39</p>
+                                                    <p>saldo después de tres meses = 51,463.61  </p>
+                                                    <p><b>El saldo después de tres meses va a ser de $51,463.61 pesos.</b></p>
+
+                                                    <p>S3 = S2 (1 + i 3)     = 50,924.22 * (1 + 0.010592) = $51,463.61</p>
+
+                                                    <p>Para calcular la cantidad de  interés para el resto de los períodos, se puede utilizar la representación algebraica de interés compuesto con Excel, solo que la tasa de interés va a ser diferente para cada período, por lo que se puede incluir un subíndice también para la tasa de interés:</p>
+
+                                                    <p>St = St-1 (1 + i t)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la representación algebraica del modelo en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>Las tasas de interés del año pasado fueron las siguientes:</b></p>
+                                                    <p><b>Lourdes invirtió $50,000.00 a un año con tasa de interés cambiante capitalizable cada mes.</b></p>
+                                                    <p><b>¿Cuánto recibió Lourdes por su inversión al final del año?</b></p>
+                                                    <p>Este ejemplo se puede  resolver en Excel utilizando la representación algebraica St = St-1 (1 + i t) de una manera más sencilla:</p>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En la columna B teclear las tasas de interés para cada mes.</p>
+                                                    <p>En la celda   C3   teclear   = D2 * B2 / 12</p>
+                                                    <p>En la celda   D3   teclear   = D2 + C3      y llenar hacia abajo (Fill Down)</p>
+
+                                                    <p><b>Lourdes recibió $59,518.55 pesos al final del año.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
+                                                <div class="feed-body">
+                                                    <p>En los próximos 3 meses se espera que las tasa de interés suban 1 punto porcentual cada período. El Lic. Cavazos va a invertir $33,000.00 los siguientes tres meses con interés compuesto con tasa cambiante capitalizable cada mes. Si la tasa de interés actual es del 17% anual, ¿cuánto recibiría en el vencimiento del documento?</p>
+
+                                                    <ol>
+                                                        <li>Resolverlo utilizando el modelo matemático.</li>
+                                                        <li>Resolverlo utilizando el modelo con Excel, desgloze los intereses para cada mes.</li>
+                                                        <li>Supongamos que las tasas en lugar de subir bajan un punto porcentual, ¿cuál sería el saldo en el vencimiento del documento? Resolverlo utilizando el modelo con Excel.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>

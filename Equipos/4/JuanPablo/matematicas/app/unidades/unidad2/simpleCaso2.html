@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Titulo del curso | CVA - Centro Virtual de Aprendizaje</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/assets/images/logo/favicon.png">
+        <!-- plugins css -->
+        <link rel="stylesheet" href="/assets/vendors/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/assets/vendors/PACE/themes/blue/pace-theme-minimal.css"/>
+        <link rel="stylesheet" href="/assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+        <!-- page plugins css -->
+        <!-- core css -->
+        <link href="/assets/css/ei-icon.css" rel="stylesheet">
+        <link href="/assets/css/themify-icons.css" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/assets/css/animate.min.css" rel="stylesheet">
+        <link href="/assets/css/app.css" rel="stylesheet">
+        <!-- <script src="/scripts.js"></script> -->
+    </head>
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav" id="sideNav"></div>
+                  <!-- Side Nav END -->
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="/assets/images/logo/tec-logo.png" height="30">
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Header END -->
+                      <!-- Content Wrapper START -->
+                        <div class="main-content">
+                            <div class="container-fluid">
+                              <!-- Your content goes here -->
+                                <div class="simple">
+                                    <h1 class="feed-title">Modelos Financieros</h1>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Caso 2</h3>
+                                                <h3 class="feed-subtitle">Inversión a 28 días con una tasa de interés simple anualizada.</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Hernández recibió una herencia de $200,000.00 en diciembre del año pasado y después de pensar que hacer con su dinero decidió invertirlo en el banco, así que el día 4 de enero fué al banco para invertir su dinero a 28 días con una taza del 18% anual.</b></p>
+                                                    <p><b>¿Cuánto dinero recibió la Sra. al vencimiento de su inversión?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la representación algebraica del modelo</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Hernández recibió una herencia de $200,000.00 en diciembre del año pasado y después de pensar que hacer con su dinero decidió invertirlo en el banco, así que el día 4 de enero fué al banco para invertir su dinero a 28 días con una taza del 18% anual.</b></p>
+
+                                                    <p><b>¿Cuánto dinero recibió al vencimiento de su inversión?</b></p>
+
+                                                    <p>De acuerdo al modelo matemático, el saldo o adeudo después de cierto  período  t (St) , es igual al capital o préstamo del período anterior (St-1) más el interés del período.  El interés producido cada día es el producto de multiplicar el capital (S0 = 200,000.00) por la tasa de interés simple diaria expresada en decimales.</p>
+                                                    <p>tasa diaria de interés = 18 / 365</p>
+                                                    <p>tasa diaria de interés = 0.049315%</p>
+
+                                                    <p>St =  St-1 + interés del día.</p>
+
+                                                    <p>interés de cada día = S0 * i</p>
+                                                    <p>interés de cada día = 200,000.00 * 0.00049315 </p>
+                                                    <p>interés de cada día = 98.63 pesos. </p>
+                                                    <p>El interés es el mismo para todos los días ya que se trata de un interés simple.</p>
+
+                                                    <p>La representación algebraica del modelo matemático para este caso sería entonces:</p>
+                                                    <p>St = St-1 + 98.63</p>
+
+                                                    <p><b>Primer día.</b></p>
+                                                    <p>Aplicando la ecuación al primer día, se tiene:</p>
+                                                    <p>S1 = S0 + 98.63            sustituyendo S0 por su valor se tiene</p>
+                                                    <p>S1 = 200,000.00 + 98.63</p>
+                                                    <p>S1 = 200,098.63 pesos.</p>
+                                                    <p><b>El saldo después del primer día es de $200,098.63 pesos.</b></p>
+
+                                                    <p><b>Segundo día.</b></p>
+                                                    <p>El saldo después de dos días (S2), sería:</p>
+                                                    <p>S2 = S1 + 98.63            sustituyendo S1 por su valor se tiene</p>
+                                                    <p>S2 = 200,098.63 + 98.63</p>
+                                                    <p>S2 = 200,197.26 pesos.</p>
+                                                    <p><b>El saldo después del segundo día es de $200,197.26 pesos.</b></p>
+
+                                                    <p>En este caso el número de períodos o días es de 28 y para cada día el saldo se calcula de la misma manera que los días 1 y 2, por lo que se va a utilizar una tabla en Excel con la representación algebraica quedando de la siguiente manera:</p>
+
+                                                    <p><b>TABLA EN EXCEL</b></p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Tasa de interés anual</td>
+                                                                <td>18%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Tasa de interés diaria</td>
+                                                                <td>0.049315%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>$200,000.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Interés por día</td>
+                                                                <td>$98.63</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>Día</td>
+                                                                <td>Saldo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>1</td>
+                                                                <td>$200,098.63</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>2</td>
+                                                                <td>$200,197.26</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>3</td>
+                                                                <td>$200,295.89</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>4</td>
+                                                                <td>$200,394.52</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>5</td>
+                                                                <td>$200,493.15</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11</td>
+                                                                <td>6</td>
+                                                                <td>$200,591.78</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12</td>
+                                                                <td>7</td>
+                                                                <td>$200,690.41</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13</td>
+                                                                <td>8</td>
+                                                                <td>$200,789.04</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14</td>
+                                                                <td>9</td>
+                                                                <td>$200,887.67</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15</td>
+                                                                <td>10</td>
+                                                                <td>$200,986.30</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16</td>
+                                                                <td>11</td>
+                                                                <td>$201,084.93</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>17</td>
+                                                                <td>12</td>
+                                                                <td>$201,183.56</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>18</td>
+                                                                <td>13</td>
+                                                                <td>$201,282.19</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19</td>
+                                                                <td>14</td>
+                                                                <td>$201,380.82</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>20</td>
+                                                                <td>15</td>
+                                                                <td>$201,479.45</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>21</td>
+                                                                <td>16</td>
+                                                                <td>$201,578.08</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>22</td>
+                                                                <td>17</td>
+                                                                <td>$201,676.71</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>23</td>
+                                                                <td>18</td>
+                                                                <td>$201,775.34</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24</td>
+                                                                <td>19</td>
+                                                                <td>$201,873.97</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>25</td>
+                                                                <td>20</td>
+                                                                <td>$201,972.60</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>26</td>
+                                                                <td>21</td>
+                                                                <td>$202,071.23</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>27</td>
+                                                                <td>22</td>
+                                                                <td>$202,169.86</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>28</td>
+                                                                <td>23</td>
+                                                                <td>$202,268.49</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>29</td>
+                                                                <td>24</td>
+                                                                <td>$202,367.12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>30</td>
+                                                                <td>25</td>
+                                                                <td>$202,465.75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>31</td>
+                                                                <td>26</td>
+                                                                <td>$202,564.38</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>32</td>
+                                                                <td>27</td>
+                                                                <td>$202,663.01</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>33</td>
+                                                                <td>28</td>
+                                                                <td>$202,761.64</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
+                                                    <p>En la celda   B1   teclear   <b>18%</b></p>
+                                                    <p>En la celda   B2   teclear   <b>=B1/365</b></p>
+                                                    <p>En la celda   B3   teclear   <b>200000</b></p>
+                                                    <p>En la celda   B4   teclear   <b>=B2*B3</b></p>
+                                                    <p>En la celda   A5   teclear   <b>=A4 + 1</b>             y llenar hacia abajo (Fill Down)</p>
+                                                    <p>En la celda   B6   teclear   <b>=B3 + $B$4</b>   </p>
+                                                    <p>En la celda   B7   teclear   <b>=B6 + $B$4</b>      y llenar hacia abajo (Fill Down)</p>
+
+                                                    <p>El saldo después de 28 días es de $202,761.64 pesos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula de Interés Simple</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Hernández recibió una herencia de $200,000.00 en diciembre del año pasado y después de pensar que hacer con su dinero decidió invertirlo en el banco, así que el día 4 de enero fué al banco para invertir su dinero a 28 días con una taza del 18% anual.</b></p>
+
+                                                    <p><b>¿Cuánto dinero recibió al vencimiento de su inversión?</b></p>
+
+
+                                                    <p>En la actualidad es muy común invertir dinero a 28 días, debido a que la tasa del papel gubernamental (CETES) se da cada 28 días. Las personas que tienen invertido dinero, necesitan ir al banco cada vez que se vence el plazo para reinvertir su dinero y de esa forma obtener una tasa preferencial en lugar de la tasa común, que varia como en 3 puntos porcentuales. Cuando el vencimiento de la inversión es en día festivo, se recorre al siguiente día laboral.</p>
+
+                                                    <p>Para encontrar la tasa de interés por día cuando se conoce la tasa anual, se divide la tasa anual del 18%, entre 365 que es el número de días que tiene el año.</p>
+                                                    <p>tasa diaria de interés = 18 / 365</p>
+                                                    <p>tasa diaria de interés = 0.049315%</p>
+                                                    <p>La fórmula de interés simple St = S0 (1 + t i), puede ser utilizada para cualquier período de tiempo. En este caso la unidad de tiempo es un día y se tienen 28 períodos.</p>
+
+                                                    <p><b>Datos:</b></p>
+                                                    <p>S0 = 200,000.00</p>
+                                                    <p>t = 28 días.</p>
+                                                    <p>i = 0.00049315</p>
+                                                    <p>S28 = ¿? se desea encontrar el saldo después de 28 días.</p>
+
+                                                    <p><b>Solución:</b></p>
+                                                    <p>St = S0 (1 + t i)    al sustituir S0, i y t por sus respectivos valores la ecuación queda</p>
+                                                    <p>S28 = 200,000.00 [1 + 28 (0.00049315)]</p>
+                                                    <p>S28 = 200,000.00 (1 + 0.0138082)</p>
+                                                    <p>S28 = 200,000.00 (1.0138082)</p>
+                                                    <p>S28 = 202,761.64</p>
+
+                                                    <p><b>La Sra. Hernández va a recibir $202,761.64 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula de Interés Simple en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>La Sra. Hernández recibió una herencia de $200,000.00 en diciembre del año pasado y después de pensar que hacer con su dinero decidió invertirlo en el banco, así que el día 4 de enero fué al banco para invertir su dinero a 28 días con una taza del 18% anual.</b></p>
+
+                                                    <p><b>¿Cuánto dinero recibió al vencimiento de su inversión?</b></p>
+                                                    <p>Al resolverlo en Excel utilizando la fórmula de interés simple St = S0 (1 + t i), se obtiene la siguiente tabla:</p>
+
+
+                                                    <p><b>TABLA EN EXCEL</b></p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>$200,000.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Tasa de interés anual</td>
+                                                                <td>18%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Tasa de interés diaria</td>
+                                                                <td>0.049315%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Días</td>
+                                                                <td>28</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>$202,761.64</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>Las acciones que se tomaron para generar esta tabla son:</p>
+                                                    <p>En los renglones 1, 2 y 4 vaciar la información de los datos del Caso.</p>
+                                                    <p>En la celda   B3   teclear   <b>= $B$2 / 365</b></p>
+                                                    <p>En la celda   B5   teclear   <b>= $B$1 * ( 1 + $B$4 * $B$3)</b></p>
+                                                    <p><b>La Sra. Hernández va a recibir $ 202,761.64 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Obtener la diferencia de la reinversión con una tasa preferencial y una tasa común</h3>
+                                                <div class="feed-body">
+                                                    <p><b>El 1° de febrero la Sra. Hernández se encontraba de viaje y no pudo ir al banco a renovar su inversión, por lo que se reinvierte automáticamente, pero en lugar de utilizar la tasa preferencial de 19% se reinvierte a  16% que es la tasa común.</b></p>
+                                                    <p><b>¿Cuánto dinero dejo de ganar  la Sra. Hernández al tener su inversión con tasa común en lugar de tasa preferencial?</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula de Interés Simple</h3>
+                                                <div class="feed-body">
+
+                                                    <p><b>El 1° de febrero la Sra. Hernández se encontraba de viaje y no pudo ir al banco a renovar su inversión de $202,761.64, por lo que se reinvierte automáticamente, pero en lugar de utilizar la tasa preferencial de 19% se reinvierte a 16% que es la tasa común.</b></p>
+
+                                                    <p><b>¿Cuánto dinero dejo de ganar  la Sra. Hernández al tener su inversión con tasa común en lugar de tasa preferencial?</b></p>
+
+                                                    <p>Se va a calcular el saldo con cada una de las tasas de interés (19% y 16%) para poder obtener la cantidad de dinero que la Sra. no ganó.</p>
+
+                                                    <p><b>Tasa de interés de 19%.</b></p>
+                                                    <p>tasa diaria de interés = 19 / 365</p>
+                                                    <p>tasa diaria de interés = 0.052054%</p>
+                                                    <p>Datos:</p>
+                                                    <p>S0 = 202,761.64</p>
+                                                    <p>t = 28 días.</p>
+                                                    <p>i = 0.00052054</p>
+                                                    <p>S28 = ¿? se desea encontrar el saldo después de 28 días.</p>
+
+                                                    <p><b>Solución:</b></p>
+                                                    <p>St = S0 (1 + t i)    al sustituir S0, i y t por sus respectivos valores la ecuación queda</p>
+                                                    <p>S28 = 202,761.64 [1 + 28 (0.00052055)]</p>
+                                                    <p>S28 = 202,761.64 (1 + 0.0145754)</p>
+                                                    <p>S28 = 202,761.64 (1.0145754)</p>
+                                                    <p>S28 = 205,716.97</p>
+
+                                                    <p><b>Tasa de interés de 16%.</b></p>
+                                                    <p>tasa diaria de interés = 16 / 365</p>
+                                                    <p>tasa diaria de interés =  0.043836%</p>
+                                                    <p><b>Datos:</b></p>
+                                                    <p>S0 = 202,761.64</p>
+                                                    <p>t = 28 días.</p>
+                                                    <p>i = 0.00052054</p>
+                                                    <p>S28 = ¿? se desea encontrar el saldo después de 28 días.</p>
+                                                    <p><b>Solución:</b></p>
+                                                    <p>St = S0 (1 + t i)    al sustituir S0, i y t por sus respectivos valores la ecuación queda</p>
+                                                    <p>S28 = 202,761.64 [1 + 28 (0.00043836)]</p>
+                                                    <p>S28 = 202,761.64 (1 + 0.01227408)</p>
+                                                    <p>S28 = 202,761.64 (1.01227408)</p>
+                                                    <p>S28 = 205,250.35</p>
+
+                                                    <p>La cantidad de dinero que la Sra. no ganó es la diferencia del saldo con la tasa de interés de 19% (205,716.97) con el saldo de la tasa de interés de 16% (205,250.35).</p>
+                                                    <p>diferencia = 205,716.97 - 205,250.35</p>
+                                                    <p>diferencia = 466.62 pesos.</p>
+
+                                                    <p><b>La Sra. Hernández dejo de ganar $466.62 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula de Interés Simple en Excel</h3>
+                                                <div class="feed-body">
+                                                    <p><b>El 1° de febrero la Sra. Hernández se encontraba de viaje y no pudo ir al banco a renovar su inversión de $202,761.64, por lo que se reinvierte automáticamente, pero en lugar de utilizar la tasa preferencial de 19% se reinvierte a 16% que es la tasa común.</b></p>
+
+                                                    <p><b>¿Cuánto dinero dejo de ganar  la Sra. Hernández al tener su inversión con tasa común en lugar de tasa preferencial?</b></p>
+                                                    <p>Utilizando la fórmula de interés simple St = S0 (1 + t i), para cada caso se genera la siguiente tabla:</p>
+                                                    <p><b>TABLA EN EXCEL</b></p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td></td>
+                                                                <td>Tasa preferencial</td>
+                                                                <td>Tasa común</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>$202,761.64</td>
+                                                                <td>$202,761.64</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Tasa de interés anual</td>
+                                                                <td>19.00%</td>
+                                                                <td>16.00%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Tasa de interés diaria</td>
+                                                                <td>0.0520547%</td>
+                                                                <td>0.0438356%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>Días</td>
+                                                                <td>28</td>
+                                                                <td>28</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>Saldo Final</td>
+                                                                <td>$205,716.95</td>
+                                                                <td>$205,250.33</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>Diferencia</td>
+                                                                <td>$466.63</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p>Las acciones que se tomaron para generar esta tabla son:</p>
+                                                    <p>En los renglones 2, 4 y 5 vaciar la información de los datos del Caso.</p>
+                                                    <p>En la celda   B4   teclear   <b>= $B$3 / 365</b></p>
+                                                    <p>En la celda   C4   teclear   <b>= $C$3 / 365</b></p>
+                                                    <p>En la celda   B7   teclear   <b>= $B$2 * ( 1 + $B$5 * $B$4)</b></p>
+                                                    <p>En la celda   C7   teclear   <b>= $C$2 * ( 1 + $C$5 * $C$4)</b></p>
+                                                    <p>En la celda   B8   teclear    <b>=B7 - C7<</b>/p>
+
+                                                    <p><b>La Sra. Hernández dejo de ganar $466.63 pesos.</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="card widget-feed">
+                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
+                                                <div class="feed-body">
+                                                    <ol>
+                                                        <li>
+                                                            <p>La Sra. Hernández desea saber cuánto va a tener en su inversión en los siguientes 3 períodos de 28 días suponiendo que la tasa se mantiene en 19% anual y el saldo actual es de $ 202,761.64.</p>
+                                                            <ol>
+                                                                <li>Utilize el modelo para calcular el saldo de la inversión para los siguientes 3 períodos (hay que calcular la tasa que corresponde a 28 días con 7 decimales)</li>
+                                                                <li>¿Cuánto recibiría de intereses por los tres períodos?</li>
+                                                                <li>Genere una tabla en Excel utilizando los datos del problema y el modelo matemático para los tres períodos.</li>
+                                                                <li>Cambie la tasa de interés a 23%, ¿cuál sería el saldo para cada uno de los tres períodos? ¿cuánto recibiría en total de intereses por los tres períodos?</li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- Content Wrapper END -->
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                              <div class="copyright">
+                                  <span>Copyright © 2019.</span>
+                                  <span class="go-right">
+                                      <a href="/creditos.html" class="text-gray mrg-right-15">Créditos</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </footer>
+                      <!-- Footer END -->
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="/assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="/assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/assets/vendors/PACE/pace.min.js"></script>
+        <script src="/assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#sideNav').load("/sideNav.html",function(responseText, textStatus, XMLHttpRequest){
+                    $('.dropdown').on('click','.dropdown-toggle',function(e){
+                        e.preventDefault();
+                        $(this).parent().children('.dropdown-menu').toggle();
+                        e.stopPropagation();
+                    });
+                });
+            });
+        </script>
+        <!-- endbuild -->
+        <!-- build:js assets/js.min.js -->
+        <!-- core js -->
+        <script src="/assets/js/app.js"></script>
+        <!-- endbuild -->
+        <!-- Insert your dependencies here -->
+    </body>
+</html>
