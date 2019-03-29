@@ -142,21 +142,123 @@
                               <!-- Your content goes here -->
                               <div class="card-block">
                                   <div class="mrg-top-10">
-                                  <h1> Tema 1: Alimentación y limpieza</h1>
-                                  <p>Vamos a recordar algunos consejos que nos ayudan a tener un hogar sano.</p>
-                                  <div class="minijuego">
-                                    <p>Don César, doña Lupe y sus dos hijos forman una familia a la que le gustaría saber qué deben hacer para mantener limpia su casa y evitar enfermedades. Podrías ayudarlos si les das algunos consejos.</p>
-                                    <p>Marca dando un clic en los cuadros que están debajo de cada párrafo, si éste es verdadero (V) o falso (F).</p>
-                                    <p>Para tener un hogar limpio deben:</p>
-                                    <!--minijuego en tabla -->
-                                    <table>
-                                      <tr>
-                                        <td></td>
-                                        <td>Verdadero</td>
-                                        <td>Falso</td>
-                                      </tr>
-                                      <tr>
-                                        <td> Lavarse las manos antes de preparar los alimentos, antes de comer y después de ir al baño o cambiar un pañal.</td>
+
+
+                                  <form class="card widget-feed col-md-8">
+                                  <h1 class="feed-title">Tema 1 - Quiz</h1>
+                                  <h3 class="feed-subtitle">Da clic en los botones de verdadero o falso según sean verdaderos o falsos los siguientes enunciados. En la pregunta 4, marca sólo los verdaderos.</h3>
+                                  <div class="feed-body form-group pregunta_1">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <h3> Pregunta 1</h3>
+                                              <p>Los alimentos nos proporcionan las sustancias nutritivas que necesitamos para vivir.</p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta1" id="p1_1" value="correct">
+                                                  <label class="form-check-label" for="p1_1">Verdadero</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta1" id="p1_2" value="incorrect">
+                                                  <label class="form-check-label" for="p1_1">Falso</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_1" value="Verificar"> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group pregunta_2">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <h3> Pregunta 2</h3>
+                                              <p>Una alimentación sana combina alimentos que nos dan energía y proteínas.</p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta2" id="p2_1" value="incorrect">
+                                                  <label class="form-check-label" for="p2_1">Verdadero</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta2" id="p2_2" value="correct">
+                                                  <label class="form-check-label" for="p2_2">Falso</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_2" value="Verificar">
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group pregunta_3">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <h3> Pregunta 3</h3>
+                                              <p>Cuando la alimentación es poca en cantidad y variedad provoca desnutrición.</p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta3" id="p3_1" value="correct">
+                                                  <label class="form-check-label" for="p3_1">Verdadero</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="radio" name="respuesta3" id="p3_2" value="incorrect">
+                                                  <label class="form-check-label" for="p3_2">Falso</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_3" value="Verificar">
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group pregunta_4">
+                                      <div class="row">
+                                          <div class="col-sm-12">
+                                              <h3> Pregunta 4</h3>
+                                              <p>Don César, doña Lupe y sus dos hijos forman una familia a la que le gustaría saber qué deben hacer para mantener limpia su casa y evitar enfermedades. Podrías ayudarlos si les das algunos consejos. Para tener un hogar limpio:</p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="respuesta"  id="p4_1" value="correct">
+                                                <label class="form-check-label" for="p4_1">Deben lavarse las manos antes de preparar los alimentos, antes de comer y después de ir al baño o cambiar un pañal.</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="respuesta" id="p4_2" value="incorrect">
+                                                <label class="form-check-label" for="p4_2">No es importante lavar y desinfectar bien las frutas y verduras antes de comerlas.</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="respuesta" id="p4_3"   value="correct">
+                                                <label class="form-check-label" for="p4_3">Deben depositar la basura en el camión recolector o enterrarla para evitar tiraderos.</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" name="respuesta" id="p4_4"   value="incorrect">
+                                                <label class="form-check-label" for="p4_4">Deben tener animales dentro de su casa.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_4" value="Verificar">
+                                        </div>
+                                    </div>
+                                  </div>
+                              </form>
+                                     <!--   <td> Lavarse las manos antes de preparar los alimentos, antes de comer y después de ir al baño o cambiar un pañal.</td>
                                         <td><input type="radio" name="1" value="¡Muy bien! Es importante lavarnos las manos para evitar cualquier enfermedad."></td>
                                         <td><input type="radio" name="1" value="¡Piénsalo bien! Recuerda que al no lavarnos las manos podemos contagiarnos de alguna enfermedad."></td>
                                       </tr>
@@ -174,9 +276,8 @@
                                         <td>Tener animales dentro de tu casa.</td>
                                         <td><input type="radio" name="4" value="¡Piénsalo bien! Recuerda que los animales traen consigo algunas infecciones que pueden afectarte a ti y a tu familia, ellos deben estar fuera de la casa."></td>
                                         <td><input type="radio" name="4" value="¡Muy bien! No debes tener animales dentro de tu casa, recuerda que los animales traen consigo algunas infecciones que pueden afectarte a ti a tu familia, ellos deben estar fuera de la casa."></td>
-                                      </tr>
-                                    </table>
-                                  </div>
+                                    
+                                  </div>-->
                                   
                                   <nav aria-label="..." style="text-align: center">
                                     <ul class="pagination justify-content-center">
