@@ -273,6 +273,116 @@
                     <!-- Horizontal line -->
                     <div class="row"><div class="col-md-12"><hr></div></div>
 
+                    <!-- Quiz -->
+                    <div class="row lead">
+                      <form class="card widget-feed col-md-10">
+                        <h1 class="feed-title">Quiz: partes de la computadora</h1>
+                        <h3 class="feed-subtitle">Instrucciones</h3>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <p class="text-dark">¡Llegó la hora de hacer un quiz para ver cuánto aprendiste!</p>
+                          </div>
+                        </div>
+                        <div class="feed-body form-group pregunta_1">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h3 class="text-dark">Pregunta 1</h3>
+                              <p class="text-dark">¿Dónde aparecen todas las imágenes y la información?</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p1_1" value="incorrect">
+                                <label class="form-check-label" for="p1_1">Impresora</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p1_2" value="correct">
+                                <label class="form-check-label" for="p1_2">Monitor</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p1_3" value="incorrect">
+                                <label class="form-check-label" for="p1_3">Bocinas</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p1_4" value="incorrect">
+                                <label class="form-check-label" for="p1_4">Teclado</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_1" value="Verificar">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group pregunta_2">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h3 class="text-dark">Pregunta 2</h3>
+                              <p class="text-dark">¿Qué cosas puedes hacer por medio de la computadora?</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="respuesta"  id="p2_1" value="correct">
+                                <label class="form-check-label" for="p2_1">Hacer operaciones matemáticas</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="respuesta" id="p2_2" value="correct">
+                                <label class="form-check-label" for="p2_2">Buscar información</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="respuesta" id="p2_3"   value="correct">
+                                <label class="form-check-label" for="p2_3">Enviar y recibir mensajes</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="respuesta" id="p2_4"   value="incorrect">
+                                <label class="form-check-label" for="p2_4">Leer la mente de otras personas</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_2" value="Verificar">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="feed-body form-group pregunta_3">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h3 class="text-dark">Pregunta 3</h3>
+                              <p class="text-dark">¿Cuál es la manera correcta de apagar la computadora?</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p3_1" value="incorrect">
+                                <label class="form-check-label" for="p3_1"><img src="assets/images/course/encender.png" class="width-50"/></label>
+                              </div>
+                              <br/>
+                              <div class="form-check">
+                                <input type="radio" name="respuesta" id="p3_2" value="correct">
+                                <label class="form-check-label" for="p3_2"><img src="assets/images/course/apagar.png" class="width-85"/></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <input type="button" class="btn btn-primary btn-rounded pull-right" name="pregunta_1" value="Verificar">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- Quiz end -->
+
+                    <!-- Horizontal line -->
+                    <div class="row"><div class="col-md-12"><hr></div></div>
+                    
                     <div class="row">
                       <div class="col-md-9 lead">
                         <p class="text-dark">Has llegado al final de esta <span class="text-bold">primera unidad</span>.</p>
@@ -326,6 +436,7 @@
     <!-- build:js assets/js/app.min.js -->
     <!-- core js -->
     <script src="assets/js/app.js"></script>
+    <script src="quiz.js"></script>
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
