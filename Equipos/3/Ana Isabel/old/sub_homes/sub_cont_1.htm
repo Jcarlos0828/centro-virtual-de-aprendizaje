@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('../contenido/imagenes/inicio/botoninicio_r1_c1_f3.gif')">
+<table width="570" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td><font face="Century Gothic" size="2" color="#990033">Bienvenido al curso 
+      <b>&quot;SIDA e infecciones de transmisi&oacute;n sexual&quot;</b>. Con 
+      este curso usted conocer&aacute; informaci&oacute;n muy importante sobre 
+      qu&eacute; es el SIDA, qu&eacute; debe hacer para protegerse y evitar el 
+      contagio y c&oacute;mo ayudar a una persona infectada sin correr riesgos. 
+      </font> 
+      <p><font face="Century Gothic" size="2" color="#990033">Hay muchas personas 
+        infectadas con <b>SIDA</b>. Todas las personas corremos el riesgo de infectarnos. 
+        Este curso puede serle de mucha utilidad no s&oacute;lo a usted, sino 
+        tambi&eacute;n a su familia y amigos. Lo invitamos a trabajar con nosotros.</font></p>
+      <p><font face="Century Gothic" size="2" color="#990033">Para iniciar, presione 
+        el bot&oacute;n izquierdo de su rat&oacute;n sobre el bot&oacute;n que 
+        dice Inicio.</font><br>
+      </p>
+      <table border="0" align="center">
+        <tr>
+          <td> 
+            <table border="0" cellpadding="0" cellspacing="0" width="100">
+              <!-- fwtable fwsrc="botoninicio.png" fwbase="botoninicio.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <td><img src="../contenido/imagenes/inicio/spacer.gif" width="100" height="1" border="0"></td>
+                <td><img src="../contenido/imagenes/inicio/spacer.gif" width="1" height="1" border="0"></td>
+              </tr>
+              <tr> 
+                <td><a href="home_como_apre.htm" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_nbGroup('over','botoninicio_r1_c1','../contenido/imagenes/inicio/botoninicio_r1_c1_f2.gif','../contenido/imagenes/inicio/botoninicio_r1_c1_f3.gif',1)"  onClick="MM_nbGroup('down','navbar1','botoninicio_r1_c1','../contenido/imagenes/inicio/botoninicio_r1_c1_f3.gif',1)" target="_top" ><img name="botoninicio_r1_c1" src="../contenido/imagenes/inicio/botoninicio_r1_c1.gif" width="100" height="36" border="0"></a></td>
+                <td><img src="../contenido/imagenes/inicio/spacer.gif" width="1" height="36" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="botoninicio_r2_c1" src="../contenido/imagenes/inicio/botoninicio_r2_c1.gif" width="100" height="5" border="0"></td>
+                <td><img src="../contenido/imagenes/inicio/spacer.gif" width="1" height="5" border="0"></td>
+              </tr>
+            </table>
+</td>
+          <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="92" height="110">
+              <param name=movie value="../entrada/mano2.swf">
+              <param name=quality value=high>
+              <embed src="../entrada/mano2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="92" height="110">
+              </embed> 
+            </object></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
