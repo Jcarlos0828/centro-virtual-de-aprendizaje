@@ -195,11 +195,11 @@ dd {
 	margin-bottom: 1rem;
 }
 
-/* Para centrar las imágenes */
+/* Para centrar las imágenes 
 img {
 	display: block;
 	margin: 0 auto;
-}
+}*/
 
 /* Para poner imágenes en columnas de tres*/
 .container3 {
