@@ -24,6 +24,8 @@
 
         <!-- mi stylesheet custom -->
         <link href="CSS/CSSPrimerosAuxiliosUnidades.css" rel="stylesheet">
+        <link href="assets/css/progress.css" rel="stylesheet">
+        <link href="assets/css/progreso.css" rel="stylesheet">
 
     </head>
 
@@ -90,6 +92,9 @@
                       </div>
                   </div>
                   <!-- Side Nav END -->
+                  <!--Progress START-->
+                  <div id="progreso"></div>
+                  <!--Progress END-->
 
                   <!-- Page Container START -->
                   <div class="page-container">
@@ -313,11 +318,18 @@
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <!-- endbuild -->
+        <!--Plugin Progreso-->
+        <script src="assets/js/progressbar.js"></script>
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="assets/js/app.js"></script>
+        <script src="quiz.js"></script>
+
+        <script src="./assets/js/progreso.js"></script>
+        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
+        <script type="text/javascript">show(.25)</script>
+
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->
