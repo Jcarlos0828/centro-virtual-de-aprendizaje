@@ -1,5 +1,6 @@
 .fa-arrow-right{
     font-size: 30px;
+    margin-bottom: 5px;
     float: right;
 }
 
@@ -10,4 +11,12 @@
 
 a{
     color: #0f9aee;
+}
+
+.btn-primary{
+    background-color: #0f9aee;
+}
+
+.card-block img{
+    height: 300px;
 }
