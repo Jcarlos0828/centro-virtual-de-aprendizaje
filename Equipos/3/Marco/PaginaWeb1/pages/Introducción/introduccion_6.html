@@ -27,6 +27,7 @@
     <!-- mi stylesheet custom -->
     <link rel="stylesheet" href="../../misEstilos/styleCursos.css">
     <link rel="stylesheet" href="../../misEstilos/w3.css">
+    <link href="../../assets/css/progress.css" rel="stylesheet">
 
     <script src="../../misEstilos/myJs.js"></script>
 
@@ -154,12 +155,13 @@
                                 <div class="card">
                                     <div class="overlay-dark bg" style="
                                   background-image: url('../../imagenes/technology-1095751_1920.jpg');
+                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: center;
                                   background-repeat: no-repeat;
                                   background-size: cover;">
                                         <div class="card-block">
-                                            <div class="mrg-top-130">
+                                            <div class="mrg-top-35">
                                                 <div class="tag tag-primary">Educación</div>
                                                 <h1>Componentes de una oración</h1>
                                             </div>
@@ -188,45 +190,58 @@
                                         <nav aria-label="..." style="text-align: center">
                                             <ul class="pagination justify-content-center">
                                                 <li class="page-item">
-                                                    <a class="page-link" href="introduccion_5.html#intro"
-                                                        tabindex="-1">Anterior</a>
+                                                    <a class="page-link" href="introduccion_5.html#intro" tabindex="-1">Anterior</a>
                                                 </li>
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_1.html#intro">1</a></li>
-
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_2.html#intro">2</a></li>
-
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_3.html#intro">3</a></li>
-
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_4.html#intro">4</a></li>
-
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_5.html#intro">5</a></li>
+                                                <li class="page-item"><a class="page-link" href="introduccion_1.html#intro">1</a></li>
+                                        
+                                                <li class="page-item"><a class="page-link" href="introduccion_2.html#intro">2</a></li>
+                                        
+                                                <li class="page-item"><a class="page-link" href="introduccion_3.html#intro">3</a></li>
+                                        
+                                                <li class="page-item"><a class="page-link" href="introduccion_4.html#intro">4</a></li>
+                                                
+                                                <li class="page-item"><a class="page-link" href="introduccion_5.html#intro">5</a></li>
 
                                                 <li class="page-item active">
                                                     <a class="page-link" href="#">6 <span class="sr-only">(current)</span></a>
                                                 </li>
-
-                                                <li class="page-item"><a class="page-link"
-                                                        href="introduccion_7.html#intro">7</a></li>
-
+                                        
+                                                <li class="page-item"><a class="page-link" href="introduccion_7.html#intro">7</a></li>
+                                        
                                                 <li class="page-item">
                                                     <a class="page-link" href="introduccion_7.html#intro">Siguiente</a>
                                                 </li>
                                             </ul>
                                         </nav>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content Wrapper END -->
+                                        <br>
+                                        
+                                        <br>
+                                        
+                                        
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="card widget-feed">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                                    <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                                    <div class="w3-light-grey w3-round-xlarge">
+                                                        <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
+                                                    <div id="progreso"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        </div>
+                                        </div>
+                                        <!-- Content Wrapper END -->
 
                     <!-- Footer START -->
                     <footer class="content-footer">
@@ -258,9 +273,35 @@
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(.0125 * 8)</script>
         <!-- endbuild -->
-
+        
         <!-- Insert your dependencies here -->
+        <script>
+            function moveProgressBar(progPorcent) {
+                if (progPorcent === undefined) {
+                    progPorcent = 0;
+                }
+                var elem = document.getElementById("myBar");
+                var width = 0;
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (width >= progPorcent) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                        elem.innerHTML = width.toString() + '%';
+                    }
+                }
+            }
+        </script>
+        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+        <script type="text/javascript">moveProgressBar((6 / 7) * 100)</script>
 
 </body>
 

@@ -27,6 +27,7 @@
         <link rel="stylesheet" href="../../misEstilos/w3.css">
         <link href="../../assets/css/progress.css" rel="stylesheet">
         
+        
         <!-- 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -162,8 +163,9 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="card-block" onmouseenter="moveProgressBar()">
-                                    <a name="intro"></a>
+                                
+                                  <div class="card-block">
+                                    
                                     <h2>Introducción</h2>
                                       <h3>¿Qué es una oración o enunciado?</h3>
                                     <p>Observa y analiza las siguientes imágenes, sus oraciones y reflexiona sobre qué es una oración.</p>
@@ -219,31 +221,30 @@
 
                                     <br>
 
-
-                                    <div class="row">
-                                        <div class="col-lg-10">
-                                            <div class="w3-light-grey w3-round-xlarge">
-                                                <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%">1 de 7</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <div class="progress blue">
-                                                <span class="progress-left">
-                                                    <span class="progress-bar"></span>
-                                                </span>
-                                                <span class="progress-right">
-                                                    <span class="progress-bar"></span>
-                                                </span>
-                                                <div class="progress-value">20%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                     <br>
 
 
                                 </div>
                               </div>
+
+
+                            <div class="card widget-feed">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                        <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                        <div class="w3-light-grey w3-round-xlarge">
+                                            <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
+                                        <div id="progreso"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                           </div>
                       </div>
                       <!-- Content Wrapper END -->
@@ -278,44 +279,35 @@
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(.0125 * 8)</script>
         <!-- endbuild -->
-
+        
         <!-- Insert your dependencies here -->
-
-        <!--
         <script>
-            function moveProgressBar() {
+            function moveProgressBar(progPorcent) {
+                if (progPorcent === undefined) {
+                    progPorcent = 0;
+                }
                 var elem = document.getElementById("myBar");
-                var width = 20;
+                var width = 0;
                 var id = setInterval(frame, 10);
                 function frame() {
-                    if (width >= 100) {
+                    if (width >= progPorcent) {
                         clearInterval(id);
                     } else {
                         width++;
                         elem.style.width = width + '%';
-                        elem.innerHTML = width * 1 + '% Completado';
+                        elem.innerHTML = width.toString() + '%';
                     }
                 }
             }
         </script>
-        -->
-        <script>
-            function moveProgressBar() {
-                var elem = document.getElementById("myBar");
-                var width = 10;
-                var id = setInterval(frame, 10);
-                function frame() {
-                    if (width >= (100/7)*1) {
-                        clearInterval(id);
-                    } else {
-                        width++;
-                        elem.style.width = width + '%';
-                        elem.innerHTML = '1 de 7';
-                    }
-                }
-            }
-        </script>
+        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+        <script type="text/javascript">moveProgressBar((1/7)*100)</script>
 
     </body>
 </html>

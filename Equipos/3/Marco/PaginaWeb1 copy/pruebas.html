@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Progress Bar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="w3.css">
+    
+    <style type="text/css">
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bs-example">
+        <h2>Task Progress</h2>
+
+        <div class="progress">
+            <div class="progress-bar" id="bar">
+                <span class="sr-only">60% Complete</span>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" id="bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">25%</div>
+        </div>
+
+        <script type="text/javascript">
+            var current_progress = 0;
+            var progressBar = $("#bar");
+            function countNumbers() {
+                if (current_progress < 100) {
+                    current_progress = current_progress + 1;
+                    progressBar.css("width", current_progress + "%");
+                    progressBar.attr("aria-valuenow", current_progress)
+                    progressBar.text(current_progress + "% Complete");
+                }
+                // Wait for sometime before running this script again
+                setTimeout("countNumbers()", 50);
+            }
+            countNumbers();
+        </script>
+    </div>
+
+    <div class="w3-container">
+    
+        <h2>Dynamic Progress Bar with Labels</h2>
+        <p>Centered label:</p>
+    
+        <div class="w3-light-grey">
+            <div id="myBar" class="w3-container w3-green w3-center" style="width:20%">20%</div>
+        </div>
+        <br>
+        <button class="w3-button w3-green" onclick="moveProgressBar()">Click Me</button>
+    
+    </div>
+    
+    <script>
+        function moveProgressBar() {
+            var elem = document.getElementById("myBar");
+            var width = 20;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
