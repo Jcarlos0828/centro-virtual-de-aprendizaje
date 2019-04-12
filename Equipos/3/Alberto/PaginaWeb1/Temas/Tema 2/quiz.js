@@ -1,9 +1,34 @@
+// $('input[name="pregunta_1"][type="button"]').on('click', function(event){
+//     let respuesta = $('input[name="respuesta"][type="radio"]:checked').val();
+//     if (respuesta === "incorrect"){
+//         alert('Respuesta incorrecta');
+//         console.log("hola");
+//     }
+//     if (respuesta === "incorrect"){
+//         document.getElementById("button Verificar1").style.background='#F20D0D';
+//         document.getElementById("button Verificar1").style.border='#000000';
+//         document.getElementById("button Verificar1").value='Incorrecto';
+//     }
+//     else if (respuesta === "correct"){
+//         document.getElementById("button Verificar1").style.background='#28D81C';
+//         document.getElementById("button Verificar1").style.border='#000000';
+//         document.getElementById("button Verificar1").value='Correcto';
+//     }
+//     event.preventDefault();
+// });
+
 $('input[name="pregunta_1"][type="button"]').on('click', function(event){
     let respuesta = $('input[name="respuesta"][type="radio"]:checked').val();
     if (respuesta === "incorrect"){
-        alert('Respuesta incorrecta');
+        document.getElementById("button Verificar1").style.background='#F20D0D';
+        document.getElementById("button Verificar1").style.border='#000000';
+        document.getElementById("button Verificar1").value='Incorrecto';
     }
-    event.preventDefault();
+    else if (respuesta === "correct"){
+        document.getElementById("button Verificar1").style.background='#28D81C';
+        document.getElementById("button Verificar1").style.border='#000000';
+        document.getElementById("button Verificar1").value='Correcto';
+    }
 });
 
 $('input[name="pregunta_2"][type="button"]').on('click', function(event){
