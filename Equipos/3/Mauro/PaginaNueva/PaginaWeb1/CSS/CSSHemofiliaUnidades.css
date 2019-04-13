@@ -17,6 +17,22 @@ h1{
   font-size:40px;
 }
 
+h2{
+  text-align:center;
+  color:black;
+  font-size:25px;
+}
+
+h3{
+  text-align:center;
+  color:black;
+  font-size:20px;
+}
+
+h5{
+  text-align: center;
+}
+
 .img_menu {
   display: block;
   margin-left: auto;
@@ -68,18 +84,6 @@ h1{
   background-color: white;
 }
 
-h2{
-  text-align:center;
-  color:black;
-  font-size:25px;
-}
-
-h3{
-  text-align:center;
-  color:black;
-  font-size:20px;
-}
-
 #casosHospitalizados {
  background-color: powderblue;
  border-radius: 8px;
@@ -122,7 +126,7 @@ li{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
   border-radius: 8px;
 }
 
@@ -138,30 +142,8 @@ li{
   border: 2px solid #008CBA;
 }
 
-.progress{
-  display:-ms-flexbox;
-  display:flex;
-  height:1rem;
-  overflow:hidden;
-  font-size:.75rem;
-  background-color:#e9ecef;
-  border-radius:.25rem}
-
-.progress-bar{
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  -ms-flex-pack:center;
-  justify-content:center;
-  color:#fff;
-  text-align:center;
-  white-space:nowrap;
-  background-color:#007bff;
-  transition:width .6s ease}
-
-.progress-bar-animated{
-  -webkit-animation:progress-bar-stripes 1s linear infinite;animation:progress-bar-stripes 1s linear infinite
+.card-title{
+  color: black;
 }
 
 .button_quiz {
