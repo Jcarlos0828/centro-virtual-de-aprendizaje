@@ -37,7 +37,7 @@
                   <div class="side-nav">
                       <div class="side-nav-inner">
                           <div class="side-nav-logo">
-                              <a href="inicioHemofilia.html">
+                              <a href="bienvenidaHemofilia.html">
                                   <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
                                   <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png');width: 100%"></div>
                               </a>
@@ -49,11 +49,19 @@
                           </div>
                           <ul class="side-nav-menu scrollable">
                               <li class="nav-item active">
-                                  <a class="mrg-top-30" href="inicioHemofilia.html">
+                                  <a class="mrg-top-30" href="bienvenidaHemofilia.html">
                                       <span class="icon-holder">
                                           <i class="ti-home"></i>
                                       </span>
-                                      <span class="title">Inicio</span>
+                                      <span class="title">Bienvenida</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="introduccionHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-file-text"></i>
+                                      </span>
+                                      <span class="title">Introducción</span>
                                   </a>
                               </li>
                               <li class="nav-item dropdown">
@@ -61,7 +69,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Temas</span>
+                                      <span class="title">Módulos</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -74,16 +82,32 @@
                                           <a href="./unidad2Hemofilia.html">Recomendaciones</a>
                                       </li>
                                       <li>
-                                          <a href="./CreditosHemofilia.html">Créditos</a>
+                                          <a href="./quizHemofilia.html">Quiz</a>
                                       </li>
                               </ul>
                               </li>
                               <li class="nav-item active">
-                                  <a class="mrg-top" href="quizHemofilia.html">
+                                  <a class="mrg-top" href="politicasHemofilia.html">
                                       <span class="icon-holder">
-                                          <i class="ei-file-edit"></i>
+                                          <i class="ei-file-globe"></i>
                                       </span>
-                                      <span class="title">Quiz</span>
+                                      <span class="title">Políticas</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="contactanosHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-phone-book-contact"></i>
+                                      </span>
+                                      <span class="title">Contáctanos</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="creditosHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-id-card"></i>
+                                      </span>
+                                      <span class="title">Créditos</span>
                                   </a>
                               </li>
                           </ul>
@@ -123,165 +147,223 @@
                           <div class="card">
                             <div class="overlay-dark bg" style="
                                   background-image: url('FOTOS HEMOFILIA/shutterstock_1141193291.jpg');
-                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: center;
                                   background-repeat: no-repeat;
                                   background-size: 100% 500px;">
                               <div class="card-block">
-                                <div class="mrg-top-35">
+                                <div class="mrg-top-130">
                                   <div class="tag tag-primary">Salud</div>
                                     <h1>Características</h1>
                                 </div>
                               </div>
                             </div>
                             <div class="card-block">
-
-
-                              <!-- Your content goes here -->
-                                <div class="row">
-                                  <div class="column">
-                                  </div>
-                                </div>
-                                <hr>
-                                <h3>Haz click en los botones para mostrar el contenido</h3>
-                                <hr>
-                                <div class="row">
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction1()">¿Qué es la Hemofilia?</button>
-                                      <script>
-                                      function myFunction1() {
-                                      var x = document.getElementById('Hemofilia');
-                                      if (x.style.display == 'block') {
-                                        x.style.display = 'none';
-                                      } else {
-                                        x.style.display = 'block';
-                                      }
-                                      }
-                                      </script>
-                                      <div id ="Hemofilia" style="display: none;">
-                                        <p>La hemofilia es una enfermedad hereditaria caracterizada por la aparición de hemorragias internas y externas debido a la deficiencia total o parcial de una proteína coagulante denominada globulina antihemofílica (factor de coagulación). Cuando hay carencia o déficit de algún factor de coagulación, la sangre tarda más tiempo en formar el coágulo y, aunque llegue a formarse, no es consistente y no se forma un buen tapón para detener la hemorragia.</p>
+                              <br>
+                              <h5>Haz click o presiona cada uno de las pestañas para desplegar la información.</h5>
+                            </div>
+                            <div class="card-block">
+                              <div class="mrg-top-10">
+                                <div class="col-sm-15">
+                                  <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne">
+                                            <span>¿Qué es la Hemofilia?</span>
+                                            <i class="icon ti-arrow-circle-down"></i>
+                                          </a>
+                                        </h4>
                                       </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                   <br>
-                                <div class="row" class="row align-items-start">
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction2()">Hay dos variedades de hemofilia:</button>
-                                      <script>
-                                        function myFunction2() {
-                                        var x = document.getElementById('VariedadesHemofilia');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                       </script>
-                                       <div id="VariedadesHemofilia" style="display: none">
-                                         <ul>
-                                          <li style="padding-top: 5px; font-size:15px;color:black">Hemofilia A: hay un déficit del factor VIII de coagulación.</li>
-                                          <li style="font-size:15px;color:black">Hemofilia B: hay un déficit del factor IX de coagulación.</li>
-                                        </ul>
-                                       </div>
-                                    </div>
-                                  </div>
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction3()">¿Cuál es más grave la Hemofilia A o B?</button>
-                                      <script>
-                                        function myFunction3() {
-                                        var x = document.getElementById('MasGrave');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                      </script>
-                                      <p id="MasGrave" style="display: none">La gravedad no depende del tipo de hemofilia sino del porcentaje de actividad del factor deficiente, ejemplo: se considera leve cuando hay mas de 5% de actividad del factor deficiente, moderada cuando hay 2 y 5 % y severa cuando hay menos del 2%.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row" class="row align-items-start">
-                                  <div class="column">
-                                    <div class="cardelement">
-                                     <button class="button" onclick="myFunction4()">¿Cómo se hereda esta enfermedad?</button>
-                                      <script>
-                                        function myFunction4() {
-                                        var x = document.getElementById('Herencia');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                       </script>
-                                      <div id="Herencia" style="display: none">
-                                        <br>
-                                        <img class="card-img-top" alt="Cromosoma X" src="FOTOS HEMOFILIA/shutterstock_140419720.jpg">
-                                      <div class="card-body">
-                                        <div class="card-text">
-                                          <p>Se hereda ligada al cromosoma X, es decir que se transmite por la madre y la padecen los varones.</p>
+                                      <div id="collapseOne" class="collapse panel-collapse">
+                                        <div class="panel-body">
+                                          <div class="row">
+                                            <div class="column">
+                                              <div class="card-body">
+                                                <p class="card-text">La hemofilia es una enfermedad hereditaria caracterizada por la aparición de hemorragias internas y externas debido a la deficiencia total o parcial de una proteína coagulante denominada globulina antihemofílica (factor de coagulación). Cuando hay carencia o déficit de algún factor de coagulación, la sangre tarda más tiempo en formar el coágulo y, aunque llegue a formarse, no es consistente y no se forma un buen tapón para detener la hemorragia.</p>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-block">
+                              <div class="mrg-top-10">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo">
+                                              <span>Hay dos variedades de hemofilia:</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <ul class="card-text">
+                                                    <li style="padding-top: 5px; font-size:15px;color:black">Hemofilia A: hay un déficit del factor VIII de coagulación.</li>
+                                                    <li style="font-size:15px;color:black">Hemofilia B: hay un déficit del factor IX de coagulación.</li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction5()">¿Siempre hay antecedentes familiares de esta enfermedad?</button>
-                                      <script>
-                                        function myFunction5() {
-                                        var x = document.getElementById('AntecedentesFamiliares');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                      </script>
-                                      <p id="AntecedentesFamiliares" style="display: none">Casi siempre pero en un 30% de los casos no los hay y esto se conoce como mutación de novo.</p>
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseThree">
+                                              <span>¿Cuál es más grave la Hemofilia A o B?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseThree" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <p class="card-text">La gravedad no depende del tipo de hemofilia sino del porcentaje de actividad del factor deficiente, ejemplo: se considera leve cuando hay mas de 5% de actividad del factor deficiente, moderada cuando hay 2 y 5 % y severa cuando hay menos del 2%.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="row" class="row align-items-start">
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction6()">¿Desde que edad se recomienda hacer las pruebas para descartar hemofilia cuando nace un varón con antecedentes familiares de hemofilia?</button>
-                                      <script>
-                                        function myFunction6() {
-                                        var x = document.getElementById('Pruebas');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                      </script>
-                                      <p id="Pruebas" style="display: none">Desde los 2 meses de edad</p>
+                              </div>
+                            </div>
+                            <div class="card-block">
+                              <div class="mrg-top-10">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseFour">
+                                              <span>¿Cómo se hereda esta enfermedad?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseFour" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <img class="card-img-top" alt="Cromosoma X" src="FOTOS HEMOFILIA/shutterstock_140419720.jpg">
+                                                  <p class="card-text">Se hereda ligada al cromosoma X, es decir que se transmite por la madre y la padecen los varones.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction7()">¿Cual es la prueba de laboratorio que apoya el diagnóstico de hemofilia?</button>
-                                      <script>
-                                        function myFunction7() {
-                                        var x = document.getElementById('Laboratorio');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                      </script>
-                                      <p id="Laboratorio" style="display: none">El tiempo de tromboplastina parcial activo (TTPa) pero la confirmación se hace con la medición de factores VIII y IX.</p>
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseFive">
+                                              <span>¿Siempre hay antecedentes familiares de esta enfermedad?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseFive" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <p class="card-text">Casi siempre pero en un 30% de los casos no los hay y esto se conoce como mutación de novo.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="card-block">
+                              <div class="mrg-top-10">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingSix">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseSix">
+                                              <span>¿Desde que edad se recomienda hacer las pruebas para descartar hemofilia cuando nace un varón con antecedentes familiares de hemofilia?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseSix" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <p class="card-text">Desde los 2 meses de edad.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingSeven">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseSeven">
+                                              <span>¿Cual es la prueba de laboratorio que apoya el diagnóstico de hemofilia?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseSeven" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <p class="card-text">El tiempo de tromboplastina parcial activo (TTPa) pero la confirmación se hace con la medición de factores VIII y IX.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
                                 <nav aria-label="..." style="text-align: center">
                                   <ul class="pagination justify-content-center">
                                     <li class="page-item disabled">
@@ -297,16 +379,34 @@
                                   </ul>
                                 </nav>
                                 <br>
-                                <div class="progress">
-                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="max-width:50%">
-                                    <div style="font-size: 15px">1 de 2</div>
+                              </div>
+                                <div class="card widget-feed">
+                                  <div class="row">
+                                    <div class="col-lg-8">
+                                      <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                      <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;color: gray; font-size: 18px">En este módulo</p>
+                                      <div class="progress" style="height: 20px;" id="bar">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 50%" >50%</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="progress blue" id="circle">
+                                        <span class="progress-left">
+                                          <span class="progress-bar"></span>
+                                        </span>
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value" id="circle-bar-val">33%</div>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
 
-                            </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
                       <!-- Content Wrapper END -->
 
@@ -340,10 +440,10 @@
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
-        <script src="assets/js/app.js"></script>
+        <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
         <script src="quiz.js"></script>
-
-        <script src="./assets/js/progreso.js"></script>
         <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
         <script type="text/javascript">show(.5)</script>
 
