@@ -147,52 +147,72 @@
                           <div class="card">
                             <div class="overlay-dark bg" style="
                                   background-image: url('FOTOS HEMOFILIA/shutterstock_588196298.jpg');
-                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: top;
                                   background-repeat: no-repeat;
-                                  background-size: 100% 350px;">
+                                  background-size: 100% 400px;">
                               <div class="card-block">
-                                <div class="mrg-top-35">
+                                <div class="mrg-top-130">
                                   <div class="tag tag-primary">Salud</div>
-                                    <h1>Recomendaciones</h1>
+                                    <h1 id="h1top">Recomendaciones</h1>
                                 </div>
                               </div>
                             </div>
                             <div class="card-block">
 
                               <!-- Your content goes here -->
-                              <div class="row">
-                                <div class="column">
-                                 <div id="casosHospitalizados">
-                                  <h3><b>Ameritan ser hospitalizados los siguientes casos:</b></h3>
-                                  <ul>
-                                    <li>Traumatismos craneoencefálicos.</li>
-                                    <li>Extracciones dentales múltiples en pacientes con hemofilia severa.</li>
-                                    <li>Hematomas en cuello.</li>
-                                    <li>Hemorragias en presencia de inhibidores.</li>
-                                    <li>Cirugía mayor.</li>
-                                  </ul>
-                                  </div>
-                                </div>  
+                              <div class="table-overflow">
+                                <table class="table table-bordered table-hover table-sm">
+                                  <thead>
+                                    <tr>
+                                      <th id="tableh1">Ameritan ser Hospitalizados los siguientes casos</th>
+                                    </tr>
+                                  </thead>
+                                  <body>
+                                    <tr>
+                                      <td id="tablebody">Traumatismos craneoencefálicos.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Extracciones dentales múltiples en pacientes con hemofilia severa.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Hematomas en cuello.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Hemorragias en presencia de inhibidores.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Cirugía mayor.</td>
+                                    </tr>
+                                  </body>
+                                </table>
                               </div>
-                              <div class="row">
-                                <div class="column">
-                                <hr>
-                                 <h3><b>Recomendaciones de dosis de factores liofilizados de acuerdo al tipo de evento:</b></h3>
-                                 <ul>
-                                    <li>En hemartrosis: 20 U/kg/ dosis 2 a 3 dosis (en hemofilia A cada 8 a 12 horas y en hemofilia B cada 24 horas).</li>
-                                    <li>Hemorragia intracraneana: 50 U/kg/ dosis primeros 3 días, luego 20 U/kg/ dosis por mínimo 10 días más.</li>
-                                    <li>Extracciones dentales: 20 U/kg/ antes de efectuar la extracción luego cada 12 horas por 3 días.</li>
-                                 </ul>
-                                </div>
+                              <br>
+                              <br>
+                              <div class="table-overflow" style="border-color: dodgerblue">
+                                <table class="table table-bordered table-hover table-sm">
+                                  <thead>
+                                    <tr>
+                                      <th id="tableh1">Recomendaciones de dosis de factores liofilizados de acuerdo al tipo de evento:</th>
+                                    </tr>
+                                  </thead>
+                                  <body>
+                                    <tr>
+                                      <td id="tablebody"><strong>En hemartrosis: </strong>20 U/kg/ dosis 2 a 3 dosis (en hemofilia A cada 8 a 12 horas y en hemofilia B cada 24 horas).</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody"><strong>Hemorragia intracraneana: </strong>50 U/kg/ dosis primeros 3 días, luego 20 U/kg/ dosis por mínimo 10 días más.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody"><strong>Extracciones dentales: </strong>20 U/kg/ antes de efectuar la extracción luego cada 12 horas por 3 días.</td>
+                                    </tr>
+                                  </body>
+                                </table>
                               </div>
                               <div class="card-block">
                                 <hr>
                                 <h5>Haz click o presiona cada uno de las pestañas para desplegar la información.</h5>
                                 <hr>
-                              </div>
-                              <div class="card-block">
                                 <div class="mrg-top-10">
                                   <div class="row">
                                     <div class="col-sm-6">
@@ -201,7 +221,7 @@
                                           <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                               <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne">
-                                                <span>¿Qué tipo de medicamento deben prohibirse al padecer esta enfermedad?</span>
+                                                <span id="dropdownfont">¿Qué tipo de medicamento deben prohibirse al padecer esta enfermedad?</span>
                                                 <i class="icon ti-arrow-circle-down"></i>
                                               </a>
                                             </h4>
@@ -226,7 +246,7 @@
                                           <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                               <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo">
-                                                <span>¿Cuáles vacunas de la Cartilla Nacional de Vacunación pueden aplicarse?</span>
+                                                <span id="dropdownfont">¿Cuáles vacunas de la Cartilla Nacional de Vacunación pueden aplicarse?</span>
                                                 <i class="icon ti-arrow-circle-down"></i>
                                               </a>
                                             </h4>
@@ -262,7 +282,7 @@
                                         <div class="panel-heading" role="tab" id="headingThree">
                                           <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseThree">
-                                              <span>¿Qué tipo de deportes se recomiendan?</span>
+                                              <span id="dropdownfont">¿Qué tipo de deportes se recomiendan?</span>
                                               <i class="icon ti-arrow-circle-down"></i>
                                             </a>
                                           </h4>
@@ -287,7 +307,7 @@
                                         <div class="panel-heading" role="tab" id="headingFour">
                                           <h4 class="panel-title">
                                             <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseFour">
-                                              <span>¿Qué es una hemartrosis?</span>
+                                              <span id="dropdownfont">¿Qué es una hemartrosis?</span>
                                               <i class="icon ti-arrow-circle-down"></i>
                                             </a>
                                           </h4>
