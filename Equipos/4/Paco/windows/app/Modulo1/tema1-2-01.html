@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../assets/vendors/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href=".../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
         <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- page plugins css -->
 
@@ -21,6 +22,7 @@
         <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="../assets/css/animate.min.css" rel="stylesheet">
         <link href="../assets/css/app.css" rel="stylesheet">
+        <link href="../assets/css/progress.css" rel="stylesheet">
         <link href="../assets/css/mycss.css" rel="stylesheet">
 
     </head>
@@ -177,21 +179,97 @@
                                       <div class="card">
                                           <div class="card-block">
                                               <h1 class="card-title">Tema 1: Conceptos básicos</h1>
-                                              <h3 class="card-title">Subtema 1.1:  Sistema operativo</h3>
-                                              <p class="lead">La <strong>función principal</strong> que desempeña cualquier Sistema operativo es la de hacer de intermediario entre los elementos físicos que componen una computadora (la pantalla, el teclado, el disco duro, la impresora, etc.) y la personas que usan a la computadora, haciendo así más fácil su manejo.</p>
-                                              <p class="lead">Por ejemplo, si se desea saber exactamente en qué parte del disco duro se tiene guardado cada documento que ha sido creado, el sistema operativo es quien se encarga de hacerlo.</p>
-                                              <p class="lead">En este curso, se enseñara el uso básico de los sistemas Windows 7 y Windows 10.</p>
+                                              <h3 class="card-title">Subtema 1.2: Manejo del Sistema Operativo</h3>
+                                              <h4 class="card-title">Ratón</h4>
+                                              <div class="row">
+                                                  <div class="col-lg-6">
+                                                      <p class="lead">Al arrancar aparece en la pantalla un pequeño objeto móvil llamado puntero o cursor, cuya posición está relacionada con el movimiento del ratón.</p>
+                                                      <p class="lead">Aunque la mayoría de las operaciones se pueden realizar también desde el teclado, el ratón proporciona el modo más directo, cómodo e intuitivo de seleccionar y mover elementos en la pantalla.</p>
+                                                  </div>
+                                                  <div class="col-lg-1">
+                                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal-left">Boton Izquierdo</button>
+                                                  </div>
+                                                  <div class="col-lg-4">
+                                                
+                                                  </div>
+                                                  <div class="col-lg-1 pl-2">
+                                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal-right">Boton Derecho</button>
+                                                  </div>
+                                              </div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                               <div class="row">
                                   <div class="col-lg-12">
-                                    <a href="./tema1.html"><i class="fa fa-arrow-left"></i></a>
-                                    <a href="./tema1-2.html"><i class="fa fa-arrow-right"></i></a>
+                                    <a href="./tema1-2.html"><i class="fa fa-arrow-left"></i></a>
                                   </div>
                               </div>
                               <!-- Your content goes here -->
+
+                              <div class="modal fade bd-modal-left" tabindex="-1" role="dialog" aria-labelledby="leftModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-xl modal-dialog-centered">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h1 class="modal-title">Botón Izquierdo del Ratón</h1>
+                                          </div>
+                                          <div class="modal-body">
+                                              <h3 class="modal-title">Realiza las operaciones fundamentales como:</h3>
+                                              <table class="table">
+                                                  <tbody>
+                                                      <tr>
+                                                          <th scope="row" class="bg-info text-white">Apuntar</th>
+                                                          <td>Llevar el puntero (flecha u otro símbolo) a un lugar concreto de la pantalla desplazando el ratón sobre una superficie plana.</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th scope="row" class="bg-info text-white">Hacer Clic</th>
+                                                          <td>Pulsar y soltar un botón del ratón.</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th scope="row" class="bg-info text-white">Arrastrar</th>
+                                                          <td>Manteniendo pulsado un botón del ratón, mover éste a un lugar diferente y luego soltar el botón. Normalmente, se 'arrastra' un objeto para moverlo de un lugar a otro de la pantalla.</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th scope="row" class="bg-info text-white">Hacer Doble Clic</th>
+                                                          <td>Pulsar el botón dos veces consecutivas rápidamente y después soltarlo.</td>
+                                                      </tr>
+                                                  </tbody>
+                                              </table>
+                                              <p class="lead">Dependiendo de dónde esté situado el puntero, éste puede adoptar diferentes formas.<br><strong>Las más comúnes son:</strong></p>
+                                              <table class="table">
+                                                  <tbody>
+                                                      <tr>
+                                                          <th scope="row"><img src="../assets/images/M1/cursor1.jpg"></th>
+                                                          <td>Manteniendo pulsado un botón del ratón, mover éste a un lugar diferente y luego soltar el botón. Normalmente, se 'arrastra' un objeto para moverlo de un lugar a otro de la pantalla.</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th scope="row"><img src="../assets/images/M1/cursor2.jpg"></th>
+                                                          <td>Indica que está listo para insertar texto.</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th scope="row"><img src="../assets/images/M1/cursor3.jpg"></th>
+                                                          <td>Indica que puede seleccionar el objeto.</td>
+                                                      </tr>
+                                                  </tbody>
+                                              </table>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="modal fade bd-modal-right" tabindex="-1" role="dialog" aria-labelledby="rightModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered modal-xl">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h1 class="modal-title">Botón Derecho del Ratón</h1>
+                                          </div>
+                                          <div class="modal-body">
+                                              <p class="lead">Cuenta con funciones adicionales que al ser presionado sobre algún icono en Windows despliega un menú contextual con las acciones más comunes sobre ese elemento, lo cual permite un acceso más veloz a los distintos iconos</p>
+                                              <p class="lead">Al hacer clic sobre el icono Mi PC (My Computer) utilizando el botón derecho del ratón, aparece el menú contextual con una lista de diferentes comandos.</p>
+                                          </div> 
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                       </div>
                       <!-- Content Wrapper END -->
