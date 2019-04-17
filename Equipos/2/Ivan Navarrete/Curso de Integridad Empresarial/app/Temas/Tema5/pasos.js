@@ -51,6 +51,53 @@ function Paso1Der() {
     }
   }
 
+  function Paso2Der() {
+    if (!locked && paso2<2) {
+        locked = true;
+        setTimeout(unlock, 500);
+        var x = document.getElementById("content-Paso2-"+paso2);
+        paso2= paso2+1;
+        var y = document.getElementById("content-Paso2-"+paso2);
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        
+        } else {
+        x.style.display = "none";
+        y.style.display = "block";
+        }
+        var flecha=document.getElementById("buttonIsq2");
+        flecha.style.display="block";
+        if(paso2==2){
+          var flecha=document.getElementById("buttonDer2");
+          flecha.style.display="none";
+        }
+    }
+    
+}
+  function Paso2Isq() {
+    if (!locked && paso2>1) {
+        locked = true;
+        setTimeout(unlock, 500);
+        var x = document.getElementById("content-Paso2-"+paso2);
+        paso2= paso2-1;
+        var y = document.getElementById("content-Paso2-"+paso2);
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        
+        } else {
+        x.style.display = "none";
+        y.style.display = "block";
+        }
+        var flecha=document.getElementById("buttonDer2");
+        flecha.style.display="block";
+        if(paso2==1){
+          var flecha=document.getElementById("buttonIsq2");
+          flecha.style.display="none";
+        }
+        
+    }
+  }
+
   function Paso3Der() {
     if (!locked && paso3<4) {
         locked = true;

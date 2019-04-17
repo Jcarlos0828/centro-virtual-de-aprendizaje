@@ -3664,3 +3664,4 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
   text-align: justify;
 }
 .progreso { position: fixed; bottom: 20px; right: 20px; padding: 15px !important; z-index: 1001; font-size: 15px !important; color: #ffffff; }
+.num-text{ margin-top: .3em; }
