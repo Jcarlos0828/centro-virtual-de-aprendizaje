@@ -244,13 +244,13 @@
                                                 <div class="feed-body">
                                                     <p><b>En un poblado hay en el año de 1998, un total de 580,000 habitantes. La tasa anual de natalidad del poblado es de 2.3% y la de mortalidad es de 0.45%. Suponiendo que no hay migración, encuentre el número de habitantes en el año 2015.</b></p>
                                                     <p>El modelo matemático para este caso sería:</p>
-                                                    <p>El número de habitantes del poblado en cualquier año t ( Pt ), es igual al número de habitantes en el año anterior ( Pt-1 ) mas el número de nacimientos del año (at ) y menos el número de muertes del año (dt ).</p>
-                                                    <p><b>Pt = Pt-1+ at – dt</b></p>
-                                                    <p>El número de nacimientos en el año t ( at ), es igual a la población del año anterior ( Pt-1 ) multiplicada por la tasa de natalidad expresada en decimales ( 0.023 ).</p>
-                                                    <p>at = Pt-1 x 0.023</p>
+                                                    <p>El número de habitantes del poblado en cualquier año t ( P<sub>t</sub> ), es igual al número de habitantes en el año anterior ( P<sub>t-1</sub> ) mas el número de nacimientos del año (a<sub>t</sub> ) y menos el número de muertes del año (dt ).</p>
+                                                    <p><b>P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> – dt</b></p>
+                                                    <p>El número de nacimientos en el año t ( a<sub>t</sub> ), es igual a la población del año anterior ( P<sub>t-1</sub> ) multiplicada por la tasa de natalidad expresada en decimales ( 0.023 ).</p>
+                                                    <p>a<sub>t</sub> = P<sub>t-1</sub> x 0.023</p>
                                                     <p>El número de muertes en el año t (dt ), es el producto de multiplicar la población del año anterior</p>
-                                                    <p>(Pt-1 ) por la tasa de mortalidad en decimales (0.0045).</p>
-                                                    <p><b>dt = Pt-1 x 0.0045.</b></p>
+                                                    <p>(P<sub>t-1</sub> ) por la tasa de mortalidad en decimales (0.0045).</p>
+                                                    <p><b>dt = P<sub>t-1</sub> x 0.0045.</b></p>
                                                     <p>Utilizando las ecuaciones anteriores para obtener el número de habitantes, el de nacimientos y el de muertes para cada año, se genera la siguiente tabla:</p>
 
                                                     <p><b>TABLA EN EXCEL</b></p>
@@ -424,16 +424,16 @@
                                                 <h3 class="feed-subtitle">Solución utilizando la representación algebraica del modelo en Excel</h3>
                                                 <div class="feed-body">
                                                     <p>Se puede utilizar la representación algebraica del modelo de la siguiente manera:</p>
-                                                    <p>El modelo para éste Caso establece que el número de habitantes del poblado en cualquier año t ( Pt ), es igual al número de habitantes en el año anterior ( Pt-1 ) mas el número de nacimientos del año (at ) y menos el número de muertes del año (dt ).</p>
-                                                    <p>Pt = Pt-1+ at – dt</p>
-                                                    <p>El número de nacimientos en el año t ( at ), es igual a la población del año anterior ( Pt-1 ) multiplicada por la tasa de natalidad expresada en decimales ( 0.023 ).</p>
-                                                    <p>at = Pt-1 x 0.023</p>
-                                                    <p>El número de muertes en el año t (dt ), es el producto de multiplicar la población del año anterior ( Pt-1 ) por la tasa de mortalidad en decimales (0.0045).</p>
-                                                    <p>dt = Pt-1 x 0.0045.</p>
-                                                    <p>Al sustituir el número de nacimientos ( at ) y el número de muertes ( dt ) en la primera ecuación ( Pt = Pt-1+ at – dt ) se obtiene la siguiente fórmula:</p>
-                                                    <p>Pt = Pt-1+ at – dt</p>
-                                                    <p>Pt = Pt-1 + Pt-1 x 0.023 – Pt-1 x 0.0045 sacando Pt-1 de factor común queda</p>
-                                                    <p>Pt = Pt-1 ( 1 + 0.023 – 0.0045 ) La población en cualquier año es igual a la población del año anterior multiplicada por uno más la tasa de natalidad y menos la tasa de mortalidad expresadas en decimales.</p>                                       
+                                                    <p>El modelo para éste Caso establece que el número de habitantes del poblado en cualquier año t ( P<sub>t</sub> ), es igual al número de habitantes en el año anterior ( P<sub>t-1</sub> ) mas el número de nacimientos del año (a<sub>t</sub> ) y menos el número de muertes del año (dt ).</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> – dt</p>
+                                                    <p>El número de nacimientos en el año t ( a<sub>t</sub> ), es igual a la población del año anterior ( P<sub>t-1</sub> ) multiplicada por la tasa de natalidad expresada en decimales ( 0.023 ).</p>
+                                                    <p>a<sub>t</sub> = P<sub>t-1</sub> x 0.023</p>
+                                                    <p>El número de muertes en el año t (dt ), es el producto de multiplicar la población del año anterior ( P<sub>t-1</sub> ) por la tasa de mortalidad en decimales (0.0045).</p>
+                                                    <p>dt = P<sub>t-1</sub> x 0.0045.</p>
+                                                    <p>Al sustituir el número de nacimientos ( a<sub>t</sub> ) y el número de muertes ( dt ) en la primera ecuación ( P<sub>t</sub> = P<sub>t-1</sub>+ a<sub>t</sub> – dt ) se obtiene la siguiente fórmula:</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub>+ at – dt</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> + P<sub>t-1</sub> x 0.023 – P<sub>t-1</sub> x 0.0045 sacando P<sub>t-1</sub> de factor común queda</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> ( 1 + 0.023 – 0.0045 ) La población en cualquier año es igual a la población del año anterior multiplicada por uno más la tasa de natalidad y menos la tasa de mortalidad expresadas en decimales.</p>                                       
                                                     <p>Utilizando esta ecuación en Excel se genera la siguiente tabla:</p>
 
                                                     <p><b>TABLA EN EXCEL</b></p>
@@ -626,18 +626,18 @@
                                                     <p>Esta tasa de crecimiento es positiva, ya que la tasa de natalidad es mayor que la de mortalidad.</p>
                                                     <p>La tasa de crecimiento anual real es de 1.85%</p>
                                                     <p><b>Datos:</b></p>
-                                                    <p>P0 = 580,000</p>
+                                                    <p>P<sub>0</sub> = 580,000</p>
                                                     <p>r = 0.0185</p>
                                                     <p>t = 17 años</p>
-                                                    <p>P17 = ? la población después de 17 años, o la población en el año 2015.</p>
+                                                    <p>P<sub>17</sub> = ? la población después de 17 años, o la población en el año 2015.</p>
                                                     
                                                     <p><b>Solución:</b></p>
-                                                    <p>Aplicando la fórmula de Crecimiento Poblacional Compuesto  Pt = P0 (1 + r)t para 17 años, queda la ecuación:</p>
-                                                    <p>P17 = P0 (1 + r)17</p>
-                                                    <p>P17 = 580,000 (1 + 0.0185)17</p>
-                                                    <p>P17 = 580,000 (1.0185)17 usando calculadora se obtiene</p>
-                                                    <p>P17 = 580,000 (1.36564420675)</p>
-                                                    <p>P17 = 792,073.639915 redondeando la cantidad, la población después de 17 años es de 792,074, o bien,</p>
+                                                    <p>Aplicando la fórmula de Crecimiento Poblacional Compuesto  P<sub>t</sub> = P<sub>0</sub>(1 + r)<sup>t</sup> para 17 años, queda la ecuación:</p>
+                                                    <p>P<sub>17</sub> = P<sub>0</sub>(1 + r)<sup>17</sup></p>
+                                                    <p>P<sub>17</sub> = 580,000 (1 + 0.0185)<sup>17</sup></p>
+                                                    <p>P<sub>17</sub> = 580,000 (1.0185)<sup>17</sup> usando calculadora se obtiene</p>
+                                                    <p>P<sub>17</sub> = 580,000 (1.36564420675)</p>
+                                                    <p>P<sub>17</sub> = 792,073.639915 redondeando la cantidad, la población después de 17 años es de 792,074, o bien,</p>
                                                     <p>El número de habitantes del poblado para el año 2015 será de 792,074</p>
                                                 </div>
                                             </div>

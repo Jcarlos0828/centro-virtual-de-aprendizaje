@@ -246,7 +246,83 @@
 
                                                     <p>Las tasas de interés que están en la tabla son las que se conocen como interés bruto, ya que hay que quitar todavía un impuesto del 1.7% para obtener lo que es el interés neto que es con el que ya se obtienen los intereses de la inversión:</p>
 
-
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>MONTO</td>
+                                                                <td>7 días</td>
+                                                                <td>28 días</td>
+                                                                <td>91 días</td>
+                                                                <td>182 días</td>
+                                                                <td>371 días</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>4.00%</td>
+                                                                <td>4.00%</td>
+                                                                <td>4.00%</td>
+                                                                <td>4.00%</td>
+                                                                <td>4.00%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1,000</td>
+                                                                <td>4.06%</td>
+                                                                <td>6.25%</td>
+                                                                <td>6.25%</td>
+                                                                <td>7.50%</td>
+                                                                <td>6.67%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10,000</td>
+                                                                <td>5.31%</td>
+                                                                <td>7.50%</td>
+                                                                <td>7.50%</td>
+                                                                <td>8.75%</td>
+                                                                <td>7.78%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>50,000</td>
+                                                                <td>7.19%</td>
+                                                                <td>8.75%</td>
+                                                                <td>9.38%</td>
+                                                                <td>10.63%</td>
+                                                                <td>9.44%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>100,000</td>
+                                                                <td>9.69%</td>
+                                                                <td>11.25%</td>
+                                                                <td>11.88%</td>
+                                                                <td>12.50%</td>
+                                                                <td>11.50%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>250,000</td>
+                                                                <td>11.56%</td>
+                                                                <td>12.25%</td>
+                                                                <td>12.50%</td>
+                                                                <td>13.50%</td>
+                                                                <td>12.50%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>500,000</td>
+                                                                <td>12.25%</td>
+                                                                <td>13.25%</td>
+                                                                <td>13.50%</td>
+                                                                <td>14.50%</td>
+                                                                <td>13.50%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1´000,000</td>
+                                                                <td>13.25%</td>
+                                                                <td>14.25%</td>
+                                                                <td>14.50%</td>
+                                                                <td>15.50%</td>
+                                                                <td>14.50%</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
 
 
                                                     <p>Para la cantidad de $200,000.00 corresponden las tasas de interés del renglón de $100,000 pesos.
@@ -274,7 +350,173 @@
                                                     <p>tasa de interés neto = 11.88 - 0.20196</p>
                                                     <p>tasa de interés neto = 11.6780%</p>
 
-                                                    <p>Al utilizar la representación algebraica del modelo St = St-1 +   St-1 * i con Excel, el saldo para cada período es igual al saldo anterior más los intereses sobre el saldo anterior.</p>
+                                                    <p>Al utilizar la representación algebraica del modelo S<sub>t</sub> = S<sub>t-1</sub> + S<sub>t-1</sub> * i con Excel, el saldo para cada periodo es igual al saldo anterior más los intereses sobre el saldo anterior.</p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Monto</td>
+                                                                <td>7 días</td>
+                                                                <td>28 días</td>
+                                                                <td>91 días</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Interés Bruto</td>
+                                                                <td>9.69%</td>
+                                                                <td>11.25%</td>
+                                                                <td>11.88%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Impuesto </td>
+                                                                <td>1.70%</td>
+                                                                <td>1.70%</td>
+                                                                <td>1.70%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Interés Neto</td>
+                                                                <td>9.53%</td>
+                                                                <td>11.06%</td>
+                                                                <td>11.68%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>Interés por Periodo</td>
+                                                                <td>0.18%</td>
+                                                                <td>0.85%</td>
+                                                                <td>2.91%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>Periodo</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>0</td>
+                                                                <td>200000.00</td>
+                                                                <td>200000.00</td>
+                                                                <td>200000.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>1</td>
+                                                                <td>200365.35</td>
+                                                                <td>201696.68</td>
+                                                                <td>205823.02</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>2</td>
+                                                                <td>200731.37</td>
+                                                                <td>203407.76</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11</td>
+                                                                <td>3</td>
+                                                                <td>201098.06</td>
+                                                                <td>205133.36</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12</td>
+                                                                <td>4</td>
+                                                                <td>201465.42</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13</td>
+                                                                <td>5</td>
+                                                                <td>201833.45</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14</td>
+                                                                <td>6</td>
+                                                                <td>202202.15</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15</td>
+                                                                <td>7</td>
+                                                                <td>202571.53</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>16</td>
+                                                                <td>8</td>
+                                                                <td>202941.58</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>17</td>
+                                                                <td>9</td>
+                                                                <td>203312.30</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>18</td>
+                                                                <td>10</td>
+                                                                <td>203683.71</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>19</td>
+                                                                <td>11</td>
+                                                                <td>204055.79</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>20</td>
+                                                                <td>12</td>
+                                                                <td>204428.55</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>21</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>22</td>
+                                                                <td>Intereses</td>
+                                                                <td>4428.55</td>
+                                                                <td>5133.36</td>
+                                                                <td>5823.02</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     
                                                     <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
                                                     <p>En los renglones 1, 2, 3, 5 y 8 teclear la información proporcionada del caso.</p>
@@ -300,7 +542,7 @@
                                                 <div class="feed-body">
                                                     <p><b>En la empresa donde trabaja el Sr. González le piden que analize cuál inversión es la más conveniente para una cantidad $200,000.00 que tiene la empresa disponibles por un período de 3 meses.</b></p>
                                                     <p>En la solución anterior se obtuvieron las tasa de interés neto para cada uno de los plazos.  En el plazo de 7 días la tasa de interés neto es de 9.5253%, para el plazo de 28 días la tasa de interés neto es de 11.0588% y para el plazo de 91 días la tasa de interés neto es de 11.6780%.</p>
-                                                    <p>Se va a utilizar la fórmula de Interés Compuesto St = S0 (1 + i)t   para encontrar el saldo al final de la inversión para cada tipo de plazo.</p>
+                                                    <p>Se va a utilizar la fórmula de Interés Compuesto S<sub>t</sub> = S<sub>0</sub> (1 + i)<sup>t</sup>   para encontrar el saldo al final de la inversión para cada tipo de plazo.</p>
 
                                                     <p><b>Plazo 7 días.</b></p>
                                                     <p>La tasa de interés neta es de 9.52527% anual y el número de períodos es de 12.</p> 
@@ -308,22 +550,20 @@
                                                     <p>tasa de interés semanal = 9.52527 / 365 * 7</p>
                                                     <p>tasa de interés semanal =  0.18267641% </p>
                                                     <p><b>Datos:</b></p>
-                                                    <p>S0 = 200,000.00</p>
+                                                    <p>S<sub>0</sub> = 200,000.00</p>
                                                     <p>i = 0.0018267641      en su forma decimal</p>
                                                     <p>t = 12</p>
-                                                    <p>S12 = ¿?  se desea saber el saldo al vencimiento de la inversión después de 12 períodos.</p>
+                                                    <p>S<sub>12</sub> = ¿?  se desea saber el saldo al vencimiento de la inversión después de 12 períodos.</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>De acuerdo a la fórmula St = S0 (1 + i)t aplicada para 12 períodos:</p>
-                                                    <p>S12 = S0 (1 + i)12    al sustituir los valores de S0 y de i la ecuación queda:</p>
-                                                    <p>S12 = 200,000.00 (1 + 0.0018267641)12</p>
-                                                    <p>S12 = 200,000.00 (1.0018267641)12</p>
-                                                    <p>S12 = 200,000.00 * 1.0221427623</p>
-                                                    <p>S12 = 204,428.55</p>
+                                                    <p>De acuerdo a la fórmula St = S<sub>0</sub> (1 + i)<sup>t</sup> aplicada para 12 períodos:</p>
+                                                    <p>S<sub>12</sub> = S<sub>0</sub> (1 + i)<sup>12</sup> al sustituir los valores de S<sub>0</sub> y de i la ecuación queda:</p>
+                                                    <p>S<sub>12</sub> = 200,000.00 (1 + 0.0018267641)<sup>12</sup> </p>
+                                                    <p>S<sub>12</sub> = 200,000.00 (1.0018267641)<sup>12</sup> </p>
+                                                    <p>S<sub>12</sub> = 200,000.00 * 1.0221427623</p>
+                                                    <p>S<sub>12</sub> = 204,428.55</p>
 
                                                     <p><b>Al invertir los $200,000.00 a 7 días durante 12 semanas el valor futuro de la inversión sería de $204,428.55 pesos.</b></p>
-
- 
 
                                                     <p><b>Plazo 28 días.</b></p>
                                                     <p>La tasa de interés neta es de 11.05875% anual y el número de períodos es de 3. </p>
@@ -331,22 +571,21 @@
                                                     <p>tasa de interés para 28 días = 11.05875 / 365 * 28</p>
                                                     <p>tasa de interés para 28 días =   0.8483425% </p>
                                                     <p><b>Datos:</b></p>
-                                                    <p>S0 = 200,000.00</p>
+                                                    <p>S<sub>0</sub> = 200,000.00</p>
                                                     <p>i = 0.008483425      en su forma decimal</p>
                                                     <p>t = 3</p>
-                                                    <p>S3 = ¿?  se desea saber el saldo al vencimiento de la inversión después de 3 períodos.</p>
+                                                    <p>S<sub>3</sub> = ¿?  se desea saber el saldo al vencimiento de la inversión después de 3 períodos.</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>De acuerdo a la fórmula St = S0 (1 + i)t aplicada para 3 períodos:</p>
-                                                    <p>S3 = S0 (1 + i)3    al sustituir los valores de S0 y de i la ecuación queda:</p>
-                                                    <p>S3 = 200,000.00 (1 + 0.008483425)3</p>
-                                                    <p>S3 = 200,000.00 (1.008483425)3</p>
-                                                    <p>S3 = 200,000.00 * 1.025666791</p>
-                                                    <p>S3 = 205,133.36</p>
+                                                    <p>De acuerdo a la fórmula St = S<sub>0</sub> (1 + i)<sup>t</sup> aplicada para 3 períodos:</p>
+                                                    <p>S<sub>3</sub> = S<sub>0</sub> (1 + i)<sup>3</sup>     al sustituir los valores de S<sub>0</sub> y de i la ecuación queda:</p>
+                                                    <p>S<sub>3</sub> = 200,000.00 (1 + 0.008483425)<sup>3</sup> </p>
+                                                    <p>S<sub>3</sub> = 200,000.00 (1.008483425)<sup>3</sup> </p>
+                                                    <p>S<sub>3</sub> = 200,000.00 * 1.025666791</p>
+                                                    <p>S<sub>3</sub> = 205,133.36</p>
 
                                                     <p><b>Al invertir los $200,000.00 a 28 días durante 3 períodos el valor futuro de la inversión sería de $205,133.36 pesos.</b></p>
 
- 
 
                                                     <p><b>Plazo 91 días.</b></p>
                                                     <p>La tasa de interés neta es de 11.67804% anual y el número de períodos es de 1. </p>
@@ -354,17 +593,17 @@
                                                     <p>tasa de interés para 91 días = 11.67804 / 365 * 91</p>
                                                     <p>tasa de interés para 91 días =    2.9115113% </p>
                                                     <p><b>Datos:</b></p>
-                                                    <p>S0 = 200,000.00</p>
+                                                    <p>S<sub>0</sub> = 200,000.00</p>
                                                     <p>i = 0.029115113      en su forma decimal</p>
                                                     <p>t = 1</p>
-                                                    <p>S1 = ¿?  se desea saber el saldo al vencimiento de la inversión después de 1 período.</p>
+                                                    <p>S<sub>1</sub> = ¿?  se desea saber el saldo al vencimiento de la inversión después de 1 período.</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>De acuerdo a la fórmula St = S0 (1 + i)t aplicada para 1 período:</p>
-                                                    <p>S1 = S0 (1 + i)1    al sustituir los valores de S0 y de i la ecuación queda:</p>
-                                                    <p>S1 = 200,000.00 (1 + 0.029115113)</p>
-                                                    <p>S1 = 200,000.00 * 1.029115113</p>
-                                                    <p>S1 = 205,823.02</p>
+                                                    <p>De acuerdo a la fórmula St = S<sub>0</sub> (1 + i)<sup>t</sup> aplicada para 1 período:</p>
+                                                    <p>S<sub>1</sub> = S<sub>0</sub> (1 + i)<sup>1</sup> al sustituir los valores de S<sub>0</sub> y de i la ecuación queda:</p>
+                                                    <p>S<sub>1</sub> = 200,000.00 (1 + 0.029115113)</p>
+                                                    <p>S<sub>1</sub> = 200,000.00 * 1.029115113</p>
+                                                    <p>S<sub>1</sub> = 205,823.02</p>
 
                                                     <p><b>Al invertir los $200,000.00 a 91 días durante 1 período el valor futuro de la inversión sería de $205,823.02 pesos.</b></p>
 
@@ -380,6 +619,82 @@
                                                     <h1 class="card-title">Inversión</h1>
                                                     <h4>Práctica de autoevaluación 3</h4>
                                                     <p>En la empresa "DICSA" disponen de un capital de $300,000.00 durante 6 meses a partir del 1 de Julio y te piden que decidas como es más conveniente invertirlos. La tabla con las tasas de interés proporcionada por el banco es la siguiente:</p>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Monto / Período</td>
+                                                                <td>7</td>
+                                                                <td>28</td>
+                                                                <td>91</td>
+                                                                <td>182</td>
+                                                                <td>371</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1,000</td>
+                                                                <td>4.06</td>
+                                                                <td>6.25</td>
+                                                                <td>6.25</td>
+                                                                <td>7.5</td>
+                                                                <td>6.67</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10,000</td>
+                                                                <td>5.31</td>
+                                                                <td>7.5</td>
+                                                                <td>7.5</td>
+                                                                <td>8.75</td>
+                                                                <td>7.78</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>50,000</td>
+                                                                <td>7.19</td>
+                                                                <td>8.75</td>
+                                                                <td>9.38</td>
+                                                                <td>10.63</td>
+                                                                <td>9.44</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>100,000</td>
+                                                                <td>9.69</td>
+                                                                <td>11.25</td>
+                                                                <td>11.88</td>
+                                                                <td>12.5</td>
+                                                                <td>11.5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>250,000</td>
+                                                                <td>11.56</td>
+                                                                <td>12.25</td>
+                                                                <td>12.5</td>
+                                                                <td>13.5</td>
+                                                                <td>12.5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>500000</td>
+                                                                <td>12.25</td>
+                                                                <td>13.25</td>
+                                                                <td>13.50</td>
+                                                                <td>14.5</td>
+                                                                <td>13.5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1000000</td>
+                                                                <td>13.25</td>
+                                                                <td>14.25</td>
+                                                                <td>14.50</td>
+                                                                <td>15.5</td>
+                                                                <td>14.5</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <ol>
                                                         <li>
                                                             <p>¿A cuántos días se puede realizar la inversión?</p>

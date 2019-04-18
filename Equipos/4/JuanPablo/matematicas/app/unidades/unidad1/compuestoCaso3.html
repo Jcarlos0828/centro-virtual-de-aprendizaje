@@ -245,10 +245,10 @@
                                                 <div class="feed-body">
                                                     <p>Como se había mencionado anteriormente, el término Crecimiento Poblacional es usado tanto para definir un aumento como una disminución de población. El siguiente es uncaso de disminución de población.</p>
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000.</b></p>
-                                                    <p>El modelo matemático para este caso establece que el número de habitantes del poblado en cualquier año t (Pt), es igual al número de habitantes del año anterior (Pt-1), menos la disminución de población correspondiente al año (dt). </p>
-                                                    <p><b>Pt = Pt-1 – dt</b></p>
-                                                    <p>La disminución de población para un año t (dt) es el producto de multiplicar la población del año anterior (Pt-1) por la tasa de disminución expresada en decimales ( 0.008).</p>
-                                                    <p><b>dt = Pt-1 x 0.008</b></p>
+                                                    <p>El modelo matemático para este caso establece que el número de habitantes del poblado en cualquier año t (Pt), es igual al número de habitantes del año anterior (P<sub>t-1</sub>), menos la disminución de población correspondiente al año (dt). </p>
+                                                    <p><b>Pt = P<sub>t-1</sub> – dt</b></p>
+                                                    <p>La disminución de población para un año t (dt) es el producto de multiplicar la población del año anterior (P<sub>t-1</sub>) por la tasa de disminución expresada en decimales ( 0.008).</p>
+                                                    <p><b>dt = P<sub>t-1</sub> x 0.008</b></p>
                                                     <p><b>Primer año (1999)</b></p>
                                                     <p>La disminución de población durante el año se calcula de la misma manera que el aumento, multiplicando la población del año anterior (80,000), por la tasa de disminución expresada en decimales (0.008).</p>
                                                     <p>Disminución de población durante el primer año = 80,000 x 0.008 </p>
@@ -276,7 +276,7 @@
                                                 <div class="feed-body">
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000.</b></p>
                                                     <p>De acuerdo a la representación algebraica del modelo, la población en cualquier año t es:</p>
-                                                    <p>Pt = Pt-1 - dt en donde la disminución es, dt= Pt-1 x (0.008).</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> - dt en donde la disminución es, dt= P<sub>t-1</sub> x (0.008).</p>
                                                     <p>Tomando como base, para resolver el problema en Excel, esta representación algebraica, se llega a la siguiente tabla. Ésta contiene una columna para ver la disminución anual del número de habitantes del poblado.</p>
 
                                                     <p><b>TABLA EN EXCEL</b></p>
@@ -365,11 +365,11 @@
                                                 <h4>Número de habitantes de un poblado en donde la población está decreciendo</h4>
                                                 <div class="feed-body">
                                                     <p>Al tomar la tasa de crecimiento como negativa la disminución de población se toma como un aumento negativo, de ésta manera la representación algebraica del modelo quedaría como:</p>
-                                                    <p>Pt = Pt-1+ at y at= Pt-1 x ( – 0.008 )</p>
-                                                    <p>Se puede observar que el signo + de la ecuación Pt = Pt-1 + at es porque el aumento es negativo y esto genera automáticamente una resta.</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> + a<sub>t</sub> y a<sub>t</sub> = P<sub>t-1</sub> x ( – 0.008 )</p>
+                                                    <p>Se puede observar que el signo + de la ecuación P<sub>t</sub> = P<sub>t-1</sub> + at es porque el aumento es negativo y esto genera automáticamente una resta.</p>
                                                     <p>Al sustituir at en la ecuación de población, ésta queda como:</p>
-                                                    <p>Pt = Pt-1 + Pt-1 x ( –0.008 )          sacando Pt-1 de factor común se tiene,</p>
-                                                    <p>Pt = Pt-1 [ 1 + ( – 0.008 )]</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> + P<sub>t-1</sub> x ( –0.008 )          sacando P<sub>t-1</sub> de factor común se tiene,</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> [ 1 + ( – 0.008 )]</p>
                                                     <p>Utilizando ésta representación algebraica, en una tabla de Excel, para resolver el problema se tiene:</p>
                                                     <p><b>TABLA EN EXCEL</b></p>
                                                     <table class="table">
@@ -515,7 +515,7 @@
                                                 <h3>Número de habitantes de un poblado en donde la población está decreciendo</h3>
                                                 <div class="feed-body">
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000</b></p>
-                                                    <p>Al utilizar la fórmula de Crecimiento Poblacional Compuesto Pt = P0 (1 + r)t   en una disminución de población, hay que tener cuidado de tomar la tasa de crecimiento como negativa (- 0.008).</p>
+                                                    <p>Al utilizar la fórmula de Crecimiento Poblacional Compuesto P<sub>t</sub>  = P<sub>0</sub>(1 + r)<sup>t</sup>    en una disminución de población, hay que tener cuidado de tomar la tasa de crecimiento como negativa (- 0.008).</p>
                                                     <p><b>Datos:</b></p>
                                                     <p>P<sub>0</sub> = 80,000</p>
                                                     <p>r = -0.008</p>
@@ -540,7 +540,7 @@
                                                 <h3 class="feed-subtitle">Solución utilizando la fórmula de Crecimiento Poblacional Compuesto en Excel</h3>
                                                 <h3>Número de Habitantes de un poblado en donde la población está decreciendo</h3>
                                                 <div class="feed-body">
-                                                    <p>La fórmula Pt = P0 ( 1 + r )t, en donde r es negativa, puede ser utilizada para resolver el problema en Excel.</p>
+                                                    <p>La fórmula P<sub>t</sub> = P<sub>0</sub> ( 1 + r )<sup>t</sup>, en donde r es negativa, puede ser utilizada para resolver el problema en Excel.</p>
                                                     <p><b>TABLA EN EXCEL</b></p>
                                                     <table class="table">
                                                         <thead>
