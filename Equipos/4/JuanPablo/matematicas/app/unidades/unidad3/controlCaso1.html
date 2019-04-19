@@ -304,9 +304,9 @@
                                                     <p>CPL     Costo del pedido</p>
                                                     <p>CAU    Consumo anual de unidades </p>
                                                     <p>VCE    Volúmen de compra económico</p>
-                                                    <p>CAPt   Costo acumulado del pedido en un período t</p>
-                                                    <p>Ut        Número de unidades pedidas en un período t</p>
-                                                    <p>UAt     Número de unidades pedidas acumuladas en un período t</p>
+                                                    <p>CAP<sub>t</sub>   Costo acumulado del pedido en un período t</p>
+                                                    <p>U<sub>t</sub>        Número de unidades pedidas en un período t</p>
+                                                    <p>UA<sub>t</sub>     Número de unidades pedidas acumuladas en un período t</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -317,34 +317,34 @@
                                                 <h3 class="feed-subtitle">Solución para 3 meses utilizando el modelo con los elementos</h3>
                                                 <div class="feed-body">
                                                     <p><b>Industrias Mexicanas es una empresa dedicada a la fabricación y distribución de equipo para guardias de seguridad.  Esta empresa maneja un costo por pedido de $15,000 y un volumen de compra por pedido de 2000 unidades mensuales. Se sabe que la empresa planea consumir 12,000 unidades durante los siguientes 6 meses. A razón de 2,000 unidades mensuales ¿Cuál será el costo total de los pedidos para los siguientes 6 meses</b></p>
-                                                    <p>De acuerdo al modelo matemático, el costo acumulado del pedido (CAPt) es igual al costo por pedido (CPL) multiplicado por  las unidades pedidas acumuladas (UAt) divididas entre el volumen de compra por pedido (VCE). Para obtener las unidades pedidas acumuladas (UAt) se tienen que sumar las unidades pedidas en un período (Ut) más las unidades pedidas acumuladas que se tenían el período anterior(UAt-1).  El costo acumulado de los pedidos para la empresa durante los siguientes 3 meses, se puede desglosar mes a mes:</p>
+                                                    <p>De acuerdo al modelo matemático, el costo acumulado del pedido (CAP<sub>t</sub>) es igual al costo por pedido (CPL) multiplicado por  las unidades pedidas acumuladas (UA<sub>t</sub>) divididas entre el volumen de compra por pedido (VCE). Para obtener las unidades pedidas acumuladas (UA<sub>t</sub>) se tienen que sumar las unidades pedidas en un período (Ut) más las unidades pedidas acumuladas que se tenían el período anterior(UA<sub>t-1</sub>).  El costo acumulado de los pedidos para la empresa durante los siguientes 3 meses, se puede desglosar mes a mes:</p>
                                                     <p><b>Mes 1:</b></p>
                                                     <p>En el mes 1 se hace un pedido por las primeras 2000 unidades.  Las unidades acumuladas son iguales a 2000:</p>
-                                                    <p>UA1 = 2000</p>
-                                                    <p>El costo acumulado del  pedido (CAP1) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UAt) entre el voluemn de compra por pedido (VCE)</p>
-                                                    <p>CAP1 = $15000</p>
+                                                    <p>UA<sub>1</sub> = 2000</p>
+                                                    <p>El costo acumulado del  pedido (CAP<sub>1</sub>) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UA<sub>t</sub>) entre el voluemn de compra por pedido (VCE)</p>
+                                                    <p>CAP<sub>1</sub> = $15000</p>
                                                     <p><b>El costo acumulado del pedido para el mes 1 es igual al $15,000 pesos.</b></p>
 
                                                     <p><b>Mes 2:</b></p>
-                                                    <p>En el mes 2 se hace un pedido por 2000 unidades.  El número de unidades acumuladas (UAt) es igual a las unidades pedidas acumuladas del mes anterior (2000) más las unidades pedidas el mes actual (2000):</p>
-                                                    <p>UA2 = UA1+Ut</p>
-                                                    <p>UA2 = 2000 + 2000</p>
-                                                    <p>UA2 = 4000</p>
+                                                    <p>En el mes 2 se hace un pedido por 2000 unidades.  El número de unidades acumuladas (UA<sub>t</sub>) es igual a las unidades pedidas acumuladas del mes anterior (2000) más las unidades pedidas el mes actual (2000):</p>
+                                                    <p>UA<sub>2</sub> = UA<sub>1</sub>+U<sub>t</sub></p>
+                                                    <p>UA<sub>2</sub> = 2000 + 2000</p>
+                                                    <p>UA<sub>2</sub> = 4000</p>
                                                     <p><b>Las unidades acumuladas son iguales a 4000.</b></p>
-                                                    <p>El costo acumulado del  pedido (CAP2) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UAt) entre el volumen de compra por pedido (VCE)</p>
-                                                    <p>CAP2 = CPL*(UA2/ VCE)=15,000 * (4,000/2000)</p>
-                                                    <p>CAP2 = $30,000</p>
+                                                    <p>El costo acumulado del  pedido (CAP<sub>2</sub>) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UA<sub>t</sub>) entre el volumen de compra por pedido (VCE)</p>
+                                                    <p>CAP<sub>2</sub> = CPL*(UA<sub>2</sub>/ VCE)=15,000 * (4,000/2000)</p>
+                                                    <p>CAP<sub>2</sub> = $30,000</p>
                                                     <p><b>El costo acumulado del pedido para el mes 2 es igual al $30,000 pesos.</b></p>
 
                                                     <p><b>Mes 3:</b></p>
-                                                    <p>En el mes 3 se hace un pedido por 2000 unidades.  El número de unidades acumuladas (UAt) es igual a las unidades pedidas acumuladas del mes anterior (4000) más las unidades pedidas el mes actual (2000):</p>
-                                                    <p>UA3 = UA2+Ut</p>
-                                                    <p>UA3 = 4000 + 2000</p>
-                                                    <p>UA3= 6000</p>
+                                                    <p>En el mes 3 se hace un pedido por 2000 unidades.  El número de unidades acumuladas (UA<sub>t</sub>) es igual a las unidades pedidas acumuladas del mes anterior (4000) más las unidades pedidas el mes actual (2000):</p>
+                                                    <p>UA<sub>3</sub> = UA<sub>2</sub>+U<sub>t</sub></p>
+                                                    <p>UA<sub>3</sub> = 4000 + 2000</p>
+                                                    <p>UA<sub>3</sub>= 6000</p>
                                                     <p><b>Las unidades acumuladas son iguales a 6000.</b></p>
-                                                    <p>El costo acumulado del  pedido (CAP3) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UAt) entre el voluemn de compra por pedido (VCE)</p>
-                                                    <p>CAP3 = CPL*(UA3/ VCE)=15,000 (6,000/2,000)</p>
-                                                    <p>CAP3 = $45,000</p>
+                                                    <p>El costo acumulado del  pedido (CAP<sub>3</sub>) es igual al costo por pedido ($15,000) multiplicado por las unidades acumuladas (UA<sub>t</sub>) entre el voluemn de compra por pedido (VCE)</p>
+                                                    <p>CAP<sub>3</sub> = CPL*(UA<sub>3</sub>/ VCE)=15,000 (6,000/2,000)</p>
+                                                    <p>CAP<sub>3</sub> = $45,000</p>
                                                     <p><b>El costo acumulado del pedido para el mes 3 es igual al $45,000 pesos.</b></p>
                                                 </div>
                                             </div>
@@ -355,13 +355,13 @@
                                             <div class="card widget-feed">
                                                 <h3 class="feed-subtitle">Representación algebraica del modelo </h3>
                                                 <div class="feed-body">
-                                                    <p>De acuerdo al modelo matemático, el costo acumulado del pedido (CAPt) es igual al costo por pedido (CPL) multiplicado por las unidades pedidas acumuladas (UAt) divididas entre el volumen de compra por pedido (VCE).</p>
-                                                    <p>CAPt = CPL *(UAt/VCE)</p>
+                                                    <p>De acuerdo al modelo matemático, el costo acumulado del pedido (CAP<sub>t</sub>) es igual al costo por pedido (CPL) multiplicado por las unidades pedidas acumuladas (UA<sub>t</sub>) divididas entre el volumen de compra por pedido (VCE).</p>
+                                                    <p>CAP<sub>t</sub> = CPL *(UA<sub>t</sub>/VCE)</p>
 
-                                                    <p>Para obtener las unidades acumuladas pedidas (UAt) se tienen que sumar las unidades pedidas en un período (Ut) más las unidades acumuladas pedidas que se tenían el período anterior (UAt-1).  </p>
-                                                    <p>UAt = UAt-1 + Ut</p>
+                                                    <p>Para obtener las unidades acumuladas pedidas (UA<sub>t</sub>) se tienen que sumar las unidades pedidas en un período (Ut) más las unidades acumuladas pedidas que se tenían el período anterior (UA<sub>t-1</sub>).  </p>
+                                                    <p>UA<sub>t</sub> = UA<sub>t-1</sub> + U<sub>t</sub></p>
 
-                                                    <p>UAt  Para un año se le llama CAU consumo anual de unidades</p>
+                                                    <p>UA<sub>t</sub>  Para un año se le llama CAU consumo anual de unidades</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -373,51 +373,51 @@
                                                 <div class="feed-body">
                                                     <p>Para hacer la deducción de la fórmula se utilizarán las ecuaciones planteadas en la representación algebraica:</p>
 
-                                                    <p><b>CAPt = CPL*(UAt/VCE)</b></p>
-                                                    <p><b>UAt = UAt-1 + Ut</b></p>
+                                                    <p><b>CAP<sub>t</sub> = CPL*(UA<sub>t</sub>/VCE)</b></p>
+                                                    <p><b>UA<sub>t</sub> = UA<sub>t-1</sub> + U<sub>t</sub></b></p>
 
                                                     <p><b>Mes  1:</b></p>
                                                     <p>El costo acumulado del pedido para el mes 1 es igual al costo por pedido multiplicado por la división del número de unidades pedidas acumuladas entre el volumen de compra:</p>
-                                                    <p>CAP1 = CPL (UA1/VCE)</p>
+                                                    <p>CAP<sub>1</sub> = CPL (UA<sub>1</sub>/VCE)</p>
                                                     <p>El número de unidades acumuladas en el mes 1 es igual al número de unidades pedidas el mes 1:</p>
-                                                    <p>UA1 = U1</p>
+                                                    <p>UA<sub>1</sub> = U<sub>1</sub></p>
                                                     <p>Sustituyendo el la ecuación del  costo acumulado del pedido:</p>
-                                                    <p>CAP1 = CPL (U1/VCE)</p>
+                                                    <p>CAP<sub>1</sub> = CPL (U<sub>1</sub>/VCE)</p>
                                                     <p>El costo acumulado del pedido para el mes 1 esta dado por</p>
-                                                    <p><b>CAP1 = CPL (U1/VCE)</b></p>
+                                                    <p><b>CAP<sub>1</sub> = CPL (U<sub>1</sub>/VCE)</b></p>
 
                                                     <p><b>Mes  2:</b></p>
                                                     <p>El costo acumulado del pedido para el mes 2 es igual al costo por pedido multiplicado por la división del número de unidades pedidas acumuladas entre el volumen de compra:</p>
-                                                    <p>CAP2 = CPL (UA2/VCE)</p>
+                                                    <p>CAP<sub>2</sub> = CPL (UA<sub>2</sub>/VCE)</p>
                                                     <p>El número de unidades acumuladas en el mes 2 es igual al número de unidades acumuladas en el mes 1 más las unidades pedidas el mes 2:</p>
-                                                    <p>UA2 = UA1+U2</p>
-                                                    <p>Sustituyendo la ecuación de las unidades acumuladas en el mes 1 <p>UA1 = U1</p>
-                                                    <p>UA2 = U1+U2</p>
+                                                    <p>UA<sub>2</sub> = UA<sub>1</sub>+U<sub>2</sub></p>
+                                                    <p>Sustituyendo la ecuación de las unidades acumuladas en el mes 1 <p>UA<sub>1</sub> = U<sub>1</sub></p>
+                                                    <p>UA<sub>2</sub> = U<sub>1</sub>+U<sub>2</sub></p>
                                                     <p>Sustituyendo el la ecuación del  costo acumulado del pedido:</p>
-                                                    <p>CAP2 = CPL [(U1+U2)/VCE]</p>
+                                                    <p>CAP<sub>2</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>)/VCE]</p>
                                                     <p>El costo acumulado del pedido para el mes 2 esta dado por</p>
-                                                    <p><b>CAP2 = CPL [(U1+U2)/VCE]</b></p>
+                                                    <p><b>CAP<sub>2</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>)/VCE]</b></p>
 
                                                     <p><b>Mes  3:</b></p>
                                                     <p>El costo acumulado del pedido para el mes 3 es igual al costo por pedido multiplicado por la división del número de unidades pedidas acumuladas entre el volumen de compra:</p>
-                                                    <p>CAP3 = CPL (UA3/VCE)</p>
+                                                    <p>CAP<sub>3</sub> = CPL (UA<sub>3</sub>/VCE)</p>
                                                     <p>El número de unidades acumuladas en el mes 3 es igual al número de unidades acumuladas en el mes 2 más las unidades pedidas el mes 3:</p>
-                                                    <p>UA3 = UA2+U3</p>
+                                                    <p>UA<sub>3</sub> = UA<sub>2</sub>+U3</p>
                                                     <p>Sustituyendo la ecuación de las unidades acumuladas en el mes 2 en la anterior:</p>
-                                                    <p>UA2 = U1+U2</p>
-                                                    <p>UA3 = U1+U2+U3</p>
+                                                    <p>UA<sub>2</sub> = U<sub>1</sub>+U<sub>2</sub></p>
+                                                    <p>UA<sub>3</sub> = U<sub>1</sub>+U<sub>2</sub>+U3</p>
                                                     <p>Sustituyendo el la ecuación del  costo acumulado del pedido:</p>
-                                                    <p>CAP3 = CPL [(U1+U2+U3)/VCE]</p>
-                                                    <p><b>El costo acumulado del pedido para el mes 3 esta dado por.............CAP3 = CPL [(U1+U2+U3)/VCE]</b></p>
+                                                    <p>CAP<sub>3</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>+U3)/VCE]</p>
+                                                    <p><b>El costo acumulado del pedido para el mes 3 esta dado por.............CAP<sub>3</sub> = CPL [(U<sub>1</sub>+U<sub>2</sub>+U3)/VCE]</b></p>
                                                     <p>Se puede observar del comportamiento del costo acumulado del pedido para los primeros tres meses que lo que cambia en la fórmula es el número de términos que representan las unidades pedidas acumuladas. Entonces se puede escribir que para un período t el costo acumulado esta dado como:</p>
                                                     <p><b>El costo acumulado del pedido para el mes t esta dado por</b></p>
-                                                    <p><b>CAPt = CPL [(U1+...+Ut)/VCE]</b></p>
+                                                    <p><b>CAP<sub>t</sub> = CPL [(U<sub>1</sub>+...+Ut)/VCE]</b></p>
 
                                                     <p>Si se aplica esta fórmula a un año entonces se deben sumar el número de unidades pedidas en todo el año, y este número de unidades equivale al consumo anual de unidades (CAU):</p>
-                                                    <p><b>CAU = U1+U2+...+U11+U12</b></p>
+                                                    <p><b>CAU = U<sub>1</sub>+U<sub>2</sub>+...+U<sub>1</sub>1+U<sub>1</sub>2</b></p>
                                                     <p>Por esta razón se puede escribir el costo anual del pedido como:  </p>
                                                     <p><b>El costo ANUAL del pedido esta dado por</b></p>
-                                                    <p><b>CAPanual = CPL [CAU/VCE]</b></p>
+                                                    <p><b>CAP<sub>anual</sub> = CPL [CAU/VCE]</b></p>
                                                     <p><b>Entonces podemos deducir que la fórmula para encontrar el costo total del pedido es:</b></p>
 
                                                     <p><b>CAP anual= CPL [CAU/VCE]</b></p>
@@ -439,12 +439,12 @@
                                                 <div class="feed-body">
                                                     <p><b>La fórmula para obtener el costo total del pedido es</b></p>
 
-                                                    <p><b>CAPanual= CPL [CAU/VCE]</b></p>
+                                                    <p><b>CAP<sub>anual</sub>= CPL [CAU/VCE]</b></p>
 
                                                     <p><b>donde,</b></p>
 
                                                     <p><b>CPL    Costo por pedir</b></p>
-                                                    <p><b>CAPanual    Costo anual del pedido</b></p>
+                                                    <p><b>CAP<sub>anual</sub>    Costo anual del pedido</b></p>
                                                     <p><b>CAU     Consumo anual de unidades</b></p>
                                                     <p><b>VCE     Volumen de compra económico</b></p>
                                                 </div>
@@ -457,30 +457,30 @@
                                                 <h3 class="feed-subtitle">Solución utilizando fórmula para obtener el costo total del pedido.</h3>
                                                 <div class="feed-body">
                                                     <p><b>Industrias Mexicanas es una empresa dedicada a la fabricación y distribución de equipo para guardias de seguridad.  Esta empresa maneja un costo por pedido de $15,000 y un volumen de compra por pedido de 2000 unidades mensuales. Se sabe que la empresa planea consumir 12,000 unidades durante los siguientes 6 meses. A razón de 2,000 unidades mensuales ¿Cuál será el costo total de los pedidos para los siguientes 6 y 12 meses?</b></p>
-                                                    <p>Utilizando la fórmula del Costo Acumulado del Pedido CAP= CPL [CAU/VCE], para los siguientes 6 meses, se tiene:</p>
+                                                    <sub>1</sub>p>Utilizando la fórmula del Costo Acumulado del Pedido CAP= CPL [CAU/VCE], para los siguientes 6 meses, se tiene:</p>
 
                                                     <p><b>Datos:</b></p>
                                                     <p>CPL=$15,000</p>
-                                                    <p>CAU6=12,000 unidades anuales</p>
+                                                    <p>CAU<sub>6</sub>=12,000 unidades anuales</p>
                                                     <p>VCE=2,000 unidades mensuales</p>
-                                                    <p>CAP6= Costo acumulado para 6 meses</p>
+                                                    <p>CAP<sub>6</sub>= Costo acumulado para 6 meses</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>CAP6= CPL [CAU6/VCE]</p>
-                                                    <p><b>CAP6= 15,000(12,000/2000)=$90,000</b></p>
+                                                    <p>CAP<sub>6</sub>= CPL [CAU<sub>6</sub>/VCE]</p>
+                                                    <p><b>CAP<sub>6</sub>= 15,000(12,000/2000)=$90,000</b></p>
                                                     <p><b>El costo de pedido para 6 meses es igual a $90,000 pesos.</b></p>
 
-                                                    <p>Utilizando la fórmula del Costo Anual del Pedido CAPanual= CPL [CAU/VCE], para los siguientes 12 meses, se tiene:</p>
+                                                    <sub>1</sub>p>Utilizando la fórmula del Costo Anual del Pedido CAP<sub>anual</sub>= CPL [CAU/VCE], para los siguientes 12 meses, se tiene:</p>
 
                                                     <p><b>Datos:</b></p>
                                                     <p>CPL=$15,000</p>
                                                     <p>CAU=24,000 unidades anuales</p>
                                                     <p>VCE=2,000 unidades mensuales</p>
-                                                    <p>CAPanual= Costo total después de un año (12 meses)</p>
+                                                    <p>CAP<sub>anual</sub>= Costo total después de un año (12 meses)</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>CAPanual= CPL [CAU/VCE]</p>
-                                                    <p><b>CAPanual= 15,000(24,000/2000)=$180,000</b></p>
+                                                    <p>CAP<sub>anual</sub>= CPL [CAU/VCE]</p>
+                                                    <p><b>CAP<sub>anual</sub>= 15,000(24,000/2000)=$180,000</b></p>
                                                     <p><b>El costo anual de pedido es igual a $180,000 pesos.</b></p>
 
                                                     <p>Puesto que el costo por pedido es constante y el volúmen o unidades pedidas también es constante, podemos concluir que cada mes el costo por pedir es el mismo $15,000 y sólo utilizaremos la fórmula una sola vez y nos dará el costo total al final del año.</p>
@@ -497,7 +497,7 @@
                                                 <div class="feed-body">
                                                     <p><b>Industrias Mexicanas es una empresa dedicada a la fabricación y distribución de equipo para guardias de seguridad.  Esta empresa maneja un costo por pedido de $15,000 y un volumen de compra por pedido de 2000 unidades mensuales. Se sabe que la empresa planea consumir 12,000 unidades durante los siguientes 6 meses. A razón de 2,000 unidades mensuales ¿Cuál será el costo total de los pedidos para los siguientes 6 y 12 meses?</b></p>
                                                     <p>Anteriormente trabajamos con Excel pero no utilizamos la fórmula, ahora se aplicará la fórmula y con esto comprobaremos que se realiza de una manera más sencilla y rápida. Por lo mismo de que esta herramienta nos fácilita la realización del problema, podemos realizarlo también para un año.</p>
-                                                    <p>Utilizando la fórmula  CAPanual= CPL [CAU/VCE], se genera la siguiente tabla en Excel:</p>
+                                                    <sub>1</sub>p>Utilizando la fórmula  CAP<sub>anual</sub>= CPL [CAU/VCE], se genera la siguiente tabla en Excel:</p>
                                                     <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
                                                     <p>En los renglones 1 al 4 vaciar la información de los datos del problema.</p>
                                                     <p>En la celda B6   teclear   =B3*(B2/B4)</p>
