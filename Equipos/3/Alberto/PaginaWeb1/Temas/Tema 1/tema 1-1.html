@@ -21,14 +21,13 @@
         <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="../../assets/css/animate.min.css" rel="stylesheet">
         <link href="../../assets/css/app.css" rel="stylesheet">
-        <link href="../../assets/css/progress.css" rel="stylesheet">
         <link href="../../assets/css/progreso.css" rel="stylesheet">
 
         <!-- mis archivos -->
         <link href="../../estilosHumus.css" rel="stylesheet">
-        <link href="../../estilosCurso/w3.css" rel="stylesheet">
         <link href="../../estilosCurso/styleCursos.css" rel="stylesheet">
-
+        <link href="../../estilosCurso/w3.css" rel="stylesheet">        
+        <link href="../../assets/css/progress.css" rel="stylesheet">
 
     </head>
 
@@ -58,15 +57,6 @@
                                     <span class="title">Inicio</span>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <!-- <a href="javascript:void(0);"> -->
-                                      <a href="../../temario.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Temario</span>
-                                  </a>
-                              </li>
                               <li class="nav-item dropdown">
                                   <a class="dropdown-toggle" href="javascript:void(0);">
                                         <span class="icon-holder">
@@ -274,6 +264,16 @@
                                             <div class="w3-light-grey w3-round-xlarge">
                                                 <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%"> </div>
                                             </div>
+                                            <div class="progress" style="height: 20px;" id="bar">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h1 class="feed-title tag tag-info ">Módulo</h1>
+                                            <h3 class="feed-subtitle">Tu Progreso</h3>
+                                            <div class="progress" style="height: 20px;" id="bar">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
+                                            </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
@@ -318,7 +318,6 @@
         <script src="../../assets/js/app.js"></script>
         <script src="../../assets/js/progressbar.js"></script>
         <script src="../../assets/js/progreso.js"></script>
-        <script src="quiz.js"></script>    
 
         <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
         <script type="text/javascript">show(.0125 * 8)</script>
@@ -345,9 +344,8 @@
             }
         </script>
         <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
-        <script type="text/javascript">moveProgressBar((1/7)*100)</script>
-
-        <!-- Insert your dependencies here -->
+        <script type="text/javascript">moveProgressBar((1/2)*100)</script>
+        
 
     </body>
 </html>

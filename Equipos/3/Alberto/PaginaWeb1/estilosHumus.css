@@ -1,4 +1,4 @@
-#centrar-texto {
+/* #centrar-texto {
     /* height: 50px;
     clear: both;
     float: none;
@@ -27,10 +27,10 @@
     background-position: center;
     color: #fff;
     height: 0px;
-    margin: 0 auto; */
+    margin: 0 auto;
     text-align: center;
     
-}
+} */
 
 .img_unidades{
   display: block;
