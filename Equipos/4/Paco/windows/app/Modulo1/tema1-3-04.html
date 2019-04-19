@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="../assets/vendors/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href=".../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
         <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- page plugins css -->
 
@@ -186,7 +187,8 @@
                                                   <li>Estampar en los archivos la fecha de su creación, modificación y ejecución.</li>
                                               </ul>
                                               <p class="lead">Si el reloj no está visible, se puede agregar a la barra de tareas de la siguiente manera:</p>
-                                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Lmao</button>
+                                              <button type="button" id="init7" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal7">Windows 7</button>
+                                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-modal10">Windows 10</button>
                                           </div>
                                       </div>
                                   </div>
@@ -197,26 +199,83 @@
                                   </div>
                               </div>
                               <!-- Your content goes here -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                                  <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
-                                          <div class="modal-header">
-                                              <h1 class="modal-title" id="exampleModalLabel">Title</h1>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                              </button>
+                              <div class="modal fade bd-modal7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-body">
+                                          <div id="txt1">
+                                              <div class="row">
+                                                  <div class="col-lg-6">
+                                                      <h4 class="modal-title">Pasos para visualizar el reloj en la barra de tareas:</h4>
+                                                      <ul class="lead">
+                                                          <li>Hacer clic con el botón derecho del ratón sobre el área de notificación y del menú contextual elegir la opción <strong>Propiedades</strong> (Properties)</li>
+                                                          <li>De la ventana que aparece en el menú general, seleccionar la opción <strong>Acivado (On)</strong>.</li>
+                                                          <li>Hacer clic en el botón <strong>Aceptar (Ok)</strong>.</li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-lg-6">
+                                                      <img src="../assets/images/M1/reloj-1.jpg">
+                                                  </div>
+                                              </div>
                                           </div>
-                                          <div class="modal-body">
-                                              <div class="container-fluid">
-                                                  <div class="row">
-                                                      <div class="col-lg-12">
-                                                          <p class="lead"></p>
+
+                                          <div id="txt2">
+                                              <div class="row">
+                                                  <div class="col-lg-12 text-center">
+                                                      <p class="lead"><strong>Para cambiar la fecha se necesita seguir los siguientes pasos:</strong></p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-lg-4">
+                                                      <p class="lead">1. Hacer doble clic en el reloj que aparece en el área de notificación <strong>(notification area)</strong>.</p>
+                                                      <div class="text-center">
+                                                            <img src="../assets/images/M1/reloj-2.jpg">                                                       
+                                                      </div>
+                                                      <p class="lead">Automáticamente aparecerá el siguiente cuadro de diálogo que muestra las propiedades de    <strong>Fecha y hora (Date and Time)</strong>.</p>
+                                                      <div class="text-center">
+                                                            <img src="../assets/images/M1/reloj-3.jpg">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-lg-8">
+                                                      <p class="lead">2. Hacer clic en Cambiar la configuración de fecha y hora (<strong>Change date and time setting</strong>)</p>
+                                                      <p class="lead">3. Aparecera una pantalla que tiene 3 pestañas, seleccionar: <strong>Date and Time</strong> (Fecha y Hora).</p>
+                                                      <p class="lead">4. Nuevamente, hacer clic sobre <strong>Cambiar Fecha y hora (Change Date and time)</strong>.</p>
+                                                      <p class="lead">5. Para cambiar el mes y año, colocar el ratón sobre la flecha junto al nombre del mes y año, seleccionar el deseado.</p>
+                                                      <p class="lead">6. Para cambiar el día, seleccionar el que se desee del calendario que aparece.</p>
+                                                      <p class="lead">7. Para cambiar la hora, mover las flechas arriba-abajo para ajustar la hora deseada.</p>
+                                                      <p class="lead">8. Hacer clic en el botón <strong>Aplicar (Apply)</strong> si se quiere que el cambio tenga efecto y quedarse en el cuadro de diálogo.</p>
+                                                      <p class="lead">9. Hacer clic en el botón Aceptar (Ok) si se quiere que los cambios sean permanentes y que se cierre el cuadro de diálogo.</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div id="txt3">
+                                              <div class="row">
+                                                  <div class="col-lg-6">
+                                                      <p class="lead">La fecha también puede cambiarse haciendo clic con el botón derecho del ratón en una parte vacía de la barra de tareas y del menú contextual elija la opción <strong>Ajustar Fecha y Hora</strong>.</p>
+                                                      <div class="text-center">
+                                                          <img src="../assets/images/M1/fecha-1.jpg">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-lg-6">
+                                                      <p class="lead">Se puede cambiar el Meridiano, seleccionándolo de la lista de Zona Horaria. Así mismo, si se hace clic en el botón Aplicar el cambio tiene efecto y se quedará abierto el cuadro de diálogo. Mientras que si se hace clic en el botón Aceptar, los cambios tendrán efecto y se cerrará el cuadro de diálogo.</p>
+                                                      <div class="text-center">
+                                                          <img src="../assets/images/M1/meridiano-1.jpg">
                                                       </div>
                                                   </div>
                                               </div>
                                           </div>
                                       </div>
+                                      <div class="modal-footer">
+                                        <div id="a1">
+                                            <a style="color: #0f9aee;" id="b1"><i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                        <div id="a2">
+                                            <a style="color: #0f9aee;" id="b2"><i class="fa fa-arrow-right"></i></a>
+                                        </div>
+                                      </div>
                                   </div>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -255,6 +314,7 @@
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->
+        <script src="../assets/js/Logic/tema1-3-04.js"></script>
 
     </body>
 </html>

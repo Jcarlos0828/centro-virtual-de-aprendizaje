@@ -13,6 +13,7 @@
         <link rel="stylesheet" href=".../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
         <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
+
         <!-- page plugins css -->
 
         <!-- core css -->
@@ -21,7 +22,6 @@
         <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="../assets/css/animate.min.css" rel="stylesheet">
         <link href="../assets/css/app.css" rel="stylesheet">
-        <link href="../assets/css/progress.css" rel="stylesheet">
         <link href="../assets/css/mycss.css" rel="stylesheet">
 
     </head>
@@ -178,31 +178,88 @@
                                       <div class="card">
                                           <div class="card-block">
                                               <h1 class="card-title">Tema 2: Explorador de Windows</h1>
-                                              <h3 class="card-title">Subtema 2.1: ¿Qué es y para qué sirve?</h3>
-                                              <p class="lead"></p>
-                                              <ul class="lead">
-                                                  <li>Tener una lista de los documentos que hay en el archivero.</li>
-                                                  <li>Acordarse del color de la carpeta o sobre donde dejó el documento que ahora busca.</li>
-                                                  <li>Tener el archivero ordenado por tipo de documentos u orden alfabético.</li>
-                                              </ul>
-                                              <p class="lead">¡Esto sí lo puede hacer su computadora!, y es precisamente la utilería <strong>"Explorador de Windows"</strong> (Windows Explorer) la que nos ayuda a encontrar la información de una manera muy rápida.</p>
-                                              <p class="lead">Ésta es una herramienta muy útil que permite tener una visión general de lo que se encuentra almacenado en cada uno de los directorios y carpetas del disco duro de nuestra computadora.</p>
-                                              <p class="lead"><i class="fa fa-sticky-note"></i> <strong>Nota:</strong>  La forma más rápida de arrancar el Explorador de Windows es mediante el ícono de la barra de tareas o del Escritorio, en dado caso de que no se tenga ese icono, se debe hacer lo siguiente:</p>
-                                              <h3 class="card-title">Abrir Explorador de Windows (Windows Explorer)</h3>
-                                              <ul class="lead">
-                                                  <li>Hacer clic en el botón Inicio (Start)</li>
-                                                  <li>Seleccionar <strong>Programas</strong> (Programs)</li>
-                                                  <li>Seleccionar <strong>Accesorios</strong> (Accessories)</li>
-                                                  <li>Por último, elegir <strong>Explorador de Windows</strong> (Windows Explorer)</li>
-                                              </ul>
+                                              <h3 class="card-title">Subtema 2.1: ¿Qué es y para qué sirve?/h3>
+                                              <h3 class="card-title">Secciones del Explorador de Windows (Windows Explorer):</h3>
+                                              <div class="card">
+                                                  <div class="card-header">
+                                                      <ul class="nav nav-tabs card-header-tabs">
+                                                          <li class="nav-item">
+                                                              <a class="nav-link active" id="iconos">Iconos</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" id="dir">Barra de Direccion</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" id="herr">Barra de Herramientas</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" id="nav">Panel de Navegacion</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" id="est">Barra de Estado</a>
+                                                          </li>
+                                                      </ul>
+                                                      <div class="card-body">
+                                                          
+                                                          <div id="txt2">
+                                                              <p class="lead py-5">La barra de búsqueda, indica la ruta en donde se encuentra ese archivo, empezando por la unidad de almacenamiento, después la carpeta o las carpetas y luego el archivo.</p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/barra1.png" alt="">
+                                                              </div>
+                                                              <p class="lead"><i>Ejemplo:</i><br>La carpeta "Imagenes", se encuentra dentro de la carpeta "bibliotecas", y todavía hay más carpetas hacia arriba indicadas por las flechas.</p>
+                                                              <p class="lead">El botón Actualizar <img src="../assets/images/M1/tema2-2a1.gif">que se encuentra a la derecha de la dirección sirve para volver a cargar el contenido de la carpeta actual, aunque la mayoría de las veces se actualiza de forma automática.</p>
+                                                              <p class="lead">La barra de búsqueda<img src="../assets/images/M1/tema2-2a2.png">,es una de las grandes novedades de Windows 7, permite iniciar la búsqueda, tan solo poniendo la primera letra ayudando al usuario a realizarla.</p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/busqueda.jpg" class="w-50">
+                                                              </div>
+                                                          </div>
+
+                                                          <div id="txt1">
+                                                              <p class="lead pt-5">Básicamente son los botones de Atrás y Adelante <img src="../assets/images/M1/tema2-2a3.png">que permiten, navegar entre carpetas o archivos previos o sucesivos.  Su funcionamiento es igual a versiones anteriores, permitiendo guardar un historial y al abrir la flecha de la derecha, permitiendo navegar  sin tener que ir retrocediendo o avanzando.</p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/icono.jpg">
+                                                              </div>
+                                                          </div>
+
+                                                          <div id="txt3">
+                                                              <p class="lead pt-5">La barra de herramientas en esta versión permite facilitar al usuario su trabajo, es decir, muestra los accesos directos a las acciones más usuados.</p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/tema2-2a4.png">
+                                                              </div>
+                                                              <p class="lead pt-2">Las opciones que se muestran en esta barra dependerá de la carpeta o archivo que este seleccionado.</p>
+                                                              <p class="lead"><i>Ejemplo:</i><br>Si se tiene seleccionada una fotográfica, mostrara las opciones que tienen que ver con ese formato: Imprimir, abrir con un programa de gráficos, entre otros.</p>
+                                                              <p class="lead">Al final de la barra de herramientas observamos 3 iconos que siempre van a visualizarse:</p>
+                                                              <p class="lead">Vista: <img src="../assets/images/M1/tema2-2a5.png">Permite cambiar la vista que deseamos ver de nuestros archivos o carpetas.</p>
+                                                              <p class="lead">Panel de vista previa: <img src="../assets/images/M1/tema2-2a6.png">Abre un panel donde se ve una vista previa del archivo seleccionado</p>
+                                                              <p class="lead">Ayuda: <img src="../assets/images/M1/tema2-2a7.png">No puede faltar la ayuda de Windows que viene con el sistema operativo.<br>En la barra de herramientas, se puede visualizar la barra de menús que aparece en versiones anteriores de Windows. Para ello se debe de:</p>
+                                                              <p class="lead">Presione la tecla <img src="../assets/images/M1/tema2-2a8.jpg" alt="">o la tecla <img src="../assets/images/M1/tema2-2a9.png" alt=""> y la barra de menús aparecerá encima de la barra de herramientas. Es importante que sepan que una vez cambie de ventana la barra de menús desaparecerá y para volver a activarla debe de volver a apretarse cualquier tecla mencionadas.</p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/tema2-2a10.png">
+                                                              </div>
+                                                          </div>
+
+                                                          <div id="txt4">
+                                                              <p class="lead pt-5">Este panel, equivale a  los arboles de directorios de versiones anteriores, únicamente muestra carpetas y unidades, por lo que no vera como en versiones anteriores  nombres de archivos. El panel está dividido en secciones, las cuales conoceremos a continuación.</p>
+                                                          </div>
+
+                                                          <div id="txt5">
+                                                              <p class="lead pt-5">Muestra toda la información sobre los elementos que tenemos seleccionados. </p>
+                                                              <div class="text-center">
+                                                                  <img src="../assets/images/M1/tema2-2a11.png" class="w-75">
+                                                              </div>
+                                                          </div>
+                                                              
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                               <div class="row">
                                   <div class="col-lg-12">
-                                    <a href="./tema2.html"><i class="fa fa-arrow-left"></i></a>
-                                    <a href="./tema2-2.html"><i class="fa fa-arrow-right"></i></a>
+                                    <a href="./tema2-2.html"><i class="fa fa-arrow-left"></i></a>
                                   </div>
                               </div>
                               <!-- Your content goes here -->
@@ -243,6 +300,6 @@
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->
-
+        <script src="..//assets/js/Logic/tema2-2a.js"></script>
     </body>
 </html>
