@@ -21,9 +21,12 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/css/animate.min.css" rel="stylesheet">
         <link href="assets/css/app.css" rel="stylesheet">
+        <link href="assets/css/progress.css" rel="stylesheet">
+        <link href="assets/css/progreso.css" rel="stylesheet">
 
         <!-- mis archivos -->
-        <link href="estilosAlberto.css" rel="stylesheet">
+        <link href="estilosHumus.css" rel="stylesheet">
+        <link href="w3.css" rel="stylesheet">
 
     </head>
 
@@ -51,15 +54,6 @@
                                           <i class="ti-home"></i>
                                       </span>
                                       <span class="title">Inicio</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <!-- <a href="javascript:void(0);"> -->
-                                        <a href="temario.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Temario</span>
                                   </a>
                               </li>
                               <li class="nav-item dropdown">
@@ -236,11 +230,21 @@
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <!--Plugin Progreso-->
+        <script src="assets/js/progressbar.js"></script>
+
+    
         <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="assets/js/app.js"></script>
+        <script src="quiz.js"></script>
+
+        <script src="./assets/js/progreso.js"></script>
+        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
+        <script type="text/javascript">show(.4)</script>
+
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->

@@ -281,6 +281,55 @@
                                                     <p><b>La papelería "Martínez" obtuvo un préstamo de $45,000.00 a 3 años, con un interés compuesto del 28% anual, capitalizable cada año.</b></p>
                                                     <p><b>Calcular cuánto tiene que pagar al vencimiento del documento.</b></p>
                                                     <p>A continuación se muestra el comportamiento del préstamo durante los 3 años utilizando el modelo matemático en Excel. El saldo para cada período va a ser igual al saldo del período anterior más los intereses del período. Los intereses del período se obtienen multiplicando el saldo del período anterior por la tasa de interés en su forma decimal (0.28).</p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Tasa de Interés</td>
+                                                                <td>0.28</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Periodo</td>
+                                                                <td>Interés</td>
+                                                                <td>Saldo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>0</td>
+                                                                <td></td>
+                                                                <td>45000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>12600</td>
+                                                                <td>57600</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>16128</td>
+                                                                <td>73728</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>20643.84</td>
+                                                                <td>94371.84</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Total</td>
+                                                                <td>49371.84</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
                                                     <p>Las acciones que se tomaron para generar esta tabla son las siguientes:</p>
                                                     <p>En la celda   B1   teclear   28%</p>
                                                     <p>En la celda   C3   teclear   45000</p>
@@ -304,18 +353,18 @@
                                                     <p><b>Calcular cuánto tiene que pagar al vencimiento del documento.</b></p>
 
                                                     <p>Datos:</p>
-                                                    <p>S0 = 75,000.00</p>
+                                                    <p>S<sub>0</sub> = 75,000.00</p>
                                                     <p>i = 0.28</p>
                                                     <p>t = 3</p>
-                                                    <p>S3 = ¿?  se desea saber el saldo al vencimiento del documento después de 3 años.</p>
+                                                    <p>S<sub>3</sub> = ¿?  se desea saber el saldo al vencimiento del documento después de 3 años.</p>
 
                                                     <p>Solución:</p>
-                                                    <p>De acuerdo a la fórmula St = S0 (1 + i)t aplicada para 3 períodos:</p>
-                                                    <p>S3 = S0 (1 + i)3    al sustituir los valores de S0 y de i la ecuación queda</p>
-                                                    <p>S3 = 75,000.00 (1 + 0.28)3</p>
-                                                    <p>S3 = 75,000.00 (1.28)3</p>
-                                                    <p>S3 = 75,000.00 * 2.097152</p>
-                                                    <p>S3 = 94,371.83 pesos.</p>
+                                                    <p>De acuerdo a la fórmula St = S<sub>0</sub> (1 + i)<sup>t</sup> aplicada para 3 períodos:</p>
+                                                    <p>S<sub>3</sub> = S<sub>0</sub> (1 + i)<sup>3</sup> al sustituir los valores de S<sub>0</sub> y de i la ecuación queda</p>
+                                                    <p>S<sub>3</sub> = 75,000.00 (1 + 0.28)<sup>3</sup></p>
+                                                    <p>S<sub>3</sub> = 75,000.00 (1.28)<sup>3</sup></p>
+                                                    <p>S<sub>3</sub> = 75,000.00 * 2.097152</p>
+                                                    <p>S<sub>3</sub> = 94,371.83 pesos.</p>
 
                                                     <p><b>La empresa tiene que pagar en el vencimiento del documento $94,371.84, que es más de lo doble de lo que se pidió.</b></p>
                                                 </div>
@@ -323,17 +372,34 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 7</h3>
-                                                <div class="feed-body">
-                                                    <p>Carlos solicitó un préstamo en el banco por $30,000.00 durante 2 años. La tasa de interés es de 36% anual capitalizable cada semestre. ¿Cuánto tiene que pagar en el vencimiento del documento?</p>
+                                        <div class="col-lg-10">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h1 class="card-title">Inversión</h1>
+                                                    <h4>Práctica de autoevaluación 4</h4>
+                                                    <p>Carlos solicitó un préstamo en el banco por $30,000.00 durante 2 años. La tasa de interés es de 36% anual capitalizable cada semestre.</p>
                                                     <ol>
-                                                        <li>Resolver el problema utilizando el modelo matemático.</li>
-                                                        <li>¿Cuánto se va a pagar en total de intereses?</li>
-                                                        <li>Resolver el problema utilizando el modelo matemático con Excel.</li>
-                                                        <li>Si se consigue en otro banco una tasa de interés del 34%, ¿cuánto se pagaría en el vencimiento del documento? ¿cuánto disminuyen los intereses?</li>
+                                                        <li>
+                                                            <p>¿Cuánto tiene que pagar en el vencimiento del documento?</p>
+                                                            <div class="radio">
+                                                                <input type="radio" value="c" name="u2p6i1" id="u2p6i1o1">
+                                                                <label for="u2p6i1o1">25,488.00</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u2p6i1" id="u2p6i1o2">
+                                                                <label for="u2p6i1o2">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u2p6i1" id="u2p6i1o3">
+                                                                <label for="u2p6i1o3">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u2p6i1" id="u2p6i1o4">
+                                                                <label for="u2p6i1o4">opcion</label>
+                                                            </div>
+                                                        </li>
                                                     </ol>
+                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="u2p6" value ="Verificar">
                                                 </div>
                                             </div>
                                         </div>
@@ -386,6 +452,7 @@
         <!-- build:js assets/js.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/quiz/unidad2.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
         <script src="../../assets/js/progressbar.js"></script>

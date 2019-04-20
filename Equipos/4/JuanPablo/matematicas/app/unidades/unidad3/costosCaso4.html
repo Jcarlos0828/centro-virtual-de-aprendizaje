@@ -249,29 +249,95 @@
                                                     <p><b>Costos de distribución son el sueldo del chofer $1,200, bodega $1,100 (80% es fijo y el 20% es variable total).</b></p>
                                                     <p><b>Por otro lado el deposito sabe que mensualmente el costo variable total de electricidad va a disminuir un 3% y el del gas un 2.5%, ¿Cuál será ahora el costo total después de un año?</b></p>
                                                     <p>Primero hay que hacer una lista con los costos fijos y los costos variables unitarios   y sacar el costo total de cada uno de éstos (fijos y variables totales).</p>
+
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> </td>
+                                                                <td> Costos fijos </td>
+                                                                <td> Costos variables totales </td>
+                                                                <td> Tasa de incremento en Costos variables totales </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Renta </td>
+                                                                <td> $5,000.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Cajera </td>
+                                                                <td> $2,500.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Carnicero </td>
+                                                                <td> $3,000.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Electricidad </td>
+                                                                <td> $1,200*(.85)=1020 </td>
+                                                                <td> $1,200*(.15)=180 </td>
+                                                                <td> -3% </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Agua </td>
+                                                                <td> $850.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Gas </td>
+                                                                <td> $1,000*(.70)=700 </td>
+                                                                <td> $1,000*(.30)=300 </td>
+                                                                <td> -2.50% </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Chofer </td>
+                                                                <td> $1,200.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Bodega </td>
+                                                                <td> $1,100*(.80)=880 </td>
+                                                                <td> $1,100*(.20)=220 </td>
+                                                                <td> - </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Total </td>
+                                                                <td> $15,150.00 </td>
+                                                                <td> $700.00 </td>
+                                                                <td> </td>
+                                                            </tr>
+                                
+                                                        </tbody>
+                                                    </table>
                                                     <p>Al tener ya todos los datos podemos sacar el costo total para el primer mes, como ya sabemos el costo total es la suma de los costos fijos más los costos variables unitarios, CT=CF + CV</p>
                                                     <p>CT= $15,150 + 700=$15,850</p>
 
-                                                    <p>=Otra de las preguntas nos pide que saquemos un nuevo costo total, si sabemos que la electricidad disminuye mensualmente en un 3% y el gas en un 2.5%, utilizando la representación algebraica del crecimiento compuesto: CVtelectricidad=CV*(1-3%) y CVtgas=CV*(1-2.5%) y el costo total variables es igual a CVt=CVtelectricidad=CV*(1-3%) + CVtgas=CV*(1-2.5%) + CVbodega</p>
+                                                    <p>Otra de las preguntas nos pide que saquemos un nuevo costo total, si sabemos que la electricidad disminuye mensualmente en un 3% y el gas en un 2.5%, utilizando la representación algebraica del crecimiento compuesto: CVt<sub>electricidad</sub>=CV*(1-3%) y CVt<sub>gas</sub>=CV*(1-2.5%) y el costo total variables es igual a CVt=CVt<sub>electricidad</sub>=CV*(1-3%) + CVt<sub>gas</sub>=CV*(1-2.5%) + CV<sub>bodega</sub></p>
 
                                                     <p><b>Primer mes:</b></p>
-                                                    <p>Electricidad: CVtelectricidad=$180</p>
-                                                    <p>Gas: CVtgas=$300</p>
+                                                    <p>Electricidad: CVt<sub>electricidad</sub>=$180</p>
+                                                    <p>Gas: CVt<sub>gas</sub>=$300</p>
                                                     <p>Bodega =$220</p>
                                                     <p>Total de cosos variables unitarios = $180 +$300 + $220 = $700</p>
                                                     <p><b>Costo total: CF + CV = $15150 + $700 = 15850</b></p>
 
                                                     <p><b>Segundo mes:</b></p>
-                                                    <p>Electricidad: CVtelectricidad=$180*(1-.03)=$174.6</p>
-                                                    <p>Gas:CVtgas=$300*(1-.025)=$292.5</p>
+                                                    <p>Electricidad: CVt<sub>electricidad</sub>=$180*(1-.03)=$174.6</p>
+                                                    <p>Gas:CVt<sub>gas</sub>=$300*(1-.025)=$292.5</p>
                                                     <p>Bodega=$220</p>
                                                     <p>Total de costos variables unitarios:$174.6+$292.5+$220=$687.1</p>
                                                     <p><b>Costo total:CF+CV=$15,150+$687.1=$15,837.1</b></p>
 
 
                                                     <p><b>Tercer mes:</b></p>
-                                                    <p>Electricidad: CVtelectricidad=$174.6*(1-.003)=$169.4</p>
-                                                    <p>Gas:CVtgas=$292.5*(1-.025)=$285.2</p>
+                                                    <p>Electricidad: CVt<sub>electricidad</sub>=$174.6*(1-.003)=$169.4</p>
+                                                    <p>Gas:CVt<sub>gas</sub>=$292.5*(1-.025)=$285.2</p>
                                                     <p>Bodega=$220</p>
                                                     <p><b>Total de costos variables unitarios:$169.4+$285.2+$220=$674.6</b></p>
                                                     <p><b>Costo total:CF+CV=$15,150+$674.6=$15,824.6</b></p>
@@ -291,6 +357,212 @@
                                                     <p><b>Costos de distribución son el sueldo del chofer $1,200, bodega $1,100 (80% es fijo y el 20% es variable total).</b></p>
                                                     <p><b>Por otro lado el deposito sabe que mensualmente el costo variable total de electricidad va a disminuir un 3% y el del gas un 2.5%, ¿Cuál será ahora el costo total después de un año?</b></p>
                                                     <p>Utilizando las fórmulas CT=CF+CV y CV=CVt*(1-r) se genera la siguiente tabla en Excel:</p>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                                <th>D</th>
+                                                                <th>E</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> 1 </td>
+                                                                <td> </td>
+                                                                <td> Costos fijos </td>
+                                                                <td> Costos variables </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 2 </td>
+                                                                <td> Renta </td>
+                                                                <td> $5,000.00 </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 3 </td>
+                                                                <td> Cajera </td>
+                                                                <td> $2,500.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 4 </td>
+                                                                <td> Carnicero </td>
+                                                                <td> $3,000.00 </td>
+                                                                <td> - </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 5 </td>
+                                                                <td> Electricidad </td>
+                                                                <td> $1,020.00 </td>
+                                                                <td> $180.00 </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 6 </td>
+                                                                <td> Agua </td>
+                                                                <td> $850.00 </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 7 </td>
+                                                                <td> Gas </td>
+                                                                <td> $700.00 </td>
+                                                                <td> $300.00 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 8 </td>
+                                                                <td> Chofer </td>
+                                                                <td> $1,200.00 </td>
+                                                                <td> - </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 9 </td>
+                                                                <td> Bodega </td>
+                                                                <td> $880.00 </td>
+                                                                <td> $220.00 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 10 </td>
+                                                                <td> Total </td>
+                                                                <td> $15,150.00 </td>
+                                                                <td> $700.00 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 11 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 12 </td>
+                                                                <td> Mes </td>
+                                                                <td> Costo Elect </td>
+                                                                <td> Costo Gas </td>
+                                                                <td> Costo Variables </td>
+                                                                <td> Costos Totales </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 13 </td>
+                                                                <td> 1 </td>
+                                                                <td> $180.00 </td>
+                                                                <td> $300.00 </td>
+                                                                <td> $700.00 </td>
+                                                                <td> $15,850.00 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 14 </td>
+                                                                <td> 2 </td>
+                                                                <td> $174.60 </td>
+                                                                <td> $292.50 </td>
+                                                                <td> $687.10 </td>
+                                                                <td> $15,837.10 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 15 </td>
+                                                                <td> 3 </td>
+                                                                <td> $169.36 </td>
+                                                                <td> $285.19 </td>
+                                                                <td> $674.55 </td>
+                                                                <td> $15,824.55 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 16 </td>
+                                                                <td> 4 </td>
+                                                                <td> $164.28 </td>
+                                                                <td> $278.06 </td>
+                                                                <td> $662.34 </td>
+                                                                <td> $15,812.34 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 17 </td>
+                                                                <td> 5 </td>
+                                                                <td> $159.35 </td>
+                                                                <td> $271.11 </td>
+                                                                <td> $650.46 </td>
+                                                                <td> $15,800.46 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 18 </td>
+                                                                <td> 6 </td>
+                                                                <td> $154.57 </td>
+                                                                <td> $264.33 </td>
+                                                                <td> $638.90 </td>
+                                                                <td> $15,788.90 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 19 </td>
+                                                                <td> 7 </td>
+                                                                <td> $149.93 </td>
+                                                                <td> $257.72 </td>
+                                                                <td> $627.66 </td>
+                                                                <td> $15,777.66 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 20 </td>
+                                                                <td> 8 </td>
+                                                                <td> $145.44 </td>
+                                                                <td> $251.28 </td>
+                                                                <td> $616.71 </td>
+                                                                <td> $15,766.71 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 21 </td>
+                                                                <td> 9 </td>
+                                                                <td> $141.07 </td>
+                                                                <td> $245.00 </td>
+                                                                <td> $606.07 </td>
+                                                                <td> $15,756.07 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 22 </td>
+                                                                <td> 10 </td>
+                                                                <td> $136.84 </td>
+                                                                <td> $238.87 </td>
+                                                                <td> $595.71 </td>
+                                                                <td> $15,745.71 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 23 </td>
+                                                                <td> 11 </td>
+                                                                <td> $132.74 </td>
+                                                                <td> $232.90 </td>
+                                                                <td> $585.64 </td>
+                                                                <td> $15,735.64 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 24 </td>
+                                                                <td> 12 </td>
+                                                                <td> $128.75 </td>
+                                                                <td> $227.08 </td>
+                                                                <td> $575.83 </td>
+                                                                <td> $15,725.83 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>Las acciones que ser realizaron fueron las siguientes:</p>
                                                     <p>De la celda  B2 a la B9 calculamos los costos fijos</p>
                                                     <p>De la celda  C5, C7 y C9 calculamos los costos variables unitarios</p>
@@ -307,13 +579,33 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
-                                                <div class="feed-body">
-                                                    <p>La papelería "Naza" le interesa sacar sus costos totales para los siguientes 3 años, puesto que quiere minimizarlos, por lo tanto hace una lista de los 2 tipos de costos que maneja que son: Administrativos y de distribución.</p>
-                                                    <p>La papelería "Naza" sabe que sus unidades vendidas al año son de 18,000.</p>
-                                                    <p>¿Apartir de los datos dados calcular el costo total para los siguientes 3 años y determinar en cual de los 2 tipos de costos necesita minimizar los costos?</p>
+                                        <div class="col-lg-10">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h4>Práctica de autoevaluación 1</h4>
+                                                    <p>La papelería "Naza" le interesa sacar sus costos totales para los siguientes 3 años, puesto que quiere minimizarlos, por lo tanto hace una lista de los 2 tipos de costos que maneja que son: Administrativos y de distribución.La papelería "Naza" sabe que sus unidades vendidas al año son de 18,000.</p>
+                                                    <ol>
+                                                        <li>
+                                                            <p>¿Apartir de los datos dados calcular el costo total para los siguientes 3 años y determinar en cual de los 2 tipos de costos necesita minimizar los costos?</p>
+                                                            <div class="radio">
+                                                                <input type="radio" value="c" name="u3p4i1" id="u3p4i1o1">
+                                                                <label for="u3p4i1o1">Administrativos: 372416.4, Distribución: 161978.4</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p4i1" id="u3p4i1o2">
+                                                                <label for="u3p4i1o2">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p4i1" id="u3p4i1o3">
+                                                                <label for="u3p4i1o3">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p4i1" id="u3p4i1o4">
+                                                                <label for="u3p4i1o4">opcion</label>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
+                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="u3p4" value ="Verificar">
                                                 </div>
                                             </div>
                                         </div>
@@ -366,6 +658,7 @@
         <!-- build:js assets/js.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/quiz/unidad3.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
         <script src="../../assets/js/progressbar.js"></script>

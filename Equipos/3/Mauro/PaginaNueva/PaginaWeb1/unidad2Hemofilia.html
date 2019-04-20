@@ -36,7 +36,7 @@
                   <div class="side-nav">
                       <div class="side-nav-inner">
                           <div class="side-nav-logo">
-                              <a href="inicioHemofilia.html">
+                              <a href="bienvenidaHemofilia.html">
                                   <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
                                   <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png');width: 100%"></div>
                               </a>
@@ -48,11 +48,19 @@
                           </div>
                           <ul class="side-nav-menu scrollable">
                               <li class="nav-item active">
-                                  <a class="mrg-top-30" href="inicioHemofilia.html">
+                                  <a class="mrg-top-30" href="bienvenidaHemofilia.html">
                                       <span class="icon-holder">
                                           <i class="ti-home"></i>
                                       </span>
-                                      <span class="title">Inicio</span>
+                                      <span class="title">Bienvenida</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="introduccionHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-file-text"></i>
+                                      </span>
+                                      <span class="title">Introducción</span>
                                   </a>
                               </li>
                               <li class="nav-item dropdown">
@@ -60,7 +68,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Temas</span>
+                                      <span class="title">Módulos</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -73,16 +81,32 @@
                                           <a href="./unidad2Hemofilia.html">Recomendaciones</a>
                                       </li>
                                       <li>
-                                          <a href="./CreditosHemofilia.html">Créditos</a>
+                                          <a href="./quizHemofilia.html">Quiz</a>
                                       </li>
                               </ul>
                               </li>
                               <li class="nav-item active">
-                                  <a class="mrg-top" href="quizHemofilia.html">
+                                  <a class="mrg-top" href="politicasHemofilia.html">
                                       <span class="icon-holder">
-                                          <i class="ei-file-edit"></i>
+                                          <i class="ei-file-globe"></i>
                                       </span>
-                                      <span class="title">Quiz</span>
+                                      <span class="title">Políticas</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="contactanosHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-phone-book-contact"></i>
+                                      </span>
+                                      <span class="title">Contáctanos</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="mrg-top" href="creditosHemofilia.html">
+                                      <span class="icon-holder">
+                                          <i class="ei-id-card"></i>
+                                      </span>
+                                      <span class="title">Créditos</span>
                                   </a>
                               </li>
                           </ul>
@@ -123,126 +147,193 @@
                           <div class="card">
                             <div class="overlay-dark bg" style="
                                   background-image: url('FOTOS HEMOFILIA/shutterstock_588196298.jpg');
-                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: top;
                                   background-repeat: no-repeat;
-                                  background-size: 100% 350px;">
+                                  background-size: 100% 400px;">
                               <div class="card-block">
-                                <div class="mrg-top-35">
+                                <div class="mrg-top-130">
                                   <div class="tag tag-primary">Salud</div>
-                                    <h1>Recomendaciones</h1>
+                                    <h1 id="h1top">Recomendaciones</h1>
                                 </div>
                               </div>
                             </div>
                             <div class="card-block">
 
                               <!-- Your content goes here -->
-                              <div class="row">
-                                <div class="column">
-                                 <div id="casosHospitalizados">
-                                  <h3><b>Ameritan ser hospitalizados los siguientes casos:</b></h3>
-                                  <ul>
-                                    <li>Traumatismos craneoencefálicos.</li>
-                                    <li>Extracciones dentales múltiples en pacientes con hemofilia severa.</li>
-                                    <li>Hematomas en cuello.</li>
-                                    <li>Hemorragias en presencia de inhibidores.</li>
-                                    <li>Cirugía mayor.</li>
-                                  </ul>
-                                  </div>
-                                </div>  
+                              <div class="table-overflow">
+                                <table class="table table-bordered table-hover table-sm">
+                                  <thead>
+                                    <tr>
+                                      <th id="tableh1">Ameritan ser Hospitalizados los siguientes casos</th>
+                                    </tr>
+                                  </thead>
+                                  <body>
+                                    <tr>
+                                      <td id="tablebody">Traumatismos craneoencefálicos.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Extracciones dentales múltiples en pacientes con hemofilia severa.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Hematomas en cuello.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Hemorragias en presencia de inhibidores.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody">Cirugía mayor.</td>
+                                    </tr>
+                                  </body>
+                                </table>
                               </div>
-                              <div class="row">
-                                <div class="column">
+                              <br>
+                              <br>
+                              <div class="table-overflow" style="border-color: dodgerblue">
+                                <table class="table table-bordered table-hover table-sm">
+                                  <thead>
+                                    <tr>
+                                      <th id="tableh1">Recomendaciones de dosis de factores liofilizados de acuerdo al tipo de evento:</th>
+                                    </tr>
+                                  </thead>
+                                  <body>
+                                    <tr>
+                                      <td id="tablebody"><strong>En hemartrosis: </strong>20 U/kg/ dosis 2 a 3 dosis (en hemofilia A cada 8 a 12 horas y en hemofilia B cada 24 horas).</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody"><strong>Hemorragia intracraneana: </strong>50 U/kg/ dosis primeros 3 días, luego 20 U/kg/ dosis por mínimo 10 días más.</td>
+                                    </tr>
+                                    <tr>
+                                      <td id="tablebody"><strong>Extracciones dentales: </strong>20 U/kg/ antes de efectuar la extracción luego cada 12 horas por 3 días.</td>
+                                    </tr>
+                                  </body>
+                                </table>
+                              </div>
+                              <div class="card-block">
                                 <hr>
-                                 <h3><b>Recomendaciones de dosis de factores liofilizados de acuerdo al tipo de evento:</b></h3>
-                                 <ul>
-                                    <li>En hemartrosis: 20 U/kg/ dosis 2 a 3 dosis (en hemofilia A cada 8 a 12 horas y en hemofilia B cada 24 horas).</li>
-                                    <li>Hemorragia intracraneana: 50 U/kg/ dosis primeros 3 días, luego 20 U/kg/ dosis por mínimo 10 días más.</li>
-                                    <li>Extracciones dentales: 20 U/kg/ antes de efectuar la extracción luego cada 12 horas por 3 días.</li>
-                                 </ul>
-                                </div>
-                              </div>
-                              <hr>
-
-                              <h3>Haz click en los botones para mostrar el contenido</h3>
-                              <hr>
-                              <div class="row" class="row align-items-start">
-                                <div class="column">
-                                  <div class="cardelement">
-                                    <button class="button" onclick="myFunction1()">¿Qué tipo de medicamento deben prohibirse al padecer esta enfermedad?</button>
-                                    <script>
-                                      function myFunction1() {
-                                      var x = document.getElementById('MedicamentosProhibidos');
-                                      if (x.style.display == 'block') {
-                                        x.style.display = 'none';
-                                      } else {
-                                        x.style.display = 'block';
-                                      }
-                                      }
-                                    </script>
-                                    <p id="MedicamentosProhibidos" style="display: none">Los que alteran la coagulación de alguna manera como la aspirina y todos los que la contengan.</p>
-                                  </div>
-                                </div>
-                                <div class="column">
-                                  <div class="cardelement"> 
-                                    <button class="button" onclick="myFunction2()">¿Cuáles vacunas de la Cartilla Nacional de Vacunación pueden aplicarse?</button>
-                                    <script>
-                                      function myFunction2() {
-                                      var x = document.getElementById('Vacunas');
-                                      if (x.style.display == 'block') {
-                                        x.style.display = 'none';
-                                      } else {
-                                        x.style.display = 'block';
-                                      }
-                                      }
-                                    </script>
-                                    <div id="Vacunas" style="display: none">
-                                      <br>
-                                      <img class="card-img-top" alt="Cromosoma X" src="FOTOS HEMOFILIA/shutterstock_156599060.jpg">
-                                    <div class="card-body">
-                                      <div class="card-text">
-                                        <p>Todas sin excepción, solo se recomienda hacer compresión unos minutos en el sitio de aplicación a las punciones. Se recomienda aplicación siempre de vacuna contra hepatitis B.</p>
+                                <h5>Haz click o presiona cada uno de las pestañas para desplegar la información.</h5>
+                                <hr>
+                                <div class="mrg-top-10">
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne">
+                                                <span id="dropdownfont">¿Qué tipo de medicamento deben prohibirse al padecer esta enfermedad?</span>
+                                                <i class="icon ti-arrow-circle-down"></i>
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseOne" class="collapse panel-collapse">
+                                            <div class="panel-body">
+                                              <div class="row">
+                                                <div class="column">
+                                                  <div class="card-body">
+                                                    <p class="card-text">Los que alteran la coagulación de alguna manera como la aspirina y todos los que la contengan.</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
+                                    <div class="col-sm-6">
+                                      <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo">
+                                                <span id="dropdownfont">¿Cuáles vacunas de la Cartilla Nacional de Vacunación pueden aplicarse?</span>
+                                                <i class="icon ti-arrow-circle-down"></i>
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapseTwo" class="collapse panel-collapse">
+                                            <div class="panel-body">
+                                              <div class="row">
+                                                <div class="column">
+                                                  <div class="card-body">
+                                                    <div class="card-body">
+                                                      <div class="card-text">
+                                                        <img class="card-img-top" alt="vacuna" src="FOTOS HEMOFILIA/shutterstock_156599060.jpg">
+                                                        <p>Todas sin excepción, solo se recomienda hacer compresión unos minutos en el sitio de aplicación a las punciones. Se recomienda aplicación siempre de vacuna contra hepatitis B.</p>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="row" class="row align-items-start">
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction3()">¿Qué tipo de deportes se recomiendan?</button>
-                                      <script>
-                                        function myFunction3() {
-                                        var x = document.getElementById('Deportes');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                       </script>
-                                         <p id="Deportes" style="display: none">Los que no son de contacto. El más recomendado es la natación. Es importante mantener un buen tono y fuerza muscular ya que esto disminuye las hemartrosis.</p>
+                            </div>
+                            <div class="card-block">
+                              <div class="mrg-top-10">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseThree">
+                                              <span id="dropdownfont">¿Qué tipo de deportes se recomiendan?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseThree" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <p class="card-text">Los que no son de contacto. El más recomendado es la natación. Es importante mantener un buen tono y fuerza muscular ya que esto disminuye las hemartrosis.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="column">
-                                    <div class="cardelement">
-                                      <button class="button" onclick="myFunction4()">¿Qué es una hemartrosis?</button>
-                                      <script>
-                                        function myFunction4() {
-                                        var x = document.getElementById('Hemartosis');
-                                        if (x.style.display == 'block') {
-                                          x.style.display = 'none';
-                                        } else {
-                                          x.style.display = 'block';
-                                        }
-                                        }
-                                      </script>
-                                      <p id="Hemartosis" style="display: none">Es el acúmulos de sangre dentro de una articulación y corresponde a la manifestación más frecuente de sangrado en hemofilia. En orden de frecuencia las más afectadas son: rodillas, tobillos y codos. Se recomienda por tanto usar protecciones en niños pequeños a nivel de las mismas.</p>
+                                  <div class="col-sm-6">
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                          <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseFour">
+                                              <span id="dropdownfont">¿Qué es una hemartrosis?</span>
+                                              <i class="icon ti-arrow-circle-down"></i>
+                                            </a>
+                                          </h4>
+                                        </div>
+                                        <div id="collapseFour" class="collapse panel-collapse">
+                                          <div class="panel-body">
+                                            <div class="row">
+                                              <div class="column">
+                                                <div class="card-body">
+                                                  <div class="card-body">
+                                                    <div class="card-text">
+                                                      <p>Es el acúmulo de sangre dentro de una articulación y corresponde a la manifestación más frecuente de sangrado en hemofilia. En orden de frecuencia las más afectadas son: rodillas, tobillos y codos. Se recomienda por tanto usar protecciones en niños pequeños a nivel de las mismas.</p>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+                            <br>
+
                                 <nav aria-label="..." style="text-align: center">
                                   <ul class="pagination justify-content-center">
                                     <li class="page-item">
@@ -252,7 +343,7 @@
                                     <li class="page-item active">
                                       <a class="page-link" href="unidad2Hemofilia.html">Recomendaciones<span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="page-item">
+                                    <li class="page-item disabled">
                                       <a class="page-link" href="unidad2Hemofilia.html">Siguiente</a>
                                     </li>
                                   </ul>

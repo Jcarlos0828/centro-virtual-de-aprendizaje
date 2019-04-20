@@ -1,0 +1,113 @@
+/* #centrar-texto {
+    /* height: 50px;
+    clear: both;
+    float: none;
+    width: 880px;
+    font-family: Calibri;
+    text-align: left;
+    border-top: 2px solid #BFB8A1;
+    border-bottom: 3px solid #BFB8A1;
+    background: #736E60; */
+    /* font-family: Calibri;
+    font-size: 32px;
+    /* padding: 0 0 10px 15px; 
+    width: 880px;
+    padding: 50px 0px 30px 20px;
+    background: url('bg_header_900x136.gif') no-repeat left bottom;
+    background-position: center;
+    color: #fff;
+    height: 0px;
+    margin-bottom: 0px; */
+    /* font-family: Calibri;
+    font-size: 32px;
+    padding: 0 0 10px 0px; */
+    /* width: 880px;
+    padding: 50px 0px 30px 0px;
+    background: url('bg_header_900x136.gif') no-repeat left bottom;
+    background-position: center;
+    color: #fff;
+    height: 0px;
+    margin: 0 auto;
+    text-align: center;
+    
+} */
+
+.img_unidades{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
+  height:200px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.column {
+  float: left;
+  flex: 50%;
+  padding: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+#hola2{
+    /* background-image: url('Imagen1.jpg'); */
+    background-color: lightgreen;
+    text-align: center;
+    margin: 50px;
+}
+
+.button {
+	box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  display: table;
+  margin: 0 auto
+}
+.button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+/* #top-menu {
+    clear: both;
+    float: none;
+    width: 880px;
+    font-family: Calibri;
+    text-align: left;
+    border-top: 2px solid #BFB8A1;
+    border-bottom: 3px solid #BFB8A1;
+    background: #736E60;
+} */
