@@ -9,18 +9,20 @@
         <link rel="shortcut icon" href="assets/images/logo/favicon.png">
 
         <!-- plugins css -->
-        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
-        <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+        <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="./assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+        <link rel="stylesheet" href="./assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
         <!-- page plugins css -->
-
+ 
         <!-- core css -->
-        <link href="assets/css/ei-icon.css" rel="stylesheet">
-        <link href="assets/css/themify-icons.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/css/animate.min.css" rel="stylesheet">
-        <link href="assets/css/app.css" rel="stylesheet">
+        <link href="./assets/css/ei-icon.css" rel="stylesheet">
+        <link href="./assets/css/themify-icons.css" rel="stylesheet">
+        <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/animate.min.css" rel="stylesheet">
+        <link href="./assets/css/app.css" rel="stylesheet">
+        <link href="./assets/css/progreso.css" rel="stylesheet">
+		<link href="./assets/css/progress.css" rel="stylesheet">
 
     </head>
 
@@ -33,7 +35,7 @@
                           <div class="side-nav-logo">
                               <a href="index.html">
                                   <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
-                                  <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')"></div>
+                                  <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
                               </a>
                               <div class="mobile-toggle side-nav-toggle">
                                   <a href="">
@@ -63,7 +65,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Sobre la Hipertensión</span>
+                                      <span class="title">Sobre la hipertensión</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -88,7 +90,33 @@
                                           <a href="ControlH.html">Tema 6</a>
                                       </li>
                               </ul>
-                              </li>
+							  <li class="nav-item active">
+                                    <a class="dropdown-toggle" href="politicas.html">
+                                        <span class="icon-holder">
+                                            <i class="ei-briefcase"></i>
+                                        </span>
+                                        <span class="title">Politicas</span>
+                                       
+                                    </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="dropdown-toggle" href="contactanos.html">
+                                            <span class="icon-holder">
+                                                <i class="ei-email"></i>
+                                            </span>
+                                            <span class="title">Contactanos</span>
+                                            
+                                        </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="dropdown-toggle" href="credits.html">
+                                                <span class="icon-holder">
+                                                    <i class="ti-info-alt"></i>
+                                                </span>
+                                                <span class="title">Creditos</span>
+                                                
+                                            </a>
+                                            </li>
                               </li>
                           </ul>
                       </div>
@@ -185,11 +213,11 @@
                       <footer class="content-footer">
                           <div class="footer">
                               <div class="copyright">
-                                  <span>Copyright © 2019.</span>
-								  <span class="go-right">
-                                      <a href="credits.html" class="text-gray mrg-right-15">Créditos</a>
-                                  </span>
-                              </div>
+                                <span><strong>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito. D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019. </strong></span>
+                                <span class="go-right">
+                                    <p><a href="http://videolabtec.itesm.mx/aviso-legal" class="text-gray" target="blank">Aviso legal</a> | <a href="https://tec.mx/es/avisos-de-privacidad"class="text-gray"target="blank">Aviso de Privacidad</a> | <a href="credits.html" class="text-gray mrg-right-15">Creditos</a></p>
+                                </span>
+                            </div>
                           </div>
                       </footer>
                       <!-- Footer END -->
@@ -201,19 +229,23 @@
 
         <!-- build:js assets/js/vendor.js -->
         <!-- plugins js -->
-        <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-        <script src="assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-        <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="assets/vendors/PACE/pace.min.js"></script>
-        <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="./assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="./assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./assets/vendors/PACE/pace.min.js"></script>
+        <script src="./assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+
+        <script src="./assets/js/progressbar.js"></script>
+
         <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
-        <script src="assets/js/app.js"></script>
-        <!-- endbuild -->
+        <script src="./assets/js/app.js"></script>
 
-        <!-- Insert your dependencies here -->
+        <script src="./assets/js/progreso.js"></script>
+        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
+        <script type="text/javascript">show(5/6)</script>
 
     </body>
 </html>
