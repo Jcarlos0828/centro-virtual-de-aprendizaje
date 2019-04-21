@@ -14,7 +14,9 @@
         <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
         <!-- page plugins css -->
-
+		<link rel="stylesheet" href="assets/css/sweetalert.css" />
+		<link rel="stylesheet" href="assets/vendors/selectize/dist/css/selectize.default.css" />
+		
         <!-- core css -->
         <link href="assets/css/ei-icon.css" rel="stylesheet">
         <link href="assets/css/themify-icons.css" rel="stylesheet">
@@ -50,12 +52,21 @@
                                       <span class="title">Inicio</span>
                                   </a>
                               </li>
+							  <li class="nav-item active">
+                                  <a href="programa.html">
+                                      <span class="icon-holder">
+                                          <i class="ti-layout-media-overlay"></i>
+                                      </span>
+                                      <span class="title">Programa del curso</span>
+                                  </a>
+                              </li>
+							  
 							  <li class="nav-item dropdown">
                                   <a class="dropdown-toggle" href="javascript:void(0);">
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 1: Introdución</span>
+                                      <span class="title">Módulo 1</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -77,7 +88,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 2: Información Comunitaria</span>
+                                      <span class="title">Módulo 2</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -99,7 +110,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 3: Apoyo al trabajo</span>
+                                      <span class="title">Módulo 3</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -124,7 +135,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 4: Apertura al exterior</span>
+                                      <span class="title">Módulo 4</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -138,23 +149,6 @@
                                       </li>
                               </ul>
                               </li>
-                              <li class="nav-item">
-                                  <a href="recursos.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Recursos</span>
-                                  </a>
-                              </li>
-							  <li class="nav-item">
-                                  <a href="directorio.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Directorio</span>
-                                  </a>
-                              </li>
-                              
                           </ul>
                       </div>
                   </div>
@@ -190,7 +184,75 @@
 
 
                               <!-- Your content goes here -->
-							  
+							  <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="overlay-dark bg" style="
+                                            background-image: url(images/T2_F3.jpg) ;
+                                            background-attachment: fixed;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-position-y: 15%;">
+                                            <div class="card-block">
+                                                <div class="mrg-top-130">
+                                                    <div class="tag tag-info">Módulo 1</div>
+                                                    <h1>Reglas Ortográficas: Actividad</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-block">
+                                            <h2 class="mrg-btm-20 no-mrg-top">Ejercicio</h2>
+											<div class="mrg-top-40">
+											<h4 class="mrg-btm-20 no-mrg-top">Para que revises tus conocimientos sobre ortografía, selecciona la respuesta correcta. Presiona sobre la respuesta correcta. </h4>
+											<p><font size= "3.5">1. Indica qué grupo de palabras tiene agudas: </font> </p>
+											<button class="btn btn-success btn-rounded swal-simple">Árbol, día, sonrisa, mala. </button>
+											<button class="btn btn-success btn-rounded swal-success">Acción, dirigió, además, más. </button>
+											<button class="btn btn-success btn-rounded swal-simple">Hipérbole, sólo, lata, saco. </button>
+											
+											<p><font size= "3.5">2. Selecciona el grupo de palabras graves. </font> </p>
+											<button class="btn btn-success btn-rounded swal-simple">Diéronles, esdrújula, metafísica, cómoda. </button>
+											<button class="btn btn-success btn-rounded swal-simple">Damián, guió, sonrió, alabó. </button>
+											<button class="btn btn-success btn-rounded swal-success">Árbol, día, sonrisa, mala. </button>
+											
+											<p><font size= "3.5">3. Indica el grupo que tenga palabras esdrújulas: </font> </p>
+											<button class="btn btn-success btn-rounded swal-simple">Dirigió, además, débil </button>
+											<button class="btn btn-success btn-rounded swal-simple">César, bíceps, fórceps. </button>
+											<button class="btn btn-success btn-rounded swal-success">Diéronles, esdrújula, metafísica, cómoda. </button>
+											
+											<p><font size= "3.5">4. De las siguientes palabras selecciona las que llevan acento escrito (hay 2 correctas):  </font> </p>
+											<button class="btn btn-success btn-rounded swal-simple">huir </button>
+											<button class="btn btn-success btn-rounded swal-success">sueter </button>
+											<button class="btn btn-success btn-rounded swal-success">dolar </button>
+											<button class="btn btn-success btn-rounded swal-simple">dolor </button>
+											<button class="btn btn-success btn-rounded swal-simple">tierra </button>
+											<button class="btn btn-success btn-rounded swal-simple">examen </button>
+											
+											<p><font size= "3.5">5. ¿Cuál de estas opciones tiene la fecha escrita correctamente? </font> </p>
+											<button class="btn btn-success btn-rounded swal-success">15 de abril de 2019 </button>
+											<button class="btn btn-success btn-rounded swal-simple">14 de abril del 2019 </button>
+											<button class="btn btn-success btn-rounded swal-simple">13 de Abril de 2018 </button>
+											
+											<p><font size= "3.5">6. ¿Cuál de estos tiene el nombre y el título bien escrito? (Hay 2 correctas) (Recuerda que si el título va abreviado, se escribe con mayúscula y si se pone toda la palabra, ésta va en letra minúscula.) </font> </p>
+											<button class="btn btn-success btn-rounded swal-success">maestro Javier Garza  </button>
+											<button class="btn btn-success btn-rounded swal-simple">Doctor Rodolfo Fernández </button>
+											<button class="btn btn-success btn-rounded swal-simple">Maes. Armando Rodríguez </button>
+											<button class="btn btn-success btn-rounded swal-success">Dr. Alfredo Juárez </button>
+											
+											<p><font size= "3.5">7. Selecciona el significado de e-mail.  </font> </p>
+											<button class="btn btn-success btn-rounded swal-simple">Edificio de correos. </button>
+											<button class="btn btn-success btn-rounded swal-success">Correo electrónico </button>
+											<button class="btn btn-success btn-rounded swal-simple"> Encargado de correos. </button>
+											
+                                            <a href="modulo2.1.html" class="btn btn-info no-mrg-btm">Siguiente módulo</a>
+                                            </div>	
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+										
                       <!-- Content Wrapper END -->
 
                       <!-- Footer START -->
@@ -212,13 +274,17 @@
         </div>
 
         <!-- build:js assets/js/vendor.js -->
-        <!-- plugins js -->
+        <<!-- plugins js -->
         <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
         <script src="assets/vendors/popper.js/dist/umd/popper.min.js"></script>
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <!-- endbuild -->
+		
+		<script src="assets/vendors/sweetalert/lib/sweet-alert.js"></script>
+		<script src="assets/vendors/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+		<script src="assets/vendors/selectize/dist/js/standalone/selectize.min.js"></script>
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
@@ -226,6 +292,7 @@
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->
+		<script src="assets/js/ui-elements/notification.js"></script>
 
     </body>
 </html>

@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
         <!-- page plugins css -->
+		<link rel="stylesheet" href="assets/css/sweetalert.css" />
+		<link rel="stylesheet" href="assets/vendors/selectize/dist/css/selectize.default.css" />
 
         <!-- core css -->
         <link href="assets/css/ei-icon.css" rel="stylesheet">
@@ -50,12 +52,21 @@
                                       <span class="title">Inicio</span>
                                   </a>
                               </li>
+							  <li class="nav-item active">
+                                  <a href="programa.html">
+                                      <span class="icon-holder">
+                                          <i class="ti-layout-media-overlay"></i>
+                                      </span>
+                                      <span class="title">Programa del curso</span>
+                                  </a>
+                              </li>
+							  
 							  <li class="nav-item dropdown">
                                   <a class="dropdown-toggle" href="javascript:void(0);">
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 1: Introdución</span>
+                                      <span class="title">Módulo 1</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -77,7 +88,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 2: Información Comunitaria</span>
+                                      <span class="title">Módulo 2</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -99,7 +110,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 3: Apoyo al trabajo</span>
+                                      <span class="title">Módulo 3</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -124,7 +135,7 @@
                                       <span class="icon-holder">
                                               <i class="ti-view-list-alt"></i>
                                           </span>
-                                      <span class="title">Módulo 4: Apertura al exterior</span>
+                                      <span class="title">Módulo 4</span>
                                       <span class="arrow">
                                               <i class="ti-angle-right"></i>
                                           </span>
@@ -138,23 +149,6 @@
                                       </li>
                               </ul>
                               </li>
-                              <li class="nav-item">
-                                  <a href="recursos.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Recursos</span>
-                                  </a>
-                              </li>
-							  <li class="nav-item">
-                                  <a href="directorio.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Directorio</span>
-                                  </a>
-                              </li>
-                              
                           </ul>
                       </div>
                   </div>
@@ -190,7 +184,86 @@
 
 
                               <!-- Your content goes here -->
-							  
+							  <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="overlay-dark bg" style="
+                                            background-image: url(images/T2_F3.jpg) ;
+                                            background-attachment: fixed;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            background-position-y: 15%;">
+                                            <div class="card-block">
+                                                <div class="mrg-top-130">
+                                                    <div class="tag tag-info">Módulo 2</div>
+                                                    <h1>Cómo titular una nota informativa: Actividad</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+										
+                                        <div class="card-block">
+										<div class="mrg-top-40">
+												<h4 class="card-title">Ejercicios</h4>
+                                        <div class="tab-primary">
+                                            <ul class="nav nav-pills" role="tablist">
+                                                <li class="nav-item">
+                                                    <a href="#nav-pills-1" class="nav-link active" role="tab" data-toggle="tab">Ejercicio 1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#nav-pills-2" class="nav-link" role="tab" data-toggle="tab">Ejercicio 2</a>
+                                                </li>
+                                            </ul>
+											
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade in active" id="nav-pills-1">
+                                                    <h3 class="mrg-btm-20 no-mrg-top">Seleccione la opción que haga el cambio a tiempo presente correctamente de las siguientes oraciones. </h3>
+													<h4 class="mrg-btm-20 no-mrg-top">1. López Obrador asumió la presidencia de México </h4>
+													<button class="btn btn-success btn-rounded swal-simple">López Obrador asumirá la presidencia de México.</button>
+													<button class="btn btn-success btn-rounded swal-simple">López Obrador asumía la presidencia de México. </button>
+													<button class="btn btn-success btn-rounded swal-success">López Obrador asume la presidencia de México. </button>
+													<h4 class="mrg-btm-20 no-mrg-top">2. Bajó el precio del papel periódico </h4>
+													<button class="btn btn-success btn-rounded swal-simple">Bajaría el precio del papel periódico </button>
+													<button class="btn btn-success btn-rounded swal-success">Baja el precio del papel periódico </button>
+													<button class="btn btn-success btn-rounded swal-simple">Bajaba el precio del papel periódico </button>
+													<h4 class="mrg-btm-20 no-mrg-top">3. Presentó alcalde declaración patrimonial </h4>
+													<button class="btn btn-success btn-rounded swal-success">Presenta alcalde declaración patrimonial </button>
+													<button class="btn btn-success btn-rounded swal-simple">Presentará alcalde declaración patrimonial </button>
+													<button class="btn btn-success btn-rounded swal-simple">Presentaría alcalde declaración patrimonial </button>
+													</div>
+                                                
+												
+                                                <div role="tabpanel" class="tab-pane fade" id="nav-pills-2">
+                                                    <div class="pdd-horizon-15 pdd-vertical-20">
+													<h3 class="mrg-btm-20 no-mrg-top">Señala si los siguientes títulos están redactados correctamente, seleccionando la respuesta que aparece bajo la pregunta. Recuerda que debes oprimir el botón izquierdo del ratón sobre la respuesta correcta para seleccionarla: </h3>
+													<h4 class="mrg-btm-20 no-mrg-top">1. Rescatan a 39 ilegales de morir asfixiados </h4>
+													<button class="btn btn-success btn-rounded swal-success">Si </button>
+													<button class="btn btn-success btn-rounded swal-simple">No </button>
+													<h4 class="mrg-btm-20 no-mrg-top">2. Inquieta a diputados expansión de la fiebra aftosa  </h4>
+													<button class="btn btn-success btn-rounded swal-success">Si </button>
+													<button class="btn btn-success btn-rounded swal-simple">No </button>
+													<h4 class="mrg-btm-20 no-mrg-top">3. Conferencia de zapatistas  </h4>
+													<button class="btn btn-success btn-rounded swal-simple">Si </button>
+													<button class="btn btn-success btn-rounded swal-success">No </button>
+													<h4 class="mrg-btm-20 no-mrg-top">4. Mañana será la plática para mujeres  </h4>
+													<button class="btn btn-success btn-rounded swal-simple">Si </button>
+													<button class="btn btn-success btn-rounded swal-success">No </button>
+													<h4 class="mrg-btm-20 no-mrg-top">5. Dan ultimátum  </h4>
+													<button class="btn btn-success btn-rounded swal-simple">Si </button>
+													<button class="btn btn-success btn-rounded swal-success">No </button>
+													</div>
+                                                </div>
+											</div>
+
+                                                <a href="modulo2.3.html" class="btn btn-info no-mrg-btm">Siguiente módulo</a>
+                                            </div>	
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
                       <!-- Content Wrapper END -->
 
                       <!-- Footer START -->
@@ -219,6 +292,10 @@
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <!-- endbuild -->
+		
+		<script src="assets/vendors/sweetalert/lib/sweet-alert.js"></script>
+		<script src="assets/vendors/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+		<script src="assets/vendors/selectize/dist/js/standalone/selectize.min.js"></script>
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
@@ -226,6 +303,7 @@
         <!-- endbuild -->
 
         <!-- Insert your dependencies here -->
+		<script src="assets/js/ui-elements/notification.js"></script>
 
     </body>
 </html>
