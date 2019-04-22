@@ -9,6 +9,10 @@
     float: left;
 }
 
+.fa-sticky-note{
+    font-size: 30px;
+}
+
 a{
     color: #0f9aee;
 }
@@ -21,3 +25,4 @@ a{
     width: 100%;
     height: 20vw;
 }
+

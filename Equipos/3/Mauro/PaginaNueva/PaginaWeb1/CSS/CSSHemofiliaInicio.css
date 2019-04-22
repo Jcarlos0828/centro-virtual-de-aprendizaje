@@ -23,7 +23,13 @@ h4{
 }
 
 p{
-  font-size: 18px;
+  text-align:justify;
+  font: inherit;
+  font-size:15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #temas{

@@ -238,25 +238,6 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 1</h3>
-                                                <div class="feed-body">
-                                                    <ol>
-                                                        <li>En la parte superior izquierda de la Tabla Interactiva se tienen los datos del Caso 1: saldo inicial (0), período inicial (0), período final (4), tasa anual (8) y pago fijo (15,000). ¿Cuál es el saldo en el período 4?. (El saldo es de $67,591.00 pesos)</li>
-                                                        <li>Si la tasa de interés fuera de 17% anual, ¿cuál sería el saldo después de 4 años?. (El saldo sería de $77,107.00 pesos.)</li>
-                                                        <li>Seleccione el botón de Valores Iniciales.(Se vuelven a tener los valores iniciales del caso)</li>
-                                                        <li>¿Cuántos años se necesitarían para tener más de $150,000.00 pesos?. (En 8 años se tendrían $159,549.00 pesos)</li>
-                                                        <li>Cambie el valor del pago fijo a $22,000.00 pesos, ¿cuántos años se necesitarían para tener más de $150,000.00?. (En 6 años se tendrían $161,390.00 pesos.)</li>
-                                                        <li>¿Cuál sería el saldo después de 4 años?. (El saldo sería de $ 99,134.00 pesos)</li>
-                                                        <li>¿Cuál sería el saldo después de 10 años?. (El saldo sería de $318,704.00 pesos)</li>
-                                                        <li>¿Cuánto se tendría que pagar cada año para tener $160,000.00 pesos en 5 años?. (Se tendrían que pagar $27,274.00 pesos cada año).</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
                                                 <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
                                                 <div class="feed-body">
                                                     <p><b>¿Cuál es el valor futuro de una anualidad de $15,000.00  pesos por año pagaderos al final de cada año, durante 4 años a un interés compuesto de 8% capitalizable cada año?</b></p>
@@ -320,11 +301,11 @@
 
                                                     <p>En seguida se definen los elementos principales en el manejo de anualidades:</p>
 
-                                                    <p>S0      capital o saldo inicial.</p>
+                                                    <p>S<sub>0</sub>      capital o saldo inicial.</p>
                                                     <p>i         tasa de interés del período en su forma decimal.</p>
                                                     <p>t         número de años o períodos.</p>
                                                     <p>P        pago que se realiza cada período.</p>
-                                                    <p>St         saldo después de un t períodos de tiempo.</p>
+                                                    <p>S<sub>t</sub>         saldo después de un t períodos de tiempo.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -337,40 +318,40 @@
                                                     <p>Para cada uno de los períodos se utiliza el mismo proceso de manera que se van a utilizar las formulas para encontrar un modelo matematico para este tipo de problemas.</p>
 
                                                     <p>En el modelo matemático para interés compuesto, el saldo para cada período va a ser igual al saldo del año anterior más el interés del saldo anterior generado durante el período más el pago.</p>
-                                                    <p>St = St-1 + interés del período + pago del periodo</p>
-                                                    <p>El interés para cada período va a ser el producto de multiplicar el saldo anterior (St-1) por la tasa de interés expresada en decimales ( i ).</p>
-                                                    <p>interés del período =  St-1 * i</p>
+                                                    <p>S<sub>t</sub> = S<sub>t-1</sub> + interés del período + pago del periodo</p>
+                                                    <p>El interés para cada período va a ser el producto de multiplicar el saldo anterior (S<sub>t-1</sub>) por la tasa de interés expresada en decimales ( i ).</p>
+                                                    <p>interés del período =  S<sub>t-1</sub> * i</p>
                                                     <p>Sustituyendo el interés y el pago P en la fórmula para el saldo se tiene</p>
-                                                    <p>St = St-1 + St-1 * i + P</p>
+                                                    <p>S<sub>t</sub> = S<sub>t-1</sub> + S<sub>t-1</sub> * i + P</p>
 
-                                                    <p>El saldo después del primer período (S1) es la suma del capital (S0) con los intereses del período (S0 * i).</p>
-                                                    <p>S1 = S0 + S0 * i  + P  sacando S0 como factor común</p>
-                                                    <p>S1 = S0 (1 + i) + P</p>
-                                                    <p>El saldo después de un período es ----------------------------  S1 = S0 (1 + i) + P</p>
+                                                    <p>El saldo después del primer período (S<sub>1</sub>) es la suma del capital (S<sub>0</sub>) con los intereses del período (S<sub>0</sub> * i).</p>
+                                                    <p>S<sub>1</sub> = S<sub>0</sub> + S<sub>0</sub> * i  + P  sacando S<sub>0</sub> como factor común</p>
+                                                    <p>S<sub>1</sub> = S<sub>0</sub> (1 + i) + P</p>
+                                                    <p>El saldo después de un período es ----------------------------  S<sub>1</sub> = S<sub>0</sub> (1 + i) + P</p>
 
-                                                    <p>Para obtener el saldo del segundo período (S2) se suma el saldo del primer período (S1) con el interés del período (S1 * i) más el pago del segundo período.</p>
-                                                    <p>S2 = S1 + S1 * i  + P    sacando S1 como factor común</p>
-                                                    <p>S2 = S1 (1 + i) + P       </p>
-                                                    <p>El saldo después de dos períodos es ----------------------------  S2 = S1 (1 + i) + P</p>
+                                                    <p>Para obtener el saldo del segundo período (S<sub>2</sub>) se suma el saldo del primer período (S<sub>1</sub>) con el interés del período (S<sub>1</sub> * i) más el pago del segundo período.</p>
+                                                    <p>S<sub>2</sub> = S<sub>1</sub> + S<sub>1</sub> * i  + P    sacando S<sub>1</sub> como factor común</p>
+                                                    <p>S<sub>2</sub> = S<sub>1</sub> (1 + i) + P       </p>
+                                                    <p>El saldo después de dos períodos es ----------------------------  S<sub>2</sub> = S<sub>1</sub> (1 + i) + P</p>
 
-                                                    <p>Para obtener el saldo del tercer período (S3) se suma el saldo del segundo período (S2) con el interés del período (S2  * i) más el pago del tercer período.</p>
-                                                    <p>S3 = S2 + S2 * i  + P         sacando S2 como factor común</p>
-                                                    <p>S3 = S2 (1 + i) + P           </p>
-                                                    <p>El saldo después de tres períodos es ---------------------------- S3 =   S2 (1 + i) + P</p>
+                                                    <p>Para obtener el saldo del tercer período (S<sub>3</sub>) se suma el saldo del segundo período (S<sub>2</sub>) con el interés del período (S<sub>2</sub>  * i) más el pago del tercer período.</p>
+                                                    <p>S<sub>3</sub> = S<sub>2</sub> + S<sub>2</sub> * i  + P         sacando S<sub>2</sub> como factor común</p>
+                                                    <p>S<sub>3</sub> = S<sub>2</sub> (1 + i) + P           </p>
+                                                    <p>El saldo después de tres períodos es ---------------------------- S<sub>3</sub> =   S<sub>2</sub> (1 + i) + P</p>
 
                                                     <p>Al observar la fórmula para cada período se puede generalizar de la siguiente manera:</p>
-                                                    <p><b>Sn = Sn-1 + Sn-1 *  i + P</b></p>
+                                                    <p><b>S<sub>n</sub> = S<sub>n-1</sub> + S<sub>n-1</sub> *  i + P</b></p>
 
-                                                    <p><b>En el manejo de anualidades, el saldo al término de t años o periodos (St) es:</b></p>
+                                                    <p><b>En el manejo de anualidades, el saldo al término de t años o periodos (S<sub>t</sub>) es:</b></p>
 
-                                                    <p><b>St = St-1 + St-1 *  i + P</b></p>
+                                                    <p><b>S<sub>t</sub> = S<sub>t-1</sub> + S<sub>t-1</sub> *  i + P</b></p>
 
-                                                    <p>e<b>n donde,</b></p>
+                                                    <p><b>en donde,</b></p>
 
-                                                    <p><b>St-1    es el saldo del período anterior.  S0 viene a ser el capital o saldo inicial.</b></p>
+                                                    <p><b>S<sub>t-1</sub>    es el saldo del período anterior.  S<sub>0</sub> viene a ser el capital o saldo inicial.</b></p>
                                                     <p><b>i        es la tasa de interés expresada en decimales.</b></p>
                                                     <p><b>t        es el número de años o períodos.</b></p>
-                                                    <p><b>St      es el saldo después de t períodos.</b></p>
+                                                    <p><b>S<sub>t</sub>      es el saldo después de t períodos.</b></p>
                                                     <p><b>P       es el pago que se realiza cada período.</p></p>
                                                 </div>
                                             </div>
@@ -383,53 +364,53 @@
                                                 <div class="feed-body">
                                                     <p><b>¿Cuál es el valor futuro de una anualidad de $15,000.00  pesos por año pagaderos al final de cada año, durante 4 años a un interés compuesto de 8% capitalizable cada año?</b></p>
 
-                                                    <p>De acuerdo al modelo matemático, el saldo o adeudo después de cierto  año  t (St) , es igual al capital o préstamo del período anterior (St-1) más el interés del año más el pago que se realiza cada período (P).  El interés producido en el año es el producto de multiplicar el saldo anterior (St-1) por la tasa de interés expresada en decimales.</p>
+                                                    <p>De acuerdo al modelo matemático, el saldo o adeudo después de cierto  año  t (S<sub>t</sub>) , es igual al capital o préstamo del período anterior (S<sub>t-1</sub>) más el interés del año más el pago que se realiza cada período (P).  El interés producido en el año es el producto de multiplicar el saldo anterior (S<sub>t-1</sub>) por la tasa de interés expresada en decimales.</p>
 
                                                     <p>La representación algebraica del modelo matemático para este caso sería entonces:</p>
-                                                    <p>St = St-1 + St-1 * i + P</p>
+                                                    <p>S<sub>t</sub> = S<sub>t-1</sub> + S<sub>t-1</sub> * i + P</p>
 
                                                     <p><b>Primer año.</b></p>
                                                     <p>En el primer año el saldo inicial es de 0, así que no hay intereses durante el primer año, cuando finaliza el año se hace el primer pago de $15,000.00:</p>
-                                                    <p>saldo inicial =  S0 = 0.00</p>
-                                                    <p>intereses primer año = S0 * i = 0.00 * 0.08 = 0.00</p>
+                                                    <p>saldo inicial =  S<sub>0</sub> = 0.00</p>
+                                                    <p>intereses primer año = S<sub>0</sub> * i = 0.00 * 0.08 = 0.00</p>
                                                     <p>pago primer año = P = 15,000.00</p>
                                                     <p>El saldo para el primer año va a ser igual al saldo anterior más los intereses más el pago del primer año:</p>
-                                                    <p>S1  = S0 +  S0 *  i + P</p>
-                                                    <p>S1 = 0.00 + + 0.00 + 15,000.00</p>
-                                                    <p>S1 = 15,000.00 </p>
+                                                    <p>S<sub>1</sub>  = S<sub>0</sub> +  S<sub>0</sub> *  i + P</p>
+                                                    <p>S<sub>1</sub> = 0.00 + + 0.00 + 15,000.00</p>
+                                                    <p>S<sub>1</sub> = 15,000.00 </p>
                                                     <p><b>El saldo del primer año va a ser de $15,000.00 pesos.</b></p>
 
                                                     <p><b>Segundo año.</b></p>
-                                                    <p>Para el segundo año el saldo va a ser igual al saldo anterior (S1) más los intereses sobre ese saldo (S1 * i ) más el pago (P):</p>
-                                                    <p>saldo anterior = S1 = 15,000.00</p>
-                                                    <p>intereses segundo año = S1 * i = 15,000.00 * 0.08</p>
+                                                    <p>Para el segundo año el saldo va a ser igual al saldo anterior (S<sub>1</sub>) más los intereses sobre ese saldo (S<sub>1</sub> * i ) más el pago (P):</p>
+                                                    <p>saldo anterior = S<sub>1</sub> = 15,000.00</p>
+                                                    <p>intereses segundo año = S<sub>1</sub> * i = 15,000.00 * 0.08</p>
                                                     <p>intereses segundo año = 1,200.00</p>
                                                     <p>P = 15,000.00</p>
-                                                    <p>S2  = S1 +  S1 *  i + P</p>
-                                                    <p>S2 = 15,000.00 + 1,200.00 + 15,000.00</p>
-                                                    <p>S2 = 31,200.00 </p>
+                                                    <p>S<sub>2</sub>  = S<sub>1</sub> +  S<sub>1</sub> *  i + P</p>
+                                                    <p>S<sub>2</sub> = 15,000.00 + 1,200.00 + 15,000.00</p>
+                                                    <p>S<sub>2</sub> = 31,200.00 </p>
                                                     <p><b>El saldo para el segundo año va a ser de $31,200.00 pesos.</b></p>
 
                                                     <p><b>Tercer año.</b></p>
-                                                    <p>Para el tercer año el saldo va a ser igual al saldo anterior (S2) más los intereses sobre ese saldo (S2 * i) más el pago (P):</p>
-                                                    <p>saldo anterior = S2 = 31,200.00</p>
-                                                    <p>intereses tercer año = S2 * i = 31,200.00 * 0.08</p>
+                                                    <p>Para el tercer año el saldo va a ser igual al saldo anterior (S<sub>2</sub>) más los intereses sobre ese saldo (S<sub>2</sub> * i) más el pago (P):</p>
+                                                    <p>saldo anterior = S<sub>2</sub> = 31,200.00</p>
+                                                    <p>intereses tercer año = S<sub>2</sub> * i = 31,200.00 * 0.08</p>
                                                     <p>intereses tercer año = 2,496.00</p>
                                                     <p>P  = 15,000.00</p>
-                                                    <p>S3  = S2 +  S2 *  i + P</p>
-                                                    <p>S3 = 31,200.00 + 2,496.00 + 15,000.00</p>
-                                                    <p>S3 = 48,696.00 </p>
+                                                    <p>S<sub>3</sub>  = S<sub>2</sub> +  S<sub>2</sub> *  i + P</p>
+                                                    <p>S<sub>3</sub> = 31,200.00 + 2,496.00 + 15,000.00</p>
+                                                    <p>S<sub>3</sub> = 48,696.00 </p>
                                                     <p><b>El saldo para el tercer año va a ser de $48,696.00 pesos.</b></p>
 
                                                     <p><b>Cuarto año.</b></p>
-                                                    <p>Para el cuarto año el saldo va a ser igual al saldo anterior (S3) más los intereses sobre ese saldo (S3 * i) más el pago (15,000.00):</p>
-                                                    <p>saldo anterior =  S3 = 48,696.00</p>
-                                                    <p>intereses cuarto año = S3 * i = 48,696 * 0.08</p>
+                                                    <p>Para el cuarto año el saldo va a ser igual al saldo anterior (S<sub>3</sub>) más los intereses sobre ese saldo (S<sub>3</sub> * i) más el pago (15,000.00):</p>
+                                                    <p>saldo anterior =  S<sub>3</sub> = 48,696.00</p>
+                                                    <p>intereses cuarto año = S<sub>3</sub> * i = 48,696 * 0.08</p>
                                                     <p>intereses cuarto año = 3,895.68</p>
                                                     <p>P = 15,000.00</p>
-                                                    <p>S4  = S3 +  S3 *  i + P</p>
-                                                    <p>S4 =  48,696 + 3,895.68 + 15,000.00</p>
-                                                    <p>S4 = 67,591.68</p>
+                                                    <p>S<sub>4</sub>  = S<sub>3</sub> +  S<sub>3</sub> *  i + P</p>
+                                                    <p>S<sub>4</sub> =  48,696 + 3,895.68 + 15,000.00</p>
+                                                    <p>S<sub>4</sub> = 67,591.68</p>
 
                                                     <p><b>El valor futuro de la anualidad es de $67,591.68 al finalizar el cuarto año.</b></p>
                                                 </div>

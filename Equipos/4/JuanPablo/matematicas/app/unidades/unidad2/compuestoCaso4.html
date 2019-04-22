@@ -239,38 +239,21 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 4</h3>
-                                                <div class="feed-body">
-                                                    <ol>
-                                                        <li>En la parte superior izquierda de la tabla interactiva se tienen los datos del Caso 4: saldo inicial (140,000), período inicial (9), período final (18), tasa de interés (0). El saldo de la inversión después de 9 años debe ser de $450,325.12 pesos. De valores a la tasa de interés hasta que el saldo en el período final (18) sea aproximado o igual a $450,325.12. Utilizar decimales en la tasa de interés para poder obtener el valor más cercano al saldo dado.(La tasa de interés es de 13.8617%)</li>
-                                                        <li>¿Cuál es el saldo en el período 18?. (El saldo en el período 18 es de $450,325.00)</li>
-                                                        <li>Si la inversión se dejará hasta que el niño tuviera 25 años, ¿cuál sería el saldo en ese período?. (El saldo sería de $1,117,302.00 pesos)</li>
-                                                        <li>¿Cuánto es de intereses en el período 10? ¿Cuánto en el período 25?. (Los intereses en el período 10 son de $19,406.00 pesos y en el período 25 son de $136,022.00 pesos)</li>
-                                                        <li>Si la tasa de interés fuera del 17.5%, ¿cuál sería el saldo en el período 18?. (El saldo sería de $597,680.00 pesos)</li>
-                                                        <li>Suponiendo que al cumplir 20 años el niño recibe $500,000.00 pesos. ¿Cuál sería la tasa de interés anual?. (La tasa de interés sería de 12.2686%)</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
                                                 <h3 class="feed-subtitle">Solución utilizando fórmula de Interés Compuesto</h3>
                                                 <div class="feed-body">
                                                     <p><b>A un niño de 9 años su Papá le dejó una herencia de $140,000.00 que se depositaron en una inversión con interés compuesto capitalizable cada año.</b></p>
                                                     <p><b>Si al cumplir los 18 años recibe una cantidad de $450,325.12, ¿qué tasa de interés anual ganó la inversión?</b></p>
 
-                                                    <p>Resolviendo este caso con la fórmula St = S0 (1 + i)t se tiene:</p>
+                                                    <p>Resolviendo este caso con la fórmula S<sub>t</sub> = S<sub>0</sub> (1 + i)t se tiene:</p>
                                                     <p><b>Datos:</b></p>
-                                                    <p>S0 = 140,000.00</p>
+                                                    <p>S<sub>0</sub> = 140,000.00</p>
                                                     <p>t = 9</p>
-                                                    <p>S9 = 450,325.12  </p>
+                                                    <p>S<sub>9</sub> = 450,325.12  </p>
                                                     <p>i = ¿?          se desea saber la tasa de interés anual</p>
 
                                                     <p><b>Solución:</b></p>
-                                                    <p>De acuerdo a la fórmula St = S0 (1 + i)t aplicada para 9 períodos:</p>
-                                                    <p>S9 = S0 (1 + i)9    al sustituir los valores de S0 y de S9 la ecuación queda</p>
+                                                    <p>De acuerdo a la fórmula S<sub>t</sub> = S<sub>0</sub> (1 + i)t aplicada para 9 períodos:</p>
+                                                    <p>S<sub>9</sub> = S<sub>0</sub> (1 + i)9    al sustituir los valores de S<sub>0</sub> y de S<sub>9</sub> la ecuación queda</p>
                                                     <p>450,325.12 = 140,000.00 (1 + i)9</p>
                                                     <p>450,325.12 / 140,000.00 = (1 + i)9 </p>
                                                     <p>3.216608 = (1 + i)9       o bien,</p>
@@ -299,10 +282,92 @@
 
                                                     <p>Al resolver el caso en Excel facilita mucho el trabajo. Para resolver el problema por tanteo se utiliza la representación algebraica del modelo: St = St-1 (1 + i) y se va cambiando el valor de la tasa de interés hasta que el saldo tenga un valor aproximado a $450,325.12 pesos en el año 18.</p>
 
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>140000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Saldo Final</td>
+                                                                <td>450325.12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Tasa de Interés</td>
+                                                                <td>0.1386</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Periodo</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>9.00</td>
+                                                                <td>140000.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>10.00</td>
+                                                                <td>159404.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>11.00</td>
+                                                                <td>181497.39</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>12.00</td>
+                                                                <td>206652.93</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>13.00</td>
+                                                                <td>235295.03</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>14.00</td>
+                                                                <td>267906.92</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>11</td>
+                                                                <td>15.00</td>
+                                                                <td>305038.82</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12</td>
+                                                                <td>16.00</td>
+                                                                <td>347317.20</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>13</td>
+                                                                <td>17.00</td>
+                                                                <td>395455.36</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>14</td>
+                                                                <td>18.00</td>
+                                                                <td>450265.48</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
                                                     <p>Las acciones que se necesitan para generar esta tabla son las siguientes:</p>
                                                     <p>En la celda   B1   teclear   140000</p>
                                                     <p>En la celda   B2   teclear   450325.12</p>
-                                                    <p>En la celda   B3   teclear   0</p></p>
+                                                    <p>En la celda   B3   teclear   0.1386</p></p>
                                                     <p>En la celda   B6   teclear   = B5 * ( 1 + $B$3)         y llenar hacia abajo ( Fill Down)</p>
                                                     <p>Ir cambiando el valor de la celda B3 hasta que el saldo en el período 18 sea aproximado a $450,325.12 pesos. (La aproximación puede hacerse con más decimales si se desea)</p>
                                                 </div>
@@ -316,7 +381,38 @@
                                                 <div class="feed-body">
                                                     <p><b>A un niño de 9 años su Papá le dejó una herencia de $140,000.00 que se depositaron en una inversión con interés compuesto capitalizable cada año.</b></p>
                                                     <p><b>Si al cumplir los 18 años recibe una cantidad de $450,325.12, ¿qué tasa de interés anual ganó la inversión?</b></p>
-                                                    <p>Si en este caso se utilizará la fórmula St = S0 (1 + i)t, la variable que se tiene que encontrar es i, pero para despejarla se tiene que hacer un proceso matemático no muy sencillo. En Excel se puede resolver de una manera muy sencilla utilizando la herramienta Goal Seek del menú de Tools:</p>
+                                                    <p>Si en este caso se utilizará la fórmula S<sub>t</sub> = S<sub>0</sub> (1 + i)t, la variable que se tiene que encontrar es i, pero para despejarla se tiene que hacer un proceso matemático no muy sencillo. En Excel se puede resolver de una manera muy sencilla utilizando la herramienta Goal Seek del menú de Tools:</p>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Tasa de Interés Anual</td>
+                                                                <td>0%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Número de Periodos</td>
+                                                                <td>9</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>140000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Saldo Final</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>Las acciones que se necesitan para generar esta tabla son las siguientes:</p>
                                                     <p>En la celda   B1   teclear   0</p>
                                                     <p>En la celda   B2   teclear   9</p>
@@ -328,6 +424,37 @@
                                                     <p>Teclear en la opción By Changing Cell - B1</p>
 
                                                     <p>El resultado que se obtiene es:</p>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Tasa de Interés Anual</td>
+                                                                <td>0%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Número de Periodos</td>
+                                                                <td>9</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Saldo Inicial</td>
+                                                                <td>140000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Saldo Final</td>
+                                                                <td>450325.12</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>Al utilizar el instrumento Goal Seek el valor que se obtiene de la tasa de interés es exacto.</p>
                                                     <p>La tasa de interés a la que se invirtió el dinero fué de 13.8617% anual.</p>
                                                 </div>

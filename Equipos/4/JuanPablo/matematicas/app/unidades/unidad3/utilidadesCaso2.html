@@ -231,6 +231,38 @@
                                                 <h3 class="feed-subtitle">Determinar las utilidades para una fábrica de tostadas</h3>
                                                 <div class="feed-body">
                                                     <p><b>La empresa Los Charritos se dedica a la fabricación de tostadas. Los tres productos que maneja son tostadas típicas, tostadas deshidratadas y tostadas con ajonjolí. Los costos fijos mensuales de la empresa son de $24000.  Se tienen los siguientes datos para el mes 1:</b></p>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> Tipo de tostadas </td>
+                                                                <td> Costos variables </td>
+                                                                <td> Precios </td>
+                                                                <td> Unid. vend. mes 1 </td>
+                                                                <td> % inc. mensual </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 1 (típicas) </td>
+                                                                <td> $5.75 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 5500 </td>
+                                                                <td> 11 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 2 (deshidratadas) </td>
+                                                                <td> $5 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 4800 </td>
+                                                                <td> 13 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 3 (ajonjolí) </td>
+                                                                <td> $6.23 </td>
+                                                                <td> $9.00 </td>
+                                                                <td> 3500 </td>
+                                                                <td> 5 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p><b>Encuentre las utilidades para el mes 10.</b></p>
                                                 </div>
                                             </div>
@@ -242,124 +274,156 @@
                                                 <h3 class="feed-subtitle">Solución para 2 meses utilizando el modelo matemático con los elementos</h3>
                                                 <div class="feed-body">
                                                     <p><b>La empresa Los Charritos se dedica a la fabricación de tostadas. Los tres productos que maneja son tostadas típicas, tostadas deshidratadas y tostadas con ajonjolí. Los costos fijos mensuales de la empresa son de $24000.  Se tienen los siguientes datos para el mes 1:</b></p>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> Tipo de tostadas </td>
+                                                                <td> Costos variables </td>
+                                                                <td> Precios </td>
+                                                                <td> Unid. vend. mes 1 </td>
+                                                                <td> % inc. mensual </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 1 (típicas) </td>
+                                                                <td> $5.75 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 5500 </td>
+                                                                <td> 11 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 2 (deshidratadas) </td>
+                                                                <td> $5 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 4800 </td>
+                                                                <td> 13 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 3 (ajonjolí) </td>
+                                                                <td> $6.23 </td>
+                                                                <td> $9.00 </td>
+                                                                <td> 3500 </td>
+                                                                <td> 5 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
 
                                                     <p>De la descripción del caso podemos observar que se tiene una línea de productos, por lo que las utilidades, iguales a las ventas totales menos los costos totales, dependerán de las ventas y los costos de cada producto. Por lo tanto, las ventas totales serán iguales a las ventas de tostadas de tipo 1 más las ventas de las del tipo 2 y también las de tipo 3. Las ventas de cada tipo de tostada se incrementan en un porcentaje mensual, por lo que esto nos indica un crecimiento compuesto. Igualmente, los costos totales se pueden calcular como los costos fijos totales más los costos variables de cada tipo de tostada, sumados. En este caso, al igual que en el caso anterior, se asume que la cantidad de tostadas vendidas es igual a la producción.</p>
 
                                                     <p>Mes 1:</p>
                                                     <p>Para el mes 1, las ventas totales son iguales a la suma de las ventas de cada tipo de tostada.</p>
                                                     <p>Las ventas de tostadas tipo 1 son iguales al número de unidades vendidas (5500) multiplicado por el precio ($8.50):</p>
-                                                    <p>V11 = U11 x P1</p>
-                                                    <p>V11 = 5500 x 8.5</p>
-                                                    <p>V11 = 46,750 pesos</p>
+                                                    <p>V<sub>11</sub> = U<sub>11</sub> x P<sub>1</sub></p>
+                                                    <p>V<sub>11</sub> = 5500 x 8.5</p>
+                                                    <p>V<sub>11</sub> = 46,750 pesos</p>
                                                     <p>Las ventas de tostadas tipo 2 son iguales al número de unidades vendidas (4800) multiplicado por el precio ($8.50):</p>
-                                                    <p>V21 = U21 x P2</p>
-                                                    <p>V21 = 4800 x 8.5</p>
-                                                    <p>V21 = 40,800 pesos</p>
+                                                    <p>V<sub>21</sub> = U<sub>21</sub> x P<sub>2</sub></p>
+                                                    <p>V<sub>21</sub> = 4800 x 8.5</p>
+                                                    <p>V<sub>21</sub> = 40,800 pesos</p>
                                                     <p>Las ventas de tostadas tipo 3 son iguales al número de unidades vendidas (3500) multiplicado por el precio ($9.00):</p>
-                                                    <p>V31 = U31 x P3</p>
-                                                    <p>V31 = 3500 x 9</p>
-                                                    <p>V31 = 31,500 pesos</p>
+                                                    <p>V<sub>31</sub> = U<sub>31</sub> x P<sub>3</sub></p>
+                                                    <p>V<sub>31</sub> = 3500 x 9</p>
+                                                    <p>V<sub>31</sub> = 31,500 pesos</p>
                                                     <p>Las ventas totales para el mes 1 son iguales a las ventas de tostada tipo 1 (46750) más las ventas de tostada tipo 2 (40800) más las ventas de tostada tipo 3 (31500):</p>
-                                                    <p>VT1 = V11 + V21 + V31</p>
-                                                    <p>VT1 = 46750 + 40800 + 31500</p>
-                                                    <p>VT1 = 119,050 pesos</p>
+                                                    <p>VT<sub>1</sub> = V<sub>11</sub> + V<sub>21</sub> + V<sub>31</sub></p>
+                                                    <p>VT<sub>1</sub> = 46750 + 40800 + 31500</p>
+                                                    <p>VT<sub>1</sub> = 119,050 pesos</p>
                                                     <p>Las ventas para el mes 1 son iguales a 119,050 pesos.</p>
 
                                                     <p>Para el mes 1, los costos totales son iguales a los costos fijos totales (24000) más los costos variables totales. </p>
-                                                    <p>CT1 = CF1 + CV1</p>
+                                                    <p>CT<sub>1</sub> = CF<sub>1</sub> + CV<sub>1</sub></p>
                                                     <p>Los costos variables totales son iguales a la suma de los costos variables de cada tipo de tostada:</p>
-                                                    <p>CV1 = CV11 + CV21 + CV31</p>
+                                                    <p>CV<sub>1</sub> = CV<sub>11</sub> + CV<sub>21</sub> + CV<sub>31</sub></p>
                                                     <p>Los costos variables de la tostada tipo 1 son iguales al costo variable unitario ($5.75) multiplicado por el número de unidades producidas o vendidas (5500):</p>
-                                                    <p>CV11 = CV1 x U11</p>
-                                                    <p>CV11 = 5.75 x 5500 </p>
-                                                    <p>CV11 = 31,625 pesos</p>
+                                                    <p>CV<sub>11</sub> = CV<sub>1</sub> x U<sub>11</sub></p>
+                                                    <p>CV<sub>11</sub> = 5.75 x 5500 </p>
+                                                    <p>CV<sub>11</sub> = 31,625 pesos</p>
                                                     <p>Los costos variables de la tostada tipo 2 son iguales al costo variable unitario ($5.06) multiplicado por el número de unidades producidas o vendidas (4800):</p>
-                                                    <p>CV21 = CV2 x U21</p>
-                                                    <p>CV21 = 5.06 x 4800 </p>
-                                                    <p>CV21 = 24,288 pesos</p>
+                                                    <p>CV<sub>21</sub> = CV<sub>2</sub> x U<sub>21</sub></p>
+                                                    <p>CV<sub>21</sub> = 5.06 x 4800 </p>
+                                                    <p>CV<sub>21</sub> = 24,288 pesos</p>
                                                     <p>Los costos variables de la tostada tipo 3 son iguales al costo variable unitario ($6.23) multiplicado por el número de unidades producidas o vendidas (3500):</p>
-                                                    <p>CV31 = CV3 x U31</p>
-                                                    <p>CV31 = 6.23 x 3500 </p>
-                                                    <p>CV31 = 21,805 pesos</p>
+                                                    <p>CV<sub>31</sub> = CV3 x U<sub>31</sub></p>
+                                                    <p>CV<sub>31</sub> = 6.23 x 3500 </p>
+                                                    <p>CV<sub>31</sub> = 21,805 pesos</p>
                                                     <p>Los costos variables totales son iguales a la suma de los costos variables de cada tipo de tostada:</p>
-                                                    <p>CV1 = CV11 + CV21 + CV31</p>
-                                                    <p>CV1 = 31625 + 24288 + 21805</p>
-                                                    <p>CV1 = 77,718 pesos</p>
+                                                    <p>CV<sub>1</sub> = CV<sub>11</sub> + CV<sub>21</sub> + CV<sub>31</sub></p>
+                                                    <p>CV<sub>1</sub> = 31625 + 24288 + 21805</p>
+                                                    <p>CV<sub>1</sub> = 77,718 pesos</p>
                                                     <p>Los costos totales son iguales a los costos fijos totales (24000) más los costos variables totales (77718). </p>
-                                                    <p>CT1 = CF1 + CV1</p>
-                                                    <p>CT1 = 24000 + 77718</p> 
-                                                    <p>CT1 = 101,718 pesos</p>
+                                                    <p>CT<sub>1</sub> = CF<sub>1</sub> + CV<sub>1</sub></p>
+                                                    <p>CT<sub>1</sub> = 24000 + 77718</p> 
+                                                    <p>CT<sub>1</sub> = 101,718 pesos</p>
                                                     <p>Los costos totales para el mes 1 son iguales a $101,718 pesos.</p>
 
                                                     <p>Para el mes 1, las utilidades son iguales a las ventas totales (119050) menos los costos totales (101718):</p>
-                                                    <p>UT1 = VT1 – CT1</p>
-                                                    <p>UT1 = 119050 – 101718</p> 
-                                                    <p>UT1 = 17,332 pesos</p>
+                                                    <p>UT<sub>1</sub> = VT<sub>1</sub> – CT<sub>1</sub></p>
+                                                    <p>UT<sub>1</sub> = 119050 – 101718</p> 
+                                                    <p>UT<sub>1</sub> = 17,332 pesos</p>
                                                     <p>Las utilidades para el mes 1 son iguales a $17,332 pesos.</p>
 
                                                     <p>Mes 2:</p>
                                                     <p>Para el mes 2, las ventas totales son iguales a la suma de las ventas de cada tipo de tostada.</p>
-                                                    <p>VT2 = V12 + V22 + V32</p>
-                                                    <p>Las ventas de cada tipo de tostada son iguales al número de unidades vendidas multiplicado por el precio.  El número de unidades vendidas tiene un crecimiento compuesto, por lo que se puede utilizar la ecuación de crecimiento compuesto, Ut = Ut-1(1 + r). Entonces, el número de unidades de de un período es igual al número de unidades del perídod anterior multiplicado el factor de uno más el porcentaje de incremento expresado en decimales.</p>
+                                                    <p>VT<sub>2</sub> = V<sub>12</sub> + V<sub>22</sub> + V<sub>32</sub></p>
+                                                    <p>Las ventas de cada tipo de tostada son iguales al número de unidades vendidas multiplicado por el precio.  El número de unidades vendidas tiene un crecimiento compuesto, por lo que se puede utilizar la ecuación de crecimiento compuesto, U<sub>t</sub> = U<sub>t-1</sub>(1 + r). Entonces, el número de unidades de de un período es igual al número de unidades del perídod anterior multiplicado el factor de uno más el porcentaje de incremento expresado en decimales.</p>
                                                     <p>El número de tostadas tipo 1 vendidas en el mes 2 es igual al número de unidades vendidas el período anterior (5500) multiplicado por uno más el incremento (1+0.11):</p>
-                                                    <p>U12 = U11(1 + r)</p>
-                                                    <p>U12 = 5500(1 + 0.11)</p>
-                                                    <p>U12 = 5500(1.11)</p>
-                                                    <p>U12 = 6105</p>
+                                                    <p>U<sub>12</sub> = U<sub>11</sub>(1 + r)</p>
+                                                    <p>U<sub>12</sub> = 5500(1 + 0.11)</p>
+                                                    <p>U<sub>12</sub> = 5500(1.11)</p>
+                                                    <p>U<sub>12</sub> = 6105</p>
                                                     <p>Las ventas de tostadas tipo 1 son iguales al número de unidades vendidas (6105) multiplicado por el precio ($8.50):</p>
-                                                    <p>V12 = U12 x P1</p>
-                                                    <p>V12 = (6105) (8.5)</p> 
-                                                    <p>V12 = 51,892.5 pesos</p>
+                                                    <p>V<sub>12</sub> = U<sub>12</sub> x P<sub>1</sub></p>
+                                                    <p>V<sub>12</sub> = (6105) (8.5)</p> 
+                                                    <p>V<sub>12</sub> = 51,892.5 pesos</p>
                                                     <p>El número de tostadas tipo 2 vendidas en el mes 2 es igual al número de unidades vendidas el período anterior (4800) multiplicado por uno más el incremento (1+0.13):</p>
-                                                    <p>U22 = U11(1 + r)</p>
-                                                    <p>U22 = 4800(1 + 0.13)</p>
-                                                    <p>U22 = 4800(1.13)</p>
-                                                    <p>U22 = 5424</p>
+                                                    <p>U<sub>22</sub> = U<sub>11</sub>(1 + r)</p>
+                                                    <p>U<sub>22</sub> = 4800(1 + 0.13)</p>
+                                                    <p>U<sub>22</sub> = 4800(1.13)</p>
+                                                    <p>U<sub>22</sub> = 5424</p>
                                                     <p>Las ventas de tostadas tipo 2 son iguales al número de unidades vendidas (5424) multiplicado por el precio ($8.50):</p>
-                                                    <p>V22 = U22x P2</p>
-                                                    <p>V22 = (5424) (8.5)</p>
-                                                    <p>V22 = 46,104 pesos</p>
+                                                    <p>V<sub>22</sub> = U<sub>22</sub>x P<sub>2</sub></p>
+                                                    <p>V<sub>22</sub> = (5424) (8.5)</p>
+                                                    <p>V<sub>22</sub> = 46,104 pesos</p>
                                                     <p>El número de tostadas tipo 3 vendidas en el mes 2 es igual al número de unidades vendidas el período anterior (4500) multiplicado por uno más el incremento (1+0.05):</p>
-                                                    <p>U22 = U11(1 + r)</p>
-                                                    <p>U22 = (3500)(1 + 0.05)</p>
-                                                    <p>U22 = 3675</p>
+                                                    <p>U<sub>22</sub> = U<sub>11</sub>(1 + r)</p>
+                                                    <p>U<sub>22</sub> = (3500)(1 + 0.05)</p>
+                                                    <p>U<sub>22</sub> = 3675</p>
                                                     <p>Las ventas de tostadas tipo 3 son iguales al número de unidades vendidas (3675) multiplicado por el precio ($9.00):</p>
-                                                    <p>V32 = U32 x P3</p>
-                                                    <p>V32 = (3675) (9) </p>
-                                                    <p>V32 = 33,075 pesos</p>
+                                                    <p>V<sub>32</sub> = U32 x P3</p>
+                                                    <p>V<sub>32</sub> = (3675) (9) </p>
+                                                    <p>V<sub>32</sub> = 33,075 pesos</p>
                                                     <p>Las ventas totales para el mes 2 son iguales a las ventas de tostada tipo 1 (51892.5) más las ventas de tostada tipo 2 (46104) más las ventas de tostada tipo 3 (33075):</p>
-                                                    <p>VT2 = V12 + V22 + V32</p>
-                                                    <p>VT2 = 51892.5 + 46104 + 33075</p>
-                                                    <p>VT2 = 131,071.50 pesos</p>
+                                                    <p>VT<sub>2</sub> = V<sub>12</sub> + V<sub>22</sub> + V<sub>32</sub></p>
+                                                    <p>VT<sub>2</sub> = 51892.5 + 46104 + 33075</p>
+                                                    <p>VT<sub>2</sub> = 131,071.50 pesos</p>
                                                     <p>Las ventas para el mes 2 son iguales a 131,071.50 pesos.</p>
 
                                                     <p>Para el mes 2, los costos totales son iguales a los costos fijos totales (24000) más los costos variables totales. </p>
-                                                    <p>CT2 = CF2 + CV2</p>
+                                                    <p>CT<sub>2</sub> = CF<sub>2</sub> + CV<sub>2</sub></p>
                                                     <p>Los costos variables totales son iguales a la suma de los costos variables de cada tipo de tostada:</p>
-                                                    <p>CV2 = CV12 + CV22 + CV32</p>
+                                                    <p>CV<sub>2</sub> = CV<sub>1</sub>2 + CV<sub>22</sub> + CV<sub>32</sub></p>
                                                     <p>Los costos variables de la tostada tipo 1 son iguales al costo variable unitario ($5.75) multiplicado por el número de unidades producidas o vendidas (6105): </p>
-                                                    <p>CV12 = 5.75 x (6105) </p>
-                                                    <p>CV12 = 35,103.75 pesos</p>
+                                                    <p>CV<sub>1</sub>2 = 5.75 x (6105) </p>
+                                                    <p>CV<sub>1</sub>2 = 35,103.75 pesos</p>
                                                     <p>Los costos variables de la tostada tipo 2 son iguales al costo variable unitario ($5.06) multiplicado por el número de unidades producidas o vendidas (5424): </p>
-                                                    <p>CV22 = 5.06 x (5424) </p>
-                                                    <p>CV22 = 27,445.44 pesos</p>
+                                                    <p>CV<sub>22</sub> = 5.06 x (5424) </p>
+                                                    <p>CV<sub>22</sub> = 27,445.44 pesos</p>
                                                     <p>Los costos variables de la tostada tipo 3 son iguales al costo variable unitario ($6.23) multiplicado por el número de unidades producidas o vendidas (3675): </p>
-                                                    <p>CV32 = 6.23 x (3675) </p>
-                                                    <p>CV32 = 22,895.25 pesos</p>
+                                                    <p>CV<sub>32</sub> = 6.23 x (3675) </p>
+                                                    <p>CV<sub>32</sub> = 22,895.25 pesos</p>
                                                     <p>Los costos variables totales son iguales a la suma de los costos variables de cada tipo de tostada:</p>
-                                                    <p>CV2 = CV12 + CV22 + CV32</p>
-                                                    <p>CV2 = 35103.75 + 27445.44 + 22895.25</p>
-                                                    <p>CV2 = 85,444.44 pesos</p>
+                                                    <p>CV<sub>2</sub> = CV<sub>1</sub>2 + CV<sub>22</sub> + CV<sub>32</sub></p>
+                                                    <p>CV<sub>2</sub> = 35103.75 + 27445.44 + 22895.25</p>
+                                                    <p>CV<sub>2</sub> = 85,444.44 pesos</p>
                                                     <p>Los costos totales son iguales a los costos fijos totales (24000) más los costos variables totales (85444.44). </p>
-                                                    <p>CT2 = CF2 + CV2</p>
-                                                    <p>CT2 = 24000 + 85444.44 </p>
-                                                    <p>CT2 = 109,444.44 pesos</p>
+                                                    <p>CT<sub>2</sub> = CF<sub>2</sub> + CV<sub>2</sub></p>
+                                                    <p>CT<sub>2</sub> = 24000 + 85444.44 </p>
+                                                    <p>CT<sub>2</sub> = 109,444.44 pesos</p>
                                                     <p>Los costos totales para el mes 2 son iguales a 109,444.44 pesos.</p>
 
                                                     <p>Para el mes 2, las utilidades son iguales a las ventas totales (131071.50) menos los costos totales (109444.44):</p>
-                                                    <p>UT2 = VT2 – CT2</p>
-                                                    <p>UT2 = 131071.50 – 109444.44 </p>
-                                                    <p>UT2 = 21,627.06 pesos</p>
+                                                    <p>UT<sub>2</sub> = VT<sub>2</sub> – CT<sub>2</sub></p>
+                                                    <p>UT<sub>2</sub> = 131071.50 – 109444.44 </p>
+                                                    <p>UT<sub>2</sub> = 21,627.06 pesos</p>
                                                     <p>Las utilidades para el mes 2 son iguales a 21,627.06 pesos.</p>
                                                     
                                                 </div>
@@ -374,6 +438,260 @@
                                                     <p><b>La empresa Los Charritos se dedica a la fabricación de tostadas. Los tres productos que maneja son tostadas típicas, tostadas deshidratadas y tostadas con ajonjolí. Los costos fijos mensuales de la empresa son de $24000.  Se tienen los siguientes datos para el mes 1:</b></p>
                                                     <p><b>Encuentre las utilidades para el mes 10.</b></p>
                                                     <p>Utilizando el modelo, se genera la siguiente tabla en Excel:</p>
+
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>A</th>
+                                                                <th>B</th>
+                                                                <th>C</th>
+                                                                <th>D</th>
+                                                                <th>E</th>
+                                                                <th>F</th>
+                                                                <th>G</th>
+                                                                <th>H</th>
+                                                                <th>I</th>
+                                                                <th>J</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> 1 </td>
+                                                                <td> Tipo de tostadas </td>
+                                                                <td> Costos variables </td>
+                                                                <td> Precios </td>
+                                                                <td> Unid. vend. mes 1 </td>
+                                                                <td> % inc. mensual </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 2 </td>
+                                                                <td> 1 (típicas) </td>
+                                                                <td> $5.75 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 5500 </td>
+                                                                <td> 11 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 3 </td>
+                                                                <td> 2 (deshidratadas) </td>
+                                                                <td> $5 </td>
+                                                                <td> $8.50 </td>
+                                                                <td> 4800 </td>
+                                                                <td> 13 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 4 </td>
+                                                                <td> 3 (ajonjolí) </td>
+                                                                <td> $6.23 </td>
+                                                                <td> $9.00 </td>
+                                                                <td> 3500 </td>
+                                                                <td> 5 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 5 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 6 </td>
+                                                                <td> Cto. Fijo </td>
+                                                                <td> $24,000.00 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 7 </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                                <td> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 8 </td>
+                                                                <td> Mes </td>
+                                                                <td> unidad 1 </td>
+                                                                <td> unidad 2 </td>
+                                                                <td> unidad 3 </td>
+                                                                <td> ventas 1 </td>
+                                                                <td> ventas 2 </td>
+                                                                <td> ventas 3 </td>
+                                                                <td> ventas total </td>
+                                                                <td> ctos </td>
+                                                                <td> util </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 9 </td>
+                                                                <td> 1 </td>
+                                                                <td> $5,500.00 </td>
+                                                                <td> $4,800.00 </td>
+                                                                <td> $3,500.00 </td>
+                                                                <td> $46,750.00 </td>
+                                                                <td> $40,800.00 </td>
+                                                                <td> $31,500.00 </td>
+                                                                <td> $119,050.00 </td>
+                                                                <td> $101,718.00 </td>
+                                                                <td> $17,332.00 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 10 </td>
+                                                                <td> 2 </td>
+                                                                <td> $6,105.00 </td>
+                                                                <td> $5,424.00 </td>
+                                                                <td> $3,675.00 </td>
+                                                                <td> $51,892.50 </td>
+                                                                <td> $46,104.00 </td>
+                                                                <td> $33,075.00 </td>
+                                                                <td> $131,071.50 </td>
+                                                                <td> $109,444.44 </td>
+                                                                <td> $21,627.06 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 11 </td>
+                                                                <td> 3 </td>
+                                                                <td> $6,776.55 </td>
+                                                                <td> $6,129.12 </td>
+                                                                <td> $3,858.75 </td>
+                                                                <td> $57,604.50 </td>
+                                                                <td> $52,096.50 </td>
+                                                                <td> $34,731.00 </td>
+                                                                <td> $144,432.00 </td>
+                                                                <td> $118,022.06 </td>
+                                                                <td> $26,409.94 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 12 </td>
+                                                                <td> 4 </td>
+                                                                <td> $7,521.97 </td>
+                                                                <td> $6,925.91 </td>
+                                                                <td> $4,051.69 </td>
+                                                                <td> $63,937.00 </td>
+                                                                <td> $58,871.00 </td>
+                                                                <td> $36,468.00 </td>
+                                                                <td> $159,276.00 </td>
+                                                                <td> $127,541.02 </td>
+                                                                <td> $31,734.98 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 13 </td>
+                                                                <td> 5 </td>
+                                                                <td> $8,349.39 </td>
+                                                                <td> $7,826.27 </td>
+                                                                <td> $4,254.27 </td>
+                                                                <td> $70,966.50 </td>
+                                                                <td> $66,521.00 </td>
+                                                                <td> $38,286.00 </td>
+                                                                <td> $175,773.50 </td>
+                                                                <td> $138,108.73 </td>
+                                                                <td> $37,664.77 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 14 </td>
+                                                                <td> 6 </td>
+                                                                <td> $9,267.82 </td>
+                                                                <td> $8,843.69 </td>
+                                                                <td> $4,466.99 </td>
+                                                                <td> $78,778.00 </td>
+                                                                <td> $75,174.00 </td>
+                                                                <td> $40,203.00 </td>
+                                                                <td> $194,155.00 </td>
+                                                                <td> $149,871.05 </td>
+                                                                <td> $44,283.95 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 15 </td>
+                                                                <td> 7 </td>
+                                                                <td> $10,287.28 </td>
+                                                                <td> $9,993.37 </td>
+                                                                <td> $4,690.33 </td>
+                                                                <td> $87,439.50 </td>
+                                                                <td> $84,940.50 </td>
+                                                                <td> $42,210.00 </td>
+                                                                <td> $214,590.00 </td>
+                                                                <td> $162,933.53 </td>
+                                                                <td> $51,656.47 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 16 </td>
+                                                                <td> 8 </td>
+                                                                <td> $11,418.88 </td>
+                                                                <td> $11,292.51 </td>
+                                                                <td> $4,924.85 </td>
+                                                                <td> $97,061.50 </td>
+                                                                <td> $95,990.50 </td>
+                                                                <td> $44,325.00 </td>
+                                                                <td> $237,377.00 </td>
+                                                                <td> $177,484.58 </td>
+                                                                <td> $59,892.42 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 17 </td>
+                                                                <td> 9 </td>
+                                                                <td> $12,674.96 </td>
+                                                                <td> $12,760.53 </td>
+                                                                <td> $5,171.09 </td>
+                                                                <td> $107,737.50 </td>
+                                                                <td> $108,468.50 </td>
+                                                                <td> $46,539.00 </td>
+                                                                <td> $262,745.00 </td>
+                                                                <td> $193,667.24 </td>
+                                                                <td> $69,077.76 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 18 </td>
+                                                                <td> 10 </td>
+                                                                <td> $14,069.20 </td>
+                                                                <td> $14,419.40 </td>
+                                                                <td> $5,429.65 </td>
+                                                                <td> $119,586.50 </td>
+                                                                <td> $122,561.50 </td>
+                                                                <td> $48,870.00 </td>
+                                                                <td> $291,018.00 </td>
+                                                                <td> $211,685.79 </td>
+                                                                <td> $79,332.21 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>Las acciones que se tomaron para generar la tabla son las siguientes:</p>
                                                     <p>En los renglones 1 al 6 vaciar la información de los datos del problema.</p>
                                                     <p>En la celda    A9    teclear      =1</p>
@@ -400,15 +718,36 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 2</h3>
-                                                <div class="feed-body">
+                                        <div class="col-lg-10">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h4>Práctica de autoevaluación 1</h4>
                                                     <p>Una maquiladora produce tres tipos de pantalones de mezclilla para una marca de prestigio mundial.  Se venden pantalones de tres tipos: corte recto (R), holgado (H) y amplio(A).  Los costos fijos mensuales de la empresa son de $450,000.  Se conocen los siguientes datos para el mes 1:</p>
                                                     <ol>
-                                                        <li>Construya el modelo matemático y encuentre las utilidades para el primer y segundo mes.</li>
-                                                        <li>Utilice un archivo en Excel para calcular las utilidades del quinto mes y la distribución de porcentajes de ventas por tipo de pantalón para el quinto mes.</li>
+                                                        <li>
+                                                            <p>Utilice un archivo en Excel para calcular las utilidades del quinto mes y la distribución de porcentajes de ventas por tipo de pantalón para el quinto mes</p>
+                                                            <div class="radio">
+                                                                <input type="radio" value="c" name="u3p5i1" id="u3p5i1o1">
+                                                                <label for="u3p5i1o1">R (recto) = 0.35
+                                                                    H (holgado) = 0.27
+                                                                    A (amplio) = 0.39
+                                                                    Utilidad = $16,035,376.00</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p5i1" id="u3p5i1o2">
+                                                                <label for="u3p5i1o2">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p5i1" id="u3p5i1o3">
+                                                                <label for="u3p5i1o3">opcion</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u3p5i1" id="u3p5i1o4">
+                                                                <label for="u3p5i1o4">opcion</label>
+                                                            </div>
+                                                        </li>
                                                     </ol>
+                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="u3p5" value ="Verificar">
                                                 </div>
                                             </div>
                                         </div>
@@ -461,6 +800,7 @@
         <!-- build:js assets/js.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/quiz/unidad3.js"></script>
         <!-- endbuild -->
         <!-- Insert your dependencies here -->
         <script src="../../assets/js/progressbar.js"></script>

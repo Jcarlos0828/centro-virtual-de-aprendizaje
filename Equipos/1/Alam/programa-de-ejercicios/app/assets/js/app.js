@@ -1,4 +1,27 @@
 // Main JavaScripts
+$(document).ready(function(){
+$('[data-toggle="popover"]').popover(); 
+});
+
+$(function() {
+	$(".popup").click(function(evt) {
+	  $(".message").css({
+		top: evt.pageY + 5,
+		left: evt.pageX + 5
+	  }).show();
+	});
+	$('.hover').hover(
+	  function (evt) {
+		  $(".message").css({
+			top: evt.pageY + 5,
+			left: evt.pageX + 5
+		  }).show();
+	  },
+	  function () {
+		  $(".message").hide();
+	  }
+  );
+  });
 
 (function ($) {
 	'use strict';

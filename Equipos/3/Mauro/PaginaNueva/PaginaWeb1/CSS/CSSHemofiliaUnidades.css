@@ -1,26 +1,27 @@
 p{
   text-align:justify;
-  color:black;
   font: inherit;
   font-size:15px;
   padding-top: 5px;
   padding-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
+}
 
+#h1top{
+  text-align:left;
+  font-size:28px;
 }
 
 h1{
-  text-align:center;
-  color:dodgerblue;
+  text-align:left;
   font: inherit;
-  font-size:40px;
+  font-size:36px;
 }
 
 h2{
   text-align:center;
-  color:black;
-  font-size:25px;
+  font-size:28px;
 }
 
 h3{
@@ -29,8 +30,30 @@ h3{
   font-size:20px;
 }
 
+h4{
+  text-align:left;
+  font-size:15px;
+}
+
 h5{
   text-align: center;
+}
+
+#dropdownfont{
+  text-align: left;
+  color: dodgerblue;
+  font-weight: 450;
+  font-size: 18px;
+}
+
+#tableh1{
+  text-align: center;
+  font-size: 22px;
+}
+
+#tablebody{
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 .img_menu {
@@ -118,16 +141,12 @@ h5{
   width: 50%;
 }
 
-li{
-  color:black;
-}
-
 .card-img-top{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-  border-radius: 8px;
+  width: 50%;
+  border-radius: 4px;
 }
 
 .cardelement{
@@ -184,4 +203,10 @@ li{
 .button_quiz:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   color: #3498db;
+}
+
+#logoscreditos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

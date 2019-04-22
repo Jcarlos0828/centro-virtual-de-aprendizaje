@@ -241,32 +241,14 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 3</h3>
-                                                <div class="feed-body">
-                                                    <ol>
-                                                        <li>Después de observar la solución numérica y gráfica del problema en la tabla interactiva, suponga que debido a una epidemia, la tasa de crecimiento pasa a ser de –2.5%. Alimente este nuevo valor en la tabla y observe el cambio en la población. (Población en 2000 = 76,050 ).</li>
-
-                                                        <li>Con la tasa de –2.5%, encuentre en la tabla interactiva la población en el año 2010. (Población en 2010 = 59,039).</li>
-                                                        <li>Suponga que debido a una emigración en masa, la tasa de crecimiento pasa a ser de –20%. ¿Cuál sería la población en el 2010? (Población en 2010 = 5,498)</li>
-                                                        <li>Compare la gráfica de este Caso con la del Caso 1 del mismo tema. ¿Qué diferencia existe entre una gráfica de aumento y una de disminución de población?</li>
-                                                        <li>Modifique los valores de la tasa, el año inicial y la población inicial. Observe los cambios que estas modificaciones generan en el comportamiento de la gráfica y en valor de la población.</li>
-                                                        <li>Plantee un problema dando como datos los parámetros de la tabla interactiva. Resuélvalo en la misma tabla.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
                                                 <h3 class="feed-subtitle">Solución utilizando el modelo matemático</h3>
                                                 <div class="feed-body">
                                                     <p>Como se había mencionado anteriormente, el término Crecimiento Poblacional es usado tanto para definir un aumento como una disminución de población. El siguiente es uncaso de disminución de población.</p>
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000.</b></p>
-                                                    <p>El modelo matemático para este caso establece que el número de habitantes del poblado en cualquier año t (Pt), es igual al número de habitantes del año anterior (Pt-1), menos la disminución de población correspondiente al año (dt). </p>
-                                                    <p><b>Pt = Pt-1 – dt</b></p>
-                                                    <p>La disminución de población para un año t (dt) es el producto de multiplicar la población del año anterior (Pt-1) por la tasa de disminución expresada en decimales ( 0.008).</p>
-                                                    <p><b>dt = Pt-1 x 0.008</b></p>
+                                                    <p>El modelo matemático para este caso establece que el número de habitantes del poblado en cualquier año t (Pt), es igual al número de habitantes del año anterior (P<sub>t-1</sub>), menos la disminución de población correspondiente al año (dt). </p>
+                                                    <p><b>Pt = P<sub>t-1</sub> – dt</b></p>
+                                                    <p>La disminución de población para un año t (dt) es el producto de multiplicar la población del año anterior (P<sub>t-1</sub>) por la tasa de disminución expresada en decimales ( 0.008).</p>
+                                                    <p><b>dt = P<sub>t-1</sub> x 0.008</b></p>
                                                     <p><b>Primer año (1999)</b></p>
                                                     <p>La disminución de población durante el año se calcula de la misma manera que el aumento, multiplicando la población del año anterior (80,000), por la tasa de disminución expresada en decimales (0.008).</p>
                                                     <p>Disminución de población durante el primer año = 80,000 x 0.008 </p>
@@ -294,7 +276,7 @@
                                                 <div class="feed-body">
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000.</b></p>
                                                     <p>De acuerdo a la representación algebraica del modelo, la población en cualquier año t es:</p>
-                                                    <p>Pt = Pt-1 - dt en donde la disminución es, dt= Pt-1 x (0.008).</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> - dt en donde la disminución es, dt= P<sub>t-1</sub> x (0.008).</p>
                                                     <p>Tomando como base, para resolver el problema en Excel, esta representación algebraica, se llega a la siguiente tabla. Ésta contiene una columna para ver la disminución anual del número de habitantes del poblado.</p>
 
                                                     <p><b>TABLA EN EXCEL</b></p>
@@ -383,11 +365,11 @@
                                                 <h4>Número de habitantes de un poblado en donde la población está decreciendo</h4>
                                                 <div class="feed-body">
                                                     <p>Al tomar la tasa de crecimiento como negativa la disminución de población se toma como un aumento negativo, de ésta manera la representación algebraica del modelo quedaría como:</p>
-                                                    <p>Pt = Pt-1+ at y at= Pt-1 x ( – 0.008 )</p>
-                                                    <p>Se puede observar que el signo + de la ecuación Pt = Pt-1 + at es porque el aumento es negativo y esto genera automáticamente una resta.</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> + a<sub>t</sub> y a<sub>t</sub> = P<sub>t-1</sub> x ( – 0.008 )</p>
+                                                    <p>Se puede observar que el signo + de la ecuación P<sub>t</sub> = P<sub>t-1</sub> + at es porque el aumento es negativo y esto genera automáticamente una resta.</p>
                                                     <p>Al sustituir at en la ecuación de población, ésta queda como:</p>
-                                                    <p>Pt = Pt-1 + Pt-1 x ( –0.008 )          sacando Pt-1 de factor común se tiene,</p>
-                                                    <p>Pt = Pt-1 [ 1 + ( – 0.008 )]</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> + P<sub>t-1</sub> x ( –0.008 )          sacando P<sub>t-1</sub> de factor común se tiene,</p>
+                                                    <p>P<sub>t</sub> = P<sub>t-1</sub> [ 1 + ( – 0.008 )]</p>
                                                     <p>Utilizando ésta representación algebraica, en una tabla de Excel, para resolver el problema se tiene:</p>
                                                     <p><b>TABLA EN EXCEL</b></p>
                                                     <table class="table">
@@ -533,7 +515,7 @@
                                                 <h3>Número de habitantes de un poblado en donde la población está decreciendo</h3>
                                                 <div class="feed-body">
                                                     <p><b>El número de habitantes de un poblado era 80,000 en 1998. Por emigración a la ciudad, la población decrece a razón de 0.8% anual . Encuentre el número de habitantes para el año 2000</b></p>
-                                                    <p>Al utilizar la fórmula de Crecimiento Poblacional Compuesto Pt = P0 (1 + r)t   en una disminución de población, hay que tener cuidado de tomar la tasa de crecimiento como negativa (- 0.008).</p>
+                                                    <p>Al utilizar la fórmula de Crecimiento Poblacional Compuesto P<sub>t</sub>  = P<sub>0</sub>(1 + r)<sup>t</sup>    en una disminución de población, hay que tener cuidado de tomar la tasa de crecimiento como negativa (- 0.008).</p>
                                                     <p><b>Datos:</b></p>
                                                     <p>P<sub>0</sub> = 80,000</p>
                                                     <p>r = -0.008</p>
@@ -555,10 +537,10 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">SSolución utilizando la fórmula de Crecimiento Poblacional Compuesto en Excel</h3>
+                                                <h3 class="feed-subtitle">Solución utilizando la fórmula de Crecimiento Poblacional Compuesto en Excel</h3>
                                                 <h3>Número de Habitantes de un poblado en donde la población está decreciendo</h3>
                                                 <div class="feed-body">
-                                                    <p>La fórmula Pt = P0 ( 1 + r )t, en donde r es negativa, puede ser utilizada para resolver el problema en Excel.</p>
+                                                    <p>La fórmula P<sub>t</sub> = P<sub>0</sub> ( 1 + r )<sup>t</sup>, en donde r es negativa, puede ser utilizada para resolver el problema en Excel.</p>
                                                     <p><b>TABLA EN EXCEL</b></p>
                                                     <table class="table">
                                                         <thead>
@@ -617,21 +599,34 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card widget-feed">
-                                                <h3 class="feed-subtitle">Práctica de autoevaluación 4</h3>
-                                                <div class="feed-body">
+                                        <div class="col-lg-10">
+                                            <div class="card">
+                                                <div class="card-block">
+                                                    <h1 class="card-title">La Ballena Azul</h1>
+                                                    <h4>Práctica de autoevaluación 2</h4>
+                                                    <p>La Ballena Azul es una especie en peligro de extinción. En 1994 solo existían 11,700 ejemplares y a pesar de los esfuerzos por preservarlos, su número sigue disminuyendo en un 1.2% anual.</p>
                                                     <ol>
                                                         <li>
-                                                            <p>La Ballena Azul es una especie en peligro de extinción. En 1994 solo existían 11,700 ejemplares y a pesar de los esfuerzos por preservarlos, su número sigue disminuyendo en un 1.2% anual. Si la tasa se conserva, calcule el número de ballenas azules para el año 2020.</p>
-                                                            <ol>
-                                                                <li>Construir el modelo matemático para hacer una estimación del número de ballenas en los años 1995 y 1996.</li>
-                                                                <li>Resolver el problema utilizando Excel.</li>
-                                                                <li>Resolver el problema utilizando la fórmula de Crecimiento Poblacional Compuesto.</li>
-                                                                <li>Suponiendo que la tasa aumentara debido a una mayor protección de la ballena azul y disminuyera en sólo -0.5% calcule la población en 2020.</li>
-                                                            </ol>
+                                                            <p>Si la tasa se conserva, calcule el número de ballenas azules para el año 2020.</p>
+                                                            <div class="radio">
+                                                                <input type="radio" value="c" name="u1p4i1" id="u1p4i1o1">
+                                                                <label for="u1p4i1o1">8548.037545</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u1p4i1" id="u1p4i1o2">
+                                                                <label for="u1p4i1o2">Option</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u1p4i1" id="u1p4i1o3">
+                                                                <label for="u1p4i1o3">Option</label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <input type="radio" value="i" name="u1p4i1" id="u1p4i1o4">
+                                                                <label for="u1p4i1o4">Option</label>
+                                                            </div>
                                                         </li>
                                                     </ol>
+                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="u1p4" value ="Verificar">
                                                 </div>
                                             </div>
                                         </div>
@@ -684,6 +679,7 @@
         <!-- build:js assets/js.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/quiz/unidad1.js"></script>
         <script src="../../assets/js/app.js"></script>
         <script src="../../assets/js/progressbar.js"></script>
         <script src="../../assets/js/progreso.js"></script>

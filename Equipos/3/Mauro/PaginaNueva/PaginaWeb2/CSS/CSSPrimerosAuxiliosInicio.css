@@ -1,6 +1,11 @@
 p{
-  text-align:left;
-  font-size:18px;
+  text-align:justify;
+  font: inherit;
+  font-size:15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 h1{
@@ -23,8 +28,15 @@ h4{
   font-size:15px;
 }
 
-#p01{
-  text-align: center;;
+#textoinfo{
+  text-align:justify;
+  font: inherit;
+  color: #888da8;
+  font-size:15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 p{
