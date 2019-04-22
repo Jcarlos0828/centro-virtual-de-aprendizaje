@@ -16,6 +16,40 @@ p {
   text-align: center;
 }
 
+.boxed {
+  border: 1px solid #FF4B6E;
+  padding: 10px;
+  background-color: #FFDFE5;
+  border-radius: 20px;
+  height: contain;
+  width: contain;
+  position: relative;
+}
+
+.boxed1 {
+  border: 1px solid #0FADFF;
+  padding: 10px;
+  background-color: #B6E6FF;
+  border-radius: 20px;  
+  height: contain;
+  width: contain;
+  position: relative;
+}
+
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #0FADFF;
+}
+
+img.gender {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/gender.png);
+  background-size: contain;
+  background-position: center;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -156,4 +190,59 @@ a.button {
   color:#666;
   display:block;
   line-height:30px;
+}
+.column1 {
+  height: contain;
+  width: 150px;
+  float: left;
+  border: 2px solid #0481a0;
+  background-color: rgb(255, 255, 255);
+  margin-right: 5px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: move;
+}
+.column1 header {
+  color: #fff;
+  box-shadow: 5px;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, right top,
+                               color-stop(0, rgb(60, 166, 182)),
+                               color-stop(0.50, rgb(125, 216, 230)),
+                               color-stop(1, rgb(185, 237, 245)));
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -ms-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+}
+.column1 body{
+  color: blue;
+}
+#div1 {
+  width: 800px;
+  height: 150px;
+  left: 10%;
+  padding: 10px;
+  border: 1px solid #0481a0;
+  background-color:#DAF2FF;
+  border-radius: 20px;
+  position: relative;
+}
+#div2 {
+  top: 20px;
+  width: 800px;
+  height: 150px;
+  left: 10%;
+  padding: 10px;
+  border: 1px solid #0481a0;
+  background-color:#DAF2FF;
+  border-radius: 20px;
+  position: relative;
 }
