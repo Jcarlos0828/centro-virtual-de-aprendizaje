@@ -20,12 +20,13 @@
         <link href="assets/css/themify-icons.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/css/animate.min.css" rel="stylesheet">
-        <link href="assets/css/app.css" rel="stylesheet">
+        <link href="assets/css/app.css" rel="stylesheet">  <!-- este le da estilo a la progress bar -->
 
         <!-- mi stylesheet custom -->
         <link href="CSS/CSSHemofiliaUnidades.css" rel="stylesheet">
         <link href="assets/css/progress.css" rel="stylesheet">
         <link href="assets/css/progreso.css" rel="stylesheet">
+        <link href="assets/w3.css" rel="stylesheet">
         
 
     </head>
@@ -97,7 +98,7 @@
                               <li class="nav-item active">
                                   <a class="mrg-top" href="contactanosHemofilia.html">
                                       <span class="icon-holder">
-                                          <i class="ei-phone-book-contact"></i>
+                                          <i class="ei-email"></i>
                                       </span>
                                       <span class="title">Contáctanos</span>
                                   </a>
@@ -105,7 +106,7 @@
                               <li class="nav-item active">
                                   <a class="mrg-top" href="creditosHemofilia.html">
                                       <span class="icon-holder">
-                                          <i class="ei-id-card"></i>
+                                          <i class="ti-info-alt"></i>
                                       </span>
                                       <span class="title">Créditos</span>
                                   </a>
@@ -115,7 +116,8 @@
                   </div>
                   <!-- Side Nav END -->
                   <!--Progress START-->
-                  <div id="progreso"></div>
+                  <!--Para mostrar el circulo de progreso pequeño a un costado-->
+                  <!--<div id="progreso"></div> -->
                   <!--Progress END-->
                   <!-- Page Container START -->
                   <div class="page-container">
@@ -381,6 +383,7 @@
                                 </nav>
                                 <br>
                               </div>
+
                                 <div class="card widget-feed">
                                   <div class="row">
                                     <div class="col-lg-8">
@@ -398,7 +401,7 @@
                                         <span class="progress-right">
                                             <span class="progress-bar"></span>
                                         </span>
-                                        <div class="progress-value" id="circle-bar-val">33%</div>
+                                        <div class="progress-value" id="circle-bar-val">50%</div>
                                       </div>
                                     </div>
                                   </div>
@@ -436,21 +439,23 @@
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <!--Plugin Progreso-->
-        <script src="assets/js/progressbar.js"></script>
+        <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
-        <script src="../../assets/js/app.js"></script>
-        <script src="../../assets/js/progressbar.js"></script>
-        <script src="../../assets/js/progreso.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/progressbar.js"></script>
+        <script src="assets/js/progreso.js"></script>
         <script src="quiz.js"></script>
-        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
-        <script type="text/javascript">show(.5)</script>
-
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(.0125 * 8)</script>
         <!-- endbuild -->
-
+        
         <!-- Insert your dependencies here -->
+        
+        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+        <script type="text/javascript">moveProgressBar(100)</script>
 
     </body>
 </html>
