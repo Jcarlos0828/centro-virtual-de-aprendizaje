@@ -21,13 +21,13 @@
         <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="../../assets/css/animate.min.css" rel="stylesheet">
         <link href="../../assets/css/app.css" rel="stylesheet">
+        <link href="../../assets/css/progress.css" rel="stylesheet">
         <link href="../../assets/css/progreso.css" rel="stylesheet">
 
         <!-- mis archivos -->
-        <link href="../../estilosHumus.css" rel="stylesheet">
+        <link href="../../estilosCurso/estilosHumus.css" rel="stylesheet">
         <link href="../../estilosCurso/styleCursos.css" rel="stylesheet">
-        <link href="../../estilosCurso/w3.css" rel="stylesheet">        
-        <link href="../../assets/css/progress.css" rel="stylesheet">
+        <link href="../../estilosCurso/w3.css" rel="stylesheet">
 
     </head>
 
@@ -36,6 +36,99 @@
               <div class="layout">
                   <!-- Side Nav START -->
                   <div class="side-nav">
+                        <div class="side-nav-inner">
+                            <div class="side-nav-logo">
+                                <a href="index.html">
+                                    <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
+                                    <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')"></div>
+                                </a>
+                                <div class="mobile-toggle side-nav-toggle">
+                                    <a href="">
+                                        <i class="ti-arrow-circle-left"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="side-nav-menu scrollable">
+                                <li class="nav-item active">
+                                    <a class="mrg-top-30" href="index.html">
+                                        <span class="icon-holder">
+                                            <i class="ti-home"></i>
+                                        </span>
+                                          <span class="title">Bienvenida</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="inicio.html">
+                                        <span class="icon-holder">
+                                            <i class="ti-file"></i>
+                                        </span>
+                                        <span class="title">Inicio</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="javascript:void(0);">
+                                        <span class="icon-holder">
+                                            <i class="ti-view-list-alt"></i>
+                                        </span>
+                                        <span class="title">Temas</span>
+                                        <span class="arrow">
+                                            <i class="ti-angle-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="Temas/Tema 1/tema 1.html">1. ¿Qué es el humus?</a>
+                                        </li>
+                                        <li>
+                                            <a href="Temas/Tema 2/tema 2.html">2. ¿Usar humus o fertilizantes químicos?</a>
+                                        </li>
+                                        <li>
+                                            <a href="Temas/Tema 3/tema 3.html">3. ¿Cómo producir humus?</a>
+                                        </li>
+                                        <li>
+                                            <a href="Temas/Tema 4/tema 4.html">4. ¿Cómo usar el humus?</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="contact.html">
+                                        <span class="icon-holder">
+                                            <i class="ti-help"></i>
+                                        </span>
+                                        <span class="title">Contactanos</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="credits.html">
+                                        <span class="icon-holder">
+                                            <!-- 
+                                                bookmark
+                                                marker
+                                                marker-alt 
+                                                layout
+                                                layers
+                                                layers-alt
+                                                comment
+                                                comment-al
+                                                ticket
+                                                notepad
+                                                info
+                                                infinite
+                                                clipboard
+                                                book
+                                                archive
+                                                video-clapper
+                                                receipt
+                                            -->
+                                            <i class="ti-info"></i>
+                                        </span>
+                                        <span class="title">Créditos</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  <!-- <div class="side-nav">
                       <div class="side-nav-inner">
                           <div class="side-nav-logo">
                             <a href="../../index.html">
@@ -125,7 +218,7 @@
                                 </div>
                             </div>
                       </div>
-                  </div>
+                  </div> -->
                   <!-- Side Nav END -->
 
                   <!-- Page Container START -->
@@ -268,13 +361,6 @@
                                                 <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8">
-                                            <h1 class="feed-title tag tag-info ">Módulo</h1>
-                                            <h3 class="feed-subtitle">Tu Progreso</h3>
-                                            <div class="progress" style="height: 20px;" id="bar">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-4">
                                             <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
                                             <div id="progreso"></div>
@@ -311,18 +397,23 @@
         <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../../assets/vendors/PACE/pace.min.js"></script>
         <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <!--Plugin Progreso-->
+        <script src="../../assets/js/progressbar.js"></script>
+
+    
         <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
-        <script src="../../assets/js/progressbar.js"></script>
-        <script src="../../assets/js/progreso.js"></script>
+        <script src="quiz.js"></script>
 
-        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
-        <script type="text/javascript">show(.0125 * 8)</script>
+        <script src="../../assets/js/progreso.js"></script>
+        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
+        <script type="../../text/javascript">show(.4)</script>
+
         <!-- endbuild -->
-        
+
         <!-- Insert your dependencies here -->
         <script>
             function moveProgressBar(progPorcent) {
@@ -344,7 +435,7 @@
             }
         </script>
         <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
-        <script type="text/javascript">moveProgressBar((1/2)*100)</script>
+        <script type="../../text/javascript">moveProgressBar((1/2)*100)</script>
         
 
     </body>
