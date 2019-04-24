@@ -25,7 +25,7 @@
         <!-- mi stylesheet custom -->
         <link href="CSS/CSSPrimerosAuxiliosUnidades.css" rel="stylesheet">
         <link href="assets/css/progress.css" rel="stylesheet">
-        <link href="assets/css/progreso.css" rel="stylesheet">
+        <link href="assets/w3.css" rel="stylesheet">
 
     </head>
 
@@ -308,28 +308,25 @@
                               </div>
                             </div>
 
-                                <div class="card widget-feed">
+                                <!-- Progress bar start -->
+                              <div class="card widget-feed">
                                   <div class="row">
-                                    <div class="col-lg-8">
-                                      <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
-                                      <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;color: gray; font-size: 18px">En este módulo</p>
-                                      <div class="progress" style="height: 20px;" id="bar">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
+                                      <div class="col-lg-8">
+                                          <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                          <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                          <div class="w3-light-grey w3-round-xlarge">
+                                              <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center"
+                                                  style="width:10%"> </div>
+                                          </div>
                                       </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                      <div class="progress blue" id="circle">
-                                        <span class="progress-left">
-                                          <span class="progress-bar"></span>
-                                        </span>
-                                        <span class="progress-right">
-                                            <span class="progress-bar"></span>
-                                        </span>
-                                        <div class="progress-value" id="circle-bar-val">25%</div>
+                                      <div class="col-lg-4">
+                                          <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">
+                                              Total del Curso:</p>
+                                          <div id="progreso"></div>
                                       </div>
-                                    </div>
                                   </div>
-                                </div>
+                              </div>
+                              <!-- Progress bar end -->
 
                               </div>
                             </div>
@@ -362,8 +359,7 @@
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <!--Plugin Progreso-->
-        <script src="assets/js/progressbar.js"></script>
+        <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
@@ -371,33 +367,33 @@
         <script src="assets/js/progressbar.js"></script>
         <script src="assets/js/progreso.js"></script>
         <script src="quiz.js"></script>
-
+        
         <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
-        <script type="text/javascript">show(25)</script>
+        <script type="text/javascript">show(0.0625* 4)</script>
         <!-- endbuild -->
         
         <!-- Insert your dependencies here -->
         <script>
-            function moveProgressBar(progPorcent) {
-                if (progPorcent === undefined) {
-                    progPorcent = 0;
-                }
-                var elem = document.getElementById("myBar");
-                var width = 0;
-                var id = setInterval(frame, 10);
-                function frame() {
-                    if (width >= progPorcent) {
-                        clearInterval(id);
-                    } else {
-                        width++;
-                        elem.style.width = width + '%';
-                        elem.innerHTML = width.toString() + '%';
+                function moveProgressBar(progPorcent) {
+                    if (progPorcent === undefined) {
+                        progPorcent = 0;
+                    }
+                    var elem = document.getElementById("myBar");
+                    var width = 0;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= progPorcent) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width.toString() + '%';
+                        }
                     }
                 }
-            }
-        </script>
-        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
-        <script type="text/javascript">moveProgressBar(25)</script>
+            </script>
+            <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+            <script type="text/javascript">moveProgressBar((1 / 4) * 100)</script>
 
     </body>
 </html>
