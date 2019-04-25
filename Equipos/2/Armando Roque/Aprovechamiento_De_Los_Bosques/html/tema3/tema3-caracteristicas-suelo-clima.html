@@ -22,7 +22,7 @@
         <link href="../../assets/css/animate.min.css" rel="stylesheet">
         <link href="../../assets/css/app.css" rel="stylesheet">
         <link href="../../assets/css/progress.css" rel="stylesheet">
-        <link href="../../assets/css/progreso.css" rel="stylesheet">
+        <link href="../../assets/css/progress-circle.css" rel="stylesheet">
 
     </head>
 
@@ -370,21 +370,13 @@
                                             <h1 class="feed-title tag tag-info">Tema 3</h1>
                                             <h3 class="feed-subtitle">Tu Progreso</h3>
                                             <div class="progress" style="height: 20px;" id="bar">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 25%" >25%</div>
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 50%" >50%</div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="progress blue" id="circle">
-                                                        <span class="progress-left">
-                                                            <span class="progress-bar"></span>
-                                                        </span>
-                                                        <span class="progress-right">
-                                                            <span class="progress-bar"></span>
-                                                        </span>
-                                                        <div class="progress-value" id="circle-bar-val">50%</div>
-                                                    </div>
+                                                    <div id="circlecontainer"></div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -446,7 +438,9 @@
         <script src="../../assets/vendors/PACE/pace.min.js"></script>
         <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 
+        <!-- Progress plugins -->
         <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progress-circle.js"></script>
 
         <!-- endbuild -->
 
@@ -454,9 +448,9 @@
         <!-- core js -->
         <script src="../../assets/js/app.js"></script>
 
-        <script src="../../assets/js/progreso.js"></script>
-        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
-        <script type="text/javascript">show(.5)</script>
+
+        <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
+        <script type="text/javascript">show(0.58)</script>
 
         <!-- endbuild -->
 
