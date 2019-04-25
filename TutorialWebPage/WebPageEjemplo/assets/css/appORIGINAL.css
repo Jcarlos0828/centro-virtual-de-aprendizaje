@@ -13,7 +13,7 @@ html, html a, body { -webkit-font-smoothing: antialiased; }
 
 body { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 14px; background-color: #f6f7fb; color: #888da8; line-height: 1.5; letter-spacing: 0.2px; overflow-x: hidden; }
 
-h1, h2, h3, h4, h5, h6 { color: #000000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.5px; font-weight: normal; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { color: #515365; font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0.5px; font-weight: normal; line-height: 1.5; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
 
@@ -31,19 +31,13 @@ h5 { font-size: 16px; }
 
 h6 { font-size: 12px; }
 
-p, li { font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #000000; line-height: 1.9; font-size: 18px }
-
-.image-auto-size {max-height: 100%; max-width: 100%}
-
-.side-index-general { font-size: 15px; }
+p { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #888da8; line-height: 1.9; }
 
 .lead { font-size: 18px; }
 
 ul { margin-bottom: 0px; }
 
 a { color: #0f9aee; }
-
-.btn span {color: #000}
 
 a:hover, a:focus { text-decoration: none; color: #0c7bbe; }
 
@@ -87,7 +81,7 @@ hr { border-top: 1px solid #e6ecf5; }
 
 .bg-primary { background-color: #7774e7 !important; }
 
-.bg-info { background-color: #40803E !important; }
+.bg-info { background-color: #0f9aee !important; }
 
 .bg-success { background-color: #37c936 !important; }
 
@@ -1460,7 +1454,7 @@ iframe { border: 0; }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) { .side-nav { width: 70px; }
   .side-nav .side-nav-inner .side-nav-logo { border-bottom: 1px solid transparent; padding: 0px; }
-  .side-nav .side-nav-inner .side-nav-logo a .logo { width: 70px; background-position: center center; }
+  .side-nav .side-nav-inner .side-nav-logo a .logo { width: 65px; background-position: center center; }
   .side-nav .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo-sm.png") !important; }
   .side-nav .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white-sm.png") !important; }
   .side-nav .side-nav-inner .side-nav-menu { overflow-x: hidden; }
@@ -1489,7 +1483,7 @@ iframe { border: 0; }
   .is-collapsed .side-nav .side-nav-inner .side-nav-menu li.dropdown.open ul.dropdown-menu { display: none !important; }
   .is-collapsed .side-nav:hover { width: 280px; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo { padding: 0px 20px; border-bottom: 1px solid #e6ecf5; }
-  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo { width: 150px; background-position: center left; }
+  .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo { width: 70px; background-position: center left; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-dark { background-image: url("../images/logo/logo.png") !important; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-logo a .logo-white { background-image: url("../images/logo/logo-white.png") !important; }
   .is-collapsed .side-nav:hover .side-nav-inner .side-nav-menu > li > a .title { display: inline-block; }
@@ -1689,15 +1683,7 @@ iframe { border: 0; }
 
 .content-footer { padding: 0px 30px; }
 
-.content-footer {background-color: rgb(0, 0, 0)}
-
-.content-footer .footer { padding: 20px 0; font-size: 90%; border-top: 1px solid #000000; background-color: rgb(0, 0, 0) }
-
-.content-footer p {color: #fff; font-weight: bold; margin: 0}
-
-.content-footer a {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #2E70BA; line-height: 1.9; font-size: 18px; font-weight: bold}
-
-.content-footer span {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: rgb(255, 255, 255); line-height: 1.9; font-size: 18px; font-weight: bold}
+.content-footer .footer { padding: 20px 0; font-size: 90%; border-top: 1px solid #e6ecf5; }
 
 .content-footer .footer .go-right { float: right; }
 
@@ -1922,15 +1908,15 @@ iframe { border: 0; }
 
 .header-primary .side-nav .side-nav-inner .side-nav-logo a .logo-white { display: block; }
 
-.header-info .header { background-color: #1e8334; color: #ffffff; border-color: #1e8334; }
+.header-info .header { background-color: #0f9aee; color: #ffffff; border-color: #0f9aee; }
 
 .header-info .header .header-container ul > li > a { color: #ededed; }
 
 .header-info .header .header-container ul > li > a:hover, .header-info .header .header-container ul > li > a:focus { color: #ffffff; }
 
-.header-info .header .header-container ul .user-profile { border-color: #1e8334; }
+.header-info .header .header-container ul .user-profile { border-color: #0f9aee; }
 
-.header-info .side-nav .side-nav-inner .side-nav-logo { background-color: #1e8334; border-color: #1e8334; }
+.header-info .side-nav .side-nav-inner .side-nav-logo { background-color: #0f9aee; border-color: #0f9aee; }
 
 .header-info .side-nav .side-nav-inner .side-nav-logo a .logo-dark { display: none; }
 
@@ -2892,7 +2878,7 @@ label.success { color: #37c936; }
 
 .tag-success { background-color: #37c936; color: #ffffff; }
 
-.tag-info { background-color: #40803E; color: #ffffff; }
+.tag-info { background-color: #0f9aee; color: #ffffff; }
 
 .tag-warning { background-color: #ffcc00; color: #ffffff; }
 
@@ -2950,9 +2936,7 @@ label.success { color: #37c936; }
 
 .portlet .show .dropdown-menu { transform: scale(1, 1); -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -o-transform: scale(1, 1); -ms-transform: scale(1, 1); }
 
-.card-title { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #207426; margin-top: 0px; margin-bottom: 15px; }
-
-.card-image-title {color: #207426}
+.card-title { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #515365; margin-top: 0px; margin-bottom: 15px; }
 
 .card-media { position: relative; }
 
@@ -3171,8 +3155,6 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .tab-danger .nav-tabs > li > a.active:hover, .tab-danger .nav-tabs > li > a.active:focus { border-bottom: 2px solid #ff3c7e; }
 
-.center {vertical-align: center; text-align: center}
-
 .center-tabs .nav-tabs { text-align: center; -webkit-box-pack: center !important; -webkit-justify-content: center !important; -ms-flex-pack: center !important; justify-content: center !important; }
 
 .center-tabs .nav-tabs > li { float: none; display: inline-block; }
@@ -3207,11 +3189,11 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .pill-success .nav-pills > li > a.active.nav-link { color: #ffffff; border-color: #37c936; }
 
-.pill-info .nav-pills > li > a.active { border-color: #1e8334; background-color: #1e8334; border: 1px solid #1e8334; }
+.pill-info .nav-pills > li > a.active { border-color: #0f9aee; background-color: #0f9aee; border: 1px solid #0f9aee; }
 
-.pill-info .nav-pills > li > a.active:hover, .pill-info .nav-pills > li > a.active:focus { border-color: #1e8334; background-color: #1e8334; border: 1px solid #1e8334; }
+.pill-info .nav-pills > li > a.active:hover, .pill-info .nav-pills > li > a.active:focus { border-color: #0f9aee; background-color: #0f9aee; border: 1px solid #0f9aee; }
 
-.pill-info .nav-pills > li > a.active.nav-link { color: #ffffff; border-color: #1e8334; }
+.pill-info .nav-pills > li > a.active.nav-link { color: #ffffff; border-color: #0f9aee; }
 
 .pill-warning .nav-pills > li > a.active { border-color: #ffcc00; background-color: #ffcc00; border: 1px solid #ffcc00; }
 
@@ -3229,7 +3211,7 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .accordion .panel-default { background-color: #ffffff; margin-bottom: 15px; border: 1px solid #e6ecf5; }
 
-.accordion .panel-default > .panel-heading { color: #515365; background-color: #72ac25d2; border-color: #e6ecf5; }
+.accordion .panel-default > .panel-heading { color: #515365; background-color: #ffffff; border-color: #e6ecf5; }
 
 .accordion .panel-default > .panel-heading + .panel-collapse > .panel-body { border-top-color: #e6ecf5; padding: 10px 20px 20px 20px; }
 
@@ -3239,7 +3221,7 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .accordion .panel-title { margin: 0px; }
 
-.accordion .panel-title > a { padding: 20px; display: block; color: #ffffff; }
+.accordion .panel-title > a { padding: 20px; display: block; color: #515365; }
 
 .accordion .panel-title > a .icon { float: right; margin-top: 5px; transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); -ms-transform: rotate(0deg); transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; }
 
