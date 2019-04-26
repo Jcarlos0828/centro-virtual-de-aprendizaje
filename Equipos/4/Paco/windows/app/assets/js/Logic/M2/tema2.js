@@ -3,6 +3,7 @@ txt2 = $("#txt2");
 w7 = $("#w7");
 w10 = $("#w10");
 
+erase();
 txt1.css("display","block");
 w7.addClass("active");
 
@@ -14,7 +15,7 @@ w7.on("click",function(){
 
 w10.on("click",function(){
     erase();
-    txt2.css("display", "none");
+    txt2.css("display", "block");
     w10.addClass("active");
 })
 
