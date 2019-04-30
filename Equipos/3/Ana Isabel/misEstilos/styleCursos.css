@@ -20,7 +20,72 @@ img {
   width: 100%;
   height: auto;
 }
-
+.boxed {
+  width: contain;
+  height: contain;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid red;
+  margin: 0;
+  background-color: #FBA99B;
+}
+.boxed1 {
+  width: contain;
+  height: contain;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #1AAEFF;
+  margin: 0;
+  background-color: #B0E3FF;
+}
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.column1 {
+  height: contain;
+  width: 150px;
+  margin: 10px;
+  float: left;
+  border: 2px solid #34adee;
+  background-color: rgb(187, 231, 255);
+  margin-right: 5px;
+  -webkit-box-shadow: inset 0 0 3px #000;
+  -ms-box-shadow: inset 0 0 3px #000;
+  box-shadow: inset 0 0 3px #000;
+  text-align: center;
+  cursor: move;
+}
+#div1 {
+  width: contain;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #1AAEFF;
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #B0E3FF;
+}
+#div2 {
+  width: contain;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #1AAEFF;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 50%;
+  background-color: #B0E3FF; 
+}
 .button {
 	box-sizing: border-box;
   -webkit-appearance: none;
