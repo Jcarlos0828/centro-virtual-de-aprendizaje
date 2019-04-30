@@ -1,0 +1,30 @@
+#bar {
+  color: #049dff;
+}
+
+@media only screen and (max-width: 990px){
+  .progress{ margin-bottom: 20px; }
+}
+
+.progress .progress-bar {
+  width: 0;
+  animation: progress 2.0s ease-in-out forwards;
+} 
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#progreso {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1001;
+}
