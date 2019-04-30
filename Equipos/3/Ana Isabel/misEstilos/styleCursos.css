@@ -16,82 +16,10 @@ p {
   text-align: center;
 }
 
-.boxed {
-  border: 1px solid #FF4B6E;
-  padding: 10px;
-  background-color: #FFDFE5;
-  border-radius: 20px;
-  height: contain;
-  width: contain;
-  position: relative;
-}
-
-.boxed1 {
-  border: 1px solid #0FADFF;
-  padding: 10px;
-  background-color: #B6E6FF;
-  border-radius: 20px;  
-  height: contain;
-  width: contain;
-  position: relative;
-}
-
-#example1 {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #0FADFF;
-}
-
-img.gender {
-  width: 100%;
-  height: 100%;
-  background-image: url(../imagenes/gender.png);
-  background-size: contain;
-  background-position: center;
-}
-
 img {
   width: 100%;
   height: auto;
 }
-
-/*
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-}
-*/
-/*
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  display: table;
-  margin: 0 auto
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-*/
 
 .button {
 	box-sizing: border-box;
@@ -130,6 +58,45 @@ a.button {
 }
 .button:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.button_green {
+	box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+  border-color: #34db50;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #34db50 inset, 0 0 0 0 #34db50;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  display: table;
+  margin: 0 auto
+}
+.button_green:hover {
+  box-shadow: 0 0 10px 0 #34db50 inset, 0 0 10px 4px #34db50;
 }
 
 #img1 {
@@ -191,58 +158,40 @@ a.button {
   display:block;
   line-height:30px;
 }
-.column1 {
-  height: contain;
-  width: 150px;
-  float: left;
-  border: 2px solid #0481a0;
-  background-color: rgb(255, 255, 255);
-  margin-right: 5px;
-  -webkit-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-align: center;
-  cursor: move;
+
+/*Efecto de zoom en la fotos*/
+.zoomEffect {
+  /*padding: 50px;*/
+  background-color: rgba(255, 255, 255, 0);
+  transition: transform .2s;
+  /*width: 200px;
+  height: 200px;*/
+  width: inherit;
+  height: inherit;
+  margin: 0 auto;
 }
-.column1 header {
-  color: #fff;
-  box-shadow: 5px;
-  padding: 5px;
-  background: -webkit-gradient(linear, left top, right top,
-                               color-stop(0, rgb(60, 166, 182)),
-                               color-stop(0.50, rgb(125, 216, 230)),
-                               color-stop(1, rgb(185, 237, 245)));
-  -webkit-border-top-left-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -ms-border-radius-topleft: 10px;
-  border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -ms-border-top-right-radius: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-right-radius: 10px;
+
+.zoomEffect:hover {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+  z-index: 100;
 }
-.column1 body{
-  color: blue;
-}
-#div1 {
-  width: 800px;
-  height: 150px;
-  left: 10%;
-  padding: 10px;
-  border: 1px solid #0481a0;
-  background-color:#DAF2FF;
-  border-radius: 20px;
+
+/* Efecto parallax del footer*/
+/*
+.main-content {
+  background: #f6f7fb;
   position: relative;
+  margin-bottom: 210px;
+  box-shadow: 3px 2px 2px 0px rgba(51,51,51,0.5);
 }
-#div2 {
-  top: 20px;
-  width: 800px;
-  height: 150px;
-  left: 10%;
-  padding: 10px;
-  border: 1px solid #0481a0;
-  background-color:#DAF2FF;
-  border-radius: 20px;
-  position: relative;
+
+footer {
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 210px;  
 }
+*/
