@@ -1681,11 +1681,27 @@ iframe { border: 0; }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) { .is-collapsed .header { width: calc(100% - 280px); } }
 
+/* Reglas del footer COMIENZAN aquí */
+
 .content-footer { padding: 0px 30px; }
 
-.content-footer .footer { padding: 20px 0; font-size: 90%; border-top: 1px solid #e6ecf5; }
+.content-footer {background-color: rgb(0, 0, 0)}
+
+.content-footer .footer { padding: 20px 0; font-size: 90%; border-top: 1px solid #000000; background-color: rgb(0, 0, 0) }
+
+.content-footer p {color: #fff; font-weight: bold; margin: 0; font-size: 12px}
+
+.content-footer a {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #2E70BA; line-height: 1.9; font-size: 12px; font-weight: bold}
+
+.content-footer span {font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: rgb(255, 255, 255); line-height: 1.9; font-size: 12px; font-weight: bold}
 
 .content-footer .footer .go-right { float: right; }
+
+.content-footer img {height: 100%; width: auto}
+
+/* Reglas del footer TERMINAN aquí */
+
+/* Efecto paralax */
 
 .page-container { min-height: 100vh; padding-left: 280px; transition: all 0.2s ease; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; -ms-transition: all 0.2s ease; }
 
@@ -3616,52 +3632,3 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 .list-label > li { height: 2px; width: 40px; background: #fafafa; border-radius: 50px; display: inline-block; margin-right: 5px; }
 
 .draggable-item { cursor: move; cursor: grab; cursor: -moz-grab; cursor: -webkit-grab; }
-
-.iframe-container {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
- 
-.iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
-}
-.txtNormal { font-family: "Century Gothic"; font-size: 14px; color: #333333 }
-.txtNegrita { color: #006090; font-weight: bold}
-.txtNormal2 { font-family: "Century Gothic"; font-size: 14px; color: ##006090 }
-
-.txtTitulo { font-family: "Century Gothic"; font-size: 18px; color: #006090; font-weight: bold; line-height: normal; word-spacing: normal}
-
-.txtNegrita2 { color: #FFCC00; font-weight: bold ; background-color: #006090}
-.txtSubtitulo { color: #FF9900; font-weight: bold }
-.txtBoton { color: #FFCC00; font-weight: bold ; background-color: #006090 ; font-family: "Century Gothic"; font-size: 16px}
-.nextButton{
-  height:200pt;
-  background-color: Transparent;
-    background-repeat:no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    line-height: 40px;
-    border: 0px;
-    display: inline-block;
-    float: none;
-    text-align: center;
-    padding: 0px!important;
-
-
-}
-.nextButton:hover {
-  border: 1px solid grey;
-}
-.normaltext{
-  font-size: 13pt;
-  text-align: justify;
-}
-.progreso { position: fixed; bottom: 20px; right: 20px; padding: 15px !important; z-index: 1001; font-size: 15px !important; color: #ffffff; }
-.num-text{ margin-top: .3em; }

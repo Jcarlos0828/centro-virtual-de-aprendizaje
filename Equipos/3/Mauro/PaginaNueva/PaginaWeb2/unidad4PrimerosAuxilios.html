@@ -25,7 +25,7 @@
         <!-- mi stylesheet custom -->
         <link href="CSS/CSSPrimerosAuxiliosUnidades.css" rel="stylesheet">
         <link href="assets/css/progress.css" rel="stylesheet">
-        <link href="assets/css/progreso.css" rel="stylesheet">
+        <link href="assets/w3.css" rel="stylesheet">
 
 
     </head>
@@ -103,7 +103,7 @@
                               <li class="nav-item active">
                                   <a class="mrg-top" href="contactanosPrimerosAuxilios.html">
                                       <span class="icon-holder">
-                                          <i class="ei-phone-book-contact"></i>
+                                          <i class="ei-email"></i>
                                       </span>
                                       <span class="title">Contáctanos</span>
                                   </a>
@@ -111,7 +111,7 @@
                               <li class="nav-item active">
                                   <a class="mrg-top" href="creditosPrimerosAuxilios.html">
                                       <span class="icon-holder">
-                                          <i class="ei-id-card"></i>
+                                          <i class="ti-info-alt"></i>
                                       </span>
                                       <span class="title">Créditos</span>
                                   </a>
@@ -121,7 +121,8 @@
                   </div>
                   <!-- Side Nav END -->
                   <!--Progress START-->
-                  <div id="progreso"></div>
+                  <!--Para mostrar el circulo de progreso pequeño a un costado-->
+                  <!--<div id="progreso"></div> -->
                   <!--Progress END-->
 
                   <!-- Page Container START -->
@@ -154,12 +155,13 @@
                             <div class="card">
                               <div class="overlay-dark bg" style="
                                   background-image: url('FOTOS PRIMEROS AUXILIOS/doctor-1015624_1920.jpg');
+                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: top;
                                   background-repeat: no-repeat;
-                                  background-size: 800px 550px;">
+                                  background-size: 600px 380px;">
                               <div class="card-block">
-                                <div class="mrg-top-130">
+                                <div class="mrg-top-35">
                                   <div class="tag tag-primary">Salud</div>
                                     <h1 id="h1top">Guía de Primeros Auxilios</h1>
                                 </div>
@@ -262,31 +264,53 @@
                                   </ul>
                                 </nav>
                                 <br>
-                                <div class="progress">
-                                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%; background-color:#28DF1F" >
-                                    <div style="font-size: 15px">Curso completado 100%</div>
-                                  </div>
-                                </div>
                                 <br>
                                 <a class="button_quiz" href="quizPrimerosAuxilios.html">¡Comenzar quiz!</a>
                               </div>
                             </div>
                           </div>
-                      </div>
+
+                              <!-- Progress bar start -->
+                              <div class="card widget-feed">
+                                  <div class="row">
+                                      <div class="col-lg-8">
+                                          <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                          <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                          <div class="w3-light-grey w3-round-xlarge">
+                                              <div id="myBar" class="w3-container w3-green w3-round-xlarge w3-center"
+                                                  style="width:10%"> </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                          <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">
+                                              Total del Curso:</p>
+                                          <div id="progreso"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Progress bar end -->
+                            </div>
                       <!-- Content Wrapper END -->
 
                       <!-- Footer START -->
                       <footer class="content-footer">
-                          <div class="footer">
-                              <div class="copyright">
-                                  <span>Copyright © 2019.</span>
-                                  <span class="go-right">
-                                      <a href="./creditosPrimerosAuxilios.html" class="text-gray mrg-right-15">Créditos</a>
-                                  </span>
-                              </div>
-                          </div>
-                      </footer>
-                      <!-- Footer END -->
+                        <div class="footer">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito.</p>
+                                    <p>D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019.</p>
+                                </div>  
+                                <div class="col-4 center align-self-center">
+                                    <a href="http://videolabtec.itesm.mx/aviso-legal" target="_blank">Aviso Legal</a>
+                                    <span><b>|</b></span>
+                                    <a href="https://tec.mx/es/avisos-de-privacidad" target="_blank">Aviso de Privacidad</a>
+                                    <span><b>|</b></span>
+                                    <a href="./creditosPrimerosAuxilios.html">Créditos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Footer END -->
 
                   </div>
                   <!-- Page Container END -->
@@ -300,21 +324,41 @@
         <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <!--Plugin Progreso-->
-        <script src="assets/js/progressbar.js"></script>
+        <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="assets/js/app.js"></script>
+        <script src="assets/js/progressbar.js"></script>
+        <script src="assets/js/progreso.js"></script>
         <script src="quiz.js"></script>
-
-        <script src="./assets/js/progreso.js"></script>
-        <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->
-        <script type="text/javascript">show(1)</script>
-
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(0.25 * 4)</script>
         <!-- endbuild -->
-
+        
         <!-- Insert your dependencies here -->
+        <script>
+                function moveProgressBar(progPorcent) {
+                    if (progPorcent === undefined) {
+                        progPorcent = 0;
+                    }
+                    var elem = document.getElementById("myBar");
+                    var width = 0;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= progPorcent) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width.toString() + '%';
+                        }
+                    }
+                }
+            </script>
+            <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+            <script type="text/javascript">moveProgressBar((4 / 4) * 100)</script>
 
     </body>
 </html>

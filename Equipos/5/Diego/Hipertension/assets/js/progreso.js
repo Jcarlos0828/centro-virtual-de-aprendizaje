@@ -28,7 +28,7 @@
 	  }
 	});
 	bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-	bar.text.style.fontSize = '18pt';
+	bar.text.style.fontSize = '2rem';
 
 	bar.animate(.3);  // Number from 0.0 to 1.0
 
