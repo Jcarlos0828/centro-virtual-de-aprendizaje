@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../.././misEstilos/styleCursos.css">
     <link rel="stylesheet" href="../../misEstilos/w3.css">
     <link href="../../assets/css/progress.css" rel="stylesheet">
+    <script src="../../misEstilos/myJs.js"></script>
 
 </head>
 
@@ -184,8 +185,17 @@
                                         </h2>
                                         <p>
                                             <font color="black">
-                                                El SIDA es una enfermedad causada por un virus y se caracteriza por el
-                                                debilitamiento en el sistema inmunológico.
+                                                El SIDA es una enfermedad causada por un
+                                                <!--Popup START-->
+                                                <div class="popup" style="color:rgb(33, 150, 243);"
+                                                    onmouseover="myPopOverFunction()"
+                                                    onmouseout="myPopOverFunction() = 'hidden'">virus
+                                                    <span class="popuptext" id="myPopup">
+                                                        Organismo muy pequeño causante de muchas enfermedades contagiosas, entre ellas el SIDA.
+                                                    </span>
+                                                </div>
+                                                <!--Popup END-->
+                                                y se caracteriza por el debilitamiento en el sistema inmunológico.
                                                 <br>
                                                 La palabra SIDA viene de la primera letra de las palabras:
                                             </font>
