@@ -48,7 +48,7 @@
   }
 
   $('.swal-simple').on('click', function () {
-      swal("¡Vuelve a intentarlo!");
+      swal("Here's a message!");
   });
 
   $('.swal-with-text').on('click', function () {
@@ -56,7 +56,7 @@
   });
 
   $('.swal-success').on('click', function () {
-      swal("¡Muy Bien!", "Sigue así", "success")
+      swal("Good job!", "You clicked the button!", "success")
   });
 
   $('.swal-function').on('click', function () {
