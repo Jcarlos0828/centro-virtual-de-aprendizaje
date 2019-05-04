@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../.././misEstilos/styleCursos.css">
     <link rel="stylesheet" href="../../misEstilos/w3.css">
     <link href="../../assets/css/progress.css" rel="stylesheet">
+    <script src="../../misEstilos/myJs.js"></script>
 
 </head>
 
@@ -203,19 +204,33 @@
                                                             </div>
                                                             <div id="collapseOne" class="collapse panel-collapse">
                                                                 <div class="panel-body">
-                                                                    <div class="row">
-                                                                        <p>
-                                                                            La hipótesis más aceptada es que este virus
-                                                                            pasó de alguna manera de una especie de
-                                                                            monos al hombre.
-                                                                            Algunos científicos piensan que esta especie
-                                                                            de mono transmitió el virus a un grupo de
-                                                                            personas en África y que la enfermedad
-                                                                            afectó a muchas personas de esta comunidad.
-                                                                            Con el paso del tiempo, la enfermedad llegó
-                                                                            a otros lugares del mundo.
-                                                                        </p>
+                                                                    La <div class="popup"
+                                                                        style="color:rgb(219, 33, 243);"
+                                                                        onmouseover="myPopOverFunction()"
+                                                                        onmouseout="myPopOverFunction() = 'hidden'">
+                                                                        hipótesis
+                                                                        <span class="popuptext" id="myPopup">
+                                                                            La hipótesis es una suposición, creencia
+                                                                            o sospecha de cómo pasaron determinadas
+                                                                            cosas. Para hacer una hipótesis es
+                                                                            necesario tener todos los datos o
+                                                                            información conocida sobre el asunto del
+                                                                            cual hablamos. Cuando juntamos toda esa
+                                                                            información podemos entonces suponer el
+                                                                            cómo sucedieron las cosas, y así hacemos
+                                                                            una hipótesis.
+                                                                        </span>
                                                                     </div>
+                                                                    más aceptada es que este virus
+                                                                    pasó de alguna manera de una especie de
+                                                                    monos al hombre.
+                                                                    Algunos científicos piensan que esta especie
+                                                                    de mono transmitió el virus a un grupo de
+                                                                    personas en África y que la enfermedad
+                                                                    afectó a muchas personas de esta comunidad.
+                                                                    Con el paso del tiempo, la enfermedad llegó
+                                                                    a otros lugares del mundo.
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -312,7 +327,7 @@
                         <script src="../../assets/js/progreso.js"></script>
 
                         <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
-                        <script type="text/javascript">show((3/20))</script>
+                        <script type="text/javascript">show((3 / 20))</script>
                         <!-- endbuild -->
 
                         <!-- Insert your dependencies here -->

@@ -17,3 +17,15 @@ function myPopOverFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+function myPopOverFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+function myPopOverFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+function myPopOverFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}

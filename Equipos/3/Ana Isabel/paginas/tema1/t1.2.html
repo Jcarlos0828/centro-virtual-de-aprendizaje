@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="../.././misEstilos/styleCursos.css">
     <link rel="stylesheet" href="../../misEstilos/w3.css">
     <link href="../../assets/css/progress.css" rel="stylesheet">
+    <script src="../../misEstilos/myJs.js"></script>
 
 </head>
 
@@ -201,8 +202,27 @@
                                                     lado a otro.</li>
                                                 <li>Para reproducirse debe estar adentro de un cuerpo vivo.</li>
                                                 <li>Para pasar de un cuerpo a otro y poder enfermarlo, el virus debe
-                                                    encontrar una entrada al cuerpo: una herida, mucosa ó vaso
-                                                    sanguíneo.</li>
+                                                    encontrar una entrada al cuerpo: una herida,
+                                                    <div class="popup" style="color:rgb(219, 33, 243);"
+                                                        onmouseover="myPopOverFunction()"
+                                                        onmouseout="myPopOverFunction() = 'hidden'">mucosa
+                                                        <span class="popuptext" id="myPopup">
+                                                            La mucosa es el tipo de piel que podemos encontrar el
+                                                            interior de la boca, en el interior de la vagina, del ano,
+                                                            etc. Esta piel siempre está húmeda debido a los líquidos o
+                                                            secreciones que el cuerpo produce.
+                                                        </span>
+                                                    </div>
+                                                    ó <div class="popup" style="color:rgb(219, 33, 243);"
+                                                        onmouseover="myPopOverFunction1()"
+                                                        onmouseout="myPopOverFunction1() = 'hidden'">vaso sanguíneo
+                                                        <span class="popuptext" id="myPopup1">
+                                                            Las venas y arterias o vasos sanguíneos son como una red de
+                                                            mangueras muy delgaditas que se conectan entre sí para
+                                                            conducir la sangre por todo nuestro cuerpo. Incluso hay
+                                                            vasos sanguíneos que tienen el grosor de un cabello
+                                                        </span>
+                                                    </div>.</li>
                                             </font>
                                         </ul>
                                         <div class="mrg-top-50"></div>
@@ -281,7 +301,7 @@
             <script src="../../assets/js/progreso.js"></script>
 
             <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
-            <script type="text/javascript">show(2/21)</script>
+            <script type="text/javascript">show(2 / 21)</script>
             <!-- endbuild -->
 
             <!-- Insert your dependencies here -->
