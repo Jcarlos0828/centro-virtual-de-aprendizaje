@@ -101,6 +101,10 @@
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
+#centrar-texto {
+  text-align: center;
+}
+
 /* #top-menu {
     clear: both;
     float: none;
