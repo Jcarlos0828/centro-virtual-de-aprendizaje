@@ -6,110 +6,201 @@
         <title>Componentes de una oración | CVA - Centro Virtual de Aprendizaje</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/logo/favicon.png">
 
         <!-- plugins css -->
-        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
-        <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+        <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+        <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
         <!-- page plugins css -->
 
         <!-- core css -->
-        <link href="assets/css/ei-icon.css" rel="stylesheet">
-        <link href="assets/css/themify-icons.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/css/animate.min.css" rel="stylesheet">
-        <link href="assets/css/app.css" rel="stylesheet">
+        <link href="../../assets/css/ei-icon.css" rel="stylesheet">
+        <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+        <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../assets/css/animate.min.css" rel="stylesheet">
+        <link href="../../assets/css/app.css" rel="stylesheet">
 
         <!-- mi stylesheet custom -->
-        <link rel="stylesheet" href="styleCursos.css">
+        <link rel="stylesheet" href="../../misEstilos/styleCursos.css">
+        <link rel="stylesheet" href="../../misEstilos/w3.css">
+        <link href="../../assets/css/progress.css" rel="stylesheet">
 
+        <script src="../../misEstilos/myJs.js"></script>
+
+        <script type="text/javascript">
+        </script>
+
+        <script language="JavaScript">
+            var width = "250";
+            var border = "1";
+            var offsetx = -50;
+            var offsety = 10;
+            var linea = "#000066";
+
+        </script>
+        <script language="JavaScript">
+
+            function MM_findObj(n, d) { //v4.0
+                var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                    d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+                }
+                if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+                for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+                if (!x && document.getElementById) x = document.getElementById(n); return x;
+            }
+
+            function MM_nbGroup(event, grpName) { //v3.0
+                var i, img, nbArr, args = MM_nbGroup.arguments;
+                if (event == "init" && args.length > 2) {
+                    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                        img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+                        if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                        nbArr[nbArr.length] = img;
+                        for (i = 4; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                    }
+                } else if (event == "over") {
+                    document.MM_nbOver = nbArr = new Array();
+                    for (i = 1; i < args.length - 1; i += 3) if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : args[i + 1];
+                        nbArr[nbArr.length] = img;
+                    }
+                } else if (event == "out") {
+                    for (i = 0; i < document.MM_nbOver.length; i++) {
+                        img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                    }
+                } else if (event == "down") {
+                    if ((nbArr = document[grpName]) != null)
+                        for (i = 0; i < nbArr.length; i++) { img = nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+                    document[grpName] = nbArr = new Array();
+                    for (i = 2; i < args.length - 1; i += 2) if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = args[i + 1];
+                        nbArr[nbArr.length] = img;
+                    }
+                }
+            }
+
+            function MM_preloadImages() { //v3.0
+                var d = document; if (d.images) {
+                    if (!d.MM_p) d.MM_p = new Array();
+                    var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                        if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+                }
+            }
+        </script>
+        
+        
+        <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
     </head>
 
 <body class="header-info side-nav-dark">
           <div class="app">
               <div class="layout">
-                  <!-- Side Nav START -->
-                  <div class="side-nav">
-                      <div class="side-nav-inner">
-                          <div class="side-nav-logo">
-                              <a href="index.html">
-                                  <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
-                                  <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')"></div>
-                              </a>
-                              <div class="mobile-toggle side-nav-toggle">
-                                  <a href="">
-                                      <i class="ti-arrow-circle-left"></i>
-                                  </a>
-                              </div>
-                          </div>
-                          <ul class="side-nav-menu scrollable">
-                              <li class="nav-item active">
-                                  <a class="mrg-top-30" href="index.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-home"></i>
-                                      </span>
-                                      <span class="title">Inicio</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a href="metodología.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-file"></i>
-                                      </span>
-                                      <span class="title">Metodología</span>
-                                  </a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                  <a class="dropdown-toggle" href="javascript:void(0);">
-                                      <span class="icon-holder">
-                                              <i class="ti-view-list-alt"></i>
-                                          </span>
-                                      <span class="title">Contenido</span>
-                                      <span class="arrow">
-                                              <i class="ti-angle-right"></i>
-                                          </span>
-                                  </a>
-                                  <ul class="dropdown-menu">
-                                      <li>
-                                          <a href="introduccion.html">Introducción</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema1.html">Tema 1</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema2.html">Tema 2</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema3.html">Tema 3</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema4.html">Tema 4</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema5.html">Tema 5</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema6.html">Tema 6</a>
-                                      </li>
-                                      <li>
-                                          <a href="tema7.html">Tema 7</a>
-                                      </li>
-                              </ul>
-                              </li>
-                              <li class="nav-item active">
-                                  <a href="ayuda.html">
-                                      <span class="icon-holder">
-                                          <i class="ti-help"></i>
-                                      </span>
-                                      <span class="title">Ayuda</span>
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <!-- Side Nav END -->
+                <!-- Side Nav START -->
+                <div class="side-nav">
+                    <div class="side-nav-inner">
+                        <div class="side-nav-logo">
+                            <a href="../../index.html">
+                                <div class="logo logo-dark" style="background-image: url('../../assets/images/logo/logo.png')"></div>
+                                <div class="logo logo-white"
+                                    style="background-image: url('../../assets/images/logo/logo.png'); width: 100%"></div>
+                            </a>
+                            <div class="mobile-toggle side-nav-toggle">
+                                <a href="">
+                                    <i class="ti-arrow-circle-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="side-nav-menu scrollable">
+                            <li class="nav-item active">
+                                <a class="mrg-top-30" href="../../index.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-home"></i>
+                                    </span>
+                                    <span class="title">Bienvenida</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Introducción/introduccion_1.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-text"></i>
+                                    </span>
+                                    <span class="title">Introducción</span>
+                                </a>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);">
+                                    <span class="icon-holder">
+                                        <i class="ti-view-list-alt"></i>
+                                    </span>
+                                    <span class="title">Módulos</span>
+                                    <span class="arrow">
+                                        <i class="ti-angle-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../Tema1/tema1_1.html">Tema 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema2/tema2_1.html">Tema 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema3/tema3_1.html">Tema 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema4/tema4_1.html">Tema 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema5/tema5_1.html">Tema 5</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema6/tema6_1.html">Tema 6</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema7/tema7_1.html">Tema 7</a>
+                                    </li>
+                                </ul>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Metodología/metodología.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-globe"></i>
+                                    </span>
+                                    <span class="title">Políticas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="#">
+                                    <span class="icon-holder">
+                                        <i class="ei-email"></i>
+                                    </span>
+                                    <span class="title">Contáctanos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Creditos/Creditos.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-info-alt"></i>
+                                    </span>
+                                    <span class="title">Créditos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Side Nav END -->
 
                   <!-- Page Container START -->
                   <div class="page-container">
@@ -126,7 +217,7 @@
                               <ul class="nav-right">
                                   <li>
                                       <a href="#">
-                                          <img src="assets/images/logo/tec-logo.png" height="30">
+                                          <img src="../../assets/images/logo/tec-logo.png" height="30">
                                       </a>
                                   </li>
                               </ul>
@@ -142,32 +233,898 @@
                               <div class="col-lg-12">
                                 <div class="card">
                                   <div class="overlay-dark bg" style="
-                                  background-image: url('imagenes/technology-1095751_1920.jpg');
+                                  background-image: url('../../imagenes/technology-1095751_1920.jpg');
+                                  height: 150px;
                                   background-attachment: fixed;
                                   background-position: center;
                                   background-repeat: no-repeat;
                                   background-size: cover;">
                                     <div class="card-block">
-                                      <div class="mrg-top-130">
+                                      <div class="mrg-top-35">
                                         <div class="tag tag-primary">Educación</div>
                                           <h1>Componentes de una oración</h1>
                                       </div>
                                     </div>
                                   </div>
+                                
                                   <div class="card-block">
-                                      <h1 id="bienvenidaText" class="card-title">¡Bienvenido al curso!</h1>
-                                        <p id="p01">Te damos la más cordial bienvenida a esta nueva experiencia que ha sido especialmente diseñada para ti.</p>
-                                                                    
-                                        <p> <br> <strong>Componentes de una oración</strong>, es un curso totalmente en línea y su principal característica es
-                                            la flexibilidad en el
-                                            horario de estudio, ya que podrás decidir cuál es el momento más apropiado para estudiar el curso, de acuerdo a tus
-                                            necesidades laborales, sociales o familiares. En este curso adquirirás las habilidades necesarias para mejorar tus
-                                            textos, utilizando correctamente los elementos que componen a una oración o enunciado.</p>
+                                    
+                                    <h2>Tema 6. Preposiciones: unificadoras de palabras.</h2>
+
+                                    <br>
+                                      
+                                    <p>
+                                    Las <strong>preposiciones</strong> tienen como función <strong>unir</strong> las palabras para que la <strong>oración tenga sentido</strong>. Cada una de ellas tiene un
+                                    <strong>significado</strong> que, utilizado adecuadamente, le da <strong>coherencia</strong> al enunciado.
+                                    
+                                    En el siguiente gráfico se presentan las preposiciones haz clic en la palabra para ver la información.
+                                    </p>
+
+                                    <div id="dek" style="position:absolute; width:200px; height:-250px; padding: 0 0 0 20%; z-index:1; visibility: hidden">
+                                    </div>
+                                    <script type="text/javascript">
+
+                                        Xoffset = offsetx;    // modify these values to ...
+                                        Yoffset = offsety;    // change the popup position.
+
+                                        var old, skn, iex = (document.all), yyy = -1000;
+
+                                        var ns4 = document.layers
+                                        var ns6 = document.getElementById && !document.all
+                                        var ie4 = document.all
+
+                                        if (ns4)
+                                            skn = document.dek
+                                        else if (ns6)
+                                            skn = document.getElementById("dek").style
+                                        else if (ie4)
+                                            skn = document.all.dek.style
+                                        if (ns4) document.captureEvents(Event.MOUSEMOVE);
+                                        else {
+                                            skn.visibility = "visible"
+                                            skn.display = "none"
+                                        }
+                                        document.onmousemove = get_mouse;
+
+                                        function popup(msg, bak) {
+
+                                            var content = "<TABLE  WIDTH=" + width + " BORDER=" + border + " BORDERCOLOR=" + linea + " CELLPADDING=5 CELLSPACING=0 " +
+                                                " BGCOLOR=" + bak + "><TD>" + msg + "</TD></TABLE>";
+                                            yyy = Yoffset;
+                                            if (ns4) { skn.document.write(content); skn.document.close(); skn.visibility = "visible" }
+                                            if (ns6) { document.getElementById("dek").innerHTML = content; skn.display = '' }
+                                            if (ie4) { document.all("dek").innerHTML = content; skn.display = '' }
+                                        }
+
+                                        function get_mouse(e) {
+                                            var x = (ns4 || ns6) ? e.pageX : event.x + document.body.scrollLeft;
+                                            //skn.left=x+Xoffset;
+                                            skn.left = 335;
+                                            var y = (ns4 || ns6) ? e.pageY : event.y + document.body.scrollTop;
+                                            //skn.top=y+yyy;
+                                            skn.top = 40;
+                                        }
+
+                                        function kill() {
+                                            yyy = -1000;
+                                            if (ns4) { skn.visibility = "hidden"; }
+                                            else if (ns6 || ie4)
+                                                skn.display = "none"
+                                        }
+
+                                    </script>
+
+                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
                                         
-                                        <div class="mrg-top-50"></div>
-                                      <a class="button" href="http://google.com">¡Comenzar!</a>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <!--Acordeon 1-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingOne_txt">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne_txt">
+                                                                <span>
+                                                                    <strong>"A"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne_txt" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <p>
+                                                                        Contenido
+                                                                    </p>
+
+                                                                    
+                                                                    <p><b class="textocolor1">LA PREPOSICIÓN EXPRESA:</b></p>
+                                                                    <ul>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Voy <b>a</b> Par&iacute;s.</li> <li>Miro <b>al</b> cielo.</li> <li>Libro dedicado <b>a</b> mis padres.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Movimiento
+                                                                                material o figurado</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li>Se sentaron <b>a</b> la mesa </li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Proximidad</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li><b> A</b> la derecha.</li> <li><b>A</b> fin de mes.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Lugar
+                                                                                y tiempo</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li><b>A</b> tu estilo.</li> <li> <b>A</b> la mexicana.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Modo
+                                                                                o manera</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Vengo <b>a</b> que me corten el pelo.</li> <li>Lo hizo <b>a</b> instancias del director.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Finalidad
+                                                                                u objetivo de una acci&oacute;n</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Se venden entradas de nueve <b>a</b> una.</li> <li> La distancia de tu casa <b>a</b> la m&iacute;a es corta.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">El
+                                                                                intervalo entre dos puntos temporales o espaciales</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Quien <b>a</b> hierro mata, <b>a</b> hierro muere.</li> <li> Lo mataron <b>a</b> golpes.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Instrumento
+                                                                                con que se ejecuta algo</a></li>
+                                                                        <li><a href="javascript:void(0);"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li><b>A</b> rega&ntilde;adientes.</li> <li><b>A</b> ciegas.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Sirve
+                                                                                para formar frases y locuciones adverbiales</a></li>
+                                                                    </ul>
+                                                                    <br>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <br>
+                                                                    <br>
+                                                                    
+                                                                    <table class="table table-bordered" style="text-align: center">
+                                                                    
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="table-danger"><b>Uso Incorrecto</b></td>
+                                                                            <td width="48%" class="table-success"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Acto <b>a</b> realizarse<br>
+                                                                                De acuerdo <b>a</b><br>
+                                                                                <b>A</b> nivel de<br>
+                                                                                En relaci&oacute;n <b>a</b><br>
+                                                                                Mirarse <b>al</b> espejo<br>
+                                                                                <b>A</b> cuenta de<br>
+                                                                                Ejecutar <b>al</b> piano<br>
+                                                                                <b>Al</b> instante de salir<br>
+                                                                                En honor <b>al</b> maestro<br>
+                                                                                Conforme <b>a</b><br>
+                                                                                En concordancia <b>a</b><br>
+                                                                                Hered&oacute; <b>a</b> su padre<br>
+                                                                                <b>A</b> colores<br>
+                                                                                Se vende <b>al</b> por mayor<br>
+                                                                                Acapulco, <b>a</b> 2 de mayo</td>
+                                                                            <td width="48%" class="fondo1">Acto <b>por</b> realizarse<br>
+                                                                                De acuerdo <b>con</b><br>
+                                                                                <b>En</b> nivel de<br>
+                                                                                En relaci&oacute;n <b>con</b><br>
+                                                                                Mirarse <b>en</b> el espejo<br>
+                                                                                <b>Por</b> cuenta de<br>
+                                                                                Ejecutar <b>en</b> el piano<br>
+                                                                                <b>En</b> el instante de salir<br>
+                                                                                En honor <b>del</b> maestro<br>
+                                                                                Conforme <b>con</b><br>
+                                                                                En concordancia <b>con</b><br>
+                                                                                Hered&oacute; <b>de</b> su padre<br>
+                                                                                <b>Con</b> colores<br>
+                                                                                Se vende <b>por</b> mayor<br>
+                                                                                Acapulco, 2 de mayo</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                
+                                                                    <br>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 2-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading2">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse2">
+                                                                <span>
+                                                                    <strong>"Bajo"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse2" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Vive <b>bajo</b> el mismo techo.</li> <li> Paseaba <b>bajo</b> sus balcones.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Situaci&oacute;n
+                                                                                inferior</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Libertad <b>bajo</b> palabra.</li> <li> Vive <b>bajo</b> la amenaza del vecino.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Dependencia
+                                                                                (se aplica a la relaci&oacute;n de jerarqu&iacute;a)</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1"><b>Bajo</b> el punto de vista<br>
+                                                                                <b>Bajo</b> el gobierno</td>
+                                                                            <td width="48%" class="fondo1"><b>Desde</b> el punto de
+                                                                                vista<br>
+                                                                                <b>Durante</b> el gobierno</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 3-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading3">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse3">
+                                                                <span>
+                                                                    <strong>"Con"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse3" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Aplaqu&eacute; su ira <b>con</b> un grito <i>(medio)</i></li> <li> <b>Con</b> tu esfuerzo lo lograr&aacute;s <i>(modo)</i></li> <li> Los lastim&oacute; <b>con</b> un martillo <i>(instrumento)</i></li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Medio,
+                                                                                modo o instrumento</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Ayer habl&eacute; <b>con</b> mis t&iacute;os.</li> <li> Ve <b>con</b> Juan.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Compa&ntilde;&iacute;a</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> <b>Con</b> llorar nada se consigue <i>(llorando nada se consigue)</i></li> <li> <b>Con</b> leer se aprende mucho <i>(leyendo se aprende mucho)</i></li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Si
+                                                                                se antepone a un infinitivo equivale a gerundio</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Trabaja <b>con</b> ganas.</li> <li> El invierno entr&oacute; <b>con</b> fuerza.</li> <li> Me mira <b>con</b> indiferencia.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Circunstancias
+                                                                                en que se ejecuta o sucede alguna cosa</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Basta <b>con</b> verlo</td>
+                                                                            <td width="48%" class="fondo1">Basta verlo</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 4-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading4">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse4">
+                                                                <span>
+                                                                    <strong>"De"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse4" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Estos son los terrenos <b>de</b> mi hermano.</li> <li> La inteligencia <b>de</b> Ismael.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Posesi&oacute;n
+                                                                                o pertenencia</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Hojas <b>de</b> papel.</li> <li> Botas <b>de</b> piel.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Materia
+                                                                                de la que est&aacute; hecha una cosa</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Planta <b>de</b> Brasil.</li> <li> Vino <b>de</b> Par&iacute;s para conocerte.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Origen
+                                                                                o procedencia de cosas o personas</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Libro <b>de</b> f&iacute;sica.</li> <li>&iquest;Habla usted <b>de</b> mi pa&iacute;s?</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Asunto
+                                                                                o materia de que se trata</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Nos vimos <b>de</b> frente.</li> <li> Los dos presidentes conversaron <b>de</b> pie.</li> <li> Le dieron <b>de</b> golpes.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Modo
+                                                                                de hacer o suceder de algunas cosas</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Es <b>de</b> noche. <i>(tiempo)</i></li> <li> <b>De</b> haber estado all&iacute;, lo hubiera visto. <i>(condici&oacute;n)</i></li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Tiempo o condici&oacute;n</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Hombre <b>de</b> valor.</li> <li> Entra&ntilde;as <b>de</b> fiera.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Realce
+                                                                                de una cualidad o caracter&iacute;stica</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> <b>De</b> esto sigue...</li> <li> <b>De</b> aquello se deduce...</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Ilaci&oacute;n
+                                                                                o consecuencia</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Es una muchacha <b>de</b> buen coraz&oacute;n.</li> <li> Es un mueble <b>de</b> fin&iacute;sima madera.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Naturaleza
+                                                                                o condici&oacute;n de una persona o cosa</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> La calle <b>de</b> Alcal&aacute;.</li> <li> Las calles <b>de</b> Madero y Ju&aacute;rez.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Aposici&oacute;n</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Qued&oacute; <b>de</b> venir<br>
+                                                                                Gusto <b>de</b> conocerlo<br>
+                                                                                Lo dice <b>de</b> verdad<br>
+                                                                                Estoy seguro que triunfar&aacute;<br>
+                                                                                Respecto este tema<br>
+                                                                                No dudo que as&iacute; sea<br>
+                                                                                Se acord&oacute; que lo ten&iacute;a<br>
+                                                                                Quiz&aacute;s deber&aacute; estar casado<br>
+                                                                                Viajan <b>de</b> a miles<br>
+                                                                                El a&ntilde;o <b>de</b> 1988<br>
+                                                                                Lo hace <b>de</b> ex profeso<br>
+                                                                                A menos <b>de</b> que venga<br>
+                                                                                Hagamos <b>de</b> cuenta</td>
+                                                                            <td width="48%" class="fondo1">Qued&oacute; <b>en</b> venir<br>
+                                                                                Gusto <b>en</b> conocerlo<br>
+                                                                                Lo dice <b>en</b> verdad<br>
+                                                                                Estoy seguro <b>de</b> que triunfar&aacute;<br>
+                                                                                Respecto <b>de</b> este tema<br>
+                                                                                No dudo <b>de</b> que as&iacute; sea<br>
+                                                                                Se acord&oacute; <b>de</b> que lo ten&iacute;a<br>
+                                                                                Quiz&aacute;s deber&aacute; <b>de</b> estar casado<br>
+                                                                                Viajan a miles (<b>= por</b>)<br>
+                                                                                El a&ntilde;o 1988<br>
+                                                                                Lo hace ex profeso<br>
+                                                                                A menos que venga<br>
+                                                                                Hagamos cuenta</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!--Acordeon 5-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading5">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse5">
+                                                                <span>
+                                                                    <strong>"En"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse5" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Estuve <b>en</b> casa todo el d&iacute;a.</li> <li> Julia vive <b>en</b> Venecia.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Lugar</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Ramiro naci&oacute; <b>en</b> 1952.</li> <li> Entonces est&aacute;bamos <b>en</b> invierno.</li> <li> <b>En</b> mayo llovi&oacute; mucho.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Tiempo</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Hablaron <b>en</b> secreto.</li> <li> Est&aacute;bamos <b>en</b> confianza.</li> <li> Lo hizo <b>en</b> broma.</li> <li> Sali&oacute; <b>en</b> mangas de camisa.</li> <li> Trabajando <b>en</b> orden se produce bien.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Modo,
+                                                                                y entra en algunas frases adverbiales</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Le encanta viajar <b>en</b> tren.</li> <li> Conversaron <b>en</b> franc&eacute;s.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Medio
+                                                                                o instrumento</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Se le notaba <b>en</b> la manera de expresarse.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Causa</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Te conozco <b>en</b> el andar.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Si
+                                                                                antecede a un infinitivo significa &quot;por&quot;</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> <b>En</b> general, <b>en</b> particular, <b>en</b> absoluto; estas expresiones equivalen a los adverbios: <b>generalmente</b>, <b>particularmente</b>, <b>absolutamente</b>.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Precediendo
+                                                                                a ciertos adjetivos, da origen a locuciones adverbiales</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Voy <b>en</b> casa de mis
+                                                                                padres<br>
+                                                                                Sal&iacute; <b>en</b> direcci&oacute;n a Saltillo<br>
+                                                                                Sentarse <b>en</b> la mesa<br>
+                                                                                Estatua <b>en</b> bronce<br>
+                                                                                Qued&oacute; que as&iacute; lo har&iacute;a </td>
+                                                                            <td width="48%" class="fondo1">Voy a casa de mis padres<br>
+                                                                                Sal&iacute; con direcci&oacute;n a Saltillo<br>
+                                                                                Sentarse a la mesa<br>
+                                                                                Estatua de bronce<br>
+                                                                                Qued&oacute; <b>en</b> que as&iacute; lo har&iacute;a</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 6-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading6">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse6">
+                                                                <span>
+                                                                    <strong>"Hasta"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse6" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Caminaremos <b>hasta</b> la casa.</li> <li> Piensa navegar <b>hasta</b> el Caribe.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">T&eacute;rmino
+                                                                                o l&iacute;mite espacial</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Qu&eacute;date <b>hasta</b> la noche.</li> <li> Est&aacute; desde las nueve <b>hasta</b> las doce.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">T&eacute;rmino
+                                                                                o l&iacute;mite temporal</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Ofrece <b>hasta</b> cien mil pesos por el libro.</li> <li> Llena el vaso <b>hasta</b> el borde.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">T&eacute;rmino
+                                                                                o l&iacute;mite cuantitativo</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Corrigi&oacute; <b>hasta</b> cien cuartillas.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">N&uacute;mero</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1" valign="top">
+                                                                                <p>El autob&uacute;s da vuelta <b>hasta</b> la esquina<br>
+                                                                                    <br>
+                                                                                    <br>
+                                                                                    <b>Hasta</b> el jueves saldr&aacute;n los viajeros<br>
+                                                                                    <br>
+                                                                                    <br>
+                                                                                    <b>Hasta</b> el a&ntilde;o pr&oacute;ximo empezar&eacute;
+                                                                                    a estudiar</p>
+                                                                            </td>
+                                                                            <td width="48%" class="fondo1" valign="top">
+                                                                                <p>El autob&uacute;s no da vuelta <b>hasta</b> la esquina
+                                                                                    <i>(da vuelta en la esquina)<br>
+                                                                                        <br>
+                                                                                    </i><b>Hasta</b> el jueves no saldr&aacute;n los viajeros
+                                                                                    <i>(El jueves saldr&aacute;n)<br>
+                                                                                        <br>
+                                                                                    </i><b>Hasta</b> el a&ntilde;o pr&oacute;ximo no empezar&eacute;
+                                                                                    a estudiar <i>(El a&ntilde;o pr&oacute;ximo empezar&eacute;)</i></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                            
+                                                <!--Acordeon 7-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading7">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse7">
+                                                                <span>
+                                                                    <strong>"Para"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse7" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b><ul> <li> Lo dejaremos <b>para</b> ma&ntilde;ana.</li> <li>Me caso <b>para</b> el 10 de febrero.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Tiempo
+                                                                                o plazo</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Est&aacute; <b>para</b> titularse.</li> <li> Est&aacute; <b>para</b> llover.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Proximidad
+                                                                                de alg&uacute;n suceso</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos:</b> <ul> <li> Un regalo <b>para</b> Javier.</li> <li> Este es propio <b>para</b> adolescentes.</li> <li> Compr&eacute; un cuaderno <b>para</b> iluminar.</li> <li> Estudio <b>para</b> saber.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Direcci&oacute;n,
+                                                                                destino o fin de una acci&oacute;n o un objeto</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Pastillas <b>para</b> el
+                                                                                mareo<br>
+                                                                                Jarabe <b>para</b> la tos<br>
+                                                                                Veneno <b>para</b> las ratas</td>
+                                                                            <td width="48%" class="fondo1">Pastillas <b>contra</b> el
+                                                                                mareo<br>
+                                                                                Jarabe <b>contra</b> la tos<br>
+                                                                                Veneno <b>contra</b> las ratas</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 8-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading8">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse8">
+                                                                <span>
+                                                                    <strong>"Por"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse8" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b><ul> <li> Pasear <b>por</b> la playa.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Un
+                                                                                lugar indeterminado</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b> <ul> <li> Lo hizo <b>por</b> miedo.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Causa</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b> <ul> <li> Le ped&iacute; <b>por</b> favor.</li> <li>Lo vi <b>por</b> televisi&oacute;n.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Modo</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b> <ul> <li> Firm&oacute; <b>por</b> nosotros.</li> <li>Tu hijo vale <b>por</b> muchos.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Equivalencia o substituci&oacute;n</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b> <ul> <li> <b>Por</b> aquellos a&ntilde;os.</li> <li> <b>Por</b> la tarde.</li> <li> <b>Por</b> el mes de mayo.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Tiempo o lapso aproximado</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplos</b> <ul> <li> <b>Por</b> mucho que lo repitas, no te creo.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Concesi&oacute;n (seguido de adjetivo o adverbio de cantidad y la
+                                                                                conjunci&oacute;n &quot;que&quot;)</a></li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    <p><i class="pie_imagen">(<b>Desliza el rat&oacute;n</b> sobre los textos
+                                                                            para ver sus ejemplos)</i></p>
+                                                                    
+                                                                    <table class="table-bordered">
+                                                                        <tr align="center">
+                                                                            <td class="table-danger" width="48%" class="fondo7"><b>Uso Incorrecto</b></td>
+                                                                            <td class="table-success" width="48%" class="fondo7"><b>Uso Correcto</b></td>
+                                                                        </tr>
+                                                                        <tr align="center">
+                                                                            <td width="48%" class="fondo1">Tiene afici&oacute;n <b>por</b>
+                                                                                las ciencias<br>
+                                                                                <b>Por</b> orden del presidente</td>
+                                                                            <td width="48%" class="fondo1">Tiene afici&oacute;n <b>a</b>
+                                                                                las ciencias<br>
+                                                                                <b>De</b> orden del presidente</td>
+                                                                        </tr>
+                                                                    </table>
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+
+                                                <!--Acordeon 9-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading9">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse9">
+                                                                <span>
+                                                                    <strong>"Según"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse9" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <p><b class="textocolor1">LA PREPOSICI&Oacute;N &quot;SEG&Uacute;N&quot;
+                                                                            EXPRESA:</b></p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p><b>Modo, particularidad: </b> </p>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p> Contest&oacute; el examen <b>seg&uacute;n</b> sab&iacute;a.</p>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <p>Actu&oacute; <b>seg&uacute;n</b> las normas establecidas.</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 10-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading10">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse10">
+                                                                <span>
+                                                                    <strong>"Sin"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse10" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <p><b class="textocolor1">LA PREPOSICI&Oacute;N &quot;SIN&quot; EXPRESA:</b></p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p><b>Privaci&oacute;n o carencia:</b> </p>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p> Gan&oacute; el concurso <b>sin</b> ayuda.</p>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <p>Juega <b>sin</b> parar.</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>&nbsp;</p>
+                                                                    
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 11-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading11">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse11">
+                                                                <span>
+                                                                    <strong>"Sobre"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse11" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <p><b class="textocolor1">LA PREPOSICI&Oacute;N &quot;SOBRE&quot; EXPRESA:</b></p>
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b><ul> <li> Col&oacute;calo <b>sobre</b> el escritorio.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Lugar
+                                                                                con valor de &quot;encima de&quot;</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b> <ul> <li> Se acaba <b>sobre</b> las seis de la tarde.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Aproximaci&oacute;n</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b> <ul> <li> Redact&oacute; un discurso <b>sobre</b> la honestidad.</li> <li> Habl&oacute; <b>sobre</b> los cambios de la educaci&oacute;n.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Asunto
+                                                                                del que se trata</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b> <ul> <li> <b>Sobre</b> seguro.</li> <li> <b>Sobre</b> aviso no hay enga&ntilde;o.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Locuciones
+                                                                                adverbiales</a></li>
+                                                                    </ul>
+                                                                    
+                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!--Acordeon 12-->
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="heading12">
+                                                        <h4 class="panel-title">
+                                                            <a style="text-align: center" class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapse12">
+                                                                <span>
+                                                                    <strong>"Tras"</strong>
+                                                                </span>
+                                                                <i class="icon ti-arrow-circle-down"></i>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapse12" class="collapse panel-collapse">
+                                                        <div class="panel-body">
+                                                            <div class="row">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="col-md-10">
+                                                                    <p><b class="textocolor1">LA PREPOSICI&Oacute;N &quot;TRAS&quot; EXPRESA:</b></p>
+                                                                    <ul>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b><ul> <li> Va <b>tras</b> la gloria.</li> <li> Anda <b>tras</b> un empleo.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Aspiraci&oacute;n
+                                                                                o deseo</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b> <ul> <li> <b>Tras</b> la pobreza, la enfermedad.</li> <li> <b>Tras</b> la ociosidad, el vicio.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">A&ntilde;adidura</a></li>
+                                                                        <li><a href="javascript:;"
+                                                                                OnMouseOver="popup('<b>Ejemplo:</b> <ul> <li> Dej&oacute; <b>tras</b> de s&iacute; un intenso aroma.</li> <li> Salimos corriendo <b>tras</b> el ladr&oacute;n.</li> <li> <b>Tras</b> la tempestad lleg&oacute; la calma.</li> </ul>','#fff8e6');"
+                                                                                onMouseOut="kill();">Posterioridad
+                                                                                en el espacio, con verbos de reposo o movimiento</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    
+
+                                    <!-- Termina el contenido de la página -->
+
+                                    <br>
+                                    
+                                    <nav aria-label="..." style="text-align: center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link" href="../Tema5/tema5_1.html#intro" tabindex="-1">Anterior: Tema 5</a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="tema6_2.html#intro">2</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="tema6_2.html#intro">Siguiente</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    
+                                    <br>
+                                    
+                                    <br>
+
+
+                                    <br>
+
                                 </div>
                               </div>
+
+
+                            <div class="card widget-feed">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                        <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                        <div class="w3-light-grey w3-round-xlarge">
+                                            <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
+                                        <div id="progreso"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                           </div>
                       </div>
                       <!-- Content Wrapper END -->
@@ -178,7 +1135,7 @@
                               <div class="copyright">
                                   <span>Copyright © 2019.</span>
                                   <span class="go-right">
-                                      <a href="credits.html" class="text-gray mrg-right-15">Créditos</a>
+                                      <a href="../../credits.html" class="text-gray mrg-right-15">Créditos</a>
                                   </span>
                               </div>
                           </div>
@@ -192,19 +1149,45 @@
 
         <!-- build:js assets/js/vendor.js -->
         <!-- plugins js -->
-        <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-        <script src="assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-        <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="assets/vendors/PACE/pace.min.js"></script>
-        <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../../assets/vendors/PACE/pace.min.js"></script>
+        <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
-        <script src="assets/js/app.js"></script>
+        <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(.0125 * 8)</script>
         <!-- endbuild -->
-
+        
         <!-- Insert your dependencies here -->
+        <script>
+            function moveProgressBar(progPorcent) {
+                if (progPorcent === undefined) {
+                    progPorcent = 0;
+                }
+                var elem = document.getElementById("myBar");
+                var width = 0;
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (width >= progPorcent) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                        elem.innerHTML = width.toString() + '%';
+                    }
+                }
+            }
+        </script>
+        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+        <script type="text/javascript">moveProgressBar((1/2)*100)</script>
 
     </body>
 </html>
