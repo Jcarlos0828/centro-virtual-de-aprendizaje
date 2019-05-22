@@ -4,181 +4,195 @@
 */
 
 p {
-	font-size: 18px;
-	font-weight: 300;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 #bienvenidaText {
-	text-align: center;
+    text-align: center;
 }
 
 #p01 {
-  text-align: center;
+    text-align: center;
 }
 
 img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .button {
-	box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-
-  border-color: #3498db;
-  color: #fff;
-  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-
-  display: table;
-  margin: 0 auto
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    display: table;
+    margin: 0 auto
 }
+
 .button:hover {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 .button_green {
-	box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-
-  border-color: #34db50;
-  color: #fff;
-  box-shadow: 0 0 40px 40px #34db50 inset, 0 0 0 0 #34db50;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-
-  display: table;
-  margin: 0 auto
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-color: #34db50;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #34db50 inset, 0 0 0 0 #34db50;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    display: table;
+    margin: 0 auto
 }
+
 .button_green:hover {
-  box-shadow: 0 0 10px 0 #34db50 inset, 0 0 10px 4px #34db50;
+    box-shadow: 0 0 10px 0 #34db50 inset, 0 0 10px 4px #34db50;
 }
 
-#img1 {
-	
-}
+#img1 {}
 
 .grid-container {
-  display: grid;
-  grid-column-gap: 50px;
-  /*grid-template-columns: auto auto;*/
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  background-color: rgba(33, 149, 243, 0);
-  padding: 10px;
+    display: grid;
+    grid-column-gap: 50px;
+    /*grid-template-columns: auto auto;*/
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    background-color: rgba(33, 149, 243, 0);
+    padding: 10px;
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(0, 0, 0, 0);
-  /*padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    /*padding: 20px;
   font-size: 30px;
   text-align: center;*/
 }
 
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+
 /* Carousel base class */
+
 .carousel {
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+    margin-bottom: 60px;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 400px;
-  background-color:#bbb;
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 10;
 }
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+    height: 400px;
+    background-color: #bbb;
+}
+
 .carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
 }
 
 .carousel-buttons {
-  width: 100%;
-  color:#666;
-  bottom:1px;
-}
-.carousel-buttons > div {
-  padding:10px;
-  border:1px solid #666;
-}
-.carousel-buttons a {
-  color:#666;
-  display:block;
-  line-height:30px;
+    width: 100%;
+    color: #666;
+    bottom: 1px;
 }
 
+.carousel-buttons>div {
+    padding: 10px;
+    border: 1px solid #666;
+}
+
+.carousel-buttons a {
+    color: #666;
+    display: block;
+    line-height: 30px;
+}
+
+
 /*Efecto de zoom en la fotos*/
+
 .zoomEffect {
-  /*padding: 50px;*/
-  background-color: rgba(255, 255, 255, 0);
-  transition: transform .2s;
-  /*width: 200px;
+    /*padding: 50px;*/
+    background-color: rgba(255, 255, 255, 0);
+    transition: transform .2s;
+    /*width: 200px;
   height: 200px;*/
-  width: inherit;
-  height: inherit;
-  margin: 0 auto;
+    width: inherit;
+    height: inherit;
+    /* margin: 0 auto; */
 }
 
 .zoomEffect:hover {
-  -ms-transform: scale(2); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari 3-8 */
-  transform: scale(2); 
-  z-index: 100;
+    -ms-transform: scale(2);
+    /* IE 9 */
+    -webkit-transform: scale(2);
+    /* Safari 3-8 */
+    transform: scale(2);
+    z-index: 100;
 }
 
+
 /* Efecto parallax del footer*/
+
+
 /*
 .main-content {
   background: #f6f7fb;
