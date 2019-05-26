@@ -48,6 +48,16 @@
     /* border-radius: 8px; */
 }
 
+.img_animales {
+    /* display: block; */
+    /* margin-left: auto;
+  margin-right: auto; */
+    width: 300px;
+    height: 200px;
+    /* padding: 10px; */
+    /* border-radius: 8px; */
+}
+
 .column {
     float: left;
     flex: 50%;
