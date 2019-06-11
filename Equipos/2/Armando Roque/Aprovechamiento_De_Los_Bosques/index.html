@@ -23,17 +23,19 @@
         <link href="assets/css/app.css" rel="stylesheet">
         <link href="assets/css/progress.css" rel="stylesheet">
         <link href="assets/css/progreso.css" rel="stylesheet">
+        <link href="assets/css/welcome-text.css" rel="stylesheet">
 
     </head>
 
     <body class="header-info side-nav-dark">
         <div class="app">
             <div class="layout">
+                
                 <!-- Side Nav START -->
                 <div class="side-nav" id="sideNav">
                     <div class="side-nav-inner">
                         <div class="side-nav-logo">
-                            <a href="index.html">
+                            <a href="http://www.centroscomunitariosdeaprendizaje.org.mx/" target="_blank">
                                 <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
                                 <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')"></div>
                             </a>
@@ -53,22 +55,14 @@
                                     <span class="title">Inicio</span>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle" href="javascript:void(0);">
+                            <li class="nav-item active">
+                                <a href="html/introduccion.html">
                                     <span class="icon-holder">
-                                        <i class="ei-tools"></i>
+                                        <i class="ei-foggy"></i>
                                     </span>
-                                    <span class="title">Metodología</span>
-                                    <span class="arrow">
-                                        <i class="ti-angle-right"></i>
-                                    </span>
+                                    <span class="title">Introducción</span>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="html/metodologia/metas_curso.html" class="side-index-general">Metas del curso</a>
-                                    </li>
-                                </ul>
-                            </li> 
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="javascript:void(0);">
                                     <span class="icon-holder">
@@ -280,7 +274,13 @@
                                             </div>
                                         </div>
                                         <div class="card-block">
-                                            <h1 class="card-title">¡Bienvenido al curso!</h1>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="welcome-text">
+                                                            <div data-text="¡Bienvenido al curso!"class="dashed-shadow sorta">¡Bienvenido al curso!</div> 
+                                                    </div>   
+                                                </div>
+                                            </div>
                                             <p>El curso <b>Aprovechamiento de los Bosques</b> está distribuido en 4 módulos. Es importante que le dediques como mínimo 1 hora diraria.</p>
                                             <p>Además, podrás acceder los <b>365 días</b> del año, las <b>24 hrs.</b> del día, haciéndolo totalmente flexible, así que podrás: revisar, practicar cuantas veces quieras, desde donde quieras y en el horario que tu elijas.</p>
                                             <p>Nuestro modelo educativo en línea promueve un aprendizaje autónomo, donde deberás estudiar los contenidos y realizar las actividades que te ayudarán a conocer los conceptos y reflexionar sobre ellos para posteriormente aplicarlos en tu vida diaria.</p>
@@ -289,7 +289,7 @@
                                             <div class="row text-center">
                                                 <div class="col">
                                                     <div class="mrg-top-40">
-                                                        <a href="html/metodologia/metas_curso.html" class="btn btn-info no-mrg-btm">Adelante</a>
+                                                        <a href="html/introduccion.html" class="btn btn-info no-mrg-btm">Adelante</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -336,11 +336,13 @@
 
         <script src="assets/js/progressbar.js"></script>
 
+
         <!-- endbuild -->
 
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="assets/js/app.js"></script>
+        
 
         <script src="./assets/js/progreso.js"></script>
         <!--Aqui se pone el porcentaje completado,se puedo pasar como una division de (numero de paginas/total de paginas)-->

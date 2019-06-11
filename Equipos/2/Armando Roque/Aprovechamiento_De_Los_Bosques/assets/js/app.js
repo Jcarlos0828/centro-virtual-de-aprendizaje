@@ -167,8 +167,8 @@
 
 
 	function init() {
-	    sideNav();
-	    sideNavToggle();
+		sideNav();
+		sideNavToggle();
 	    sidePanelToggle();
 	    chatToggle();
 	    todoToggle();
