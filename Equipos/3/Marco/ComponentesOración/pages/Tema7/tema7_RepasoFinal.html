@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Componentes de una oración | CVA - Centro Virtual de Aprendizaje</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../../assets/images/logo/favicon.png">
+
+        <!-- plugins css -->
+        <link rel="stylesheet" href="../../assets/vendors/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../../assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+        <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+        <!-- page plugins css -->
+
+        <!-- core css -->
+        <link href="../../assets/css/ei-icon.css" rel="stylesheet">
+        <link href="../../assets/css/themify-icons.css" rel="stylesheet">
+        <link href="../../assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../assets/css/animate.min.css" rel="stylesheet">
+        <link href="../../assets/css/app.css" rel="stylesheet">
+
+        <!-- mi stylesheet custom -->
+        <link rel="stylesheet" href="../../misEstilos/styleCursos.css">
+        <link rel="stylesheet" href="../../misEstilos/w3.css">
+        <link href="../../assets/css/progress.css" rel="stylesheet">
+
+        <script src="../../misEstilos/myJs.js"></script>
+        
+        
+        <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
+
+<script language="JavaScript">
+<!--
+var respuestas = new Array();
+var vacia = true;
+var correctas = 0;
+var numpreg = 0;
+
+function valida(){
+vacia = false;
+	//pregunta 1
+	if(document.forma.preg1.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 1");
+		vacia= true;
+		document.location.href="#1";
+	}
+	//pregunta 2
+	if(document.forma.preg2.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 2");
+		vacia= true;
+		document.location.href="#2";
+	}
+	//pregunta 3
+	if(document.forma.preg3.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 3");
+		vacia= true;
+		document.location.href="#3";
+	}
+	//pregunta 4
+	if(document.forma.preg4.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 4");
+		vacia= true;
+		document.location.href="#4";
+	}
+	//pregunta 5
+	if(document.forma.preg5.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 5");
+		vacia= true;
+		document.location.href="#5";
+	}
+	//pregunta 6
+	if(document.forma.preg6.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 6");
+		vacia= true;
+		document.location.href="#6";
+	}
+	//pregunta 7
+	if(document.forma.preg7.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 7");
+		vacia= true;
+		document.location.href="#7";
+	}
+	//pregunta 8
+	if(document.forma.preg8.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 8");
+		vacia= true;
+		document.location.href="#8";
+	}
+	//pregunta 9
+	if(document.forma.preg9.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 9");
+		vacia= true;
+		document.location.href="#9";
+	}
+	//pregunta 10
+	if(document.forma.preg10.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 10");
+		vacia= true;
+		document.location.href="#10";
+	}
+	//pregunta 11
+	if(document.forma.preg11.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 11");
+		vacia= true;
+		document.location.href="#11";
+	}
+	//pregunta 12
+	if(document.forma.preg12.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 12");
+		vacia= true;
+		document.location.href="#12";
+	}
+	if(!vacia){
+		document.forma.submit();
+	}
+}
+//-->
+</script>
+    </head>
+
+<body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                <!-- Side Nav START -->
+                <div class="side-nav">
+                    <div class="side-nav-inner">
+                        <div class="side-nav-logo">
+                            <a href="../../index.html">
+                                <div class="logo logo-dark" style="background-image: url('../../assets/images/logo/logo.png')"></div>
+                                <div class="logo logo-white"
+                                    style="background-image: url('../../assets/images/logo/logo.png'); width: 100%"></div>
+                            </a>
+                            <div class="mobile-toggle side-nav-toggle">
+                                <a href="">
+                                    <i class="ti-arrow-circle-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="side-nav-menu scrollable">
+                            <li class="nav-item active">
+                                <a class="mrg-top-30" href="../../index.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-home"></i>
+                                    </span>
+                                    <span class="title">Bienvenida</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Introducción/introduccion_1.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-text"></i>
+                                    </span>
+                                    <span class="title">Introducción</span>
+                                </a>
+                            </li>
+                
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);">
+                                    <span class="icon-holder">
+                                        <i class="ti-view-list-alt"></i>
+                                    </span>
+                                    <span class="title">Módulos</span>
+                                    <span class="arrow">
+                                        <i class="ti-angle-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../Tema1/tema1_1.html">Tema 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema2/tema2_1.html">Tema 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema3/tema3_1.html">Tema 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema4/tema4_1.html">Tema 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema5/tema5_1.html">Tema 5</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema6/tema6_1.html">Tema 6</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Tema7/tema7_1.html">Tema 7</a>
+                                    </li>
+                                </ul>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Metodología/metodología.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-globe"></i>
+                                    </span>
+                                    <span class="title">Políticas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="#">
+                                    <span class="icon-holder">
+                                        <i class="ei-email"></i>
+                                    </span>
+                                    <span class="title">Contáctanos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="../Creditos/Creditos.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-info-alt"></i>
+                                    </span>
+                                    <span class="title">Créditos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Side Nav END -->
+
+                <!-- Page Container START -->
+                <div class="page-container">
+                    <!-- Header START -->
+                    <div class="header navbar">
+                        <div class="header-container">
+                            <ul class="nav-left">
+                                <li>
+                                    <a class="side-nav-toggle" href="javascript:void(0);">
+                                        <i class="ti-view-grid"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-right">
+                                <li>
+                                    <a href="#">
+                                        <img src="../../assets/images/logo/tec-logo.png" height="30">
+                                    </a>
+                                </li>
+                            </ul>
+                
+                        </div>
+                    </div>
+                    <!-- Header END -->
+                
+                    <!-- Content Wrapper START -->
+                    <div class="main-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="overlay-dark bg" style="
+                                                  background-image: url('../../imagenes/technology-1095751_1920.jpg');
+                                                  height: 150px;
+                                                  background-attachment: fixed;
+                                                  background-position: center;
+                                                  background-repeat: no-repeat;
+                                                  background-size: cover;">
+                                            <div class="card-block">
+                                                <div class="mrg-top-35">
+                                                    <div class="tag tag-primary">Educación</div>
+                                                    <h1>Componentes de una oración</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="card-block">
+                
+                                            <h2 style="text-align: center">Ejercicios de Repaso</h2>
+
+                                            <br>
+                
+                
+                                            <p style="text-align: center">
+                                                Para finalizar este tema te invitamos a realizar las siguientes actividades para reafirmar los concimientos adquiridos.
+                                            </p>
+                
+                                            <!--Actividad-->
+                                            <table width="93%" border="0" cellspacing="1" cellpadding="4" align="center">
+  
+  <tr> 
+    <td class="bk_blanco" height="200" valign="top"> 
+      <h2>Descripci&oacute;n:</h2>
+      <p class="txtjust12px20sp">Esta &uacute;ltima secci&oacute;n del curso te 
+        permitir&aacute; observar los temas en los cuales tu autoaprendizaje ha 
+        sido m&aacute;s significativo, como tambi&eacute;n en los que requieres 
+        mejorar.</p>
+      <h2>Instrucciones: </h2>
+      <table width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr valign="middle"> 
+          <td width="5%" > 
+            <p><b> 1. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Lee el texto abajo presentado.</p>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td width="5%" > 
+            <p><b> 2. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Contesta las preguntas; los n&uacute;meros entre par&eacute;ntesis 
+              fueron colocados con el prop&oacute;sito de ayudarte a localizar 
+              m&aacute;s f&aacute;cilmente la informaci&oacute;n que se te pide 
+              en el cuestionario.</p>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td width="5%" > 
+            <p><b> 3. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Escribe la respuesta correcta en el rect&aacute;ngulo tal como 
+              aparece en el texto, respeta la acentuaci&oacute;n.</p>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td width="5%" > 
+            <p><b> 4. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Al finalizar el ejercicio conoce las respuestas correctas haciendo 
+              clic en el bot&oacute;n <b>Revisar</b>.</p>
+          </td>
+        </tr>
+        <tr valign="middle"> 
+          <td width="5%" >&nbsp;</td>
+          <td width="95%" >&nbsp;</td>
+        </tr>
+        <tr valign="middle"> 
+          <td width="5%" >&nbsp;</td>
+          <td width="95%" ><b class="textocolor1"><i>Notas:</i></b><i> <br>
+            <b>1. </b>El n&uacute;mero que aparece en el par&eacute;ntesis corresponde 
+            a la ubicaci&oacute;n del p&aacute;rrafo en el texto.<br>
+            <b>2.</b> Usa las ligas que se proveen en cada pregunta para ir al 
+            texto que se te pide consultar, usa la opci&oacute;n regresar para 
+            volver a la pregunta que est&aacute;s contestando.</i></td>
+        </tr>
+      </table>
+      <form name="forma" method="get" action="ejercicio_repaso_ans.htm">
+        <table width="97%" border="0" cellspacing="1" cellpadding="6" align="center">
+          <tr> 
+            <td align="center" class="fondo10"> 
+              <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td class="fondo1"> 
+                    <p align="center"><b><a name="t0"></a>Por falta de un clavo 
+                      de herradura</b><br>
+                      <i>Adaptaci&oacute;n de un texto de James Baldwin </i></p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t1"></a>(1)</b> El 
+                      rey Ricardo se preparaba para la batalla de su vida. Un 
+                      ej&eacute;rcito conducido por Enrique, conde de Richmond, 
+                      marchaba contra &eacute;l. El combate decidir&iacute;a qui&eacute;n 
+                      gobernar&iacute;a Inglaterra.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t2"></a>(2)</b> La 
+                      ma&ntilde;ana de la batalla, Ricardo envi&oacute; a un mozo 
+                      a comprobar si su caballo favorito estaba preparado.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t3"></a>(3)</b> -Ponle 
+                      pronto las herraduras -le dijo el mozo al herrero-. El rey 
+                      desea cabalgar al frente de sus tropas.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t4"></a>(4) </b>-Tendr&aacute;s 
+                      que esperar -respondi&oacute; el herrero-. En estos d&iacute;as 
+                      he herrado a todo el ej&eacute;rcito del rey, y ahora debo 
+                      conseguir m&aacute;s hierro.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t5"></a>(5)</b> -No 
+                      puedo esperar -grit&oacute; el mozo con impaciencia-. Los 
+                      enemigos del rey avanzan, y debemos enfrentarlos en el campo. 
+                      Arr&eacute;glate con lo que tengas.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t6"></a>(6)</b> El 
+                      herrero puso manos a la obra. Con una barra de hierro hizo 
+                      cuatro herraduras. Las martill&oacute;, las molde&oacute; 
+                      y las adapt&oacute; a los cascos del caballo. Luego empez&oacute; 
+                      a clavarlas. Pero despu&eacute;s de clavar tres herraduras, 
+                      descubri&oacute; que no ten&iacute;a suficientes clavos 
+                      para la cuarta.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t7"></a>(7)</b> -Necesito 
+                      un par de clavos m&aacute;s -dijo-, y me llevar&aacute; 
+                      un tiempo sacarlos de otro lado.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t8"></a>(8)</b> -Te 
+                      he dicho que no pod&iacute;a esperar -dijo el impaciente 
+                      mozo. Ya oigo las trompetas. &iquest;No puedes apa&ntilde;arte 
+                      con lo que tienes?</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t9"></a>(9)</b> -Puedo 
+                      poner la herradura, pero no quedar&aacute; tan firme como 
+                      las otras.</p>
+                    <p class="txtjust12px20sp"><b><a name="t10"></a>(10)</b> -&iquest;Aguantar&aacute;? 
+                      -pregunt&oacute; el mozo. </p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t11"></a>(11)</b> -Tal 
+                      vez, pero no puedo asegur&aacute;rtelo.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t12"></a>(12)</b> -Pues 
+                      cl&aacute;vala -exclam&oacute; el mozo-. Y deprisa, o el 
+                      rey Ricardo se enfadar&aacute; con los dos.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t13"></a>(13)</b> Los 
+                      ej&eacute;rcitos chocaron, y Ricardo estaba en lo m&aacute;s 
+                      fiero del combate. Cabalgaba de aqu&iacute; para all&aacute;, 
+                      alentando a sus hombres y luchando contra sus enemigos.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t14"></a>(14)</b> -&iexcl;Adelante, 
+                      adelante! -gritaba, lanzando sus tropas contra las l&iacute;neas 
+                      de Enrique.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t15"></a>(15)</b> A 
+                      lo lejos, del otro lado del campo, vio que algunos de sus 
+                      hombres retroced&iacute;an. Si otros los ve&iacute;an, tambi&eacute;n 
+                      se retirar&iacute;an. Ricardo espole&oacute; su caballo 
+                      y galop&oacute; hacia la l&iacute;nea rota, ordenando a 
+                      sus soldados que regresaran a la batalla.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><<!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t16"></a>(16)</b> Estaba 
+                      en medio del campo cuando el caballo perdi&oacute; una herradura. 
+                      El caballo tropez&oacute; y rod&oacute;, y Ricardo cay&oacute; 
+                      al suelo.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t17"></a>(17)</b> Antes 
+                      que el rey pudiera tomar las riendas, el asustado animal 
+                      se levant&oacute; y ech&oacute; a correr. Ricardo mir&oacute; 
+                      en derredor. Vio que sus soldados daban media vuelta y hu&iacute;an, 
+                      y las tropas de Enrique lo rodeaban.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t18"></a>(18)</b> Agit&oacute; 
+                      la espada en el aire.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t19"></a>(19)</b> -&iexcl;Un 
+                      caballo! -grit&oacute;-. &iexcl;Un caballo! &iexcl;Mi reino 
+                      por un caballo!</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t20"></a>(20)</b> Pero 
+                      no hab&iacute;a ning&uacute;n caballo para &eacute;l. Su 
+                      ej&eacute;rcito se hab&iacute;a desbandado, y sus tropas 
+                      s&oacute;lo pensaban en salvarse. Poco despu&eacute;s los 
+                      soldados de Enrique se abalanzaron sobre &eacute;l, y la 
+                      batalla termin&oacute;.</p>
+                    <!-- #BeginLibraryItem "/Library/regresar.lbi" --><!-- #EndLibraryItem --> 
+                    <p class="txtjust12px20sp"><b><a name="t21"></a>(21)</b> Y 
+                      desde esos tiempos, la gente dice:</p>
+                    <p align="center">Por falta de un clavo se perdi&oacute; una 
+                      herradura,<br>
+                      por falta de una herradura, se perdi&oacute; un caballo,<br>
+                      por falta de un caballo, se perdi&oacute; una batalla,<br>
+                      por falta de una batalla, se perdi&oacute; un reino,<br>
+                      y todo por falta de un clavo de herradura.<br>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              
+            </td>
+          </tr>
+          <tr> 
+            <td class="bk_blanco">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td class="fondo6"><b class="textoblanco_bold">Cuestionario</b></td>
+          </tr>
+          <tr> 
+            <td align="center">
+<table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="fondo7"> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="5">
+                      <tr valign="middle" align="center"> 
+                        <td class="fondo3" width="57%" ><b>Preguntas</b></td>
+                        <td class="fondo3" width="43%" ><b>Haz clic dentro del 
+                          recuadro para escribir</b></td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="1"></a>1.</b> 
+                            Los 2 sustantivos que aparecen en el <a href="#t0">t&iacute;tulo</a>.</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" > 
+                          <textarea name="preg1" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="2"></a>2.</b> 
+                            El primer sustantivo que aparece a partir del <a href="#t1">inicio 
+                            del texto</a> (sin incluir el t&iacute;tulo)</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg2" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="3"></a>3.</b> 
+                            En el <a href="#t5">p&aacute;rrafo 5</a> cu&aacute;l 
+                            es el verbo relacionado con los enemigos del rey (col&oacute;quelo 
+                            como est&aacute;, o sea, conjugado)</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg3" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="4"></a>4.</b> 
+                            En el <a href="#t16">p&aacute;rrafo 16</a> cu&aacute;les 
+                            son los verbos relacionados con el caballo del rey 
+                            (col&oacute;quelos como est&aacute;n, o sea, conjugados)</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg4" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="5"></a>5.</b> 
+                            En el <a href="#t2">p&aacute;rrafo 2</a> cu&aacute;l 
+                            es el adjetivo relacionado con el caballo del rey 
+                            Ricardo.</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg5" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="6"></a>6.</b> 
+                            En el <a href="#t15">p&aacute;rrafo 15</a> s&oacute;lo 
+                            hay un adjetivo �cu&aacute;l es?</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg6" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="7"></a>7.</b> 
+                            Cu&aacute;les son los art&iacute;culos indeterminados 
+                            que aparecen en el poema (al final de todo el texto)</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg7" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="8"></a>8.</b> 
+                            Cu&aacute;les son los art&iacute;culos determinados 
+                            presentes en el <a href="#t13">p&aacute;rrafo 13</a></p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg8" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="9"></a>9.</b> 
+                            Cu&aacute;l es el &uacute;nico adverbio de lugar del 
+                            <a href="#t15">p&aacute;rrafo 15</a>.</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg9" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="10"></a>10.</b> 
+                            Cu&aacute;l es el &uacute;nico adverbio de cantidad 
+                            del <a href="#t17">p&aacute;rrafo 17</a>.</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg10" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" > 
+                          <p class="txtjust12px20sp"><b><a name="11"></a>11.</b> 
+                            En el <a href="#t20">p&aacute;rrafo 20</a> hay un 
+                            pronombre personal, en qu&eacute; persona est&aacute; 
+                            (primera, segunda o tercera) y su n&uacute;mero (singular 
+                            o plural)</p>
+                        </td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg11" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                      <tr valign="middle"> 
+                        <td class="bk_blanco" width="57%" ><b><a name="12"></a>12.</b> 
+                          Las &uacute;nicas 2 preposiciones que est&aacute;n escritas 
+                          en el poema (al final del texto)</td>
+                        <td class="bk_blanco" align="center" width="43%" >
+                          <textarea name="preg12" wrap="VIRTUAL" cols="20" rows="2"></textarea>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr> 
+            <td align="center"> 
+              <input type="button" name="Button" value="Revisar" onClick="valida();">
+            </td>
+          </tr>
+        </table>
+      </form>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> </td>
+  </tr>
+</table>
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+                
+
+                                    <!-- Termina el contenido de la página -->
+
+                                    <br>
+                                    
+                                    <nav aria-label="..." style="text-align: center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link" href="tema7_2.html#intro" tabindex="-1">Anterior</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="tema7_1.html#intro">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="tema7_2.html#intro">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="tema7_3.html#intro">3</a></li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">Repaso Final <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            
+                                            <li class="page-item ">
+                                                <a class="page-link" href="cursoCompletado.html">Fin del curso</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    
+                                    <br>
+                                    
+                                    <br>
+
+                                    </div>
+
+                                    <br>
+
+
+                                </div>
+                              </div>
+                          </div>
+
+
+                            <div class="card widget-feed">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+                                        <p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:</p>
+                                        <div class="w3-light-grey w3-round-xlarge">
+                                            <div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width:10%"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="feed-subtitle" style="text-align: center; padding: 15px 0px 0px 0px;">Total del Curso:</p>
+                                        <div id="progreso"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                          </div>
+                      </div>
+                      <!-- Content Wrapper END -->
+
+                    <!-- Footer START -->
+                    <footer class="content-footer">
+                        <div class="footer">
+                            <div class="row">
+                                <div class="col-8">
+                                    <p>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito.</p>
+                                    <p>D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019.</p>
+                                </div>
+                                <div class="col-4 center align-self-center">
+                                    <a href="http://videolabtec.itesm.mx/aviso-legal" target="_blank">Aviso Legal</a>
+                                    <span><b>|</b></span>
+                                    <a href="https://tec.mx/es/avisos-de-privacidad" target="_blank">Aviso de Privacidad</a>
+                                    <span><b>|</b></span>
+                                    <a href="../Creditos/Creditos.html">Créditos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- Footer END -->
+
+                  </div>
+                  <!-- Page Container END -->
+                </div>
+        </div>
+
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="../../assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="../../assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../../assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../../assets/vendors/PACE/pace.min.js"></script>
+        <script src="../../assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js assets/js/app.min.js -->
+        <!-- core js -->
+        <script src="../../assets/js/app.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
+        
+        <!-- Aquí se escribe el porcentaje del progreso global, la función show está defnida en el archivo de progres.js-->
+        <script type="text/javascript">show(32/32)</script>
+        <!-- endbuild -->
+        
+        <!-- Insert your dependencies here -->
+        <script>
+            function moveProgressBar(progPorcent) {
+                if (progPorcent === undefined) {
+                    progPorcent = 0;
+                }
+                var elem = document.getElementById("myBar");
+                var width = 0;
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (width >= progPorcent) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                        elem.innerHTML = width.toString() + '%';
+                    }
+                }
+            }
+        </script>
+        <!-- Aquí ya se ejecuta la función de la progressbar y se le pasa el parámetro -->
+        <script type="text/javascript">moveProgressBar((3/3)*100)</script>
+
+    </body>
+</html>

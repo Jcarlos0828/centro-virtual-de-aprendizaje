@@ -35,6 +35,155 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 -->
+
+<script language="JavaScript">
+<!--
+var respuestas = new Array();
+var vacia = true;
+var correctas = 0;
+var numpreg = 0;
+
+function valida(){
+vacia = false;
+	//pregunta 1
+	if(document.forma.preg1.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 1");
+		vacia= true;
+		document.location.href="#1";
+	}else{
+		if(document.forma.preg1.value==2){
+			respuestas[0] = true;
+		}else{
+			respuestas[0] = false;
+		}
+	}
+	//pregunta 2
+	if(document.forma.preg2.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 2");
+		vacia= true;
+		document.location.href="#2";
+	}else{
+		if(document.forma.preg2.value==3){
+			respuestas[1] = true;
+		}else{
+			respuestas[1] = false;
+		}
+	}
+	//pregunta 3
+	if(document.forma.preg3.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 3");
+		vacia= true;
+		document.location.href="#3";
+	}else{
+		if(document.forma.preg3.value==4){
+			respuestas[2] = true;
+		}else{
+			respuestas[2] = false;
+		}
+	}
+	//pregunta 4
+	if(document.forma.preg4.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 4");
+		vacia= true;
+		document.location.href="#4";
+	}else{
+		if(document.forma.preg4.value==2){
+			respuestas[3] = true;
+		}else{
+			respuestas[3] = false;
+		}
+	}
+	//pregunta 5
+	if(document.forma.preg5.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 5");
+		vacia= true;
+		document.location.href="#5";
+	}else{
+		if(document.forma.preg5.value==1){
+			respuestas[4] = true;
+		}else{
+			respuestas[4] = false;
+		}
+	}
+	//pregunta 6
+	if(document.forma.preg6.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 6");
+		vacia= true;
+		document.location.href="#6";
+	}else{
+		if(document.forma.preg6.value==4){
+			respuestas[5] = true;
+		}else{
+			respuestas[5] = false;
+		}
+	}
+	//pregunta 7
+	if(document.forma.preg7.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 7");
+		vacia= true;
+		document.location.href="#7";
+	}else{
+		if(document.forma.preg7.value==2){
+			respuestas[6] = true;
+		}else{
+			respuestas[6] = false;
+		}
+	}
+	//pregunta 8
+	if(document.forma.preg8.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 8");
+		vacia= true;
+		document.location.href="#8";
+	}else{
+		if(document.forma.preg8.value==3){
+			respuestas[7] = true;
+		}else{
+			respuestas[7] = false;
+		}
+	}
+	//pregunta 9
+	if(document.forma.preg9.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 9");
+		vacia= true;
+		document.location.href="#9";
+	}else{
+		if(document.forma.preg9.value==1){
+			respuestas[8] = true;
+		}else{
+			respuestas[8] = false;
+		}
+	}
+	//pregunta 10
+	if(document.forma.preg10.value==0 && !vacia){
+		alert("Falta de contestar la Pregunta 10");
+		vacia= true;
+		document.location.href="#10";
+	}else{
+		if(document.forma.preg10.value==2){
+			respuestas[9] = true;
+		}else{
+			respuestas[9] = false;
+		}
+	}
+	if(!vacia){
+		evaluar();
+		document.forma.submit();
+	}
+}
+function evaluar(){
+	correctas = 0;
+	numpreg = 0;
+	for(i=0;i<=(respuestas.length)-1;i++){
+		if(respuestas[i]){
+			correctas++;
+		}
+		numpreg++;
+	}
+	document.forma.correctas.value = correctas;
+	document.forma.totpreguntas.value = numpreg;
+}
+//-->
+</script>
     </head>
 
 <body class="header-info side-nav-dark">
@@ -196,179 +345,272 @@
                                     
                                     <!-- Actividad 1 -->
                                     
-                                    <form class="card widget-feed col-lg-12">
-                                        <h1 class="feed-title">Actividad 1</h1>
-                                        <h3 class="feed-subtitle">Descripción:</h3>
-                                        <p>Con base en tu previa observación y reflexión: determina el <strong>género</strong> y <strong>número</strong> de
-                                            los siguientes <strong>sustantivos</strong>.</p>
+                                    <div class="card widget-feed">
+                                        <div class="row">
+                                            <div class="col-lg-12">
                                     
-                                        <div class="feed-body form-group pregunta_1">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 1</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="correct">
-                                                        <label class="form-check-label" for="p1_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="incorrect">
-                                                        <label class="form-check-label" for="p1_1">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_1" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group pregunta_2">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 2</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_1" value="correct">
-                                                        <label class="form-check-label" for="p2_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_2" value="correct">
-                                                        <label class="form-check-label" for="p2_2">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_3" value="incorrect">
-                                                        <label class="form-check-label" for="p2_3">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_2" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="form-group pregunta_3">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 3</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="respuesta" placeholder="0" step=".01">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_3" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    
-                                    <!--Actividad 2-->
-                                    
-                                    <form class="card widget-feed col-lg-12">
-                                        <h1 class="feed-title">Actividad 2</h1>
-                                        <h3 class="feed-subtitle">Descripción:</h3>
-                                        <p>Con base en tu previa observación y reflexión: determina el <strong>género</strong> y <strong>número</strong> de
-                                            los siguientes <strong>sustantivos</strong>.</p>
-                                    
-                                        <div class="feed-body form-group pregunta_1">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 1</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="correct">
-                                                        <label class="form-check-label" for="p1_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="incorrect">
-                                                        <label class="form-check-label" for="p1_1">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_1" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group pregunta_2">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 2</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_1" value="correct">
-                                                        <label class="form-check-label" for="p2_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_2" value="correct">
-                                                        <label class="form-check-label" for="p2_2">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_3" value="incorrect">
-                                                        <label class="form-check-label" for="p2_3">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_2" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="form-group pregunta_3">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 3</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="respuesta" placeholder="0" step=".01">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_3" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                                <h1 class="feed-title">Actividad</h1>
+
+                                                <table width="95%" border="0" cellspacing="1" cellpadding="4" align="center">
+                                                   
+                                                    <tr>
+                                                        <td class="bk_blanco" height="200" valign="top">
+                                                            <h2>Descripci&oacute;n:</h2>
+                                                            <p class="txtjust12px20sp">Con base en tu previa observaci&oacute;n y reflexi&oacute;n,
+                                                                <b>identifica</b> qu&eacute; tipo de <b>adjetivo</b> se incluye en cada
+                                                                una de las oraciones.</p>
+                                                            <h2>Instrucciones: </h2>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                                                                <tr valign="middle">
+                                                                    <td width="5%">
+                                                                        <p><b> 1. </b></p>
+                                                                    </td>
+                                                                    <td width="95%">
+                                                                        <p> Lee atentamente cada oraci&oacute;n. </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr valign="middle">
+                                                                    <td width="5%">
+                                                                        <p><b> 2. </b></p>
+                                                                    </td>
+                                                                    <td width="95%">
+                                                                        <p> Identifica el tipo de adjetivo que se incluye en el enunciado.
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr valign="middle">
+                                                                    <td width="5%">
+                                                                        <p><b> 3. </b></p>
+                                                                    </td>
+                                                                    <td width="95%">
+                                                                        <p> Haz clic en la punta de la flecha para seleccionar una opci&oacute;n.
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr valign="middle">
+                                                                    <td width="5%">
+                                                                        <p><b> 4. </b></p>
+                                                                    </td>
+                                                                    <td width="95%">
+                                                                        <p> Elige la respuesta que consideres correcta. </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr valign="middle">
+                                                                    <td width="5%">
+                                                                        <p><b> 5. </b></p>
+                                                                    </td>
+                                                                    <td width="95%">
+                                                                        <p> Al finalizar el ejercicio conoce las respuestas correctas dando
+                                                                            clic en el bot&oacute;n <b>Revisar</b>.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <form name="forma" method="get" action="act1_ans.htm">
+                                                                <input type="hidden" name="correctas">
+                                                                <input type="hidden" name="totpreguntas">
+                                                                <table width="95%" border="0" cellspacing="1" cellpadding="5" align="center">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <table width="540" border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="fondo6">
+                                                                                        <table width="500" border="0" cellspacing="1" cellpadding="5" align="center">
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="1"></a>1. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> El libro es <b>interesante</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg1">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="2"></a>2. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> Los cuadernos son <b>m&iacute;os</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg2">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="3"></a>3. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> Me tom&eacute; <b>medio</b> litro de leche. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg3">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="4"></a>4. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> El Cerro de la Silla es <b>grande</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg4">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="5"></a>5. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> <b>Estos</b> son los juguetes. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg5">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="6"></a>6. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> S&oacute;lo utiliza <b>un cuarto</b> de pintura.
+                                                                                                    </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg6">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="7"></a>7. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> Tu comida es <b>exquisita</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg7">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="8"></a>8. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> Las pinturas son <b>suyas</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg8">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="9"></a>9. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> <b>Esa</b> es la muñeca. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg9">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr valign="middle">
+                                                                                                <td class="fondo1" align="right" width="5%">
+                                                                                                    <p><b> <a name="10"></a>10. </b></p>
+                                                                                                </td>
+                                                                                                <td class="fondo1" width="70%">
+                                                                                                    <p> La ciudad debe de estar <b>limpia</b>. </p>
+                                                                                                </td>
+                                                                                                <td align="center" class="bk_blanco" width="25%">
+                                                                                                    <select name="preg10">
+                                                                                                        <option value="0">Seleccione</option>
+                                                                                                        <option value="1">Adjetivo demostrativo</option>
+                                                                                                        <option value="2">Adjetivo calificativo</option>
+                                                                                                        <option value="3">Adjetivo posesivo</option>
+                                                                                                        <option value="4">Adjetivo numeral</option>
+                                                                                                    </select>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <input type="button" name="Button" value="Revisar" onClick="valida();">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </form>
+                                                            <p>&nbsp;</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center"> </td>
+                                                    </tr>
+                                                </table>
+                                                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                    </tr>
+                                                </table>
 
                                     <!-- Termina el contenido de la página -->
 
@@ -396,6 +638,7 @@
 
                                 </div>
                               </div>
+                            </div>
 
 
                             <div class="card widget-feed">
@@ -417,6 +660,8 @@
 
                           </div>
                       </div>
+                    </div>
+                    </div>
                     <!-- Content Wrapper END -->
                     
                     <!-- Footer START -->

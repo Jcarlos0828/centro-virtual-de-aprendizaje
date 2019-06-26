@@ -1,0 +1,41 @@
+b {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold;}
+body {font-family: Verdana, Verdana, Arial, Helvetica, sans-serif;}
+div {font-family: Verdana, Arial, Helvetica, sans-serif}
+h1 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #660033}
+h2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #996633}
+h3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #CC9966}
+blockquote {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+i {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic}
+li {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+ol {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+p {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;; font-style: normal}
+table {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+td {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+tr {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+h4 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #000066}
+h5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #333399}
+h6 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #D58000 }
+.txtjust12px20sp { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; text-align: justify; line-height: 17px}
+.bk_blanco {  background-color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif}
+a {  font-family: Verdana, Arial, Helvetica, sans-serif; color: #753A00}
+.fondo1 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #fff8e6}
+.letra_gde1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: normal; color: #B65701; font-style: normal}
+.textocolor1 {  font-family: Verdana, Arial, Helvetica, sans-serif; color: #996633}
+.fondo2 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #EBEBEB}
+.fondo3 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #CCCCCC}
+.fondo4 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #CC9900}
+.fondo5 {  background-color: #A45200}
+.fondo6 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #996633}
+.textoblanco_norm {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; color: #FFFFFF}
+.textoblanco_bold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; color: #FFFFFF ; font-weight: bold}
+.fondo7 {  font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #FFCC66}
+.textocolor2 { font-family: Verdana, Arial, Helvetica, sans-serif; color: #993300}
+.cuenta_pagina { font-family: Verdana, Arial, Helvetica, sans-serif; color: #993300 ; font-size: 11px; font-style: italic; font-weight: bold}
+.letra_18px { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px}
+.letra_16px { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px}
+.textocolor3 { font-family: Verdana, Arial, Helvetica, sans-serif; color: #656532}
+.pie_imagen { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px}
+.fondo8 { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #990000}
+.fondo9 { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #666666}
+.textocolor4 { font-family: Verdana, Arial, Helvetica, sans-serif; color: #006699}
+.fondo10 { font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #FF9933}

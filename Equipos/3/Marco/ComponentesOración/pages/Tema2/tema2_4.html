@@ -35,6 +35,37 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 -->
+
+<script language="JavaScript">
+<!--
+
+var respuestas = new Array();
+var vacia = true;
+var correctas = 0;
+var numpreg = 0;
+
+function valida(){
+vacia = false;
+	//pregunta 1
+	if(document.forma.preg1.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 1");
+		vacia= true;
+		//document.location.href="#1";
+	}
+	//pregunta 2
+	if(document.forma.preg2.value=="" && !vacia){
+		alert("Falta de contestar la Pregunta 2");
+		vacia= true;
+		//document.location.href="#2";
+	}
+	if(!vacia){
+		document.forma.submit();
+	}
+}
+
+//-->
+</script>
+
     </head>
 
 <body class="header-info side-nav-dark">
@@ -195,180 +226,136 @@
                                     </div>
                                     
                                     <!-- Actividad 1 -->
+
+                                    <div class="card widget-feed">
+                                        <div class="row">
+                                            <div class="col-lg-12">
                                     
-                                    <form class="card widget-feed col-lg-12">
-                                        <h1 class="feed-title">Actividad 1</h1>
-                                        <h3 class="feed-subtitle">Descripción:</h3>
-                                        <p>Con base en tu previa observación y reflexión: determina el <strong>género</strong> y <strong>número</strong> de
-                                            los siguientes <strong>sustantivos</strong>.</p>
+                                                <h1 class="feed-title">Actividad</h1>
+
+<table width="95%" border="0" cellspacing="1" cellpadding="4" align="center">
+
+  <tr> 
+    <td class="bk_blanco" height="200" valign="top"> 
+      <h2>Descripci&oacute;n:</h2>
+      <p class="txtjust12px20sp">Con base en tu previa observaci&oacute;n y reflexi&oacute;n, 
+        identifica los <b>sustantivos</b> o <b>nombres</b> que se duplican en 
+        el poema que aparecer&aacute; m&aacute;s adelante.</p>
+      <h2>Instrucciones: </h2>
+      <table width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr valign="top"> 
+          <td width="5%" > 
+            <p><b> 1. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Lee el poema. </p>
+          </td>
+        </tr>
+        <tr valign="top"> 
+          <td width="5%" > 
+            <p><b> 2. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Identifica cu&aacute;les son los <b>sustantivos</b> o <b>nombres</b> 
+              que se duplican. Hay uno que est&aacute; tanto en singular como 
+              en plural <i>(consid&eacute;ralo).</i></p>
+          </td>
+        </tr>
+        <tr valign="top"> 
+          <td width="5%" > 
+            <p><b> 3. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Escribe en los recuadros los sustantivos o nombres que consideres 
+              correctos. </p>
+          </td>
+        </tr>
+        <tr valign="top"> 
+          <td width="5%" > 
+            <p><b> 4. </b></p>
+          </td>
+          <td width="95%" > 
+            <p> Al finalizar la actividad conoce las respuestas correctas dando 
+              clic en el bot&oacute;n <b>Revisar</b> </p>
+          </td>
+        </tr>
+      </table>
+      <form name="forma" method="get" action="act2_ans.htm">
+        <table width="95%" border="0" cellspacing="1" cellpadding="5" align="center">
+          <tr> 
+            <td> 
+              <table width="400" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr> 
+                  <td class="fondo7"> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="5">
+                      <tr> 
+                        <td class="fondo1"> 
+                          <table width="350" border="0" cellspacing="1" cellpadding="5" align="center">
+                            <tr> 
+                              <td align="center"> 
+                                <p><b>Da por perdido ese d&iacute;a</b><br>
+                                  <i>George Eliot</i></p>
+                              </td>
+                            </tr>
+                            <tr> 
+                              <td> 
+                                <p>Si te sientas al ponerse el sol <br>
+                                  y cuentas los actos realizados <br>
+                                  y encuentras, al contar, <br>
+                                  un acto abnegado, una palabra,<br>
+                                  que alivi&oacute; el coraz&oacute;n de quien 
+                                  la ha o&iacute;do, <br>
+                                  una mirada afable <br>
+                                  que alumbrara como el sol lo que mirase, <br>
+                                  puedes considerarlo un d&iacute;a ganado.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="100%" border="0" cellspacing="1" cellpadding="5">
+                <tr> 
+                  <td width="60%">Escribe los <b>sustantivos</b> <b>duplicados</b> 
+                    que hayas identificado:</td>
+                  <td align="center" width="20%"> <b>1.</b> 
+                    <input type="text" name="preg1" maxlength="4" size="10">
+                  </td>
+                  <td align="center" width="20%"> <b>2.</b> 
+                    <input type="text" name="preg2" maxlength="4" size="10">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr> 
+            <td align="center"> 
+              <input type="button" name="Button" value="Revisar" onClick="valida();">
+            </td>
+          </tr>
+        </table>
+      </form>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> </td>
+  </tr>
+</table>
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
                                     
-                                        <div class="feed-body form-group pregunta_1">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 1</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="correct">
-                                                        <label class="form-check-label" for="p1_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="incorrect">
-                                                        <label class="form-check-label" for="p1_1">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_1" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group pregunta_2">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 2</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_1" value="correct">
-                                                        <label class="form-check-label" for="p2_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_2" value="correct">
-                                                        <label class="form-check-label" for="p2_2">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_3" value="incorrect">
-                                                        <label class="form-check-label" for="p2_3">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_2" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
                                     
-                                        <div class="form-group pregunta_3">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 3</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="respuesta" placeholder="0" step=".01">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_3" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    
-                                    <!--Actividad 2-->
-                                    
-                                    <form class="card widget-feed col-lg-12">
-                                        <h1 class="feed-title">Actividad 2</h1>
-                                        <h3 class="feed-subtitle">Descripción:</h3>
-                                        <p>Con base en tu previa observación y reflexión: determina el <strong>género</strong> y <strong>número</strong> de
-                                            los siguientes <strong>sustantivos</strong>.</p>
-                                    
-                                        <div class="feed-body form-group pregunta_1">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 1</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="correct">
-                                                        <label class="form-check-label" for="p1_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="radio" name="respuesta" id="p1_1" value="incorrect">
-                                                        <label class="form-check-label" for="p1_1">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_1" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group pregunta_2">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 2</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_1" value="correct">
-                                                        <label class="form-check-label" for="p2_1">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_2" value="correct">
-                                                        <label class="form-check-label" for="p2_2">Verdadero</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input type="checkbox" class="form-check-input" name="respuesta" id="p2_3" value="incorrect">
-                                                        <label class="form-check-label" for="p2_3">Falso</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_2" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="form-group pregunta_3">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h3> Pregunta 3</h3>
-                                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id porta metus, vel pretium augue.
-                                                        Proin nec metus nec neque vulputate auctor. Donec at interdum nulla, eu suscipit felis.<p></p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="number" name="respuesta" placeholder="0" step=".01">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <input type="button" class="btn btn-info btn-rounded pull-right" name="pregunta_3" value="Verificar">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
 
                                     <!-- Termina el contenido de la página -->
 
@@ -397,6 +384,7 @@
 
                                 </div>
                               </div>
+                            </div>
 
 
                             <div class="card widget-feed">
@@ -414,6 +402,8 @@
                                     </div>
                                 </div>
                             </div>
+                    </div>
+                    </div>
                     </div>
                     </div>
                     <!-- Content Wrapper END -->
