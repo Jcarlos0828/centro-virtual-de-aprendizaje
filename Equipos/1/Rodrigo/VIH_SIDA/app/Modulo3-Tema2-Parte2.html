@@ -1,550 +1,401 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <title>Modulo 3: Pronóstico de vida para las personas enfermas de SIDA | CVA - Centro Virtual de Aprendizaje</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <title>Síndrome de Inmunodeficiencia Adquirida: aspectos médicos y sociales</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/logo/favicon.png">
 
-    <!-- plugins css -->
-    <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
-    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+        <!-- plugins css -->
+        <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/vendors/PACE/themes/blue/pace-theme-minimal.css" />
+        <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
-    <!-- page plugins css -->
-    <!-- core css -->
-    <link href="assets/css/ei-icon.css" rel="stylesheet">
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="assets/css/app.css" rel="stylesheet">
-    <link href="assets/css/progress.css" rel="stylesheet">
-    <link href="assets/css/progreso.css" rel="stylesheet">
+        <!-- page plugins css -->
 
-</head>
+        <!-- core css -->
+        <link href="assets/css/ei-icon.css" rel="stylesheet">
+        <link href="assets/css/themify-icons.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+        <link href="assets/css/app.css" rel="stylesheet">
+		<link rel="stylesheet" href="../app/misEstilos/styleCursos.css">
+		<link rel="stylesheet" href="../app/misEstilos/w3.css">	
+		<link href="../app/assets/css/progress.css" rel="stylesheet">
+		<script src="../app/misEstilos/myJs.js"></script>
 
-<body class="header-info side-nav-dark">
-    <div class="app">
-        <div class="layout">
-            <!-- Side Nav START -->
-            <div class="side-nav" id="sideNav">
-                <div class="side-nav-inner">
-                    <div class="side-nav-logo">
-                        <a href="http://www.centroscomunitariosdeaprendizaje.org.mx/" target="_blank">
-                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')">
-                            </div>
-                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')">
-                            </div>
-                        </a>
-                        <div class="mobile-toggle side-nav-toggle">
-                            <a href="">
-                                <i class="ti-arrow-circle-left"></i>
+    </head>
+	
+    <body class="header-info side-nav-dark">
+          <div class="app">
+              <div class="layout">
+                  <!-- Side Nav START -->
+                  <div class="side-nav">
+                    <div class="side-nav-inner">
+                        <div class="side-nav-logo">
+                            <a href="../../index.html">
+                                <div class="logo logo-dark" style="background-image: url('../../assets/images/logo/logo.png')"></div>
+                                <div class="logo logo-white" style="background-image: url('../../assets/images/logo/logo.png'); width: 100%"></div>
                             </a>
+                            <div class="mobile-toggle side-nav-toggle">
+                                <a href="">
+                                    <i class="ti-arrow-circle-left"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!--Inician contenidos laterales-->
-                    <ul class="side-nav-menu scrollable">
-                        <li class="nav-item active">
-                            <a class="mrg-top-30" href="index.html">
-                                <span class="icon-holder">
-                                    <i class="ti-home"></i>
-                                </span>
-                                <span class="title">Bienvenida</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="introduccion.html">
-                                <span class="icon-holder">
-                                    <i class="ei-foggy"></i>
-                                </span>
-                                <span class="title">Introducción</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-                                    <i class="ti-agenda"></i>
-                                </span>
-                                <span class="title">Módulos</span>
-                                <span class="arrow">
-                                    <i class="ti-angle-right"></i>
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="temario.html" class="side-index-general">Temario</a>
-                                </li>
-                                <!-- Módulo 1 -->
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="javascript:void(0);">
-                                        <span class="title side-index-general">Módulo 1: Aspectos médicos del VIH/SIDA <br>biológico</span>
-                                        <span class="arrow">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="Modulo1-Index.html" class="side-index-general">
-                                                Presentación
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo1-Tema1.html" class="side-index-general">
-                                                Diferencia entre VIH y SIDA
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo1-Tema2.html" class="side-index-general">
-                                                Origen del SIDA
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <!-- Módulo 2 -->
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="javascript:void(0);">
-                                        <span class="title side-index-general">
-                                            Módulo 2: Transmisión, diagnóstico y síntomas de la vida de las personas con VIH/SIDA
-                                        </span>
-                                        <span class="arrow">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="Modulo2-Index.html" class="side-index-general">
-                                                Presentación
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo2-Tema1.html" class="side-index-general">
-                                                Formas de transmisión del VIH
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo2-Tema2.html" class="side-index-general">
-                                                Métodos de diagnóstico para la enfermedad
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo2-Tema3.html" class="side-index-general">
-                                                Síntomas de la enfermedad
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <!-- Módulo 3 -->
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="javascript:void(0);">
-                                        <span class="title side-index-general">Módulo 3: Tratamiento y pronóstico de la vida de las personas con VIH/SIDA</span>
-                                        <span class="arrow">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="Modulo3-Index.html" class="side-index-general">
-                                                Presentación
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo3-Tema1.html"
-                                               class="side-index-general">
-                                                Alternativas existentes para su tratamiento
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo3-Tema2.html" class="side-index-general">
-                                                Pronósticos de vida para las personas enfermas de SIDA
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <!-- Módulo 4 -->
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="javascript:void(0);">
-                                        <span class="title side-index-general">Módulo 4: Situación de la enfermedad y los derechos de las personas con VIH/SIDA</span>
-                                        <span class="arrow">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="Modulo4-Index.html" class="side-index-general">
-                                                Presentación
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo4.0-Tema1.html" class="side-index-general">
-                                                El SIDA en México, Estados Unidos, y el mundo
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo4-Tema2.html" class="side-index-general">
-                                                Derechos Civiles: discriminación social y laboral
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!--Módulo 5-->
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="javascript:void(0);">
-                                        <span class="title side-index-general">Módulo 5: Aspectos sociales sobre el cuidado de los pacientes</span>
-                                        <span class="arrow">
-                                            <i class="ti-angle-right"></i>
-                                        </span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="Modulo5-Index.html" class="side-index-general">
-                                                Presentación
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo5-Tema1.html" class="side-index-general">
-                                                Los cuidados del paciente portador del VIH/SIDA
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo5-Tema2.html" class="side-index-general">
-                                                Conciencia y prevención
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="Modulo5-Tema3.html" class="side-index-general">
-                                                Anexos
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item active">
-                            <a href="Politicas.html">
-                                <span class="icon-holder">
-                                    <i class="ei-preview"></i>
-                                </span>
-                                <span class="title">Políticas</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="Contactanos.html">
-                                <span class="icon-holder">
-                                    <i class="ei-email"></i>
-                                </span>
-                                <span class="title">Contáctanos</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="Creditos.html">
-                                <span class="icon-holder">
-                                    <i class="ti-info-alt"></i>
-                                </span>
-                                <span class="title">Créditos</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Side Nav END -->
-            <!-- Page Container START -->
-            <div class="page-container">
-                <!-- Header START -->
-                <div class="header navbar">
-                    <div class="header-container">
-                        <ul class="nav-left">
-                            <li>
-                                <a class="side-nav-toggle" href="javascript:void(0);">
-                                    <i class="ti-view-grid"></i>
+                        <ul class="side-nav-menu scrollable ps-container ps-theme-default" data-ps-id="21a7a030-981f-ba97-ce2c-858cf77ef819">
+                            <li class="nav-item active">
+                                <a class="mrg-top-30" href="index.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-home"></i>
+                                    </span>
+                                    <span class="title">Bienvenida</span>
                                 </a>
                             </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li>
-                                <a href="https://tec.mx/es" target="_blank">
-                                    <img src="assets/images/logo/tec-logo.png" height="45">
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);">
+                                    <span class="icon-holder">
+                                        <i class="ti-view-list-alt"></i>
+                                    </span>
+                                    <span class="title">Módulos</span>
+                                    <span class="arrow">
+                                        <i class="ti-angle-right"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu" style="display: none;">
+                                    <li>
+                                        <a href="Modulo1-Index.html">Módulo 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="Modulo2-Index.html">Módulo 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="Modulo3-Index.html">Módulo 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="Modulo4-Index.html">Módulo 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="Modulo5-Index.html">Módulo 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+							<li class="nav-item active">
+                                <a class="mrg-top" href="Modulo5-Tema3.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-globe"></i>
+                                    </span>
+                                    <span class="title">Anexos</span>
                                 </a>
                             </li>
-                        </ul>
-
+							<li class="nav-item active">
+                                <a class="mrg-top" href="Politicas.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-file-globe"></i>
+                                    </span>
+                                    <span class="title">Políticas</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="Contactanos.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-email"></i>
+                                    </span>
+                                    <span class="title">Contáctanos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="mrg-top" href="Creditos.html">
+                                    <span class="icon-holder">
+                                        <i class="ti-info-alt"></i>
+                                    </span>
+                                    <span class="title">Créditos</span>
+                                </a>
+                            </li>
+                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></ul>
                     </div>
                 </div>
-                <!-- Header END -->
-                <!-- Content Wrapper START -->
+                 
+                  <!-- Side Nav END -->
 
-                <div class="main-content">
-                    <div class="container-fluid">
+                  <!-- Page Container START -->
+                  <div class="page-container">
+                      <!-- Header START -->
+                      <div class="header navbar">
+                          <div class="header-container">
+                              <ul class="nav-left">
+                                  <li>
+                                      <a class="side-nav-toggle" href="javascript:void(0);">
+                                          <i class="ti-view-grid"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                              <ul class="nav-right">
+                                  <li>
+                                      <a href="#">
+                                          <img src="imagenes/tec-logo.png">
+                                      </a>
+                                  </li>
+                              </ul>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="mrg-top-5	">
-                                    <div class="col-lg-12">
-                                        <div class="card big-info">
-                                            <div class="cover-img overlay-dark bg" style="background-image:url(https://image.shutterstock.com/z/stock-photo-backgrounds-and-textures-nature-concept-rocks-and-minerals-577882531.jpg)">
-                                                <div class="card-block">
-                                                    <h1 class="card-title" style=font-size:30px>
-                                                        Pronóstico de vida para las
-                                                        personas enfermas de SIDA
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                          </div>
+                      </div>
+                      <!-- Header END -->
 
-                        </div>
+                      <!-- Content Wrapper START -->
+					  
+				<div class="main-content">
+					<div class="container-fluid">		
+						<div class="row">
+							<div class="col-md-12">
+									<div class="mrg-top-5	">
+										<div class="col-lg-12">
+											<div class="card big-info">
+												<div class="cover-img overlay-dark bg" style="background-image:url(https://image.shutterstock.com/z/stock-photo-backgrounds-and-textures-nature-concept-rocks-and-minerals-577882531.jpg)">
+													<div class="card-block">
+														<h4><div class="tag tag-danger">MÓDULO 3 - TEMA 2</div><h4>
+															<p><h1 style=font-size:30px><div class="tag tag-danger"> <b>Pronóstico de vida para las 
+															personas enfermas de SIDA</div></b></p></h1>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							     
+						</div>
+						
+						
+						<div class="row">
+								<div class="col-md-8">
+									<div class="pdd-top-75">
+										<div class="card">
+											<div class="card-horizon">
+												<div class="container-fluid">
+													<div class="pdd-vertical-30 pdd-horizon-25">
+													
+														<h3><b>Tratamiento antiretrovial (ARV) y pronóstico </b></h3>
+														
+														<h5>Desde mediados de la década de los 90, el uso de 
+														la Terapia Antiretroviral ha supuesto una mejora espectacular en el pronóstico de las personas con VIH. </h5>
+														
+														<div class="pdd-vertical-30">
 
-
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="pdd-top-75">
+															<h3> <b> Sin embargo, algunas investigaciones sobre el pronóstico de vida de las personas
+															que inician un tratamiento antiretroviral indican que existen cinco factores claves para determinar 
+															que se agrave la enfermedad en la persona o muera en un plazo de tres años, y estos son:</b></h3>
+															
+														</div>
+														
+														<div class="card" style="background-color:#80bfff;">
+															<div class="card-horizon">
+																<div class="container-fluid">
+																	<div class="pdd-vertical-30 pdd-horizon-25">
+																		
+																		<h5><b>1. Tener un recuento de CD4 por debajo de 200 viriones por mm3. en la sangre.</b></h5>
+																		<h5><b>2. Poseer una carga viral por encima de 100,000 en el momento de iniciar el tratamiento.</b></h5>
+																		<h5><b>3. Tener más de 50 años de edad.</b></h5>
+																		<h5><b>4. Ser usuario de drogas inyectables.</b></h5>
+																		<h5><b>5. Haber tenido una enfermedad definitoria de SIDA.</b></h5>
+																		
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+								<div class="col-md-4">
+									<div class="container-fluid">
+										<div id="sticker">
+											<div class="pdd-top-75 pdd-btm-150">
+												<div class="card" >
+													<div class="card-block" >
+														<h1>Glosario</h1>
+														<div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
+															<div class="panel panel-default">
+																<div class="panel-heading" role="tab" id="headingTwo" style="background-color:#0F9AED;">
+																	<h5 class="panel-title">
+																		<a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo" aria-expanded="false">
+																			<span>Secreciones prostáticas</span>
+																			<i class="icon ti-arrow-circle-down"></i>
+																			
+																		</a>
+																	</h5>
+																</div>
+																<div id="collapseTwo" class="collapse panel-collapse" role="tabpanel">
+																	<div class="panel-body">
+																		<p>
+																		Líquido alcalino que le da consistencia al semen.
+																		</p>
+																	</div>
+																</div>
+															</div>
+															
+															
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								
+								</div>			
+						</div>				
+								
+						
+						<div class="row">
+								<div class="col-md-8">
                                     <div class="card">
-                                        <div class="card-horizon">
-                                            <div class="container-fluid">
-                                                <div class="pdd-vertical-30 pdd-horizon-25">
+										<div class="card-horizon">
+											<div class="container-fluid">
+												<div class="pdd-vertical-30 pdd-horizon-25">
+													<h5>En Inglaterra, las muertes a causa 
+													de VIH han bajado de 1, 500 a 400 al año, gracias a 
+													los tratamientos antiretrovirales  Las muertes por 
+													SIDA que aún se producen en ese país suelen presentarse
+													en los pacientes a los que se les hace un diagnóstico 
+													tardío y por consecuencia, su sistema inmunológico se encuentra ya muy deteriorado.</h5>
+													
+													<h3> <b>Obviamente existen muchas otras causas para el deterioro de 
+													la salud aparte del VIH, por lo que el cambio de hábitos como:</b></h3>
+													
+													<h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Dejar de fumar.</h5>
+													<h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Hacer ejercicio regularmente.</h5>
+													<h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Llevar una dieta balanceada.</h5>
+													
+													
+													<div class="pdd-vertical-20">
+														<div class="card" style="background-color:#ff99dd;">
+															<div class="card-block">
+																<h3><b>La información que ha conocido hasta el momento resulta de gran
+																importancia para poder crear conciencia en las personas sobre la trascendencia
+																de la enfermedad y así poder prevenirla.</b></h3>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="pdd-btm-30">
+													<center>
+														<a class="button" href="Modulo4-Index.html">Módulo 4</a>
+													</center>
+												</div>
+											</div>
+										</div>
+										<div class="pdd-vertical-30">
+											<nav aria-label="..." style="text-align: center">
+												<ul class="pagination justify-content-center">
+													<li class="page-item">
+														<a class="page-link" href="Modulo3-Tema2.html" tabindex="-1">Anterior</a>
+													</li>
 
-                                                    <h3><b>Tratamiento antiretrovial (ARV) y pronóstico </b></h3>
+													<li class="page-item">
+														<a class="page-link" href="Modulo3-Tema2.html">1<span class="sr-only">(current)</span></a>
+													</li>
+														
+													<li class="page-item active">
+														<a class="page-link" href="Modulo3-Tema2-Parte2.html">2</a>
+													</li>
+													
+													<li class="page-item">
+														<a class="page-link" href="Modulo3-Tema2-Parte2.html">Siguiente</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
 
-                                                    <h5>
-                                                        Desde mediados de la década de los 90, el uso de
-                                                        la Terapia Antiretroviral ha supuesto una mejora espectacular en el pronóstico de las personas con VIH.
-                                                    </h5>
+									</div>
+								</div>
+						</div>
+						<div class="col-md-8">
+								<div class="card">
+									
+										<div class="card-block">
+												<div class="row">
+												
+													<div class="col-md-8">
+														<h1 class="feed-title tag tag-info ">Tu Progreso</h1>
+														<p class="feed-subtitle" style="padding: 25px 0px 0px 0px;">En éste módulo:
+														</p>
+														<div class="w3-light-grey w3-round-xlarge">
+															<div id="myBar" class="w3-container w3-blue w3-round-xlarge w3-center" style="width: 34%;">34%</div>
+														</div>
+													</div>
+													<div class="col-md-4">
+														<p class="feed-subtitle" style="text-align: center; padding: 0px 0px 0px 0px;">Total del Curso:
+														</p>
+														<div id="progreso">
+														</div>
+													</div>
+												</div>
+										
+										</div>
+								</div>
+						</div>
+					</div>
+				</div>
+												
+					  <!-- Content Wrapper END -->
 
-                                                    <div class="pdd-vertical-30">
-
-                                                        <h3>
-                                                            <b>
-                                                                Sin embargo, algunas investigaciones sobre el pronóstico de vida de las personas
-                                                                que inician un tratamiento antiretroviral indican que existen cinco factores claves para determinar
-                                                                que se agrave la enfermedad en la persona o muera en un plazo de tres años, y estos son:
-                                                            </b>
-                                                        </h3>
-
-                                                    </div>
-
-                                                    <div class="card" style="background-color:#80bfff;">
-                                                        <div class="card-horizon">
-                                                            <div class="container-fluid">
-                                                                <div class="pdd-vertical-30 pdd-horizon-25">
-
-                                                                    <h5><b>1. Tener un recuento de CD4 por debajo de 200 viriones por mm3. en la sangre.</b></h5>
-                                                                    <h5><b>2. Poseer una carga viral por encima de 100,000 en el momento de iniciar el tratamiento.</b></h5>
-                                                                    <h5><b>3. Tener más de 50 años de edad.</b></h5>
-                                                                    <h5><b>4. Ser usuario de drogas inyectables.</b></h5>
-                                                                    <h5><b>5. Haber tenido una enfermedad definitoria de SIDA.</b></h5>
-
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                      <!-- Footer START -->
+                      <footer class="content-footer">
+                          <div class="footer">
+                            <div class="row mrg-top-10 mrg-btm-30">
+                                <div class="col text-center">
+                                    <a href="#">
+                                        <img src="assets/images/logo/tec-logo.png">
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="container-fluid">
-                                    <div id="sticker">
-                                        <div class="pdd-top-75 pdd-btm-150">
-                                            <div class="card">
-                                                <div class="card-block">
-                                                    <h1>Glosario</h1>
-                                                    <div id="accordion-1" class="accordion panel-group" role="tablist" aria-multiselectable="true">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-heading" role="tab" id="headingTwo" style="background-color:#0F9AED;">
-                                                                <h5 class="panel-title">
-                                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion-1" href="#collapseTwo" aria-expanded="false">
-                                                                        <span>Secreciones prostáticas</span>
-                                                                        <i class="icon ti-arrow-circle-down"></i>
-
-                                                                    </a>
-                                                                </h5>
-                                                            </div>
-                                                            <div id="collapseTwo" class="collapse panel-collapse" role="tabpanel">
-                                                                <div class="panel-body">
-                                                                    <p>
-                                                                        Líquido alcalino que le da consistencia al semen.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="card">
-                                    <div class="card-horizon">
-                                        <div class="container-fluid">
-                                            <div class="pdd-vertical-30 pdd-horizon-25">
-                                                <h5>
-                                                    En Inglaterra, las muertes a causa
-                                                    de VIH han bajado de 1, 500 a 400 al año, gracias a
-                                                    los tratamientos antiretrovirales  Las muertes por
-                                                    SIDA que aún se producen en ese país suelen presentarse
-                                                    en los pacientes a los que se les hace un diagnóstico
-                                                    tardío y por consecuencia, su sistema inmunológico se encuentra ya muy deteriorado.
-                                                </h5>
-
-                                                <h3>
-                                                    <b>
-                                                        Obviamente existen muchas otras causas para el deterioro de
-                                                        la salud aparte del VIH, por lo que el cambio de hábitos como:
-                                                    </b>
-                                                </h3>
-
-                                                <h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Dejar de fumar.</h5>
-                                                <h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Hacer ejercicio regularmente.</h5>
-                                                <h5>&nbsp &nbsp &nbsp &nbsp &nbsp -Llevar una dieta balanceada.</h5>
-
-
-                                                <div class="pdd-vertical-20">
-                                                    <div class="card" style="background-color:#ff99dd;">
-                                                        <div class="card-block">
-                                                            <h3>
-                                                                <b>
-                                                                    La información que ha conocido hasta el momento resulta de gran
-                                                                    importancia para poder crear conciencia en las personas sobre la trascendencia
-                                                                    de la enfermedad y así poder prevenirla.
-                                                                </b>
-                                                            </h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pdd-btm-30">
-                                                <center>
-                                                    <a class="button" href="Modulo4-Index.html">Módulo 4</a>
-                                                </center>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pdd-vertical-30">
-                                        <nav aria-label="..." style="text-align: center">
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item">
-                                                    <a class="page-link" href="Modulo3-Tema2.html" tabindex="-1">Anterior</a>
-                                                </li>
-
-                                                <li class="page-item">
-                                                    <a class="page-link" href="Modulo3-Tema2.html">1<span class="sr-only">(current)</span></a>
-                                                </li>
-
-                                                <li class="page-item active">
-                                                    <a class="page-link" href="Modulo3-Tema2-Parte2.html">2</a>
-                                                </li>
-
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="Modulo3-Tema2-Parte2.html">Siguiente</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card widget-feed">
                             <div class="row">
-                                <div class="col-lg-8">
-                                    <h1 class="feed-title tag tag-info">Tema 1</h1>
-                                    <h3 class="feed-subtitle">Tu Progreso</h3>
-                                    <div class="progress" style="height: 20px;" id="bar">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="max-width: 100%">100%</div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div id="circlecontainer"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col text-center">
-                                            <h3 class="feed-subtitle">Progreso General del Curso</h3>
-                                        </div>
-                                    </div>
+                                <div class="col-8">
+                                    <p>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito.</p>
+                                    <p>D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019.</p>
+                                </div>  
+                                <div class="col-4 center align-self-center">
+                                    <a href="http://videolabtec.itesm.mx/aviso-legal" target="_blank">Aviso Legal</a>
+                                    <span><b>|</b></span>
+                                    <a href="https://tec.mx/es/avisos-de-privacidad" target="_blank">Aviso de Privacidad</a>
+                                    <span><b>|</b></span>
+                                    <a href="Creditos.html">Créditos</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                      </footer>
+                      <!-- Footer END -->
+
+                  </div>
+                  <!-- Page Container END -->
                 </div>
-
-                <!-- Content Wrapper END -->
-                <!-- Footer START -->
-                <footer class="content-footer">
-                    <div class="footer">
-                        <div class="row mrg-top-10 mrg-btm-30">
-                            <div class="col text-center">
-                                <a href="#">
-                                    <img src="assets/images/logo/tec-logo.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <p>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito.</p>
-                                <p>D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019.</p>
-                            </div>
-                            <div class="col-4 center align-self-center">
-                                <a href="http://videolabtec.itesm.mx/aviso-legal" target="_blank">Aviso Legal</a>
-                                <span><b>|</b></span>
-                                <a href="https://tec.mx/es/avisos-de-privacidad" target="_blank">Aviso de Privacidad</a>
-                                <span><b>|</b></span>
-                                <a href="Creditos.html">Créditos</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- Footer END -->
-
-            </div>
-            <!-- Page Container END -->
         </div>
-    </div>
 
-    <!-- build:js assets/js/vendor.js -->
-    <!-- plugins js -->
-    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-    <script src="assets/vendors/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="assets/vendors/PACE/pace.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-    <!-- endbuild -->
-    <!-- build:js assets/js/app.min.js -->
-    <!-- core js -->
-    <script src="assets/js/app.js"></script>
-    <script src="../../assets/js/progress-circle.js"></script>
-    <script src="../app/assets/js/progressbar.js"></script>
-    <script src="../app/assets/js/progreso.js"></script>
-    <script src="../../assets/js/app.js"></script>
-    <!-- Aquí se inserta el porcentage del círculo de progreso como una fracción -->
-    <script type="text/javascript">show(0.61)</script>
-    <!-- endbuild -->
-    <!-- Insert your dependencies here -->
-    <script type="text/javascript">show(14 / 23)</script>
-    <script>
+        <!-- build:js assets/js/vendor.js -->
+        <!-- plugins js -->
+        <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendors/popper.js/dist/umd/popper.min.js"></script>
+        <script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="assets/vendors/PACE/pace.min.js"></script>
+        <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js assets/js/app.min.js -->
+        <!-- core js -->
+        <script src="assets/js/app.js"></script>
+		<script src="../app/assets/js/progressbar.js"></script>
+		<script src="../app/assets/js/progreso.js"></script>
+        <!-- endbuild -->
+
+        <!-- Insert your dependencies here -->
+		<script type="text/javascript">show(14 / 23)</script>
+		<script>
         function moveProgressBar(progPorcent) {
             if (progPorcent === undefined) {
                 progPorcent = 0;
@@ -563,14 +414,16 @@
             }
         }
     </script>
-
-    <!--Sticky Plug in -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/jquery.sticky.js"></script>
-    <script>
-        $(window).load(function () {
-            $("#sticker").sticky({ topSpacing: 0, center: true, className: "hey" });
-        });
-    </script>
-</body>
+	
+	<script type="text/javascript">moveProgressBar((4 / 4) * 100)</script>
+	
+	<!--Sticky Plug in -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/jquery.sticky.js"></script>
+  <script>
+    $(window).load(function(){
+      $("#sticker").sticky({ topSpacing:0, center:true, className:"hey" });
+    });
+  </script>
+    </body>
 </html>
