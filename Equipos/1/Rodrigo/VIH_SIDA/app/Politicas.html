@@ -1,9 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Políticas del curso | CVA - Centro Virtual de Aprendizaje</title>
+
+    <!DOCTYPE html>
+    <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-        <title>Síndrome de Inmunodeficiencia Adquirida: aspectos médicos y sociales</title>
+        <title>Modulo 5: Los cuidados del paciente portador de VIH-SIDA | CVA - Centro Virtual de Aprendizaje</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -14,36 +21,29 @@
         <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
         <!-- page plugins css -->
-
         <!-- core css -->
         <link href="assets/css/ei-icon.css" rel="stylesheet">
         <link href="assets/css/themify-icons.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/css/animate.min.css" rel="stylesheet">
         <link href="assets/css/app.css" rel="stylesheet">
-		<link rel="stylesheet" href="./misEstilos/styleCursos.css">
-		<link rel="stylesheet" href="../../misEstilos/w3.css">
-		<link href="../../assets/css/progress.css" rel="stylesheet">
-		<script src="../../misEstilos/myJs.js"></script>
+        <link href="assets/css/progress.css" rel="stylesheet">
+        <link href="assets/css/progreso.css" rel="stylesheet">
+
     </head>
-	
-    <body class="header-info side-nav-dark pace-done">
-	<div class="pace  pace-inactive">
-		<div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
-			<div class="pace-progress-inner"></div>
-		</div>
-		<div class="pace-activity"></div>
-	</div>
-	
-          <div class="app">
-              <div class="layout">
-                  <!-- Side Nav START -->
-				  <div class="side-nav">
+
+    <body class="header-info side-nav-dark">
+        <div class="app">
+            <div class="layout">
+                <!-- Side Nav START -->
+                <div class="side-nav" id="sideNav">
                     <div class="side-nav-inner">
                         <div class="side-nav-logo">
-                            <a href="../../index.html">
-                                <div class="logo logo-dark" style="background-image: url('../../assets/images/logo/logo.png')"></div>
-                                <div class="logo logo-white" style="background-image: url('../../assets/images/logo/logo.png'); width: 100%"></div>
+                            <a href="http://www.centroscomunitariosdeaprendizaje.org.mx/" target="_blank">
+                                <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')">
+                                </div>
+                                <div class="logo logo-white" style="background-image: url('assets/images/logo/logo.png')">
+                                </div>
                             </a>
                             <div class="mobile-toggle side-nav-toggle">
                                 <a href="">
@@ -51,7 +51,8 @@
                                 </a>
                             </div>
                         </div>
-                        <ul class="side-nav-menu scrollable ps-container ps-theme-default" data-ps-id="21a7a030-981f-ba97-ce2c-858cf77ef819">
+                        <!--Inician contenidos laterales-->
+                        <ul class="side-nav-menu scrollable">
                             <li class="nav-item active">
                                 <a class="mrg-top-30" href="index.html">
                                     <span class="icon-holder">
@@ -60,52 +61,187 @@
                                     <span class="title">Bienvenida</span>
                                 </a>
                             </li>
+                            <li class="nav-item active">
+                                <a href="introduccion.html">
+                                    <span class="icon-holder">
+                                        <i class="ei-foggy"></i>
+                                    </span>
+                                    <span class="title">Introducción</span>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="javascript:void(0);">
                                     <span class="icon-holder">
-                                        <i class="ti-view-list-alt"></i>
+                                        <i class="ti-agenda"></i>
                                     </span>
                                     <span class="title">Módulos</span>
                                     <span class="arrow">
                                         <i class="ti-angle-right"></i>
                                     </span>
                                 </a>
-                                <ul class="dropdown-menu" style="display: none;">
+                                <ul class="dropdown-menu">
                                     <li>
-                                        <a href="Modulo1-Index.html">Módulo 1</a>
+                                        <a href="temario.html" class="side-index-general">Temario</a>
                                     </li>
-                                    <li>
-                                        <a href="Modulo2-Index.html">Módulo 2</a>
+                                    <!-- Módulo 1 -->
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="javascript:void(0);">
+                                            <span class="title side-index-general">Módulo 1: Aspectos médicos del VIH/SIDA <br>biológico</span>
+                                            <span class="arrow">
+                                                <i class="ti-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="Modulo1-Index.html" class="side-index-general">
+                                                    Presentación
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo1-Tema1.html" class="side-index-general">
+                                                    Diferencia entre VIH y SIDA
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo1-Tema2.html" class="side-index-general">
+                                                    Origen del SIDA
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="Modulo3-Index.html">Módulo 3</a>
+
+                                    <!-- Módulo 2 -->
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="javascript:void(0);">
+                                            <span class="title side-index-general">
+                                                Módulo 2: Transmisión, diagnóstico y síntomas de la vida de las personas con VIH/SIDA
+                                            </span>
+                                            <span class="arrow">
+                                                <i class="ti-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="Modulo2-Index.html" class="side-index-general">
+                                                    Presentación
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo2-Tema1.html" class="side-index-general">
+                                                    Formas de transmisión del VIH
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo2-Tema2.html" class="side-index-general">
+                                                    Métodos de diagnóstico para la enfermedad
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo2-Tema3.html" class="side-index-general">
+                                                    Síntomas de la enfermedad
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="Modulo4-Index.html">Módulo 4</a>
+
+                                    <!-- Módulo 3 -->
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="javascript:void(0);">
+                                            <span class="title side-index-general">Módulo 3: Tratamiento y pronóstico de la vida de las personas con VIH/SIDA</span>
+                                            <span class="arrow">
+                                                <i class="ti-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="Modulo3-Index.html" class="side-index-general">
+                                                    Presentación
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo3-Tema1.html"
+                                                   class="side-index-general">
+                                                    Alternativas existentes para su tratamiento
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo3-Tema2.html" class="side-index-general">
+                                                    Pronósticos de vida para las personas enfermas de SIDA
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="Modulo5-Index.html">Módulo 5</a>
+
+                                    <!-- Módulo 4 -->
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="javascript:void(0);">
+                                            <span class="title side-index-general">Módulo 4: Situación de la enfermedad y los derechos de las personas con VIH/SIDA</span>
+                                            <span class="arrow">
+                                                <i class="ti-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="Modulo4-Index.html" class="side-index-general">
+                                                    Presentación
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo4.0-Tema1.html" class="side-index-general">
+                                                    El SIDA en México, Estados Unidos, y el mundo
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo4-Tema2.html" class="side-index-general">
+                                                    Derechos Civiles: discriminación social y laboral
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--Módulo 5-->
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="javascript:void(0);">
+                                            <span class="title side-index-general">Módulo 5: Aspectos sociales sobre el cuidado de los pacientes</span>
+                                            <span class="arrow">
+                                                <i class="ti-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="Modulo5-Index.html" class="side-index-general">
+                                                    Presentación
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo5-Tema1.html" class="side-index-general">
+                                                    Los cuidados del paciente portador del VIH/SIDA
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo5-Tema2.html" class="side-index-general">
+                                                    Conciencia y prevención
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Modulo5-Tema3.html" class="side-index-general">
+                                                    Anexos
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
-							<li class="nav-item active">
-                                <a class="mrg-top" href="Modulo5-Tema3.html">
+
+                            <li class="nav-item active">
+                                <a href="Politicas.html">
                                     <span class="icon-holder">
-                                        <i class="ei-file-globe"></i>
-                                    </span>
-                                    <span class="title">Anexos</span>
-                                </a>
-                            </li>
-							<li class="nav-item active">
-                                <a class="mrg-top" href="Politicas.html">
-                                    <span class="icon-holder">
-                                        <i class="ei-file-globe"></i>
+                                        <i class="ei-preview"></i>
                                     </span>
                                     <span class="title">Políticas</span>
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="mrg-top" href="Contactanos.html">
+                                <a href="Contactanos.html">
                                     <span class="icon-holder">
                                         <i class="ei-email"></i>
                                     </span>
@@ -113,118 +249,82 @@
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="mrg-top" href="Creditos.html">
+                                <a href="Creditos.html">
                                     <span class="icon-holder">
                                         <i class="ti-info-alt"></i>
                                     </span>
                                     <span class="title">Créditos</span>
                                 </a>
                             </li>
-                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></ul>
+                        </ul>
                     </div>
                 </div>
-                 
-                  <!-- Side Nav END -->
-
-                  <!-- Page Container START -->
-                  <div class="page-container">
-                      <!-- Header START -->
-                      <div class="header navbar">
-                          <div class="header-container">
-                              <ul class="nav-left">
-                                  <li>
-                                      <a class="side-nav-toggle" href="javascript:void(0);">
-                                          <i class="ti-view-grid"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-                              <ul class="nav-right">
-                                  <li>
-                                      <a href="#">
-                                          <img src="imagenes/tec-logo.png">
-                                      </a>
-                                  </li>
-                              </ul>
-
-                          </div>
-                      </div>
-                      <!-- Header END -->
-
-                      <!-- Content Wrapper START -->
-					  
-				<div class="main-content">
-					<div class="container-fluid">
-						<div class="card">
-							<div class="card-block">
-								<h5>
-								Este curso forma parte de nuestra oferta educativa en la modalidad 
-								“Por ti mismo” (gratuito), por lo tanto, no tienes un tutor asignado
-								para evaluar las actividades.
-								</h5>
-								
-								<h5>
-								Tú decides cuándo y dónde acceder, permitiéndote elaborar un horario
-								y ritmo de estudio propio, de acuerdo a tus circunstancias.
-								</h5>
-								
-								<h5>
-								Se recomienda tener una buena organización, para realizar las actividades
-								que contiene el curso, ya que fueron diseñadas para facilitar el proceso 
-								de aprendizaje.
-								</h5>
-								
-								<h5>
-								Aplica lo aprendido para que determines tus conocimientos adquiridos.
-								</h5>
-								
-								<h5>
-								Te invitamos a visitar nuestros videos educativos <a href ="http://bit.ly/capsulaseducativas">http://bit.ly/capsulaseducativas</a>
-								</h5>
-								
-								<br></br>
-								
-								<h4>
-								<b>
-								“Educarse para la vida”
-								</b>
-								</h4>
-								
-								<h4>
-								<b>
-
-								Centro Virtual de Aprendizaje
-								</b>
-								</h4>
-								
-								<h4>
-								<b>
-
-								Tecnológico de Monterrey
-
-								</b>
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-												
-					  <!-- Content Wrapper END -->
-
-                      <!-- Footer START -->
-                      <footer class="content-footer">
-                          <div class="footer">
-                            <div class="row mrg-top-10 mrg-btm-30">
-                                <div class="col text-center">
-                                    <a href="#">
-                                        <img src="assets/images/logo/tec-logo.png">
+                <!-- Side Nav END -->
+                <!-- Page Container START -->
+                <div class="page-container">
+                    <!-- Header START -->
+                    <div class="header navbar">
+                        <div class="header-container">
+                            <ul class="nav-left">
+                                <li>
+                                    <a class="side-nav-toggle" href="javascript:void(0);">
+                                        <i class="ti-view-grid"></i>
                                     </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-right">
+                                <li>
+                                    <a href="https://tec.mx/es" target="_blank">
+                                        <img src="assets/images/logo/tec-logo.png" height="45">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- Header END -->
+                    <!-- Content Wrapper START -->
+
+                    <div class="main-content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-horizon">
+                                            <div class="image-container col-md-4">
+                                                <div class="background-holder has-content" style="background-image: url('./assets/images/course/politicas/shutterstock_1155421345.jpg')"></div>
+                                            </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-md-7 ml-auto">
+                                                        <div class="pdd-vertical-30 pdd-horizon-25">
+                                                            <h1 class="mrg-btm-20 card-title">Políticas</h1>
+                                                            <p>Este curso forma parte de nuestra oferta educativa en la modalidad <i>“Por ti mismo”</i>, lo que significa que no cuentas con un seguimiento académico de parte de un tutor.</p>
+                                                            <p>Se recomienda tener una buena organización, para realizar las actividades que contiene el curso, ya que fueron diseñadas para facilitar tu proceso de aprendizaje.</p>
+                                                            <p>Elabora un horario de acuerdo a tus circunstancias, que te permita concluir el curso, así podrás aplicar lo aprendido para que determines tus conocimientos adquiridos.</p>
+                                                            <p>Al final del curso, deberás realizar un examen, si obtienes un promedio de 80/100 se emitirá una carta constancia de tu participación del curso (sin validez oficial).</p>
+                                                            <p>Te invitamos a visitar nuestros videos educativos, que te ayudarán a reforzar tus conocimientos aprendidos, solo haz clic <a href="http://bit.ly/capsulaseducativas" target="_blank">aquí</a>.</p>
+                                                            <p>“Educarse para la vida” <br> <b>Centro Virtual de Aprendizaje<br>Tecnológico de Monterrey</b></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Wrapper END -->
+                    <!-- Footer START -->
+                    <footer class="content-footer">
+                        <div class="footer">
                             <div class="row">
                                 <div class="col-8">
                                     <p>Se prohíbe la reproducción total o parcial sin previo y expreso consentimiento por escrito.</p>
                                     <p>D.R.© Instituto Tecnológico y de Estudios Superiores de Monterrey, México, 2019.</p>
-                                </div>  
+                                </div>
                                 <div class="col-4 center align-self-center">
                                     <a href="http://videolabtec.itesm.mx/aviso-legal" target="_blank">Aviso Legal</a>
                                     <span><b>|</b></span>
@@ -234,12 +334,12 @@
                                 </div>
                             </div>
                         </div>
-                      </footer>
-                      <!-- Footer END -->
+                    </footer>
+                    <!-- Footer END -->
 
-                  </div>
-                  <!-- Page Container END -->
                 </div>
+                <!-- Page Container END -->
+            </div>
         </div>
 
         <!-- build:js assets/js/vendor.js -->
@@ -250,36 +350,34 @@
         <script src="assets/vendors/PACE/pace.min.js"></script>
         <script src="assets/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
         <!-- endbuild -->
-
         <!-- build:js assets/js/app.min.js -->
         <!-- core js -->
         <script src="assets/js/app.js"></script>
-		<script src="../../assets/js/progressbar.js"></script>
-		<script src="../../assets/js/progreso.js"></script>
+        <script src="../../assets/js/progressbar.js"></script>
+        <script src="../../assets/js/progreso.js"></script>
         <!-- endbuild -->
-
         <!-- Insert your dependencies here -->
-		<script>
-        function moveProgressBar(progPorcent) {
-            if (progPorcent === undefined) {
-                progPorcent = 0;
-            }
-            var elem = document.getElementById("myBar");
-            var width = 0;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width >= progPorcent) {
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width.toString() + '%';
+        <script>
+            function moveProgressBar(progPorcent) {
+                if (progPorcent === undefined) {
+                    progPorcent = 0;
+                }
+                var elem = document.getElementById("myBar");
+                var width = 0;
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (width >= progPorcent) {
+                        clearInterval(id);
+                    } else {
+                        width++;
+                        elem.style.width = width + '%';
+                        elem.innerHTML = width.toString() + '%';
+                    }
                 }
             }
-        }
-    </script>
-	
-	<script type="text/javascript">moveProgressBar((4 / 12) * 100)</script>
+        </script>
+
+        <script type="text/javascript">moveProgressBar((4 / 12) * 100)</script>
 
     </body>
 </html>
