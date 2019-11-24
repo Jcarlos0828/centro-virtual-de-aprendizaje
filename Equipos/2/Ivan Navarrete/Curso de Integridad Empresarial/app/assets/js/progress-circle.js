@@ -12,8 +12,8 @@ var bar = new ProgressBar.Circle(circlecontainer, {
     text: {
       autoStyleContainer: false
     },
-    from: { color: '#40803E', width: 1 },
-    to: { color: '#40803E', width: 4 },
+    from: { color: '#d3d3d3', width: 1 },
+    to: { color: '#d3d3d3', width: 4 },
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);

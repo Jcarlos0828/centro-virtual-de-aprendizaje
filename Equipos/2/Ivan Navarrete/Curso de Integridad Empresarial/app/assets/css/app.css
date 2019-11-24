@@ -16,8 +16,8 @@
 ----------------------------*/
 
 :root {
-  /* Cambiar el valor de la variable según la temática del curso.*/
-  --theme-color: #f4d03f;
+    /* Cambiar el valor de la variable según la temática del curso.*/
+    --theme-color: #d3d3d3;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700");
