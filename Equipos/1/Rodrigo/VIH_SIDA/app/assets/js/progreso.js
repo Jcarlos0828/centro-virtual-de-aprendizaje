@@ -12,7 +12,7 @@
 		autoStyleContainer: false
 	  },
 	  from: { color: '#459FFF', width: 2 },
-	  to: { color: '#8126ab', width: 6 },
+	  to: { color: '#007bff', width: 6 },
 	  // Set default step function for all animate calls
 	  step: function(state, circle) {
 		circle.path.setAttribute('stroke', state.color);

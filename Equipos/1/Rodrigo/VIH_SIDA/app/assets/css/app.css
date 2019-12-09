@@ -16,8 +16,8 @@
 ----------------------------*/
 
 :root {
-    /* Cambiar el valor de la variable según la temática del curso.*/
-    --theme-color: #8126ab;
+  /* Cambiar el valor de la variable según la temática del curso.*/
+  --theme-color: #8126ab;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700");
@@ -30,6 +30,8 @@ h1, h2, h3, h4, h5, h6 { color: #000000; font-family: 'Lucida Sans', 'Lucida San
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: 300; color: #5c5f73; }
+
+.text-hyperlink { color: var(--theme-color) !important;}
 
 h1 { font-size: 26px; }
 
@@ -85,7 +87,7 @@ hr { border-top: 1px solid #e6ecf5; }
 
 .text-success { color: #37c936 !important; }
 
-.text-info { color: #0f9aee !important; }
+.text-info { color: #8126ab !important; }
 
 .text-warning { color: #ffcc00 !important; }
 
@@ -99,7 +101,7 @@ hr { border-top: 1px solid #e6ecf5; }
 
 .bg-primary { background-color: #7774e7 !important; }
 
-.bg-info { background-color: #40803E !important; }
+.bg-info { background-color: var(--theme-color) !important; }
 
 .bg-success { background-color: #37c936 !important; }
 
@@ -2904,7 +2906,7 @@ label.success { color: #37c936; }
 
 .tag-success { background-color: #37c936; color: #ffffff; }
 
-.tag-info { background-color: #40803E; color: #ffffff; }
+.tag-info { background-color: var(--theme-color); color: #ffffff; }
 
 .tag-warning { background-color: #ffcc00; color: #ffffff; }
 
@@ -3241,7 +3243,7 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .accordion .panel-default { background-color: #ffffff; margin-bottom: 15px; border: 1px solid #e6ecf5; }
 
-.accordion .panel-default > .panel-heading { color: #515365; background-color: #72ac25d2; border-color: #e6ecf5; }
+.accordion .panel-default > .panel-heading { color: #515365; background-color: var(--theme-color); border-color: #e6ecf5; }
 
 .accordion .panel-default > .panel-heading + .panel-collapse > .panel-body { border-top-color: #e6ecf5; padding: 10px 20px 20px 20px; }
 
@@ -3691,3 +3693,22 @@ glyphs.character-mapping { margin: 0 0 20px 0; padding: 20px 0 20px 30px; color:
 /*----------------------------
 --------- 2. Personalización ---------
 ----------------------------*/
+
+/*-- Para el carousel de librito de cursos de DP --*/
+.carousel-item{
+  height: 80vh;
+} 
+
+.carousel-item img{
+  margin: 0 auto;
+}
+
+.btn-actual-page {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+  color: #ffffff;
+}
+
+.btn-actual-page span {
+  color: #ffffff;
+}
